@@ -29,7 +29,7 @@ for (let i = 0; i < keys.length; i++) {
     url: "/v1/chat/completions",
     body: {
       model: Model,
-      temperature: '0',
+      temperature: 0,
       messages: [
         { "role": "system", "content": SystemPrompt }
       ]
