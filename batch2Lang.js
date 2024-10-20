@@ -25,5 +25,10 @@ outputTemplate.strings = strings.reduce((acc, v) => {
   return acc;
 }, {});
 
-fs.writeFileSync('./lang/zhCN.json', JSON.stringify(outputTemplate, null, 2));
+// 上書き防止
+if (!fs.existsSync('./lang/zhCN.json')) {
+  fs.writeFileSync('./lang/zhCN.json', JSON.stringify(outputTemplate, null, 2));
+  fs.writeFileSync('./lang/zhCN_bk.json', JSON.stringify(outputTemplate, null, 2));
+}
+
 // console.log(outputs);

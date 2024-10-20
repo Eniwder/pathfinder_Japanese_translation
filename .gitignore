@@ -2,6 +2,7 @@
 /.vscode
 
 .env
-/lang
+/lang/enGB.json
+/lang/znCN_another.json
 /batchout
 /splitLang
