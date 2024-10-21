@@ -87,7 +87,7 @@ for (let i = 0; i < kv.length; i++) {
     ja[k] = ja[k].replace(/[0-9]+?d[0-9]+?/, `{g|Encyclopedia:Dice}$1{/g}`);
   }
 
-  if (orgCtrls && ctrls && (orgCtrls.length / 2) > ctrls.length) {
+  if (orgCtrls && ctrls && (orgCtrls.length / 1.5) > ctrls.length) {
     console.log(`missing ctrls:  ${k} / [${v}] -> [${ja[k]}]`);
     console.log(orgCtrls, ctrls);
     // const fixData = await translate(v);
