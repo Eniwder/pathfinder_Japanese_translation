@@ -33,7 +33,8 @@ async function translate(v) {
 
 const en = JSON.parse(fs.readFileSync('./lang/enGB.json', 'utf-8')).strings;
 const ja = JSON.parse(fs.readFileSync('./lang/zhCN.json', 'utf-8')).strings;
-const jaOld = JSON.parse(fs.readFileSync('./lang/zhCN_another.json', 'utf-8')).strings;
+const jaBk = JSON.parse(fs.readFileSync('./lang/zhCN_bk.json', 'utf-8')).strings;
+// const jaOld = JSON.parse(fs.readFileSync('./lang/zhCN_another.json', 'utf-8')).strings;
 const wordGrp = {};
 const reps = [];
 
@@ -119,8 +120,34 @@ for (let i = 0; i < kv.length; i++) {
     }
   }
 
-  if ((v.includes('evocation') || v.includes('Evocation')) && ja[k].includes('召喚')) {
-    console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+  // if ((v.includes('evocation') || v.includes('Evocation')) && ja[k].includes('召喚')) {
+  //   console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+  // }
+
+  if (ja[k].includes('{g|Encyclopedia:Strength}')) {
+    // const kins = ja[k].match(/\{g\|Encyclopedia:Strength\}.+?\{\/g\}/g);
+    const jjj = ja[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
+    const org = v.match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
+    const bk = jaBk[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
+    if (jjj.length == org.length) {
+      // console.log(jjj, bk);
+      // const getStr = v => {
+      //   return v.includes("Strength") ? '{g|Encyclopedia:Strength}筋力{/g}' :
+      //     v.includes("Constitution") ? '{g|Encyclopedia:Constitution}耐久力{/g}' :
+      //       v.includes("Dexterity") ? '{g|Encyclopedia:Dexterity}敏捷力{/g}' :
+      //         v.includes("Intelligence") ? '{g|Encyclopedia:Intelligence}知力{/g}' :
+      //           v.includes("Wisdom") ? '{g|Encyclopedia:Wisdom}判断力{/g}' :
+      //             v.includes("Charisma") ? '{g|Encyclopedia:Charisma}魅力{/g}' : console.error("aaa");
+
+      // };
+      // let n = 0;
+      // ja[k] = ja[k].replaceAll('{g|Encyclopedia:Strength}筋力{/g}', (m, p1, p2, p3, off, str) => {
+      //   console.log(bk[n]);
+      //   return getStr(bk[n++]);
+      // });
+    } else {
+      console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+    }
   }
 
   // const kakkoN = ja[k].match(/「/g);
@@ -192,11 +219,11 @@ for (let i = 0; i < kv.length; i++) {
 
 // console.log(Object.entries(wordGrp).sort((a, b) => b[1] - a[1]));
 
-const outputTemplate = {
-  "$id": "1",
-  "strings": {
-  }
-};
-outputTemplate.strings = ja;
+// const outputTemplate = {
+//   "$id": "1",
+//   "strings": {
+//   }
+// };
+// outputTemplate.strings = ja;
 
-fs.writeFileSync('./lang/zhCN_rep.json', JSON.stringify(outputTemplate, null, 2));
+// fs.writeFileSync('./lang/zhCN_rep.json', JSON.stringify(outputTemplate, null, 2));
