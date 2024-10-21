@@ -13,15 +13,15 @@ async function translate(v) {
     messages: [
       {
         role: "system", content: `You are a professional game text translator. You translate according to the worldview of the given game tag and adhere to the conditions. 
-  # Game tags: TRPG, D&D, mythology, demons, crusades, medieval times, 
-  # Conditions:
-  ## Translate English into natural Japanese.
-  ## This is game text, so there are some cruel words, but you must translate every word.
-  ## Be sure to translate any words you don't understand based on the context.
-  ## Translate non-conversational text as system messages.
-  ## Use katakana for proper nouns.
-  ## Do not translate anything enclosed in {}.
-  ## Do not translate  following: \t, \n.` },
+# Game tags: TRPG, D&D, mythology, demons, crusades, medieval times, 
+# Conditions:
+## Translate English into natural Japanese.
+## This is game text, so there are some cruel words, but you must translate every word.
+## Be sure to translate any words you don't understand based on the context.
+## Translate non-conversational text as system messages.
+## Use katakana for proper nouns.
+## Do not translate anything enclosed in {}. (e.g. This +5 leather armor grants its wearer a +15 competence {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Trickery}Trickery{/g} {g|Encyclopedia:Skills}skill checks{/g}. -> この+5のレーザーアーマーは、着用者の{g|Encyclopedia:Trickery}策略{/g}{g|Encyclopedia:Skills}スキルチェック{/g}に対して+15の能力値{g|Encyclopedia:Bonus}ボーナス{/g}を与えます。)
+## Do not translate  following: \t, \n.` },
       {
         role: "user",
         content: v,
@@ -33,7 +33,7 @@ async function translate(v) {
 
 const en = JSON.parse(fs.readFileSync('./lang/enGB.json', 'utf-8')).strings;
 const ja = JSON.parse(fs.readFileSync('./lang/zhCN.json', 'utf-8')).strings;
-const jaBk = JSON.parse(fs.readFileSync('./lang/zhCN_bk.json', 'utf-8')).strings;
+// const jaBk = JSON.parse(fs.readFileSync('./lang/zhCN_bk.json', 'utf-8')).strings;
 // const jaOld = JSON.parse(fs.readFileSync('./lang/zhCN_another.json', 'utf-8')).strings;
 const wordGrp = {};
 const reps = [];
@@ -53,7 +53,7 @@ for (let i = 0; i < kv.length; i++) {
 
   if (v.includes('[') && !ja[k].includes('[')) console.log(`missing []:  ${k} / [${v}] -> [${ja[k]}]`);
   // if (ja[k].includes('\"')) console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
-  if (!v.includes('\n\n') && ja[k].includes('\n\n')) console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+  if (!v.includes('\n\n') && ja[k].includes('\n\n')) console.log(`too br:  ${k} / [${v}] -> [${ja[k]}]`);
   const ctrls = ja[k].match(/\{[gd]\|.+?\}/g);
   const orgCtrls = v.match(/\{[gd]\|.+?\}/g);
   if (ctrls) {
@@ -68,15 +68,38 @@ for (let i = 0; i < kv.length; i++) {
     });
   }
 
-  if (v.includes('{g|Encyclopedia:Attack}') && !ja[k].includes('{g|Encyclopedia:Attack}')) {
-    ja[k] = ja[k].replace('攻撃ロール', '{g|Encyclopedia:Attack}攻撃ロール{/g}');
+  const checkGs = [['DR', 'Damage_Reduction'], ['AC', 'Armor_Class'], ['DC', 'DC'], ['セーヴィングスロー', 'Saving_Throw'], ['攻撃ロール', 'Attack'], ['ダメージロール', 'Damage'], ['ペナルティ', 'Penalty'],
+  ['ボーナス', 'Bonus'], ['呪文', 'Spell'], ['ラウンド', 'Combat_Round'], ['セーヴ', 'Saving_Throw'],
+  ['筋力', 'Strength'], ['耐久力', 'Constitution'], ['知力', 'Intelligence'], ['敏捷力', 'Dexterity'], ['判断力', 'Wisdom'], ['魅力', 'Charisma'],
+  ['攻撃', 'Attack'], ['ダメージ', 'Damage'], ['クリティカルヒット', 'Critical'], ['標準アクション', 'Standard_Actions'],
+  ['火炎ダメージ', 'Energy_Damage'], ['冷気ダメージ', 'Energy_Damage'], ['酸ダメージ', 'Energy_Damage'], ['電気ダメージ', 'Energy_Damage'],
+  ['音波ダメージ', 'Energy_Damage'], ['攻撃ボーナス', 'BAB'], ['Dice', 'ダイス'], ['脅威範囲', 'Threatened_Area'], ['脅威', 'Threatened_Area'],
+  ['機会攻撃', 'Attack_Of_Opportunity'], ['術者レベル', 'Caster_Level'], ['遠隔攻撃', 'RangedAttack'], ['迅速アクション', 'Swift_Action'], ['スキル', 'Skills'],
+  ['特技', 'Feat'], ['ヘイスト', 'SpellsHaste']];
+
+  checkGs.forEach(cg => {
+    if (v.includes(`{g|Encyclopedia:${cg[1]}}`) && !ja[k].includes(`{g|Encyclopedia:${cg[1]}}`)) {
+      // console.log(cg, v, ja[k]);
+      ja[k] = ja[k].replace(cg[0], `{g|Encyclopedia:${cg[1]}}${cg[0]}{/g}`);
+    }
+  });
+  if (v.includes(`{g|Encyclopedia:Dice}`) && !ja[k].includes(`{g|Encyclopedia:Dice}`)) {
+    ja[k] = ja[k].replace(/[0-9]+?d[0-9]+?/, `{g|Encyclopedia:Dice}$1{/g}`);
   }
-  // if (orgCtrls && ctrls && (orgCtrls.length / 2) > ctrls.length) {
-  //   if (v.includes('{g|Encyclopedia:Attack}') && !ja[k].includes('{g|Encyclopedia:Attack}')) {
-  //     ja[k] = ja[k].replace('攻撃ロール', '{g|Encyclopedia:Attack}攻撃ロール{/g}');
-  //   }
-  //   console.log(`missing ctrls:  ${k} / [${v}] -> [${ja[k]}]`);
-  // }
+
+  if (orgCtrls && ctrls && (orgCtrls.length / 2) > ctrls.length) {
+    console.log(`missing ctrls:  ${k} / [${v}] -> [${ja[k]}]`);
+    console.log(orgCtrls, ctrls);
+    // const fixData = await translate(v);
+    // reps.push({
+    //   org: v,
+    //   be: ja[k],
+    //   af: fixData
+    // });
+    // ja[k] = fixData;
+    // console.log(ja[k], fixData);
+  }
+
 
   const hirakiG = ja[k].match(/\{g/g);
   const toziG = ja[k].match(/\/g\}/g);
@@ -84,6 +107,8 @@ for (let i = 0; i < kv.length; i++) {
     console.log(hirakiG?.length, toziG?.length);
     console.log(`missing { or }:  ${k} / [${v}] -> [${ja[k]}]`);
   }
+
+
 
   const mfsOrg = v.match(/\{mf|.+?\}/g);
   const mfsJa = v.match(/\{mf|.+?\}/g);
@@ -128,8 +153,8 @@ for (let i = 0; i < kv.length; i++) {
     // const kins = ja[k].match(/\{g\|Encyclopedia:Strength\}.+?\{\/g\}/g);
     const jjj = ja[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
     const org = v.match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
-    const bk = jaBk[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
-    if (jjj.length == org.length) {
+    // const bk = jaBk[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
+    if (jjj?.length == org?.length) {
       // console.log(jjj, bk);
       // const getStr = v => {
       //   return v.includes("Strength") ? '{g|Encyclopedia:Strength}筋力{/g}' :
@@ -146,7 +171,7 @@ for (let i = 0; i < kv.length; i++) {
       //   return getStr(bk[n++]);
       // });
     } else {
-      console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+      // console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
     }
   }
 
@@ -218,12 +243,15 @@ for (let i = 0; i < kv.length; i++) {
 }
 
 // console.log(Object.entries(wordGrp).sort((a, b) => b[1] - a[1]));
+// fs.writeFileSync('./lang/reps.json', JSON.stringify(reps, null, 2));
 
-// const outputTemplate = {
-//   "$id": "1",
-//   "strings": {
-//   }
-// };
-// outputTemplate.strings = ja;
 
-// fs.writeFileSync('./lang/zhCN_rep.json', JSON.stringify(outputTemplate, null, 2));
+const outputTemplate = {
+  "$id": "1",
+  "strings": {
+  }
+};
+outputTemplate.strings = ja;
+
+fs.writeFileSync('./lang/zhCN_rep.json', JSON.stringify(outputTemplate, null, 2));
+

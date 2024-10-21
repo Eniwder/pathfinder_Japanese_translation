@@ -7,7 +7,7 @@ const openai = new OpenAI({
 
 async function translate(params) {
   const completion = await openai.chat.completions.create({
-    model: "gpt-4o-2024-08-06",
+    model: "gpt-4o-mini",
     temperature: 0,
     messages: [
       {
@@ -19,11 +19,11 @@ async function translate(params) {
   ## Be sure to translate any words you don't understand based on the context.
   ## Translate non-conversational text as system messages.
   ## Use katakana for proper nouns.
-  ## Do not translate anything enclosed in {}.
+  ## Do not translate anything enclosed in {}. (e.g. This +5 leather armor grants its wearer a +15 competence {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Trickery}Trickery{/g} {g|Encyclopedia:Skills}skill checks{/g}. -> この+5のレーザーアーマーは、着用者の{g|Encyclopedia:Trickery}策略{/g}{g|Encyclopedia:Skills}スキルチェック{/g}に対して+15の能力値{g|Encyclopedia:Bonus}ボーナス{/g}を与えます。)
   ## Do not translate  following: \t, \n.` },
       {
         role: "user",
-        content: "{n}The obsidian snake, the guardian of your heart, awakens and lets out a quiet, threatening hiss. Its bite injects a sweet poison into your veins that spreads through your body and fills your mind with a soothing whisper: \"Why are you rebelling? Give in. Our Lady in Shadow knows what is good for you.\" You feel your words die on your tongue.{/n}",
+        content: `At 11th level, the phantasmal mage can spend 2 points from her arcane reservoir as a {g|Encyclopedia:Free_Action}free action{/g} to make the next arcanist Illusion {g|Encyclopedia:Spell}spell{/g} she casts in 2 {g|Encyclopedia:Combat_Round}rounds{/g} {g|FeaturePersistentSpell}Persistent{/g} or {g|FeatureEmpoweredSpell}Empowered{/g}, as per using the corresponding metamagic {g|Encyclopedia:Feat}feat{/g}.`,
       },
     ],
   });
