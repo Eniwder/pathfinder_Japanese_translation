@@ -37,6 +37,7 @@ const ja = JSON.parse(fs.readFileSync('./lang/zhCN.json', 'utf-8')).strings;
 // const jaOld = JSON.parse(fs.readFileSync('./lang/zhCN_another.json', 'utf-8')).strings;
 const wordGrp = {};
 const reps = [];
+let counter = 0;
 
 const kv = Object.entries(en);
 for (let i = 0; i < kv.length; i++) {
@@ -68,26 +69,33 @@ for (let i = 0; i < kv.length; i++) {
     });
   }
 
-  const checkGs = [['DR', 'Damage_Reduction'], ['AC', 'Armor_Class'], ['DC', 'DC'], ['セーヴィングスロー', 'Saving_Throw'], ['攻撃ロール', 'Attack'], ['ダメージロール', 'Damage'], ['ペナルティ', 'Penalty'],
-  ['ボーナス', 'Bonus'], ['呪文', 'Spell'], ['ラウンド', 'Combat_Round'], ['セーヴ', 'Saving_Throw'],
-  ['筋力', 'Strength'], ['耐久力', 'Constitution'], ['知力', 'Intelligence'], ['敏捷力', 'Dexterity'], ['判断力', 'Wisdom'], ['魅力', 'Charisma'],
-  ['攻撃', 'Attack'], ['ダメージ', 'Damage'], ['クリティカルヒット', 'Critical'], ['標準アクション', 'Standard_Actions'],
-  ['火炎ダメージ', 'Energy_Damage'], ['冷気ダメージ', 'Energy_Damage'], ['酸ダメージ', 'Energy_Damage'], ['電気ダメージ', 'Energy_Damage'],
-  ['音波ダメージ', 'Energy_Damage'], ['攻撃ボーナス', 'BAB'], ['Dice', 'ダイス'], ['脅威範囲', 'Threatened_Area'], ['脅威', 'Threatened_Area'],
-  ['機会攻撃', 'Attack_Of_Opportunity'], ['術者レベル', 'Caster_Level'], ['遠隔攻撃', 'RangedAttack'], ['迅速アクション', 'Swift_Action'], ['スキル', 'Skills'],
-  ['特技', 'Feat'], ['ヘイスト', 'SpellsHaste']];
+  // 危険
+  // const checkGs = [['DR', 'Damage_Reduction'], ['AC', 'Armor_Class'], ['DC', 'DC'], ['セーヴィングスロー', 'Saving_Throw'], ['攻撃ロール', 'Attack'], ['ダメージロール', 'Damage'], ['ペナルティ', 'Penalty'],
+  // ['ボーナス', 'Bonus'], ['呪文', 'Spell'], ['ラウンド', 'Combat_Round'], ['セーヴ', 'Saving_Throw'],
+  // ['筋力', 'Strength'], ['耐久力', 'Constitution'], ['知力', 'Intelligence'], ['敏捷力', 'Dexterity'], ['判断力', 'Wisdom'], ['魅力', 'Charisma'],
+  // ['攻撃', 'Attack'], ['ダメージ', 'Damage'], ['クリティカルヒット', 'Critical'], ['標準アクション', 'Standard_Actions'],
+  // ['火炎ダメージ', 'Energy_Damage'], ['冷気ダメージ', 'Energy_Damage'], ['酸ダメージ', 'Energy_Damage'], ['電気ダメージ', 'Energy_Damage'],
+  // ['音波ダメージ', 'Energy_Damage'], ['攻撃ボーナス', 'BAB'], ['Dice', 'ダイス'], ['脅威範囲', 'Threatened_Area'], ['脅威', 'Threatened_Area'],
+  // ['機会攻撃', 'Attack_Of_Opportunity'], ['術者レベル', 'Caster_Level'], ['遠隔攻撃', 'RangedAttack'], ['迅速アクション', 'Swift_Action'], ['スキル', 'Skills'],
+  // ['特技', 'Feat'], ['ヘイスト', 'SpellsHaste']];
 
-  checkGs.forEach(cg => {
-    if (v.includes(`{g|Encyclopedia:${cg[1]}}`) && !ja[k].includes(`{g|Encyclopedia:${cg[1]}}`)) {
-      // console.log(cg, v, ja[k]);
-      ja[k] = ja[k].replace(cg[0], `{g|Encyclopedia:${cg[1]}}${cg[0]}{/g}`);
-    }
-  });
-  if (v.includes(`{g|Encyclopedia:Dice}`) && !ja[k].includes(`{g|Encyclopedia:Dice}`)) {
-    ja[k] = ja[k].replace(/[0-9]+?d[0-9]+?/, `{g|Encyclopedia:Dice}$1{/g}`);
-  }
+  // checkGs.forEach(cg => {
+  //   if (v.includes(`{g|Encyclopedia:${cg[1]}}`) && !ja[k].includes(`{g|Encyclopedia:${cg[1]}}`)) {
+  //     // console.log(cg, v, ja[k]);
+  //     ja[k] = ja[k].replace(cg[0], `{g|Encyclopedia:${cg[1]}}${cg[0]}{/g}`);
+  //   }
+  // });
+  // if (v.includes(`{g|Encyclopedia:Dice}`) && !ja[k].includes(`{g|Encyclopedia:Dice}`)) {
+  //   ja[k] = ja[k].replace(/[0-9](+?d)[0-9]+?/, `{g|Encyclopedia:Dice}$1{/g}`);
+  // }
 
-  if (orgCtrls && ctrls && (orgCtrls.length / 1.5) > ctrls.length) {
+  // if (v.includes(`{g|Encyclopedia:Dice}`) && ja[k].includes(`$1`)) {
+  //   const dice = v.match(/([0-9]+?d[0-9]+?)/);
+  //   console.log(counter++);
+  //   ja[k] = ja[k].replace('$1', dice[1]);
+  // }
+
+  if (orgCtrls && ctrls && (orgCtrls.length / 2) > ctrls.length) {
     console.log(`missing ctrls:  ${k} / [${v}] -> [${ja[k]}]`);
     console.log(orgCtrls, ctrls);
     // const fixData = await translate(v);
@@ -98,6 +106,12 @@ for (let i = 0; i < kv.length; i++) {
     // });
     // ja[k] = fixData;
     // console.log(ja[k], fixData);
+  }
+
+  if (!orgCtrls && ctrls) {
+    // console.log(ctrls);
+    // ja[k] = ja[k].replace(/\{g.+?\}/, '').replace(/\{\/g\}/, '');
+    console.log(`too amount ctrls:  ${k} / [${v}] -> [${ja[k]}]`);
   }
 
 
@@ -149,31 +163,31 @@ for (let i = 0; i < kv.length; i++) {
   //   console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
   // }
 
-  if (ja[k].includes('{g|Encyclopedia:Strength}')) {
-    // const kins = ja[k].match(/\{g\|Encyclopedia:Strength\}.+?\{\/g\}/g);
-    const jjj = ja[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
-    const org = v.match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
-    // const bk = jaBk[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
-    if (jjj?.length == org?.length) {
-      // console.log(jjj, bk);
-      // const getStr = v => {
-      //   return v.includes("Strength") ? '{g|Encyclopedia:Strength}筋力{/g}' :
-      //     v.includes("Constitution") ? '{g|Encyclopedia:Constitution}耐久力{/g}' :
-      //       v.includes("Dexterity") ? '{g|Encyclopedia:Dexterity}敏捷力{/g}' :
-      //         v.includes("Intelligence") ? '{g|Encyclopedia:Intelligence}知力{/g}' :
-      //           v.includes("Wisdom") ? '{g|Encyclopedia:Wisdom}判断力{/g}' :
-      //             v.includes("Charisma") ? '{g|Encyclopedia:Charisma}魅力{/g}' : console.error("aaa");
+  // if (ja[k].includes('{g|Encyclopedia:Strength}')) {
+  // const kins = ja[k].match(/\{g\|Encyclopedia:Strength\}.+?\{\/g\}/g);
+  // const jjj = ja[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
+  // const org = v.match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
+  // const bk = jaBk[k].match(/\{g\|Encyclopedia:(Strength|Constitution|Dexterity|Intelligence|Wisdom|Charisma).+?\/g\}/g);
+  // if (jjj?.length == org?.length) {
+  // console.log(jjj, bk);
+  // const getStr = v => {
+  //   return v.includes("Strength") ? '{g|Encyclopedia:Strength}筋力{/g}' :
+  //     v.includes("Constitution") ? '{g|Encyclopedia:Constitution}耐久力{/g}' :
+  //       v.includes("Dexterity") ? '{g|Encyclopedia:Dexterity}敏捷力{/g}' :
+  //         v.includes("Intelligence") ? '{g|Encyclopedia:Intelligence}知力{/g}' :
+  //           v.includes("Wisdom") ? '{g|Encyclopedia:Wisdom}判断力{/g}' :
+  //             v.includes("Charisma") ? '{g|Encyclopedia:Charisma}魅力{/g}' : console.error("aaa");
 
-      // };
-      // let n = 0;
-      // ja[k] = ja[k].replaceAll('{g|Encyclopedia:Strength}筋力{/g}', (m, p1, p2, p3, off, str) => {
-      //   console.log(bk[n]);
-      //   return getStr(bk[n++]);
-      // });
-    } else {
-      // console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
-    }
-  }
+  // };
+  // let n = 0;
+  // ja[k] = ja[k].replaceAll('{g|Encyclopedia:Strength}筋力{/g}', (m, p1, p2, p3, off, str) => {
+  //   console.log(bk[n]);
+  //   return getStr(bk[n++]);
+  // });
+  // } else {
+  // console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+  // }
+  // }
 
   // const kakkoN = ja[k].match(/「/g);
   // if (kakkoN && kakkoN.length > 1) {
@@ -201,12 +215,12 @@ for (let i = 0; i < kv.length; i++) {
   //   ja[k] = ja[k].replace(/"([\s\S]+?)"/g, "「$1」");
   // }
 
-  // ja[k] = ja[k].replace(/:Strength\}.+?\{/g, ":Strength}筋力{");
-  // ja[k] = ja[k].replace(/:Intelligence\}.+?\{/g, ":Intelligence}知力{");
-  // ja[k] = ja[k].replace(/:Wisdom\}.+?\{/g, ":Wisdom}判断力{");
-  // ja[k] = ja[k].replace(/:Dexterity\}.+?\{/g, ":Strength}敏捷力{");
-  // ja[k] = ja[k].replace(/:Constitution\}.+?\{/g, ":Strength}耐久力{");
-  // ja[k] = ja[k].replace(/:Charisma\}.+?\{/g, ":Strength}魅力{");
+  // ja[k] = ja[k].replace(/\:Strength\}.+?\{/g, ":Strength}筋力{");
+  // ja[k] = ja[k].replace(/\:Intelligence\}.+?\{/g, ":Intelligence}知力{");
+  // ja[k] = ja[k].replace(/\:Wisdom\}.+?\{/g, ":Wisdom}判断力{");
+  // ja[k] = ja[k].replace(/\:Dexterity\}.+?\{/g, ":Dexterity}敏捷力{");
+  // ja[k] = ja[k].replace(/\:Constitution\}.+?\{/g, ":Constitution}耐久力{");
+  // ja[k] = ja[k].replace(/\:Charisma\}.+?\{/g, ":Charisma}魅力{");
 
   // if (!ja[k].includes('「')) {
   //   ja[k] = ja[k].replace(/ストレングス/g, "筋力");
