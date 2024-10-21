@@ -119,6 +119,10 @@ for (let i = 0; i < kv.length; i++) {
     }
   }
 
+  if ((v.includes('evocation') || v.includes('Evocation')) && ja[k].includes('召喚')) {
+    console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+  }
+
   // const kakkoN = ja[k].match(/「/g);
   // if (kakkoN && kakkoN.length > 1) {
   //   let buff = '', hiraki = 0;
@@ -188,15 +192,11 @@ for (let i = 0; i < kv.length; i++) {
 
 // console.log(Object.entries(wordGrp).sort((a, b) => b[1] - a[1]));
 
-// const outputTemplate = {
-//   "$id": "1",
-//   "strings": {
-//   }
-// };
-// outputTemplate.strings = ja;
+const outputTemplate = {
+  "$id": "1",
+  "strings": {
+  }
+};
+outputTemplate.strings = ja;
 
-// fs.writeFileSync('./lang/zhCN_rep.json', JSON.stringify(outputTemplate, null, 2));
-
-
-// fs.writeFileSync('./lang/rep.json', JSON.stringify(reps, null, 2));
-
+fs.writeFileSync('./lang/zhCN_rep.json', JSON.stringify(outputTemplate, null, 2));
