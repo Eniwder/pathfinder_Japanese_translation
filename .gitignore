@@ -3,8 +3,8 @@
 
 .env
 /lang/enGB.json
-/lang/znCN_another.json
-/lang/znCN_rep.json
+/lang/zhCN_another.json
+/lang/zhCN_rep.json
 /lang/rep.json
 /batchout
 /splitLang
