@@ -143,6 +143,7 @@ for (let i = 0; i < kv.length; i++) {
   //   ja[k] = ja[k].replace(/カリスマ/g, "魅力");
   // }
 
+  // ja[k] = ja[k].replace(/"\{mf\|[hH]e\|[sS]he\}"/g, "{mf|彼|彼女}");
   // ja[k] = ja[k].replace(/"\{mf\|[hH]is\|[hH]er\}"/g, "{mf|彼の|彼女の}");
   // ja[k] = ja[k].replace(/"\{mf\|[hH]im\|[hH]er\}"/g, "{mf|彼|彼女}");
   // ja[k] = ja[k].replace(/"\{mf\|[hH]imself\|[hH]erself\}"/g, "{mf|彼自身|彼女自身}");
