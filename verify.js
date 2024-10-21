@@ -51,11 +51,11 @@ for (let i = 0; i < kv.length; i++) {
   // if (ja[k].includes('申し訳ありませんが、その')) console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
 
   if (v.includes('[') && !ja[k].includes('[')) console.log(`missing []:  ${k} / [${v}] -> [${ja[k]}]`);
-  if (ja[k].includes('\"')) console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
+  // if (ja[k].includes('\"')) console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
   if (!v.includes('\n\n') && ja[k].includes('\n\n')) console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
   const ctrls = ja[k].match(/\{[gd]\|.+?\}/g);
+  const orgCtrls = v.match(/\{[gd]\|.+?\}/g);
   if (ctrls) {
-    const orgCtrls = v.match(/\{[gd]\|.+?\}/g);
     ctrls.forEach((ctrl, idx) => {
       if (ctrl.match(/[^_a-zA-Z0-9:\-\\\|\{\}\/' ]/)) {
         console.log(`ctrl failed:  ${k} / [${v}] -> [${ja[k]}]`);
@@ -66,6 +66,24 @@ for (let i = 0; i < kv.length; i++) {
       }
     });
   }
+
+  if (v.includes('{g|Encyclopedia:Attack}') && !ja[k].includes('{g|Encyclopedia:Attack}')) {
+    ja[k] = ja[k].replace('攻撃ロール', '{g|Encyclopedia:Attack}攻撃ロール{/g}');
+  }
+  // if (orgCtrls && ctrls && (orgCtrls.length / 2) > ctrls.length) {
+  //   if (v.includes('{g|Encyclopedia:Attack}') && !ja[k].includes('{g|Encyclopedia:Attack}')) {
+  //     ja[k] = ja[k].replace('攻撃ロール', '{g|Encyclopedia:Attack}攻撃ロール{/g}');
+  //   }
+  //   console.log(`missing ctrls:  ${k} / [${v}] -> [${ja[k]}]`);
+  // }
+
+  const hirakiG = ja[k].match(/\{g/g);
+  const toziG = ja[k].match(/\/g\}/g);
+  if ((hirakiG && !toziG) || (toziG && !hirakiG) || (hirakiG?.length != toziG?.length)) {
+    console.log(hirakiG?.length, toziG?.length);
+    console.log(`missing { or }:  ${k} / [${v}] -> [${ja[k]}]`);
+  }
+
   const mfsOrg = v.match(/\{mf|.+?\}/g);
   const mfsJa = v.match(/\{mf|.+?\}/g);
   if (mfsOrg && mfsJa && mfsOrg.length < mfsJa.length) {

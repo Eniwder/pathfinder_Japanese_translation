@@ -4,8 +4,11 @@
 .env
 /lang/enGB.json
 /lang/znCN_another.json
+/lang/znCN_rep.json
+/lang/rep.json
 /batchout
 /splitLang
 /pathfinder_jp
+
 pathfinder_jp.zip
 dist.zip
