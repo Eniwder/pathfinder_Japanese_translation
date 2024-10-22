@@ -132,6 +132,15 @@ for (let i = 0; i < kv.length; i++) {
   if (mfsOrg && mfsJa && mfsOrg.length < mfsJa.length) {
     console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
   }
+
+
+  const diceOrg = v.match(/[0-9]+?d[0-9]+?/);
+  const diceJa = ja[k].match(/[0-9]+?d[0-9]+?/);
+  if (diceOrg && (!diceJa || diceOrg.length > diceJa.length)) {
+    console.log(`missing dice:  ${k} / [${v}] -> [${ja[k]}]`);
+  }
+
+
   // const kaiwaOrg = v.match(/"/g); // 'も会話として使われるが、アポストロフィも検知するので一旦無視
   // const kaiwaJp = ja[k].match(/「|」/g);
   // if (kaiwaOrg && (!kaiwaJp || kaiwaOrg.length != kaiwaJp.length)) {
@@ -162,16 +171,12 @@ for (let i = 0; i < kv.length; i++) {
     }
   }
 
-  const diceOrg = v.match(/[0-9]+?d[0-9]+?/);
-  const diceJa = ja[k].match(/[0-9]+?d[0-9]+?/);
-  if (diceOrg && (!diceJa || diceOrg.length > diceJa.length)) {
-    console.log(`missing dice:  ${k} / [${v}] -> [${ja[k]}]`);
-  }
+  ja[k] = ja[k].replace(/: */g, '：');
 
-  const katakana = ja[k].match(/([ァ-ヴー])+/g);
-  const katakanaDot = ja[k].match(/([ァ-ヴー]+・[ァ-ヴー]+)/g);
-  if (katakana) katakana.forEach(_ => katakanas[_] ? katakanas[_].push(k) : katakanas[_] = [k]);
-  if (katakanaDot) katakanaDot.forEach(_ => katakanasDots[_] ? katakanasDots[_].push(k) : katakanasDots[_] = [k]);
+  // const katakana = ja[k].match(/([ァ-ヴー])+/g);
+  // const katakanaDot = ja[k].match(/([ァ-ヴー]+(・[ァ-ヴー]+)+)/g);
+  // if (katakana) katakana.forEach(_ => katakanas[_] ? katakanas[_].push(k) : katakanas[_] = [k]);
+  // if (katakanaDot) katakanaDot.forEach(_ => katakanasDots[_] ? katakanasDots[_].push(k) : katakanasDots[_] = [k]);
 
 
   // if ((v.includes('evocation') || v.includes('Evocation')) && ja[k].includes('召喚')) {
@@ -279,15 +284,15 @@ for (let i = 0; i < kv.length; i++) {
 // console.log(katakanas);
 // console.log(katakanasDots);
 
-Object.entries(katakanasDots).forEach(kd => {
-  const noDot = kd[0].replace(/・/g, '');
-  if (katakanas[noDot]) {
-    kd[1].forEach(key => {
-      console.log(kd[0], key);
-      ja[key] = ja[key].replaceAll(kd[0], noDot);
-    });
-  }
-});
+// Object.entries(katakanasDots).forEach(kd => {
+//   const noDot = kd[0].replace(/・/g, '');
+//   if (katakanas[noDot]) {
+//     kd[1].forEach(key => {
+//       console.log(kd[0], key);
+//       ja[key] = ja[key].replaceAll(kd[0], noDot);
+//     });
+//   }
+// });
 
 const outputTemplate = {
   "$id": "1",
