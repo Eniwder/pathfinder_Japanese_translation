@@ -37,6 +37,9 @@ const ja = JSON.parse(fs.readFileSync('./lang/zhCN.json', 'utf-8')).strings;
 // const jaOld = JSON.parse(fs.readFileSync('./lang/zhCN_another.json', 'utf-8')).strings;
 const wordGrp = {};
 const reps = [];
+const katakanas = {};
+const katakanasDots = {};
+
 let counter = 0;
 
 const kv = Object.entries(en);
@@ -62,7 +65,7 @@ for (let i = 0; i < kv.length; i++) {
       if (ctrl.match(/[^_a-zA-Z0-9:\-\\\|\{\}\/' ]/)) {
         console.log(`ctrl failed:  ${k} / [${v}] -> [${ja[k]}]`);
         if (orgCtrls) {
-          ja[k] = ja[k].replace(ctrl, orgCtrls[idx]);
+          // ja[k] = ja[k].replace(ctrl, orgCtrls[idx]);
         }
         console.log(ctrls);
       }
@@ -159,6 +162,18 @@ for (let i = 0; i < kv.length; i++) {
     }
   }
 
+  const diceOrg = v.match(/[0-9]+?d[0-9]+?/);
+  const diceJa = ja[k].match(/[0-9]+?d[0-9]+?/);
+  if (diceOrg && (!diceJa || diceOrg.length > diceJa.length)) {
+    console.log(`missing dice:  ${k} / [${v}] -> [${ja[k]}]`);
+  }
+
+  const katakana = ja[k].match(/([ァ-ヴー])+/g);
+  const katakanaDot = ja[k].match(/([ァ-ヴー]+・[ァ-ヴー]+)/g);
+  if (katakana) katakana.forEach(_ => katakanas[_] ? katakanas[_].push(k) : katakanas[_] = [k]);
+  if (katakanaDot) katakanaDot.forEach(_ => katakanasDots[_] ? katakanasDots[_].push(k) : katakanasDots[_] = [k]);
+
+
   // if ((v.includes('evocation') || v.includes('Evocation')) && ja[k].includes('召喚')) {
   //   console.log(`maybe failed:  ${k} / [${v}] -> [${ja[k]}]`);
   // }
@@ -231,6 +246,7 @@ for (let i = 0; i < kv.length; i++) {
   //   ja[k] = ja[k].replace(/カリスマ/g, "魅力");
   // }
 
+  //  危険？
   // ja[k] = ja[k].replace(/"\{mf\|[hH]e\|[sS]he\}"/g, "{mf|彼|彼女}");
   // ja[k] = ja[k].replace(/"\{mf\|[hH]is\|[hH]er\}"/g, "{mf|彼の|彼女の}");
   // ja[k] = ja[k].replace(/"\{mf\|[hH]im\|[hH]er\}"/g, "{mf|彼|彼女}");
@@ -259,6 +275,19 @@ for (let i = 0; i < kv.length; i++) {
 // console.log(Object.entries(wordGrp).sort((a, b) => b[1] - a[1]));
 // fs.writeFileSync('./lang/reps.json', JSON.stringify(reps, null, 2));
 
+
+// console.log(katakanas);
+// console.log(katakanasDots);
+
+Object.entries(katakanasDots).forEach(kd => {
+  const noDot = kd[0].replace(/・/g, '');
+  if (katakanas[noDot]) {
+    kd[1].forEach(key => {
+      console.log(kd[0], key);
+      ja[key] = ja[key].replaceAll(kd[0], noDot);
+    });
+  }
+});
 
 const outputTemplate = {
   "$id": "1",
