@@ -12,7 +12,7 @@ jobs:
       - name: Create zip file
         run: zip -r pathfinder_jp.zip pathfinder_jp
       - name: Upload assets
-      - uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "pathfinder_jp.zip"
           allowUpdates: true
