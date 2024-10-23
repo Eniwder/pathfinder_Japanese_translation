@@ -13,7 +13,7 @@ jobs:
         run: zip -r pathfinder_jp.zip pathfinder_jp
       - name: Upload assets
         id: upload-assets
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v1.14.0
         with:
           files: pathfinder_jp.zip
           tag_name: v1.0
