@@ -17,3 +17,4 @@ jobs:
         with:
           files: pathfinder_jp.zip
           tag_name: v1.0
+          overwrite: true
