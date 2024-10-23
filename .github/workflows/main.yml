@@ -8,9 +8,9 @@ jobs:
     name: Create Archive
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: Create zip file
-        run: zip -r pathfinder_jp
+        run: zip pathfinder_jp
       - name: Upload assets
         id: upload-assets
         uses: softprops/action-gh-release@v1
