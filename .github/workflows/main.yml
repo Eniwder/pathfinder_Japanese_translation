@@ -16,5 +16,5 @@ jobs:
         with:
           artifacts: "pathfinder_jp.zip"
           allowUpdates: true
-          tag_name: v1.0
+          tag: v1.0
           replacesArtifacts: true
