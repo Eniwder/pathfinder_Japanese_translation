@@ -14,8 +14,8 @@ jobs:
       - name: Upload assets
         id: upload-assets
       - uses: ncipollo/release-action@v1
-        with:
-          artifacts: "pathfinder_jp.zip"
-          allowUpdates: true
-          tag_name: v1.0
-          replacesArtifacts: true
+          with:
+            artifacts: "pathfinder_jp.zip"
+            allowUpdates: true
+            tag_name: v1.0
+            replacesArtifacts: true
