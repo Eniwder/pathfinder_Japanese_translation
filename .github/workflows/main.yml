@@ -1,0 +1,19 @@
+name: Create Archive
+on: 
+ push:
+  branches:
+  - main
+jobs:
+  build:
+    name: Create Archive
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create zip file
+        run: zip -r pathfinder_jp
+      - name: Upload assets
+        id: upload-assets
+        uses: softprops/action-gh-release@v1
+        with:
+          files: pathfinder_jp.zip
+          tag_name: v1.0
