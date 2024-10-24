@@ -1,0 +1,22 @@
+name: Create Archive
+on: 
+ push:
+  branches:
+  - main
+jobs:
+  build:
+    name: Create Archive
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create zip file
+        run: zip -r pathfinder_jp.zip pathfinder_jp
+      - name: Upload assets
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "pathfinder_jp.zip"
+          allowUpdates: true
+          tag: v1.0
+          replacesArtifacts: true
