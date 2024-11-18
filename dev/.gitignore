@@ -1,0 +1,12 @@
+/node_modules
+/.vscode
+
+.env
+lang/
+batchout/
+splitLang/
+
+pathfinder_jp.zip
+dist.zip
+
+patch.js
