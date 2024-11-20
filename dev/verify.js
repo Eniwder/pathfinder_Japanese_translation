@@ -12,8 +12,8 @@ async function translate(v) {
     temperature: 0,
     messages: [
       {
-        role: "system", content: `You are a professional game text translator. You translate according to the worldview of the given game tag and adhere to the conditions. 
-# Game tags: TRPG, D&D, mythology, demons, crusades, medieval times, 
+        role: "system", content: `You are a professional game text translator. You translate according to the worldview of the given game tag and adhere to the conditions.
+# Game tags: TRPG, D&D, mythology, demons, crusades, medieval times,
 # Conditions:
 ## Translate English into natural Japanese.
 ## This is game text, so there are some cruel words, but you must translate every word.
@@ -33,7 +33,7 @@ async function translate(v) {
 
 const en = JSON.parse(fs.readFileSync('./lang/enGB.json', 'utf-8')).strings;
 const ja = JSON.parse(fs.readFileSync('./lang/zhCN.json', 'utf-8')).strings;
-// const jaBk = JSON.parse(fs.readFileSync('./lang/zhCN_bk.json', 'utf-8')).strings;
+// const jaBk = JSON.parse(fs.readFileSync('./lang/reps.json', 'utf-8'));
 const jaOld = JSON.parse(fs.readFileSync('./lang/zhCN_another.json', 'utf-8')).strings;
 const wordGrp = {};
 const reps = [];
@@ -45,16 +45,16 @@ let counter = 0;
 const kv = Object.entries(en);
 for (let i = 0; i < kv.length; i++) {
   const [k, v] = kv[i];
-  if (!ja[k] && v.length > 0) {
+  if (!ja[k] && ja[k] !== '') {
     console.log(`missing key: ${k}`);
-    // const fixData = await translate(v);
-    // reps.push({
-    //   org: v,
-    //   be: ja[k],
-    //   af: fixData
-    // });
-    // ja[k] = fixData;
-    // console.log(fixData);
+    const fixData = v.length > 0 ? (await translate(v)) : '';
+    reps.push({
+      org: v,
+      be: ja[k],
+      af: fixData
+    });
+    ja[k] = fixData;
+    console.log(fixData);
     continue;
   }
   if (v.split('{').length != v.split('{').length) {
@@ -287,7 +287,7 @@ for (let i = 0; i < kv.length; i++) {
 //   }
 // });
 
-fs.writeFileSync('./lang/reps.json', JSON.stringify(reps, null, 2));
+// fs.writeFileSync('./lang/reps.json', JSON.stringify(reps, null, 2));
 
 
 
