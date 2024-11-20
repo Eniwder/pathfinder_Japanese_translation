@@ -155,10 +155,10 @@ for (let i = 0; i < kv.length; i++) {
 
 
   }
-  if (v.includes('Ciar') && !ja[k].includes('シアー')) {
-    console.log(`maybe no translated:  ${k} / [${v}] -> [${ja[k]}]`);
-    // ja[k] = ja[k].replace(/サル/g, 'スル');
-  }
+  // if (v.includes('Ciar') && !ja[k].includes('シアー')) {
+  //   console.log(`maybe no translated:  ${k} / [${v}] -> [${ja[k]}]`);
+  // ja[k] = ja[k].replace(/サル/g, 'スル');
+  // }
 
   // const dupe = ja[k].match(/\{g\|Encyclopedia\:Charisma\}/g);
   // if (dupe && dupe.length > 1) {
