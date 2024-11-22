@@ -57,14 +57,16 @@ jobs:
         env:
           DEC_KEY: ${{ secrets.DEC_KEY }}
         run: node dec.js
-
+      - name: Set timestamp
+        id: timestamp
+        run: echo "timestamp=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
       - name: Create zip file
         run: zip -r pathfinder_jp.zip pathfinder_jp
-
       - name: Upload assets
         uses: ncipollo/release-action@v1
         with:
           artifacts: "pathfinder_jp.zip"
           allowUpdates: true
           tag: v1.0
+          name: ${{ env.timestamp }}
           replacesArtifacts: true
