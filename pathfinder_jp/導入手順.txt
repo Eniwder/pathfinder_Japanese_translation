@@ -9,7 +9,8 @@
 
 ①日本語ファイルの設置////////////////////////////////////////////////
 この手順ファイルと同じフォルダにある「zhCN.json」を、以下のフォルダにある同名ファイルに手動で上書きします。
-[Pathfinder: Wrath of the Righteousのインストールフォルダ]/Wrath_Data/StreamingAssets/Localization
+[Steamのインストールフォルダ]/Steam/steamapps/common/Pathfinder Second Adventure/Wrath_Data/StreamingAssets/Localization
+※フォルダの構造が異なる場合は各自の環境に応じて適宜変更してください
 ※必要に応じて、元のzhCN.jsonはリネームなどによりバックアップを保存してください。
 
 この手順は以上で完了です。この時点で動作確認をオススメします。
@@ -42,8 +43,8 @@ UMMの基本的な使い方については、公式サイトや他のガイド�
 
 (4)フォントの置き換え(任意)
 この手順ファイルと同じフォルダにある「/fonts/medium/source_han_sans」を、以下のフォルダにある同名ファイルに手動で上書きします。
-[Pathfinder: Wrath of the Righteousのインストールフォルダ]/Mods/I18NFont4UnityGame-UMM
-(必要に応じて、元からあるsource_han_sansはリネームしておくなどしてバックアップを取得しておいてください。)
+[Steamのインストールフォルダ]/Steam/steamapps/common/Pathfinder Second Adventure/Mods/I18NFont4UnityGame-UMM
+※必要に応じて、元からあるsource_han_sansはリネームしておくなどしてバックアップを取得しておいてください。
 
 違いが分かりにくいかもしれませんが、この作業により漢字の字形が変化して、日本人に馴染みのある形になります。
 細いフォントの方が好みの場合は、お好みで「/fonts/light/source_han_sans」をお使いください。
