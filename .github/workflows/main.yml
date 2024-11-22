@@ -59,7 +59,7 @@ jobs:
         run: node dec.js
       - name: Set timestamp
         id: timestamp
-        run: echo "timestamp=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+        run: echo "timestamp=$(TZ=Asia/Tokyo date +'%Y-%m-%d')" >> $GITHUB_ENV
       - name: Create zip file
         run: zip -r pathfinder_jp.zip pathfinder_jp
       - name: Upload assets
