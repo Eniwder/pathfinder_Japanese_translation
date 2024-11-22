@@ -69,4 +69,5 @@ jobs:
           allowUpdates: true
           tag: v1.0
           name: ${{ env.timestamp }}
+          body: 以下の「▼Assets」にある「pathfinder_jp.zip」からDLしてください。
           replacesArtifacts: true
