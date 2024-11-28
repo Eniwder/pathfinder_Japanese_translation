@@ -32,7 +32,7 @@
             <v-col cols="12">
               <v-textarea label="ゲーム内テキスト" v-model="textJp" class="lang-st" rows="8" readonly bg-color="#19191c"
                 color="#eee" no-resize persistent-placeholder
-                placeholder="補足：&#13;・プレイヤー名はNAMEとして表示されます(例: 右側にはあなた)&#13;・「・」は省略して検索可能です(例: シルバードラゴン)&#13;・制御コードを省略しているので、ゲーム内テキストと完全一致しない場合があります"></v-textarea>
+                placeholder="補足：&#13;・プレイヤー名はNAMEとして表示されます(例: 右側にはあなた)&#13;・「・」は省略して検索可能です&#13;・制御コードを省略しているので、ゲーム内テキストと完全一致しない場合があります"></v-textarea>
             </v-col>
           </v-row>
         </div>
