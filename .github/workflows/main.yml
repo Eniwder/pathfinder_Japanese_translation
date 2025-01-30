@@ -38,7 +38,7 @@ jobs:
         env:
           VITE_DEC_KEY: ${{ secrets.DEC_KEY }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: './dist'
