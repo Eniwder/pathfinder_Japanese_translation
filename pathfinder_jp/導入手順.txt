@@ -12,6 +12,7 @@
 [Steamのインストールフォルダ]/Steam/steamapps/common/Pathfinder Second Adventure/Wrath_Data/StreamingAssets/Localization
 ※フォルダの構造が異なる場合は各自の環境に応じて適宜変更してください
 ※必要に応じて、元のzhCN.jsonはリネームなどによりバックアップを保存してください。
+※「他のMODが中国語になって困る」などの場合は、「zhCN.json」ではなく「enGB.json」にリネームして、ゲーム内の言語設定を英語にしてください。
 
 この手順は以上で完了です。この時点で動作確認をオススメします。
 
