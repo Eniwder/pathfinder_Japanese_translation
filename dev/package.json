@@ -1,5 +1,10 @@
 {
   "type": "module",
+  "scripts": {
+    "dialogue-order": "node dialogueOrder.js",
+    "dialogue-order-reorder": "node dialogueOrder.js --reorder",
+    "batch": "node toBatchData.js"
+  },
   "dependencies": {
     "openai": "^4.68.1"
   }

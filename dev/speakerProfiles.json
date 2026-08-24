@@ -1,0 +1,26 @@
+{
+  "_default": {
+    "gender": "unknown",
+    "personality": "",
+    "speechStyle": "",
+    "notes": ""
+  },
+  "Player": {
+    "gender": "variable",
+    "personality": "player character; adapt to the original text",
+    "speechStyle": "natural Japanese dialogue; do not add honorifics unless indicated by context",
+    "notes": ""
+  },
+  "_narrator": {
+    "gender": "unknown",
+    "personality": "neutral observer",
+    "speechStyle": "clear, natural Japanese narration; descriptive rather than conversational",
+    "notes": "This text has no in-world speaker. Preserve the game-master or narrator perspective."
+  },
+  "_system": {
+    "gender": "none",
+    "personality": "system message",
+    "speechStyle": "concise, neutral Japanese system text",
+    "notes": "Do not make this sound like a character speaking."
+  }
+}

@@ -4,6 +4,18 @@ const Model = 'gpt-4o-mini';
 const SystemPrompt = `You are a professional game text translator. You translate according to the worldview of the given game tag and adhere to the conditions.   # Game tags: TRPG, D&D, mythology, demons, crusades, medieval times,   # Conditions:  ## Translate English into natural Japanese.  ## Translate non-conversational text as system messages.  ## Use katakana for proper nouns.  ## Do not translate anything enclosed in {}.  ## Do not translate  following: \t, \n.`;
 
 const strings = JSON.parse(fs.readFileSync('./lang/enGB.json', 'utf8')).strings;
+const graphPath = './dialogueGraph.json';
+const profilesPath = './speakerProfiles.json';
+const speakerProfiles = fs.existsSync(profilesPath)
+  ? JSON.parse(fs.readFileSync(profilesPath, 'utf8'))
+  : {};
+const dialogueContext = new Map();
+if (fs.existsSync(graphPath)) {
+  const graph = JSON.parse(fs.readFileSync(graphPath, 'utf8'));
+  for (const node of graph.nodes ?? []) {
+    if (node.textKey && !dialogueContext.has(node.textKey)) dialogueContext.set(node.textKey, node);
+  }
+}
 // {
 //   "$id": "1",
 //   "strings": {
@@ -23,6 +35,25 @@ let fileIdx = 0;
 
 for (let i = 0; i < keys.length; i++) {
   const text = strings[keys[i]];
+  const context = dialogueContext.get(keys[i]);
+  const profileKey = context?.speaker
+    ?? (context?.speakerType === 'player' ? 'Player' : `_${context?.speakerType}`);
+  const speakerProfile = context
+    ? speakerProfiles[profileKey] ?? speakerProfiles._default ?? null
+    : null;
+  const userContent = context
+    ? JSON.stringify({
+      task: 'Translate text only. Do not output JSON or commentary.',
+      dialog: context.dialog,
+      nodeType: context.type,
+      speaker: context.speaker,
+      speakerType: context.speakerType,
+      speakerProfile,
+      previous: context.previous,
+      text,
+      next: context.next,
+    })
+    : text;
   const prompt = {
     custom_id: -1,
     method: "POST",
@@ -36,7 +67,7 @@ for (let i = 0; i < keys.length; i++) {
     }
   };
   prompt.custom_id = keys[i];
-  prompt.body.messages.push({ "role": "user", "content": text });
+  prompt.body.messages.push({ "role": "user", "content": userContent });
   lines.push(prompt);
   if (((i + 1) % SplitNum) === 0) {
     const fileName = `batch_${fileIdx}.jsonl`;
