@@ -6,6 +6,8 @@ lang/
 batchout/
 splitLang/
 
+dialogueGraph.json
+
 pathfinder_jp.zip
 dist.zip
 

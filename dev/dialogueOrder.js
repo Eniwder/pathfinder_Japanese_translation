@@ -169,7 +169,7 @@ function nodeRecord(asset, kind, assets, strings) {
         ? 'player'
         : data.Speaker?.NoSpeaker
           ? 'system'
-          : 'narrator',
+          : 'unspecified',
     speakerId: speakerId ?? null,
     answers: kind === 'Cue' ? refs(data.Answers) : undefined,
     continue: kind === 'Cue' ? refs(data.Continue?.Cues) : undefined,
