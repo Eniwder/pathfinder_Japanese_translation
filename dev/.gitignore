@@ -6,6 +6,7 @@ lang/
 batchout/
 splitLang/
 test/batch/
+test/verify-report.json
 
 dialogueGraph.json
 

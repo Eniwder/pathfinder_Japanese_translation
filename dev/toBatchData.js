@@ -2,7 +2,15 @@ import fs from 'fs';
 import path from 'path';
 
 const Model = process.env.BATCH_MODEL ?? 'claude-3-5-haiku-20241022';
-const SystemPrompt = `You are a professional game text translator. You translate according to the worldview of the given game tag and adhere to the conditions.   # Game tags: TRPG, D&D, mythology, demons, crusades, medieval times,   # Conditions:  ## Translate English into natural Japanese.  ## Translate non-conversational text as system messages.  ## Use katakana for proper nouns.  ## Do not translate anything enclosed in {}.  ## Do not translate  following: \t, \n.`;
+const SystemPrompt = `You are a professional game text translator. Translate according to this worldview: TRPG, D&D, mythology, demons, crusades, medieval times.
+# Conditions:
+## Translate English into natural Japanese.
+## Translate non-conversational text as system messages.
+## Use katakana for proper nouns.
+## Control tags are represented by placeholders such as __CTRL_0__. Copy every placeholder exactly as provided, in the same position and order. Never translate, remove, or reorder placeholders.
+## The {mf|male text|female text} tag is special: it is a runtime gender switch for the protagonist. Preserve {mf|...|...} with exactly two alternatives, but translate the text inside both alternatives into natural Japanese. If possible, rewrite the surrounding sentence so it is gender-neutral and does not need an mf tag; do not leave awkward literal Japanese just to preserve an unnecessary gender distinction.
+## For protagonist gender-dependent wording, use the masculine alternative first and feminine alternative second, matching the original order.
+## Preserve tabs and newlines. Output only the translation, with no JSON or commentary.`;
 
 const options = parseOptions(process.argv.slice(2));
 const strings = JSON.parse(fs.readFileSync(options.input, 'utf8')).strings;
@@ -11,7 +19,34 @@ const profilesPath = options.profiles;
 const profileData = fs.existsSync(profilesPath)
   ? JSON.parse(fs.readFileSync(profilesPath, 'utf8'))
   : {};
-const speakerProfiles = { ...profileData, ...(profileData.characters ?? {}) };
+const speakerProfiles = {
+  _default: {
+    gender: 'unknown',
+    personality: 'unknown speaker',
+    speechStyle: 'Translate naturally from context without inventing a character voice.',
+    notes: 'Do not infer a named speaker when the blueprint does not identify one.',
+  },
+  _narrator: {
+    gender: 'none',
+    personality: 'neutral narrator',
+    speechStyle: 'Clear, natural Japanese narration; descriptive rather than conversational.',
+    notes: 'Use only for clearly narrated or flavor text.',
+  },
+  _system: {
+    gender: 'none',
+    personality: 'system message',
+    speechStyle: 'Concise, neutral Japanese system text.',
+    notes: 'Do not make this sound like a character speaking.',
+  },
+  _unspecified: {
+    gender: 'unknown',
+    personality: 'unattributed or mixed dialogue text',
+    speechStyle: 'Preserve the distinction between narration and quoted dialogue without inventing a speaker.',
+    notes: 'A null blueprint speaker may contain narration or unidentified dialogue.',
+  },
+  ...profileData,
+  ...(profileData.characters ?? {}),
+};
 const dialogueContext = new Map();
 if (fs.existsSync(graphPath)) {
   const graph = JSON.parse(fs.readFileSync(graphPath, 'utf8'));
@@ -40,6 +75,7 @@ fs.mkdirSync(options.outputDir, { recursive: true });
 
 for (let i = 0; i < keys.length; i++) {
   const text = strings[keys[i]];
+  const protectedText = protectControlTags(text);
   const context = dialogueContext.get(keys[i]);
   const profileKey = getProfileKey(context);
   const speakerProfile = context
@@ -54,10 +90,15 @@ for (let i = 0; i < keys.length; i++) {
       speakerType: context.speakerType,
       speakerProfile,
       previous: context.previous,
-      text,
+      text: protectedText.text,
+      controlTags: protectedText.tags,
       next: context.next,
     })
-    : text;
+    : JSON.stringify({
+      task: 'Translate text only. Do not output JSON or commentary.',
+      text: protectedText.text,
+      controlTags: protectedText.tags,
+    });
   const prompt = {
     custom_id: -1,
     params: {
@@ -83,6 +124,16 @@ if (lines.length > 0) writeBatchFile(fileIdx, lines);
 function writeBatchFile(index, batchLines) {
   const fileName = `batch_${index}.jsonl`;
   fs.writeFileSync(`${options.outputDir}/${fileName}`, batchLines.map(line => JSON.stringify(line)).join('\n') + '\n');
+}
+
+function protectControlTags(text) {
+  const tags = [];
+  const protectedText = text.replace(/\{(?:g|d)\|[^}]*\}|\{\/(?:g|d)\}|\{n\}|\{\/n\}|\{br\}|\{name\}/g, tag => {
+    const token = `__CTRL_${tags.length}__`;
+    tags.push({ token, value: tag });
+    return token;
+  });
+  return { text: protectedText, tags };
 }
 
 function parseOptions(args) {

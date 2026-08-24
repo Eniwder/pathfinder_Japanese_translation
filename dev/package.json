@@ -4,7 +4,8 @@
     "dialogue-order": "node dialogueOrder.js",
     "dialogue-order-reorder": "node dialogueOrder.js --reorder",
     "batch": "node toBatchData.js",
-    "batch-test": "node toBatchData.js --limit=10 --output-dir=test/batch/splitLang --audit=test/batch/speakerAudit.json"
+    "batch-test": "node toBatchData.js --limit=10 --output-dir=test/batch/splitLang --audit=test/batch/speakerAudit.json",
+    "verify": "node verify.js --report=test/verify-report.json"
   },
   "dependencies": {
     "openai": "^4.68.1"
