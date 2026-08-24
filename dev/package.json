@@ -5,6 +5,7 @@
     "dialogue-order-reorder": "node dialogueOrder.js --reorder",
     "batch": "node toBatchData.js",
     "batch-test": "node toBatchData.js --limit=10 --output-dir=test/batch/splitLang --audit=test/batch/speakerAudit.json",
+    "batch-import": "node batch2Lang.js",
     "verify": "node verify.js --report=test/verify-report.json"
   },
   "dependencies": {
