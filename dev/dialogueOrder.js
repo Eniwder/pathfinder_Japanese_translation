@@ -21,7 +21,7 @@ const graph = buildGraph(assets, language.strings ?? {});
 fs.writeFileSync(graphFile, JSON.stringify(graph, null, 2) + '\n');
 
 if (options.reorder) {
-  reorderLanguageFile(languageFile, graph);
+  reorderLanguageFile(languageFile, options.orderedLanguage, graph);
 }
 
 console.log(`Parsed ${assets.size} blueprint assets.`);
@@ -35,6 +35,7 @@ function parseOptions(args) {
   const result = {
     blueprints: 'blueprints',
     lang: 'dev/lang/enGB.json',
+    orderedLanguage: 'dev/lang/enGB_ordered.json',
     output: 'dev/dialogueGraph.json',
     reorder: false,
     help: false,
@@ -46,6 +47,7 @@ function parseOptions(args) {
     else if (arg === '--help' || arg === '-h') result.help = true;
     else if (arg.startsWith('--blueprints=')) result.blueprints = arg.slice(13);
     else if (arg.startsWith('--lang=')) result.lang = arg.slice(7);
+    else if (arg.startsWith('--ordered-lang=')) result.orderedLanguage = arg.slice(15);
     else if (arg.startsWith('--output=')) result.output = arg.slice(9);
     else throw new Error(`Unknown option: ${arg}`);
   }
@@ -56,9 +58,10 @@ function printHelp() {
   console.log(`Usage: node dev/dialogueOrder.js [options]
 
 Options:
-  --reorder                 Rewrite enGB.json with dialogue keys first.
+  --reorder                 Write enGB_ordered.json with dialogue keys first.
   --blueprints=PATH         Blueprint directory (default: blueprints).
   --lang=PATH               Language JSON (default: dev/lang/enGB.json).
+  --ordered-lang=PATH       Ordered language output (default: dev/lang/enGB_ordered.json).
   --output=PATH             Intermediate graph (default: dev/dialogueGraph.json).
 `);
 }
@@ -192,7 +195,7 @@ function expandAnswerRefs(values, assets, seen = new Set()) {
   return result;
 }
 
-function reorderLanguageFile(file, graph) {
+function reorderLanguageFile(file, output, graph) {
   const language = JSON.parse(fs.readFileSync(file, 'utf8'));
   if (!language.strings || typeof language.strings !== 'object') {
     throw new Error(`${file} does not contain a strings object.`);
@@ -208,7 +211,7 @@ function reorderLanguageFile(file, graph) {
     .filter(key => Object.hasOwn(language.strings, key));
 
   language.strings = Object.fromEntries(orderedKeys.map(key => [key, language.strings[key]]));
-  fs.writeFileSync(file, JSON.stringify(language, null, 2) + '\n');
+  fs.writeFileSync(output, JSON.stringify(language, null, 2) + '\n');
 }
 
 function assetName(asset) {
