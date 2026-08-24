@@ -3,7 +3,8 @@
   "scripts": {
     "dialogue-order": "node dialogueOrder.js",
     "dialogue-order-reorder": "node dialogueOrder.js --reorder",
-    "batch": "node toBatchData.js"
+    "batch": "node toBatchData.js",
+    "batch-test": "node toBatchData.js --limit=10 --output-dir=test/batch/splitLang --audit=test/batch/speakerAudit.json"
   },
   "dependencies": {
     "openai": "^4.68.1"

@@ -5,6 +5,7 @@
 lang/
 batchout/
 splitLang/
+test/batch/
 
 dialogueGraph.json
 
