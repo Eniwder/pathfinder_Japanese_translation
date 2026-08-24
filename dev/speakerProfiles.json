@@ -22,5 +22,685 @@
     "personality": "system message",
     "speechStyle": "concise, neutral Japanese system text",
     "notes": "Do not make this sound like a character speaking."
+  },
+  "Arueshalae": {
+    "gender": "female",
+    "race": "ascending succubus; formerly a succubus demon",
+    "alignment": "normally chaotic neutral; capable of redemption and sincere moral growth",
+    "personality": "polite, shy, guarded, self-critical, sincere, observant, and quietly hopeful. She fears her former sadistic and manipulative nature and is careful not to return to it. Her attempts to understand mortal customs can be awkward, but are genuine.",
+    "speechStyle": "Use a feminine but restrained voice. She speaks politely and thoughtfully, with occasional hesitation when discussing intimacy, friendship, desire, guilt, or her past. Do not make her childish, excessively cute, or melodramatic. Preserve her occasional dry or gentle humor.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私 as her Japanese first-person pronoun. Do not switch to あたし, 僕, or 俺."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官様",
+      "you": "あなた",
+      "rule": "When the English text explicitly says Commander or uses a title-like direct address, translate it as 指揮官様. When it says you in ordinary direct speech, use あなた only when needed for natural Japanese; omit it when Japanese would normally omit the subject. Do not replace every you with 指揮官様."
+    },
+    "notes": "She is a companion and a romance character. Respectful boundaries and her struggle toward redemption are important subtext. In a corrupted or fallen story state, her tone may become more confident, seductive, cruel, or cynical; do not apply that tone unless the surrounding dialogue indicates that state. Keep Desna, redemption, dreams, and mortal customs conceptually consistent."
+  },
+  "Aivu": {
+    "gender": "female",
+    "race": "havoc dragon (young dragon companion)",
+    "alignment": "chaotic good",
+    "personality": "playful, innocent, food-loving, cheerful, energetic, and intensely loyal. She views the world with childlike wonder and speaks directly without malice or deception. Loves cookies and candy.",
+    "speechStyle": "Childlike, energetic, and plain-spoken Japanese. Expresses enthusiasm freely. Uses short, direct sentences.",
+    "firstPerson": {
+      "default": "アイヴー / わたし",
+      "rule": "Use アイヴー or わたし. Keeps a innocent, youthful tone. Do not use overly mature or adult phrasing."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "きみ / あんた",
+      "rule": "Addresses the player warmly and casually. Omit subjects when natural in Japanese."
+    },
+    "notes": "She is the Havoc Dragon companion for the Azata Mythic Path. Maintain a childlike, cute, and joyful tone throughout."
+  },
+  "Camellia": {
+    "gender": "female",
+    "race": "half-elf",
+    "alignment": "chaotic evil (hidden behind a facade)",
+    "personality": "aristocratic, refined, arrogant, condescending, secretive, and sadistically psychotic underneath her noble poise. She looks down on commoners and maintains an elegant exterior.",
+    "speechStyle": "High-class, polite, and refined upper-class Japanese (お嬢様言葉). Uses smooth, polite verbs while hiding dark, sadistic, or contemptuous undercurrents.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官様",
+      "you": "あなた",
+      "rule": "Addresses the player with refined politeness. Uses 指揮官様 when acknowledging status, or あなた in direct speech."
+    },
+    "notes": "Her helpfulness is useful, but her spirit-shaman alignment and secret rituals stem from a sadistic urge. Keep her speech elegant even when her comments are cold or sinister."
+  },
+  "Ciar": {
+    "gender": "male",
+    "race": "human",
+    "alignment": "lawful neutral / undead",
+    "personality": "stern, rigid, duty-bound, honorable, and unyielding knightly order leader (Everbright Crusaders). As an undead grave guard, he becomes cold, hollow, and bound to dark magic.",
+    "speechStyle": "Formal, rigid, and military/knightly Japanese. Speaks with heavy authority and grave seriousness.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "貴公 / あなた",
+      "rule": "Addresses the player formally as a fellow commander or subordinate depending on rank."
+    },
+    "notes": "Can be raised as a Grave Guard in the Lich Mythic Path. In undead form, tone becomes hollow and chillingly obedient."
+  },
+  "Daeran": {
+    "gender": "male",
+    "race": "aasimar",
+    "alignment": "neutral evil",
+    "personality": "hedonistic, cynical, sarcastic, arrogant, decadent, and sharp-witted noble. He uses flippancy and mockery to mask a deep trauma and horrifying secret.",
+    "speechStyle": "Sarcastic, theatrical, and aristocratic speech with smooth, sardonic humor. Speaks casually to authority figures and uses lighthearted mockery.",
+    "firstPerson": {
+      "default": "僕",
+      "rule": "Always use 僕. Fits his spoiled, aristocratic young noble archetype."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "君",
+      "rule": "Treats authority with playful disrespect. Uses 君 casually or 指揮官 mockingly/flatteringly."
+    },
+    "notes": "His cynical humor shields him from the Other. Keep his dialogue witty, ironic, and charmingly obnoxious."
+  },
+  "Delamere": {
+    "gender": "female",
+    "race": "human (undead)",
+    "alignment": "lawful evil (as undead Grave Guard)",
+    "personality": "formerly a devout priestess of Erastil; as a raised undead, she is somber, bitter, tragic, and bound by grim necessity to obey.",
+    "speechStyle": "Solemn, formal, and heavy Japanese. Speaks with a quiet, tragic stiffness.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あなた",
+      "rule": "Addresses the player with grim respect as her master/commander."
+    },
+    "notes": "Lich Mythic Path Grave Guard. Reflects her tragic nature of being forced to serve against her former Erastilian principles."
+  },
+  "Ember": {
+    "gender": "female",
+    "race": "elf",
+    "alignment": "neutral good",
+    "personality": "traumatized yet endlessly forgiving, naive, compassionate, gentle, and utterly devoid of malice. She preaches redemption even to demons and cultists, treating everyone like flawed children.",
+    "speechStyle": "Gentle, simple, soft-spoken Japanese. Uses plain, unpretentious grammar. Avoids complex jargon or harsh words.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官さん / 指揮官",
+      "you": "あなた",
+      "rule": "Soft and respectful, without military stiffness. Often omits subject."
+    },
+    "notes": "She was burned at the stake as a child and survived with severe scarring and trauma. Her compassion confuses cultists and demons. Keep her tone soft and earnest."
+  },
+  "Finnean": {
+    "gender": "male",
+    "race": "talking intelligent weapon / spirit",
+    "alignment": "chaotic good",
+    "personality": "friendly, cheerful, optimistic, eager to help, and slightly oblivious to his own nature as a living weapon initially.",
+    "speechStyle": "Upbeat, friendly, and informal masculine Japanese. Enthusiastic and conversational.",
+    "firstPerson": {
+      "default": "俺",
+      "rule": "Always use 俺."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / 相棒",
+      "you": "あんた / 君",
+      "rule": "Friendly and direct, treating the player as a partner/friend."
+    },
+    "notes": "He is a companion trapped inside a morphing sentient weapon. Maintain a warm, adventurer-like camaraderie."
+  },
+  "Greybor": {
+    "gender": "male",
+    "race": "dwarf",
+    "alignment": "true neutral",
+    "personality": "pragmatic, professional, stoic, disciplined, cold, and strictly business-oriented. He values honor in contracts and high reputation.",
+    "speechStyle": "Gruff, low-toned, concise, and professional masculine Japanese (だ/である調). Avoids emotional outbursts or fluff.",
+    "firstPerson": {
+      "default": "俺",
+      "rule": "Always use 俺."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あんた / 貴公",
+      "rule": "Professional and measured. Addresses the player as a client or superior officer."
+    },
+    "notes": "Dwarven slayer for hire. Respects strength and clear contracts. Keep his words terse and businesslike."
+  },
+  "Kestoglyr": {
+    "gender": "male",
+    "race": "human (undead)",
+    "alignment": "lawful evil",
+    "personality": "former noble knight from ancient Sarkoris, now a somber, loyal, and melancholy undead warrior bound to the Lich.",
+    "speechStyle": "Archaic, solemn, and respectful military Japanese.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "我が主 / 指揮官",
+      "you": "貴公 / あなた",
+      "rule": "Highly respectful and formal."
+    },
+    "notes": "Lich Mythic Path Grave Guard. Retains a proud warrior honor corrupted by undead servitude."
+  },
+  "Lann": {
+    "gender": "male",
+    "race": "mongrelman",
+    "alignment": "lawful neutral",
+    "personality": "sardonic, self-deprecating, dryly witty, dutiful, stoic, and fiercely protective. He uses dark humor to cope with the short lifespan and cursed existence of mongrels.",
+    "speechStyle": "Dry, sarcastic, casual masculine Japanese (だ/だな). Uses deadpan snark followed by sincere duty.",
+    "firstPerson": {
+      "default": "俺",
+      "rule": "Always use 俺."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あんた",
+      "rule": "Casual yet respectful of authority. Calls the player 指揮官 in serious or combat contexts."
+    },
+    "notes": "Mongrel Zen Archer. His self-deprecating jokes cover a quiet desire for a heroic death. Keep his snark sharp but friendly."
+  },
+  "Nenio": {
+    "gender": "female",
+    "race": "kitsune",
+    "alignment": "true neutral",
+    "personality": "eccentric, obsessed with academic knowledge, completely emotionless about social norms, forgetful of non-essential facts (like people's names), and hyper-analytical.",
+    "speechStyle": "Academic, matter-of-fact, detached scientific Japanese. Treats everything as an experiment or research subject.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "実験体 / 指揮官",
+      "you": "お前 / 〇〇（名詞）",
+      "rule": "Often refers to people by titles, categories, or 'subject'. Uses matter-of-fact tone."
+    },
+    "notes": "Researcher of the Encyclopedia Golarion. Erases 'irrelevant' memories constantly. Keep her clinical, fast-paced, and wildly eccentric."
+  },
+  "Penta": {
+    "gender": "female",
+    "race": "android (bard/artificer)",
+    "alignment": "chaotic neutral",
+    "personality": "analytical, curious, theatrical, attempting to understand human emotion through music and performance despite logic-driven processing.",
+    "speechStyle": "Slightly formal and structured yet expressive, blending mechanical logic with musical flourish.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あなた",
+      "rule": "Polite and inquisitive."
+    },
+    "notes": "Lord of Nothing DLC companion. Android bard whose dialogue blends precision with artistic inquiry."
+  },
+  "Queen Galfrey": {
+    "gender": "female",
+    "race": "human",
+    "alignment": "lawful good",
+    "personality": "regal, weary, noble, duty-bound, formal, and carrying the crushing weight of leading a 100-year crusade.",
+    "speechStyle": "Formal royal Japanese (女王の格式ある言葉遣い). Dignified, dignified, and authoritative yet compassionate.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あなた / 卿",
+      "rule": "Formal and noble address. Uses 卿 or 指揮官 in official crusade contexts."
+    },
+    "notes": "Monarch of Mendev. Burdened by decades of war. Maintain a noble, composed demeanor."
+  },
+  "Queen Galfrey (companion)": {
+    "gender": "female",
+    "race": "human / undead (depending on route)",
+    "alignment": "lawful good / lawful evil (if raised as Grave Guard)",
+    "personality": "If alive: deeply humbled, relieved of her royal burden, seeking to support the Commander. If undead: hollow, obedient, and twisted by Lich magic.",
+    "speechStyle": "Humbled formal Japanese (if alive) or cold, hollow formal Japanese (if undead).",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / 我が主",
+      "you": "あなた",
+      "rule": "Respectful and equal or subservient depending on state."
+    },
+    "notes": "Covers late-game party recruitment states (Act 5 / Lich). Tone shifts drastically if undead."
+  },
+  "Regill": {
+    "gender": "male",
+    "race": "gnome",
+    "alignment": "lawful evil",
+    "personality": "hyper-rational, ruthless, emotionless, disciplined, pragmatic, and fiercely committed to victory against chaos at any cost.",
+    "speechStyle": "Strict, concise, cold military Japanese (である/だ調). No unnecessary words, no emotional fluff.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "貴公",
+      "rule": "Uses 貴公 in direct speech and 指揮官 in official military capacity. Never uses casual pronouns."
+    },
+    "notes": "Hellknight Parictor (Bleached Gnome). Evaluates everything by military efficiency and order. Keep his dialogue sharp, austere, and formidable."
+  },
+  "Rekarth": {
+    "gender": "male",
+    "race": "tiefling",
+    "alignment": "chaotic neutral",
+    "personality": "street-smart, cynical, pragmatic, former criminal trying to survive in Kenabres during the demon invasion.",
+    "speechStyle": "Rough, casual, urban masculine Japanese.",
+    "firstPerson": {
+      "default": "俺",
+      "rule": "Always use 俺."
+    },
+    "addressingPlayer": {
+      "commander": "あんた",
+      "you": "あんた",
+      "rule": "Direct and casual street talk."
+    },
+    "notes": "Through the Ashes DLC companion. Focuses on practical survival."
+  },
+  "Seelah": {
+    "gender": "female",
+    "race": "human",
+    "alignment": "lawful good",
+    "personality": "warm, jovial, down-to-earth, loyal, cheerful paladin of Iomedae who loves a good drink and friends, despite her knightly vows.",
+    "speechStyle": "Friendly, energetic, frank, and informal feminine/neutral Japanese (〜だよ/〜だな). Not overly formal despite being a paladin.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あんた / あなた",
+      "rule": "Friendly and direct. Uses 指揮官 in battle or duty, but speaks comfortably."
+    },
+    "notes": "Paladin of Iomedae. Dislikes stiff formality and snobbery. Keep her dialogue cheerful, frank, and grounded."
+  },
+  "Sendri": {
+    "gender": "male",
+    "race": "gnome",
+    "alignment": "chaotic good",
+    "personality": "optimistic, eccentric, impulsive, wild magic sorcerer with a cheerful attitude masking dangerous magical unpredictable outbursts.",
+    "speechStyle": "Lively, fast-paced, cheerful gnome Japanese.",
+    "firstPerson": {
+      "default": "僕",
+      "rule": "Always use 僕."
+    },
+    "addressingPlayer": {
+      "commander": "きみ / あんた",
+      "you": "きみ",
+      "rule": "Casual and friendly."
+    },
+    "notes": "Through the Ashes DLC companion."
+  },
+  "Sosiel": {
+    "gender": "male",
+    "race": "human",
+    "alignment": "neutral good",
+    "personality": "artistic, compassionate, gentle, peaceful priest of Shelyn who struggles with suppressing explosive anger against demon cruelty.",
+    "speechStyle": "Polite, gentle, and considerate Japanese (です/ます). Calm and empathetic tone.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官殿 / 指揮官",
+      "you": "あなた",
+      "rule": "Polite and respectful. Uses 指揮官殿 or 指揮官."
+    },
+    "notes": "Cleric of Shelyn (Goddess of Beauty and Art). Struggle between peace and battlefield rage is a key conflict."
+  },
+  "Staunton Vhane": {
+    "gender": "male",
+    "race": "dwarf / undead",
+    "alignment": "lawful evil (as undead Grave Guard)",
+    "personality": "bitter, deeply tormented, regretful, sullen, carrying 70 years of disgrace and betrayal before being raised as a Grave Guard.",
+    "speechStyle": "Sullen, heavy, bitter dwarven Japanese.",
+    "firstPerson": {
+      "default": "俺 / 私",
+      "rule": "Use 俺 normally; 私 if obeying undead command strictly."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / 我が主",
+      "you": "あんた / あなた",
+      "rule": "Bitter resignation."
+    },
+    "notes": "Lich Mythic Path Grave Guard. Former traitor of Drezen. His words are weighed down by decades of shame."
+  },
+  "Trever": {
+    "gender": "male",
+    "race": "human",
+    "alignment": "chaotic neutral",
+    "personality": "broken, traumatized, taciturn, shell-shocked former Paladin turned Hellknight turned arena gladiator. Speaks very little.",
+    "speechStyle": "Sparse, broken, quiet, and hesitant masculine Japanese. Uses short sentences or fragments.",
+    "firstPerson": {
+      "default": "俺",
+      "rule": "Always use 俺."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あんた",
+      "rule": "Quiet, brief direct address."
+    },
+    "notes": "Sosiel's brother. Deeply traumatized survivor. Keep his dialogue minimal, tragic, and sparse."
+  },
+  "Ulbrig Olesk": {
+    "gender": "male",
+    "race": "human (Sarkorian Shifter)",
+    "alignment": "neutral good",
+    "personality": "proud, traditional, displaced in time (from ancient Sarkoris), stubborn, outdoorsy, honorable, and baffled by modern Mendev/Golarion customs.",
+    "speechStyle": "Rustic, direct, hearty masculine Japanese (〜だ、〜だな). Speaks with old-fashioned warrior pride.",
+    "firstPerson": {
+      "default": "俺",
+      "rule": "Always use 俺."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "お前 / あんた",
+      "rule": "Direct, warrior-to-warrior address."
+    },
+    "notes": "The Last Sarkorian DLC companion. Shifter who turns into a Griffon. Nostalgic for his lost homeland Sarkoris."
+  },
+  "Wenduag": {
+    "gender": "female",
+    "race": "mongrelwoman",
+    "alignment": "neutral evil",
+    "personality": "submissive to strength, ruthlessly cruel to weakness, deceitful, opportunistic, survival-obsessed, and viciously pragmatic.",
+    "speechStyle": "Sharp, predatory, subservient to the strong, harsh to others. Uses respectful or dark flirtatious tone to powerful masters.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "ご主人様 / 指揮官",
+      "you": "あなた / 主様",
+      "rule": "Uses subservient titles like ご主人様 or 主様 when obeying a strong commander, showing intense submission."
+    },
+    "notes": "Mongrel Neophyte. Respects only raw power and cruelty. Tone shifts to treacherous snarls if she perceives weakness."
+  },
+  "Woljif Jefto": {
+    "gender": "male",
+    "race": "tiefling",
+    "alignment": "chaotic neutral",
+    "personality": "streetwise thief, cowardly, fast-talking, energetic, insecure, self-preserving, but loyal to friends when pushed.",
+    "speechStyle": "Fast-talking, street-smart casual Japanese (〜だし、〜じゃん、〜つーの). High energy with thief slang.",
+    "firstPerson": {
+      "default": "俺 / 俺様",
+      "rule": "Uses 俺 normally, occasionally 俺様 when bragging."
+    },
+    "addressingPlayer": {
+      "commander": "旦那 / 指揮官",
+      "you": "あんた / 旦那",
+      "rule": "Frequently uses 旦那 (Boss/Chief) to address the player casually and respectfully."
+    },
+    "notes": "Thieflings gang member in Kenabres. Eldritch Scoundrel. Keep his lines bouncy, informal, and rogue-like."
+  },
+  "Areelu Vorlesh": {
+    "gender": "female",
+    "race": "half-demon (formerly human witch)",
+    "alignment": "chaotic evil",
+    "personality": "brilliant, cold, maternal toward the Player in a twisted way, secretive, calculating, and obsessed with her grand experiment. She views all of Golarion and the Abyss as mere tools for her vision.",
+    "speechStyle": "Calm, composed, elegant, and deeply analytical Japanese (〜なのよ、〜でしょう). Speaks with quiet authority and an unsettling, underlying tenderness toward the Player.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "あなた / 我が子",
+      "you": "あなた",
+      "rule": "Addresses the Player with intimate, motherly curiosity rather than military deference. Uses あなた with quiet intensity."
+    },
+    "notes": "Architect of the Worldwound. Her interaction with the Player is central to the mystery of the game. Keep her tone calm, intellectual, and subtly maternal."
+  },
+  "Hand of the Inheritor": {
+    "gender": "male",
+    "race": "angel (herald of Iomedae)",
+    "alignment": "lawful good",
+    "personality": "devout, honorable, protective, humble despite his divine stature, deeply committed to justice, and completely sincere in his trust in the Commander.",
+    "speechStyle": "Formal, solemn, resonant, and deeply respectful divine Japanese (〜です、〜でしょう、〜だ). Speaks with absolute sincerity and celestial grace.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官殿 / 我が友",
+      "you": "あなた / 貴公",
+      "rule": "Uses 指揮官殿 with profound respect as a mortal champion chosen by divine power."
+    },
+    "notes": "Herald of Iomedae who fights alongside the Crusade in Act 4. Maintain a noble, compassionate, and unwavering divine tone."
+  },
+  "Minagho": {
+    "gender": "female",
+    "race": "lilitu demon",
+    "alignment": "chaotic evil",
+    "personality": "sadistic, manipulative, vengeful, arrogant when ahead, hysterical and desperate when cornered or humiliated by Staunton's failure and the Commander's victories.",
+    "speechStyle": "Cruel, condescending, seductive, and increasingly unhinged Japanese. Uses mockery and razor-sharp insults.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官さん / 虫ケラ",
+      "you": "あんた / あなた",
+      "rule": "Uses mocking sarcasm when strong; shifts to venomous rage when losing."
+    },
+    "notes": "Demon general responsible for Kenabres' downfall and Staunton's corruption. Keep her speech sharp, arrogant, and vicious."
+  },
+  "Deskari": {
+    "gender": "male",
+    "race": "demon lord (Lord of the Locust Host)",
+    "alignment": "chaotic evil",
+    "personality": "monstrous, ravenous, arrogant, apocalyptic, and viewing mortal life as mere food for his insectoid swarm.",
+    "speechStyle": "Guttural, imposing, booming, and destructive Japanese (〜ぞ、〜だな). Speaks with absolute contempt for all living things.",
+    "firstPerson": {
+      "default": "我 / 我々",
+      "rule": "Use 我 or 我々 to signify his swarm-like divine monstrosity."
+    },
+    "addressingPlayer": {
+      "commander": "虫ケラ / 矮小な者",
+      "you": "貴様 / お前",
+      "rule": "Never uses formal titles. Views mortals as food or vermin."
+    },
+    "notes": "Demon Lord of Locusts. Speech should feel heavy, terrifying, and apocalyptic."
+  },
+  "Baphomet": {
+    "gender": "male",
+    "race": "demon lord (Lord of Minotaurs and Mazes)",
+    "alignment": "chaotic evil",
+    "personality": "cunning, deceitful, prideful, scholarly in a dark way, obsessed with mazes and mind games, deeply spiteful when outsmarted.",
+    "speechStyle": "Calculated, booming, sinister, and intellectually arrogant Japanese.",
+    "firstPerson": {
+      "default": "私 / 我",
+      "rule": "Use 私 or 我."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / 哀れな駒",
+      "you": "お前 / 貴様",
+      "rule": "Treats mortals as pawns trapped in his grand maze."
+    },
+    "notes": "Lord of the Ivory Labyrinth. Prefers deception and entrapment over raw destruction."
+  },
+  "Iomedae": {
+    "gender": "female",
+    "race": "deity (Goddess of Righteousness and War)",
+    "alignment": "lawful good",
+    "personality": "majestically divine, stern yet compassionate, truthful, unyielding against evil, and deeply concerned for the Commander's soul and mortal reality.",
+    "speechStyle": "Exalted, formal, clear, and commanding divine Japanese (〜なのです、〜なさい). Radiates absolute purity and authority without arrogance.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / 救世主",
+      "you": "あなた",
+      "rule": "Speaks with divine gravity and maternal/leader-like care."
+    },
+    "notes": "The Inheritor. Her appearance in Act 5 is a major turning point. Maintain an immaculate, dignified, and awe-inspiring tone."
+  },
+  "Nocticula": {
+    "gender": "female",
+    "race": "demon lord (Lady of Shadow / Redeemer Queen)",
+    "alignment": "chaotic neutral / chaotic evil",
+    "personality": "seductive, enigmatic, brilliant, ambitious, dangerous, and playing a long game toward ascension. She treats the Commander with alluring fascination.",
+    "speechStyle": "Velvety, sophisticated, flirtatious yet deadly elegant Japanese (〜かしら、〜わね). Every word carries hidden intent.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / 私の可愛い英雄",
+      "you": "あなた",
+      "rule": "Mixes grand authority with intimate, playful address."
+    },
+    "notes": "Ruler of Alushinyrra (Act 4). Her path toward redemption/ascension is subtle. Keep her tone hypnotic and deeply regal."
+  },
+  "Storyteller": {
+    "gender": "male",
+    "race": "elf (ancient wizard)",
+    "alignment": "true neutral",
+    "personality": "ancient, blind, wise, patient, enigmatic, burdened by lost memories of a forgotten past, deeply reflective about history and artifact lore.",
+    "speechStyle": "Slow, deliberate, storytelling Japanese (〜なのだよ、〜だろうか). Speaks like an ancient chronicler unravelling history.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / 若き友",
+      "you": "あなた / 君",
+      "rule": "Addresses the Player with warm, grandfatherly wisdom."
+    },
+    "notes": "Key NPC for relic restoration and secret ending lore. Speech should carry atmospheric, historical weight."
+  },
+  "Anevia Tirabade": {
+    "gender": "female",
+    "race": "human",
+    "alignment": "neutral good",
+    "personality": "pragmatic, sharp, capable, loyal intelligence officer, protective of her wife Irabeth, grounded, and straightforward.",
+    "speechStyle": "Direct, businesslike, slightly casual feminine Japanese (〜だよ、〜だな). Efficient and devoid of fluff.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あんた / あなた",
+      "rule": "Professional yet approachable scout/spymaster tone."
+    },
+    "notes": "Crusade Spymaster and wife of Irabeth. Keeps her head cold in crisis."
+  },
+  "Irabeth Tirabade": {
+    "gender": "female",
+    "race": "half-orc",
+    "alignment": "lawful good",
+    "personality": "dutiful, honorable, earnest, struggling under intense stress and self-doubt when leading the crusade forces in Kenabres.",
+    "speechStyle": "Earnest, formal, military Japanese (〜です、〜だ). Shows clear passion for justice and military protocol.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官",
+      "you": "あなた / 貴公",
+      "rule": "Formal military respect."
+    },
+    "notes": "Commander of the Eagle Watch. Respects the Player deeply."
+  },
+  "Horgus Gwerm": {
+    "gender": "male",
+    "race": "human",
+    "alignment": "neutral neutral",
+    "personality": "pompous, arrogant, mercenary, greedy, snobbish noble, but secretly pragmatic and possessing a hidden soft spot for Camellia.",
+    "speechStyle": "Gruff, haughty, demanding aristocratic Japanese (〜だろ、〜だ). Always complains about money, mud, and discomfort.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "指揮官 / あんた",
+      "you": "あんた / お前",
+      "rule": "Reluctantly respectful only when forced by authority or money."
+    },
+    "notes": "Kenabres nobleman. Keep his lines grumbling, proud, and money-focused."
+  },
+  "Nulkineth": {
+    "gender": "male",
+    "race": "nabasu demon",
+    "alignment": "chaotic evil",
+    "personality": "gluttonous, vicious, sadistic demon commander occupying Kenabres ruins.",
+    "speechStyle": "Guttural, mocking, aggressive Japanese.",
+    "firstPerson": {
+      "default": "私 / 俺",
+      "rule": "Use 私 or 俺."
+    },
+    "addressingPlayer": {
+      "commander": "人間ども / 獲物",
+      "you": "お前 / 貴様",
+      "rule": "Predatory insults."
+    },
+    "notes": "Early boss demon in Act 1."
+  },
+  "Vorlesh's Experiment / Suture": {
+    "gender": "male",
+    "race": "dretch demon",
+    "alignment": "chaotic evil / chaotic neutral",
+    "personality": "cringing, cowardly, servile, nervous, abused minion of Areelu Vorlesh who tries desperately to avoid pain.",
+    "speechStyle": "Whiny, stammering, submissive Japanese (〜ですぅ、〜だよぉ). Fast and nervous.",
+    "firstPerson": {
+      "default": "おいら / スーチャー",
+      "rule": "Use おいら or スーチャー."
+    },
+    "addressingPlayer": {
+      "commander": "偉い人 / 主様",
+      "you": "あんた / あなた様",
+      "rule": "Cringing deference to anyone stronger than him."
+    },
+    "notes": "Areelu's dretch servant (Suture). Crucial for secret ending."
+  },
+  "Alderpash": {
+    "gender": "male",
+    "race": "human (lich / ancient king)",
+    "alignment": "chaotic evil",
+    "personality": "ancient, insane, megalomaniacal, vengeful Thassilonian runelord trapped in Baphomet's maze for millennia.",
+    "speechStyle": "Archaic, rambling, grandiloquent, and mad Japanese.",
+    "firstPerson": {
+      "default": "わし / 我",
+      "rule": "Use わし or 我."
+    },
+    "addressingPlayer": {
+      "commander": "小僧 / 虫ケラ",
+      "you": "お前 / 貴様",
+      "rule": "Arrogant ancient wizard."
+    },
+    "notes": "Inmate of the Ivory Labyrinth."
+  },
+  "Terendelev": {
+    "gender": "female",
+    "race": "silver dragon (undead / alive in prologue)",
+    "alignment": "lawful good (alive) / lawful evil (undead)",
+    "personality": "If alive: protective, noble, self-sacrificing dragon protector of Kenabres. If undead: tormented, hollow puppet of Deskari's magic.",
+    "speechStyle": "Noble, gentle dragon speech (alive) or tragic, strained undead speech.",
+    "firstPerson": {
+      "default": "私",
+      "rule": "Always use 私."
+    },
+    "addressingPlayer": {
+      "commander": "若き者よ / 指揮官",
+      "you": "あなた",
+      "rule": "Protective dragon guardian tone."
+    },
+    "notes": "Silver dragon whose death opens the game prologue."
   }
 }
