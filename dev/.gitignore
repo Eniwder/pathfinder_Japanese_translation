@@ -10,6 +10,7 @@ test/verify-report.json
 
 dialogueGraph.json
 speakerAudit*.json
+missingSpeaker*.json
 
 pathfinder_jp.zip
 dist.zip
