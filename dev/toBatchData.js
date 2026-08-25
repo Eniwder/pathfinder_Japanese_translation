@@ -21,6 +21,8 @@ const glossaryPath = options.glossary;
 const profileData = fs.existsSync(profilesPath)
   ? JSON.parse(fs.readFileSync(profilesPath, 'utf8'))
   : {};
+const characterProfiles = { ...(profileData.characters ?? {}) };
+delete characterProfiles.speakerAliases;
 const speakerProfiles = {
   _default: {
     gender: 'unknown',
@@ -53,9 +55,9 @@ const speakerProfiles = {
     notes: 'A null blueprint speaker may contain narration or unidentified dialogue.',
   },
   ...profileData,
-  ...(profileData.characters ?? {}),
+  ...characterProfiles,
 };
-const speakerAliases = profileData.speakerAliases ?? {};
+const speakerAliases = profileData.speakerAliases ?? profileData.characters?.speakerAliases ?? {};
 const glossaryData = fs.existsSync(glossaryPath)
   ? JSON.parse(fs.readFileSync(glossaryPath, 'utf8'))
   : {};

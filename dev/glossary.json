@@ -769,6 +769,266 @@
       "source": "Midnight Bolt",
       "target": "ミッドナイトボルト",
       "note": "Special crossbow bolt capable of wounding demon lords."
+    },
+    {
+      "source": "Wenduag",
+      "target": "ウェンデュアグ",
+      "note": "コンパニオン。モングレル（Mongrel）。強者生存主義・野心家。"
+    },
+    {
+      "source": "Daeran",
+      "target": "デエラン",
+      "note": "コンパニオン。アアシマール（Aasimar）の貴族。冷笑的・退廃的。"
+    },
+    {
+      "source": "Arueshalae",
+      "target": "アルエシャラエ",
+      "note": "コンパニオン。贖罪を求めるサキュバス。謙虚・自己嫌悪・希望。"
+    },
+    {
+      "source": "Nenio",
+      "target": "ネニオ",
+      "note": "コンパニオン。キツネの学者。極度の好奇心・無頓着・倫理観欠如。"
+    },
+    {
+      "source": "Camellia",
+      "target": "カメリア",
+      "note": "コンパニオン。ハーフエルフの令嬢。品位あるお嬢様口調（裏の顔あり）。"
+    },
+    {
+      "source": "Seelah",
+      "target": "シーラ",
+      "note": "コンパニオン。アイオーメディのパラディン。気さく・正義感・フランク。"
+    },
+    {
+      "source": "Greybor",
+      "target": "グレイボー",
+      "note": "コンパニオン。ドワーフの暗殺者/傭兵。プロ意識・冷静沈着。"
+    },
+    {
+      "source": "Terendelev (legacy)",
+      "target": "テレンデレヴ",
+      "note": "シルバー・ドラゴン。ケナブレスの守護者。"
+    },
+    {
+      "source": "Aivu",
+      "target": "アイヴ",
+      "note": "アザタパスの相棒。ハヴィック・ドラゴン。無邪気・甘党・天真爛漫。"
+    },
+    {
+      "source": "Woljif",
+      "target": "ウォルジフ",
+      "note": "コンパニオン。タイフレインの盗賊。軽薄・調子がいい・保身優先。"
+    },
+    {
+      "source": "Lann",
+      "target": "ラン",
+      "note": "コンパニオン。モーグウェグ（Mongrel）。皮肉屋・自己犠牲的・ユーモア。"
+    },
+    {
+      "source": "Ember",
+      "target": "エンバー",
+      "note": "コンパニオン。エルフの幼い魔女。無邪気・聖人・説得力。"
+    },
+    {
+      "source": "Sosiel",
+      "target": "ソシエル",
+      "note": "コンパニオン。シェリンの神官。温厚・芸術家・葛藤。"
+    },
+    {
+      "source": "Regill",
+      "target": "レギル",
+      "note": "コンパニオン。ヘルナイト（ゴッドクロウ修道会）のノーム。徹底した合理主義・規律重視。"
+    },
+    {
+      "source": "Staunton Vane",
+      "target": "スタントン・ヴェイン",
+      "note": "裏切り者のドワーフ。悲哀・後悔・執念。"
+    },
+    {
+      "source": "Areelu Vorlesh",
+      "target": "アーリィ＝ヴォルレシュ",
+      "note": "ワールドウンドを開いた魔女。冷徹・知性・母性（屈折）。"
+    },
+    {
+      "source": "Queen Galfrey",
+      "target": "ガルフリー女王",
+      "note": "メンデブの女王。気品・重責・崇高。"
+    },
+    {
+      "source": "Anevia Tirabade",
+      "target": "アネヴィア・ティラバード",
+      "note": "イーグルウォッチの諜報員。現実的・頼りになる。"
+    },
+    {
+      "source": "Irabeth Tirabade",
+      "target": "イラベス・ティラバード",
+      "note": "ハーフオークの聖騎士（イーグルウォッチ指揮官）。真面目・苦悩。"
+    },
+    {
+      "source": "Hand of the Inheritor",
+      "target": "継承者の手",
+      "note": "アイオーメディの使徒（エンジェル）。高潔・愚直。"
+    },
+    {
+      "source": "Storyteller",
+      "target": "ストーリーテラー",
+      "note": "古の知識を持つ盲目のエルフ。穏やか・深遠。"
+    },
+    {
+      "source": "Venture-Captain Hilor",
+      "target": "ハイラー隊長",
+      "note": "パスファインダー協会の隊長。ベテラン・事務的。"
+    },
+    {
+      "source": "Horgus Gwerm",
+      "target": "ホルガス・グウェーム",
+      "note": "ケナブレスの富豪。傲慢・自己中心（根は悪人ではない）。"
+    },
+    {
+      "source": "Terendelev",
+      "target": "テレンデレヴ",
+      "note": "ケナブレスを守護していたシルバー・ドラゴン。"
+    },
+    {
+      "source": "Yaniel",
+      "target": "ヤニエル",
+      "note": "伝説の聖騎士。"
+    },
+    {
+      "source": "Ulbrig Olesk",
+      "target": "ウルブリッグ・オレスク",
+      "note": "DLCコンパニオン。シフター。古代サーコリスの戦士。豪快・伝統主義。"
+    },
+    {
+      "source": "Rekarth",
+      "target": "レカース",
+      "note": "DLC「Through the Ashes」の同行者。元タイフレインの泥棒。苦労人。"
+    },
+    {
+      "source": "Sendri",
+      "target": "センドリ",
+      "note": "DLC「Through the Ashes」の同行者。ノームの術者。楽観的。"
+    },
+    {
+      "source": "Penta",
+      "target": "ペンタ",
+      "note": "DLC「The Lord of Nothing」の同行者。アンドロイド。倫理的・観察者。"
+    },
+    {
+      "source": "Kestoglyr",
+      "target": "ケケストグライア",
+      "note": "リッチパス専用コンパニオン。古のアンデッド騎士。忠実。"
+    },
+    {
+      "source": "Trever",
+      "target": "トレヴァー",
+      "note": "ソシエルの兄。元パラディン/元ヘルナイト。トラウマ。"
+    },
+    {
+      "source": "Staunton Vhane",
+      "target": "スタントン・ヴェイン",
+      "note": "表記揺れ用（Vane / Vhane）"
+    },
+    {
+      "source": "Ciar",
+      "target": "シーア",
+      "note": "リッチパス専用コンパニオン。Hellknight（ヘルナイト）。"
+    },
+    {
+      "source": "Delamere",
+      "target": "デラメア",
+      "note": "リッチパス専用コンパニオン。エルラストの元神官。"
+    },
+    {
+      "source": "Hulrun",
+      "target": "ハルラン",
+      "note": "ケナブレスの審問官。狂信的・猜疑心。"
+    },
+    {
+      "source": "Ramien",
+      "target": "ラミエン",
+      "note": "デスナの神官。温厚・平和主義。"
+    },
+    {
+      "source": "Chief Sull",
+      "target": "スル族長",
+      "note": "モングレルの族長。穏健派。"
+    },
+    {
+      "source": "Inquisitor Liotr",
+      "target": "リオトール審問官",
+      "note": "デエランを調査する審問官。冷静・観察眼。"
+    },
+    {
+      "source": "Zacharius",
+      "target": "ザカリウス",
+      "note": "リッチパスの師。冷酷・野心。"
+    },
+    {
+      "source": "Nurah",
+      "target": "ヌーラ",
+      "note": "ハーフリングの学者/裏切り者。執念深さ。"
+    },
+    {
+      "source": "Arsinoe",
+      "target": "アルシノエ",
+      "note": "アバダーの司祭。"
+    },
+    {
+      "source": "Jorun Vane",
+      "target": "ジョルン・ヴェイン",
+      "note": "スタントンの弟。鍛冶師。"
+    },
+    {
+      "source": "Fye",
+      "target": "ファイ",
+      "note": "ケナブレスの酒場主。"
+    },
+    {
+      "source": "Aranka",
+      "target": "アランカ",
+      "note": "デスナの吟遊詩人。"
+    },
+    {
+      "source": "Ileks",
+      "target": "イレクス",
+      "note": "デスナの信徒。"
+    },
+    {
+      "source": "Skeleton Trader",
+      "target": "スケルトンの商人",
+      "note": "怪しげな骨の商人。"
+    },
+    {
+      "source": "Dyra",
+      "target": "ディラ",
+      "note": "モングレルの商人。"
+    },
+    {
+      "source": "Morveg",
+      "target": "モーグウェグ",
+      "note": "モングレルの戦士。"
+    },
+    {
+      "source": "Berengar",
+      "target": "ベレンガー",
+      "note": "アイオーメディの信徒/戦士。"
+    },
+    {
+      "source": "Marhevok",
+      "target": "マーヘヴォク",
+      "note": "首長。"
+    },
+    {
+      "source": "Soana",
+      "target": "ソアナ",
+      "note": "ドルイド。"
+    },
+    {
+      "source": "Mongrel",
+      "target": "モングレル",
+      "note": "雑種と呼ばれる種族。"
     }
   ]
 }

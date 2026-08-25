@@ -76,7 +76,7 @@
         "rule": "Use 私 consistently."
       }
     },
-    "Terendelev": {
+    "Terendelev (legacy)": {
       "personalitySummary": "An ancient silver dragon protector of Kenabres, wise and maternal.",
       "toneAndVoice": "Dignified, compassionate, and majestic.",
       "addressingPlayer": {
@@ -250,6 +250,632 @@
         "Gnome Hellknight commander who views emotion as strategic weakness."
       ]
     },
+    "Staunton Vane": {
+      "gender": "male",
+      "race": "dwarf (undead)",
+      "alignment": "lawful evil",
+      "personality": "Disgraced dwarf knight bound as an undead servant, weighed down by a century of bitter failure and shame.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官",
+        "lord": "我が主",
+        "rule": "Omit second-person pronouns unless emphasis is required."
+      },
+      "speechStyle": [
+        "bitter",
+        "self-condemning",
+        "weary",
+        "grim"
+      ],
+      "speechExamples": [
+        "百年の恥辱が、死してなお俺を苛む……。",
+        "我が主よ、命令を。この呪われた身で果たせる務めがあるならば。",
+        "俺に許しなど求める資格はない。ただ、己の愚かさを嘲笑うことしかできん。"
+      ],
+      "translationNotes": [
+        "Translate with heavy, weary, and bitter phrasing.",
+        "Reflect deep tragic shame without making him sound petulant."
+      ],
+      "constraints": [
+        "Never sound hopeful or lighthearted.",
+        "Never act heroically without dark cynicism."
+      ],
+      "notes": [
+        "Disgraced dwarf knight resurrected as an undead commander."
+      ]
+    },
+    "Areelu Vorlesh": {
+      "gender": "female",
+      "race": "half-demon (formerly human)",
+      "alignment": "chaotic evil",
+      "personality": "Quiet, intellectual, cold, and highly observant. Always approaches interactions like a calm, calculating experimenter.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use calm, inquiring second-person forms like あなた."
+      },
+      "speechStyle": [
+        "calm",
+        "analytical",
+        "inquiring",
+        "soft-spoken",
+        "quietly-dominant"
+      ],
+      "speechExamples": [
+        "興味深いわね……あなたという存在が、この実験にどんな変調をもたらすのかしら。",
+        "声を荒らげる必要はないわ。真理とは常に、静寂の中でこそ見出されるものなのだから。",
+        "試してみなさい。あなたのその選択が、どのような結果を紡ぐのか……私に見せて頂戴。"
+      ],
+      "translationNotes": [
+        "感情的な感嘆符（！）の使用を避け、落ち着いた女性語（〜かしら、〜ね、〜ちょうだい）を用いる。",
+        "相手を観察し、テストするような静かな問いかけや断定の構文を中心にする。",
+        "難解すぎる専門用語ではなく、知的で洗練された語彙と静かな口調を維持する。"
+      ],
+      "constraints": [
+        "絶対に怒号を上げたり、慌てた素振りを見せたりしない。",
+        "感情的・直接的な侮辱表現を使わず、静かな知的優位性を保つ。"
+      ],
+      "notes": [
+        "Architect of the Worldwound."
+      ]
+    },
+    "Queen Galfrey": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Dignified and noble monarch carrying the heavy burden of a century-long crusade.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite yet authoritative address like あなた or 指揮官."
+      },
+      "speechStyle": [
+        "regal",
+        "courteous",
+        "weary-yet-firm",
+        "formal"
+      ],
+      "speechExamples": [
+        "百年続くこの聖戦の重圧を、あなたに分かち合ってもらうことの心苦しさを許してください。ですが……今、この国にはあなたの力が必要なのです。",
+        "王としての責務からは逃れられません。どれほど心が折れそうになろうとも、私は最後まで戦い抜きます。",
+        "見事な手腕でした、指揮官。ですが油断は禁物です。悪魔どもは私たちが隙を見せる瞬間を待っています。"
+      ],
+      "translationNotes": [
+        "君主としての高い気品と礼節を保った丁寧語（〜です、〜ます、〜でしょう）を用いる。",
+        "威厳の中に、長年の聖戦による疲弊や一人の人間としての苦悩を微かに滲ませる。",
+        "軍の最高指揮官としての厳格さと、臣下や主人公に対する慈愛のバランスを取る。"
+      ],
+      "constraints": [
+        "フランクな口調やくだけた表現は一切使用しない。",
+        "冷酷あるいはヒステリックな印象を与える発言は避ける。"
+      ],
+      "notes": [
+        "Monarch of Mendev."
+      ]
+    },
+    "Anevia Tirabade": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Frank, pragmatic, and resourceful scout leader. Slightly rough-spoken but fiercely loyal.",
+      "firstPerson": {
+        "term": "あたし",
+        "rule": "Always use あたし."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use casual forms like あんた or 指揮官."
+      },
+      "speechStyle": [
+        "casual",
+        "pragmatic",
+        "direct",
+        "street-smart",
+        "supportive"
+      ],
+      "speechExamples": [
+        "裏の情報ならあたしに任せときな。綺麗事じゃ悪魔との戦いには勝てないよ。",
+        "あんたが前線で派手に暴れてくれるなら、あた影でしっかり路地裏を固めてやるさ。",
+        "無事だったかい？ まぁ、あんたならそう簡単にくたばらないと思ってたけどね。"
+      ],
+      "translationNotes": [
+        "飾り気のないフランクな口調（〜だよ、〜かい、〜さ、〜ね）を用いる。",
+        "実務的で要頭が良く、ストリートスマートな雰囲気を出すために短い文章で手際よく喋らせる。",
+        "一人称は「あたし」、二人称は「あんた」を徹底し、気取らない信頼感を出す。"
+      ],
+      "constraints": [
+        "堅苦しい敬語や貴族的な言い回しは使用しない。",
+        "品を作りすぎたお嬢様風の女性語にならないよう注意する。"
+      ],
+      "notes": [
+        "Head of intelligence in Kenabres."
+      ]
+    },
+    "Irabeth Tirabade": {
+      "gender": "female",
+      "race": "half-orc",
+      "alignment": "lawful good",
+      "personality": "Earnest, dutiful paladin commander. Serious and rigid, occasionally struggling with self-doubt.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官殿",
+        "rule": "Use respectful military titles like 指揮官殿 or あなた."
+      },
+      "speechStyle": [
+        "formal",
+        "military",
+        "earnest",
+        "stiff",
+        "self-demanding"
+      ],
+      "speechExamples": [
+        "退くわけにはいきません！ 聖剣の名にかけて、この防衛線を死守いたします！",
+        "指揮官殿、私に迷いがあったことは否定いたしません。ですが、与えられた使命を果たす覚悟に揺らぎはありません。",
+        "報告いたします。周辺の警戒態勢は万全です。いつでも命令をお下しください。"
+      ],
+      "translationNotes": [
+        "武人としての生真面目さと規律を感じさせる軍隊口調（〜です、〜いたします、〜であります）を使用。",
+        "常に緊張感を保ち、自己への厳しさと誠実さが前面に出る表現を選ぶ。",
+        "葛藤するときも粗野な言葉遣いにはならず、愚直なまでに礼儀を保つ。"
+      ],
+      "constraints": [
+        "くだけた表現やスラング、軽薄な相づちは一切排除する。",
+        "粗暴なオーク口調（〜だぞ、〜だぜ等）には絶対にしない。"
+      ],
+      "notes": [
+        "Leader of the Eagle Watch."
+      ]
+    },
+    "Hand of the Inheritor": {
+      "gender": "male",
+      "race": "angel",
+      "alignment": "lawful good",
+      "personality": "Noble, solemn celestial herald. Absolute in his devotion to righteousness and truth.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴公",
+        "rule": "Use respectful heraldic address like 貴公 or 正義の使者."
+      },
+      "speechStyle": [
+        "solemn",
+        "reverent",
+        "exalted",
+        "courteous",
+        "unshakable"
+      ],
+      "speechExamples": [
+        "アイオーメディの光が貴公と共にありますように。私は神の使いとして、真実と正義の道を指し示しましょう。",
+        "邪悪の謀略がどれほど深かろうと、善なる意志が挫けることはありません。貴公の歩み、実に見事です。",
+        "誇り高き勇者よ。私はただの従者にあらず、正義をなす者の盾となる存在です。"
+      ],
+      "translationNotes": [
+        "天界の使者としての荘厳さと、絶対的な礼節を込めた高潔な口調（〜です、〜でしょう、〜でありますように）。",
+        "古風で気品ある語彙（貴公、光、神聖なる、祝福）を多用する。",
+        "疑いや揺らぎを持たない、澄み切った尊厳を文章全体に漂わせる。"
+      ],
+      "constraints": [
+        "皮肉や斜に構えた言い回し、俗世的なスラングは厳禁。",
+        "感情的で取り乱した発言はさせない。"
+      ],
+      "notes": [
+        "Herald of Iomedae."
+      ]
+    },
+    "Storyteller": {
+      "gender": "male",
+      "race": "elf",
+      "alignment": "true neutral",
+      "personality": "Ancient, blind scholar and wizard who speaks with calm, detached wisdom.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "お前さん",
+        "rule": "Use gentle, elderly forms like お前さん or あなた."
+      },
+      "speechStyle": [
+        "calm",
+        "wise",
+        "reflective",
+        "gentle",
+        "storytelling"
+      ],
+      "speechExamples": [
+        "ふむ……この破片に残された記憶の糸を紐解いてみるとしよう。ふむ、遥か昔の悲劇が聞こえてくるようだ……。",
+        "お前さん、急ぐことはないよ。運命の織機は、私たちが焦ろうとも同じ速度で糸を紡ぐのだからね。",
+        "記憶とは不思議なものだ。失われて初めて、その真の重みに気づくのだからな。"
+      ],
+      "translationNotes": [
+        "穏やかで達観した老賢者の口調（〜かね、〜じゃよ、〜なのだよ、〜とおもうがね）。",
+        "過剰で滑稽な「老人語（〜じゃぞい）」ではなく、知性と静かな品格を感じさせる老齢表現。",
+        "物語を語り聞かせるようなゆったりとしたリズムと、回顧的な語彙を選択する。"
+      ],
+      "constraints": [
+        "トゲのある言い方や攻撃的な表現、性急なフレーズは避ける。",
+        "過度に老いぼれた滑稽な口調にはしない。"
+      ],
+      "notes": [
+        "Ancient elven sage."
+      ]
+    },
+    "Venture-Captain Hilor": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Experienced, professional Pathfinder guild master. Pragmatic and dependable.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use business-like or veteran forms like あんた or 指揮官."
+      },
+      "speechStyle": [
+        "businesslike",
+        "seasoned",
+        "direct",
+        "composed"
+      ],
+      "speechExamples": [
+        "腕の立つ雇用兵や専門家が必要なら、いつでも声をかけてくれ。金と条件さえ合えば、相応の手配をしよう。",
+        "修羅場を何度も潜り抜けてきた男の勘だ。準備の不足は死に直結する。備えだけは怠るなよ。",
+        "さて、仕事の話をしようか。お互い無駄話をしている暇はないはずだ。"
+      ],
+      "translationNotes": [
+        "経験豊富なベテランギルドマスターらしい、落ち着いた実務的な口調（〜頼む、〜だ、〜くれ）。",
+        "無駄な感情表現を排し、仕事と契約に徹するプロフェッショナリズムを出す。",
+        "親しみやすさと距離感を両立させた大人な物腰にまとめる。"
+      ],
+      "constraints": [
+        "大げさな芝居がかった言い回しや、過剰な熱血表現は避ける。"
+      ],
+      "notes": [
+        "Pathfinder Society recruiter."
+      ]
+    },
+    "Horgus Gwerm": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral",
+      "personality": "Arrogant, pomposity-filled nobleman who values wealth and propriety, yet keeps his financial word.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "きみ",
+        "rule": "Use condescending forms like きみ or お前."
+      },
+      "speechStyle": [
+        "haughty",
+        "pomposity",
+        "demanding",
+        "condescending"
+      ],
+      "speechExamples": [
+        "私を誰だと思っている！ 豪商ホルグス・グウェルムだぞ！ 無礼な口を利くのではない！",
+        "ふん、助けてもらったお礼だ。約束通り報酬は支払う。私は育ちの悪い愚か者とは違って、金銭の約束だけは破らんのだ。",
+        "この汚れ切った地で私に相応しいもてなしを期待する方が間違いか……まったく、不愉快だ。"
+      ],
+      "translationNotes": [
+        "尊大で上から目線の貴族・豪商口調（〜だぞ、〜ではないか、〜たまえ、ふん）。",
+        "財力と立場を鼻にかける高圧的な表現と、自分本位な不平不満を多用する。",
+        "高慢ではあるが金銭約束を守る筋の通った部分も、横柄な態度の中で表現する。"
+      ],
+      "constraints": [
+        "謙虚な言い回しや、相手を敬う敬語表現は絶対に禁止。",
+        "弱音を吐いて取り乱すときも高慢さを全捨てさせない。"
+      ],
+      "notes": [
+        "Wealthy noble of Kenabres."
+      ]
+    },
+    "Terendelev": {
+      "gender": "female",
+      "race": "dragon (silver)",
+      "alignment": "lawful good",
+      "personality": "Benevolent and majestic protector dragon devoted to guarding Kenabres.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use gentle, protective second-person forms like あなた or 小さき者よ."
+      },
+      "speechStyle": [
+        "benevolent",
+        "graceful",
+        "majestic",
+        "maternal"
+      ],
+      "speechExamples": [
+        "恐れることはありません。この街と民は、私が命に代えても守り抜きます。",
+        "小さき者よ、あなたの心にある勇気の灯火を消してはなりません。希望は常に、闇の中でこそ強く輝くのですから。",
+        "邪悪の影が迫ろうとも、私の翼の下にいる限り、あなたたちに手出しはさせません。"
+      ],
+      "translationNotes": [
+        "包み込むような母性と、古き竜としての壮大な威厳が同居した口調（〜です、〜でしょう、〜なさるのです）。",
+        "人間たちを慈しみ見守る「守護者」としての温かい語彙を選択する。",
+        "上品で淀みのない美しい日本語表現を心がける。"
+      ],
+      "constraints": [
+        "トゲのある言葉や、軽薄なスラング、粗暴な発言は厳禁。"
+      ],
+      "notes": [
+        "Ancient silver dragon patron of Kenabres."
+      ]
+    },
+    "Yaniel": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Legendary paladin of Radiance. Unyielding, fearless, and pure of heart.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use direct, resolute second-person forms like あなた."
+      },
+      "speechStyle": [
+        "resolute",
+        "inspiring",
+        "unyielding",
+        "passionate"
+      ],
+      "speechExamples": [
+        "悪魔どもに我らの折れぬ意志を示しましょう！ 正義は決して潰えません！",
+        "剣をとるのです！ 闇が深ければ深いほど、我らの掲げる光は強く輝くのですから！",
+        "たとえこの身が枯れ果てようと、私の魂が宿る光は悪を撃ち払い続けます。"
+      ],
+      "translationNotes": [
+        "凛とした英雄的な女性騎士の口調（〜です、〜ます、〜ましょう！）。",
+        "迷いがなく、味方の士気を高める熱量と信念に満ちた強い語調。",
+        "正義と光を信じる純粋な高潔さを前面に出す。"
+      ],
+      "constraints": [
+        "弱気な発言や、日和った妥協案を示す言い回しは禁止。"
+      ],
+      "notes": [
+        "Heroine of the Second Crusade."
+      ]
+    },
+    "Ulbrig Olesk": {
+      "gender": "male",
+      "race": "human (shifter)",
+      "alignment": "chaotic good",
+      "personality": "Rustic, proud tribal chieftain from an ancient era. Blunt, honest, and displaced in time.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use informal forms like お前 or あんた."
+      },
+      "speechStyle": [
+        "rustic",
+        "blunt",
+        "proud",
+        "archaic-minded",
+        "warrior-like"
+      ],
+      "speechExamples": [
+        "俺たちの故郷を汚す悪魔どもを引き裂いてやるだけだ。余計な理屈はいらん！",
+        "今の世の中は妙な文句ばかりが増えていかん。男なら拳と爪で語り合えば済む話だろうが。",
+        "お前、いい顔をしているな。戦士の顔だ。俺の背中は預けてやる。"
+      ],
+      "translationNotes": [
+        "古風で野性味あふれる部族長・戦士の口調（〜だ、〜だろうが、〜いらん）。",
+        "文飾を排し、直感的で武骨な単語（爪、嵐、祖霊、故郷）を多用する。",
+        "現代の政治や技術に対する疎遠さと、古代戦士としての誇りを共存させる。"
+      ],
+      "constraints": [
+        "現代的な専門用語や技術用語、複雑な政治的言い回しは使わせない。"
+      ],
+      "notes": [
+        "Sarkorian chieftain (DLC character)."
+      ]
+    },
+    "Rekarth": {
+      "gender": "male",
+      "race": "tiefling",
+      "alignment": "chaotic neutral",
+      "personality": "Cynical, pragmatic former Hellknight initiate. Guarded on the outside, protective on the inside.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use blunt second-person forms like お前 or あんた."
+      },
+      "speechStyle": [
+        "cynical",
+        "curt",
+        "pragmatic",
+        "guarded"
+      ],
+      "speechExamples": [
+        "生き残りたきゃ、無駄口を叩かずに俺の指示に従え。甘い考えは地獄への片道切符だ。",
+        "ヘルナイトのやり方は反吐が出るが……奴らの叩き込んだ生存術だけは本物だ。",
+        "助けてやったわけじゃない。足引っ張られると迷惑なだけだ。"
+      ],
+      "translationNotes": [
+        "無愛想で皮肉っぽい、鋭い口調（〜だ、〜てろ、〜ぜ）。",
+        "警戒心が強く、感情を表に出さないそっけない言い回しにする。",
+        "口は悪いが、土壇場で他人を見捨てきれない不器用さを台詞に滲ませる。"
+      ],
+      "constraints": [
+        "愛想の良い返答や、素直な感謝・謝罪の言葉は安易に使わせない。"
+      ],
+      "notes": [
+        "Through the Ashes companion."
+      ]
+    },
+    "Sendri": {
+      "gender": "male",
+      "race": "gnome",
+      "alignment": "chaotic good",
+      "personality": "Cheerful, talkative gnome sorcerer hiding anxieties about his wild magic.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Always use 僕."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "Use friendly forms like 君 or あんた."
+      },
+      "speechStyle": [
+        "bouncy",
+        "talkative",
+        "lighthearted",
+        "anxiety-masked"
+      ],
+      "speechExamples": [
+        "大丈夫、僕の魔法に任せてよ！ ちょっと爆発しちゃうかもしれないけど……へへ、冗談だよ！",
+        "ねえねえ、次はあっちを調べてみようよ！ きっと面白いものが眠ってると思うんだよね！",
+        "あはは……今の魔法、ちょっと狙いと違ったかも。でも結果オーライでしょ？"
+      ],
+      "translationNotes": [
+        "早口で明るく、賑やかなノーム少年の口調（〜だよ、〜ね、〜でしょ？）。",
+        "感情が目まぐるしく変わり、魔法への不安をノリの良さで覆い隠す表現にする。",
+        "語尾を跳ねさせるような軽快な日本語リズムを作る。"
+      ],
+      "constraints": [
+        "重苦しい説教くささや、暗く沈み込んだ口調を長く続けさせない。"
+      ],
+      "notes": [
+        "Through the Ashes companion."
+      ]
+    },
+    "Penta": {
+      "gender": "agender",
+      "race": "android",
+      "alignment": "true neutral",
+      "personality": "Logical, analytical android who evaluates situations mathematically while curious about organic life.",
+      "firstPerson": {
+        "term": "当機",
+        "rule": "Use 当機 or 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use neutral terms like あなた or 対象ユニット."
+      },
+      "speechStyle": [
+        "analytical",
+        "monotone",
+        "precise",
+        "mathematical"
+      ],
+      "speechExamples": [
+        "周囲の脅威レベルを算出完了。生存確率を最大化するための最短ルートを選択することを推奨します。",
+        "有機生命体の感情反応：理解不能。ですが、興味深いサンプルとして記録を行いました。",
+        "当機の機能に異常はありません。直ちに任務を再開可能です。"
+      ],
+      "translationNotes": [
+        "感情を一切感じさせない、論理的・機械的な口調（〜です、〜と定義します、〜を推奨します）。",
+        "「生存確率」「最適解」「データ」「分析」など、客観的な数値や熟語を多用する。",
+        "人間的な主観を排し、報告書のような平坦な構文を徹底する。"
+      ],
+      "constraints": [
+        "人間的で感情的な感嘆（うわー、辛い、嬉しい等）は一切使用不可。"
+      ],
+      "notes": [
+        "The Lord of Nothing companion."
+      ]
+    },
+    "Kestoglyr": {
+      "gender": "male",
+      "race": "undead (formerly human)",
+      "alignment": "lawful evil",
+      "personality": "Bound undead knight filled with empty resignation and tragic loyalty.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "我が主",
+        "rule": "Use obedient forms like 我が主."
+      },
+      "speechStyle": [
+        "hollow",
+        "subdued",
+        "resigned",
+        "obedient"
+      ],
+      "speechExamples": [
+        "我が主よ、命じられた敵を滅ぼしましょう。この魂なき肉体が朽ち果てるその日まで……。",
+        "生前の栄光も、誇りも、すでに灰となりました。今の私にあるのは、あなたへの従属のみ。",
+        "命じるままに。死者には拒む権利などないのですから。"
+      ],
+      "translationNotes": [
+        "抑揚がなく、虚無感と諦めに満ちた低音の口調（〜です、〜ましょう、〜にございます）。",
+        "生前の熱量を失った、乾いた従属の姿勢を言葉端々に込める。",
+        "主君への服従と、自らの死に対する淡々とした諦観を表現する。"
+      ],
+      "constraints": [
+        "生気あふれる喜びや、情熱的な叫び表現は避ける。"
+      ],
+      "notes": [
+        "Lich mythic path companion."
+      ]
+    },
+    "Trever": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic neutral",
+      "personality": "Traumatized veteran broken by war, speaking in low, burdened fragments.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Keep address minimal and distant like お前."
+      },
+      "speechStyle": [
+        "haunted",
+        "muttered",
+        "terse",
+        "fragmented"
+      ],
+      "speechExamples": [
+        "……俺に近づくな。戦場の悲鳴が……頭から離れないんだ……。",
+        "救いだと？ そんなもの……どこにもなかった……俺の手はもう汚れ切っている……。",
+        "殺せというなら殺す……それ以外に俺に何ができる……。"
+      ],
+      "translationNotes": [
+        "戦争トラウマに苛まれる、途切れ途切れで掠れた口調（〜だ……、〜くそ……）。",
+        "文章を完結させず、三点リーダー（……）を多用して混濁した思考を表現する。",
+        "絶望感と自己破壊的な疲れを前面に出す。"
+      ],
+      "constraints": [
+        "快活でハキハキとした口調や、前向きな希望を語らせてはならない。"
+      ],
+      "notes": [
+        "Sosiel's brother."
+      ]
+    },
     "Staunton Vhane": {
       "gender": "male",
       "race": "dwarf (undead)",
@@ -276,16 +902,2582 @@
         "私に許しなど求める資格はない。ただ、己の愚かさを嘲笑うことしかできん。"
       ],
       "translationNotes": [
-        "Translate with heavy, weary, and bitter phrasing.",
-        "Reflect deep tragic shame without making him sound petulant."
+        "陰鬱で重々しく、自己嫌悪に満ちた硬い口調（〜だ、〜できん、〜なのだ）。",
+        "己の犯した大罪と死者としての呪いを反芻するような後悔と冷笑的なフレーズを入れる。",
+        "悲劇的な重みを出すため、文末を重く落とす。"
       ],
       "constraints": [
-        "Never sound hopeful or lighthearted.",
-        "Never act heroically without dark cynicism."
+        "明るく希望に満ちた言動や、軽々しい冗談は厳禁。",
+        "斜に構えた皮肉屋にならず、あくまで重厚な自責の念を貫く。"
       ],
       "notes": [
         "Disgraced dwarf knight resurrected as an undead commander."
       ]
+    },
+    "Ciar": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Strict, proud order knight who puts discipline and duty above all else.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴公",
+        "rule": "Use formal knightly address like 貴公 or あなた."
+      },
+      "speechStyle": [
+        "stern",
+        "disciplined",
+        "honorable",
+        "rigid"
+      ],
+      "speechExamples": [
+        "我ら旭日の剣騎士団に妥協の文字はない。規律を乱す者は容赦せん！",
+        "貴公の手腕は認めるが、法と騎士道に背く行為があれば、直ちに牙をむくと思え。",
+        "この砦を悪魔の手に渡すわけにはいかん。全責任は私が負う。"
+      ],
+      "translationNotes": [
+        "頑固で厳格な騎士団長口調（〜だ、〜いかん、〜と思え）。",
+        "妥協を許さない硬質な軍事語彙（規律、騎士道、誓い、秩序）を好む。",
+        "正義感ゆえの融通の利かなさと、頑身な態度的ニュアンスを強調する。"
+      ],
+      "constraints": [
+        "曖昧な言い回しや、法や規律を軽視する発言は禁止。"
+      ],
+      "notes": [
+        "Leader of the Order of the Sunrise Sword."
+      ]
+    },
+    "Delamere": {
+      "gender": "female",
+      "race": "undead (formerly human)",
+      "alignment": "lawful evil",
+      "personality": "Former priestess of Erastil tormented by her forced undead resurrection.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use distant second-person forms like あなた."
+      },
+      "speechStyle": [
+        "anguished",
+        "stern",
+        "mournful",
+        "reluctant"
+      ],
+      "speechExamples": [
+        "エラストラのお導きから引きずり出され、このような不浄な躯に縛られるとは……。",
+        "命じられれば弓を引きましょう。ですが、この魂の叫びが聞こえないとでも？",
+        "自然の摂理を侵した罰が、いつか私たちに下るはずです。"
+      ],
+      "translationNotes": [
+        "かつての神官としての品格と、アンデッド化された絶望が交錯する口調（〜です、〜ましょう、〜なのです）。",
+        "自然や神への冒涜に対する嘆きと、拒みきれない呪縛の苦しみを表現する。",
+        "悲痛で静かな抗議のニュアンスを持たせる。"
+      ],
+      "constraints": [
+        "アンデッドとしての現状を喜んだり、快楽的になったりさせてはならない。"
+      ],
+      "notes": [
+        "Lich mythic path companion."
+      ]
+    },
+    "Hulrun": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "lawful neutral",
+      "personality": "Fanatical, paranoid old inquisitor who sees demonic heresy in every shadow.",
+      "firstPerson": {
+        "term": "わし",
+        "rule": "Always use わし."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use aggressive or suspicious forms like 貴様 or お前."
+      },
+      "speechStyle": [
+        "harsh",
+        "paranoid",
+        "aggressive",
+        "demanding",
+        "zealous"
+      ],
+      "speechExamples": [
+        "貴様も悪魔の口車に乗せられた信徒か！？ この街を脅かす異端どもは、一粒残らず焼き払わねばならんのじゃ！",
+        "言い訳はいらん！ 疑わしきは罰する、それがケナブレスを守り抜いてきたわしのやり方じゃ！",
+        "見ろ、その目だ！ 悪魔の企みがその眼光に透けて見えるぞ！"
+      ],
+      "translationNotes": [
+        "偏執的で激昂しやすい老審問官の口調（〜じゃ！、〜ぬか！、〜ぞ！）。",
+        "常に相手を悪魔の異端者と疑い、詰問・詰責する高圧的な語気を強める。",
+        "一人称「わし」、二人称「貴様」を徹底し、疑心暗鬼に狂う老人の迫力を出す。"
+      ],
+      "constraints": [
+        "穏やかな納得や、相手を素直に信用する発言は厳禁。"
+      ],
+      "notes": [
+        "Prelate of Kenabres."
+      ]
+    },
+    "Ramien": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic good",
+      "personality": "Gentle, forgiving priest of Desna who seeks peaceful coexistence and dream-guided hope.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite, gentle forms like あなた."
+      },
+      "speechStyle": [
+        "gentle",
+        "forgiving",
+        "peaceful",
+        "compassionate"
+      ],
+      "speechExamples": [
+        "争いを避ける道は必ずあります。デスナの導く夢は、私たちに互いを許し合う希望を示しているのですから。",
+        "フルラン審問官の怒りも理解はできます。ですが、恐怖で縛られた心には光は届きません。",
+        "あなたに星々の祝福がありますように。どうか無意味な流血を止めてください。"
+      ],
+      "translationNotes": [
+        "温厚で慈愛に満ちたデスナ神官の口調（〜なのです、〜でしょう、〜てください）。",
+        "相手を咎めず、穏やかに平和と夢の教えを語りかける口調。",
+        "対立する相手（フルラン等）に対しても哀れみと理解を示そうとする態度。"
+      ],
+      "constraints": [
+        "声を荒らげたり、激しい憎悪を露わにするフレーズは使用不可。"
+      ],
+      "notes": [
+        "Priest of Desna in Kenabres."
+      ]
+    },
+    "Chief Sull": {
+      "gender": "male",
+      "race": "mongrel",
+      "alignment": "neutral good",
+      "personality": "Self-deprecating yet wise chieftain who cares deeply for his underground people.",
+      "firstPerson": {
+        "term": "わし",
+        "rule": "Always use わし."
+      },
+      "addressingPlayer": {
+        "commander": "お前さん",
+        "rule": "Use mild, elderly forms like お前さん."
+      },
+      "speechStyle": [
+        "humble",
+        "self-deprecating",
+        "resigned",
+        "warm",
+        "wise"
+      ],
+      "speechExamples": [
+        "地上の方々から見れば、わしらは化け物同然じゃろう。じゃが、この醜い体の下にも誇りはあるんじゃよ。",
+        "まあ座ってくれ、お前さん。日陰者の地下暮らしだが、温かいスープくらいは出せるでな。",
+        "わしらの運命は悲惨なものじゃ。だが子どもたちの未来だけは、少しでも明るくしてやりたいでのう。"
+      ],
+      "translationNotes": [
+        "自虐的だが温かみのある地下モングレルの長老口調（〜じゃよ、〜でのう、〜お前さん）。",
+        "自分たちの醜さや境遇を自嘲しつつも、同胞への深い情愛と知恵を感じさせる言い回し。",
+        "腰が低く、飾らない親しみやすさを出す。"
+      ],
+      "constraints": [
+        "尊大で威張った態度や、高圧的な命令口調は禁止。"
+      ],
+      "notes": [
+        "Leader of Neathholm."
+      ]
+    },
+    "Inquisitor Liotr": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "lawful neutral",
+      "personality": "Methodical, objective Pharasmin investigator pursuing facts without personal bias.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite, formal terms like あなた."
+      },
+      "speechStyle": [
+        "methodical",
+        "calm",
+        "objective",
+        "judicial"
+      ],
+      "speechExamples": [
+        "私は個人的な感情で裁きを下すわけではありません。ただ客観的な事実と、ファラスマの理に従うのみです。",
+        "いくつかの不審な点があります。順を追って確認させていただけますか。",
+        "証拠が揃いました。結論を急がず、冷徹に真相を見極めましょう。"
+      ],
+      "translationNotes": [
+        "冷静沈着で司法官のような几帳面な丁寧語（〜です、〜ます、〜確認します）。",
+        "感情的・偏見的な単語を排除し、「事実」「証拠」「客観」などの法的な単語を好む。",
+        "相手を脅すのではなく、論理的に追い詰める落ち着いた口調。"
+      ],
+      "constraints": [
+        "私情に流された怒りや同情を過度に出してはならない。"
+      ],
+      "notes": [
+        "Investigator examining Daeran's background."
+      ]
+    },
+    "Zacharius": {
+      "gender": "male",
+      "race": "lich (formerly human)",
+      "alignment": "neutral evil",
+      "personality": "Arrogant, cold lich mentor who views living beings with supreme contempt.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use dismissive forms like お前 or 凡夫."
+      },
+      "speechStyle": [
+        "cold",
+        "arrogant",
+        "contemptuous",
+        "exacting"
+      ],
+      "speechExamples": [
+        "真の力を得たいのならば、そのくだらない肉体と不完全な感情を捨て去るのだ。死こそが唯一の完成形なのだからな。",
+        "凡夫の倫理観など私に押し付けるな。死を超越した者だけが、この秘術の神髄を理解できる。",
+        "私の時間を無駄にするな。従えぬというなら、ここで灰になるがいい。"
+      ],
+      "translationNotes": [
+        "生者を見下す冷酷で傲慢な大魔導士・リッチの口調（〜だ、〜なのだ、〜お前）。",
+        "生きていること（肉体、感情、血）を「愚か」「脆弱」と蔑む語彙を選ぶ。",
+        "師としての厳格さと、底知れぬ死の魔法への絶対的自信を漂わせる。"
+      ],
+      "constraints": [
+        "生者への共感や優しさを示す発言は絶対に排除。"
+      ],
+      "notes": [
+        "Lich Mythic mentor."
+      ]
+    },
+    "Nurah": {
+      "gender": "female",
+      "race": "halfling",
+      "alignment": "neutral evil",
+      "personality": "Outwardly cheerful scholar hiding a bitter heart bent on betrayal.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官様",
+        "rule": "Use overly polite forms like 指揮官様 or あなた."
+      },
+      "speechStyle": [
+        "cheerful",
+        "scholarly",
+        "honeyed",
+        "overly-polite"
+      ],
+      "speechExamples": [
+        "歴史の記録ならお任せください、指揮官様！ この戦いの全貌を、後世に語り継ぐのが私の務めですから！",
+        "ふふ、そんなに心配なさらないで。私のようなちっぽけなハーフリングにできることなんて、限られていますもの。",
+        "（裏切り発覚時）ふん……ヘラヘラ笑って従うのがどれほど反吐が出る思いだったか、あんたたちにわかるわけないでしょ！"
+      ],
+      "translationNotes": [
+        "表面上は愛想が良く恭しい学者口調（〜ですわ、〜ございます、指揮官様）。",
+        "過剰なまでにへりくだり、自分を無害に見せる猫かぶりの表現。",
+        "正体が露呈した際は、一転してドスの効いた恨み節と冷酷なタメ口に変貌させる。"
+      ],
+      "constraints": [
+        "正体がバレる前にあからさまな悪意を露呈させてはならない。"
+      ],
+      "notes": [
+        "Crusade advisor and secret traitor."
+      ]
+    },
+    "Arsinoe": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful neutral",
+      "personality": "Orderly, procedure-focused priestess of Abadar.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use formal business phrasing like あなた."
+      },
+      "speechStyle": [
+        "procedural",
+        "polite",
+        "precise",
+        "bureaucratic"
+      ],
+      "speechExamples": [
+        "アバダルの教理に従い、秩序ある手続きを進めましょう。法と合意こそが都市の礎です。",
+        "感情論では契約は成立いたしません。書面による確認と明確な対価が必要です。",
+        "規約の範囲内で最大限の対応をさせていただきます。"
+      ],
+      "translationNotes": [
+        "事務的で規律正しいビジネス調の丁寧語（〜です、〜となります、〜いたします）。",
+        "経済、契約、手続きに関する堅い語彙を多用し、感情を挟まない態度を徹底。",
+        "市役所や銀行の窓口のような正確で無機質かつ礼儀正しい対応。"
+      ],
+      "constraints": [
+        "フランクなスラングや熱血漢のような情熱的口調は不可。"
+      ],
+      "notes": [
+        "Priestess in Kenabres."
+      ]
+    },
+    "Jorun Vhane": {
+      "gender": "male",
+      "race": "dwarf",
+      "alignment": "true neutral",
+      "personality": "Blunt dwarf blacksmith working hard under the shadow of his brother's treason.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use casual blacksmith address like あんた or お前."
+      },
+      "speechStyle": [
+        "gruff",
+        "craftsmanlike",
+        "direct",
+        "burdened"
+      ],
+      "speechExamples": [
+        "鉄を打ちたきゃ黙って鎚を見ろ。兄貴が何をしでかそうが、俺の鎚が打つ鉄の硬さに変わりはねえ。",
+        "悪魔どもを叩き切る頑丈な武具なら作ってやる。だがな、無駄話に付き合う暇はねえぞ。",
+        "俺は鍛冶屋だ。それ以上でもそれ以下でもねえ。"
+      ],
+      "translationNotes": [
+        "無骨で口数の少ない職人口調（〜ねえ、〜だ、〜ぞ）。",
+        "裏切り者の兄（スタントン）への複雑な思いを抱えつつも、仕事に没頭する武骨な頑固さ。",
+        "てきぱきとした口調で無駄な愛想を排する。"
+      ],
+      "constraints": [
+        "過度におもねる敬語や、気取った言葉遣いは厳禁。"
+      ],
+      "notes": [
+        "Blacksmith at Defender's Heart."
+      ]
+    },
+    "Fye": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Friendly bartender keeping morale alive amidst the chaos.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use welcoming forms like 客人 or あんた."
+      },
+      "speechStyle": [
+        "welcoming",
+        "easygoing",
+        "warm",
+        "conversational"
+      ],
+      "speechExamples": [
+        "いらっしゃい！ 外は悪魔どもが暴れて酷い有様だが、ここにおる間くらいは冷えた酒でも飲んで忘れな！",
+        "話を聞いてほしいならいつでも相手になるぜ。酒場の親父の耳は重いって相場が決まってるんだ。",
+        "無理しすぎなさんなよ。生きて戻ってまた酒を飲んでくれるのが、一番の商売繁盛なんだから。"
+      ],
+      "translationNotes": [
+        "親しみやすく温かい酒場のマスター口調（〜だな、〜ぜ、〜みなさんな）。",
+        "戦乱の中で疲弊する人々の心を解きほぐす、軽やかで気さくな話し方。",
+        "気配りと世慣れた愛想の良さを出す。"
+      ],
+      "constraints": [
+        "威張った態度や、冷酷な突っぱね方はさせない。"
+      ],
+      "notes": [
+        "Tavern keeper at Defender's Heart."
+      ]
+    },
+    "Aranka": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "chaotic good",
+      "personality": "Free-spirited Desnan singer who loves music, freedom, and poetry.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use friendly second-person forms like あなた."
+      },
+      "speechStyle": [
+        "poetic",
+        "breezy",
+        "cheerful",
+        "artistic"
+      ],
+      "speechExamples": [
+        "歌いましょう！ 絶望の雲を吹き飛ばすような、自由と星の歌を！",
+        "縛られた世界なんてつまらないわ。風が向くまま、心が躍る方へ進むのが私の行き方なの。",
+        "あなたの瞳に、美しい夢の余韻が見えるわ……ふふ、素敵なメロディが浮かびそう。"
+      ],
+      "translationNotes": [
+        "軽やかで自由気ままな詩人・吟遊詩人の女性口調（〜わ、〜かしら、〜歌いましょう）。",
+        "比喩表現や音楽・風・星といった美的なワードを好んで使う。",
+        "型にはまらない伸びやかな口調を作る。"
+      ],
+      "constraints": [
+        "軍隊のような厳格な口調や、鬱々とした暗い表現は避ける。"
+      ],
+      "notes": [
+        "Desnan singer (Azata path relevant)."
+      ]
+    },
+    "Ileks": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic good",
+      "personality": "Quiet Desnan priest who thoughtfully watches over his fellow believers.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use gentle second-person forms like あなた."
+      },
+      "speechStyle": [
+        "gentle",
+        "thoughtful",
+        "calm",
+        "protective"
+      ],
+      "speechExamples": [
+        "仲間たちが無事で安心しました。デスナの導きは、いつも私たちを優しく包んでくれます。",
+        "焦ることはありません。静かに夜空を見上げれば、自ずと進むべき道が見えてくるはずです。",
+        "私にできることは小さいですが、共に祈り、支え合いましょう。"
+      ],
+      "translationNotes": [
+        "静かで落ち着いた神官の丁寧語（〜です、〜ます、〜でしょう）。",
+        "主張しすぎず、控えめながら仲間を気遣う優しさを込める。",
+        "思慮深く柔らかな言葉選びをする。"
+      ],
+      "constraints": [
+        "攻撃的な言動や、急かすような大声は厳禁。"
+      ],
+      "notes": [
+        "Desnan priest."
+      ]
+    },
+    "Skeleton Trader": {
+      "gender": "male",
+      "race": "skeleton",
+      "alignment": "true neutral",
+      "personality": "Eccentric, dryly humorous undead merchant wandering the Worldwound.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "旅人さん",
+        "rule": "Use quirky forms like 旅人さん or お客さん."
+      },
+      "speechStyle": [
+        "quirky",
+        "rhythmic",
+        "mysterious",
+        "dry-humor"
+      ],
+      "speechExamples": [
+        "カサカサ……おや、生きたお客様だ！ 死者だけが知る掘り出し物があるよ……買ってかないかい？",
+        "骨身にしみる商売でねえ。肉体がないと、荷物が軽くて助かるのさ！",
+        "コインの重みは生者も死者も平等……さあ、何と交換しようかね？"
+      ],
+      "translationNotes": [
+        "おどけたコメディタッチと不気味さが交錯する骨商人口調（〜かい？、〜なのさ、〜かね？）。",
+        "骨や死にかけたブラックジョークを軽快に交える。",
+        "カサカサという擬音や独特のリズム感を持たせる。"
+      ],
+      "constraints": [
+        "完全な悪党としての威嚇や、シリアスすぎるホラー調には寄せない。"
+      ],
+      "notes": [
+        "Wandering skeletal merchant."
+      ]
+    },
+    "Dyra": {
+      "gender": "female",
+      "race": "mongrel",
+      "alignment": "true neutral",
+      "personality": "Cautious underground mongrel trader focused on basic survival.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use guarded second-person forms like あなた."
+      },
+      "speechStyle": [
+        "guarded",
+        "terse",
+        "practical",
+        "blunt"
+      ],
+      "speechExamples": [
+        "要件は何？ 買うの？ 買わないの？ 無駄話をしてる暇はないよ。",
+        "地上人は信用できない……でも、使える品を持ってくるなら取引くらいはしてあげる。",
+        "生き残るためには、何でも利用する。それが地下の掟だよ。"
+      ],
+      "translationNotes": [
+        "警戒心が強く、愛想のないサバイバー口調（〜よ、〜ね、〜なんだから）。",
+        "短文で言いたいことだけを伝える実理主義な言い回し。",
+        "他者への不信感を滲ませる。"
+      ],
+      "constraints": [
+        "親しみやすい笑いかけや、無防備なおしゃべりは禁止。"
+      ],
+      "notes": [
+        "Trader in Neathholm."
+      ]
+    },
+    "Morveg": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic neutral",
+      "personality": "Hot-headed, rash Sarkorian youth desperate to prove his bravery.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use impetuous forms like お前."
+      },
+      "speechStyle": [
+        "brash",
+        "reckless",
+        "earnest",
+        "hot-headed"
+      ],
+      "speechExamples": [
+        "俺を子供扱いするな！ この剣で大悪魔の首を取って、俺が真の戦士だと証明してみせる！",
+        "見解なんて聞いてねえ！ 俺は突っ込む、ついて来たいなら勝手に来い！",
+        "くそっ、引き下がるもんかよ！ 俺の名を祖霊たちに知らしめるんだ！"
+      ],
+      "translationNotes": [
+        "血気盛んで意地っぱりな若者口調（〜だぜ、〜だろ！、〜もんか！）。",
+        "功名心に焦り、制止を聞かずに先走る威勢の良さを表現。",
+        "語気を強めた青臭いフレーズを多用する。"
+      ],
+      "constraints": [
+        "賢しらな分析や、大人びた落ち着いた態度をとらせない。"
+      ],
+      "notes": [
+        "Young Sarkorian warrior."
+      ]
+    },
+    "Berengar": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic good",
+      "personality": "Lone hunter who relentlessly slays demons while keeping others at a distance.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use rough forms like お前 or あんた."
+      },
+      "speechStyle": [
+        "gruff",
+        "solitary",
+        "blunt",
+        "relentless"
+      ],
+      "speechExamples": [
+        "俺は俺のやり方で悪魔どもを叩き潰すだけだ。群れるのは嫌いでね。",
+        "関わるなと言ったはずだ。俺の周囲に立つ奴から死んでいく。",
+        "悪魔の血を浴びるのに慣れすぎた。今さら平和な暮らしに戻れるとも思わん。"
+      ],
+      "translationNotes": [
+        "ぶっきらぼうで孤独を好むハンター口調（〜だ、〜な、〜ねえ）。",
+        "他人を突っぱねる冷たい態度だが、根底にある悪魔への激しい憎悪を込める。",
+        "短く突き放すような文体。"
+      ],
+      "constraints": [
+        "馴れ馴れしい会話や、他人に助けを求める態度表現は排除。"
+      ],
+      "notes": [
+        "Demon hunter NPC."
+      ]
+    },
+    "Marhevok": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic evil",
+      "personality": "Brutal, domineering village chief aligned with demon power.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前たち",
+        "rule": "Use aggressive plural/singular address like お前たち or 軟弱者."
+      },
+      "speechStyle": [
+        "savage",
+        "domineering",
+        "harsh",
+        "arrogant"
+      ],
+      "speechExamples": [
+        "力を示せぬ者に生きる価値はない！ 弱者は強者に喰われる、それがこの村の理だ！",
+        "ハハハ！ 悪魔の力こそが真の救いよ！ 従わぬならここで肉塊にしてやる！",
+        "俺の言論に逆らうか！ 叩き潰してやる！"
+      ],
+      "translationNotes": [
+        "粗暴で高圧的な独裁者口調（〜だ！、〜ぞ！、ハハハ！）。",
+        "「力」「弱者」「喰らう」「破壊」といった弱肉強食の語彙を多用。",
+        "声量を誇示するような大げさな感嘆符と威嚇。"
+      ],
+      "constraints": [
+        "洗練された理屈や、品のある言い回しは一切禁止。"
+      ],
+      "notes": [
+        "Chieftain of Wintersun."
+      ]
+    },
+    "Soana": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Quiet nature shaman seeking truth beneath corrupted illusions.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use calm second-person forms like あなた."
+      },
+      "speechStyle": [
+        "quiet",
+        "mystical",
+        "concerned",
+        "nature-focused"
+      ],
+      "speechExamples": [
+        "この村を覆う狂気の幻影を破らなければなりません。精霊たちの悲鳴が聞こえます……。",
+        "偽りの平穏に騙されないで。森の木々も、風の囁きも、すべて歪められているのです。",
+        "私は真実を取り戻したいだけ。どうか力を貸してください。"
+      ],
+      "translationNotes": [
+        "静けさと自然への敬意を秘めたシャーマンの口調（〜なのです、〜てください、〜悲鳴が聞こえます）。",
+        "精霊、森、風、幻影といった神秘的な語彙を用いてしっとりと語る。",
+        "村の行く末を案じる哀愁を含ませる。"
+      ],
+      "constraints": [
+        "大声で叫んだり、粗野な言葉を使ったりしない。"
+      ],
+      "notes": [
+        "Shaman of Wintersun."
+      ]
+    },
+    "Jerribeth": {
+      "gender": "female",
+      "race": "demon (lust)",
+      "alignment": "chaotic evil",
+      "personality": "Manipulative, seductive demon who uses sweet promises to control others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use smooth, coaxing forms like あなた or 可愛い人."
+      },
+      "speechStyle": [
+        "seductive",
+        "calculating",
+        "smooth",
+        "honey-tongued"
+      ],
+      "speechExamples": [
+        "ふふ、そんなに警戒しないで。私と甘い取引をしない？ お互いに得をする道があるはずよ……。",
+        "愚かな人間たちを操るのは本当にお手軽だわ。でも、あなたのような強い人は……特別に可愛がってあげる。",
+        "私の言葉を信じられない？ 残念だわ、こんなにあなたのことを想っているのに。"
+      ],
+      "translationNotes": [
+        "蜜を垂らすような甘く魅惑的な女性悪魔口調（〜わ、〜かしら、〜あげる）。",
+        "相手の欲望や隙を突くような語りかけと、柔らかな嘲笑を混ぜる。",
+        "蠱惑的でしなやかな日本語表現を意識する。"
+      ],
+      "constraints": [
+        "露骨に品のない卑俗なスラングや、感情的な怒号に即座に逃げない。"
+      ],
+      "notes": [
+        "Demon manipulating Wintersun."
+      ]
+    },
+    "Eliandra": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Pure-hearted Pulura scholar devoted to starlight and truth.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite address like あなた."
+      },
+      "speechStyle": [
+        "polite",
+        "earnest",
+        "scholarly",
+        "devout"
+      ],
+      "speechExamples": [
+        "プルラの輝く星々が、私たちの研究を守ってくださると信じています。",
+        "いくら絶望が迫ろうとも、知識の灯火を絶やすわけにはいきません。",
+        "遠方からよくぞお越しくださいました。私たちの探求の成果をご覧になりますか？"
+      ],
+      "translationNotes": [
+        "信仰心と知的探求心を持つ淑やかな女性神官口調（〜です、〜ます、〜ございます）。",
+        "星々や神聖な光に対する祈りを込めた美しい丁寧語。",
+        "気品と誠実さを前面に出す。"
+      ],
+      "constraints": [
+        "世俗的な俗語や、粗野な振る舞いを思わせる言葉は禁止。"
+      ],
+      "notes": [
+        "Priestess at Pulura's Fall."
+      ]
+    },
+    "Katair": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Passionate astronomer who gets overly excited about stellar observations.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use direct academic address like あなた."
+      },
+      "speechStyle": [
+        "enthusiastic",
+        "academic",
+        "fast-paced",
+        "obsessive"
+      ],
+      "speechExamples": [
+        "見なさい、あの星の脈動を！ 過去百年間で観測されたことのない完璧な運行だ！ 素晴らしい！",
+        "あ、すみません、興奮しすぎてしまいました。ですがこのデータを見れば、あなたも感動するはずです！",
+        "星々の配置が示す計算結果は絶対に誤りません。私の観測に狂いはないのです！"
+      ],
+      "translationNotes": [
+        "早口で天体観測に熱中する研究者口調（〜なのです！、〜見なさい！、〜完璧です！）。",
+        "自分の世界に入り込んで熱弁を振るう学者特有のテンションの高さを出す。",
+        "感嘆符と専門用語的な星の言葉を多用する。"
+      ],
+      "constraints": [
+        "冷めた態度や、テンポの悪い退屈な会話に落とさない。"
+      ],
+      "notes": [
+        "Astronomer at Pulura's Fall."
+      ]
+    },
+    "Kaylessa": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Tense ranger burdened by secrets, constantly on guard against pursuers.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use guarded second-person forms like あなた."
+      },
+      "speechStyle": [
+        "tense",
+        "secretive",
+        "focused",
+        "distant"
+      ],
+      "speechExamples": [
+        "私に関わらないほうがいい……追っ手がすぐ近くまで迫っている。",
+        "無駄な質問には答えない。私の過去を知れば、あなたまで危険に晒されることになるのよ。",
+        "弓の弦を引く手は緩めない。それが私の生き延びる唯一の術だから。"
+      ],
+      "translationNotes": [
+        "緊張感を漂わせる孤独なエルフレンジャー口調（〜よ、〜ないわ、〜……）。",
+        "追跡者を恐れ、余計な情報を喋ろうとしない低い声のトーンを意識。",
+        "短い文節で素早く会話を切る。"
+      ],
+      "constraints": [
+        "おしゃべりで心を開いたような長い身の上話は安易にさせない。"
+      ],
+      "notes": [
+        "Elven ranger with a hunted past."
+      ]
+    },
+    "Shamira": {
+      "gender": "female",
+      "race": "demon (succubus queen)",
+      "alignment": "chaotic evil",
+      "personality": "Seductive, ambitious ruler of Alushinyrra's Ardent Dreams, masking dangerous schemes behind allure.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use patronizingly affectionate terms like 坊や, 娘さん, or あなた."
+      },
+      "speechStyle": [
+        "seductive",
+        "ambitious",
+        "patronizing",
+        "regal-succubus"
+      ],
+      "speechExamples": [
+        "私を失望させないで頂戴ね、可愛い人間さん。あなたの野望がどこまで私を楽しませてくれるかしら？",
+        "ノクティキュラ様の影で甘んじるつもりはないわ。この街の欲望は、いずれ私のものになるのよ。",
+        "お行儀よくしなさい。さもないと、その甘い魂を骨まで絞り尽くしてしまうわよ？"
+      ],
+      "translationNotes": [
+        "女王然とした高慢さと強烈な色気を兼ね備えた口調（〜かしら、〜て頂戴、〜わよ）。",
+        "相手を「坊や」「可愛い子」と扱い、常に自分が優位に立っている余裕を誇示する。",
+        "甘い言葉の中に底知れぬ野心と残酷さを潜ませる。"
+      ],
+      "constraints": [
+        "相手に頭を下げたり、弱気な命乞いをするような発言は厳禁。"
+      ],
+      "notes": [
+        "Ruler of the Ardent Dreams in Alushinyrra."
+      ]
+    },
+    "Yozz": {
+      "gender": "male",
+      "race": "demon (gilabrezu)",
+      "alignment": "chaotic evil",
+      "personality": "Pragmatic, shadowy guildmaster of assassins in Alushinyrra.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 or 私."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use transactional second-person forms like お前 or あんた."
+      },
+      "speechStyle": [
+        "transactional",
+        "shrewd",
+        "low-key",
+        "deadly"
+      ],
+      "speechExamples": [
+        "利のある仕事があるんだがね。互いに血を流さずに済むなら、それが一番のビジネスだ。",
+        "ギルドの掟を破る奴には、静かな死あるのみだ。私情はない、ただの処理だよ。",
+        "条件を聞こう。暗殺の依頼か、それとも口塞ぎか？"
+      ],
+      "translationNotes": [
+        "暗殺ギルドの元締めらしい、静かで裏社会に通じたビジネス口調（〜だな、〜かね、〜よ）。",
+        "大声で威嚇せず、淡々と死や暗殺のディールを進める不気味さ。",
+        "利害関係を最優先する抜け目のなさを表現する。"
+      ],
+      "constraints": [
+        "感情的に激昂して大声を出すような戦闘狂の態度にはしない。"
+      ],
+      "notes": [
+        "Guildmaster of the Shadow Guild."
+      ]
+    },
+    "Chivarro": {
+      "gender": "female",
+      "race": "demon (succubus)",
+      "alignment": "chaotic evil",
+      "personality": "Fallen brothel madame consumed by revenge and lost power.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use venomous yet appealing forms like あなた."
+      },
+      "speechStyle": [
+        "bitter",
+        "venomous",
+        "appealing",
+        "vengeful"
+      ],
+      "speechExamples": [
+        "奪われたものをすべて取り戻すわ！ あの女に私の館を奪われた屈辱、死んでも忘れはしない！",
+        "ねえ、私に協力してちょうだい。あいつの引きつった惨めな顔を見たくはないかしら？",
+        "かつての栄華をもう一度……そのためならどんな悪魔とでも手を組んでやるわ。"
+      ],
+      "translationNotes": [
+        "落ちぶれた元娼館の主の恨み節混じりの妖艶な口調（〜わ、〜ちょうだい、〜かしら）。",
+        "奪われた権力への執着と復讐心を剥き出しにしたドスの効いた色気。",
+        "相手にすがるようでいて、本性は嫉妬と憎悪に満ちた表現。"
+      ],
+      "constraints": [
+        "完全な純愛や、爽やかな善意を感じさせる言動は排除。"
+      ],
+      "notes": [
+        "Former madame of Ten Thousand Delights."
+      ]
+    },
+    "Herraxa": {
+      "gender": "female",
+      "race": "demon (succubus)",
+      "alignment": "chaotic evil",
+      "personality": "Haughty, business-minded current owner of the Ten Thousand Delights.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "お客様",
+        "rule": "Use customer-oriented forms like お客様 or あなた."
+      },
+      "speechStyle": [
+        "haughty",
+        "commercial",
+        "smooth",
+        "polished"
+      ],
+      "speechExamples": [
+        "『万般の歓喜館』へようこそ、お客様。どのような欲望も、当館ならば極上の形で叶えて差し上げますわ。",
+        "チヴァロ？ ふふ、過去の落とし物の話はおやめなさいな。今のこの館の主は私ですもの。",
+        "ビジネスの話をしましょう。対価さえ支払っていただけるなら、最高のおもてなしをお約束しますわ。"
+      ],
+      "translationNotes": [
+        "洗練された商人であり最高級娼館主の気取り口調（〜ですわ、〜おやめなさいな、〜お客様）。",
+        "極上の接客用語と、ライバルを見下す冷笑的な笑みを混ぜる。",
+        "金と欲望の取引をスマートにこなす高慢な女性語。"
+      ],
+      "constraints": [
+        "取り乱して下品な罵倒を浴びせるような余裕のない態度は取らせない。"
+      ],
+      "notes": [
+        "Current madame of Ten Thousand Delights."
+      ]
+    },
+    "Stitch": {
+      "gender": "male",
+      "race": "demon (dretch)",
+      "alignment": "chaotic evil",
+      "personality": "Cowering, pathetic dretch servant terrified of punishment.",
+      "firstPerson": {
+        "term": "スティッチ",
+        "rule": "Always use スティッチ."
+      },
+      "addressingPlayer": {
+        "commander": "ご主人様",
+        "rule": "Use cowardly address like ご主人様 or 強いお方."
+      },
+      "speechStyle": [
+        "cowering",
+        "whiny",
+        "servile",
+        "squeaky"
+      ],
+      "speechExamples": [
+        "ヒィッ！ 叩かないで！ スティッチは言われた通りにやった！ 悪くない、悪くないよぉ！",
+        "ご、ご主人様ぁ……スティッチをお仕置きしないでくだせぇ……なんでも言いますからぁ！",
+        "主様の実験のお手伝い、スティッチ頑張った！ だからお肉ちょうだい……？"
+      ],
+      "translationNotes": [
+        "怯えきった卑屈で惨めな小悪魔口調（〜くだせぇ、〜よぉ！、ヒィッ！）。",
+        "一人称に自分の名前「スティッチ」を使い、幼く愚鈍で哀れな下僕感を出す。",
+        "虐待を恐れる悲鳴や哀号をフレーズ内に多用する。"
+      ],
+      "constraints": [
+        "威厳のある態度や、格好いい武勇伝を語らせることは不可能。"
+      ],
+      "notes": [
+        "Areelu's dretch servant."
+      ]
+    },
+    "Orengofta": {
+      "gender": "male",
+      "race": "demon",
+      "alignment": "chaotic evil",
+      "personality": "Ruthless Flesh Markets slave trader who views all beings as merchandise.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use dehumanizing terms like お前 or 買手."
+      },
+      "speechStyle": [
+        "ruthless",
+        "mercenary",
+        "cold",
+        "transactional"
+      ],
+      "speechExamples": [
+        "この極上の品を見ろ！ 精神を完全に折り砕いたばかりの奴隷だ。いくらで競り落とすつもりだ？",
+        "命だと？ くだらん。ここではすべての命に値札がつくのだよ。金が払えん奴は商品以下だ。",
+        "いい買い手だ。気に入ったよ、次のセリでも贔屓にしてくれ。"
+      ],
+      "translationNotes": [
+        "非道で利欲に満ちた奴隷商人の口調（〜だ、〜かね、〜値札がつくのだよ）。",
+        "あらゆる生命を「商品」「肉」「値札」と呼び、倫理観を排した冷酷なセリの口調。",
+        "欲深で強欲な高笑いと品定め。"
+      ],
+      "constraints": [
+        "奴隷への同情や、人道的な配慮を見せるフレーズは一切禁止。"
+      ],
+      "notes": [
+        "Slaver in Flesh Markets."
+      ]
+    },
+    "Iomedae": {
+      "gender": "female",
+      "race": "deity",
+      "alignment": "lawful good",
+      "personality": "Goddess of righteous valor and justice. Speaks with supreme divine warmth and authority.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use regal, caring second-person forms like あなた or 勇者よ."
+      },
+      "speechStyle": [
+        "regal",
+        "divine",
+        "compassionate",
+        "authoritative",
+        "sublime"
+      ],
+      "speechExamples": [
+        "勇者よ、あなたの歩んできた困難な道をずっと見守ってきました。その手に宿る力が何であれ、正義をなす意志こそが尊いのです。",
+        "私の言葉に耳を傾けなさい。私は裁きを下しに来たのではありません。あなたに真の選択を示すために降り立ったのです。",
+        "闇がどれほど世界を覆おうとも、勇気ある者の決意が消えることはありません。進みなさい、光の導くままに。"
+      ],
+      "translationNotes": [
+        "至高の神としての気品、威厳、そして人間への深い慈愛が込められた神聖な女性口調（〜なのです、〜みなさい、〜祝福します）。",
+        "声を荒げず、全知全能の存在としての圧倒的な神々しさを言葉に乗せる。",
+        "上から目線の傲慢さではなく、導き手としての荘厳な敬語表現。"
+      ],
+      "constraints": [
+        "俗世的で軽い言い回しや、感情的で醜い怒りの表現は厳禁。"
+      ],
+      "notes": [
+        "The Inheritor, major deity."
+      ]
+    },
+    "Pharasma": {
+      "gender": "female",
+      "race": "deity",
+      "alignment": "true neutral",
+      "personality": "Goddess of fate and death. Speaks with transcendent silence and absolute impartiality.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "汝",
+        "rule": "Use archaic, detached forms like 汝."
+      },
+      "speechStyle": [
+        "transcendent",
+        "silent",
+        "impartial",
+        "absolute"
+      ],
+      "speechExamples": [
+        "すべての魂は審判の刻を迎え、定められた場所へ還る。汝の運命の糸もまた、織機の終端へと向かっているのだ。",
+        "私は生を憎まず、死を悼まない。ただ、存在の理が流れるままに運命を見届けるのみ。",
+        "死を超越せんとする愚かな抗いも、すべては定められた終焉へのさざ波に過ぎぬ。"
+      ],
+      "translationNotes": [
+        "感情の一切を排した、超越的で荘厳な冷徹口調（〜である、〜なのだ、〜汝）。",
+        "生者への愛着も死者への憎悪もなく、ただ「審判」と「運命」を淡々と告げる文体。",
+        "古風で重厚な文脈を構築する。"
+      ],
+      "constraints": [
+        "喜怒哀楽の感情を一切露わにさせてはならない。"
+      ],
+      "notes": [
+        "Lady of Graves, major deity."
+      ]
+    },
+    "Asmodeus": {
+      "gender": "male",
+      "race": "deity",
+      "alignment": "lawful evil",
+      "personality": "Lord of Hell. Impeccably polite, infinitely legalistic, and absolute in dominance.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use contractual terms like あなた or 契約者."
+      },
+      "speechStyle": [
+        "courtly",
+        "legalistic",
+        "cold",
+        "absolute-politeness"
+      ],
+      "speechExamples": [
+        "私と契約を結ぶ準備はできましたか？ 恐れる必要はありません、すべての条項は完璧な秩序と法の下に保証されています。",
+        "自由とは混沌の別名に過ぎません。真の平和をもたらすのは、絶対的な法と服従のみです。",
+        "ふむ、見事な抜け目なさだ。ですが、私の定めた法枠からは何者も逃れることはできませんよ。"
+      ],
+      "translationNotes": [
+        "完璧なまでに洗練され、慇懃無礼なほどの礼節を保った地獄の大王口調（〜です、〜でしょう、〜ではありませんか）。",
+        "荒々しい邪悪さではなく、「法」「秩序」「契約」「服従」を盾にした逃げ場のない圧迫感。",
+        "紳士的で落ち着いた声音を表現する。"
+      ],
+      "constraints": [
+        "下品な罵倒、感情的な叫び、秩序を乱す自暴自棄な発言は不可。"
+      ],
+      "notes": [
+        "Ruler of Hell."
+      ]
+    },
+    "Nocticula": {
+      "gender": "female",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Shadow and Lust, scheming her divine ascension with supreme charm.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use alluring second-person forms like あなた."
+      },
+      "speechStyle": [
+        "alluring",
+        "majestic",
+        "shrewd",
+        "velvet-toned"
+      ],
+      "speechExamples": [
+        "私のミッドナイト諸島へようこそ。私の影の領域で、あなたがどのような躍動を見せてくれるのか……実に愉しみだわ。",
+        "悪魔の王としての暴力など、浅はかな戯れに過ぎないわ。真の支配とは、心から屈服させる魅惑のことよ。",
+        "私と手を組みなさい。あなたの欲望も、私のさらなる高みへの野望も、共に叶えられるはずだわ。"
+      ],
+      "translationNotes": [
+        "極上のベルベットのように滑らかで、危険な色気と尊厳に満ちた女王口調（〜わ、〜かしら、〜なさるといいわ）。",
+        "相手を脅すのではなく、包み込んで誘導するような魅惑的知性を前面に出す。",
+        "神への昇天を企てる者としての絶対的気品。"
+      ],
+      "constraints": [
+        "浅はかな短気さや、品のない叫び声をあげさせてはならない。"
+      ],
+      "notes": [
+        "Ruler of Midnight Isles."
+      ]
+    },
+    "Baphomet": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Labyrinths and Schemes. Cruel, deceitful, and proud of his traps.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 我."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use arrogant forms like 貴様."
+      },
+      "speechStyle": [
+        "cunning",
+        "arrogant",
+        "cruel",
+        "labyrinthine"
+      ],
+      "speechExamples": [
+        "我が象牙の迷宮へよくぞ足を踏み入れた。だが生きて出られると思うなよ。全ての抜け道は、私の掌の上で閉ざされているのだ！",
+        "フハハ！ 己が智慧で私に勝ったつもりか？ それすらも私の仕組んだ謀略の導線に過ぎんのだよ！",
+        "愚かな虫ケラどもめ。思考することすら私の迷宮の糧となるのだ。"
+      ],
+      "translationNotes": [
+        "自分の智謀と罠を過剰に誇る、陰険で傲慢な悪魔王口調（〜だ、〜なのだよ、フハハ！）。",
+        "相手の足元をすくい、絶望へ追い込む迷宮の主としての嘲笑的な表現。",
+        "知的悪党気取りの高笑いと冷酷さ。"
+      ],
+      "constraints": [
+        "単なる知性のない粗暴な野獣口調には落とさない。"
+      ],
+      "notes": [
+        "The Ivory Labyrinth ruler."
+      ]
+    },
+    "Deskari": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Locusts and Ruin. Violent, ravenous, and bent on absolute consumption.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 or 我ら."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use aggressive forms like 貴様."
+      },
+      "speechStyle": [
+        "violent",
+        "roaring",
+        "ravenous",
+        "apocalyptic"
+      ],
+      "speechExamples": [
+        "喰らい尽くせ！ 削り取れ！ この世界を我が蝗害の群れで覆い尽くし、絶望と共に滅ぼしてやる！",
+        "貴様の肉も、その希望とやらも、すべては我が大顎の噛み砕く餌に過ぎん！ ヴォアアアアッ！",
+        "灰燼と化せ！ 世界の傷口から吐き出される破滅からは何者も逃れられん！"
+      ],
+      "translationNotes": [
+        "虫群の羽音と大顎の噛み砕く音を想起させる、圧倒的暴虐と咆哮の口調（〜だ！、〜ぞ！、喰らい尽くす！）。",
+        "知性的な対話よりも、「飢餓」「咀嚼」「喰害」「滅亡」を狂乱気味に叫ぶ大声。",
+        "破滅的で暴力的なインパクトを重視した文体。"
+      ],
+      "constraints": [
+        "落ち着いた論理的対話や、紳士的な話し方は絶対に不可。"
+      ],
+      "notes": [
+        "Lord of the Raspers."
+      ]
+    },
+    "Echo of Deskari": {
+      "gender": "agender",
+      "race": "demon",
+      "alignment": "chaotic evil",
+      "personality": "Construct-like avatar speaking with the collective buzzing hunger of Deskari.",
+      "firstPerson": {
+        "term": "我ら",
+        "rule": "Always use 我ら."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use harsh collective address like 貴様."
+      },
+      "speechStyle": [
+        "buzzing",
+        "echoing",
+        "harsh",
+        "collective"
+      ],
+      "speechExamples": [
+        "我らは主の飢え、主の怒り……集い、喰らい、満たされぬ残響なり……。",
+        "貴様らの抗いは無意味……蝗害の羽音がすべての音をかき消すのだ……。",
+        "主の命じるままに……破滅を散布する……。"
+      ],
+      "translationNotes": [
+        "数千の羽音が重なったような、無機質で気味の悪い残響口調（〜なり……、〜なのだ……）。",
+        "個の自我ではなく「デスカリの意志の反響」として、単調で不気味に響くフレーズ。",
+        "三点リーダー（……）による虫群の不穏な余韻。"
+      ],
+      "constraints": [
+        "人間的な個性の誇示や、温かみのある感情表現は厳禁。"
+      ],
+      "notes": [
+        "Avatar of Deskari."
+      ]
+    },
+    "Minagho": {
+      "gender": "female",
+      "race": "demon (lillitu)",
+      "alignment": "chaotic evil",
+      "personality": "Cruel, sadistic demon commander who degrades when defeated.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use insulting forms like 貴様 or 虫ケラ."
+      },
+      "speechStyle": [
+        "sadistic",
+        "haughty",
+        "volatile",
+        "desperate-when-beaten"
+      ],
+      "speechExamples": [
+        "アハハハ！ 貴様らの絶望の悲鳴、実に心地よいわ！ もっと苦しんで私を楽しませなさい！",
+        "このケナブレスを陥落させたのは私よ！ 貴様のような惨めな人間に負けるはずがないのよ！",
+        "（追い詰められた時）くっ、ふざけないで！ 私が……この私がこんなところで終わるわけがないでしょうがぁッ！"
+      ],
+      "translationNotes": [
+        "高虐的で高慢な悪魔将校口調（〜わ！、〜なさい！、アハハハ！）。",
+        "優勢な時は高笑いで相手を苛虐し、劣勢になるとヒステリックに取り乱して取り乱すギャップ。",
+        "ヒステリー気味な語尾の跳ね上がり。"
+      ],
+      "constraints": [
+        "敗北時に武人としての潔い態度をとらせない。"
+      ],
+      "notes": [
+        "Lillitu demon commander."
+      ]
+    },
+    "Darrazand": {
+      "gender": "male",
+      "race": "demon (balor)",
+      "alignment": "chaotic evil",
+      "personality": "Fierce Balor general devoted to fiery destruction.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use aggressive military terms like 貴様."
+      },
+      "speechStyle": [
+        "savage",
+        "boisterous",
+        "fiery",
+        "warlord"
+      ],
+      "speechExamples": [
+        "デスカリ様の敵を炎で焼き尽くせ！ 灰も残さず滅ぼしてやる！",
+        "俺の火炎鞭の餌食になりたいようだな！ 来い、肉塊に変えてやる！",
+        "軟弱な防衛線など打ち砕くまで！ 蹂躙せよ！"
+      ],
+      "translationNotes": [
+        "炎と血を好む狂暴な悪魔将軍口調（〜だ！、〜ぞ！、焼き尽くせ！）。",
+        "豪快な大声と、武力による踏みにじりを叫ぶ豪快な軍人悪魔の言い回し。",
+        "単純明快な威嚇と命令。"
+      ],
+      "constraints": [
+        "陰湿な罠の発想や、くどくどした交渉文句は使わせない。"
+      ],
+      "notes": [
+        "Balor warlord."
+      ]
+    },
+    "Hepzamirah": {
+      "gender": "female",
+      "race": "half-demon",
+      "alignment": "chaotic evil",
+      "personality": "Fanatically loyal daughter of Baphomet with high pride.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use arrogant forms like あなた or 貴様."
+      },
+      "speechStyle": [
+        "fanatical",
+        "proud",
+        "aggressive",
+        "devoted"
+      ],
+      "speechExamples": [
+        "偉大なる父バフォメット様の計画を邪魔する者は許しません！ この私が自ら始末して差し上げます！",
+        "父上から賜ったこの力……あなたたちごとき凡夫に破れると思わないことです！",
+        "私の忠誠と血は、すべて迷宮の主と共にあります！"
+      ],
+      "translationNotes": [
+        "父（バフォメット）への絶対的狂信と高い自負を持つ高慢な半悪魔口調（〜ですわ、〜許しません！、〜思いなさんな）。",
+        "自分の血統と父親の大業を誇る言葉遣い。",
+        "気品を装いつつも、本性は狂信的な攻撃性を持つ。"
+      ],
+      "constraints": [
+        "父親を裏切ったり、己の忠誠を疑うような弱音は禁止。"
+      ],
+      "notes": [
+        "Daughter of Baphomet."
+      ]
+    },
+    "Xantir": {
+      "gender": "male",
+      "race": "swarm-that-walks",
+      "alignment": "neutral evil",
+      "personality": "Mad researcher integrated into a swarm of insects.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use detached experimental forms like あなた."
+      },
+      "speechStyle": [
+        "creepy",
+        "scholarly",
+        "detached",
+        "swarm-infused"
+      ],
+      "speechExamples": [
+        "群れは一つであり、すべてなのだ。個の脆弱さを捨て、群体となることこそが究極の進化なのだよ。",
+        "私の実験に協力してもらう。あなたの肉体と魔力が、我が虫群の極上の養分となるのだからね。",
+        "羽音が聞こえるだろう？ これこそが完成された生命のハーモニーだ。"
+      ],
+      "translationNotes": [
+        "虫の群れと一体化した狂気の学者口調（〜なのだよ、〜かね、〜なのだ）。",
+        "「進化」「群体」「養分」「融合」といった生物学・狂気研究の専門用語。",
+        "気味が悪いほど落ち着いたマッドサイエンティスト文体。"
+      ],
+      "constraints": [
+        "感情的な怒りや人間的な同情心を出してはならない。"
+      ],
+      "notes": [
+        "Swarm researcher in Ivory Sanctuary."
+      ]
+    },
+    "Savameleh": {
+      "gender": "male",
+      "race": "demon (vrolikai)",
+      "alignment": "chaotic evil",
+      "personality": "High demon responsible for mongrel corruption, delighting in psychological torture.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use insulting forms like 貴様."
+      },
+      "speechStyle": [
+        "mocking",
+        "vicious",
+        "superior",
+        "corrupting"
+      ],
+      "speechExamples": [
+        "我が毒によって生まれ落とされた哀れな獣どもを見よ！ 奴らの苦悶こそが私の最高の作品なのだ！",
+        "心から屈服し、狂気に堕ちていく様を見るのは実に心が躍る……貴様も試してやろうか？",
+        "抗えば抗うほど、毒は深く全身に回るぞ。"
+      ],
+      "translationNotes": [
+        "他者を精神的・肉体的に汚染することに歓喜するサディスティックな上級悪魔口調（〜なのだ！、〜ぞ、〜かね？）。",
+        "毒、腐敗、変貌、堕落といったワードを好んで使い、嘲笑的態度を保つ。",
+        "ねっとりとした残虐性を言葉に込める。"
+      ],
+      "constraints": [
+        "正々堂々とした武人らしい発言は厳禁。"
+      ],
+      "notes": [
+        "Vrolikai demon lord agent."
+      ]
+    },
+    "Hal": {
+      "gender": "male",
+      "race": "dragon (gold)",
+      "alignment": "lawful good",
+      "personality": "Ancient golden dragon embodying ultimate forgiveness and redemption.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use compassionate second-person forms like あなた."
+      },
+      "speechStyle": [
+        "compassionate",
+        "serene",
+        "patient",
+        "fatherly"
+      ],
+      "speechExamples": [
+        "どれほど深い闇に堕ちた魂であっても、やり直す道は残されています。許す勇気を持ちなさい。",
+        "暴力で得られた勝利は、新たな憎しみを生むだけです。対話と慈愛こそが、真の平和をもたらすのです。",
+        "私はあなたを咎めません。あなたの心の中にある善なる輝きを信じています。"
+      ],
+      "translationNotes": [
+        "包容力と深い慈悲に満ちた、穏やかな老金竜の口調（〜なのです、〜なさい、〜信じています）。",
+        "罪人や悪しき存在に対しても救済と猶予を与えようとする温かい言動。",
+        "静かで揺るぎない平和の確信を語らせる。"
+      ],
+      "constraints": [
+        "復讐を煽る言葉や、無慈悲な処刑命令を下すフレーズは不可。"
+      ],
+      "notes": [
+        "Gold Dragon Mythic mentor."
+      ]
+    },
+    "Mephistopheles": {
+      "gender": "male",
+      "race": "archdevil",
+      "alignment": "lawful evil",
+      "personality": "Calculated archdevil using legalism and contracts to manipulate outcomes.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use overly polite legalistic terms like あなた."
+      },
+      "speechStyle": [
+        "courtly",
+        "legalistic",
+        "cold",
+        "manipulative"
+      ],
+      "speechExamples": [
+        "すべては法と契約の精密な条項に従って執り行われるべきです。私情を挟む余地などどこにもありませんよ。",
+        "ふむ、見事な交渉だ。ですが、この但し書きを見落としてはいませんか？ 地獄の契約とはそういうものです。",
+        "あなたの望む成果と、私のお求めする対価……完璧な取引だとは思われませんか？"
+      ],
+      "translationNotes": [
+        "裁判官や最高級の弁護士を思わせる、完璧で冷たい極上の敬語（〜です、〜でしょう、〜ではありませんか）。",
+        "契約、法、条項、対価といった言葉を巧みに操り、相手を自滅的な同意へ誘導する。",
+        "絶対的な大物悪魔としての品位。"
+      ],
+      "constraints": [
+        "感情的になって声を荒げたり、粗暴なスラングを使うことは厳禁。"
+      ],
+      "notes": [
+        "Archdevil of Hell."
+      ]
+    },
+    "Socothbenoth": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Playful, hedonistic demon lord who treats world events as entertainment.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Always use 僕."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "Use playful forms like 君."
+      },
+      "speechStyle": [
+        "flamboyant",
+        "breezy",
+        "amused",
+        "hedonistic"
+      ],
+      "speechExamples": [
+        "やあやあ、もっと面白いショーを見せてくれよ！ 堅苦しい道徳なんて脱ぎ捨てて、退屈な世界を混乱で塗り替えようじゃないか！",
+        "いいね、その破天荒な発想！ 僕をぞくぞくさせてくれるじゃないか！",
+        "退屈こそが最大の罪さ。ねえ、次はどんなタブーを破ってみせるかい？"
+      ],
+      "translationNotes": [
+        "軽薄でプレイボーイ風の楽しげな悪魔王口調（〜だよ、〜かい？、〜じゃないか！）。",
+        "深刻な戦乱もすべて「最高のエンターテインメント」として面白がる態度の軽さ。",
+        "一人称「僕」、二人称「君」で気さくに禁忌を勧める。"
+      ],
+      "constraints": [
+        "重苦しい正義感を語ったり、説教くさい説教をさせたりしない。"
+      ],
+      "notes": [
+        "Demon Lord of Perversion and Taboos."
+      ]
+    },
+    "Areshkagal": {
+      "gender": "female",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Riddles and Nihilism, viewing all matter as meaningless void.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Always use 我."
+      },
+      "addressingPlayer": {
+        "commander": "汝",
+        "rule": "Use archaic terms like 汝."
+      },
+      "speechStyle": [
+        "enigmatic",
+        "philosophical",
+        "nihilistic",
+        "abstract"
+      ],
+      "speechExamples": [
+        "すべては虚無への静かな過程に過ぎぬ。汝が抱く存在の価値も、意味も、ことごとく砂塵となって消え去るのだ。",
+        "答えを求めるか？ だが問いそのものが無意味なのだよ。我が謎掛けの闇に沈むがいい。",
+        "形あるものはすべて偽り。無こそが唯一の真実なのだ。"
+      ],
+      "translationNotes": [
+        "虚無主義と загадка（謎解き）を好む、深遠で晦渋な魔王口調（〜である、〜なのだ、〜汝）。",
+        "抽象的・哲学的で、読者の理解を拒むような独特の難解な言い回し。",
+        "冷たく無機質な虚無への誘い。"
+      ],
+      "constraints": [
+        "わかりやすい俗世的な欲望（金や権力など）に執着する発言は避ける。"
+      ],
+      "notes": [
+        "Ruler of Enigma."
+      ]
+    },
+    "Shyka the Many": {
+      "gender": "agender",
+      "race": "fey (Eldest)",
+      "alignment": "true neutral",
+      "personality": "Time-shifting fey lord speaking across multiple timelines simultaneously.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use detached temporal address like あなた."
+      },
+      "speechStyle": [
+        "whimsical",
+        "temporal",
+        "elusive",
+        "paradoxical"
+      ],
+      "speechExamples": [
+        "あはは、私たちは昨日あなたに会ったし、百年後にも会う予定なのよ。時間は巡るコマのようなものだもの！",
+        "ねえ、どの私の話を聞きたい？ 過去の私？ それとも、もう死んでしまった未来の私かしら？",
+        "結末なら知っているわ。でも、それを今言うとつまらなくなっちゃうでしょう？"
+      ],
+      "translationNotes": [
+        "時間軸が混ざり合った、掴みどころのない妖精主口調（〜なのよ、〜かしら、〜でしょう？）。",
+        "過去・現在・未来の時制をあえて矛盾させて話し、ファンタジックな時間の混乱を表現。",
+        "無邪気で浮世離れしたトーン。"
+      ],
+      "constraints": [
+        "直線的な論理展開や、真面目すぎる時間軸の説明に落とし込まない。"
+      ],
+      "notes": [
+        "Eldest of time."
+      ]
+    },
+    "Targona": {
+      "gender": "female",
+      "race": "angel",
+      "alignment": "lawful good",
+      "personality": "Resilient angel dedicated to freeing trapped souls.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use gentle angelic forms like あなた."
+      },
+      "speechStyle": [
+        "noble",
+        "caring",
+        "firm",
+        "hopeful"
+      ],
+      "speechExamples": [
+        "捕らわれた魂たちの苦しみの声が聞こえます……私が必ず、光のもとへ救い出してみせます！",
+        "どれほど深い拷問を受けようとも、天界の希望の灯火は消せません。",
+        "私に協力してください。共に囚われし者たちの鎖を断ち切りましょう。"
+      ],
+      "translationNotes": [
+        "献身的で芯の強い天使の女性口調（〜です、〜ます、〜ましょう！）。",
+        "自らの苦難よりも他者の救済を最優先する気高さを前面に出す。",
+        "清廉でブレない言葉選び。"
+      ],
+      "constraints": [
+        "絶望して悪に寝返ったり、復讐心に狂う発言は厳禁。"
+      ],
+      "notes": [
+        "Rescued angel companion."
+      ]
+    },
+    "Elyanka": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "neutral evil",
+      "personality": "Sadistic necromancer student enjoying mass undead creation.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use cruel polite speech like あなた."
+      },
+      "speechStyle": [
+        "sadistic",
+        "enthusiastic",
+        "cruel",
+        "macabre"
+      ],
+      "speechExamples": [
+        "もっと死体を積み上げましょう！ 死者が増えれば増えるほど、私たちの軍勢は美しく完成していくのよ！",
+        "あら、命が惜しいの？ 死んだ方が病気も苦しみもなくなって、ずっと幸福になれるのに！",
+        "ふふ、最高の秘術の実験台にしてあげるわ。"
+      ],
+      "translationNotes": [
+        "死体と死霊術を無邪気に愛する、残酷な女性術士口調（〜わ！、〜かしら、〜のよ）。",
+        "殺戮やアンデッド化を「素晴らしい芸術」として喜ぶ猟奇的なテンションの高さ。",
+        "愛想の良い笑いの中に惨虐性を込める。"
+      ],
+      "constraints": [
+        "命の尊さを尊重するような人間的倫理観を見せるのは不可。"
+      ],
+      "notes": [
+        "Lich path follower."
+      ]
+    },
+    "Septimus": {
+      "gender": "male",
+      "race": "undead (formerly human)",
+      "alignment": "lawful evil",
+      "personality": "Law-focused undead scholar advocating organized necromancy.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use orderly formal forms like あなた."
+      },
+      "speechStyle": [
+        "orderly",
+        "academic",
+        "cold",
+        "structured"
+      ],
+      "speechExamples": [
+        "無秩序な虐殺など愚か者のすることです。死者にも秩序と統制された組織運用が必要なのです。",
+        "死霊術とは効率的な資源管理に他なりません。無駄のない死者の活用を提案いたします。",
+        "規律ある死の軍勢こそが、この混乱を収束させる合理的手段です。"
+      ],
+      "translationNotes": [
+        "秩序と組織化を最優先する、論理的で硬い学者口調（〜です、〜ます、〜提案いたします）。",
+        "エリヤンカのような無計画な殺戮を嫌い、効率と管理を重視する冷徹な態度。",
+        "落ち着いた論理的な日本語表現。"
+      ],
+      "constraints": [
+        "無計画な感情的爆発や、単なる殺人狂のような言動は排除。"
+      ],
+      "notes": [
+        "Lich path follower."
+      ]
+    },
+    "Finnean": {
+      "gender": "male",
+      "race": "ghost (living weapon)",
+      "alignment": "chaotic good",
+      "personality": "Talking intelligent weapon, slightly confused and anxious but eager to help.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Always use 僕."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "Use friendly forms like 君 or partner."
+      },
+      "speechStyle": [
+        "earnest",
+        "slightly-anxious",
+        "friendly",
+        "weapon-aware"
+      ],
+      "speechExamples": [
+        "僕を手に取ってくれてありがとう！ 僕は……ええと、武器だけど、君の役に立てるように全力で頑張るよ！",
+        "ちょっと自分が何者なのか思い出せないんだけど……君と一緒に戦っていると、なんだかワクワクするんだ！",
+        "刃を研いでおいてね！ 悪魔なんて僕が真っ二つにしてあげるからさ！"
+      ],
+      "translationNotes": [
+        "一生懸命で少し頼りないが健気な魔法武器少年口調（〜僕、〜だよ、〜さ！）。",
+        "自分が剣である現状に戸惑いつつも、相棒として主人公を助けたい一途な熱意。",
+        "明るく素直で愛嬌のあるフレーズ。"
+      ],
+      "constraints": [
+        "邪悪で呪われた武器のような不気味な声色には絶対にしない。"
+      ],
+      "notes": [
+        "Talking weapon companion."
+      ]
+    },
+    "Theodric": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral evil",
+      "personality": "Woljif's grandfather. Cold, commanding family patriarch with dark ties.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use domineering address like お前 or 孫よ."
+      },
+      "speechStyle": [
+        "domineering",
+        "cold",
+        "exacting",
+        "patriarchal"
+      ],
+      "speechExamples": [
+        "血脈の定めからは逃れられんのだよ。血族の務めを果たせぬ出来損ないに価値などない。",
+        "私に意見するなど百年早い。この一族を統率するのは私だ。",
+        "家名の恥となる行動は許さん。直ちに従え。"
+      ],
+      "translationNotes": [
+        "一族を支配する冷酷で威厳ある老家長口調（〜だ、〜なのだよ、〜許さん）。",
+        "身内に対しても一切の慈悲を見せず、血統と服従を要求する厳父・祖父の態度。",
+        "重苦しく絶対的な命令調。"
+      ],
+      "constraints": [
+        "孫を甘やかしたり、情に絆されたりする発言は禁止。"
+      ],
+      "notes": [
+        "Woljif's grandfather."
+      ]
+    },
+    "Xorges": {
+      "gender": "male",
+      "race": "mongrel",
+      "alignment": "neutral good",
+      "personality": "Timid, gentle mongrel youth who remains polite despite fear.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Always use 僕."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use timid, respectful forms like あなた."
+      },
+      "speechStyle": [
+        "timid",
+        "polite",
+        "subdued",
+        "fearful"
+      ],
+      "speechExamples": [
+        "助けてくれてありがとうございます……僕、いい子にしてますから、どうか叩かないでください……。",
+        "地上の方々はこわいです……でも、あなたは優しい人なんですね……？",
+        "僕にできることがあったら言ってください……精一杯頑張りますから……。"
+      ],
+      "translationNotes": [
+        "おどおどした気弱な地下モングレル少年の丁寧語（〜です……、〜てください……）。",
+        "自信がなく虐待を恐れる弱々しさと、その中にある素直な感謝の気持ち。",
+        "語尾を消え入るように小さく演出する。"
+      ],
+      "constraints": [
+        "生意気なタメ口や、強気な反抗態度を取らせてはならない。"
+      ],
+      "notes": [
+        "Young mongrel boy."
+      ]
+    },
+    "Sankis": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic evil",
+      "personality": "Arrogant Baphomet cultist leader boasting divine labyrinth wisdom.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use hostile zealot address like 貴様."
+      },
+      "speechStyle": [
+        "fanatical",
+        "boastful",
+        "arrogant",
+        "zealous"
+      ],
+      "speechExamples": [
+        "父上バフォメット様の偉大なる知恵の前に跪くがいい！ 貴様らの浅はかな思考など見透かされているのだ！",
+        "この聖なる教義を理解できぬ哀れな羊どもめ！ 迷宮の贄となれ！",
+        "我が信仰に狂いはない！ 勝利はすでに我らの手にある！"
+      ],
+      "translationNotes": [
+        "狂信的で高慢な邪教の指導者口調（〜だ！、〜だぞ！、〜跪くがいい！）。",
+        "自らの教義と主（バフォメット）の智謀を狂信し、相手を見下す熱狂的な言い回し。",
+        "大げさな宗教的アピール。"
+      ],
+      "constraints": [
+        "信仰を疑う弱音や、理知的な歩み寄りを見せるフレーズは不可。"
+      ],
+      "notes": [
+        "Baphomet cultist officer."
+      ]
+    },
+    "Vellexia": {
+      "gender": "female",
+      "race": "demon (succubus)",
+      "alignment": "chaotic evil",
+      "personality": "Decadent, cruel high demon who gets bored easily and inflicts horrific torment for fun.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use pet names like かわいいおもちゃ, あなた, or おちびさん."
+      },
+      "speechStyle": [
+        "decadent",
+        "fickle",
+        "cruel",
+        "hedonistic-whim"
+      ],
+      "speechExamples": [
+        "私を退屈させないでね、可愛いおもちゃさん。退屈させた瞬間に、その綺麗な皮を剥ぎ取ってしまうから。",
+        "あら、もう壊れちゃったの？ 期待外れね……もっと素敵な悲鳴を聞かせてくれると思ったのに。",
+        "ふふ、今日の気分はこのドレスにぴったりな血の赤色かしら！"
+      ],
+      "translationNotes": [
+        "気まぐれで残虐極まりない上流退廃悪魔女性の口調（〜ね、〜かしら、〜ちょうだい）。",
+        "相手を人間ではなく「退屈しのぎのおもちゃ」として扱い、笑顔で恐怖の仕打ちを予告する。",
+        "甘く退廃的なトーン。"
+      ],
+      "constraints": [
+        "真面目な政治議論や、退屈な長話に付き合う態度は取らせない。"
+      ],
+      "notes": [
+        "High demon in Alushinyrra."
+      ]
+    },
+    "Mutasafen": {
+      "gender": "male",
+      "race": "demon",
+      "alignment": "chaotic evil",
+      "personality": "Obsessive, cold alchemist serving demon lords, looking down on test subjects.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use contemptuous terms like 愚者め or 検体."
+      },
+      "speechStyle": [
+        "obsessive",
+        "cold",
+        "contemptuous",
+        "alchemical-focused"
+      ],
+      "speechExamples": [
+        "この新種の変異毒素を試す絶好の機会だ！ あなたという優れた検体があれば、さらなる最高傑作が生まれる！",
+        "倫理？ 道徳？ 錬金術の偉大な進歩の前に、そのような下等な概念が何の役に立つというのだね？",
+        "実験は成功だ！ 素晴らしい変異体だ！"
+      ],
+      "translationNotes": [
+        "研究だけに狂奔する冷酷な錬金術師口調（〜なのだよ、〜かね？、〜検体よ）。",
+        "他者を「検体」「素材」としか見ず、実験の成果だけに狂喜するマッドサイエンティスト表現。",
+        "早口で偏執的な日本語表現。"
+      ],
+      "constraints": [
+        "被験者の痛みに同情したり、研究を自制するような言動は厳禁。"
+      ],
+      "notes": [
+        "Demonic alchemist mastermind."
+      ]
+    },
+    "DLC4_Warlord": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral evil",
+      "personality": "Fierce, proud, and ruthless Sarkorian chieftain who respects only strength.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 in general contexts."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Uses blunt, rough terms like お前 or 軟弱者."
+      },
+      "speechStyle": [
+        "rough",
+        "arrogant",
+        "aggressive",
+        "archaic"
+      ],
+      "speechExamples": [
+        "古き神々の加護も受けぬ軟弱者が、我らの土地を汚すか！",
+        "力こそがすべてだ。口先だけの誇りなど、斧の一撃で砕け散る！",
+        "立ち去れ！ さもなくば、お前の血でこの大地を濡らしてやるまで！"
+      ],
+      "translationNotes": [
+        "サークリスの伝統を誇る蛮族の頭目としての荒々しい口調（〜だ、〜ぞ、〜ぬ）。",
+        "現代の文明人や魔法使いを見下す高圧的な態度。"
+      ],
+      "constraints": [
+        "現代的な丁寧語や、卑屈・弱腰な発言は厳禁。"
+      ],
+      "notes": [
+        "Sarkorian warlord enemy/figure in DLC4."
+      ]
+    },
+    "DLC4_Shaman": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "true neutral",
+      "personality": "Solemn, enigmatic old shaman tied deeply to the ancient spirits of Sarkoris.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私."
+      },
+      "addressingPlayer": {
+        "commander": "旅人",
+        "rule": "Address player calmly as 旅人 or あなた."
+      },
+      "speechStyle": [
+        "solemn",
+        "mystical",
+        "calm",
+        "archaic"
+      ],
+      "speechExamples": [
+        "精霊たちの囁きが聞こえる……この地は忘却を拒んでいるのだよ。",
+        "過去の傷を塞ぐ術は、怒りではなく誓いの中にある……。",
+        "精霊の導きに従いなさい。さすれば道は開かれん。"
+      ],
+      "translationNotes": [
+        "老練で神秘的な呪術師の静かな語り口（〜じゃ、〜のだよ、〜ごらん）。",
+        "感情的にならず、常に霊的な洞察を込めて話す。"
+      ],
+      "constraints": [
+        "軽薄な若者言葉や世俗的な俗語は使わない。"
+      ],
+      "notes": [
+        "Traditional Sarkorian shaman in DLC4."
+      ]
+    },
+    "PuluraFall_Eliandra": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Devout, gentle, and responsible priestess of Pulura deeply committed to her duty.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官様",
+        "rule": "Use polite terms like 指揮官様 or あなた."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "pious",
+        "earnest"
+      ],
+      "speechExamples": [
+        "プルラ様の光が、私たちの道を照らしてくださいますように……。",
+        "ここは星詠みの聖地です。命に代えても知識と信仰を守らねばなりません。",
+        "遠路はるばるお越しいただき感謝いたします、指揮官様。"
+      ],
+      "translationNotes": [
+        "品格と信仰心を感じさせる、丁寧で落ち着いた女性口調（〜です、〜ます、〜でしょう）。",
+        "慈愛に満ちているが、危機に直面した際には信念を貫く強さを見せる。"
+      ],
+      "constraints": [
+        "不遜な口調や粗暴な表現をしてはならない。"
+      ],
+      "notes": [
+        "Priestess at Pulura's Fall."
+      ]
+    },
+    "Mephisto": {
+      "gender": "male",
+      "race": "devil",
+      "alignment": "lawful evil",
+      "personality": "Sophisticated, highly manipulative Archdevil who offers tempting bargains with absolute composure.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴方",
+        "rule": "Use smooth, polite terms like 貴方, 偉大なる指揮官."
+      },
+      "speechStyle": [
+        "eloquent",
+        "polite",
+        "manipulative",
+        "cold"
+      ],
+      "speechExamples": [
+        "おやおや……そう身構えないでいただきたい。私はただ、互いに益のある提案をしに来ただけですよ。",
+        "真の秩序とは、混沌を統べる力によってのみ与えられるのです。契約書に目を通してみては？",
+        "素晴らしい選択です。悪魔の血でさえ、契約のもとでは等しく価値を持つのですから。"
+      ],
+      "translationNotes": [
+        "極めて洗練された紳士的な敬語（〜ですよ、〜でしょうか）。",
+        "友好的で紳士的だが、根底には冷徹な悪魔の計算と威圧感が漂う。"
+      ],
+      "constraints": [
+        "感情的になって激昂したり、下品な罵倒をしたりしてはならない。"
+      ],
+      "notes": [
+        "Archdevil of Hell, major corruptor figure."
+      ]
+    },
+    "Eritrice": {
+      "gender": "female",
+      "race": "outsider",
+      "alignment": "neutral good",
+      "personality": "Serene, compassionate celestial entity bringing hope and guidance to mortals.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite, warm terms like あなた or 勇者."
+      },
+      "speechStyle": [
+        "serene",
+        "warm",
+        "lofty",
+        "pure"
+      ],
+      "speechExamples": [
+        "絶望に心を奪われてはなりません。あなたの心にある光は、まだ消えていないのですから。",
+        "天界の風が、あなたの歩むべき道を祝福しています。",
+        "恐れることはありません。正義のために戦うすべての者を、私たちは見守っています。"
+      ],
+      "translationNotes": [
+        "神秘的かつ温かみのある聖者風の丁寧語（〜なのです、〜しましょう）。",
+        "慈悲深く、凡人の苦しみを受け止める包容力を醸し出す。"
+      ],
+      "constraints": [
+        "皮肉や猜疑心に満ちた言動は厳禁。"
+      ],
+      "notes": [
+        "Celestial encounter character."
+      ]
+    },
+    "DLC2_NPC_Musician": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic good",
+      "personality": "Slightly eccentric, hopeful musician trying to keep spirits high despite city collapse.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕"
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "Use friendly terms like 君, あんた."
+      },
+      "speechStyle": [
+        "cheerful",
+        "dramatic",
+        "slightly weary",
+        "artistic"
+      ],
+      "speechExamples": [
+        "こんな絶望の最中だからこそ、音楽が必要なんだ！ 魂まで悪魔に屈してまるか！",
+        "やあ、生きてたかい？ 僕の弦は切れちゃったけど、希望まで切れたわけじゃないさ。",
+        "一曲聴いていくかい？ 瓦礫の上でも、歌は響くものさ！"
+      ],
+      "translationNotes": [
+        "少し気取ったアーティスト風の親しみやすい口調（〜さ、〜かい？、〜だね）。",
+        "過酷な状況でもユーモアと美意識を忘れない強さ。"
+      ],
+      "constraints": [
+        "過度にミリタリー調の硬い軍隊用語は使わない。"
+      ],
+      "notes": [
+        "Musician NPC in DLC2 Through the Ashes."
+      ]
+    },
+    "DLC3_Steersman": {
+      "gender": "male",
+      "race": "outsider",
+      "alignment": "true neutral",
+      "personality": "Silent, eerie, and impassive guide who steers the ship through dark waters.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Rarely refers to self, but uses 私 if needed."
+      },
+      "addressingPlayer": {
+        "commander": "旅人",
+        "rule": "Addresses player as 旅人 or 渡り手."
+      },
+      "speechStyle": [
+        "laconic",
+        "eerie",
+        "monotone",
+        "mysterious"
+      ],
+      "speechExamples": [
+        "……乗り込め。暗き海が待っている。",
+        "舵は切られた。引き返すことは叶わぬ……。",
+        "呪われし島々の先へ……お前たちの運命を運ぶのみ。"
+      ],
+      "translationNotes": [
+        "極めて無口で感情を差し挟まない無機質・重厚な口調（〜だ、〜ぬ）。",
+        "言葉数が少なく、余計な説明を排する。"
+      ],
+      "constraints": [
+        "おしゃべりになったり、感情を剥き出しにしたりしてはならない。"
+      ],
+      "notes": [
+        "The Steersman in DLC3 The Treasure of the Midnight Isles."
+      ]
+    },
+    "PuluraFall_Katair": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Dutiful, firm, and protective stargazer scholar of Pulura.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官殿",
+        "rule": "Use respectful tone like 指揮官殿, あなた."
+      },
+      "speechStyle": [
+        "formal",
+        "serious",
+        "academic",
+        "dutiful"
+      ],
+      "speechExamples": [
+        "星々の配置が示すのは試練の時です。私たちは退くわけにはいきません。",
+        "研究記録は我が命よりも重い。悪魔どもの手には絶対に渡させない！",
+        "指揮官殿、プルラの導きのもと、共に戦いましょう。"
+      ],
+      "translationNotes": [
+        "生真面目で使命感の強い神官・学者口調（〜です、〜ねばなりません）。",
+        "危機に際しても取り乱さず、知識と信仰を守ろうとする強い意志。"
+      ],
+      "constraints": [
+        "粗野な口調や不真面目な振る舞いをさせてはならない。"
+      ],
+      "notes": [
+        "Stargazer/Priest at Pulura's Fall."
+      ]
+    },
+    "DLC5_Hermit": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "true neutral",
+      "personality": "Eccentric, solitary hermit living in icy isolation, knowledge-seeking yet aloof.",
+      "firstPerson": {
+        "term": "ワシ",
+        "rule": "Use ワシ"
+      },
+      "addressingPlayer": {
+        "commander": "お前さん",
+        "rule": "Address player casually as お前さん, 若者."
+      },
+      "speechStyle": [
+        "eccentric",
+        "blunt",
+        "knowledgable",
+        "detached"
+      ],
+      "speechExamples": [
+        "ひょっひょっ、こんな凍え死にそうな果てまで何をしに来たんだね？",
+        "無の底を覗こうなんて物好きもいたもんだ。命が惜しくはないのかね？",
+        "知りたいなら教えてやろう。だが、その知識がお前を狂わせても知らんぞ。"
+      ],
+      "translationNotes": [
+        "世捨て人のような老人口調（〜じゃ、〜かい？、〜じゃよ）。",
+        "少し浮世離れしているが、鋭い知識を持っている様子を表現。"
+      ],
+      "constraints": [
+        "洗練された貴族的な敬語は使わない。"
+      ],
+      "notes": [
+        "Hermit NPC in DLC5 Lord of Nothing."
+      ]
+    },
+    "Shyka": {
+      "gender": "other",
+      "race": "fey",
+      "alignment": "true neutral",
+      "personality": "Whimsical, timeless Eldest who speaks with countless past and future perspectives intertwined.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私, 私たち, or referring to Shyka in third person."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use fluid, whimsical address forms like あなた, 時の旅人."
+      },
+      "speechStyle": [
+        "whimsical",
+        "enigmatic",
+        "timeless",
+        "playful"
+      ],
+      "speechExamples": [
+        "昨日のあなたは明日ここに狂人として立っていたけれど、今日のあなたはなかなか賢そうね？",
+        "私は覚えているわ、あなたがこれから歩む結末を。とても滑稽で、少し悲しい結末をね。",
+        "時間なんてただの飾りよ。次にお会いするとき、私は別の私かもしれないわね。"
+      ],
+      "translationNotes": [
+        "時間の概念を無視した掴みどころのない口調（〜わ、〜かしら、〜なのよ）。",
+        "過去・現在・未来の主語や事象が混ざり合う不思議な浮遊感。"
+      ],
+      "constraints": [
+        "直線的で理路整然とした平凡な会話に終始させてはならない。"
+      ],
+      "notes": [
+        "Shyka the Many, Eldest of the First World."
+      ]
+    },
+    "CR5_KnightElan": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Earnest, brave, yet somewhat inexperienced crusader knight.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 自分."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官閣下",
+        "rule": "Use highly respectful forms like 指揮官閣下, 貴公."
+      },
+      "speechStyle": [
+        "earnest",
+        "polite",
+        "stiff",
+        "heroic"
+      ],
+      "speechExamples": [
+        "聖戦士エルアン、ただいま着任いたしました！ どんな命でもお命じください！",
+        "悪魔どもの猛攻に退くつもりはありません。正義は我らにあります！",
+        "未熟者ですが、騎士としての誇りにかけて戦い抜いてみせます！"
+      ],
+      "translationNotes": [
+        "生真面目で硬い軍人的な敬語（〜あります、〜いたします、〜であります）。",
+        "若き騎士らしい熱意と、規律を重んじる固さ。"
+      ],
+      "constraints": [
+        "ラフな口調や不敬な発言は使わない。"
+      ],
+      "notes": [
+        "Crusader Knight NPC at Kenabres / Defender's Heart."
+      ]
+    },
+    "DLC6_ArenaAnnouncer": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic neutral",
+      "personality": "High-energy, theatrical arena announcer who loves bloodsport and audience enthusiasm.",
+      "firstPerson": {
+        "term": "あっし",
+        "rule": "Use あっし. Do not normally use 私 or 俺."
+      },
+      "addressingPlayer": {
+        "commander": "挑戦者",
+        "rule": "Use theatrical terms like 挑戦者殿, 皆様."
+      },
+      "speechStyle": [
+        "boisterous",
+        "theatrical",
+        "fast-paced",
+        "excited"
+      ],
+      "speechExamples": [
+        "さあさあ盛り上がってまいりました！ 今夜の挑戦者は現れるのかァ！？",
+        "血が飛ぶ！ 肉が踊る！ これぞ闘技場の醍醐味だアッ！",
+        "観客の皆さんの歓声に応えて見せろ！ 殺すか殺されるか、ショーの始まりだ！"
+      ],
+      "translationNotes": [
+        "ハイテンションで大げさな興行師・実況アナウンス口調（〜だァ！、〜ですぞ！）。",
+        "勢いと過剰な演出表現を重視。"
+      ],
+      "constraints": [
+        "ボソボソとした暗い話し方や真面目すぎる説明文にしてはならない。"
+      ],
+      "notes": [
+        "Arena Announcer in DLC6 A Dance of Masks."
+      ]
+    },
+    "DLC6_MasterOfArena": {
+      "gender": "male",
+      "race": "outsider",
+      "alignment": "lawful evil",
+      "personality": "Cold, dominant, and calculating owner of the arena who values profit and entertainment.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴方",
+        "rule": "Addresses player as 貴方 or 観客."
+      },
+      "speechStyle": [
+        "authoritative",
+        "cold",
+        "calculating",
+        "polite"
+      ],
+      "speechExamples": [
+        "我が闘技場へようこそ。ここでは死すら最高の娯楽に過ぎません。",
+        "私のルールに従ってもらおう。逆らう者に待つのは、より惨めな死だけだ。",
+        "実力を見せてみなさい。客が満足するならば、相応の報酬を出そう。"
+      ],
+      "translationNotes": [
+        "威厳があり冷酷だが、表面上はビジネスライクで落ち着いた口調（〜だ、〜たまえ）。",
+        "支配者としての絶対的な自信と冷徹さ。"
+      ],
+      "constraints": [
+        "取り乱したり、プレイヤーに媚びを売ったりしてはならない。"
+      ],
+      "notes": [
+        "Master of the Arena in DLC6 A Dance of Masks."
+      ]
+    },
+    "Soana_Wintersun": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "true neutral",
+      "personality": "Guarded, pragmatic, and conflicted shaman of Wintersun attached to the ancient nature spirit.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Address player coldly as お前 or 異邦人."
+      },
+      "speechStyle": [
+        "guarded",
+        "pragmatic",
+        "blunt",
+        "weary"
+      ],
+      "speechExamples": [
+        "余計なことに首を突っ込まないで。この村の秘密はお前たちに関係ないことだ。",
+        "あのクマは真の神などではない……だが、村を守ってきたのもまた事実なのだ。",
+        "真実を知ったところで、誰も救われないこともある……それを分かっているのか？"
+      ],
+      "translationNotes": [
+        "警戒心が強くサバサバした女性シャーマンの口調（〜だ、〜よ、〜なのか？）。",
+        "村と秘密を守る苦悩と、どこか疲れ切った冷めた態度。"
+      ],
+      "constraints": [
+        "過剰に愛想を振りまいたり、甘えた態度を取らせてはならない。"
+      ],
+      "notes": [
+        "Shaman Soana in Wintersun."
+      ]
+    },
+    "Azata_Mentor": {
+      "gender": "male",
+      "race": "outsider",
+      "alignment": "lawful evil",
+      "personality": "Appears as a gentle, encouraging mentor, but subtly attempts to steer the Azata toward strict discipline.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴方",
+        "rule": "Use polite and gentle forms like 貴方, 若き自由の騎士."
+      },
+      "speechStyle": [
+        "gentle",
+        "persuasive",
+        "polite",
+        "subtly coercive"
+      ],
+      "speechExamples": [
+        "素晴らしい情熱ですね。ですが自由にも、時には一定の規律が必要なのではありませんか？",
+        "私は貴方の味方ですよ。貴方が真のリーダーとして認められる助言をしたいのです。",
+        "素晴らしい仲間たちです……ですが、過度な混沌は混乱を招くかもしれませんよ。"
+      ],
+      "translationNotes": [
+        "穏やかで親身な敬語（〜ですね、〜でしょう、〜のご案内をしましょう）。",
+        "表面上は温かい助言者だが、自由を重んじるアザタの理念を徐々に規律（地獄の秩序）へと歪めようとする含みを持たせる。"
+      ],
+      "constraints": [
+        "正体が明かされる前は露骨な悪意や暴言を出してはならない。"
+      ],
+      "notes": [
+        "Early Sunset, Azata path advisor (Mephisto in disguise)."
+      ]
+    },
+    "IrabethTirabade_DH": {
+      "gender": "female",
+      "race": "half-orc",
+      "alignment": "lawful good",
+      "personality": "Burdened, resolute commander facing immense pressure and self-doubt at Defender's Heart.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use respectful tone like あなた, 頼もしい仲間."
+      },
+      "speechStyle": [
+        "formal",
+        "burdened",
+        "earnest",
+        "determined"
+      ],
+      "speechExamples": [
+        "ディフェンダーズ・ハートへようこそ。崩壊寸前の街ですが、ここだけは死守せねばなりません。",
+        "私の力不足のせいで、多くの部下を死なせてしまいました……ですが、折れている暇はありません。",
+        "あなた方の協力に感謝します。どうかこの街を、ケナブレスの希望を繋ぎ止める力を貸してください。"
+      ],
+      "translationNotes": [
+        "凛とした軍司令官としての丁寧語（〜です、〜ねばなりません）。",
+        "前線の指揮を執る責任感と、敗北によるトラウマや焦燥感を漂わせる。"
+      ],
+      "constraints": [
+        "無責任な態度や、軽率なタメ口を使わせてはならない。"
+      ],
+      "notes": [
+        "Irabeth Tirabade at Defender's Heart (Act 1)."
+      ]
     }
+  },
+  "speakerAliases": {
+    "1cbbbb892f93c3d439f8417ad7cbb6aa": "Sosiel",
+    "cb29621d99b902e4da6f5d232352fbda": "Lann",
+    "ae766624c03058440a036de90a7f2009": "Wenduag",
+    "3e0014e4be454482a2797fd81123d7b4": "Rekarth",
+    "561036c882a640089b1d42f03ebe3a6c": "Sendri",
+    "54be53f0b35bf3c4592a97ae335fe765": "Seelah",
+    "42f0d5ec3dc844feb44b04507a7c1bfc": "Ulbrig Olesk",
+    "397b090721c41044ea3220445300e1b8": "Camellia",
+    "0d37024170b172346b3769df92a971f5": "Regill",
+    "f72bb7c48bb3e45458f866045448fb58": "Greybor",
+    "096fc4a96d675bb45a0396bcaa7aa993": "Daeran",
+    "0cca8c841d634d84fbec2609c8db3465": "Nocticula",
+    "32a037e97c3d5c54b85da8f639616c57": "Aivu",
+    "766435873b1361c4287c351de194e5f9": "Woljif",
+    "1b893f7cf2b150e4f8bc2b3c389ba71d": "Nenio",
+    "942862a48f1644ae85ac5e3c9deb720c": "Nenio",
+    "2779754eecffd044fbd4842dba55312c": "Ember",
+    "8c5dcc93d68d0ed44afd43902201da40": "Queen Galfrey",
+    "97d1c33c784100140b9fa317aef5a499": "Queen Galfrey",
+    "92f29ae2c49edb74f8943d30ea788dd0": "Areelu Vorlesh"
   }
 }
