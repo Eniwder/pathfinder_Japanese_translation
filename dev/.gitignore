@@ -9,6 +9,7 @@ test/batch/
 test/verify-report.json
 
 dialogueGraph.json
+speakerAudit*.json
 
 pathfinder_jp.zip
 dist.zip

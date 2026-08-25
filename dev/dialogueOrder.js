@@ -243,5 +243,6 @@ function refs(value) {
 
 function normalizeId(value) {
   if (typeof value !== 'string') return null;
-  return value.startsWith('!bp_') ? value.slice(4) : value;
+  const id = value.startsWith('!bp_') ? value.slice(4) : value;
+  return id || null;
 }

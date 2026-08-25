@@ -7,6 +7,7 @@ const SystemPrompt = `You are a professional game text translator. Translate acc
 ## Translate English into natural Japanese.
 ## Translate non-conversational text as system messages.
 ## Use katakana for proper nouns.
+## When glossary entries are provided, use their target translations consistently. The note explains the intended meaning and is context, not text to output.
 ## Control tags are represented by placeholders such as __CTRL_0__. Copy every placeholder exactly as provided, in the same position and order. Never translate, remove, or reorder placeholders.
 ## The {mf|male text|female text} tag is special: it is a runtime gender switch for the protagonist. Preserve {mf|...|...} with exactly two alternatives, but translate the text inside both alternatives into natural Japanese. If possible, rewrite the surrounding sentence so it is gender-neutral and does not need an mf tag; do not leave awkward literal Japanese just to preserve an unnecessary gender distinction.
 ## For protagonist gender-dependent wording, use the masculine alternative first and feminine alternative second, matching the original order.
@@ -16,6 +17,7 @@ const options = parseOptions(process.argv.slice(2));
 const strings = JSON.parse(fs.readFileSync(options.input, 'utf8')).strings;
 const graphPath = options.graph;
 const profilesPath = options.profiles;
+const glossaryPath = options.glossary;
 const profileData = fs.existsSync(profilesPath)
   ? JSON.parse(fs.readFileSync(profilesPath, 'utf8'))
   : {};
@@ -25,6 +27,12 @@ const speakerProfiles = {
     personality: 'unknown speaker',
     speechStyle: 'Translate naturally from context without inventing a character voice.',
     notes: 'Do not infer a named speaker when the blueprint does not identify one.',
+  },
+  Player: {
+    gender: 'variable',
+    personality: 'player character; adapt to the original text',
+    speechStyle: 'Natural Japanese dialogue. Do not invent a fixed character voice.',
+    notes: 'Use the protagonist gender switch when present and preserve player agency.',
   },
   _narrator: {
     gender: 'none',
@@ -47,6 +55,10 @@ const speakerProfiles = {
   ...profileData,
   ...(profileData.characters ?? {}),
 };
+const glossaryData = fs.existsSync(glossaryPath)
+  ? JSON.parse(fs.readFileSync(glossaryPath, 'utf8'))
+  : {};
+const glossary = glossaryData.glossary ?? glossaryData;
 const dialogueContext = new Map();
 if (fs.existsSync(graphPath)) {
   const graph = JSON.parse(fs.readFileSync(graphPath, 'utf8'));
@@ -54,6 +66,7 @@ if (fs.existsSync(graphPath)) {
     if (node.textKey && !dialogueContext.has(node.textKey)) dialogueContext.set(node.textKey, node);
   }
   if (options.audit) writeSpeakerAudit(graph, speakerProfiles, options.audit);
+  if (options.auditOnly) process.exit(0);
 }
 // {
 //   "$id": "1",
@@ -89,9 +102,11 @@ for (let i = 0; i < keys.length; i++) {
       speaker: context.speaker,
       speakerType: context.speakerType,
       speakerProfile,
+      glossary: matchingGlossary(protectedText.text),
       previous: context.previous,
       text: protectedText.text,
       controlTags: protectedText.tags,
+      glossary: matchingGlossary(protectedText.text),
       next: context.next,
     })
     : JSON.stringify({
@@ -141,20 +156,24 @@ function parseOptions(args) {
     input: './lang/enGB_ordered.json',
     graph: './dialogueGraph.json',
     profiles: './speakerProfiles.json',
+    glossary: './glossary.json',
     outputDir: './splitLang',
     audit: './speakerAudit.json',
     limit: Infinity,
+    auditOnly: false,
   };
   for (const arg of args) {
     if (arg.startsWith('--input=')) result.input = arg.slice(8);
     else if (arg.startsWith('--graph=')) result.graph = arg.slice(8);
     else if (arg.startsWith('--profiles=')) result.profiles = arg.slice(11);
+    else if (arg.startsWith('--glossary=')) result.glossary = arg.slice(11);
     else if (arg.startsWith('--output-dir=')) result.outputDir = arg.slice(13);
     else if (arg.startsWith('--audit=')) result.audit = arg.slice(8);
     else if (arg.startsWith('--limit=')) result.limit = Number(arg.slice(8));
     else if (arg === '--no-audit') result.audit = null;
+    else if (arg === '--audit-only') result.auditOnly = true;
     else if (arg === '--help' || arg === '-h') {
-      console.log('Usage: node toBatchData.js [--input=PATH] [--graph=PATH] [--profiles=PATH] [--output-dir=PATH] [--audit=PATH] [--limit=N]');
+      console.log('Usage: node toBatchData.js [--input=PATH] [--graph=PATH] [--profiles=PATH] [--glossary=PATH] [--output-dir=PATH] [--audit=PATH] [--audit-only] [--limit=N]');
       process.exit(0);
     } else throw new Error(`Unknown option: ${arg}`);
   }
@@ -165,7 +184,8 @@ function writeSpeakerAudit(graph, profiles, output) {
   const counts = new Map();
   for (const node of graph.nodes ?? []) {
     const key = node.speaker ?? `_${node.speakerType ?? 'unknown'}`;
-    const entry = counts.get(key) ?? { speaker: node.speaker, speakerType: node.speakerType, count: 0, examples: [] };
+    const profileKey = getProfileKey(entryFor(node));
+    const entry = counts.get(key) ?? { speaker: node.speaker, speakerType: node.speakerType, profileKey, profileFound: Boolean(profiles[profileKey]), count: 0, examples: [] };
     entry.count++;
     if (entry.examples.length < 5 && node.msg) entry.examples.push({ textKey: node.textKey, msg: node.msg });
     counts.set(key, entry);
@@ -176,6 +196,24 @@ function writeSpeakerAudit(graph, profiles, output) {
     missingProfiles: speakers.filter(entry => !profiles[getProfileKey(entry)]),
     speakers,
   }, null, 2) + '\n');
+}
+
+function entryFor(node) {
+  return { speaker: node.speaker, speakerType: node.speakerType };
+}
+
+function matchingGlossary(text) {
+  if (!Array.isArray(glossary)) return [];
+  const normalized = text.toLocaleLowerCase();
+  return glossary
+    .filter(entry => typeof entry.source === 'string' && matchesGlossaryTerm(normalized, entry.source))
+    .sort((left, right) => right.source.length - left.source.length)
+    .map(entry => ({ source: entry.source, target: entry.target, ...(entry.note ? { note: entry.note } : {}) }));
+}
+
+function matchesGlossaryTerm(text, source) {
+  const escaped = source.toLocaleLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?<![a-z])${escaped}(?![a-z])`, 'i').test(text);
 }
 
 function getProfileKey(context) {

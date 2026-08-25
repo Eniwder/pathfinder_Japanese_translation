@@ -1,0 +1,774 @@
+{
+  "glossary": [
+    {
+      "source": "Mythic Path",
+      "target": "ミシックパス",
+      "note": "Source of extraordinary powers gained by the protagonist."
+    },
+    {
+      "source": "Angel",
+      "target": "エンジェル",
+      "note": "Mythic Path of heavenly power and righteousness."
+    },
+    {
+      "source": "Demon",
+      "target": "デーモン",
+      "note": "Mythic Path of abyssal rage and destruction."
+    },
+    {
+      "source": "Lich",
+      "target": "リッチ",
+      "note": "Mythic Path of necromancy and absolute mastery over death."
+    },
+    {
+      "source": "Aeon",
+      "target": "アイオン",
+      "note": "Mythic Path of cosmic order, law, and time."
+    },
+    {
+      "source": "Azata",
+      "target": "アザータ",
+      "note": "Mythic Path of freedom, nature, and chaotic good heroism."
+    },
+    {
+      "source": "Trickster",
+      "target": "トリックスター",
+      "note": "Mythic Path of chaos, luck, and bending reality with humor."
+    },
+    {
+      "source": "Legend",
+      "target": "レジェンド",
+      "note": "Mythic Path rejecting divine powers to rely on mortal capability."
+    },
+    {
+      "source": "Gold Dragon",
+      "target": "ゴールドドラゴン",
+      "note": "Mythic Path of redemption and draconian power."
+    },
+    {
+      "source": "Swarm-That-Walks",
+      "target": "歩む群れの虫",
+      "note": "Mythic Path of total consumption and insectoid horror."
+    },
+    {
+      "source": "Devil",
+      "target": "デビル",
+      "note": "Mythic Path of tyrannical law, contracts, and hellish hierarchy."
+    },
+    {
+      "source": "Erastil",
+      "target": "エラスティル",
+      "note": "God of farming, hunting, trade, and family. Preferred weapon: Longbow."
+    },
+    {
+      "source": "Iomedae",
+      "target": "アイオーメディ",
+      "note": "Goddess of valor, rulership, justice, and honor. Preferred weapon: Longsword."
+    },
+    {
+      "source": "Torag",
+      "target": "トローグ",
+      "note": "God of blacksmithing, protection, and strategy. Preferred weapon: Warhammer."
+    },
+    {
+      "source": "Sarenrae",
+      "target": "サーレンレイ",
+      "note": "Goddess of the sun, redemption, honesty, and healing. Preferred weapon: Scimitar."
+    },
+    {
+      "source": "Shelyn",
+      "target": "シェリン",
+      "note": "Goddess of beauty, art, love, and music. Preferred weapon: Glaive."
+    },
+    {
+      "source": "Desna",
+      "target": "デズナ",
+      "note": "Goddess of dreams, stars, travelers, and luck. Preferred weapon: Starknife."
+    },
+    {
+      "source": "Cayden Cailean",
+      "target": "カイデン・カイリーエン",
+      "note": "God of freedom, ale, wine, and bravery. Preferred weapon: Rapier."
+    },
+    {
+      "source": "Abadar",
+      "target": "アバダル",
+      "note": "God of cities, wealth, merchants, and law. Preferred weapon: Light Crossbow."
+    },
+    {
+      "source": "Irori",
+      "target": "イロリ",
+      "note": "God of history, knowledge, and self-perfection. Preferred weapon: Unarmed strike."
+    },
+    {
+      "source": "Gozreh",
+      "target": "ゴズレー",
+      "note": "God of nature, weather, and the sea. Preferred weapon: Trident."
+    },
+    {
+      "source": "Pharasma",
+      "target": "ファラズマ",
+      "note": "Goddess of fate, death, prophecy, and birth. Preferred weapon: Dagger."
+    },
+    {
+      "source": "Nethys",
+      "target": "ネサス",
+      "note": "God of magic. Preferred weapon: Quarterstaff."
+    },
+    {
+      "source": "Gorum",
+      "target": "ゴルム",
+      "note": "God of strength, battle, and weapons. Preferred weapon: Greatsword."
+    },
+    {
+      "source": "Calistria",
+      "target": "カリストリア",
+      "note": "Goddess of trickery, lust, and revenge. Preferred weapon: Whip."
+    },
+    {
+      "source": "Asmodeus",
+      "target": "アスモデウス",
+      "note": "God of tyranny, slavery, pride, and contracts. Preferred weapon: Mace."
+    },
+    {
+      "source": "Zon-Kuthon",
+      "target": "ゾン＝クーソン",
+      "note": "God of envy, pain, darkness, and loss. Preferred weapon: Spiked chain."
+    },
+    {
+      "source": "Urgathoa",
+      "target": "アーガソア",
+      "note": "Goddess of gluttony, disease, and undeath. Preferred weapon: Scythe."
+    },
+    {
+      "source": "Norgorber",
+      "target": "ノルゴーバー",
+      "note": "God of greed, secrets, poison, and murder. Preferred weapon: Shortsword."
+    },
+    {
+      "source": "Lamashtu",
+      "target": "ラマシュトゥ",
+      "note": "Goddess of madness, monsters, and nightmares. Preferred weapon: Falchion."
+    },
+    {
+      "source": "Rovagug",
+      "target": "ロヴァググ",
+      "note": "God of wrath, disaster, and destruction. Preferred weapon: Greataxe."
+    },
+    {
+      "source": "Apsu",
+      "target": "アプス",
+      "note": "God of dragons, glory, peace, and leadership."
+    },
+    {
+      "source": "Lissala",
+      "target": "リサーラ",
+      "note": "Goddess of runes, fate, and reward of service."
+    },
+    {
+      "source": "Kurgess",
+      "target": "クージェス",
+      "note": "God of competition, sports, and self-sacrifice."
+    },
+    {
+      "source": "Milani",
+      "target": "メラウニ",
+      "note": "Goddess of hope, devotion, and rebellion."
+    },
+    {
+      "source": "Alseta",
+      "target": "アルセタ",
+      "note": "Goddess of doors, transitions, and years."
+    },
+    {
+      "source": "Naderi",
+      "target": "ナデリ",
+      "note": "Goddess of suicide, tragic love, and drowning."
+    },
+    {
+      "source": "Sivanah",
+      "target": "シヴァナー",
+      "note": "Goddess of illusions, reflections, and mystery."
+    },
+    {
+      "source": "Groetus",
+      "target": "グロトゥス",
+      "note": "God of empty places, ruins, and oblivion."
+    },
+    {
+      "source": "Hanspur",
+      "target": "ハンスパー",
+      "note": "God of rivers and river travel."
+    },
+    {
+      "source": "Besmara",
+      "target": "ベスマラー",
+      "note": "Goddess of piracy, strife, and sea monsters."
+    },
+    {
+      "source": "Achaekek",
+      "target": "アチャイケク",
+      "note": "God of blood, death, and assassination."
+    },
+    {
+      "source": "Zyphus",
+      "target": "ジーフェス",
+      "note": "God of accidental death, graveyards, and calamity."
+    },
+    {
+      "source": "Droskar",
+      "target": "ドロスカー",
+      "note": "God of toil, slavery, and cheating. Duergar patron."
+    },
+    {
+      "source": "Gyronna",
+      "target": "ギローナ",
+      "note": "Goddess of hatred, extortion, and spite."
+    },
+    {
+      "source": "Ghlaunder",
+      "target": "グラウンダー",
+      "note": "God of parasites, infection, and stagnation."
+    },
+    {
+      "source": "Dahak",
+      "target": "ダハク",
+      "note": "God of destruction, dragons, evil, and treachery."
+    },
+    {
+      "source": "Ydersius",
+      "target": "イデルシウス",
+      "note": "God of serpentfolk, immortality, and poison."
+    },
+    {
+      "source": "Peacock Spirit",
+      "target": "孔雀の精霊",
+      "note": "Deity of mind, body, and soul."
+    },
+    {
+      "source": "Aroden",
+      "target": "エイローデン",
+      "note": "Deceased god of human culture, innovation, and history."
+    },
+    {
+      "source": "Arazni",
+      "target": "アラズニ",
+      "note": "Fallen demigod / patron."
+    },
+    {
+      "source": "Curchanus",
+      "target": "カルカヌス",
+      "note": "Deceased god of beasts, travel, and endurance."
+    },
+    {
+      "source": "Barbatos",
+      "target": "バルバトス",
+      "note": "Archdevil of doorways and birds."
+    },
+    {
+      "source": "Dispater",
+      "target": "ディスパテル",
+      "note": "Archdevil of cities and poison."
+    },
+    {
+      "source": "Mammon",
+      "target": "マモン",
+      "note": "Archdevil of wealth and greed."
+    },
+    {
+      "source": "Belial",
+      "target": "ベリアル",
+      "note": "Archdevil of desire and adultery."
+    },
+    {
+      "source": "Geryon",
+      "target": "ゲリュオン",
+      "note": "Archdevil of snakes and heresy."
+    },
+    {
+      "source": "Moloch",
+      "target": "モロク",
+      "note": "Archdevil of fire and war."
+    },
+    {
+      "source": "Baalzebul",
+      "target": "バールゼブル",
+      "note": "Archdevil of flies and lies."
+    },
+    {
+      "source": "Mephistopheles",
+      "target": "メフィストフェレス",
+      "note": "Archdevil of secrets and contracts."
+    },
+    {
+      "source": "Abraxas",
+      "target": "アブラクサス",
+      "note": "Demon Lord of forbidden knowledge and magic."
+    },
+    {
+      "source": "Angazhan",
+      "target": "アンガザン",
+      "note": "Demon Lord of apes and jungles."
+    },
+    {
+      "source": "Baphomet",
+      "target": "バフォメット",
+      "note": "Demon Lord of beasts and labyrinths."
+    },
+    {
+      "source": "Cyth-V'sug",
+      "target": "シス・ヴィサグ",
+      "note": "Demon Lord of fungi and parasites."
+    },
+    {
+      "source": "Dagon",
+      "target": "ダゴン",
+      "note": "Demon Lord of the sea and sea monsters."
+    },
+    {
+      "source": "Deskari",
+      "target": "デスカリ",
+      "note": "Demon Lord of locusts and infestation."
+    },
+    {
+      "source": "Kostchtchie",
+      "target": "コシチェイ",
+      "note": "Demon Lord of giants and cold."
+    },
+    {
+      "source": "Nocticula",
+      "target": "ノクティキュラ",
+      "note": "Demon Lord of darkness and lust."
+    },
+    {
+      "source": "Orcus",
+      "target": "オルクス",
+      "note": "Demon Lord of undead and necromancy."
+    },
+    {
+      "source": "Pazuzu",
+      "target": "パズス",
+      "note": "Demon Lord of winged creatures and the sky."
+    },
+    {
+      "source": "Shax",
+      "target": "シャックス",
+      "note": "Demon Lord of lies and murder."
+    },
+    {
+      "source": "Socothbenoth",
+      "target": "ソコスベノス",
+      "note": "Demon Lord of perversion and taboo."
+    },
+    {
+      "source": "Zura",
+      "target": "ズーラ",
+      "note": "Demon Lord of cannibalism and vampires."
+    },
+    {
+      "source": "Apollyon",
+      "target": "アポリオン",
+      "note": "Horseman/Archdaemon of pestilence."
+    },
+    {
+      "source": "Charon",
+      "target": "カロン",
+      "note": "Horseman/Archdaemon of death."
+    },
+    {
+      "source": "Szuriel",
+      "target": "ズリエル",
+      "note": "Horseman/Archdaemon of war."
+    },
+    {
+      "source": "Trelmarixian",
+      "target": "トレルマリキシアン",
+      "note": "Horseman/Archdaemon of famine."
+    },
+    {
+      "source": "Andoletta",
+      "target": "アンドレッタ",
+      "note": "Empyreal Lord of consolation, respect, and safety."
+    },
+    {
+      "source": "Ragathiel",
+      "target": "ラガシエル",
+      "note": "Empyreal Lord of chivalry, duty, and vengeance."
+    },
+    {
+      "source": "Arshea",
+      "target": "アーシェイ",
+      "note": "Empyreal Lord of freedom, physical beauty, and sexuality."
+    },
+    {
+      "source": "Korada",
+      "target": "コーラダ",
+      "note": "Empyreal Lord of foresight, openhandedness, and peace."
+    },
+    {
+      "source": "Valani",
+      "target": "ヴァラーニ",
+      "note": "Empyreal Lord of change, growth, and the primal."
+    },
+    {
+      "source": "Sinashakti",
+      "target": "シナシャクティ",
+      "note": "Empyreal Lord of journeys, joy, and communication."
+    },
+    {
+      "source": "Ayrzul",
+      "target": "アイルズル",
+      "note": "Elemental Lord of earth."
+    },
+    {
+      "source": "Hshurha",
+      "target": "ハシューハ",
+      "note": "Elemental Lord of air."
+    },
+    {
+      "source": "Kelizandri",
+      "target": "ケリザンドリ",
+      "note": "Elemental Lord of water."
+    },
+    {
+      "source": "Ymeri",
+      "target": "イメリ",
+      "note": "Elemental Lord of fire."
+    },
+    {
+      "source": "Angradd",
+      "target": "アングラッド",
+      "note": "Dwarven god of fire and war."
+    },
+    {
+      "source": "Bolka",
+      "target": "ボルカ",
+      "note": "Dwarven goddess of love and beauty."
+    },
+    {
+      "source": "Dranngvit",
+      "target": "ドラングヴィット",
+      "note": "Dwarven goddess of debt and vengeance."
+    },
+    {
+      "source": "Folgrit",
+      "target": "フォルグリット",
+      "note": "Dwarven goddess of mothers, children, and hearth."
+    },
+    {
+      "source": "Grundinnar",
+      "target": "グランディナール",
+      "note": "Dwarven god of friendship and loyalty."
+    },
+    {
+      "source": "Kols",
+      "target": "コルス",
+      "note": "Dwarven god of duty and oaths."
+    },
+    {
+      "source": "Magrim",
+      "target": "マグリム",
+      "note": "Dwarven god of the underworld and afterlife."
+    },
+    {
+      "source": "Trudd",
+      "target": "トルッド",
+      "note": "Dwarven god of strength."
+    },
+    {
+      "source": "Findeladlara",
+      "target": "フィンデラドララ",
+      "note": "Elven goddess of art, architecture, and twilight."
+    },
+    {
+      "source": "Ketephys",
+      "target": "ケテフィス",
+      "note": "Elven god of hunting, forests, and running."
+    },
+    {
+      "source": "Yuelral",
+      "target": "ユエルラル",
+      "note": "Elven goddess of magic, crystals, and gems."
+    },
+    {
+      "source": "Brigh",
+      "target": "ブライ",
+      "note": "Gnome goddess of clockwork and invention."
+    },
+    {
+      "source": "Nivi Rhombodazzle",
+      "target": "ニヴィ・ロンボダズル",
+      "note": "Gnome goddess of gems, stealth, and gambling."
+    },
+    {
+      "source": "Chaldira Zuzaristan",
+      "target": "チャルディラ・ズザリスタン",
+      "note": "Halfling goddess of mischief and battle."
+    },
+    {
+      "source": "Themir Gixx",
+      "target": "サミール・ギックス",
+      "note": "Halfling god of greed and opportunism."
+    },
+    {
+      "source": "Daikitsu",
+      "target": "ダイキツ",
+      "note": "Tian Xia goddess of agriculture, crafts, foxes, and rice."
+    },
+    {
+      "source": "Fumeiyoshi",
+      "target": "フメイヨシ",
+      "note": "Tian Xia god of dishonor, envy, graves, and undead."
+    },
+    {
+      "source": "General Susumu",
+      "target": "ジェネラル・ススム",
+      "note": "Tian Xia god of archery, horses, glory, and war."
+    },
+    {
+      "source": "Hei Feng",
+      "target": "ヘイ・フェン",
+      "note": "Tian Xia god of sea, storms, thunder, and wind."
+    },
+    {
+      "source": "Kofusachi",
+      "target": "コフサチ",
+      "note": "Tian Xia god of wealth, discovery, happiness, and prosperity."
+    },
+    {
+      "source": "Lady Nanbyou",
+      "target": "レディ・ナンビョウ",
+      "note": "Tian Xia goddess of earthquakes, fire, suffering, and pestilence."
+    },
+    {
+      "source": "Lao Shu Po",
+      "target": "ラオ・シュ・ポー",
+      "note": "Tian Xia goddess of night, rats, and thieves."
+    },
+    {
+      "source": "Nalinivati",
+      "target": "ナリニヴァティ",
+      "note": "Tian Xia goddess of fertility, nagaji, snakes, and sorcerers."
+    },
+    {
+      "source": "Qi Zhiong",
+      "target": "チィ・ジョン",
+      "note": "Tian Xia god of healing, magic, and medicine."
+    },
+    {
+      "source": "Shizuru",
+      "target": "シズル",
+      "note": "Tian Xia goddess of ancestors, honor, the sun, and swordsmanship."
+    },
+    {
+      "source": "Sun Wukong",
+      "target": "ソン・ウーコン",
+      "note": "Tian Xia god of drunkenness, nature, and trickery."
+    },
+    {
+      "source": "Tsukiyo",
+      "target": "ツキヨ",
+      "note": "Tian Xia god of jade, the moon, and spirits."
+    },
+    {
+      "source": "Yaezhin",
+      "target": "ヤエズィン",
+      "note": "Tian Xia god of harsh law, murder, and punishment."
+    },
+    {
+      "source": "Yamatsumi",
+      "target": "ヤマツミ",
+      "note": "Tian Xia god of mountains, volcanoes, and winter."
+    },
+    {
+      "source": "Azathoth",
+      "target": "アザトース",
+      "note": "Outer God of entropy, madness, and mindless destruction."
+    },
+    {
+      "source": "Bokrug",
+      "target": "ボクラグ",
+      "note": "Great Old One of revenge, storms, and water."
+    },
+    {
+      "source": "Cthulhu",
+      "target": "クトゥルフ",
+      "note": "Great Old One of cataclysms, dreams, and stars."
+    },
+    {
+      "source": "Hastur",
+      "target": "ハスター",
+      "note": "Great Old One of decadence, disorder, and nihilism."
+    },
+    {
+      "source": "Mhar",
+      "target": "マール",
+      "note": "Great Old One of caverns, mountains, and volcanoes."
+    },
+    {
+      "source": "Nyarlathotep",
+      "target": "ニャルラトテップ",
+      "note": "Outer God of conspiracies, dangerous knowledge, and forbidden magic."
+    },
+    {
+      "source": "Shub-Niggurath",
+      "target": "シュブ・ニグラス",
+      "note": "Outer Goddess of fertility, forests, and monsters."
+    },
+    {
+      "source": "Xhamen-Dor",
+      "target": "クサメン・ドア",
+      "note": "Great Old One of decay, parasites, and transformation."
+    },
+    {
+      "source": "Yog-Sothoth",
+      "target": "ヨグ＝ソトース",
+      "note": "Outer God of gates, space, and time."
+    },
+    {
+      "source": "Crusaders",
+      "target": "十字軍",
+      "note": "Forces fighting against the Worldwound demons. Use '十字軍兵士' when referring to individual soldiers."
+    },
+    {
+      "source": "Crusader",
+      "target": "十字軍兵士",
+      "note": "An individual soldier of the Crusades."
+    },
+    {
+      "source": "Mendevian Crusades",
+      "target": "メンデヴ十字軍",
+      "note": "Official name of the military campaigns against the Worldwound."
+    },
+    {
+      "source": "Worldwound",
+      "target": "ワールドウーンド",
+      "note": "The planar rift connected to the Abyss, source of the demon invasion."
+    },
+    {
+      "source": "Wardstone",
+      "target": "ワードストーン",
+      "note": "Magical barrier monoliths preventing Worldwound expansion."
+    },
+    {
+      "source": "Kenabres",
+      "target": "ケナブレス",
+      "note": "Border city protected by a Wardstone, setting for Chapter 1."
+    },
+    {
+      "source": "Drezen",
+      "target": "ドレゼン",
+      "note": "Fortress city reclaimed by the Crusaders, primary HQ."
+    },
+    {
+      "source": "Alushinyrra",
+      "target": "アルシニラ",
+      "note": "Demon city in the Midnight Isles (Abyss)."
+    },
+    {
+      "source": "Mendev",
+      "target": "メンデヴ",
+      "note": "Northern kingdom waging crusades against demons."
+    },
+    {
+      "source": "Sarkoris",
+      "target": "サーコリス",
+      "note": "Ancient land destroyed by the opening of the Worldwound."
+    },
+    {
+      "source": "Iz",
+      "target": "イズ",
+      "note": "Ruined city near the heart of the Worldwound."
+    },
+    {
+      "source": "Crusade",
+      "target": "十字軍",
+      "note": "The holy war against the demons of the Worldwound."
+    },
+    {
+      "source": "Eagle Watch",
+      "target": "イーグル・ウォッチ",
+      "note": "Paladin order protecting Kenabres."
+    },
+    {
+      "source": "Hellknights",
+      "target": "ヘルナイト",
+      "note": "Strict order enforcing law through ruthless efficiency."
+    },
+    {
+      "source": "Order of the Godclaw",
+      "target": "ゴッドクロウ騎士団",
+      "note": "Hellknight faction worshipping five lawful deities."
+    },
+    {
+      "source": "Cult of the Baphomet",
+      "target": "バフォメット教団",
+      "note": "Secret cult worshipping Demon Lord Baphomet."
+    },
+    {
+      "source": "Cult of Deskari",
+      "target": "デスカリ教団",
+      "note": "Cult worshipping Demon Lord Deskari."
+    },
+    {
+      "source": "Abyss",
+      "target": "アビス",
+      "note": "The chaotic evil outer plane, home to demons."
+    },
+    {
+      "source": "Hell",
+      "target": "ヘル",
+      "note": "The lawful evil outer plane, home to devils."
+    },
+    {
+      "source": "Elysium",
+      "target": "エリュシオン",
+      "note": "The chaotic good outer plane, home to azatas."
+    },
+    {
+      "source": "Heaven",
+      "target": "ヘヴン",
+      "note": "The lawful good outer plane, home to angels."
+    },
+    {
+      "source": "Axis",
+      "target": "アクシス",
+      "note": "The lawful neutral outer plane, home to aeons."
+    },
+    {
+      "source": "Material Plane",
+      "target": "物質界",
+      "note": "The mortal realm (Golarion)."
+    },
+    {
+      "source": "Golarion",
+      "target": "ゴラリオン",
+      "note": "The primary planet/world setting of Pathfinder."
+    },
+    {
+      "source": "Midnight Isles",
+      "target": "ミッドナイト諸島",
+      "note": "Abyssal realm ruled by Nocticula."
+    },
+    {
+      "source": "Nahyndrian Crystal",
+      "target": "ナヒンドリアンクリスタル",
+      "note": "Crystals formed from demon lord blood, source of mythic power."
+    },
+    {
+      "source": "Lexicon of Paradox",
+      "target": "パラドックス辞典",
+      "note": "Ancient artifact needed to close or manipulate the Worldwound."
+    },
+    {
+      "source": "Sword of Valor",
+      "target": "勇気の剣",
+      "note": "Relic banner protecting Drezen from demonic teleportation."
+    },
+    {
+      "source": "Midnight Bolt",
+      "target": "ミッドナイトボルト",
+      "note": "Special crossbow bolt capable of wounding demon lords."
+    }
+  ]
+}
