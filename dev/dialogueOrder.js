@@ -158,6 +158,7 @@ function nodeRecord(asset, kind, assets, strings) {
   const data = asset.data;
   const speakerId = normalizeId(data.Speaker?.m_Blueprint);
   const speaker = speakerId ? assets.get(speakerId) : undefined;
+  const speakerName = speaker ? assetName(speaker) : null;
   return {
     id: asset.id,
     type: kind,
@@ -165,8 +166,10 @@ function nodeRecord(asset, kind, assets, strings) {
     dialog: null,
     textKey: data.Text?.m_Key ?? null,
     msg: data.Text?.m_Key ? strings[data.Text.m_Key] ?? null : null,
-    speaker: speaker ? assetName(speaker) : speakerId ? speakerId : null,
-    speakerType: speaker
+    speaker: speakerName || speakerId || null,
+    speakerName: speakerName || null,
+    speakerSource: speaker?.file ?? null,
+    speakerType: speakerName || speakerId
       ? 'character'
       : kind === 'Answer'
         ? 'player'
@@ -217,8 +220,8 @@ function reorderLanguageFile(file, output, graph) {
 function assetName(asset) {
   const data = asset.data;
   const value = data.Name ?? data.m_Name ?? data.AssetName ?? data.m_DisplayName?.m_Key;
-  if (typeof value === 'string') return value;
-  if (typeof value?.m_Key === 'string') return value.m_Key;
+  if (typeof value === 'string' && value.trim()) return value;
+  if (typeof value?.m_Key === 'string' && value.m_Key.trim()) return value.m_Key;
   return path.basename(asset.file, path.extname(asset.file));
 }
 

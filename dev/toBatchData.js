@@ -55,6 +55,7 @@ const speakerProfiles = {
   ...profileData,
   ...(profileData.characters ?? {}),
 };
+const speakerAliases = profileData.speakerAliases ?? {};
 const glossaryData = fs.existsSync(glossaryPath)
   ? JSON.parse(fs.readFileSync(glossaryPath, 'utf8'))
   : {};
@@ -185,7 +186,7 @@ function writeSpeakerAudit(graph, profiles, output) {
   for (const node of graph.nodes ?? []) {
     const key = node.speaker ?? `_${node.speakerType ?? 'unknown'}`;
     const profileKey = getProfileKey(entryFor(node));
-    const entry = counts.get(key) ?? { speaker: node.speaker, speakerType: node.speakerType, profileKey, profileFound: Boolean(profiles[profileKey]), count: 0, examples: [] };
+    const entry = counts.get(key) ?? { speaker: node.speaker, speakerName: node.speakerName, speakerSource: node.speakerSource, speakerType: node.speakerType, profileKey, profileFound: Object.hasOwn(profiles, profileKey), count: 0, examples: [] };
     entry.count++;
     if (entry.examples.length < 5 && node.msg) entry.examples.push({ textKey: node.textKey, msg: node.msg });
     counts.set(key, entry);
@@ -193,13 +194,13 @@ function writeSpeakerAudit(graph, profiles, output) {
   const speakers = [...counts.values()].sort((left, right) => right.count - left.count);
   fs.mkdirSync(path.dirname(path.resolve(output)), { recursive: true });
   fs.writeFileSync(output, JSON.stringify({
-    missingProfiles: speakers.filter(entry => !profiles[getProfileKey(entry)]),
+    missingProfiles: speakers.filter(entry => !entry.profileFound),
     speakers,
   }, null, 2) + '\n');
 }
 
 function entryFor(node) {
-  return { speaker: node.speaker, speakerType: node.speakerType };
+  return { speaker: node.speaker, speakerId: node.speakerId, speakerName: node.speakerName, speakerSource: node.speakerSource, speakerType: node.speakerType };
 }
 
 function matchingGlossary(text) {
@@ -217,9 +218,21 @@ function matchesGlossaryTerm(text, source) {
 }
 
 function getProfileKey(context) {
-  if (context?.speaker) return context.speaker;
+  if (context?.speakerId && speakerAliases[context.speakerId]) return speakerAliases[context.speakerId];
+  if (context?.speaker) {
+    const name = speakerAliases[context.speaker] ?? context.speakerName ?? context.speaker;
+    return findProfileName(name);
+  }
   if (context?.speakerType === 'player') return 'Player';
   return `_${context?.speakerType ?? 'unknown'}`;
+}
+
+function findProfileName(name) {
+  if (Object.hasOwn(speakerProfiles, name)) return name;
+  const simplified = String(name).replace(/_(Companion|npc|Player|Q\d+|DrezenCapital|ForDuel)$/i, '');
+  if (Object.hasOwn(speakerProfiles, simplified)) return simplified;
+  const normalized = simplified.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  return Object.keys(speakerProfiles).find(key => key.replace(/[^a-z0-9]/gi, '').toLowerCase() === normalized) ?? name;
 }
 
 
