@@ -33,10 +33,10 @@ if (options.reorder) {
 
 function parseOptions(args) {
   const result = {
-    blueprints: 'blueprints',
-    lang: 'dev/lang/enGB.json',
-    orderedLanguage: 'dev/lang/enGB_ordered.json',
-    output: 'dev/dialogueGraph.json',
+    blueprints: '../blueprints',
+    lang: '../dev/lang/enGB.json',
+    orderedLanguage: '../dev/lang/enGB_ordered.json',
+    output: '../dev/dialogueGraph.json',
     reorder: false,
     help: false,
   };
@@ -107,7 +107,7 @@ function buildGraph(assets, strings) {
     const edges = [];
 
     for (const cueId of firstCues) {
-      visit(cueId, dialogue.id, visited, sequence, edges, assets, nodeById, strings);
+      visit(cueId, dialogue, visited, sequence, edges, assets, nodeById, strings);
     }
 
     const orderedSequence = sequence.map(id => nodeById.get(id));
@@ -133,32 +133,86 @@ function buildGraph(assets, strings) {
   return { version: 1, generatedFrom: 'blueprints', dialogs: dialogues, nodes };
 }
 
-function visit(id, dialogId, visited, sequence, edges, assets, nodeById, strings) {
+function visit(id, dialogueAsset, visited, sequence, edges, assets, nodeById, strings) {
   if (visited.has(id)) return;
   const asset = assets.get(id);
-  if (!asset || !isDialogueNode(asset.data)) return;
+  if (!asset) return; // アセットが存在しない場合のみ終了
+
   visited.add(id);
 
   const kind = nodeKind(asset.data);
-  const nextIds = kind === 'Cue'
-    ? [...expandAnswerRefs(asset.data.Answers, assets), ...refs(asset.data.Continue?.Cues)]
-    : refs(asset.data.NextCue?.Cues);
-  const node = nodeById.get(id) ?? nodeRecord(asset, kind, assets, strings);
-  node.dialogIds = [...new Set([...(node.dialogIds ?? []), dialogId])];
-  nodeById.set(id, node);
-  sequence.push(id);
+  const nextIds = getNextIds(asset.data, assets);
 
+  // 会話テキスト（Text.m_Key）が存在するノード（Cue / Answer 等）のみ会話ノードとして記録
+  const hasTextKey = Boolean(asset.data.Text?.m_Key);
+  if (hasTextKey) {
+    const node = nodeById.get(id) ?? nodeRecord(asset, kind, assets, strings, dialogueAsset);
+    node.dialogIds = [...new Set([...(node.dialogIds ?? []), dialogueAsset.id])];
+    nodeById.set(id, node);
+    sequence.push(id);
+  }
+
+  // 制御ノード（Check, Sequence 等）であっても止まらず、先のノードへトラバース（通過）を継続
   for (const nextId of nextIds) {
     edges.push({ from: id, to: nextId });
-    visit(nextId, dialogId, visited, sequence, edges, assets, nodeById, strings);
+    visit(nextId, dialogueAsset, visited, sequence, edges, assets, nodeById, strings);
   }
 }
 
-function nodeRecord(asset, kind, assets, strings) {
+// 各ノードタイプに応じた「次に遷移し得るノードID」を網羅的に抽出する関数
+function getNextIds(data, assets) {
+  const next = [];
+
+  // Cue / Answer の標準参照
+  if (data.Answers) next.push(...expandAnswerRefs(data.Answers, assets));
+  if (data.Continue?.Cues) next.push(...refs(data.Continue.Cues));
+  if (data.NextCue?.Cues) next.push(...refs(data.NextCue.Cues));
+
+  // BlueprintCheck (スキルチェック分岐)
+  if (data.m_Success) next.push(...refs([data.m_Success]));
+  if (data.Success) next.push(...refs([data.Success]));
+  if (data.m_Fail) next.push(...refs([data.m_Fail]));
+  if (data.Fail) next.push(...refs([data.Fail]));
+
+  // BlueprintCueSequence / BlueprintBookPage / その他汎用参照
+  if (data.Cues) next.push(...refs(data.Cues));
+  if (data.m_Exit) next.push(...refs([data.m_Exit]));
+  if (data.Exit) next.push(...refs([data.Exit]));
+
+  return [...new Set(next)];
+}
+
+function nodeKind(data) {
+  if (hasType(data, 'BlueprintCue')) return 'Cue';
+  if (hasType(data, 'BlueprintAnswer')) return 'Answer';
+  if (hasType(data, 'BlueprintCheck')) return 'Check';
+  if (hasType(data, 'BlueprintCueSequence')) return 'Sequence';
+  if (hasType(data, 'BlueprintBookPage')) return 'BookPage';
+  return 'Control';
+}
+
+function nodeRecord(asset, kind, assets, strings, dialogueAsset) {
   const data = asset.data;
-  const speakerId = normalizeId(data.Speaker?.m_Blueprint);
+
+  // 1. Cue固有の BlueprintUnit を検索
+  let speakerId = normalizeId(data.Speaker?.m_Blueprint);
+
+  // 2. Cue固有の Portrait 参照をフォールバック検索
+  if (!speakerId) {
+    speakerId = normalizeId(data.Speaker?.m_SpeakerPortrait);
+  }
+
+  // 3. Dialogueレベルのデフォルト話者をフォールバック検索 (NoSpeakerがfalseの場合)
+  if (!speakerId && !data.Speaker?.NoSpeaker && dialogueAsset) {
+    const dialogData = dialogueAsset.data;
+    speakerId = normalizeId(dialogData.m_DefaultSpeaker?.m_Blueprint)
+      ?? normalizeId(dialogData.m_DefaultSpeaker)
+      ?? normalizeId(dialogData.Speaker?.m_Blueprint);
+  }
+
   const speaker = speakerId ? assets.get(speakerId) : undefined;
-  const speakerName = speaker ? assetName(speaker) : null;
+  const speakerName = speaker ? assetName(speaker, strings) : (speakerId ? extractNameFromId(speakerId) : null);
+
   return {
     id: asset.id,
     type: kind,
@@ -217,22 +271,26 @@ function reorderLanguageFile(file, output, graph) {
   fs.writeFileSync(output, JSON.stringify(language, null, 2) + '\n');
 }
 
-function assetName(asset) {
+function assetName(asset, strings = {}) {
   const data = asset.data;
-  const value = data.Name ?? data.m_Name ?? data.AssetName ?? data.m_DisplayName?.m_Key;
+
+  // m_DisplayName の LocalizedString キーから英語表示名を取得（例: "Konomi"）
+  const displayKey = data.m_DisplayName?.m_Key;
+  if (displayKey && strings[displayKey]) {
+    return strings[displayKey];
+  }
+
+  const value = data.Name ?? data.m_Name ?? data.AssetName;
   if (typeof value === 'string' && value.trim()) return value;
-  if (typeof value?.m_Key === 'string' && value.m_Key.trim()) return value.m_Key;
+
   return path.basename(asset.file, path.extname(asset.file));
 }
 
-function nodeKind(data) {
-  if (hasType(data, 'BlueprintCue')) return 'Cue';
-  if (hasType(data, 'BlueprintAnswer')) return 'Answer';
-  return null;
-}
-
-function isDialogueNode(data) {
-  return nodeKind(data) !== null;
+function extractNameFromId(id) {
+  if (!id) return null;
+  // GUIDではなくアセット名文字列で入っている場合の処理
+  const clean = id.replace(/_(Companion|npc|Player|Q\d+|Capital|ForDuel)$/i, '');
+  return clean;
 }
 
 function hasType(data, suffix) {

@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 
-const inputPath = process.argv[2] || './speakerAudit.json';
-const charPath = process.argv[3] || './speakerProfiles.json';
-const outputPath = process.argv[4] || './copiedProfiles.json';
+const inputPath = process.argv[2] || '../res/speakerAudit.json';
+const charPath = process.argv[3] || '../res/speakerProfiles.json';
+const outputPath = process.argv[4] || '../res/copiedProfiles.json';
 const limit = Number(process.argv[5] || 10);
 
 if (!fs.existsSync(inputPath) || !fs.existsSync(charPath)) {

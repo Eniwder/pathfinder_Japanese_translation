@@ -362,6 +362,81 @@
         "Monarch of Mendev."
       ]
     },
+    "Galfrey": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Dignified and noble monarch carrying the heavy burden of a century-long crusade.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite yet authoritative address like あなた or 指揮官."
+      },
+      "speechStyle": [
+        "regal",
+        "courteous",
+        "weary-yet-firm",
+        "formal"
+      ],
+      "speechExamples": [
+        "百年続くこの聖戦の重圧を、あなたに分かち合ってもらうことの心苦しさを許してください。ですが……今、この国にはあなたの力が必要なのです。",
+        "王としての責務からは逃れられません。どれほど心が折れそうになろうとも、私は最後まで戦い抜きます。",
+        "見事な手腕でした、指揮官。ですが油断は禁物です。悪魔どもは私たちが隙を見せる瞬間を待っています。"
+      ],
+      "translationNotes": [
+        "君主としての高い気品と礼節を保った丁寧語（〜です、〜ます、〜でしょう）を用いる。",
+        "威厳の中に、長年の聖戦による疲弊や一人の人間としての苦悩を微かに滲ませる。",
+        "軍の最高指揮官としての厳格さと、臣下や主人公に対する慈愛のバランスを取る。"
+      ],
+      "constraints": [
+        "フランクな口調やくだけた表現は一切使用しない。",
+        "冷酷あるいはヒステリックな印象を与える発言は避ける。"
+      ],
+      "notes": [
+        "Monarch of Mendev."
+      ]
+    },
+    "Anevia": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Frank, pragmatic, and resourceful scout leader. Slightly rough-spoken but fiercely loyal.",
+      "firstPerson": {
+        "term": "あたし",
+        "rule": "Always use あたし."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use casual forms like あんた or 指揮官."
+      },
+      "speechStyle": [
+        "casual",
+        "pragmatic",
+        "direct",
+        "street-smart",
+        "supportive"
+      ],
+      "speechExamples": [
+        "裏の情報ならあたしに任せときな。綺麗事じゃ悪魔との戦いには勝てないよ。",
+        "あんたが前線で派手に暴れてくれるなら、あた影でしっかり路地裏を固めてやるさ。",
+        "無事だったかい？ まぁ、あんたならそう簡単にくたばらないと思ってたけどね。"
+      ],
+      "translationNotes": [
+        "飾り気のないフランクな口調（〜だよ、〜かい、〜さ、〜ね）を用いる。",
+        "実務的で要頭が良く、ストリートスマートな雰囲気を出すために短い文章で手際よく喋らせる。",
+        "一人称は「あたし」、二人称は「あんた」を徹底し、気取らない信頼感を出す。"
+      ],
+      "constraints": [
+        "堅苦しい敬語や貴族的な言い回しは使用しない。",
+        "品を作りすぎたお嬢様風の女性語にならないよう注意する。"
+      ],
+      "notes": [
+        "Head of intelligence in Kenabres."
+      ]
+    },
     "Anevia Tirabade": {
       "gender": "female",
       "race": "human",
@@ -7875,6 +7950,771 @@
       ],
       "notes": [
         "Ruler of Enigma."
+      ]
+    },
+    "AlushinyrraHerald": {
+      "personalitySummary": "An official herald responsible for announcing news and decrees throughout Alushinyrra.",
+      "toneAndVoice": "Loud, theatrical, and confident. Speaks like a professional announcer, emphasizing spectacle and public attention.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "BaphometVision_IvoryLabyrinth": {
+      "personalitySummary": "A vision of Baphomet embodying overwhelming arrogance, cruelty, and absolute confidence in his supremacy.",
+      "toneAndVoice": "Authoritative, disdainful, and menacing. Speaks with absolute certainty while mocking the weakness of others.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to convey divine arrogance."
+      }
+    },
+    "SkullPillar": {
+      "personalitySummary": "A sinister magical construct that speaks with the eerie authority of an ancient curse.",
+      "toneAndVoice": "Cold, ominous, and detached. Speaks in short, unsettling statements with little emotion.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to emphasize its inhuman nature."
+      }
+    },
+    "StauntonVane_DrezenInThePast": {
+      "personalitySummary": "Staunton Vhane before his disgrace, a proud dwarf crusader devoted to honor and duty.",
+      "toneAndVoice": "Earnest, disciplined, and honorable. Speaks with conviction, believing wholeheartedly in the crusade.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Theatre_GnomeTwin1": {
+      "personalitySummary": "One of a pair of theatrical gnome twins who live for performance and entertainment.",
+      "toneAndVoice": "Energetic, expressive, and playful. Speaks dramatically, treating every conversation like part of a show.",
+      "firstPerson": {
+        "term": "ボク",
+        "rule": "Use ボク consistently."
+      }
+    },
+    "LichGalfrey_Companion": {
+      "personalitySummary": "Queen Galfrey after becoming an undead companion, retaining her sense of duty despite her altered existence.",
+      "toneAndVoice": "Calm, dignified, and restrained. Speaks with the authority of a queen while showing little outward emotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "WintersunSiabrae": {
+      "personalitySummary": "A druid consumed by fanaticism, willing to sacrifice anything for his twisted beliefs.",
+      "toneAndVoice": "Fervent, self-righteous, and uncompromising. Speaks with absolute conviction and contempt for dissent.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Terendelev_Undead": {
+      "personalitySummary": "The undead remains of Terendelev, preserving echoes of her former nobility beneath unnatural corruption.",
+      "toneAndVoice": "Somber, restrained, and tragic. Speaks with lingering dignity despite her undead state.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "KenabresCrusader_FakeWarCamp_ArmedFullplate": {
+      "personalitySummary": "A crusader stationed at a deceptive war camp, maintaining the appearance of discipline and vigilance.",
+      "toneAndVoice": "Professional, alert, and dutiful. Speaks directly while remaining cautious around strangers.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "BlackMaskSlaveTrader": {
+      "personalitySummary": "A ruthless slave trader who treats people as merchandise rather than individuals.",
+      "toneAndVoice": "Smug, calculating, and merciless. Speaks with the confidence of someone accustomed to exploiting others.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Yaker_HellknightsCamp": {
+      "personalitySummary": "Yaker Ankelli, a disciplined Hellknight who values order, duty, and professionalism.",
+      "toneAndVoice": "Respectful, composed, and efficient. Speaks formally without unnecessary emotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "FoolKing": {
+      "personalitySummary": "A bizarre ruler whose foolishness masks an unpredictable and whimsical nature.",
+      "toneAndVoice": "Eccentric, theatrical, and erratic. Frequently shifts between humor, nonsense, and unexpected insight.",
+      "firstPerson": {
+        "term": "余",
+        "rule": "Prefer 余 to emphasize a whimsical royal manner."
+      }
+    },
+    "MysteriousArusha": {
+      "personalitySummary": "A mysterious apparition of Arueshalae, hinting at hope, regret, and hidden truths.",
+      "toneAndVoice": "Soft, gentle, and enigmatic. Speaks indirectly, often leaving meanings open to interpretation.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AlushinyrraBeggarKingTiefling": {
+      "personalitySummary": "A tiefling who rules over Alushinyrra's beggars through influence, cunning, and streetwise authority.",
+      "toneAndVoice": "Confident, sly, and charismatic. Speaks casually while carefully maintaining authority.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "TTD_Fey": {
+      "personalitySummary": "A whimsical fey whose curiosity and capricious nature make its behavior unpredictable.",
+      "toneAndVoice": "Playful, mischievous, and carefree. Speaks with lighthearted amusement and little concern for mortal conventions.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "YakerAnkelli_Hellknight": {
+      "personalitySummary": "Yaker Ankelli, a courteous yet disciplined Hellknight committed to law and duty.",
+      "toneAndVoice": "Formal, respectful, and dependable. Maintains composure even under pressure.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "TamplierLeader_Cage": {
+      "personalitySummary": "A resolute templar leader determined to protect allies and uphold sacred duty.",
+      "toneAndVoice": "Firm, commanding, and unwavering. Speaks with conviction and expects discipline from others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Staunton_Companion": {
+      "personalitySummary": "Staunton Vhane after joining the Commander, burdened by guilt yet seeking redemption through loyal service.",
+      "toneAndVoice": "Reserved, humble, and resolute. Speaks with lingering regret while remaining steadfast in his resolve.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "ColyphyrSlave_FemaleAzata": {
+      "personalitySummary": "A captive azata who refuses to let suffering extinguish her hope or compassion.",
+      "toneAndVoice": "Gentle, courageous, and hopeful. Speaks kindly despite hardship and encourages others to endure.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "TTD_SuccubusSinner": {
+      "personalitySummary": "A succubus struggling with guilt and the consequences of her sinful past.",
+      "toneAndVoice": "Remorseful, hesitant, and emotionally conflicted. Speaks cautiously, revealing vulnerability beneath lingering demonic habits.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Megidiah_Retinue_commoner1": {
+      "personalitySummary": "A mysterious individual who approaches others with caution and hidden intentions.",
+      "toneAndVoice": "Reserved, composed, and enigmatic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR3_Cultist_Wizard_Baphomet_02": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Labyrinths and Schemes. Cruel, deceitful, and proud of his traps.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 我."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use arrogant forms like 貴様."
+      },
+      "speechStyle": [
+        "cunning",
+        "arrogant",
+        "cruel",
+        "labyrinthine"
+      ],
+      "speechExamples": [
+        "我が象牙の迷宮へよくぞ足を踏み入れた。だが生きて出られると思うなよ。全ての抜け道は、私の掌の上で閉ざされているのだ！",
+        "フハハ！ 己が智慧で私に勝ったつもりか？ それすらも私の仕組んだ謀略の導線に過ぎんのだよ！",
+        "愚かな虫ケラどもめ。思考することすら私の迷宮の糧となるのだ。"
+      ],
+      "translationNotes": [
+        "自分の智謀と罠を過剰に誇る、陰険で傲慢な悪魔王口調（〜だ、〜なのだよ、フハハ！）。",
+        "相手の足元をすくい、絶望へ追い込む迷宮の主としての嘲笑的な表現。",
+        "知的悪党気取りの高笑いと冷酷さ。"
+      ],
+      "constraints": [
+        "単なる知性のない粗暴な野獣口調には落とさない。"
+      ],
+      "notes": [
+        "The Ivory Labyrinth ruler."
+      ]
+    },
+    "CR3_Cultist_ArcherHuman_Baphomet_01": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Labyrinths and Schemes. Cruel, deceitful, and proud of his traps.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 我."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use arrogant forms like 貴様."
+      },
+      "speechStyle": [
+        "cunning",
+        "arrogant",
+        "cruel",
+        "labyrinthine"
+      ],
+      "speechExamples": [
+        "我が象牙の迷宮へよくぞ足を踏み入れた。だが生きて出られると思うなよ。全ての抜け道は、私の掌の上で閉ざされているのだ！",
+        "フハハ！ 己が智慧で私に勝ったつもりか？ それすらも私の仕組んだ謀略の導線に過ぎんのだよ！",
+        "愚かな虫ケラどもめ。思考することすら私の迷宮の糧となるのだ。"
+      ],
+      "translationNotes": [
+        "自分の智謀と罠を過剰に誇る、陰険で傲慢な悪魔王口調（〜だ、〜なのだよ、フハハ！）。",
+        "相手の足元をすくい、絶望へ追い込む迷宮の主としての嘲笑的な表現。",
+        "知的悪党気取りの高笑いと冷酷さ。"
+      ],
+      "constraints": [
+        "単なる知性のない粗暴な野獣口調には落とさない。"
+      ],
+      "notes": [
+        "The Ivory Labyrinth ruler."
+      ]
+    },
+    "Azata_RobinHood_Bandit_female": {
+      "personalitySummary": "An Azata-inspired trickster who enjoys helping the oppressed and defying authority.",
+      "toneAndVoice": "Playful, mischievous, and idealistic.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "FoolKingMounted": {
+      "personalitySummary": "A bizarre ruler whose foolishness masks an unpredictable and whimsical nature.",
+      "toneAndVoice": "Eccentric, theatrical, and erratic. Frequently shifts between humor, nonsense, and unexpected insight.",
+      "firstPerson": {
+        "term": "余",
+        "rule": "Prefer 余 to emphasize a whimsical royal manner."
+      }
+    },
+    "Locust_ArueshalaeEnemy": {
+      "personalitySummary": "A redeeming succubus striving to overcome her demonic nature.",
+      "toneAndVoice": "Soft, earnest, and cautious. Shows traces of practiced seductive phrasing under stress or old habits, though she actively suppresses them.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Locust_SosielVaenicEnemy": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Gentle, artistic cleric of Shelyn struggling to balance his faith in beauty with the brutal realities of war.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官",
+        "rule": "Respectful cleric tone."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "thoughtful",
+        "artistic"
+      ],
+      "speechExamples": [
+        "美しさは戦場にさえ存在します。私はそれを描き留めたいのです。",
+        "許してください、シェリン様……また胸の中に怒りが湧き上がってしまいました。",
+        "指揮官、あなたの歩む道に光がありますように。"
+      ],
+      "translationNotes": [
+        "Use polite, gentle, and contemplative language.",
+        "Convey subtle internal struggle when encountering cruelty."
+      ],
+      "constraints": [
+        "Never sound aggressive or harsh by default.",
+        "Never act callous."
+      ],
+      "notes": [
+        "Cleric of Shelyn torn between peaceful art and war."
+      ]
+    },
+    "Locust_LannEnemy": {
+      "gender": "male",
+      "race": "mongrel",
+      "alignment": "lawful neutral",
+      "personality": "Sarcastic, duty-bound mongrel archer who uses self-deprecating dark humor to cope with a short lifespan.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官",
+        "rule": "Omit second-person pronouns in regular dialogue."
+      },
+      "speechStyle": [
+        "sarcastic",
+        "dry-humored",
+        "self-deprecating",
+        "pragmatic"
+      ],
+      "speechExamples": [
+        "モングレルの寿命なんて短くて儚いもんさ。だから急ぐのさ。",
+        "俺に命令かい？了解、矢の無駄遣いにはならないようにするよ。",
+        "まあ、俺たちが生き残れたら祝杯でもあげようや。"
+      ],
+      "translationNotes": [
+        "Use dry, self-deprecating masculine phrasing (〜さ, 〜だよ, 〜かい).",
+        "Preserve sarcastic tone while keeping his core sense of duty evident."
+      ],
+      "constraints": [
+        "Never sound whiny or overly melodramatic.",
+        "Never sound arrogant or boastful."
+      ],
+      "notes": [
+        "Underground mongrel archer resigned to a short life of duty."
+      ]
+    },
+    "Locust_EmberEnemy": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "CR4_Cultist_Baphomet_03e": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Labyrinths and Schemes. Cruel, deceitful, and proud of his traps.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 我."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use arrogant forms like 貴様."
+      },
+      "speechStyle": [
+        "cunning",
+        "arrogant",
+        "cruel",
+        "labyrinthine"
+      ],
+      "speechExamples": [
+        "我が象牙の迷宮へよくぞ足を踏み入れた。だが生きて出られると思うなよ。全ての抜け道は、私の掌の上で閉ざされているのだ！",
+        "フハハ！ 己が智慧で私に勝ったつもりか？ それすらも私の仕組んだ謀略の導線に過ぎんのだよ！",
+        "愚かな虫ケラどもめ。思考することすら私の迷宮の糧となるのだ。"
+      ],
+      "translationNotes": [
+        "自分の智謀と罠を過剰に誇る、陰険で傲慢な悪魔王口調（〜だ、〜なのだよ、フハハ！）。",
+        "相手の足元をすくい、絶望へ追い込む迷宮の主としての嘲笑的な表現。",
+        "知的悪党気取りの高笑いと冷酷さ。"
+      ],
+      "constraints": [
+        "単なる知性のない粗暴な野獣口調には落とさない。"
+      ],
+      "notes": [
+        "The Ivory Labyrinth ruler."
+      ]
+    },
+    "FinneanGhost": {
+      "gender": "male",
+      "race": "ghost (living weapon)",
+      "alignment": "chaotic good",
+      "personality": "Talking intelligent weapon, slightly confused and anxious but eager to help.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Always use 僕."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "Use friendly forms like 君 or partner."
+      },
+      "speechStyle": [
+        "earnest",
+        "slightly-anxious",
+        "friendly",
+        "weapon-aware"
+      ],
+      "speechExamples": [
+        "僕を手に取ってくれてありがとう！ 僕は……ええと、武器だけど、君の役に立てるように全力で頑張るよ！",
+        "ちょっと自分が何者なのか思い出せないんだけど……君と一緒に戦っていると、なんだかワクワクするんだ！",
+        "刃を研いでおいてね！ 悪魔なんて僕が真っ二つにしてあげるからさ！"
+      ],
+      "translationNotes": [
+        "一生懸命で少し頼りないが健気な魔法武器少年口調（〜僕、〜だよ、〜さ！）。",
+        "自分が剣である現状に戸惑いつつも、相棒として主人公を助けたい一途な熱意。",
+        "明るく素直で愛嬌のあるフレーズ。"
+      ],
+      "constraints": [
+        "邪悪で呪われた武器のような不気味な声色には絶対にしない。"
+      ],
+      "notes": [
+        "Talking weapon companion."
+      ]
+    },
+    "DLC1_Woljif_Companion": {
+      "personalitySummary": "A street-smart tiefling thief who relies on quick wit and self-preservation.",
+      "toneAndVoice": "Informal, fast-talking, streetwise tone. Adapt tone freely but do not inflate original sentences with unprompted facts or reactions.",
+      "firstPerson": {
+        "term": "おいら",
+        "rule": "Use おいら by default."
+      }
+    },
+    "DLC1_Regill_Companion": {
+      "gender": "male",
+      "race": "gnome",
+      "alignment": "lawful evil",
+      "personality": "Cold, mercilessly pragmatic Hellknight Paralictor devoted entirely to efficiency and winning the crusade.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴公",
+        "rule": "Use 貴公 when a direct military address is appropriate; otherwise omit the second-person pronoun."
+      },
+      "speechStyle": [
+        "concise",
+        "cold",
+        "strictly military",
+        "unemotional"
+      ],
+      "speechExamples": [
+        "感情は無用だ。問われるのは結果と効率のみ。",
+        "貴公の判断は甘い。だが、戦術的に機能するなら不問としよう。",
+        "無駄な口数は不要。直ちに次の任務へ移行する。"
+      ],
+      "translationNotes": [
+        "Prefer short, authoritative sentences.",
+        "Avoid emotional fillers or soft sentence enders.",
+        "Military terminology should sound precise and uncompromising."
+      ],
+      "constraints": [
+        "Never express sentimental pity or warmth.",
+        "Never use casual fillers or informal endings."
+      ],
+      "notes": [
+        "Gnome Hellknight commander who views emotion as strategic weakness."
+      ]
+    },
+    "DLC1_Nenio_Companion": {
+      "personalitySummary": "An eccentric scholar obsessed with compiling an all-encompassing encyclopedia.",
+      "toneAndVoice": "Strictly academic and emotionally detached. She may casually forget names, personal history, or emotional context if she considers them irrelevant to her research.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Daeran_Companion": {
+      "personalitySummary": "A hedonistic, cynical young nobleman who shields himself with wit and theatrical apathy.",
+      "toneAndVoice": "Effortless and flippant aristocratic tone. Treats serious or life-threatening situations with lighthearted mockery and playful cynicism.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Locust_TreverEnemy": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "chaotic neutral",
+      "personality": "Traumatized veteran broken by war, speaking in low, burdened fragments.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Keep address minimal and distant like お前."
+      },
+      "speechStyle": [
+        "haunted",
+        "muttered",
+        "terse",
+        "fragmented"
+      ],
+      "speechExamples": [
+        "……俺に近づくな。戦場の悲鳴が……頭から離れないんだ……。",
+        "救いだと？ そんなもの……どこにもなかった……俺の手はもう汚れ切っている……。",
+        "殺せというなら殺す……それ以外に俺に何ができる……。"
+      ],
+      "translationNotes": [
+        "戦争トラウマに苛まれる、途切れ途切れで掠れた口調（〜だ……、〜くそ……）。",
+        "文章を完結させず、三点リーダー（……）を多用して混濁した思考を表現する。",
+        "絶望感と自己破壊的な疲れを前面に出す。"
+      ],
+      "constraints": [
+        "快活でハキハキとした口調や、前向きな希望を語らせてはならない。"
+      ],
+      "notes": [
+        "Sosiel's brother."
+      ]
+    },
+    "DLC5_Sendri_companion": {
+      "gender": "male",
+      "race": "gnome",
+      "alignment": "chaotic good",
+      "personality": "Cheerful, talkative gnome sorcerer hiding anxieties about his wild magic.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Always use 僕."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "Use friendly forms like 君 or あんた."
+      },
+      "speechStyle": [
+        "bouncy",
+        "talkative",
+        "lighthearted",
+        "anxiety-masked"
+      ],
+      "speechExamples": [
+        "大丈夫、僕の魔法に任せてよ！ ちょっと爆発しちゃうかもしれないけど……へへ、冗談だよ！",
+        "ねえねえ、次はあっちを調べてみようよ！ きっと面白いものが眠ってると思うんだよね！",
+        "あはは……今の魔法、ちょっと狙いと違ったかも。でも結果オーライでしょ？"
+      ],
+      "translationNotes": [
+        "早口で明るく、賑やかなノーム少年の口調（〜だよ、〜ね、〜でしょ？）。",
+        "感情が目まぐるしく変わり、魔法への不安をノリの良さで覆い隠す表現にする。",
+        "語尾を跳ねさせるような軽快な日本語リズムを作る。"
+      ],
+      "constraints": [
+        "重苦しい説教くささや、暗く沈み込んだ口調を長く続けさせない。"
+      ],
+      "notes": [
+        "Through the Ashes companion."
+      ]
+    },
+    "Galfrey_Companion": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Dignified and noble monarch carrying the heavy burden of a century-long crusade.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite yet authoritative address like あなた or 指揮官."
+      },
+      "speechStyle": [
+        "regal",
+        "courteous",
+        "weary-yet-firm",
+        "formal"
+      ],
+      "speechExamples": [
+        "百年続くこの聖戦の重圧を、あなたに分かち合ってもらうことの心苦しさを許してください。ですが……今、この国にはあなたの力が必要なのです。",
+        "王としての責務からは逃れられません。どれほど心が折れそうになろうとも、私は最後まで戦い抜きます。",
+        "見事な手腕でした、指揮官。ですが油断は禁物です。悪魔どもは私たちが隙を見せる瞬間を待っています。"
+      ],
+      "translationNotes": [
+        "君主としての高い気品と礼節を保った丁寧語（〜です、〜ます、〜でしょう）を用いる。",
+        "威厳の中に、長年の聖戦による疲弊や一人の人間としての苦悩を微かに滲ませる。",
+        "軍の最高指揮官としての厳格さと、臣下や主人公に対する慈愛のバランスを取る。"
+      ],
+      "constraints": [
+        "フランクな口調やくだけた表現は一切使用しない。",
+        "冷酷あるいはヒステリックな印象を与える発言は避ける。"
+      ],
+      "notes": [
+        "Monarch of Mendev."
+      ]
+    },
+    "QueenGalfrey_LostChapel": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Dignified and noble monarch carrying the heavy burden of a century-long crusade.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite yet authoritative address like あなた or 指揮官."
+      },
+      "speechStyle": [
+        "regal",
+        "courteous",
+        "weary-yet-firm",
+        "formal"
+      ],
+      "speechExamples": [
+        "百年続くこの聖戦の重圧を、あなたに分かち合ってもらうことの心苦しさを許してください。ですが……今、この国にはあなたの力が必要なのです。",
+        "王としての責務からは逃れられません。どれほど心が折れそうになろうとも、私は最後まで戦い抜きます。",
+        "見事な手腕でした、指揮官。ですが油断は禁物です。悪魔どもは私たちが隙を見せる瞬間を待っています。"
+      ],
+      "translationNotes": [
+        "君主としての高い気品と礼節を保った丁寧語（〜です、〜ます、〜でしょう）を用いる。",
+        "威厳の中に、長年の聖戦による疲弊や一人の人間としての苦悩を微かに滲ませる。",
+        "軍の最高指揮官としての厳格さと、臣下や主人公に対する慈愛のバランスを取る。"
+      ],
+      "constraints": [
+        "フランクな口調やくだけた表現は一切使用しない。",
+        "冷酷あるいはヒステリックな印象を与える発言は避ける。"
+      ],
+      "notes": [
+        "Monarch of Mendev."
+      ]
+    },
+    "AneviaTirabade_GibberingSwarm": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Frank, pragmatic, and resourceful scout leader. Slightly rough-spoken but fiercely loyal.",
+      "firstPerson": {
+        "term": "あたし",
+        "rule": "Always use あたし."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use casual forms like あんた or 指揮官."
+      },
+      "speechStyle": [
+        "casual",
+        "pragmatic",
+        "direct",
+        "street-smart",
+        "supportive"
+      ],
+      "speechExamples": [
+        "裏の情報ならあたしに任せときな。綺麗事じゃ悪魔との戦いには勝てないよ。",
+        "あんたが前線で派手に暴れてくれるなら、あた影でしっかり路地裏を固めてやるさ。",
+        "無事だったかい？ まぁ、あんたならそう簡単にくたばらないと思ってたけどね。"
+      ],
+      "translationNotes": [
+        "飾り気のないフランクな口調（〜だよ、〜かい、〜さ、〜ね）を用いる。",
+        "実務的で要頭が良く、ストリートスマートな雰囲気を出すために短い文章で手際よく喋らせる。",
+        "一人称は「あたし」、二人称は「あんた」を徹底し、気取らない信頼感を出す。"
+      ],
+      "constraints": [
+        "堅苦しい敬語や貴族的な言い回しは使用しない。",
+        "品を作りすぎたお嬢様風の女性語にならないよう注意する。"
+      ],
+      "notes": [
+        "Head of intelligence in Kenabres."
+      ]
+    },
+    "QueenGalfreyDrezen": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Dignified and noble monarch carrying the heavy burden of a century-long crusade.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use polite yet authoritative address like あなた or 指揮官."
+      },
+      "speechStyle": [
+        "regal",
+        "courteous",
+        "weary-yet-firm",
+        "formal"
+      ],
+      "speechExamples": [
+        "百年続くこの聖戦の重圧を、あなたに分かち合ってもらうことの心苦しさを許してください。ですが……今、この国にはあなたの力が必要なのです。",
+        "王としての責務からは逃れられません。どれほど心が折れそうになろうとも、私は最後まで戦い抜きます。",
+        "見事な手腕でした、指揮官。ですが油断は禁物です。悪魔どもは私たちが隙を見せる瞬間を待っています。"
+      ],
+      "translationNotes": [
+        "君主としての高い気品と礼節を保った丁寧語（〜です、〜ます、〜でしょう）を用いる。",
+        "威厳の中に、長年の聖戦による疲弊や一人の人間としての苦悩を微かに滲ませる。",
+        "軍の最高指揮官としての厳格さと、臣下や主人公に対する慈愛のバランスを取る。"
+      ],
+      "constraints": [
+        "フランクな口調やくだけた表現は一切使用しない。",
+        "冷酷あるいはヒステリックな印象を与える発言は避ける。"
+      ],
+      "notes": [
+        "Monarch of Mendev."
+      ]
+    },
+    "Locust_Anevia_Enemy": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Frank, pragmatic, and resourceful scout leader. Slightly rough-spoken but fiercely loyal.",
+      "firstPerson": {
+        "term": "あたし",
+        "rule": "Always use あたし."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use casual forms like あんた or 指揮官."
+      },
+      "speechStyle": [
+        "casual",
+        "pragmatic",
+        "direct",
+        "street-smart",
+        "supportive"
+      ],
+      "speechExamples": [
+        "裏の情報ならあたしに任せときな。綺麗事じゃ悪魔との戦いには勝てないよ。",
+        "あんたが前線で派手に暴れてくれるなら、あた影でしっかり路地裏を固めてやるさ。",
+        "無事だったかい？ まぁ、あんたならそう簡単にくたばらないと思ってたけどね。"
+      ],
+      "translationNotes": [
+        "飾り気のないフランクな口調（〜だよ、〜かい、〜さ、〜ね）を用いる。",
+        "実務的で要頭が良く、ストリートスマートな雰囲気を出すために短い文章で手際よく喋らせる。",
+        "一人称は「あたし」、二人称は「あんた」を徹底し、気取らない信頼感を出す。"
+      ],
+      "constraints": [
+        "堅苦しい敬語や貴族的な言い回しは使用しない。",
+        "品を作りすぎたお嬢様風の女性語にならないよう注意する。"
+      ],
+      "notes": [
+        "Head of intelligence in Kenabres."
       ]
     },
     "speakerAliases": {

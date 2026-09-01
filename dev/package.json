@@ -1,14 +1,14 @@
 {
   "type": "module",
   "scripts": {
-    "dialogue-order": "node dialogueOrder.js",
-    "dialogue-order-reorder": "node dialogueOrder.js --reorder",
-    "batch": "node toBatchData.js",
-    "speaker-audit": "node toBatchData.js --audit-only --audit=speakerAudit.json",
-    "missing-profiles": "node ./helper/extractMissingProfiles.js speakerAudit.json missingSpeakerNames.json",
-    "batch-test": "node toBatchData.js --limit=10 --output-dir=test/batch/splitLang --audit=test/batch/speakerAudit.json",
-    "batch-import": "node batch2Lang.js",
-    "verify": "node verify.js --report=test/verify-report.json"
+    "dialogue-order": "node ./helper/dialogueOrder.js",
+    "dialogue-order-reorder": "node ./helper/dialogueOrder.js --reorder",
+    "batch": "node ./toBatchData.js",
+    "speaker-audit": "node ./toBatchData.js --audit-only --audit=./res/speakerAudit.json",
+    "missing-profiles": "node ./helper/extractMissingProfiles.js ./res/speakerAudit.json ./res/missingSpeakerNames.json",
+    "batch-test": "node ./toBatchData.js --limit=10 --output-dir=test/batch/splitLang --audit=test/batch/speakerAudit.json",
+    "batch-import": "node ./batch2Lang.js",
+    "verify": "node ./verify.js --report=test/verify-report.json"
   },
   "dependencies": {
     "openai": "^4.68.1"

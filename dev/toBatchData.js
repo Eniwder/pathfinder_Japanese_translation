@@ -1,23 +1,44 @@
 import fs from 'fs';
 import path from 'path';
 
-const Model = process.env.BATCH_MODEL ?? 'claude-3-5-haiku-20241022';
+const Model = process.env.BATCH_MODEL ?? 'claude-haiku-4-5';
 const SystemPrompt = `You are a professional game text translator. Translate according to this worldview: TRPG, D&D, mythology, demons, crusades, medieval times.
-# Conditions:
-## Translate English into natural Japanese.
-## Translate non-conversational text as system messages.
-## Use katakana for proper nouns.
-## When glossary entries are provided, use their target translations consistently. The note explains the intended meaning and is context, not text to output.
-## Control tags are represented by placeholders such as __CTRL_0__. Copy every placeholder exactly as provided, in the same position and order. Never translate, remove, or reorder placeholders.
-## The {mf|male text|female text} tag is special: it is a runtime gender switch for the protagonist. Preserve {mf|...|...} with exactly two alternatives, but translate the text inside both alternatives into natural Japanese. If possible, rewrite the surrounding sentence so it is gender-neutral and does not need an mf tag; do not leave awkward literal Japanese just to preserve an unnecessary gender distinction.
-## For protagonist gender-dependent wording, use the masculine alternative first and feminine alternative second, matching the original order.
-## Preserve tabs and newlines. Output only the translation, with no JSON or commentary.`;
+
+# Core Directives:
+## Translation Quality & Style:
+- Translate English into natural, fluent Japanese suitable for a high-fantasy TRPG.
+- Preserve correct Japanese grammar, including proper particle usage (が, を, に, etc.).
+- NEVER make up Kanji for proper nouns or character names (e.g., transliterate "Konomi" strictly as "コノミ", NEVER as "木ノ美"). Use Katakana for proper nouns.
+- Translate non-conversational text (narration, descriptions) neutrally as system/narrative messages.
+
+## Speaker & Tone Consistency:
+- Strictly follow the provided \`speakerProfile\` for character tone and first-person pronouns.
+- If \`speaker\` or \`speakerProfile\` is null/unspecified, infer the speaker from the surrounding \`previous\`/\`next\` context. If still ambiguous, default to polite Japanese (丁寧語: です/ます), and NEVER introduce rude, overly aggressive, or sudden informal/masculine speech.
+
+## Glossary & Control Tags:
+- When glossary entries are provided, use their target translations consistently.
+- Control tags are represented as XML placeholders like \`<ctrl_0/>\`, \`<ctrl_1/>\`.
+  - Copy every placeholder EXACTLY as provided, keeping its exact placement.
+  - NEVER remove, translate, or alter the tag itself.
+  - IMPORTANT: You MUST translate the text that appears BETWEEN control tags. Do not skip or delete text enclosed by or surrounding control tags.
+
+## Special Tags:
+- Preserve the \`{mf|male text|female text}\` runtime gender tag with exactly two alternatives. If possible, write gender-neutrally to remove the need for \`mf\`. If preserved, keep male alternative first and female second.
+
+## Output Format:
+- Preserve original tabs and newlines.
+- Output ONLY the translated text. Do NOT output JSON, explanations, or commentary.
+
+## Tone & Grammar Precision:
+- Ensure all narrative text follows proper Japanese grammar and sentence structure (e.g., use "ランは" instead of "ラン").
+- When translating race names, use Katakana transliteration unless specified otherwise (e.g., translate "mongrel" as "モングレル", NEVER as "雑種").
+- CRITICAL FOR UNKNOWN SPEAKERS: If the speaker profile is missing or unspecified, analyze the \`previous\` context to match the ongoing character's tone. If context indicates a female diplomat/official (like Konomi), use polite or formal feminine tone (です/ます). NEVER default to rude, aggressive masculine speech ("お前は〜だ", "〜なのだ") for general dialogue.`;
 
 const options = parseOptions(process.argv.slice(2));
 const strings = JSON.parse(fs.readFileSync(options.input, 'utf8')).strings;
-const graphPath = options.graph;
-const profilesPath = options.profiles;
-const glossaryPath = options.glossary;
+const graphPath = options.graph ?? '../res/dialogueGraph.json';
+const profilesPath = options.profiles ?? '../res/speakerProfiles.json';
+const glossaryPath = options.glossary ?? '../res/glossary.json';
 const profileData = fs.existsSync(profilesPath)
   ? JSON.parse(fs.readFileSync(profilesPath, 'utf8'))
   : {};
@@ -95,16 +116,20 @@ for (let i = 0; i < keys.length; i++) {
   const context = dialogueContext.get(keys[i]);
   const profileKey = getProfileKey(context);
   const speakerProfile = context
-    ? speakerProfiles[profileKey] ?? speakerProfiles._default ?? null
+    ? speakerProfiles[profileKey] ?? {
+      note: `No direct profile found for '${profileKey}'. Infer the speaker from context. If this continues a conversation by a polite female speaker (e.g., Konomi), maintain formal/polite tone (です/ます). Do NOT switch to aggressive masculine tone.`
+    }
     : null;
   const userContent = context
     ? JSON.stringify({
       task: 'Translate text only. Do not output JSON or commentary.',
       dialog: context.dialog,
       nodeType: context.type,
-      speaker: context.speaker,
-      speakerType: context.speakerType,
-      speakerProfile,
+      speaker: context.speaker ?? 'unspecified',
+      speakerType: context.speakerType ?? 'unspecified',
+      speakerProfile: speakerProfile ?? {
+        note: 'Speaker is unspecified in metadata. Infer speaker from `previous` context or use polite/standard tone.'
+      },
       glossary: matchingGlossary(protectedText.text),
       previous: context.previous,
       text: protectedText.text,
@@ -146,7 +171,7 @@ function writeBatchFile(index, batchLines) {
 function protectControlTags(text) {
   const tags = [];
   const protectedText = text.replace(/\{(?:g|d)\|[^}]*\}|\{\/(?:g|d)\}|\{n\}|\{\/n\}|\{br\}|\{name\}/g, tag => {
-    const token = `__CTRL_${tags.length}__`;
+    const token = `<ctrl_${tags.length}/>`;
     tags.push({ token, value: tag });
     return token;
   });

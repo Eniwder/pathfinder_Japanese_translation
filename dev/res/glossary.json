@@ -1028,7 +1028,27 @@
     {
       "source": "Mongrel",
       "target": "モングレル",
-      "note": "雑種と呼ばれる種族。"
+      "note": "基本は種族名として「モングレル」と訳す。ただし、話者が差別・見下し・自虐・皮肉のニュアンスで言っている場合は文脈に応じて「雑種」と訳し分けてよい。"
+    },
+    {
+      "source": "Nerosyan",
+      "target": "ネロシャン",
+      "note": "北のダイアモンドと呼ばれるメンデヴの首都"
+    },
+    {
+      "source": "Egede",
+      "target": "エゲーデ",
+      "note": "霧と帷湖岸にある港湾都市。メンデヴの玄関口"
+    },
+    {
+      "source": "Icerift Castle",
+      "target": "アイスリフト城",
+      "note": "補給と補修の困難さから完成前に放棄されることが決定された城"
+    },
+    {
+      "source": "Konomi",
+      "target": "コノミ",
+      "note": "personalitySummary: A kind and optimistic young woman who approaches others with warmth, sincerity, and quiet determination., toneAndVoice: Friendly, cheerful, and emotionally open. Speaks naturally with gentle encouragement and genuine concern for others, while remaining humble and approachable. firstPerson : { term: 私, rule: Use 私 consistently. }"
     }
   ]
 }
