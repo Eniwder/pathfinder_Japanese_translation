@@ -156,11 +156,11 @@ function protectControlTags(text) {
 function parseOptions(args) {
   const result = {
     input: './lang/enGB_ordered.json',
-    graph: './dialogueGraph.json',
-    profiles: './speakerProfiles.json',
-    glossary: './glossary.json',
+    graph: './res/dialogueGraph.json',
+    profiles: './res/speakerProfiles.json',
+    glossary: './res/glossary.json',
     outputDir: './splitLang',
-    audit: './speakerAudit.json',
+    audit: './res/speakerAudit.json',
     limit: Infinity,
     auditOnly: false,
   };
