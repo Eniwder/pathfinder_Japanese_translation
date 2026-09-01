@@ -3,10 +3,11 @@
   "scripts": {
     "dialogue-order": "node ./helper/dialogueOrder.js",
     "dialogue-order-reorder": "node ./helper/dialogueOrder.js --reorder",
-    "batch": "node ./toBatchData.js",
-    "speaker-audit": "node ./toBatchData.js --audit-only --audit=./res/speakerAudit.json",
+    "extract": "node ./toBatchData.js extract",
+    "extract-test": "node ./toBatchData.js extract --limit=10 --output-dir=test/chunks",
+    "import-chunks": "node ./toBatchData.js import",
+    "speaker-audit": "node ./toBatchData.js audit",
     "missing-profiles": "node ./helper/extractMissingProfiles.js ./res/speakerAudit.json ./res/missingSpeakerNames.json",
-    "batch-test": "node ./toBatchData.js --limit=10 --output-dir=test/batch/splitLang --audit=test/batch/speakerAudit.json",
     "batch-import": "node ./batch2Lang.js",
     "verify": "node ./verify.js --report=test/verify-report.json"
   },
