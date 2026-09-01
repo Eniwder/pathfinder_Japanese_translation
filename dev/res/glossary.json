@@ -2,7 +2,8 @@
   "glossary": [
     {
       "source": "Mythic Path",
-      "target": "ミシックパス",
+      "target": "神話の道",
+      "category": "Mythic",
       "note": "Source of extraordinary powers gained by the protagonist."
     },
     {
@@ -1049,6 +1050,590 @@
       "source": "Konomi",
       "target": "コノミ",
       "note": "personalitySummary: A kind and optimistic young woman who approaches others with warmth, sincerity, and quiet determination., toneAndVoice: Friendly, cheerful, and emotionally open. Speaks naturally with gentle encouragement and genuine concern for others, while remaining humble and approachable. firstPerson : { term: 私, rule: Use 私 consistently. }"
+    },
+    {
+      "source": "STR",
+      "target": "筋力",
+      "category": "Ability Scores",
+      "note": "Ability score abbreviation (Strength)."
+    },
+    {
+      "source": "Strength",
+      "target": "筋力",
+      "category": "Ability Scores"
+    },
+    {
+      "source": "DEX",
+      "target": "敏捷力",
+      "category": "Ability Scores",
+      "note": "Ability score abbreviation (Dexterity)."
+    },
+    {
+      "source": "Dexterity",
+      "target": "敏捷力",
+      "category": "Ability Scores"
+    },
+    {
+      "source": "CON",
+      "target": "耐久力",
+      "category": "Ability Scores",
+      "note": "Ability score abbreviation (Constitution) — not the common word \"con\"."
+    },
+    {
+      "source": "Constitution",
+      "target": "耐久力",
+      "category": "Ability Scores"
+    },
+    {
+      "source": "INT",
+      "target": "知力",
+      "category": "Ability Scores",
+      "note": "Ability score abbreviation (Intelligence)."
+    },
+    {
+      "source": "Intelligence",
+      "target": "知力",
+      "category": "Ability Scores"
+    },
+    {
+      "source": "WIS",
+      "target": "判断力",
+      "category": "Ability Scores",
+      "note": "Ability score abbreviation (Wisdom)."
+    },
+    {
+      "source": "Wisdom",
+      "target": "判断力",
+      "category": "Ability Scores"
+    },
+    {
+      "source": "CHA",
+      "target": "魅力",
+      "category": "Ability Scores",
+      "note": "Ability score abbreviation (Charisma)."
+    },
+    {
+      "source": "Charisma",
+      "target": "魅力",
+      "category": "Ability Scores"
+    },
+    {
+      "source": "Fort",
+      "target": "頑健",
+      "category": "Saving Throws",
+      "note": "Fortitude save abbreviation — not the noun \"fort\"."
+    },
+    {
+      "source": "Fortitude",
+      "target": "頑健",
+      "category": "Saving Throws",
+      "note": "Saving throw, not a general virtue."
+    },
+    {
+      "source": "Ref",
+      "target": "反応",
+      "category": "Saving Throws",
+      "note": "Reflex save abbreviation."
+    },
+    {
+      "source": "Reflex",
+      "target": "反応",
+      "category": "Saving Throws",
+      "note": "Saving throw, not the general word \"reflex\"."
+    },
+    {
+      "source": "Will",
+      "target": "意志",
+      "category": "Saving Throws",
+      "note": "Will save — only when it is the TRPG saving throw, not the modal verb \"will\"."
+    },
+    {
+      "source": "AC",
+      "target": "AC（アーマー・クラス）",
+      "category": "Combat Stats",
+      "note": "Armor Class."
+    },
+    {
+      "source": "HP",
+      "target": "HP",
+      "category": "Combat Stats",
+      "note": "Hit Points."
+    },
+    {
+      "source": "BAB",
+      "target": "基本攻撃ボーナス",
+      "category": "Combat Stats",
+      "note": "Base Attack Bonus abbreviation."
+    },
+    {
+      "source": "Base Attack Bonus",
+      "target": "基本攻撃ボーナス",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Initiative",
+      "target": "イニシアチブ",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Speed",
+      "target": "移動速度",
+      "category": "Combat Stats",
+      "note": "Movement speed stat — not the general word \"speed\"."
+    },
+    {
+      "source": "Attack Bonus",
+      "target": "攻撃ボーナス",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Damage",
+      "target": "ダメージ",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Critical Hit",
+      "target": "クリティカルヒット",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Critical Multiplier",
+      "target": "クリティカル倍率",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Critical Threat Range",
+      "target": "クリティカル可能域",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Combat Maneuver Bonus",
+      "target": "戦技ボーナス",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "CMB",
+      "target": "戦技ボーナス",
+      "category": "Combat Stats",
+      "note": "Combat Maneuver Bonus abbreviation."
+    },
+    {
+      "source": "Combat Maneuver Defense",
+      "target": "戦技防御値",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "CMD",
+      "target": "戦技防御値",
+      "category": "Combat Stats",
+      "note": "Combat Maneuver Defense abbreviation."
+    },
+    {
+      "source": "Spell Resistance",
+      "target": "呪文抵抗",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "SR",
+      "target": "呪文抵抗",
+      "category": "Combat Stats",
+      "note": "Spell Resistance abbreviation."
+    },
+    {
+      "source": "Damage Reduction",
+      "target": "ダメージ減少",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "DR",
+      "target": "ダメージ減少",
+      "category": "Combat Stats",
+      "note": "Damage Reduction abbreviation."
+    },
+    {
+      "source": "Energy Resistance",
+      "target": "エネルギー抵抗",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Spell Penetration",
+      "target": "呪文抵抗突破",
+      "category": "Combat Stats"
+    },
+    {
+      "source": "Mobility",
+      "target": "軽業",
+      "category": "Skills"
+    },
+    {
+      "source": "Athletics",
+      "target": "運動",
+      "category": "Skills"
+    },
+    {
+      "source": "Knowledge (Arcana)",
+      "target": "知識〈神秘学〉",
+      "category": "Skills"
+    },
+    {
+      "source": "Knowledge (World)",
+      "target": "知識〈世界〉",
+      "category": "Skills"
+    },
+    {
+      "source": "Lore (Nature)",
+      "target": "伝承〈自然〉",
+      "category": "Skills"
+    },
+    {
+      "source": "Lore (Religion)",
+      "target": "伝承〈宗教〉",
+      "category": "Skills"
+    },
+    {
+      "source": "Perception",
+      "target": "知覚",
+      "category": "Skills"
+    },
+    {
+      "source": "Persuasion",
+      "target": "説得",
+      "category": "Skills"
+    },
+    {
+      "source": "Stealth",
+      "target": "隠密",
+      "category": "Skills"
+    },
+    {
+      "source": "Trickery",
+      "target": "解錠",
+      "category": "Skills"
+    },
+    {
+      "source": "Use Magic Device",
+      "target": "魔法装置使用",
+      "category": "Skills"
+    },
+    {
+      "source": "Physical",
+      "target": "物理",
+      "category": "Damage Types",
+      "note": "Damage type."
+    },
+    {
+      "source": "Bludgeoning",
+      "target": "殴打",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Piercing",
+      "target": "刺突",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Slashing",
+      "target": "斬撃",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Fire",
+      "target": "火炎",
+      "category": "Damage Types",
+      "note": "Fire damage type — not the verb \"fire\" (a weapon/crossbow)."
+    },
+    {
+      "source": "Cold",
+      "target": "冷気",
+      "category": "Damage Types",
+      "note": "Cold damage type — not weather/illness \"cold\"."
+    },
+    {
+      "source": "Electricity",
+      "target": "電撃",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Acid",
+      "target": "酸",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Sonic",
+      "target": "音波",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Divine",
+      "target": "神聖",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Unholy",
+      "target": "不浄",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Force",
+      "target": "力場",
+      "category": "Damage Types",
+      "note": "Force damage type — not the general word \"force\"."
+    },
+    {
+      "source": "Negative Energy",
+      "target": "負のエネルギー",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Positive Energy",
+      "target": "正のエネルギー",
+      "category": "Damage Types"
+    },
+    {
+      "source": "Fatigued",
+      "target": "疲労",
+      "category": "Conditions"
+    },
+    {
+      "source": "Exhausted",
+      "target": "消耗",
+      "category": "Conditions"
+    },
+    {
+      "source": "Shaken",
+      "target": "動揺",
+      "category": "Conditions"
+    },
+    {
+      "source": "Frightened",
+      "target": "恐慌",
+      "category": "Conditions"
+    },
+    {
+      "source": "Panicked",
+      "target": "パニック",
+      "category": "Conditions"
+    },
+    {
+      "source": "Sickened",
+      "target": "吐き気",
+      "category": "Conditions"
+    },
+    {
+      "source": "Nauseated",
+      "target": "吐き気（重度）",
+      "category": "Conditions"
+    },
+    {
+      "source": "Staggered",
+      "target": "よろめき",
+      "category": "Conditions"
+    },
+    {
+      "source": "Stunned",
+      "target": "気絶",
+      "category": "Conditions"
+    },
+    {
+      "source": "Dazed",
+      "target": "茫然",
+      "category": "Conditions"
+    },
+    {
+      "source": "Prone",
+      "target": "転倒",
+      "category": "Conditions"
+    },
+    {
+      "source": "Flat-Footed",
+      "target": "不意打ち状態",
+      "category": "Conditions"
+    },
+    {
+      "source": "Helpless",
+      "target": "無力",
+      "category": "Conditions"
+    },
+    {
+      "source": "Grappled",
+      "target": "組みつかれた",
+      "category": "Conditions"
+    },
+    {
+      "source": "Entangled",
+      "target": "絡みつかれた",
+      "category": "Conditions"
+    },
+    {
+      "source": "Paralyzed",
+      "target": "麻痺",
+      "category": "Conditions"
+    },
+    {
+      "source": "Petrified",
+      "target": "石化",
+      "category": "Conditions"
+    },
+    {
+      "source": "Blind",
+      "target": "盲目",
+      "category": "Conditions",
+      "note": "Blind condition — not the noun \"window blind\"."
+    },
+    {
+      "source": "Deaf",
+      "target": "聴覚喪失",
+      "category": "Conditions"
+    },
+    {
+      "source": "Invisible",
+      "target": "不可視",
+      "category": "Conditions"
+    },
+    {
+      "source": "Confused",
+      "target": "混乱",
+      "category": "Conditions"
+    },
+    {
+      "source": "Dominated",
+      "target": "支配",
+      "category": "Conditions"
+    },
+    {
+      "source": "Cursed",
+      "target": "呪い",
+      "category": "Conditions"
+    },
+    {
+      "source": "Diseased",
+      "target": "病気",
+      "category": "Conditions"
+    },
+    {
+      "source": "Lawful Good",
+      "target": "秩序にして善",
+      "category": "Alignment"
+    },
+    {
+      "source": "Neutral Good",
+      "target": "中立にして善",
+      "category": "Alignment"
+    },
+    {
+      "source": "Chaotic Good",
+      "target": "混沌にして善",
+      "category": "Alignment"
+    },
+    {
+      "source": "Lawful Neutral",
+      "target": "秩序にして中立",
+      "category": "Alignment"
+    },
+    {
+      "source": "True Neutral",
+      "target": "真なる中立",
+      "category": "Alignment"
+    },
+    {
+      "source": "Chaotic Neutral",
+      "target": "混沌にして中立",
+      "category": "Alignment"
+    },
+    {
+      "source": "Lawful Evil",
+      "target": "秩序にして悪",
+      "category": "Alignment"
+    },
+    {
+      "source": "Neutral Evil",
+      "target": "中立にして悪",
+      "category": "Alignment"
+    },
+    {
+      "source": "Chaotic Evil",
+      "target": "混沌にして悪",
+      "category": "Alignment"
+    },
+    {
+      "source": "Caster Level",
+      "target": "術者レベル",
+      "category": "Caster Terms"
+    },
+    {
+      "source": "CL",
+      "target": "術者レベル",
+      "category": "Caster Terms",
+      "note": "Caster Level abbreviation."
+    },
+    {
+      "source": "Spell Level",
+      "target": "呪文レベル",
+      "category": "Caster Terms"
+    },
+    {
+      "source": "Spell DC",
+      "target": "呪文DC",
+      "category": "Caster Terms"
+    },
+    {
+      "source": "Concentration Check",
+      "target": "精神集中判定",
+      "category": "Caster Terms"
+    },
+    {
+      "source": "Spellbook",
+      "target": "呪文書",
+      "category": "Caster Terms"
+    },
+    {
+      "source": "Domain",
+      "target": "領域",
+      "category": "Caster Terms",
+      "note": "Cleric domain — not the general word \"domain\"."
+    },
+    {
+      "source": "Bloodline",
+      "target": "血脈",
+      "category": "Caster Terms"
+    },
+    {
+      "source": "Mystery",
+      "target": "神秘",
+      "category": "Caster Terms",
+      "note": "Oracle mystery — not the general word \"mystery\"."
+    },
+    {
+      "source": "Hex",
+      "target": "呪術",
+      "category": "Caster Terms",
+      "note": "Witch hex — not the general word \"hex\"."
+    },
+    {
+      "source": "Revelation",
+      "target": "啓示",
+      "category": "Caster Terms",
+      "note": "Oracle revelation — not the general word \"revelation\"."
+    },
+    {
+      "source": "Channel Energy",
+      "target": "エネルギー放出",
+      "category": "Caster Terms"
+    },
+    {
+      "source": "Mythic Rank",
+      "target": "神話ランク",
+      "category": "Mythic"
+    },
+    {
+      "source": "Mythic Ability",
+      "target": "神話能力",
+      "category": "Mythic"
+    },
+    {
+      "source": "Mythic Feat",
+      "target": "神話特技",
+      "category": "Mythic"
     }
   ]
 }

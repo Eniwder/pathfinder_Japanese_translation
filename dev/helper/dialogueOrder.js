@@ -36,7 +36,7 @@ function parseOptions(args) {
     blueprints: '../blueprints',
     lang: '../dev/lang/enGB.json',
     orderedLanguage: '../dev/lang/enGB_ordered.json',
-    output: '../dev/dialogueGraph.json',
+    output: './res/dialogueGraph.json',
     reorder: false,
     help: false,
   };
@@ -62,7 +62,7 @@ Options:
   --blueprints=PATH         Blueprint directory (default: blueprints).
   --lang=PATH               Language JSON (default: dev/lang/enGB.json).
   --ordered-lang=PATH       Ordered language output (default: dev/lang/enGB_ordered.json).
-  --output=PATH             Intermediate graph (default: dev/dialogueGraph.json).
+  --output=PATH             Intermediate graph (default: dev/res/dialogueGraph.json).
 `);
 }
 
@@ -110,12 +110,45 @@ function buildGraph(assets, strings) {
       visit(cueId, dialogue, visited, sequence, edges, assets, nodeById, strings);
     }
 
+    // previous/next は sequence 配列上の添字（DFSで訪問した順序）ではなく、
+    // このダイアログの実エッジ（親/子）を辿って求める。DFSは分岐（1つのCueに複数のAnswer等）の
+    // 最初の枝を子孫まで辿り切ってから次の枝に戻るため、配列添字ベースでは2番目以降の枝の
+    // previous が無関係な枝の内部台詞を指してしまう。
+    const parentsOf = new Map();
+    const childrenOf = new Map();
+    for (const edge of edges) {
+      if (!childrenOf.has(edge.from)) childrenOf.set(edge.from, []);
+      childrenOf.get(edge.from).push(edge.to);
+      if (!parentsOf.has(edge.to)) parentsOf.set(edge.to, []);
+      parentsOf.get(edge.to).push(edge.from);
+    }
+
     const orderedSequence = sequence.map(id => nodeById.get(id));
     orderedSequence.forEach((node, index) => {
-      node.dialog = assetName(dialogue);
-      node.sequenceIndex = index;
-      node.previous = orderedSequence[index - 1]?.msg ?? null;
-      node.next = orderedSequence[index + 1]?.msg ?? null;
+      const context = {
+        dialog: assetName(dialogue),
+        sequenceIndex: index,
+        previous: nearestTextMessages(node.id, parentsOf, nodeById),
+        next: nearestTextMessages(node.id, childrenOf, nodeById),
+      };
+
+      // 同じCue/Answerブループリントが複数のBlueprintDialogから参照される場合（実データで約0.17%）、
+      // 1ノードに複数の文脈が存在し得る。以前は最後に処理したダイアログの値で無条件に上書きされて
+      // いたが、それだと先に見つかった文脈が消えてしまう。最初の出現は dialog/previous/next に
+      // そのまま残し（toBatchData.js 等の既存の呼び出し元との互換のため）、2回目以降の出現だけ
+      // contexts に退避することで、大半（99.8%）を占める単一出現ノードでは contexts フィールド自体
+      // を持たせずファイルサイズの肥大化を避ける。
+      if (!node.dialog) {
+        node.dialog = context.dialog;
+        node.sequenceIndex = context.sequenceIndex;
+        node.previous = context.previous;
+        node.next = context.next;
+      } else {
+        if (!node.contexts) {
+          node.contexts = [{ dialog: node.dialog, sequenceIndex: node.sequenceIndex, previous: node.previous, next: node.next }];
+        }
+        node.contexts.push(context);
+      }
     });
 
     dialogues.push({
@@ -131,6 +164,38 @@ function buildGraph(assets, strings) {
 
   for (const node of nodeById.values()) nodes.push(node);
   return { version: 1, generatedFrom: 'blueprints', dialogs: dialogues, nodes };
+}
+
+// 隣接マップ（parentsOf/childrenOf）を id から辿り、直近のテキスト付きノード（nodeByIdに
+// 存在する = Text.m_Key を持つノード）のメッセージを集める。Check/Sequence等のテキストを
+// 持たない制御ノードはスキップしてさらに先/前をたどる。分岐で隣接が複数ある場合はそれぞれの
+// 経路を独立にたどり、テキスト付きノードに到達した経路はそこで打ち切る（＝直近のものだけを拾う）。
+function nearestTextMessages(startId, adjacency, nodeById) {
+  const results = [];
+  const seenMsg = new Set();
+  const visited = new Set([startId]);
+  let frontier = adjacency.get(startId) ?? [];
+
+  while (frontier.length > 0) {
+    const nextFrontier = [];
+    for (const id of frontier) {
+      if (visited.has(id)) continue;
+      visited.add(id);
+      const node = nodeById.get(id);
+      if (node) {
+        // テキスト付きノードに到達。このノードでこの経路の探索は打ち切る。
+        if (node.msg && !seenMsg.has(node.msg)) {
+          seenMsg.add(node.msg);
+          results.push(node.msg);
+        }
+      } else {
+        nextFrontier.push(...(adjacency.get(id) ?? []));
+      }
+    }
+    frontier = nextFrontier;
+  }
+
+  return results.length > 0 ? results : null;
 }
 
 function visit(id, dialogueAsset, visited, sequence, edges, assets, nodeById, strings) {
