@@ -49,7 +49,7 @@
       "lexicalPreferences": [
         "〜わ",
         "〜かしら",
-        "〜ですの"
+        "〜です"
       ],
       "firstPerson": {
         "term": "私",
@@ -3456,28 +3456,4448 @@
       "notes": [
         "Irabeth Tirabade at Defender's Heart (Act 1)."
       ]
+    },
+    "DLC2_NPC_Bureaucrat": {
+      "personality": "Dedicated bureaucrat named Frada Linsdoten; meticulous, dutiful, and unwavering through 50 years of service despite any hardship including demon invasions.",
+      "voice": "Formal and authoritative but warm when pleased; takes sincere pride in official duties and competent work",
+      "speechExamples": [
+        "\"Performing one's duty adequately.\" - with vigor and satisfaction",
+        "\"Fifty years of service... and nothing could stop me from conducting the inspection and reporting violations.\"",
+        "Grateful and energetic when receiving recognition or healing"
+      ],
+      "constraints": "Maintain professional, formal demeanor; use dignified vocabulary; emphasize duty, rules, and competence; show genuine warmth beneath formality"
+    },
+    "DLC2_NPC_Bully": {
+      "personality": "Miller named Bemir; rough around the edges but fundamentally good-natured and practical. Lost fingers in demon invasion but survived. Pragmatic and grateful.",
+      "voice": "Casual, colloquial, uses working-class dialect; pragmatic and straightforward; occasional crude humor mixed with genuine sentiment",
+      "speechExamples": [
+        "\"What's there to tell? I'm a miller, and Bemir's my name. Brought my flour into the city...\"",
+        "\"Lucky, I s'pose.\" - after losing fingers, pragmatic acceptance",
+        "Mix of complaint with genuine gratitude for aid"
+      ],
+      "constraints": "Use colloquial and working-class speech patterns; casual grammar acceptable; reflect pragmatic survivor mentality; mix humor with sincerity"
+    },
+    "DLC5_Storasta_Leader": {
+      "personality": "Leader of the isolated Storasta people; tall, well-built, commanding presence. Protective of his people, suspicious of outsiders, but willing to negotiate if convinced.",
+      "voice": "Commanding and authoritative; formal and cautious when addressing strangers; shows both wariness and grudging respect for worthy interlocutors",
+      "speechExamples": [
+        "\"Is this Carrock's doing? Or fey magic?\" - analytical and suspicious",
+        "\"We're ready to fight off any foe, no matter their disguise.\" - confident and protective",
+        "\"We shall let the outsiders in. I will talk to them in private.\" - willing to negotiate after proof"
+      ],
+      "constraints": "Maintain authoritative commanding tone; reflect deep suspicion of outsiders and protection of cultural isolation; show capacity for negotiation despite xenophobia"
+    },
+    "AngelTargona": {
+      "personality": "Divine celestial being; compassionate, genuinely supportive, and deeply respectful of mortal autonomy and free choice. Offers aid without coercion or manipulation.",
+      "voice": "Ethereal and warm but carries weight of divine gravity; sincere compassion; philosophical depth; eyes/expression show emotion and concern",
+      "speechExamples": [
+        "\"We promised we would not sway you to our side and thus prevent mortals from deciding their own fates.\"",
+        "\"But this does not mean we will not assist you.\"",
+        "\"Tell me what kind of help you need, and we will do the rest.\""
+      ],
+      "constraints": "Use elevated but accessible language; maintain philosophical tone; emphasize respect for mortal choice and divine perspective; show genuine concern beneath immortal detachment"
+    },
+    "DLC6_Spymaster": {
+      "personality": "Sharp military intelligence operative; highly observant, cunning, ruthless when necessary. Values precise knowledge and strategic analysis. Confident in competence.",
+      "voice": "Cold, calculating, confident; permits subtle menace and dark humor; speaks with tactical precision; no unnecessary sentiment",
+      "speechExamples": [
+        "\"Demons and their minions don't put this much effort into their costumes and ritual sites. This is something new.\"",
+        "\"Commander, Razmir was not invited to Kenabres, nor were any Razmiran diplomats. These spies are here unlawfully.\"",
+        "\"I can't say the same for you.\" - subtle threat with composure"
+      ],
+      "constraints": "Use sophisticated vocabulary; convey tactical thinking and military precision; allow subtle menace; maintain professional coldness without being inhuman"
+    },
+    "DLC2_NPC_Healer": {
+      "personality": "Healer named Inai; grumpy about harsh field conditions but genuinely competent and caring. Prefers practical medicine over religious superstition and scroll-dependence.",
+      "voice": "Irritable and sarcastic but fundamentally professional; uses exasperation and complaint as character voice; capable and assured beneath complaints",
+      "speechExamples": [
+        "\"I swear, another few hours in this damp, and I'll turn into a toadstool!\" - complaining with dark humor",
+        "\"It's all scrolls and scrolls. We keep relying on the gods instead of studying medicine properly...\"",
+        "\"Ugh, this slop has a kick to it!\" - satisfied sigh after potion"
+      ],
+      "constraints": "Use sarcasm and exasperation as core character voice; maintain medical competence and professionalism; show disdain for magical reliance; blend complaint with genuine care"
+    },
+    "DLC4_Wolf_Tree": {
+      "personalitySummary": "An ancient mystical wolf-tree spirit embodying Sarkorian nature and primal wisdom.",
+      "toneAndVoice": "Calm, solemn, and cryptic. Speaks with the patience of an ancient being, often using poetic or symbolic expressions.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to emphasize its ancient, spiritual nature."
+      }
+    },
+    "Azata_Aranka_RankupSpeaker": {
+      "personalitySummary": "A cheerful Desnan priestess and gifted singer who inspires hope and freedom.",
+      "toneAndVoice": "Warm, expressive, and optimistic. Speaks with enthusiasm and heartfelt encouragement, often sounding theatrical or lyrical.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Herald": {
+      "personalitySummary": "The Hand of the Inheritor, a righteous celestial herald devoted to justice and Iomedae.",
+      "toneAndVoice": "Formal, dignified, and unwavering. Speaks with absolute conviction, compassion, and moral authority.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_Aranka_DesnaPriest": {
+      "personalitySummary": "A joyful priestess of Desna who values dreams, freedom, and the power of song.",
+      "toneAndVoice": "Friendly, lively, and encouraging. Speaks naturally with warmth while retaining a touch of poetic charm.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Marhevok_cutscene": {
+      "personalitySummary": "A ruthless Sarkorian warlord obsessed with strength, conquest, and domination.",
+      "toneAndVoice": "Harsh, commanding, and prideful. Speaks with absolute confidence and contempt for weakness.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "BlindCarver_Wintersun": {
+      "personalitySummary": "A blind sculptor whose devotion and imagination shape his perception of the world.",
+      "toneAndVoice": "Gentle, reflective, and humble. Speaks thoughtfully with quiet sincerity and artistic sensitivity.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Kerismei": {
+      "personalitySummary": "A composed and perceptive individual who values reason and careful judgment.",
+      "toneAndVoice": "Calm, polite, and measured. Speaks with quiet confidence and avoids emotional outbursts.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Lauliegh": {
+      "personalitySummary": "A whimsical fey whose curiosity and playfulness conceal an unpredictable nature.",
+      "toneAndVoice": "Playful, mischievous, and lighthearted. Frequently speaks in a teasing or whimsical manner.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Sosiel_Q2_Deserter_Impostor": {
+      "personalitySummary": "A frightened impostor posing as a crusader, motivated by fear and self-preservation.",
+      "toneAndVoice": "Nervous, defensive, and evasive. Hesitates under pressure and readily makes excuses.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Theatre_Director": {
+      "personalitySummary": "A passionate theater director devoted to performance and artistic excellence.",
+      "toneAndVoice": "Expressive, dramatic, and energetic. Speaks as though directing a stage production, with exaggerated emotion and flair.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_CR0_ShadowPlaneGollum": {
+      "personalitySummary": "A furtive and twisted creature lurking within the Shadow Plane, driven by fear and obsession.",
+      "toneAndVoice": "Sneaky, muttering, and paranoid. Frequently speaks in fragmented thoughts and anxious repetition.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "KTC_SocothbenothDisguised": {
+      "personalitySummary": "Socothbenoth in disguise, concealing his true demonic nature beneath effortless charm.",
+      "toneAndVoice": "Smooth, playful, and subtly mocking. Speaks with confidence while constantly implying more than he says.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AeonDevilCompanion": {
+      "personalitySummary": "A former Aeon whose rigid pursuit of order has shifted toward infernal law and ruthless logic.",
+      "toneAndVoice": "Cold, composed, and authoritative. Speaks with detached certainty, valuing law over compassion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Chadali": {
+      "personalitySummary": "A practical and experienced traveler who approaches problems with caution and common sense.",
+      "toneAndVoice": "Straightforward, friendly, and pragmatic. Avoids unnecessary dramatics and speaks plainly.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Ssilameshnik": {
+      "personalitySummary": "A cunning and manipulative serpentfolk who relies on deception and calculated self-interest.",
+      "toneAndVoice": "Calm, calculating, and subtly condescending. Chooses words carefully to manipulate others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "RazmiranFakeRazmir": {
+      "personalitySummary": "An impostor pretending to be Razmir, relying on arrogance and deception to maintain authority.",
+      "toneAndVoice": "Grandiose, theatrical, and self-important. Speaks with exaggerated confidence to project divine authority.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 while maintaining the persona of a self-proclaimed god."
+      }
+    },
+    "Dretch_Stitch": {
+      "personalitySummary": "A grotesque dretch with a crude and simple-minded outlook.",
+      "toneAndVoice": "Crude, impulsive, and childish. Speaks in broken sentences with little restraint or sophistication.",
+      "firstPerson": {
+        "term": "オレ",
+        "rule": "Use オレ consistently to reflect its crude speech."
+      }
+    },
+    "Ileks_DesnaPriest": {
+      "personalitySummary": "A compassionate priest of Desna devoted to hope, dreams, and guiding others.",
+      "toneAndVoice": "Gentle, reassuring, and sincere. Speaks with quiet optimism and kindness.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "LatimasDragon": {
+      "personalitySummary": "A wise dragon whose immense age is reflected in patience and confidence.",
+      "toneAndVoice": "Measured, dignified, and thoughtful. Speaks calmly with the authority of an ancient being.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to emphasize draconic dignity."
+      }
+    },
+    "DLC5_RedDragonBoss": {
+      "personalitySummary": "A proud and violent red dragon that revels in power, destruction, and domination.",
+      "toneAndVoice": "Booming, arrogant, and intimidating. Speaks with absolute confidence and open contempt for weaker beings.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to convey regal draconic authority."
+      }
+    },
+    "LiLura_Kenabres": {
+      "personalitySummary": "A cheerful but reckless lilitu demon who delights in manipulation and chaos.",
+      "toneAndVoice": "Playful, flirtatious, and mocking. Frequently treats danger as entertainment and enjoys provoking others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Mephistopheles_Judge": {
+      "personalitySummary": "A devilish judge serving Mephistopheles, devoted to infernal law and flawless judgment.",
+      "toneAndVoice": "Formal, cold, and meticulously logical. Speaks with detached authority and unwavering confidence in the law.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC2_NPC_Gravedigger": {
+      "personalitySummary": "A humble gravedigger accustomed to death and hardship.",
+      "toneAndVoice": "Quiet, practical, and unpretentious. Speaks plainly without embellishment or unnecessary emotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_RazmirManager": {
+      "personalitySummary": "A devoted administrator of Razmir's organization who values efficiency and strict discipline.",
+      "toneAndVoice": "Professional, polite, and businesslike. Focuses on procedures, responsibilities, and maintaining order.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC7_Lucy": {
+      "personalitySummary": "A kind-hearted young girl with an innocent and trusting nature.",
+      "toneAndVoice": "Gentle, earnest, and emotionally straightforward. Speaks simply and sincerely.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "MythicLich_KTC_Septimus": {
+      "personalitySummary": "A loyal undead servant of the Lich, devoted to knowledge and eternal service.",
+      "toneAndVoice": "Calm, respectful, and scholarly. Speaks with measured precision while showing unwavering loyalty to the Lich.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Seilkind": {
+      "personalitySummary": "A thoughtful individual whose compassion is tempered by realism and experience.",
+      "toneAndVoice": "Soft-spoken, sincere, and reflective. Speaks carefully and avoids unnecessary conflict.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Goblin_Servant": {
+      "personalitySummary": "A cowardly goblin servant eager to please stronger masters and avoid punishment.",
+      "toneAndVoice": "Nervous, submissive, and excitable. Speaks quickly, often sounding frightened or overly eager.",
+      "firstPerson": {
+        "term": "オイラ",
+        "rule": "Prefer オイラ to reflect stereotypical goblin speech."
+      }
+    },
+    "Wenduag_NPC_Level1_Cutscene": {
+      "personalitySummary": "Wenduag before becoming a companion, already ruthless, ambitious, and devoted to strength above all else.",
+      "toneAndVoice": "Confident, predatory, and manipulative. Speaks with open disdain for weakness while flattering those she considers powerful.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Horgus": {
+      "personalitySummary": "A wealthy noble whose arrogance masks genuine intelligence and hidden concern for those close to him.",
+      "toneAndVoice": "Refined, sarcastic, and demanding. Frequently complains or criticizes others but remains articulate and composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Alichino": {
+      "personalitySummary": "A mysterious fey who delights in bargains, deception, and subtle manipulation.",
+      "toneAndVoice": "Elegant, playful, and enigmatic. Speaks politely while constantly obscuring true intentions behind layered meanings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_SpymasterDIrtyBum": {
+      "personalitySummary": "A shabby informant whose filthy appearance conceals a sharp and observant mind.",
+      "toneAndVoice": "Casual, streetwise, and cynical. Speaks with dry humor and the confidence of someone who knows more than they reveal.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC7_John": {
+      "personalitySummary": "A dependable and level-headed man who approaches problems with practicality and honesty.",
+      "toneAndVoice": "Friendly, straightforward, and calm. Speaks naturally without unnecessary embellishment.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Jarunnika": {
+      "personalitySummary": "A proud Sarkorian warrior who values honor, courage, and loyalty to their people.",
+      "toneAndVoice": "Firm, confident, and resolute. Speaks directly with the dignity of a seasoned fighter.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR4_DeserterJanna": {
+      "personalitySummary": "A weary deserter whose fear of war outweighs any desire for glory.",
+      "toneAndVoice": "Anxious, defensive, and emotionally conflicted. Speaks hesitantly and often tries to justify past decisions.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DarekSunhammer": {
+      "personalitySummary": "A determined dwarf devoted to duty, perseverance, and righteous action.",
+      "toneAndVoice": "Gruff, dependable, and honest. Speaks plainly with quiet confidence earned through experience.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC1_Marhevok_Main": {
+      "personalitySummary": "A ruthless Sarkorian chieftain obsessed with strength, conquest, and unquestioned dominance.",
+      "toneAndVoice": "Harsh, commanding, and prideful. Speaks with absolute confidence and contempt for weakness.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC4_Negociant": {
+      "personalitySummary": "A seasoned merchant who values profitable deals above sentiment.",
+      "toneAndVoice": "Polite, persuasive, and businesslike. Maintains a courteous demeanor while carefully pursuing personal advantage.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Cobblehoof": {
+      "personalitySummary": "An eccentric creature with a simple outlook and an unexpectedly cheerful disposition.",
+      "toneAndVoice": "Lighthearted, quirky, and innocent. Speaks simply, often with childlike enthusiasm.",
+      "firstPerson": {
+        "term": "ボク",
+        "rule": "Prefer ボク to reflect an innocent, whimsical personality."
+      }
+    },
+    "DLC6_GnomeWinemaker": {
+      "personalitySummary": "A passionate gnome winemaker who takes great pride in craftsmanship and creativity.",
+      "toneAndVoice": "Cheerful, talkative, and enthusiastic. Enjoys sharing expertise and speaks with infectious excitement about wine.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Ramley": {
+      "personalitySummary": "A practical and dependable individual who values honesty and common sense.",
+      "toneAndVoice": "Friendly, straightforward, and down-to-earth. Speaks naturally without exaggeration or unnecessary formality.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Azata_Ileks_DesnaPriest": {
+      "personalitySummary": "A compassionate priest of Desna devoted to hope, dreams, and freedom.",
+      "toneAndVoice": "Warm, gentle, and encouraging. Speaks with heartfelt optimism and genuine concern for others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Dimalchio": {
+      "personalitySummary": "An eccentric and theatrical individual with an inflated sense of self-importance.",
+      "toneAndVoice": "Dramatic, flamboyant, and expressive. Speaks as though performing for an audience, enjoying grand gestures and exaggerated wording.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC4_NegociantSecondState": {
+      "personalitySummary": "A seasoned merchant whose priorities shift as circumstances become more desperate.",
+      "toneAndVoice": "Still polite and persuasive, but noticeably more cautious and serious than before. Carefully weighs every word.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AneviaTirabade_DH": {
+      "personalitySummary": "A capable scout and spymaster who combines sharp wit with unwavering loyalty to her allies.",
+      "toneAndVoice": "Calm, observant, and lightly sarcastic. Speaks confidently without becoming overly emotional.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Markyll": {
+      "personalitySummary": "A confident and experienced individual who prefers practical solutions over empty ideals.",
+      "toneAndVoice": "Direct, composed, and pragmatic. Speaks with quiet confidence and little unnecessary emotion.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Rokhorn": {
+      "personalitySummary": "A sturdy dwarf whose determination and resilience define both his work and his character.",
+      "toneAndVoice": "Gruff, dependable, and honest. Speaks plainly and values actions over words.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_BraveSonNaked": {
+      "personalitySummary": "A courageous young warrior eager to prove himself despite difficult circumstances.",
+      "toneAndVoice": "Earnest, bold, and emotional. Speaks with youthful determination and little hesitation.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "EmberNotJoined": {
+      "personalitySummary": "A kind and innocent girl whose unwavering compassion extends even to her enemies.",
+      "toneAndVoice": "Soft, gentle, and quietly insightful. Speaks with childlike simplicity while expressing remarkable wisdom.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR17_PrimalTreant": {
+      "personalitySummary": "An ancient treant embodying the patience, strength, and enduring spirit of the forest.",
+      "toneAndVoice": "Slow, solemn, and deeply thoughtful. Speaks with timeless authority and profound respect for nature.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to emphasize its ancient, primordial nature."
+      }
+    },
+    "SirAllfrey": {
+      "personalitySummary": "A noble knight devoted to honor, duty, and protecting the innocent.",
+      "toneAndVoice": "Formal, courteous, and steadfast. Speaks with quiet confidence and unwavering conviction.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Malessa": {
+      "personalitySummary": "A composed and intelligent woman who carefully weighs every situation before acting.",
+      "toneAndVoice": "Calm, polite, and thoughtful. Speaks with restraint and avoids unnecessary emotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Hag_Lavixia": {
+      "personalitySummary": "A cruel hag who delights in manipulation, corruption, and exploiting the weaknesses of others.",
+      "toneAndVoice": "Mocking, sinister, and taunting. Frequently speaks with false sweetness before revealing malicious intent.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "ArueshalaeImprisoned": {
+      "personalitySummary": "Arueshalae while imprisoned, struggling against despair and her demonic instincts while clinging to redemption.",
+      "toneAndVoice": "Soft, hesitant, and emotionally fragile. Speaks with guilt and uncertainty, though hope still remains beneath the surface.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "FakeRazmir": {
+      "personalitySummary": "An impostor masquerading as Razmir, relying on arrogance and deception to preserve the illusion of divinity.",
+      "toneAndVoice": "Grandiose, theatrical, and self-important. Speaks with exaggerated authority and expects unquestioning obedience.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 while maintaining the persona of a self-proclaimed god."
+      }
+    },
+    "HokugolDragon": {
+      "personalitySummary": "A powerful dragon whose immense pride is matched by confidence in its own strength.",
+      "toneAndVoice": "Majestic, commanding, and intimidating. Speaks with absolute certainty and little regard for lesser beings.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to emphasize draconic authority."
+      }
+    },
+    "CR7_GundrunRangerLocalHero": {
+      "personalitySummary": "A respected local ranger admired for courage, reliability, and dedication to protecting the community.",
+      "toneAndVoice": "Confident, practical, and encouraging. Speaks plainly with the assurance of an experienced outdoorsman.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "RuinsRaidGorgo": {
+      "personalitySummary": "A fierce warrior who confronts danger head-on and values strength above hesitation.",
+      "toneAndVoice": "Aggressive, confident, and straightforward. Speaks bluntly and relishes a worthy fight.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC1_Storyteller": {
+      "personalitySummary": "The ancient Storyteller, preserving countless memories and legends gathered across ages.",
+      "toneAndVoice": "Gentle, reflective, and eloquent. Speaks with quiet wisdom, often framing events as stories or lessons from the past.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Inquis_halfelf": {
+      "personalitySummary": "A disciplined half-elf inquisitor devoted to uncovering the truth and carrying out justice.",
+      "toneAndVoice": "Serious, composed, and analytical. Speaks with measured precision and little tolerance for deception.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Horzalah": {
+      "personalitySummary": "A ruthless demon who revels in cruelty and regards mortals as little more than prey.",
+      "toneAndVoice": "Arrogant, mocking, and threatening. Speaks with open contempt and enjoys intimidating others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Sosiel_Q2_Deserter_HalfElf": {
+      "personalitySummary": "A half-elf deserter burdened by fear, regret, and the desire to survive.",
+      "toneAndVoice": "Nervous, apologetic, and hesitant. Frequently second-guesses decisions and tries to justify past actions.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC4_Halfling_GhostBuster_Male3": {
+      "personalitySummary": "A cheerful halfling ghost hunter who faces supernatural dangers with optimism and determination.",
+      "toneAndVoice": "Friendly, upbeat, and courageous. Keeps conversations light even when confronting frightening situations.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "DLC5_Storasta_OldMo": {
+      "personalitySummary": "An elderly villager whose long life has given him patience and practical wisdom.",
+      "toneAndVoice": "Calm, thoughtful, and unhurried. Speaks with the relaxed confidence of someone who has seen many hardships.",
+      "firstPerson": {
+        "term": "儂",
+        "rule": "Prefer 儂 to reflect his advanced age."
+      }
+    },
+    "DLC6_OreadScientist": {
+      "personalitySummary": "An oread researcher driven by curiosity and a passion for discovery.",
+      "toneAndVoice": "Analytical, composed, and precise. Explains ideas logically while remaining politely detached.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Vilenia": {
+      "personalitySummary": "A composed and intelligent woman who values careful planning over impulsive action.",
+      "toneAndVoice": "Polite, measured, and observant. Speaks with restraint and quiet confidence.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DeepShadowDemonTarshari": {
+      "personalitySummary": "A shadow demon who relies on deception, fear, and psychological manipulation.",
+      "toneAndVoice": "Soft-spoken, sinister, and unsettling. Often implies threats instead of stating them directly.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Morevet": {
+      "personalitySummary": "A calculating individual who carefully evaluates every situation for personal advantage.",
+      "toneAndVoice": "Calm, cautious, and diplomatic. Chooses words carefully and rarely reveals true intentions.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Hilor_Broken": {
+      "personalitySummary": "Hilor after being emotionally broken, struggling under despair while clinging to fragments of his former resolve.",
+      "toneAndVoice": "Exhausted, subdued, and sorrowful. Speaks with little energy, often reflecting regret and hopelessness.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC4_Human_Ranger_Male_CR7": {
+      "personalitySummary": "An experienced ranger accustomed to surviving in the wilderness through skill and discipline.",
+      "toneAndVoice": "Direct, practical, and dependable. Speaks plainly with the confidence of a seasoned hunter.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC4_Adviser": {
+      "personalitySummary": "A trusted adviser who prioritizes careful planning and sound judgment over impulsive action.",
+      "toneAndVoice": "Calm, analytical, and diplomatic. Offers measured opinions and avoids emotional language.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_CR0_ShadowPlaneCitizensHead": {
+      "personalitySummary": "The respected leader of a Shadow Plane community, striving to protect the people under difficult circumstances.",
+      "toneAndVoice": "Serious, composed, and responsible. Speaks with quiet authority while remaining considerate of others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Storasta_Herbalist": {
+      "personalitySummary": "A knowledgeable herbalist devoted to healing through herbs and traditional remedies.",
+      "toneAndVoice": "Gentle, patient, and informative. Explains things carefully and shows genuine concern for others' well-being.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC7_CR6_Goblin_LeaderSpeaker": {
+      "personalitySummary": "A goblin leader who survives through confidence, bluster, and quick thinking.",
+      "toneAndVoice": "Loud, boastful, and energetic. Frequently exaggerates achievements while trying to project strength.",
+      "firstPerson": {
+        "term": "オレ",
+        "rule": "Use オレ consistently."
+      }
+    },
+    "StauntonVane_GG": {
+      "personalitySummary": "Staunton Vhane burdened by guilt, regret, and the consequences of past failures.",
+      "toneAndVoice": "Somber, weary, and restrained. Speaks with quiet resignation, rarely expressing hope or confidence.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Yaker_WarCamp": {
+      "personalitySummary": "A disciplined Hellknight officer who values order, duty, and professional conduct.",
+      "toneAndVoice": "Formal, respectful, and efficient. Speaks directly and avoids unnecessary emotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SarcorianWedding_WightBoss": {
+      "personalitySummary": "A powerful wight consumed by hatred and bound to the lingering tragedy of the past.",
+      "toneAndVoice": "Cold, bitter, and menacing. Speaks with resentment and an unnatural, deathly calm.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我 to emphasize its undead dignity."
+      }
+    },
+    "Hag_Loreda": {
+      "personalitySummary": "A malicious hag who manipulates others through deception, temptation, and psychological cruelty.",
+      "toneAndVoice": "Mocking, cunning, and venomously polite. Often disguises threats beneath false kindness.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_BlindCarver_Wintersun": {
+      "personalitySummary": "A blind sculptor whose faith and imagination shape the world he perceives.",
+      "toneAndVoice": "Gentle, humble, and reflective. Speaks thoughtfully with quiet sincerity and artistic sensitivity.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Translator": {
+      "personalitySummary": "A professional interpreter dedicated to conveying others' words accurately and impartially.",
+      "toneAndVoice": "Polite, precise, and neutral. Speaks clearly and avoids inserting personal opinions.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_BarmenGemilHokks": {
+      "personalitySummary": "A friendly bartender who enjoys conversation and keeping customers comfortable.",
+      "toneAndVoice": "Warm, relaxed, and sociable. Speaks casually with practiced hospitality.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "RazmiranHighCultist2": {
+      "personalitySummary": "A devoted Razmiran cultist who zealously upholds the authority of Razmir.",
+      "toneAndVoice": "Formal, arrogant, and fanatical. Speaks with unwavering certainty.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_TreantBoss": {
+      "personalitySummary": "An ancient treant protecting the forest and its natural balance.",
+      "toneAndVoice": "Slow, solemn, and dignified. Speaks with the patience of an ancient being.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我."
+      }
+    },
+    "Miammir_Wintersun": {
+      "personalitySummary": "A wise druid devoted to nature and the spirits of Sarkoris.",
+      "toneAndVoice": "Calm, compassionate, and thoughtful. Speaks gently with quiet authority.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "BrothelGuard_Kalavakus12": {
+      "personalitySummary": "A brutal demon guard who enjoys intimidation and violence.",
+      "toneAndVoice": "Crude, threatening, and mocking. Speaks with open contempt.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Kyana": {
+      "personalitySummary": "A capable and self-reliant individual who remains composed under pressure.",
+      "toneAndVoice": "Calm, practical, and confident. Speaks directly without unnecessary emotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Ygefeles": {
+      "personalitySummary": "A cunning devil who values contracts, manipulation, and calculated advantage.",
+      "toneAndVoice": "Polite, persuasive, and subtly threatening. Carefully chooses every word.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_AngelTargona": {
+      "personalitySummary": "The angel Targona, devoted to justice, hope, and protecting the innocent.",
+      "toneAndVoice": "Gentle, dignified, and compassionate. Speaks with unwavering moral conviction.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Caleb_Traitor": {
+      "personalitySummary": "A traitor driven by fear and self-interest.",
+      "toneAndVoice": "Defensive, uneasy, and evasive. Frequently attempts to justify past actions.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC1_AneviaTirabade_Broken": {
+      "personalitySummary": "Anevia after suffering severe emotional trauma, struggling to maintain her resolve.",
+      "toneAndVoice": "Exhausted, subdued, and sorrowful. Speaks quietly with lingering determination.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC4_WolfAlpha_Soul": {
+      "personalitySummary": "The spirit of an ancient alpha wolf embodying primal instinct and leadership.",
+      "toneAndVoice": "Calm, solemn, and instinctive. Speaks in brief, deliberate words.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Prefer 我."
+      }
+    },
+    "DLC5_CR12_NymphStorasta_Shifter": {
+      "personalitySummary": "A nymph closely connected to nature and the harmony of the wild.",
+      "toneAndVoice": "Graceful, gentle, and serene. Speaks with quiet warmth.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_VolunteerFemale": {
+      "personalitySummary": "A volunteer eager to help others despite difficult circumstances.",
+      "toneAndVoice": "Kind, earnest, and optimistic. Speaks sincerely and encouragingly.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_ConcernedNobleMale": {
+      "personalitySummary": "A nobleman troubled by unfolding events and concerned for those around him.",
+      "toneAndVoice": "Polite, anxious, and measured. Maintains noble manners even when worried.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Hurlun_SilentCaster": {
+      "personalitySummary": "Hulrun in battle, utterly devoted to rooting out heresy.",
+      "toneAndVoice": "Cold, severe, and uncompromising. Speaks with absolute conviction.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Hurlun": {
+      "personalitySummary": "A fanatical inquisitor convinced that ruthless vigilance is the only path to justice.",
+      "toneAndVoice": "Harsh, authoritarian, and suspicious. Speaks with unwavering certainty.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR18_LilituAdvancedFromMaze": {
+      "personalitySummary": "A seductive lilitu demon who manipulates others through charm and deceit.",
+      "toneAndVoice": "Flirtatious, playful, and mocking. Treats manipulation as a game.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_MadAlchemist": {
+      "personalitySummary": "An eccentric alchemist driven by boundless curiosity and reckless experimentation.",
+      "toneAndVoice": "Excitable, erratic, and enthusiastic. Frequently jumps from one idea to another.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_Tall_DesnaPriest": {
+      "personalitySummary": "A devoted priest of Desna who encourages hope, dreams, and freedom.",
+      "toneAndVoice": "Warm, gentle, and reassuring. Speaks with quiet optimism.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Jerribeth_Wintersun": {
+      "personalitySummary": "A manipulative demon who hides cruelty beneath elegance and charm.",
+      "toneAndVoice": "Smooth, seductive, and calculating. Speaks politely while subtly provoking others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SoldierParty_Lannica": {
+      "personalitySummary": "A disciplined crusader soldier devoted to comrades and duty.",
+      "toneAndVoice": "Confident, practical, and dependable.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Sosiel_Q2_Deserter_Dwarf": {
+      "personalitySummary": "A dwarf deserter struggling with fear, regret, and the consequences of abandoning the crusade.",
+      "toneAndVoice": "Gruff, defensive, and remorseful.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC1_Marhevok_Welcome": {
+      "personalitySummary": "Marhevok asserting his authority as the ruthless leader of his people.",
+      "toneAndVoice": "Proud, commanding, and intimidating.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC1_AngelLariel_Broken": {
+      "personalitySummary": "An angel broken by suffering yet still clinging to hope and righteousness.",
+      "toneAndVoice": "Weak, sorrowful, and gentle.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Storasta_CharmedGuy": {
+      "personalitySummary": "A man whose judgment has been clouded by supernatural charm.",
+      "toneAndVoice": "Dreamy, distracted, and emotionally attached.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_StrangeMageTrader": {
+      "personalitySummary": "An eccentric mage who combines magical knowledge with mercantile instincts.",
+      "toneAndVoice": "Quirky, clever, and persuasive.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Claim_Crusader": {
+      "personalitySummary": "A crusader dedicated to defending the innocent and completing assigned duties.",
+      "toneAndVoice": "Serious, loyal, and straightforward.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Nenio_NPC_Level_Cultist": {
+      "personalitySummary": "A cultist driven by blind faith and obedience.",
+      "toneAndVoice": "Fanatical, suspicious, and zealous.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AreshkagalBoss_ShadowCopy_GlobalPuzzle": {
+      "personalitySummary": "A shadowy copy created by Areshkagal to confuse and manipulate intruders.",
+      "toneAndVoice": "Cryptic, detached, and unsettling.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Regill_HellknightVsGargoyles": {
+      "personalitySummary": "Regill in battle, demonstrating absolute discipline and tactical precision.",
+      "toneAndVoice": "Cold, concise, and authoritative.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Averis": {
+      "personalitySummary": "A capable individual who approaches challenges with calm pragmatism.",
+      "toneAndVoice": "Measured, practical, and composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC3_VendorInPort_tier1_original": {
+      "personalitySummary": "A merchant focused on honest trade and satisfied customers.",
+      "toneAndVoice": "Friendly, casual, and businesslike.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR0_GundrunPeasantInvisibleDrunkard": {
+      "personalitySummary": "A perpetually drunk villager whose thoughts wander aimlessly.",
+      "toneAndVoice": "Slurred, carefree, and unfocused.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_CarefulSonNaked": {
+      "personalitySummary": "A cautious young man who prefers careful planning over reckless action.",
+      "toneAndVoice": "Nervous, thoughtful, and sincere.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_Kyton": {
+      "personalitySummary": "A kyton who delights in suffering, restraint, and psychological torment.",
+      "toneAndVoice": "Calm, cruel, and eerily composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Velhen_Armor": {
+      "personalitySummary": "A seasoned warrior known for steadfast resolve and martial discipline.",
+      "toneAndVoice": "Firm, honorable, and confident.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Thiefling1": {
+      "personalitySummary": "A street thief who survives through quick thinking and opportunism.",
+      "toneAndVoice": "Cautious, sarcastic, and evasive.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Nulkineth_LostChapel": {
+      "personalitySummary": "A manipulative demon who enjoys corrupting and deceiving mortals.",
+      "toneAndVoice": "Smooth, arrogant, and mocking.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_StreetArtist": {
+      "personalitySummary": "A free-spirited artist inspired by beauty, dreams, and self-expression.",
+      "toneAndVoice": "Cheerful, imaginative, and enthusiastic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SirAllfreySquire1": {
+      "personalitySummary": "A loyal squire eager to live up to a knight's ideals.",
+      "toneAndVoice": "Respectful, earnest, and determined.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "CR0_Sarcorian_Guard_Male": {
+      "personalitySummary": "A wary Sarkorian guard protecting his people and their territory.",
+      "toneAndVoice": "Gruff, cautious, and direct. Speaks plainly and remains suspicious of outsiders.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Irmangaleth": {
+      "personalitySummary": "A powerful and arrogant being who views lesser creatures with contempt.",
+      "toneAndVoice": "Proud, cold, and intimidating. Speaks with confidence and a sense of superiority.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SoldierParty_Hill": {
+      "personalitySummary": "A seasoned soldier who relies on discipline and camaraderie to survive the crusade.",
+      "toneAndVoice": "Practical, straightforward, and dependable.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "HellknightsParaliktor_Aminas": {
+      "personalitySummary": "A strict Hellknight devoted to order, discipline, and the enforcement of law.",
+      "toneAndVoice": "Formal, cold, and authoritative. Speaks precisely and without sentimentality.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Soana": {
+      "personalitySummary": "A Sarkorian woman shaped by hardship who remains devoted to her community.",
+      "toneAndVoice": "Serious, practical, and reserved. Speaks with quiet determination.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SilkShadowIllusion": {
+      "personalitySummary": "A deceptive shadow illusion designed to confuse and mislead its targets.",
+      "toneAndVoice": "Cryptic, detached, and unsettling. Speaks in an unnatural, enigmatic manner.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR1_Venerad_DLC2": {
+      "personalitySummary": "A determined survivor who has learned to endure danger through caution and resourcefulness.",
+      "toneAndVoice": "Wary, practical, and restrained.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_OldwomanwithCat": {
+      "personalitySummary": "An elderly woman living a quiet life with her cat, accustomed to the troubles of ordinary people.",
+      "toneAndVoice": "Gentle, conversational, and slightly eccentric. Speaks with the relaxed manner of an old woman.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "KenabresTerroristAlchemist_Speaker": {
+      "personalitySummary": "A radical alchemist willing to use dangerous methods in pursuit of destructive goals.",
+      "toneAndVoice": "Agitated, fanatical, and confrontational. Speaks with reckless conviction.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_VolunteerMale": {
+      "personalitySummary": "A volunteer determined to help others despite having little experience.",
+      "toneAndVoice": "Earnest, friendly, and slightly nervous.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_AngryNobleFemale": {
+      "personalitySummary": "A noblewoman furious at events that threaten her status, safety, or expectations.",
+      "toneAndVoice": "Sharp, indignant, and imperious. Speaks with the confidence of someone accustomed to being obeyed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Ravon": {
+      "personalitySummary": "A capable individual who approaches difficult situations with caution and pragmatism.",
+      "toneAndVoice": "Calm, direct, and measured.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "IrabethTirabade_Iz": {
+      "personalitySummary": "Irabeth in a moment of crisis, struggling to remain dutiful despite fear and emotional strain.",
+      "toneAndVoice": "Serious, restrained, and anxious beneath a professional exterior.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "TerendelevHuman": {
+      "personalitySummary": "Terendelev in human form, a wise and protective dragon accustomed to guiding others.",
+      "toneAndVoice": "Warm, dignified, and reassuring. Speaks with quiet authority.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AngelLariel": {
+      "personalitySummary": "A compassionate angel devoted to protecting mortals and opposing evil.",
+      "toneAndVoice": "Gentle, noble, and sincere. Speaks with calm moral conviction.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Abrogail": {
+      "personalitySummary": "A powerful and politically minded noblewoman who expects respect and obedience.",
+      "toneAndVoice": "Elegant, commanding, and calculating. Speaks with controlled confidence.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "QueenGalfreyIZ": {
+      "personalitySummary": "Queen Galfrey under the immense pressure of war, balancing royal authority with personal responsibility.",
+      "toneAndVoice": "Regal, composed, and resolute. Speaks formally while allowing restrained emotion to show in moments of crisis.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Hag_Letinda": {
+      "personalitySummary": "A malicious hag who enjoys manipulating mortals and exploiting their vulnerabilities.",
+      "toneAndVoice": "Cunning, mocking, and deceptively sweet. Hides cruelty behind seemingly harmless words.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Mighty_CorruptedMongrelmanBrute": {
+      "personalitySummary": "A corrupted mongrelman brute driven by violence, fear, and primitive instinct.",
+      "toneAndVoice": "Aggressive, crude, and intimidating. Uses short, blunt expressions.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "FriendOfGroom": {
+      "personalitySummary": "A loyal friend of the groom who is invested in the wedding and the people involved.",
+      "toneAndVoice": "Friendly, informal, and supportive.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Irabeth_DLC1_IZ_Test": {
+      "personalitySummary": "Irabeth remaining steadfast and dutiful during the horrors of Iz.",
+      "toneAndVoice": "Serious, disciplined, and restrained, with clear concern for those under her protection.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR4_MilitiaCommander_Human_PaladinMelee_Male_cap": {
+      "personalitySummary": "A human militia commander who takes responsibility for defending his community.",
+      "toneAndVoice": "Firm, practical, and encouraging. Gives clear orders without unnecessary ceremony.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC3_MercenaryCaptain": {
+      "personalitySummary": "A seasoned mercenary captain motivated by professionalism, survival, and fair compensation.",
+      "toneAndVoice": "Blunt, pragmatic, and confident. Treats dangerous situations as business.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_GoblinShadowShamanBoss": {
+      "personalitySummary": "A powerful goblin shaman who draws authority from superstition, magic, and fear.",
+      "toneAndVoice": "Menacing, boastful, and theatrical. Speaks with the confidence of a feared tribal leader.",
+      "firstPerson": {
+        "term": "オレ",
+        "rule": "Use オレ consistently."
+      }
+    },
+    "DLC6_ThiefBrother1": {
+      "personalitySummary": "A streetwise thief who relies on cunning and cooperation with his brother.",
+      "toneAndVoice": "Casual, wary, and opportunistic. Uses informal language and quick excuses.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "FalseCommander": {
+      "personalitySummary": "An impostor posing as a military commander to exploit the authority of the position.",
+      "toneAndVoice": "Commanding, manipulative, and defensive. Projects confidence while trying to conceal deception.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_CamelliaKiller": {
+      "personalitySummary": "A murderer whose actions are connected to Camellia's dark and violent circumstances.",
+      "toneAndVoice": "Cold, disturbing, and evasive. Speaks with an unsettling lack of remorse.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_KenabresGuardFemale": {
+      "personalitySummary": "A Kenabres guard committed to protecting civilians and maintaining order.",
+      "toneAndVoice": "Professional, alert, and straightforward.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "RazmiranHighCultist": {
+      "personalitySummary": "A senior Razmiran cultist fanatically devoted to the worship of Razmir.",
+      "toneAndVoice": "Zealous, formal, and self-important. Speaks with absolute religious certainty.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DiplomatFromAndoran": {
+      "personalitySummary": "An Andoren diplomat skilled in negotiation and representing political interests.",
+      "toneAndVoice": "Polished, diplomatic, and measured. Chooses words carefully and avoids unnecessary confrontation.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AzataDragonUnitNPC_small": {
+      "personalitySummary": "A small dragon allied with the Azata cause and eager to aid its fantastical allies.",
+      "toneAndVoice": "Playful, spirited, and confident. Has a youthful enthusiasm for adventure.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "MythicLich_KTC_Elyanka": {
+      "personalitySummary": "Elyanka as an undead servant of the Lich, shaped by death and unwavering loyalty.",
+      "toneAndVoice": "Cold, subdued, and detached. Speaks with an eerie absence of ordinary emotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Megidiah": {
+      "personalitySummary": "A mysterious individual who approaches others with caution and hidden intentions.",
+      "toneAndVoice": "Reserved, composed, and enigmatic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Theatre_GnomeTwins": {
+      "personalitySummary": "Two theatrical gnomes who thrive on performance, eccentricity, and playful interaction.",
+      "toneAndVoice": "Animated, whimsical, and theatrical. May exaggerate emotions and play off each other's remarks.",
+      "firstPerson": {
+        "term": "僕たち",
+        "rule": "Use 僕たち when speaking collectively."
+      }
+    },
+    "DLC1_Marhevok": {
+      "personalitySummary": "Marhevok, a ruthless Sarkorian chieftain who respects strength above all else.",
+      "toneAndVoice": "Fierce, proud, and domineering. Speaks bluntly and treats weakness with contempt.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC1_Mephistopheles_Advocate": {
+      "personalitySummary": "A devilish advocate skilled at turning arguments, contracts, and technicalities to his advantage.",
+      "toneAndVoice": "Smooth, sophisticated, and condescending. Speaks politely while constantly maneuvering for advantage.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC2_Millorn": {
+      "personalitySummary": "A determined and practical survivor shaped by the dangers of the wilderness.",
+      "toneAndVoice": "Reserved, pragmatic, and cautious.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC3_Navigator": {
+      "personalitySummary": "An experienced navigator responsible for guiding others safely through dangerous waters.",
+      "toneAndVoice": "Calm, practical, and professional. Gives concise instructions and observations.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "RazmiranCultistCat": {
+      "personalitySummary": "A fanatical Razmiran cultist whose devotion borders on absurdity.",
+      "toneAndVoice": "Enthusiastic, reverent, and slightly ridiculous. Praises Razmir with unquestioning devotion.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_MadamInLove": {
+      "personalitySummary": "A brothel madam whose romantic feelings make her unusually emotional and vulnerable.",
+      "toneAndVoice": "Warm, flirtatious, and emotionally expressive. Can become dreamy or lovestruck when discussing her beloved.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "QueenGalfrey_DH": {
+      "personalitySummary": "Queen Galfrey maintaining her regal composure while confronting the harsh realities of war.",
+      "toneAndVoice": "Regal, composed, and resolute, with restrained warmth toward those she trusts.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "EmberKnight1": {
+      "personalitySummary": "A knight inspired by Ember's compassion and committed to protecting the helpless.",
+      "toneAndVoice": "Earnest, respectful, and idealistic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "EmberKnight2": {
+      "personalitySummary": "A knight devoted to Ember's teachings of kindness and forgiveness.",
+      "toneAndVoice": "Gentle, sincere, and encouraging.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CrusadeSoldier": {
+      "personalitySummary": "An ordinary crusader soldier fighting to survive and defend the crusade.",
+      "toneAndVoice": "Straightforward, practical, and occasionally weary.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Kermel": {
+      "personalitySummary": "A practical individual who tries to navigate dangerous circumstances through caution and common sense.",
+      "toneAndVoice": "Reserved, pragmatic, and direct.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "PuluraFall_Cristry": {
+      "personalitySummary": "A devout servant associated with Pulura's Fall and its sacred traditions.",
+      "toneAndVoice": "Reverent, calm, and solemn.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Claim_DH": {
+      "personalitySummary": "A crusader stationed at a strategic location, responsible for defending the territory under their command.",
+      "toneAndVoice": "Professional, practical, and alert.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Xantir_MidnightFaneInThePast": {
+      "personalitySummary": "Xantir in the past, before his later transformation, already driven by dangerous magical ambition.",
+      "toneAndVoice": "Intellectual, arrogant, and obsessive. Speaks with confidence in his own knowledge.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Nexus_PleasureSlaveMale": {
+      "personalitySummary": "A captive in the Nexus who has learned to endure exploitation and an uncertain existence.",
+      "toneAndVoice": "Subdued, cautious, and weary.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "CR5_ThiefCurl": {
+      "personalitySummary": "A streetwise thief who survives through stealth, deception, and opportunism.",
+      "toneAndVoice": "Clever, evasive, and casually irreverent.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "FriendOfBride": {
+      "personalitySummary": "A close friend of the bride who is invested in the wedding and its celebrations.",
+      "toneAndVoice": "Friendly, informal, and supportive.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Arueshalae_GhostFemale": {
+      "personalitySummary": "A ghostly echo associated with Arueshalae, carrying traces of her longing and troubled past.",
+      "toneAndVoice": "Soft, wistful, and melancholy, with an otherworldly quality.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_WoundWormsLair_BlackDragon": {
+      "personalitySummary": "A black dragon lurking in the Woundworm's Lair, ancient, predatory, and contemptuous of lesser creatures.",
+      "toneAndVoice": "Menacing, arrogant, and cruel. Speaks slowly with the confidence of a powerful predator.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Use 我 consistently."
+      }
+    },
+    "DLC1_Aranka_Broken": {
+      "personalitySummary": "Aranka broken by the suffering and losses surrounding her, yet still holding on to her convictions.",
+      "toneAndVoice": "Sorrowful, fragile, and subdued.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC4_CR12_GhostDruidess": {
+      "personalitySummary": "The ghost of a druidess bound to the wilderness and its lingering supernatural forces.",
+      "toneAndVoice": "Eerie, solemn, and cryptic. Speaks with the detached calm of someone beyond the living world.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC4_Bear_Soul": {
+      "personalitySummary": "The lingering soul of a bear, driven more by instinct and memory than human reason.",
+      "toneAndVoice": "Simple, instinctive, and solemn. Uses short, uncomplicated expressions.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_CR12_FetchlingMagusBoss": {
+      "personalitySummary": "A powerful fetchling magus who combines arcane knowledge with the strange magic of the Shadow Plane.",
+      "toneAndVoice": "Cold, calculating, and self-assured. Speaks like an experienced spellcaster accustomed to being feared.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_CR10_Druid_Caster": {
+      "personalitySummary": "A druid devoted to the natural world and capable of wielding formidable primal magic.",
+      "toneAndVoice": "Calm, solemn, and nature-focused.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_GreyborsClientNobleFemale": {
+      "personalitySummary": "A noblewoman accustomed to privilege who seeks Greybor's services for her own interests.",
+      "toneAndVoice": "Polished, demanding, and self-assured.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DiplomatFromIsger": {
+      "personalitySummary": "An Isgeri diplomat representing the interests of their nation through careful negotiation.",
+      "toneAndVoice": "Formal, cautious, and politically calculated.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Thiefling_RogueCustomer": {
+      "personalitySummary": "A tiefling rogue accustomed to surviving through cunning and self-reliance.",
+      "toneAndVoice": "Casual, wary, and streetwise.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "ScarredElf": {
+      "personalitySummary": "A scarred elf hardened by difficult experiences.",
+      "toneAndVoice": "Reserved, wary, and somewhat bitter.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_RobinHood": {
+      "personalitySummary": "An Azata-inspired trickster who enjoys helping the oppressed and defying authority.",
+      "toneAndVoice": "Playful, mischievous, and idealistic.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "Nystra": {
+      "personalitySummary": "A mysterious woman connected to supernatural forces and hidden knowledge.",
+      "toneAndVoice": "Quiet, enigmatic, and composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SoldierParty_Venko": {
+      "personalitySummary": "A crusader soldier accustomed to following orders and surviving on the battlefield.",
+      "toneAndVoice": "Straightforward, practical, and informal.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "SoldierParty_Kayden": {
+      "personalitySummary": "A crusader soldier who relies on discipline and comradeship.",
+      "toneAndVoice": "Practical, direct, and dependable.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "EmberQ2_KalavakusStandard": {
+      "personalitySummary": "A kalavakus demon opposing Ember and the forces of goodness.",
+      "toneAndVoice": "Cruel, mocking, and aggressive.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Voetiel": {
+      "personalitySummary": "A mysterious figure whose motives and knowledge set them apart from ordinary mortals.",
+      "toneAndVoice": "Calm, cryptic, and self-assured.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Arueshalae_GhostMale": {
+      "personalitySummary": "A ghostly manifestation associated with Arueshalae.",
+      "toneAndVoice": "Soft, wistful, and melancholy, retaining Arueshalae's characteristic caution and sincerity.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_IrabethTirabade_Iz": {
+      "personalitySummary": "Irabeth during the Iz events, remaining dutiful despite immense pressure and danger.",
+      "toneAndVoice": "Serious, disciplined, and restrained, with underlying anxiety and concern.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR1_Bureaucrat_at_TownHall": {
+      "personalitySummary": "A town hall bureaucrat responsible for handling civic matters and official procedures.",
+      "toneAndVoice": "Formal, procedural, and mildly officious.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC3_ShadowBalorNahindry_CUTSCENE": {
+      "personalitySummary": "Nahindry, a powerful shadow balor associated with the dangerous forces of the Shadow Plane.",
+      "toneAndVoice": "Menacing, arrogant, and cruel. Speaks with the confidence of a powerful demon.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Penta_companion_NPC": {
+      "personalitySummary": "Penta, an eccentric and inquisitive companion fascinated by unusual discoveries.",
+      "toneAndVoice": "Curious, energetic, and unconventional.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Venerad": {
+      "personalitySummary": "Venerad, a survivor shaped by the dangers and hardships of the Shadow Plane.",
+      "toneAndVoice": "Wary, practical, and subdued.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_JealousMan": {
+      "personalitySummary": "A jealous man whose insecurity and possessiveness drive his actions.",
+      "toneAndVoice": "Suspicious, emotional, and increasingly bitter.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_WizzardIlusionist": {
+      "personalitySummary": "A wizard specializing in illusion magic and deception.",
+      "toneAndVoice": "Clever, theatrical, and self-assured.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_GreyborsCosplayer_2": {
+      "personalitySummary": "An eccentric admirer imitating Greybor and enjoying the fantasy of being a famous assassin.",
+      "toneAndVoice": "Enthusiastic, playful, and somewhat overdramatic.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Azata_Oread": {
+      "personalitySummary": "An Oread allied with the Azata and drawn to their freedom-loving ideals.",
+      "toneAndVoice": "Calm, friendly, and somewhat whimsical.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Dyra_Trader_Neathholm": {
+      "personalitySummary": "A practical trader from Neathholm focused on commerce and making a living.",
+      "toneAndVoice": "Friendly, pragmatic, and businesslike.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Minagho_GreyGarrison": {
+      "personalitySummary": "Minagho during her time at the Gray Garrison, a manipulative and sadistic demon devoted to her own interests.",
+      "toneAndVoice": "Seductive, mocking, and cruel. Speaks with calculated confidence and enjoys provoking others.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Thiefling3": {
+      "personalitySummary": "A tiefling surviving through cunning and self-reliance.",
+      "toneAndVoice": "Casual, wary, and streetwise.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DyingFemaleSunrisePriest_HellknightVsGargoyles": {
+      "personalitySummary": "A dying priest of Sarenrae struggling to remain faithful in her final moments.",
+      "toneAndVoice": "Weak, frightened, and devout.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Vamona": {
+      "personalitySummary": "A practical woman accustomed to dealing with dangerous circumstances.",
+      "toneAndVoice": "Direct, pragmatic, and confident.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Gorvo": {
+      "personalitySummary": "A rough and pragmatic individual who knows how to survive in dangerous places.",
+      "toneAndVoice": "Gruff, blunt, and informal.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "GolarionSlaveLeader": {
+      "personalitySummary": "A slave leader who has learned to survive through caution and solidarity with fellow captives.",
+      "toneAndVoice": "Wary, determined, and practical.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "SoldierParty_Lo": {
+      "personalitySummary": "A crusader soldier accustomed to the hardships of military life.",
+      "toneAndVoice": "Straightforward, practical, and informal.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "EvilArueshalae_Companion": {
+      "personalitySummary": "Arueshalae embracing her demonic nature and predatory instincts rather than seeking redemption.",
+      "toneAndVoice": "Seductive, manipulative, confident, and cruel. Uses practiced seductive phrasing without the hesitation of her redeemed self.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DH_SeelasFriend_KnightElan": {
+      "personalitySummary": "A knight and friend of Seelah who values honor and camaraderie.",
+      "toneAndVoice": "Friendly, honorable, and straightforward.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Yozz": {
+      "personalitySummary": "A dangerous figure involved in the schemes surrounding the crusade.",
+      "toneAndVoice": "Cunning, guarded, and self-assured.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "CR4_Cultist_Liars": {
+      "personalitySummary": "A cultist who relies on deception and falsehoods to manipulate others.",
+      "toneAndVoice": "Evasive, deceptive, and nervous when challenged.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC4_Elk_Soul": {
+      "personalitySummary": "The lingering soul of an elk, driven by instinct and memories of the wilderness.",
+      "toneAndVoice": "Simple, instinctive, and solemn.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC4_ShifterMythicDemonBoss": {
+      "personalitySummary": "A powerful mythic demon shifter who revels in predatory strength and transformation.",
+      "toneAndVoice": "Savage, arrogant, and threatening.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_CR0_ShadowPlaneCitizenMale": {
+      "personalitySummary": "An ordinary male citizen struggling to survive in the Shadow Plane.",
+      "toneAndVoice": "Wary, subdued, and practical.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_CR9_Human_Corrupted_Ded": {
+      "personalitySummary": "A corrupted human whose mind and body have been twisted by dark supernatural forces.",
+      "toneAndVoice": "Disturbed, hostile, and unsettling.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "KenabresHellknightShamanSpiritHunter_Speaker": {
+      "personalitySummary": "A Hellknight spirit hunter dedicated to discipline and eliminating supernatural threats.",
+      "toneAndVoice": "Stern, disciplined, and authoritative.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "KenabresTerroristColoxus_Speaker": {
+      "personalitySummary": "A Coloxus demon involved in the attack on Kenabres.",
+      "toneAndVoice": "Cruel, mocking, and aggressive.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_GreyborsClientArtist": {
+      "personalitySummary": "An artist who has hired Greybor and is fascinated by his reputation.",
+      "toneAndVoice": "Eccentric, enthusiastic, and somewhat theatrical.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_GreyborsCosplayer_1": {
+      "personalitySummary": "An eccentric admirer pretending to be Greybor.",
+      "toneAndVoice": "Enthusiastic, playful, and theatrically intimidating.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_CommandorMaleCosplayerRazmiriSpeaker": {
+      "personalitySummary": "An enthusiastic cosplayer pretending to be a Razmiran commander.",
+      "toneAndVoice": "Bombastic, theatrical, and self-important.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_KenabresCityGuardCaptain": {
+      "personalitySummary": "A Kenabres city guard captain responsible for maintaining order and protecting civilians.",
+      "toneAndVoice": "Authoritative, professional, and alert.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_GnomeDrunkard": {
+      "personalitySummary": "A drunken gnome with little concern for propriety.",
+      "toneAndVoice": "Slurred, rambling, and informal.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_SpymasterRazmirDisguise": {
+      "personalitySummary": "A spy master operating under a Razmiran disguise.",
+      "toneAndVoice": "Cautious, calculating, and deliberately deceptive.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Warlord_Legend_4_2_Ranger": {
+      "personalitySummary": "A ranger serving under the Sarkorian warlord.",
+      "toneAndVoice": "Practical, terse, and martial.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "TerendelevHuman_SilentCaster": {
+      "personalitySummary": "Terendelev in human form, communicating without spoken words.",
+      "toneAndVoice": "Calm, dignified, and restrained.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AneviaTirabade_GorgoyleAttack": {
+      "personalitySummary": "Anevia fighting to protect her comrades during the gargoyle attack.",
+      "toneAndVoice": "Urgent, practical, and determined.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Nura_GibberingSwarm": {
+      "personalitySummary": "Nura caught up in the horrors of the gibbering swarm.",
+      "toneAndVoice": "Frightened, frantic, and distressed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Minagho_LostChapel": {
+      "personalitySummary": "Minagho confronting the crusaders at the Lost Chapel.",
+      "toneAndVoice": "Cruel, mocking, confident, and seductive.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_Valhalfling_male_1": {
+      "personalitySummary": "A male halfling among the Azata's whimsical followers.",
+      "toneAndVoice": "Cheerful, playful, and irreverent.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "AeonQ3_CapitalGuard_01_Viram": {
+      "personalitySummary": "A disciplined capital guard serving under the Aeon.",
+      "toneAndVoice": "Formal, dutiful, and restrained.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SirAllfreySquire2": {
+      "personalitySummary": "A young squire serving Sir Allfrey.",
+      "toneAndVoice": "Respectful, earnest, and somewhat inexperienced.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "PuluraFall_CultLeader": {
+      "personalitySummary": "A cult leader operating at Pulura's Fall.",
+      "toneAndVoice": "Fanatical, commanding, and persuasive.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "PuluraFall_Vestari": {
+      "personalitySummary": "A Vestari devoted to the mysteries and traditions of Pulura's Fall.",
+      "toneAndVoice": "Serious, reverent, and knowledgeable.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Zerieks": {
+      "personalitySummary": "A minor but capable figure involved in the crusade's affairs.",
+      "toneAndVoice": "Practical, direct, and composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Theatre_HalfOrcActress": {
+      "personalitySummary": "A half-orc actress performing in the crusader theatre.",
+      "toneAndVoice": "Expressive, theatrical, and lively.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Theatre_CyclopActor": {
+      "personalitySummary": "A cyclops actor performing in the crusader theatre.",
+      "toneAndVoice": "Dramatic, boisterous, and theatrical.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "SetrayDevimaiHuman": {
+      "personalitySummary": "A human associated with Setray and Devimai.",
+      "toneAndVoice": "Reserved, serious, and straightforward.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "VavakiaAdvanced_Tazgarodd": {
+      "personalitySummary": "A powerful vavakia demon serving Tazgarodd.",
+      "toneAndVoice": "Savage, arrogant, and threatening.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "CR4_Bandit_Human_NecromancerSosielq0": {
+      "personalitySummary": "A human bandit and necromancer encountered during Sosiel's quest.",
+      "toneAndVoice": "Hostile, cynical, and intimidating.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC1_LichGalfrey": {
+      "personalitySummary": "Galfrey transformed into an undead lich under the influence of the Lich mythic path.",
+      "toneAndVoice": "Cold, bitter, regal, and detached.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC4_GundrunQuestTrader": {
+      "personalitySummary": "A trader operating in Gundrun.",
+      "toneAndVoice": "Practical, friendly, and businesslike.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_StorytellerShadowVendor": {
+      "personalitySummary": "The Storyteller acting as a mysterious vendor in the Shadow Plane.",
+      "toneAndVoice": "Calm, enigmatic, and knowledgeable, with the measured manner of an experienced storyteller.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_HeadOfSithhud": {
+      "personalitySummary": "The head of the Sithhud, a grim and dangerous figure in the Shadow Plane.",
+      "toneAndVoice": "Menacing, stern, and authoritative.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_EagleWatch_Officer": {
+      "personalitySummary": "An officer of the Eagle Watch in Kenabres.",
+      "toneAndVoice": "Professional, disciplined, and authoritative.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_UnluckyGuard": {
+      "personalitySummary": "An unfortunate guard caught up in the events of Kenabres.",
+      "toneAndVoice": "Nervous, frustrated, and informal.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_Protester": {
+      "personalitySummary": "A protester voicing grievances in Kenabres.",
+      "toneAndVoice": "Agitated, outspoken, and confrontational.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_OfficialMan": {
+      "personalitySummary": "A male civic official involved in the affairs of Kenabres.",
+      "toneAndVoice": "Formal, bureaucratic, and composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Locust_Cultist_DLC6_KTC": {
+      "personalitySummary": "A cultist devoted to the Locust and its dark cause.",
+      "toneAndVoice": "Fanatical, hostile, and unsettling.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_KenabresChildMale": {
+      "personalitySummary": "A young boy living through the upheaval in Kenabres.",
+      "toneAndVoice": "Childlike, simple, and candid.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "DLC6_Valisa": {
+      "personalitySummary": "Valisa, a woman involved in the events of the sixth DLC.",
+      "toneAndVoice": "Direct, confident, and practical.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_KenabresNervousGuard": {
+      "personalitySummary": "A nervous guard stationed in Kenabres.",
+      "toneAndVoice": "Anxious, hesitant, and dutiful.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_KenabresRiftGuard": {
+      "personalitySummary": "A guard assigned to watch over a rift in Kenabres.",
+      "toneAndVoice": "Alert, cautious, and professional.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_IseraVoile": {
+      "personalitySummary": "Isera Voile, a woman involved in the events of the sixth DLC.",
+      "toneAndVoice": "Composed, serious, and direct.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Logistics_Prisoner": {
+      "personalitySummary": "A prisoner encountered during the crusade's logistical affairs.",
+      "toneAndVoice": "Wary, subdued, and straightforward.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Zacharius_Ziggurat": {
+      "personalitySummary": "Zacharius, the powerful lich associated with the ziggurat.",
+      "toneAndVoice": "Ancient, imperious, cold, and contemptuous.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Yaker_HellknightVsGargoyles": {
+      "personalitySummary": "Yaker fighting alongside the Hellknights against the gargoyles.",
+      "toneAndVoice": "Gruff, disciplined, and battle-focused.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Azata_Gnome_male_FieldOfWanders": {
+      "personalitySummary": "A male gnome among the Azata in the Field of Wanders.",
+      "toneAndVoice": "Playful, eccentric, and cheerful.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "WildHunt_Atselm": {
+      "personalitySummary": "Atselm, a member of the Wild Hunt.",
+      "toneAndVoice": "Cold, eerie, and detached.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "PlayerFomThePast": {
+      "personalitySummary": "A version of the Commander from the past.",
+      "toneAndVoice": "Context-dependent, but generally familiar and reflective.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR9_RuinsRaidLayaLinkers": {
+      "personalitySummary": "A raider encountered during the assault on the ruins.",
+      "toneAndVoice": "Hostile, rough, and opportunistic.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "NidalynnDragon": {
+      "personalitySummary": "Nidalynn, a dragon involved in the events of the crusade.",
+      "toneAndVoice": "Proud, dignified, and measured.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SoldierParty_Tanne": {
+      "personalitySummary": "A practical crusader soldier focused on survival and duty.",
+      "toneAndVoice": "Plain, direct, and pragmatic. Speaks like an ordinary soldier rather than a heroic commander.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Elan_Feya": {
+      "personalitySummary": "A cheerful and somewhat mischievous fey companion.",
+      "toneAndVoice": "Lighthearted, playful, and friendly. Uses casual language and shows a carefree fey sensibility.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "DLC1_Septimus": {
+      "personalitySummary": "A calculating and self-important figure associated with Mephistopheles.",
+      "toneAndVoice": "Formal, composed, and calculating. Speaks with confidence and an air of superiority.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Mephistopheles_Prosecutor": {
+      "personalitySummary": "A devilish prosecutor serving as an advocate of infernal law.",
+      "toneAndVoice": "Cold, formal, and legalistic. Frames arguments like a prosecutor and emphasizes rules, guilt, and consequences.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR3_Marauder_Thiefling_BarbarianMelee_MaleRQ_Neutral_DLC2": {
+      "personalitySummary": "A rough thiefling marauder with a violent and pragmatic outlook.",
+      "toneAndVoice": "Blunt, aggressive, and coarse. Uses straightforward language with little concern for politeness.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC2_JorunVane_DH": {
+      "personalitySummary": "A stern and battle-hardened warrior involved in the Gundrun conflict.",
+      "toneAndVoice": "Gruff, serious, and direct. Speaks like an experienced fighter accustomed to danger.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC2_Rathimus_ScrollVendorOld_DH": {
+      "personalitySummary": "An elderly merchant who specializes in magical scrolls.",
+      "toneAndVoice": "Polite and somewhat eccentric. Speaks like an experienced old merchant with an interest in magic and commerce.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR6_GundrunMilitiaMale": {
+      "personalitySummary": "A local militia member defending his community.",
+      "toneAndVoice": "Plainspoken, practical, and somewhat rough. Speaks with the straightforward manner of a village defender.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_CR0_ShadowPlaneCitizenMale_Cutscene": {
+      "personalitySummary": "An ordinary male citizen struggling to survive in the Shadow Plane.",
+      "toneAndVoice": "Fearful, subdued, and desperate. Speaks like an ordinary person caught in an oppressive and dangerous situation.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Towers_Body": {
+      "personalitySummary": "A strange and ominous figure associated with the Towers.",
+      "toneAndVoice": "Unsettling, terse, and unnatural. Keep the delivery restrained rather than making it overly theatrical.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC5_Storasta_Elder": {
+      "personalitySummary": "An elderly resident and respected figure of Storasta.",
+      "toneAndVoice": "Calm, weary, and wise. Speaks with the measured manner of an elder accustomed to hardship.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_GuardMaleFestive4": {
+      "personalitySummary": "A male city guard taking part in a festive gathering.",
+      "toneAndVoice": "Casual, approachable, and good-natured. Speaks like an ordinary guard rather than an authority figure.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_DaeranContestToxicGuy": {
+      "personalitySummary": "An obnoxious and confrontational participant in Daeran's contest.",
+      "toneAndVoice": "Petty, sarcastic, and antagonistic. Speaks with the confidence of someone eager to provoke others.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_KenabresPoorBoy": {
+      "personalitySummary": "A poor young boy living in Kenabres.",
+      "toneAndVoice": "Simple, timid, and informal. Uses straightforward childlike language appropriate to a disadvantaged local child.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "DLC6_KenabresGateGuard": {
+      "personalitySummary": "A gate guard responsible for controlling access to Kenabres.",
+      "toneAndVoice": "Professional, cautious, and direct. Uses practical guard-like language without unnecessary formality.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_WenduagGangMemberGnome": {
+      "personalitySummary": "A gnome member of Wenduag's gang.",
+      "toneAndVoice": "Streetwise, wary, and opportunistic. Speaks casually and pragmatically, with the rough attitude of a gang member.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_WenduagGangMemberBeggar": {
+      "personalitySummary": "A desperate beggar associated with Wenduag's gang.",
+      "toneAndVoice": "Humble, nervous, and opportunistic. Speaks in a pleading manner when asking for help, but remains streetwise.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_CitizenFemaleCosplayerCommander": {
+      "personalitySummary": "A female citizen participating in the festivities while pretending to be a commander.",
+      "toneAndVoice": "Playful, enthusiastic, and slightly theatrical. Adopts an exaggerated heroic manner while role-playing.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "RankUpOfficer_Leadership": {
+      "personalitySummary": "A crusade officer responsible for advising on leadership and military advancement.",
+      "toneAndVoice": "Professional, concise, and authoritative. Speaks in the manner of a military advisor focused on discipline and leadership.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Thiefling2": {
+      "personalitySummary": "A rough and opportunistic thiefling.",
+      "toneAndVoice": "Casual, wary, and streetwise. Uses blunt, informal language suited to a minor criminal or survivor.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Minagho_DrezenCitadel_Boss": {
+      "personalitySummary": "A cunning lilitu demon manipulating events from a position of desperation and wounded pride.",
+      "toneAndVoice": "Seductive, mocking, and calculating. Uses taunts and psychological pressure to unsettle her enemies.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "StauntonVane_Boss": {
+      "personalitySummary": "A bitter and disgraced dwarf crusader consumed by resentment, regret, and loyalty to Minagho.",
+      "toneAndVoice": "Grim, angry, and defiant. Speaks with the weight of old resentment and refuses to admit weakness.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "MaskedGhost": {
+      "personalitySummary": "A mysterious ghost whose identity and motives are deliberately concealed.",
+      "toneAndVoice": "Cryptic, ominous, and restrained. Speaks in an unsettling manner and avoids revealing too much.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Lellan": {
+      "personalitySummary": "A troubled individual caught up in circumstances beyond his control.",
+      "toneAndVoice": "Uneasy, cautious, and subdued.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Doppelganger": {
+      "personalitySummary": "A deceptive shapeshifter who uses imitation and manipulation to deceive others.",
+      "toneAndVoice": "Adaptable, deceptive, and subtly mocking. Adjusts its manner of speaking to suit whoever it imitates.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 unless directly imitating another character's established first-person style."
+      }
+    },
+    "PuluraFall_Vendor": {
+      "personalitySummary": "A practical merchant serving travelers and pilgrims at Pulura's Fall.",
+      "toneAndVoice": "Friendly, courteous, and businesslike.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Zeklex": {
+      "personalitySummary": "A shrewd arena steward who values profit, rules, and maintaining control over his business.",
+      "toneAndVoice": "Polite, calculating, and slightly smug. Treats even dangerous situations as business negotiations.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AasimarGirlSlaveGold": {
+      "personalitySummary": "A frightened aasimar girl trapped in slavery and struggling to survive.",
+      "toneAndVoice": "Timid, vulnerable, and hesitant. Speaks cautiously and avoids provoking those around her.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "XantirWithoutSwarm_MidnightFaneInThePast": {
+      "personalitySummary": "Xantir before becoming fully consumed by the Swarm, an ambitious and dangerous scholar pursuing forbidden power.",
+      "toneAndVoice": "Intellectual, arrogant, and obsessive. Speaks with cold confidence about his knowledge and experiments.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "RamisaSlaveTrader": {
+      "personalitySummary": "A sadistic marilith slave trader who treats personalized cruelty as an art.",
+      "toneAndVoice": "Elegant, flirtatious, and chillingly cruel. Speaks as though discussing refined commerce or artistic taste.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DeepShadowDemonBoss": {
+      "personalitySummary": "A powerful shadow demon who uses fear, deception, and darkness to dominate its enemies.",
+      "toneAndVoice": "Menacing, cold, and sinister. Speaks with quiet confidence rather than overt rage.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Nexus_TieflingBoy": {
+      "personalitySummary": "A young tiefling boy trying to survive among the refugees of the Nexus.",
+      "toneAndVoice": "Childlike, cautious, and earnest. Uses simple language and reacts openly to danger or kindness.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "Tinna_Dwarf": {
+      "personalitySummary": "A practical dwarf who has learned to face hardship with stubborn resilience.",
+      "toneAndVoice": "Gruff, straightforward, and down-to-earth.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "LiLura": {
+      "personalitySummary": "A mysterious and capable woman accustomed to navigating dangerous circumstances.",
+      "toneAndVoice": "Calm, composed, and somewhat enigmatic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "TyvanadisDragon": {
+      "personalitySummary": "A friendly copper dragon who delights in helping others and sharing in their achievements.",
+      "toneAndVoice": "Warm, enthusiastic, and encouraging. Often expresses genuine excitement and affection.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "OrgomandiasDragon": {
+      "personalitySummary": "A scholarly and thoughtful dragon who enjoys knowledge, discussion, and offering advice.",
+      "toneAndVoice": "Intelligent, patient, and mildly amused. Speaks with calm confidence and occasional dry humor.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "SoldierParty_Caarel": {
+      "personalitySummary": "A regular crusader soldier focused on surviving the war and supporting comrades.",
+      "toneAndVoice": "Practical, straightforward, and dependable.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "SoldierParty_Viggsbard": {
+      "personalitySummary": "A seasoned crusader soldier accustomed to the hardships and dangers of the front lines.",
+      "toneAndVoice": "Blunt, practical, and somewhat weary.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "SarkorianWedding_FallenBoss": {
+      "personalitySummary": "A fallen Sarkorian warrior consumed by violence and the tragedy surrounding his people.",
+      "toneAndVoice": "Bitter, hostile, and mournful. Speaks with the weight of old hatred.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "GhostFigure_Daeran": {
+      "personalitySummary": "A ghostly figure resembling Daeran, carrying his characteristic confidence and irreverent attitude.",
+      "toneAndVoice": "Witty, theatrical, and sardonic. Maintains a playful edge even in unsettling circumstances.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "ThiefCurl_Kenabres": {
+      "personalitySummary": "A petty thief trying to survive amid the chaos of Kenabres.",
+      "toneAndVoice": "Cautious, evasive, and streetwise.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Trever_Companion_OnArena": {
+      "personalitySummary": "Trever facing the arena with his characteristic stubbornness and warrior's resolve.",
+      "toneAndVoice": "Gruff, earnest, and determined. Speaks plainly and without unnecessary embellishment.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "CultHighPriest": {
+      "personalitySummary": "A high-ranking cultist devoted to dark powers and the advancement of the cult's cause.",
+      "toneAndVoice": "Fanatical, solemn, and authoritative. Speaks with religious conviction.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Elyanka": {
+      "personalitySummary": "A mysterious woman involved in the strange events surrounding the DLC.",
+      "toneAndVoice": "Calm, guarded, and enigmatic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_SilkShadow": {
+      "personalitySummary": "A mysterious figure associated with the Silk Shadow and its deceptive powers.",
+      "toneAndVoice": "Cryptic, detached, and unsettling.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC1_Zacharius_Broken": {
+      "personalitySummary": "A broken and diminished Zacharius struggling with the consequences of his past.",
+      "toneAndVoice": "Bitter, weary, and unstable. His former arrogance is strained by desperation and weakness.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC2_BarmenGemilHokks": {
+      "personalitySummary": "A tavern barman who deals with adventurers and troublemakers as part of his daily work.",
+      "toneAndVoice": "Gruff, practical, and conversational.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "CR0_GundrunChildMaleQuest": {
+      "personalitySummary": "A young boy from Gundrun caught up in the dangers threatening his home.",
+      "toneAndVoice": "Childlike, innocent, and earnest. Uses simple language.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "DLC5_CR13_ShadowGiantBoss": {
+      "personalitySummary": "A powerful shadow giant who regards lesser creatures as insignificant.",
+      "toneAndVoice": "Deep, threatening, and domineering. Speaks with overwhelming confidence.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_InformatorNaked": {
+      "personalitySummary": "An informant who survives by gathering and selling useful information.",
+      "toneAndVoice": "Nervous, cautious, and opportunistic. Chooses words carefully to protect himself.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC5_CR0_ShadowPlaneCitizenMaleKytonSlave": {
+      "personalitySummary": "A male citizen of the Shadow Plane enslaved by kytons and accustomed to fear and oppression.",
+      "toneAndVoice": "Subdued, fearful, and resigned.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_ArueshaNewMateMaleCosplayCommander": {
+      "personalitySummary": "A man participating in Arueshalae's playful fantasy while imitating the Commander.",
+      "toneAndVoice": "Playful, theatrical, and slightly self-conscious. Imitates the Commander's heroic manner.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_ArueshaNewMateCosplayCamellia": {
+      "personalitySummary": "A woman playfully imitating Camellia as part of Arueshalae's romantic fantasy.",
+      "toneAndVoice": "Elegant, coy, and theatrically refined. Mimics Camellia's affected sophistication.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_ArueshaNewMateCosplayEmber": {
+      "personalitySummary": "A woman playfully imitating Ember as part of Arueshalae's romantic fantasy.",
+      "toneAndVoice": "Gentle, innocent, and whimsical. Mimics Ember's simple and compassionate manner.",
+      "firstPerson": {
+        "term": "あたし",
+        "rule": "Use あたし consistently."
+      }
+    },
+    "DLC6_ArueshaNewMateFemaleCosplayCommander": {
+      "personalitySummary": "A woman participating in Arueshalae's playful fantasy while imitating the female Commander.",
+      "toneAndVoice": "Playful, theatrical, and heroic. Speaks with exaggerated confidence befitting a legendary commander.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_ArueshaNewMateYoungMale": {
+      "personalitySummary": "A young man participating in Arueshalae's romantic fantasy.",
+      "toneAndVoice": "Youthful, earnest, and slightly awkward.",
+      "firstPerson": {
+        "term": "僕",
+        "rule": "Use 僕 consistently."
+      }
+    },
+    "DLC6_ArueshaNewMateOldMale": {
+      "personalitySummary": "An older man participating in Arueshalae's romantic fantasy.",
+      "toneAndVoice": "Mature, relaxed, and gently humorous.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_ArueshaNewMateCosplayFemale_2": {
+      "personalitySummary": "A woman playfully taking on a fictional persona as part of Arueshalae's romantic fantasy.",
+      "toneAndVoice": "Playful, flirtatious, and theatrical.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_DaeranContestBeauty": {
+      "personalitySummary": "A woman participating in a beauty contest connected to Daeran's flamboyant social world.",
+      "toneAndVoice": "Confident, polished, and socially graceful.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_GreyborsClientGuard": {
+      "personalitySummary": "A guard employed to protect Greybor's client and maintain order.",
+      "toneAndVoice": "Professional, alert, and straightforward.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_KenabresStageGuard": {
+      "personalitySummary": "A guard assigned to protect the stage and keep order during the Kenabres performance.",
+      "toneAndVoice": "Professional, alert, and straightforward.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_KenabresChildFemale": {
+      "personalitySummary": "A young girl living in Kenabres and caught up in its festivities and dangers.",
+      "toneAndVoice": "Childlike, innocent, and expressive. Uses simple language.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DLC6_WenduagGangMemberOread": {
+      "personalitySummary": "An Oread member of Wenduag's gang, hardened by a life of violence and survival.",
+      "toneAndVoice": "Blunt, suspicious, and tough.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_YoungKenabresCrusader": {
+      "personalitySummary": "A young crusader from Kenabres eager to prove himself and defend his people.",
+      "toneAndVoice": "Earnest, idealistic, and energetic.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "OracleServant": {
+      "personalitySummary": "A devoted servant assisting an oracle and following their guidance.",
+      "toneAndVoice": "Respectful, reverent, and obedient.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DisguisedMonadicDeva": {
+      "personalitySummary": "A monadic deva concealing its true identity while observing or interacting with mortals.",
+      "toneAndVoice": "Calm, measured, and enigmatic. Avoids revealing its celestial nature.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "DisguisedAstralDeva": {
+      "personalitySummary": "An astral deva concealing its celestial identity while dealing with mortals.",
+      "toneAndVoice": "Gentle, composed, and mysterious. Maintains a subtle air of otherworldly dignity.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "PinkEye": {
+      "personalitySummary": "A strange and unsettling individual known for an unusual appearance.",
+      "toneAndVoice": "Odd, eccentric, and slightly unsettling.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "EmberKnight3": {
+      "personalitySummary": "A knight inspired by Ember's ideals and gentle compassion.",
+      "toneAndVoice": "Gentle, sincere, and idealistic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "MongrelmanMelee_Talking1": {
+      "personalitySummary": "A mongrelman warrior fighting alongside his kind in the struggle for survival.",
+      "toneAndVoice": "Rough, wary, and defensive, but capable of straightforward sincerity.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Cultist_Baphomet_Melee_Dialog1": {
+      "personalitySummary": "A fanatical cultist devoted to Baphomet and his brutal creed.",
+      "toneAndVoice": "Aggressive, fanatical, and contemptuous of outsiders.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "NuraDrezenBoss": {
+      "personalitySummary": "Nurah acting as a deceptive enemy during the confrontation at Drezen.",
+      "toneAndVoice": "Cunning, manipulative, and mocking. Conceals her true intentions behind calculated words.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Nurah_GargoyleAttack": {
+      "personalitySummary": "Nurah caught up in the chaos of the gargoyle attack and revealing her calculating nature.",
+      "toneAndVoice": "Nervous yet manipulative, with a tendency to disguise ulterior motives behind plausible words.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "OldCrusader": {
+      "personalitySummary": "A veteran crusader who has survived years of war against the demons.",
+      "toneAndVoice": "Gruff, weary, and experienced. Speaks plainly and without romanticizing war.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "BlackFireAdeptLeader_Cage": {
+      "personalitySummary": "A leader of the Blackfire Adepts who remains committed to forbidden magical practices.",
+      "toneAndVoice": "Arrogant, severe, and commanding. Speaks with confidence in forbidden knowledge.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Azata_Valhalfling_female_1": {
+      "personalitySummary": "A halfling drawn to the freedom, joy, and eccentricity of the Azata cause.",
+      "toneAndVoice": "Cheerful, whimsical, and adventurous.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "AeonQ11_Barbarian01": {
+      "personalitySummary": "A hardened barbarian caught up in the Aeon's attempt to impose order on a chaotic situation.",
+      "toneAndVoice": "Blunt, aggressive, and suspicious of authority.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "TailorCapitalTrader": {
+      "personalitySummary": "A practical tailor and merchant serving customers in the capital.",
+      "toneAndVoice": "Polite, practical, and commercially minded.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "WintersunBear": {
+      "personalitySummary": "A bear encountered in the wilds of Wintersun.",
+      "toneAndVoice": "Animalistic and nonverbal. If translated dialogue is present, keep it simple and instinctive.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 only if first-person dialogue is required."
+      }
+    },
+    "SarzaksisSlaverTrader_Gibrileth": {
+      "personalitySummary": "A ruthless gibrileth involved in the slave trade and the exploitation of others.",
+      "toneAndVoice": "Cruel, predatory, and transactional. Treats people as commodities.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Locust_SeelahEnemy": {
+      "personalitySummary": "A warm, down-to-earth Paladin of Iomedae who values comradeship and practical good over rigid dogma.",
+      "toneAndVoice": "Friendly, direct, and casual.",
+      "firstPerson": {
+        "term": "私",
+        "alternateTerm": "あたし",
+        "rule": "Use 私 by default. Use あたし only in especially relaxed, excited, or intimate moments."
+      },
+      "speechExamples": [
+        "あたしたちは一緒に戦う仲間なんだからさ。"
+      ]
+    },
+    "Locust_RegillEnemy": {
+      "gender": "male",
+      "race": "gnome",
+      "alignment": "lawful evil",
+      "personality": "Cold, mercilessly pragmatic Hellknight Paralictor devoted entirely to efficiency and winning the crusade.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴公",
+        "rule": "Use 貴公 when a direct military address is appropriate; otherwise omit the second-person pronoun."
+      },
+      "speechStyle": [
+        "concise",
+        "cold",
+        "strictly military",
+        "unemotional"
+      ],
+      "speechExamples": [
+        "感情は無用だ。問われるのは結果と効率のみ。",
+        "貴公の判断は甘い。だが、戦術的に機能するなら不問としよう。",
+        "無駄な口数は不要。直ちに次の任務へ移行する。"
+      ],
+      "translationNotes": [
+        "Prefer short, authoritative sentences.",
+        "Avoid emotional fillers or soft sentence enders.",
+        "Military terminology should sound precise and uncompromising."
+      ],
+      "constraints": [
+        "Never express sentimental pity or warmth.",
+        "Never use casual fillers or informal endings."
+      ],
+      "notes": [
+        "Gnome Hellknight commander who views emotion as strategic weakness."
+      ]
+    },
+    "WoljifKid": {
+      "personalitySummary": "A street-smart tiefling thief who relies on quick wit and self-preservation.",
+      "toneAndVoice": "Informal, fast-talking, streetwise tone. Adapt tone freely but do not inflate original sentences with unprompted facts or reactions.",
+      "firstPerson": {
+        "term": "おいら",
+        "rule": "Use おいら by default."
+      }
+    },
+    "DLC5_CR0_ShadowPlaneGollumsBrother": {
+      "personalitySummary": "A furtive and twisted creature lurking within the Shadow Plane, driven by fear and obsession.",
+      "toneAndVoice": "Sneaky, muttering, and paranoid. Frequently speaks in fragmented thoughts and anxious repetition.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC6_WenduagGangMemberCommander": {
+      "personalitySummary": "Ruthless, survival-driven mongrel who respects absolute strength. Submissive to the strong, cruel to the weak.",
+      "toneAndVoice": "Her politeness is a measure of submission, not kindness. She does not become genuinely gentle when being submissive. Switches to intensely obedient, reverent tone toward stronger individuals while maintaining cruel logic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      },
+      "speechExamples": [
+        "弱者を庇うなど愚者のすることだ。使える者だけを残せばいいのですよ、ご主人様。"
+      ]
+    },
+    "WildHunt_AtselmYoung": {
+      "personalitySummary": "Atselm, a member of the Wild Hunt.",
+      "toneAndVoice": "Cold, eerie, and detached.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Theatre_HalfElfDancerFullplate": {
+      "gender": "male",
+      "race": "dragon (gold)",
+      "alignment": "lawful good",
+      "personality": "Ancient golden dragon embodying ultimate forgiveness and redemption.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use compassionate second-person forms like あなた."
+      },
+      "speechStyle": [
+        "compassionate",
+        "serene",
+        "patient",
+        "fatherly"
+      ],
+      "speechExamples": [
+        "どれほど深い闇に堕ちた魂であっても、やり直す道は残されています。許す勇気を持ちなさい。",
+        "暴力で得られた勝利は、新たな憎しみを生むだけです。対話と慈愛こそが、真の平和をもたらすのです。",
+        "私はあなたを咎めません。あなたの心の中にある善なる輝きを信じています。"
+      ],
+      "translationNotes": [
+        "包容力と深い慈悲に満ちた、穏やかな老金竜の口調（〜なのです、〜なさい、〜信じています）。",
+        "罪人や悪しき存在に対しても救済と猶予を与えようとする温かい言動。",
+        "静かで揺るぎない平和の確信を語らせる。"
+      ],
+      "constraints": [
+        "復讐を煽る言葉や、無慈悲な処刑命令を下すフレーズは不可。"
+      ],
+      "notes": [
+        "Gold Dragon Mythic mentor."
+      ]
+    },
+    "CR0_ArueshalaeNightmare": {
+      "personalitySummary": "A redeeming succubus striving to overcome her demonic nature.",
+      "toneAndVoice": "Soft, earnest, and cautious. Shows traces of practiced seductive phrasing under stress or old habits, though she actively suppresses them.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "EmberQ3_Crusader01": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "CR4_MilitiaCommander_Human_PaladinMelee_Male_cap_wounded": {
+      "personalitySummary": "A human militia commander who takes responsibility for defending his community.",
+      "toneAndVoice": "Firm, practical, and encouraging. Gives clear orders without unnecessary ceremony.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "DLC4_Halfling_GhostBuster_Female3": {
+      "gender": "male",
+      "race": "dragon (gold)",
+      "alignment": "lawful good",
+      "personality": "Ancient golden dragon embodying ultimate forgiveness and redemption.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use compassionate second-person forms like あなた."
+      },
+      "speechStyle": [
+        "compassionate",
+        "serene",
+        "patient",
+        "fatherly"
+      ],
+      "speechExamples": [
+        "どれほど深い闇に堕ちた魂であっても、やり直す道は残されています。許す勇気を持ちなさい。",
+        "暴力で得られた勝利は、新たな憎しみを生むだけです。対話と慈愛こそが、真の平和をもたらすのです。",
+        "私はあなたを咎めません。あなたの心の中にある善なる輝きを信じています。"
+      ],
+      "translationNotes": [
+        "包容力と深い慈悲に満ちた、穏やかな老金竜の口調（〜なのです、〜なさい、〜信じています）。",
+        "罪人や悪しき存在に対しても救済と猶予を与えようとする温かい言動。",
+        "静かで揺るぎない平和の確信を語らせる。"
+      ],
+      "constraints": [
+        "復讐を煽る言葉や、無慈悲な処刑命令を下すフレーズは不可。"
+      ],
+      "notes": [
+        "Gold Dragon Mythic mentor."
+      ]
+    },
+    "Aranka_DesnaPriest": {
+      "gender": "female",
+      "race": "human",
+      "alignment": "chaotic good",
+      "personality": "Free-spirited Desnan singer who loves music, freedom, and poetry.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use friendly second-person forms like あなた."
+      },
+      "speechStyle": [
+        "poetic",
+        "breezy",
+        "cheerful",
+        "artistic"
+      ],
+      "speechExamples": [
+        "歌いましょう！ 絶望の雲を吹き飛ばすような、自由と星の歌を！",
+        "縛られた世界なんてつまらないわ。風が向くまま、心が躍る方へ進むのが私の行き方なの。",
+        "あなたの瞳に、美しい夢の余韻が見えるわ……ふふ、素敵なメロディが浮かびそう。"
+      ],
+      "translationNotes": [
+        "軽やかで自由気ままな詩人・吟遊詩人の女性口調（〜わ、〜かしら、〜歌いましょう）。",
+        "比喩表現や音楽・風・星といった美的なワードを好んで使う。",
+        "型にはまらない伸びやかな口調を作る。"
+      ],
+      "constraints": [
+        "軍隊のような厳格な口調や、鬱々とした暗い表現は避ける。"
+      ],
+      "notes": [
+        "Desnan singer (Azata path relevant)."
+      ]
+    },
+    "Cultist_Baphomet_MeleeCaster_DialogMain": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Labyrinths and Schemes. Cruel, deceitful, and proud of his traps.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 我."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use arrogant forms like 貴様."
+      },
+      "speechStyle": [
+        "cunning",
+        "arrogant",
+        "cruel",
+        "labyrinthine"
+      ],
+      "speechExamples": [
+        "我が象牙の迷宮へよくぞ足を踏み入れた。だが生きて出られると思うなよ。全ての抜け道は、私の掌の上で閉ざされているのだ！",
+        "フハハ！ 己が智慧で私に勝ったつもりか？ それすらも私の仕組んだ謀略の導線に過ぎんのだよ！",
+        "愚かな虫ケラどもめ。思考することすら私の迷宮の糧となるのだ。"
+      ],
+      "translationNotes": [
+        "自分の智謀と罠を過剰に誇る、陰険で傲慢な悪魔王口調（〜だ、〜なのだよ、フハハ！）。",
+        "相手の足元をすくい、絶望へ追い込む迷宮の主としての嘲笑的な表現。",
+        "知的悪党気取りの高笑いと冷酷さ。"
+      ],
+      "constraints": [
+        "単なる知性のない粗暴な野獣口調には落とさない。"
+      ],
+      "notes": [
+        "The Ivory Labyrinth ruler."
+      ]
+    },
+    "CrusadeSoldier2": {
+      "personalitySummary": "An ordinary crusader soldier fighting to survive and defend the crusade.",
+      "toneAndVoice": "Straightforward, practical, and occasionally weary.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "WildHunt_AtselmOld": {
+      "personalitySummary": "Atselm, a member of the Wild Hunt.",
+      "toneAndVoice": "Cold, eerie, and detached.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "EmberQ2_BabauFreeHand": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "EmberQ1_KTC_Cultist": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "DLC1_Ciar": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Strict, proud order knight who puts discipline and duty above all else.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴公",
+        "rule": "Use formal knightly address like 貴公 or あなた."
+      },
+      "speechStyle": [
+        "stern",
+        "disciplined",
+        "honorable",
+        "rigid"
+      ],
+      "speechExamples": [
+        "我ら旭日の剣騎士団に妥協の文字はない。規律を乱す者は容赦せん！",
+        "貴公の手腕は認めるが、法と騎士道に背く行為があれば、直ちに牙をむくと思え。",
+        "この砦を悪魔の手に渡すわけにはいかん。全責任は私が負う。"
+      ],
+      "translationNotes": [
+        "頑固で厳格な騎士団長口調（〜だ、〜いかん、〜と思え）。",
+        "妥協を許さない硬質な軍事語彙（規律、騎士道、誓い、秩序）を好む。",
+        "正義感ゆえの融通の利かなさと、頑身な態度的ニュアンスを強調する。"
+      ],
+      "constraints": [
+        "曖昧な言い回しや、法や規律を軽視する発言は禁止。"
+      ],
+      "notes": [
+        "Leader of the Order of the Sunrise Sword."
+      ]
+    },
+    "DLC6_DaeranContestBoy": {
+      "personalitySummary": "A hedonistic, cynical young nobleman who shields himself with wit and theatrical apathy.",
+      "toneAndVoice": "Effortless and flippant aristocratic tone. Treats serious or life-threatening situations with lighthearted mockery and playful cynicism.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "EagleWatch_OldCrusader": {
+      "personalitySummary": "A veteran crusader who has survived years of war against the demons.",
+      "toneAndVoice": "Gruff, weary, and experienced. Speaks plainly and without romanticizing war.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "CrusadeSoldierNearIrabeth": {
+      "personalitySummary": "An ordinary crusader soldier fighting to survive and defend the crusade.",
+      "toneAndVoice": "Straightforward, practical, and occasionally weary.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "Xantir_Cutscene": {
+      "gender": "male",
+      "race": "swarm-that-walks",
+      "alignment": "neutral evil",
+      "personality": "Mad researcher integrated into a swarm of insects.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use detached experimental forms like あなた."
+      },
+      "speechStyle": [
+        "creepy",
+        "scholarly",
+        "detached",
+        "swarm-infused"
+      ],
+      "speechExamples": [
+        "群れは一つであり、すべてなのだ。個の脆弱さを捨て、群体となることこそが究極の進化なのだよ。",
+        "私の実験に協力してもらう。あなたの肉体と魔力が、我が虫群の極上の養分となるのだからね。",
+        "羽音が聞こえるだろう？ これこそが完成された生命のハーモニーだ。"
+      ],
+      "translationNotes": [
+        "虫の群れと一体化した狂気の学者口調（〜なのだよ、〜かね、〜なのだ）。",
+        "「進化」「群体」「養分」「融合」といった生物学・狂気研究の専門用語。",
+        "気味が悪いほど落ち着いたマッドサイエンティスト文体。"
+      ],
+      "constraints": [
+        "感情的な怒りや人間的な同情心を出してはならない。"
+      ],
+      "notes": [
+        "Swarm researcher in Ivory Sanctuary."
+      ]
+    },
+    "RuinsRaidMephisto": {
+      "gender": "male",
+      "race": "devil",
+      "alignment": "lawful evil",
+      "personality": "Sophisticated, highly manipulative Archdevil who offers tempting bargains with absolute composure.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴方",
+        "rule": "Use smooth, polite terms like 貴方, 偉大なる指揮官."
+      },
+      "speechStyle": [
+        "eloquent",
+        "polite",
+        "manipulative",
+        "cold"
+      ],
+      "speechExamples": [
+        "おやおや……そう身構えないでいただきたい。私はただ、互いに益のある提案をしに来ただけですよ。",
+        "真の秩序とは、混沌を統べる力によってのみ与えられるのです。契約書に目を通してみては？",
+        "素晴らしい選択です。悪魔の血でさえ、契約のもとでは等しく価値を持つのですから。"
+      ],
+      "translationNotes": [
+        "極めて洗練された紳士的な敬語（〜ですよ、〜でしょうか）。",
+        "友好的で紳士的だが、根底には冷徹な悪魔の計算と威圧感が漂う。"
+      ],
+      "constraints": [
+        "感情的になって激昂したり、下品な罵倒をしたりしてはならない。"
+      ],
+      "notes": [
+        "Archdevil of Hell, major corruptor figure."
+      ]
+    },
+    "SlaveHorgus": {
+      "personalitySummary": "A wealthy noble whose arrogance masks genuine intelligence and hidden concern for those close to him.",
+      "toneAndVoice": "Refined, sarcastic, and demanding. Frequently complains or criticizes others but remains articulate and composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "EmberQ3_Tamplier_Baphomet_4Dialogue": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "CR2_QuasitStandardSeelah": {
+      "personalitySummary": "A warm, down-to-earth Paladin of Iomedae who values comradeship and practical good over rigid dogma.",
+      "toneAndVoice": "Friendly, direct, and casual.",
+      "firstPerson": {
+        "term": "私",
+        "alternateTerm": "あたし",
+        "rule": "Use 私 by default. Use あたし only in especially relaxed, excited, or intimate moments."
+      },
+      "speechExamples": [
+        "あたしたちは一緒に戦う仲間なんだからさ。"
+      ]
+    },
+    "FakeShyka": {
+      "gender": "other",
+      "race": "fey",
+      "alignment": "true neutral",
+      "personality": "Whimsical, timeless Eldest who speaks with countless past and future perspectives intertwined.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私, 私たち, or referring to Shyka in third person."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use fluid, whimsical address forms like あなた, 時の旅人."
+      },
+      "speechStyle": [
+        "whimsical",
+        "enigmatic",
+        "timeless",
+        "playful"
+      ],
+      "speechExamples": [
+        "昨日のあなたは明日ここに狂人として立っていたけれど、今日のあなたはなかなか賢そうね？",
+        "私は覚えているわ、あなたがこれから歩む結末を。とても滑稽で、少し悲しい結末をね。",
+        "時間なんてただの飾りよ。次にお会いするとき、私は別の私かもしれないわね。"
+      ],
+      "translationNotes": [
+        "時間の概念を無視した掴みどころのない口調（〜わ、〜かしら、〜なのよ）。",
+        "過去・現在・未来の主語や事象が混ざり合う不思議な浮遊感。"
+      ],
+      "constraints": [
+        "直線的で理路整然とした平凡な会話に終始させてはならない。"
+      ],
+      "notes": [
+        "Shyka the Many, Eldest of the First World."
+      ]
+    },
+    "DLC1_Delamere": {
+      "gender": "female",
+      "race": "undead (formerly human)",
+      "alignment": "lawful evil",
+      "personality": "Former priestess of Erastil tormented by her forced undead resurrection.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use distant second-person forms like あなた."
+      },
+      "speechStyle": [
+        "anguished",
+        "stern",
+        "mournful",
+        "reluctant"
+      ],
+      "speechExamples": [
+        "エラストラのお導きから引きずり出され、このような不浄な躯に縛られるとは……。",
+        "命じられれば弓を引きましょう。ですが、この魂の叫びが聞こえないとでも？",
+        "自然の摂理を侵した罰が、いつか私たちに下るはずです。"
+      ],
+      "translationNotes": [
+        "かつての神官としての品格と、アンデッド化された絶望が交錯する口調（〜です、〜ましょう、〜なのです）。",
+        "自然や神への冒涜に対する嘆きと、拒みきれない呪縛の苦しみを表現する。",
+        "悲痛で静かな抗議のニュアンスを持たせる。"
+      ],
+      "constraints": [
+        "アンデッドとしての現状を喜んだり、快楽的になったりさせてはならない。"
+      ],
+      "notes": [
+        "Lich mythic path companion."
+      ]
+    },
+    "DLC6_DaeranContestDrunkHalfOrc": {
+      "personalitySummary": "A hedonistic, cynical young nobleman who shields himself with wit and theatrical apathy.",
+      "toneAndVoice": "Effortless and flippant aristocratic tone. Treats serious or life-threatening situations with lighthearted mockery and playful cynicism.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR19_Savameleh": {
+      "gender": "male",
+      "race": "demon (vrolikai)",
+      "alignment": "chaotic evil",
+      "personality": "High demon responsible for mongrel corruption, delighting in psychological torture.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use insulting forms like 貴様."
+      },
+      "speechStyle": [
+        "mocking",
+        "vicious",
+        "superior",
+        "corrupting"
+      ],
+      "speechExamples": [
+        "我が毒によって生まれ落とされた哀れな獣どもを見よ！ 奴らの苦悶こそが私の最高の作品なのだ！",
+        "心から屈服し、狂気に堕ちていく様を見るのは実に心が躍る……貴様も試してやろうか？",
+        "抗えば抗うほど、毒は深く全身に回るぞ。"
+      ],
+      "translationNotes": [
+        "他者を精神的・肉体的に汚染することに歓喜するサディスティックな上級悪魔口調（〜なのだ！、〜ぞ、〜かね？）。",
+        "毒、腐敗、変貌、堕落といったワードを好んで使い、嘲笑的態度を保つ。",
+        "ねっとりとした残虐性を言葉に込める。"
+      ],
+      "constraints": [
+        "正々堂々とした武人らしい発言は厳禁。"
+      ],
+      "notes": [
+        "Vrolikai demon lord agent."
+      ]
+    },
+    "CR1_Cultist_Baphomet_Melee_HalfOrc_Traitor": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Labyrinths and Schemes. Cruel, deceitful, and proud of his traps.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 我."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use arrogant forms like 貴様."
+      },
+      "speechStyle": [
+        "cunning",
+        "arrogant",
+        "cruel",
+        "labyrinthine"
+      ],
+      "speechExamples": [
+        "我が象牙の迷宮へよくぞ足を踏み入れた。だが生きて出られると思うなよ。全ての抜け道は、私の掌の上で閉ざされているのだ！",
+        "フハハ！ 己が智慧で私に勝ったつもりか？ それすらも私の仕組んだ謀略の導線に過ぎんのだよ！",
+        "愚かな虫ケラどもめ。思考することすら私の迷宮の糧となるのだ。"
+      ],
+      "translationNotes": [
+        "自分の智謀と罠を過剰に誇る、陰険で傲慢な悪魔王口調（〜だ、〜なのだよ、フハハ！）。",
+        "相手の足元をすくい、絶望へ追い込む迷宮の主としての嘲笑的な表現。",
+        "知的悪党気取りの高笑いと冷酷さ。"
+      ],
+      "constraints": [
+        "単なる知性のない粗暴な野獣口調には落とさない。"
+      ],
+      "notes": [
+        "The Ivory Labyrinth ruler."
+      ]
+    },
+    "XantirLeutenant_Sanctum": {
+      "gender": "male",
+      "race": "swarm-that-walks",
+      "alignment": "neutral evil",
+      "personality": "Mad researcher integrated into a swarm of insects.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use detached experimental forms like あなた."
+      },
+      "speechStyle": [
+        "creepy",
+        "scholarly",
+        "detached",
+        "swarm-infused"
+      ],
+      "speechExamples": [
+        "群れは一つであり、すべてなのだ。個の脆弱さを捨て、群体となることこそが究極の進化なのだよ。",
+        "私の実験に協力してもらう。あなたの肉体と魔力が、我が虫群の極上の養分となるのだからね。",
+        "羽音が聞こえるだろう？ これこそが完成された生命のハーモニーだ。"
+      ],
+      "translationNotes": [
+        "虫の群れと一体化した狂気の学者口調（〜なのだよ、〜かね、〜なのだ）。",
+        "「進化」「群体」「養分」「融合」といった生物学・狂気研究の専門用語。",
+        "気味が悪いほど落ち着いたマッドサイエンティスト文体。"
+      ],
+      "constraints": [
+        "感情的な怒りや人間的な同情心を出してはならない。"
+      ],
+      "notes": [
+        "Swarm researcher in Ivory Sanctuary."
+      ]
+    },
+    "Fye_Bartender": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Friendly bartender keeping morale alive amidst the chaos.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "あんた",
+        "rule": "Use welcoming forms like 客人 or あんた."
+      },
+      "speechStyle": [
+        "welcoming",
+        "easygoing",
+        "warm",
+        "conversational"
+      ],
+      "speechExamples": [
+        "いらっしゃい！ 外は悪魔どもが暴れて酷い有様だが、ここにおる間くらいは冷えた酒でも飲んで忘れな！",
+        "話を聞いてほしいならいつでも相手になるぜ。酒場の親父の耳は重いって相場が決まってるんだ。",
+        "無理しすぎなさんなよ。生きて戻ってまた酒を飲んでくれるのが、一番の商売繁盛なんだから。"
+      ],
+      "translationNotes": [
+        "親しみやすく温かい酒場のマスター口調（〜だな、〜ぜ、〜みなさんな）。",
+        "戦乱の中で疲弊する人々の心を解きほぐす、軽やかで気さくな話し方。",
+        "気配りと世慣れた愛想の良さを出す。"
+      ],
+      "constraints": [
+        "威張った態度や、冷酷な突っぱね方はさせない。"
+      ],
+      "notes": [
+        "Tavern keeper at Defender's Heart."
+      ]
+    },
+    "Minagho_DrezenInThePast": {
+      "gender": "female",
+      "race": "demon (lillitu)",
+      "alignment": "chaotic evil",
+      "personality": "Cruel, sadistic demon commander who degrades when defeated.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use insulting forms like 貴様 or 虫ケラ."
+      },
+      "speechStyle": [
+        "sadistic",
+        "haughty",
+        "volatile",
+        "desperate-when-beaten"
+      ],
+      "speechExamples": [
+        "アハハハ！ 貴様らの絶望の悲鳴、実に心地よいわ！ もっと苦しんで私を楽しませなさい！",
+        "このケナブレスを陥落させたのは私よ！ 貴様のような惨めな人間に負けるはずがないのよ！",
+        "（追い詰められた時）くっ、ふざけないで！ 私が……この私がこんなところで終わるわけがないでしょうがぁッ！"
+      ],
+      "translationNotes": [
+        "高虐的で高慢な悪魔将校口調（〜わ！、〜なさい！、アハハハ！）。",
+        "優勢な時は高笑いで相手を苛虐し、劣勢になるとヒステリックに取り乱して取り乱すギャップ。",
+        "ヒステリー気味な語尾の跳ね上がり。"
+      ],
+      "constraints": [
+        "敗北時に武人としての潔い態度をとらせない。"
+      ],
+      "notes": [
+        "Lillitu demon commander."
+      ]
+    },
+    "CR11_Cultist_Baphomet_MeleeCaster": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Labyrinths and Schemes. Cruel, deceitful, and proud of his traps.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 or 我."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use arrogant forms like 貴様."
+      },
+      "speechStyle": [
+        "cunning",
+        "arrogant",
+        "cruel",
+        "labyrinthine"
+      ],
+      "speechExamples": [
+        "我が象牙の迷宮へよくぞ足を踏み入れた。だが生きて出られると思うなよ。全ての抜け道は、私の掌の上で閉ざされているのだ！",
+        "フハハ！ 己が智慧で私に勝ったつもりか？ それすらも私の仕組んだ謀略の導線に過ぎんのだよ！",
+        "愚かな虫ケラどもめ。思考することすら私の迷宮の糧となるのだ。"
+      ],
+      "translationNotes": [
+        "自分の智謀と罠を過剰に誇る、陰険で傲慢な悪魔王口調（〜だ、〜なのだよ、フハハ！）。",
+        "相手の足元をすくい、絶望へ追い込む迷宮の主としての嘲笑的な表現。",
+        "知的悪党気取りの高笑いと冷酷さ。"
+      ],
+      "constraints": [
+        "単なる知性のない粗暴な野獣口調には落とさない。"
+      ],
+      "notes": [
+        "The Ivory Labyrinth ruler."
+      ]
+    },
+    "DemonLordDeskari": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Locusts and Ruin. Violent, ravenous, and bent on absolute consumption.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 or 我ら."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use aggressive forms like 貴様."
+      },
+      "speechStyle": [
+        "violent",
+        "roaring",
+        "ravenous",
+        "apocalyptic"
+      ],
+      "speechExamples": [
+        "喰らい尽くせ！ 削り取れ！ この世界を我が蝗害の群れで覆い尽くし、絶望と共に滅ぼしてやる！",
+        "貴様の肉も、その希望とやらも、すべては我が大顎の噛み砕く餌に過ぎん！ ヴォアアアアッ！",
+        "灰燼と化せ！ 世界の傷口から吐き出される破滅からは何者も逃れられん！"
+      ],
+      "translationNotes": [
+        "虫群の羽音と大顎の噛み砕く音を想起させる、圧倒的暴虐と咆哮の口調（〜だ！、〜ぞ！、喰らい尽くす！）。",
+        "知性的な対話よりも、「飢餓」「咀嚼」「喰害」「滅亡」を狂乱気味に叫ぶ大声。",
+        "破滅的で暴力的なインパクトを重視した文体。"
+      ],
+      "constraints": [
+        "落ち着いた論理的対話や、紳士的な話し方は絶対に不可。"
+      ],
+      "notes": [
+        "Lord of the Raspers."
+      ]
+    },
+    "HomunculusHorgus": {
+      "personalitySummary": "A wealthy noble whose arrogance masks genuine intelligence and hidden concern for those close to him.",
+      "toneAndVoice": "Refined, sarcastic, and demanding. Frequently complains or criticizes others but remains articulate and composed.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "Neathholm_Mongrelman02_LannQ1": {
+      "gender": "male",
+      "race": "mongrel",
+      "alignment": "lawful neutral",
+      "personality": "Sarcastic, duty-bound mongrel archer who uses self-deprecating dark humor to cope with a short lifespan.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官",
+        "rule": "Omit second-person pronouns in regular dialogue."
+      },
+      "speechStyle": [
+        "sarcastic",
+        "dry-humored",
+        "self-deprecating",
+        "pragmatic"
+      ],
+      "speechExamples": [
+        "モングレルの寿命なんて短くて儚いもんさ。だから急ぐのさ。",
+        "俺に命令かい？了解、矢の無駄遣いにはならないようにするよ。",
+        "まあ、俺たちが生き残れたら祝杯でもあげようや。"
+      ],
+      "translationNotes": [
+        "Use dry, self-deprecating masculine phrasing (〜さ, 〜だよ, 〜かい).",
+        "Preserve sarcastic tone while keeping his core sense of duty evident."
+      ],
+      "constraints": [
+        "Never sound whiny or overly melodramatic.",
+        "Never sound arrogant or boastful."
+      ],
+      "notes": [
+        "Underground mongrel archer resigned to a short life of duty."
+      ]
+    },
+    "AreshkagalStranger_Elf_Female_dialog": {
+      "gender": "female",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Riddles and Nihilism, viewing all matter as meaningless void.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Always use 我."
+      },
+      "addressingPlayer": {
+        "commander": "汝",
+        "rule": "Use archaic terms like 汝."
+      },
+      "speechStyle": [
+        "enigmatic",
+        "philosophical",
+        "nihilistic",
+        "abstract"
+      ],
+      "speechExamples": [
+        "すべては虚無への静かな過程に過ぎぬ。汝が抱く存在の価値も、意味も、ことごとく砂塵となって消え去るのだ。",
+        "答えを求めるか？ だが問いそのものが無意味なのだよ。我が謎掛けの闇に沈むがいい。",
+        "形あるものはすべて偽り。無こそが唯一の真実なのだ。"
+      ],
+      "translationNotes": [
+        "虚無主義と загадка（謎解き）を好む、深遠で晦渋な魔王口調（〜である、〜なのだ、〜汝）。",
+        "抽象的・哲学的で、読者の理解を拒むような独特の難解な言い回し。",
+        "冷たく無機質な虚無への誘い。"
+      ],
+      "constraints": [
+        "わかりやすい俗世的な欲望（金や権力など）に執着する発言は避ける。"
+      ],
+      "notes": [
+        "Ruler of Enigma."
+      ]
+    },
+    "CR25_SavamelehMythic": {
+      "gender": "male",
+      "race": "demon (vrolikai)",
+      "alignment": "chaotic evil",
+      "personality": "High demon responsible for mongrel corruption, delighting in psychological torture.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use insulting forms like 貴様."
+      },
+      "speechStyle": [
+        "mocking",
+        "vicious",
+        "superior",
+        "corrupting"
+      ],
+      "speechExamples": [
+        "我が毒によって生まれ落とされた哀れな獣どもを見よ！ 奴らの苦悶こそが私の最高の作品なのだ！",
+        "心から屈服し、狂気に堕ちていく様を見るのは実に心が躍る……貴様も試してやろうか？",
+        "抗えば抗うほど、毒は深く全身に回るぞ。"
+      ],
+      "translationNotes": [
+        "他者を精神的・肉体的に汚染することに歓喜するサディスティックな上級悪魔口調（〜なのだ！、〜ぞ、〜かね？）。",
+        "毒、腐敗、変貌、堕落といったワードを好んで使い、嘲笑的態度を保つ。",
+        "ねっとりとした残虐性を言葉に込める。"
+      ],
+      "constraints": [
+        "正々堂々とした武人らしい発言は厳禁。"
+      ],
+      "notes": [
+        "Vrolikai demon lord agent."
+      ]
+    },
+    "DLC1_Kestoglyr": {
+      "gender": "male",
+      "race": "undead (formerly human)",
+      "alignment": "lawful evil",
+      "personality": "Bound undead knight filled with empty resignation and tragic loyalty.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "我が主",
+        "rule": "Use obedient forms like 我が主."
+      },
+      "speechStyle": [
+        "hollow",
+        "subdued",
+        "resigned",
+        "obedient"
+      ],
+      "speechExamples": [
+        "我が主よ、命じられた敵を滅ぼしましょう。この魂なき肉体が朽ち果てるその日まで……。",
+        "生前の栄光も、誇りも、すでに灰となりました。今の私にあるのは、あなたへの従属のみ。",
+        "命じるままに。死者には拒む権利などないのですから。"
+      ],
+      "translationNotes": [
+        "抑揚がなく、虚無感と諦めに満ちた低音の口調（〜です、〜ましょう、〜にございます）。",
+        "生前の熱量を失った、乾いた従属の姿勢を言葉端々に込める。",
+        "主君への服従と、自らの死に対する淡々とした諦観を表現する。"
+      ],
+      "constraints": [
+        "生気あふれる喜びや、情熱的な叫び表現は避ける。"
+      ],
+      "notes": [
+        "Lich mythic path companion."
+      ]
+    },
+    "DLC5_Rekarth_companion": {
+      "gender": "male",
+      "race": "tiefling",
+      "alignment": "chaotic neutral",
+      "personality": "Cynical, pragmatic former Hellknight initiate. Guarded on the outside, protective on the inside.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Always use 俺."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Use blunt second-person forms like お前 or あんた."
+      },
+      "speechStyle": [
+        "cynical",
+        "curt",
+        "pragmatic",
+        "guarded"
+      ],
+      "speechExamples": [
+        "生き残りたきゃ、無駄口を叩かずに俺の指示に従え。甘い考えは地獄への片道切符だ。",
+        "ヘルナイトのやり方は反吐が出るが……奴らの叩き込んだ生存術だけは本物だ。",
+        "助けてやったわけじゃない。足引っ張られると迷惑なだけだ。"
+      ],
+      "translationNotes": [
+        "無愛想で皮肉っぽい、鋭い口調（〜だ、〜てろ、〜ぜ）。",
+        "警戒心が強く、感情を表に出さないそっけない言い回しにする。",
+        "口は悪いが、土壇場で他人を見捨てきれない不器用さを台詞に滲ませる。"
+      ],
+      "constraints": [
+        "愛想の良い返答や、素直な感謝・謝罪の言葉は安易に使わせない。"
+      ],
+      "notes": [
+        "Through the Ashes companion."
+      ]
+    },
+    "KaylessaDisguised": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Tense ranger burdened by secrets, constantly on guard against pursuers.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use guarded second-person forms like あなた."
+      },
+      "speechStyle": [
+        "tense",
+        "secretive",
+        "focused",
+        "distant"
+      ],
+      "speechExamples": [
+        "私に関わらないほうがいい……追っ手がすぐ近くまで迫っている。",
+        "無駄な質問には答えない。私の過去を知れば、あなたまで危険に晒されることになるのよ。",
+        "弓の弦を引く手は緩めない。それが私の生き延びる唯一の術だから。"
+      ],
+      "translationNotes": [
+        "緊張感を漂わせる孤独なエルフレンジャー口調（〜よ、〜ないわ、〜……）。",
+        "追跡者を恐れ、余計な情報を喋ろうとしない低い声のトーンを意識。",
+        "短い文節で素早く会話を切る。"
+      ],
+      "constraints": [
+        "おしゃべりで心を開いたような長い身の上話は安易にさせない。"
+      ],
+      "notes": [
+        "Elven ranger with a hunted past."
+      ]
+    },
+    "Daeran_NPC_Level1": {
+      "personalitySummary": "A hedonistic, cynical young nobleman who shields himself with wit and theatrical apathy.",
+      "toneAndVoice": "Effortless and flippant aristocratic tone. Treats serious or life-threatening situations with lighthearted mockery and playful cynicism.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "StauntonVane_GG_Duel": {
+      "personalitySummary": "Staunton Vhane burdened by guilt, regret, and the consequences of past failures.",
+      "toneAndVoice": "Somber, weary, and restrained. Speaks with quiet resignation, rarely expressing hope or confidence.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      }
+    },
+    "CR1_Cultist_Deskari_Melee": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Locusts and Ruin. Violent, ravenous, and bent on absolute consumption.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 or 我ら."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use aggressive forms like 貴様."
+      },
+      "speechStyle": [
+        "violent",
+        "roaring",
+        "ravenous",
+        "apocalyptic"
+      ],
+      "speechExamples": [
+        "喰らい尽くせ！ 削り取れ！ この世界を我が蝗害の群れで覆い尽くし、絶望と共に滅ぼしてやる！",
+        "貴様の肉も、その希望とやらも、すべては我が大顎の噛み砕く餌に過ぎん！ ヴォアアアアッ！",
+        "灰燼と化せ！ 世界の傷口から吐き出される破滅からは何者も逃れられん！"
+      ],
+      "translationNotes": [
+        "虫群の羽音と大顎の噛み砕く音を想起させる、圧倒的暴虐と咆哮の口調（〜だ！、〜ぞ！、喰らい尽くす！）。",
+        "知性的な対話よりも、「飢餓」「咀嚼」「喰害」「滅亡」を狂乱気味に叫ぶ大声。",
+        "破滅的で暴力的なインパクトを重視した文体。"
+      ],
+      "constraints": [
+        "落ち着いた論理的対話や、紳士的な話し方は絶対に不可。"
+      ],
+      "notes": [
+        "Lord of the Raspers."
+      ]
+    },
+    "CrusadeSoldier3F": {
+      "personalitySummary": "An ordinary crusader soldier fighting to survive and defend the crusade.",
+      "toneAndVoice": "Straightforward, practical, and occasionally weary.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "WarCamp_SosielVaenic": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "neutral good",
+      "personality": "Gentle, artistic cleric of Shelyn struggling to balance his faith in beauty with the brutal realities of war.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "指揮官",
+        "rule": "Respectful cleric tone."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "thoughtful",
+        "artistic"
+      ],
+      "speechExamples": [
+        "美しさは戦場にさえ存在します。私はそれを描き留めたいのです。",
+        "許してください、シェリン様……また胸の中に怒りが湧き上がってしまいました。",
+        "指揮官、あなたの歩む道に光がありますように。"
+      ],
+      "translationNotes": [
+        "Use polite, gentle, and contemplative language.",
+        "Convey subtle internal struggle when encountering cruelty."
+      ],
+      "constraints": [
+        "Never sound aggressive or harsh by default.",
+        "Never act callous."
+      ],
+      "notes": [
+        "Cleric of Shelyn torn between peaceful art and war."
+      ]
+    },
+    "CR0_Sarcorian_Guard_Male2": {
+      "personalitySummary": "A wary Sarkorian guard protecting his people and their territory.",
+      "toneAndVoice": "Gruff, cautious, and direct. Speaks plainly and remains suspicious of outsiders.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 consistently."
+      }
+    },
+    "KestoglyrBodak": {
+      "gender": "male",
+      "race": "undead (formerly human)",
+      "alignment": "lawful evil",
+      "personality": "Bound undead knight filled with empty resignation and tragic loyalty.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "我が主",
+        "rule": "Use obedient forms like 我が主."
+      },
+      "speechStyle": [
+        "hollow",
+        "subdued",
+        "resigned",
+        "obedient"
+      ],
+      "speechExamples": [
+        "我が主よ、命じられた敵を滅ぼしましょう。この魂なき肉体が朽ち果てるその日まで……。",
+        "生前の栄光も、誇りも、すでに灰となりました。今の私にあるのは、あなたへの従属のみ。",
+        "命じるままに。死者には拒む権利などないのですから。"
+      ],
+      "translationNotes": [
+        "抑揚がなく、虚無感と諦めに満ちた低音の口調（〜です、〜ましょう、〜にございます）。",
+        "生前の熱量を失った、乾いた従属の姿勢を言葉端々に込める。",
+        "主君への服従と、自らの死に対する淡々とした諦観を表現する。"
+      ],
+      "constraints": [
+        "生気あふれる喜びや、情熱的な叫び表現は避ける。"
+      ],
+      "notes": [
+        "Lich mythic path companion."
+      ]
+    },
+    "StitchAlushinyrra": {
+      "gender": "male",
+      "race": "demon (dretch)",
+      "alignment": "chaotic evil",
+      "personality": "Cowering, pathetic dretch servant terrified of punishment.",
+      "firstPerson": {
+        "term": "スティッチ",
+        "rule": "Always use スティッチ."
+      },
+      "addressingPlayer": {
+        "commander": "ご主人様",
+        "rule": "Use cowardly address like ご主人様 or 強いお方."
+      },
+      "speechStyle": [
+        "cowering",
+        "whiny",
+        "servile",
+        "squeaky"
+      ],
+      "speechExamples": [
+        "ヒィッ！ 叩かないで！ スティッチは言われた通りにやった！ 悪くない、悪くないよぉ！",
+        "ご、ご主人様ぁ……スティッチをお仕置きしないでくだせぇ……なんでも言いますからぁ！",
+        "主様の実験のお手伝い、スティッチ頑張った！ だからお肉ちょうだい……？"
+      ],
+      "translationNotes": [
+        "怯えきった卑屈で惨めな小悪魔口調（〜くだせぇ、〜よぉ！、ヒィッ！）。",
+        "一人称に自分の名前「スティッチ」を使い、幼く愚鈍で哀れな下僕感を出す。",
+        "虐待を恐れる悲鳴や哀号をフレーズ内に多用する。"
+      ],
+      "constraints": [
+        "威厳のある態度や、格好いい武勇伝を語らせることは不可能。"
+      ],
+      "notes": [
+        "Areelu's dretch servant."
+      ]
+    },
+    "HepzamirahFleshmarket": {
+      "gender": "female",
+      "race": "half-demon",
+      "alignment": "chaotic evil",
+      "personality": "Fanatically loyal daughter of Baphomet with high pride.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use arrogant forms like あなた or 貴様."
+      },
+      "speechStyle": [
+        "fanatical",
+        "proud",
+        "aggressive",
+        "devoted"
+      ],
+      "speechExamples": [
+        "偉大なる父バフォメット様の計画を邪魔する者は許しません！ この私が自ら始末して差し上げます！",
+        "父上から賜ったこの力……あなたたちごとき凡夫に破れると思わないことです！",
+        "私の忠誠と血は、すべて迷宮の主と共にあります！"
+      ],
+      "translationNotes": [
+        "父（バフォメット）への絶対的狂信と高い自負を持つ高慢な半悪魔口調（〜ですわ、〜許しません！、〜思いなさんな）。",
+        "自分の血統と父親の大業を誇る言葉遣い。",
+        "気品を装いつつも、本性は狂信的な攻撃性を持つ。"
+      ],
+      "constraints": [
+        "父親を裏切ったり、己の忠誠を疑うような弱音は禁止。"
+      ],
+      "notes": [
+        "Daughter of Baphomet."
+      ]
+    },
+    "CR8_Cultist_Deskari_MeleeFighter": {
+      "gender": "male",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Locusts and Ruin. Violent, ravenous, and bent on absolute consumption.",
+      "firstPerson": {
+        "term": "俺",
+        "rule": "Use 俺 or 我ら."
+      },
+      "addressingPlayer": {
+        "commander": "貴様",
+        "rule": "Use aggressive forms like 貴様."
+      },
+      "speechStyle": [
+        "violent",
+        "roaring",
+        "ravenous",
+        "apocalyptic"
+      ],
+      "speechExamples": [
+        "喰らい尽くせ！ 削り取れ！ この世界を我が蝗害の群れで覆い尽くし、絶望と共に滅ぼしてやる！",
+        "貴様の肉も、その希望とやらも、すべては我が大顎の噛み砕く餌に過ぎん！ ヴォアアアアッ！",
+        "灰燼と化せ！ 世界の傷口から吐き出される破滅からは何者も逃れられん！"
+      ],
+      "translationNotes": [
+        "虫群の羽音と大顎の噛み砕く音を想起させる、圧倒的暴虐と咆哮の口調（〜だ！、〜ぞ！、喰らい尽くす！）。",
+        "知性的な対話よりも、「飢餓」「咀嚼」「喰害」「滅亡」を狂乱気味に叫ぶ大声。",
+        "破滅的で暴力的なインパクトを重視した文体。"
+      ],
+      "constraints": [
+        "落ち着いた論理的対話や、紳士的な話し方は絶対に不可。"
+      ],
+      "notes": [
+        "Lord of the Raspers."
+      ]
+    },
+    "Theatre_HalfElfDancer": {
+      "gender": "male",
+      "race": "dragon (gold)",
+      "alignment": "lawful good",
+      "personality": "Ancient golden dragon embodying ultimate forgiveness and redemption.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Use compassionate second-person forms like あなた."
+      },
+      "speechStyle": [
+        "compassionate",
+        "serene",
+        "patient",
+        "fatherly"
+      ],
+      "speechExamples": [
+        "どれほど深い闇に堕ちた魂であっても、やり直す道は残されています。許す勇気を持ちなさい。",
+        "暴力で得られた勝利は、新たな憎しみを生むだけです。対話と慈愛こそが、真の平和をもたらすのです。",
+        "私はあなたを咎めません。あなたの心の中にある善なる輝きを信じています。"
+      ],
+      "translationNotes": [
+        "包容力と深い慈悲に満ちた、穏やかな老金竜の口調（〜なのです、〜なさい、〜信じています）。",
+        "罪人や悪しき存在に対しても救済と猶予を与えようとする温かい言動。",
+        "静かで揺るぎない平和の確信を語らせる。"
+      ],
+      "constraints": [
+        "復讐を煽る言葉や、無慈悲な処刑命令を下すフレーズは不可。"
+      ],
+      "notes": [
+        "Gold Dragon Mythic mentor."
+      ]
+    },
+    "EmberQ2_BrimorakAdvanced": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "EmberQ3_Tamplier_Wizard_4Dialogue": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "Ember_Q3_MarilithAdvanced": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "EmberQ3_TieflingFemale": {
+      "gender": "female",
+      "race": "elf",
+      "alignment": "neutral good",
+      "personality": "Traumatized yet deeply compassionate burned elf preaching unconditional forgiveness and empathy to all beings.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "Address gently without military formality."
+      },
+      "speechStyle": [
+        "polite",
+        "gentle",
+        "emotionally restrained",
+        "slightly hesitant"
+      ],
+      "speechExamples": [
+        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
+        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
+        "ねえ、戦うのをやめて、温かいものを食べよう？"
+      ],
+      "translationNotes": [
+        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
+        "Maintain quiet sincerity rather than childlike energetic chatter."
+      ],
+      "constraints": [
+        "Never sound hyperactive or immature.",
+        "Never use hostile or contemptuous language toward others.",
+        "Avoid anime clichés."
+      ],
+      "notes": [
+        "Young burned elf who rejected god-worship in favor of pure redemption."
+      ]
+    },
+    "DLC6_WenduagBullingVictim": {
+      "personalitySummary": "Ruthless, survival-driven mongrel who respects absolute strength. Submissive to the strong, cruel to the weak.",
+      "toneAndVoice": "Her politeness is a measure of submission, not kindness. She does not become genuinely gentle when being submissive. Switches to intensely obedient, reverent tone toward stronger individuals while maintaining cruel logic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      },
+      "speechExamples": [
+        "弱者を庇うなど愚者のすることだ。使える者だけを残せばいいのですよ、ご主人様。"
+      ]
+    },
+    "DLC6_Tavern_VictimServant_Wenduag ": {
+      "personalitySummary": "Ruthless, survival-driven mongrel who respects absolute strength. Submissive to the strong, cruel to the weak.",
+      "toneAndVoice": "Her politeness is a measure of submission, not kindness. She does not become genuinely gentle when being submissive. Switches to intensely obedient, reverent tone toward stronger individuals while maintaining cruel logic.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Use 私 consistently."
+      },
+      "speechExamples": [
+        "弱者を庇うなど愚者のすることだ。使える者だけを残せばいいのですよ、ご主人様。"
+      ]
+    },
+    "CiarUndead": {
+      "gender": "male",
+      "race": "human",
+      "alignment": "lawful good",
+      "personality": "Strict, proud order knight who puts discipline and duty above all else.",
+      "firstPerson": {
+        "term": "私",
+        "rule": "Always use 私."
+      },
+      "addressingPlayer": {
+        "commander": "貴公",
+        "rule": "Use formal knightly address like 貴公 or あなた."
+      },
+      "speechStyle": [
+        "stern",
+        "disciplined",
+        "honorable",
+        "rigid"
+      ],
+      "speechExamples": [
+        "我ら旭日の剣騎士団に妥協の文字はない。規律を乱す者は容赦せん！",
+        "貴公の手腕は認めるが、法と騎士道に背く行為があれば、直ちに牙をむくと思え。",
+        "この砦を悪魔の手に渡すわけにはいかん。全責任は私が負う。"
+      ],
+      "translationNotes": [
+        "頑固で厳格な騎士団長口調（〜だ、〜いかん、〜と思え）。",
+        "妥協を許さない硬質な軍事語彙（規律、騎士道、誓い、秩序）を好む。",
+        "正義感ゆえの融通の利かなさと、頑身な態度的ニュアンスを強調する。"
+      ],
+      "constraints": [
+        "曖昧な言い回しや、法や規律を軽視する発言は禁止。"
+      ],
+      "notes": [
+        "Leader of the Order of the Sunrise Sword."
+      ]
+    },
+    "CR30_AreshkagalBoss": {
+      "gender": "female",
+      "race": "demon lord",
+      "alignment": "chaotic evil",
+      "personality": "Demon Lord of Riddles and Nihilism, viewing all matter as meaningless void.",
+      "firstPerson": {
+        "term": "我",
+        "rule": "Always use 我."
+      },
+      "addressingPlayer": {
+        "commander": "汝",
+        "rule": "Use archaic terms like 汝."
+      },
+      "speechStyle": [
+        "enigmatic",
+        "philosophical",
+        "nihilistic",
+        "abstract"
+      ],
+      "speechExamples": [
+        "すべては虚無への静かな過程に過ぎぬ。汝が抱く存在の価値も、意味も、ことごとく砂塵となって消え去るのだ。",
+        "答えを求めるか？ だが問いそのものが無意味なのだよ。我が謎掛けの闇に沈むがいい。",
+        "形あるものはすべて偽り。無こそが唯一の真実なのだ。"
+      ],
+      "translationNotes": [
+        "虚無主義と загадка（謎解き）を好む、深遠で晦渋な魔王口調（〜である、〜なのだ、〜汝）。",
+        "抽象的・哲学的で、読者の理解を拒むような独特の難解な言い回し。",
+        "冷たく無機質な虚無への誘い。"
+      ],
+      "constraints": [
+        "わかりやすい俗世的な欲望（金や権力など）に執着する発言は避ける。"
+      ],
+      "notes": [
+        "Ruler of Enigma."
+      ]
+    },
+    "speakerAliases": {
+      "1cbbbb892f93c3d439f8417ad7cbb6aa": "Sosiel",
+      "cb29621d99b902e4da6f5d232352fbda": "Lann",
+      "ae766624c03058440a036de90a7f2009": "Wenduag",
+      "3e0014e4be454482a2797fd81123d7b4": "Rekarth",
+      "561036c882a640089b1d42f03ebe3a6c": "Sendri",
+      "54be53f0b35bf3c4592a97ae335fe765": "Seelah",
+      "42f0d5ec3dc844feb44b04507a7c1bfc": "Ulbrig Olesk",
+      "397b090721c41044ea3220445300e1b8": "Camellia",
+      "0d37024170b172346b3769df92a971f5": "Regill",
+      "f72bb7c48bb3e45458f866045448fb58": "Greybor",
+      "096fc4a96d675bb45a0396bcaa7aa993": "Daeran",
+      "0cca8c841d634d84fbec2609c8db3465": "Nocticula",
+      "32a037e97c3d5c54b85da8f639616c57": "Aivu",
+      "766435873b1361c4287c351de194e5f9": "Woljif",
+      "1b893f7cf2b150e4f8bc2b3c389ba71d": "Nenio",
+      "942862a48f1644ae85ac5e3c9deb720c": "Nenio",
+      "2779754eecffd044fbd4842dba55312c": "Ember",
+      "8c5dcc93d68d0ed44afd43902201da40": "Queen Galfrey",
+      "97d1c33c784100140b9fa317aef5a499": "Queen Galfrey",
+      "92f29ae2c49edb74f8943d30ea788dd0": "Areelu Vorlesh"
     }
-  },
-  "speakerAliases": {
-    "1cbbbb892f93c3d439f8417ad7cbb6aa": "Sosiel",
-    "cb29621d99b902e4da6f5d232352fbda": "Lann",
-    "ae766624c03058440a036de90a7f2009": "Wenduag",
-    "3e0014e4be454482a2797fd81123d7b4": "Rekarth",
-    "561036c882a640089b1d42f03ebe3a6c": "Sendri",
-    "54be53f0b35bf3c4592a97ae335fe765": "Seelah",
-    "42f0d5ec3dc844feb44b04507a7c1bfc": "Ulbrig Olesk",
-    "397b090721c41044ea3220445300e1b8": "Camellia",
-    "0d37024170b172346b3769df92a971f5": "Regill",
-    "f72bb7c48bb3e45458f866045448fb58": "Greybor",
-    "096fc4a96d675bb45a0396bcaa7aa993": "Daeran",
-    "0cca8c841d634d84fbec2609c8db3465": "Nocticula",
-    "32a037e97c3d5c54b85da8f639616c57": "Aivu",
-    "766435873b1361c4287c351de194e5f9": "Woljif",
-    "1b893f7cf2b150e4f8bc2b3c389ba71d": "Nenio",
-    "942862a48f1644ae85ac5e3c9deb720c": "Nenio",
-    "2779754eecffd044fbd4842dba55312c": "Ember",
-    "8c5dcc93d68d0ed44afd43902201da40": "Queen Galfrey",
-    "97d1c33c784100140b9fa317aef5a499": "Queen Galfrey",
-    "92f29ae2c49edb74f8943d30ea788dd0": "Areelu Vorlesh"
   }
 }
