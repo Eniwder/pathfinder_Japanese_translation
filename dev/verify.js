@@ -66,7 +66,13 @@ function compareMfTags(original, translated) {
   const sourceCount = mfTags(original).length;
   const translatedCount = mfTags(translated).length;
   const malformed = (translated.match(/\{mf\|[^}]*\}/g) ?? []).filter(tag => !/^\{mf\|[^|]*\|[^}]*\}$/.test(tag));
-  return sourceCount !== translatedCount || malformed.length ? { sourceCount, translatedCount, malformed } : null;
+  // Dropping {mf|...} entirely is a deliberate, allowed style choice (see translationGuide.md
+  // "制御タグ") when Japanese reads naturally without the gender split — not an error. Only
+  // flag malformed tags, or a partial mismatch (some but not all {mf} tags kept/lost), which
+  // usually means real content was skipped rather than a considered stylistic omission.
+  if (malformed.length) return { sourceCount, translatedCount, malformed };
+  if (translatedCount === 0) return null;
+  return sourceCount !== translatedCount ? { sourceCount, translatedCount, malformed } : null;
 }
 
 function controlTags(text) { return (text.match(/\{(?:g|d)\|[^}]*\}|\{\/(?:g|d)\}|\{n\}|\{\/n\}|\{br\}|\{name\}/g) ?? []).sort(); }
