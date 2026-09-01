@@ -175,9 +175,9 @@ function writeChunk(dir, index, entries) {
     chunkIndex: index,
     keys: entries.length,
     instructions: [
-      '各 entry の "translation" に自然な日本語訳を入れる（CLAUDE.md の翻訳ルール・speakerProfile に従う）。',
+      '各 entry の "translation" に自然な日本語訳を入れる（res/translationGuide.md の翻訳ルール・speakerProfile に従う）。',
       '<ctrl_N/> は個数・内容を変えずそのままコピーする（削除・翻訳・並べ替え禁止）。',
-      '{mf|男性形|女性形} は男性形を先にしたまま2つとも残す（可能なら性別中立な訳にして mf 自体を無くしてよい）。',
+      '読点（、）を多用しない。呼びかけの直後・逆接・条件節の後・三つ以上の並列列挙など、無いと不自然/誤読される箇所だけに絞る。',
       '訳さない/わからない entry は "translation": null のままにしておく（import 時にスキップされる）。',
     ],
     entries,
