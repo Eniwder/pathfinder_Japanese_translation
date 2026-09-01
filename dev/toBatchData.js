@@ -109,7 +109,6 @@ for (let i = 0; i < keys.length; i++) {
       previous: context.previous,
       text: protectedText.text,
       controlTags: protectedText.tags,
-      glossary: matchingGlossary(protectedText.text),
       next: context.next,
     })
     : JSON.stringify({
@@ -216,6 +215,8 @@ function matchingGlossary(text) {
 
 function matchesGlossaryTerm(text, source) {
   const escaped = source.toLocaleLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // text は事前処理で .toLocaleLowerCase() 済みだが、RegExp に 'i' フラグがついている
+  // また、[a-z] の単語境界判定では アンダースコアや数字、あるいは他の文字が含まれる単語に注意が必要
   return new RegExp(`(?<![a-z])${escaped}(?![a-z])`, 'i').test(text);
 }
 
