@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
   "nextStart": 750,
-  "updatedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T12:00:00Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -24,6 +24,12 @@
       "merged": true,
       "coveredDialogs": ["Diplomacy_7_Dialogue (残り)", "Diplomacy_8_Dialogue"],
       "note": "v2リライト第3弾。外交評議会シーン(Diplomacy_2〜8)が一区切り。"
+    },
+    {
+      "start": 0,
+      "limit": 450,
+      "merged": true,
+      "note": "round1〜3（既にマージ済みの450件）を読点ルール強化に伴い再点検。zhCN.jsonを直接編集（バックアップ: dev/lang/zhCN.json.bak_round123_review）。1文中の「、」を機械的にカウントし2個以上の文を持つ231エントリを抽出、うち約170件を手直し。平均コンマ数 2.95→2.15/エントリ、該当文数 231→84（残りは3+列挙や軍隊口調/強調など許容パターン）。verify.js再実行でcontrolTagIssues/mfIssuesに変化なし（1080/156のまま）を確認、regressionなし。"
     },
     {
       "start": 450,
