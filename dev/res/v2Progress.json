@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 750,
-  "updatedAt": "2026-09-02T12:00:00Z",
+  "nextStart": 1050,
+  "updatedAt": "2026-09-02T13:00:00Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -38,6 +38,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-02_round4/",
       "coveredDialogs": ["Diplomacy_8_Dialogue(残り)/Diplomacy_Officer_dialogue", "KTC_AfterRankUp8_dialogue", "Leadership_2〜8_dialogue"],
       "note": "v2リライト第4弾。この回からマージ方針を変更——ユーザー指示があるまでzhCN.jsonへ書き込まず、chunks_reviewに温存。Captain Harmattan/Sir Thommis Longarが新登場、詳細はv2CharacterNotes.md参照。"
+    },
+    {
+      "start": 750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-02_round5/",
+      "coveredDialogs": ["Leadership_2〜8_dialogue(残り)", "Logistics_2〜5_dialogue", "Logistics_6_Dialogue", "Logistics_7_Dialogue"],
+      "note": "v2リライト第5弾。新キャラ: Dorgelinda Stranglehold（後方支援評議会議長）、Logistics_Prisoner/Nickeld Bartley（round4後半）。300件全て翻訳完了・チャンク単位でchunks_reviewへ退避済み。今回から読点は最初の下書き段階で「1文1個まで、例外は3+列挙・軍隊口調/強調のみ」を適用（round1〜4は下書き後に別途手直しが必要だったが、round5は下書き時点でavg2.09、二度目の手直しで7件のみ）。"
     }
   ]
 }
