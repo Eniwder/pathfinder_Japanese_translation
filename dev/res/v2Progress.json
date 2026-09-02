@@ -1,0 +1,19 @@
+{
+  "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
+  "nextStart": 300,
+  "updatedAt": "2026-09-02T00:00:00Z",
+  "history": [
+    {
+      "start": 0,
+      "limit": 150,
+      "coveredDialogs": ["Diplomacy_2_Dialogue", "Diplomacy_3_Dialogue", "Diplomacy_4_Dialogue (partial)"],
+      "note": "v2リライト第1弾。既存(旧GPT-4o-mini)訳の逐語パッチではなく、speakerProfile/previous文脈を踏まえて全文書き直し。"
+    },
+    {
+      "start": 150,
+      "limit": 150,
+      "coveredDialogs": ["Diplomacy_4_Dialogue (残り)", "Diplomacy_5_Dialogue", "Diplomacy_6_Dialogue", "Diplomacy_7_Dialogue (途中)"],
+      "note": "v2リライト第2弾。同一セッション内で継続。"
+    }
+  ]
+}
