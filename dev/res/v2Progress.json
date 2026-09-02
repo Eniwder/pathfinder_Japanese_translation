@@ -1,6 +1,6 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 300,
+  "nextStart": 450,
   "updatedAt": "2026-09-02T00:00:00Z",
   "history": [
     {
@@ -14,6 +14,12 @@
       "limit": 150,
       "coveredDialogs": ["Diplomacy_4_Dialogue (残り)", "Diplomacy_5_Dialogue", "Diplomacy_6_Dialogue", "Diplomacy_7_Dialogue (途中)"],
       "note": "v2リライト第2弾。同一セッション内で継続。"
+    },
+    {
+      "start": 300,
+      "limit": 150,
+      "coveredDialogs": ["Diplomacy_7_Dialogue (残り)", "Diplomacy_8_Dialogue"],
+      "note": "v2リライト第3弾。外交評議会シーン(Diplomacy_2〜8)が一区切り。次回はDiplomacy_8以降の別シーンに入る見込み。"
     }
   ]
 }
