@@ -122,6 +122,11 @@
       "note": "God of strength, battle, and weapons. Preferred weapon: Greatsword."
     },
     {
+      "source": "Pulura",
+      "target": "プルラ",
+      "note": "Original goddess of the Sarkorian Northmen, patron of hunters, travelers, and stargazers. Worshipped at Pulura's Fall."
+    },
+    {
       "source": "Calistria",
       "target": "カリストリア",
       "note": "Goddess of trickery, lust, and revenge. Preferred weapon: Whip."
@@ -712,6 +717,16 @@
       "note": "Cult worshipping Demon Lord Deskari."
     },
     {
+      "source": "Order of the Chain",
+      "target": "チェイン騎士団",
+      "note": "Hellknight order that protects society from hostile/subversive elements. Aeonパス関連。"
+    },
+    {
+      "source": "Kalistocrat",
+      "target": "カリストクラット",
+      "note": "富の蓄積と公平な決定を重んじる哲学の信奉者。Aeonパス関連。「Kalistocratic philosophy」は「カリストクラット哲学」。"
+    },
+    {
       "source": "Abyss",
       "target": "アビス",
       "note": "The chaotic evil outer plane, home to demons."
@@ -990,6 +1005,21 @@
       "source": "Aranka",
       "target": "アランカ",
       "note": "デスナの吟遊詩人。"
+    },
+    {
+      "source": "Eliandra",
+      "target": "エリアンドラ",
+      "note": "プルラの神殿の女性神官。"
+    },
+    {
+      "source": "Targona",
+      "target": "ターゴナ",
+      "note": "AngelRankUpシリーズに登場する天使側の案内役。"
+    },
+    {
+      "source": "Yozz",
+      "target": "ヨズ",
+      "note": "アルシニラの暗殺者ギルドを率いる悪魔。"
     },
     {
       "source": "Ileks",

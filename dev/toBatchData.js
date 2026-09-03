@@ -72,7 +72,7 @@ function runExtract(options) {
 
   const chunks = packBlocks(groupByDialog(keys, ctx.dialogueContext), options.chunkSize);
   chunks.forEach((chunkKeys, index) => {
-    const entries = chunkKeys.map(key => buildEntry(key, source[key], translated[key], ctx));
+    const entries = chunkKeys.map(key => buildEntry(key, source[key], ctx));
     writeChunk(options.outputDir, index, entries);
   });
 
@@ -92,9 +92,12 @@ function runExtract(options) {
   console.log('Fill each entry\'s "translation" field (keep <ctrl_N/> tokens verbatim), then run: node toBatchData.js import');
 }
 
-function buildEntry(key, text, currentTranslation, ctx) {
+function buildEntry(key, text, ctx) {
   const node = ctx.dialogueContext.get(key);
   const protectedText = protectControlTags(text);
+  // 旧訳(zhCN.jsonの既存値)は意図的にentryへ含めない。旧GPT-4o-mini訳はノイズにしかならず
+  // （コンマ過多・逐語訳が多く、Claudeが「旧訳と比較して書き直した」等の無駄な言及・検討に
+  // トークンを使ってしまう）、v2は常に原文からゼロで書き直す方針のため。
   return {
     key,
     dialog: node?.dialog ?? null,
@@ -107,7 +110,6 @@ function buildEntry(key, text, currentTranslation, ctx) {
     next: toList(node?.next),
     text: protectedText.text,
     controlTags: protectedText.tags,
-    current: currentTranslation ?? null,
     translation: null,
   };
 }

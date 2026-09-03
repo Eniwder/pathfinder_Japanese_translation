@@ -169,7 +169,7 @@ function buildChunkPrompt(fileName) {
    previous文脈・v2CharacterNotes.mdの口調を踏まえて自然な日本語に訳す。
 2. 各entryの "translation" フィールド（現在 null）に訳文を書き込む。
    - <ctrl_N/> トークンは一字一句変えない。
-   - current フィールド（もしあれば）は無視してよい、参照も踏襲もしない。
+   - 旧訳は entry に含まれていない（意図的に除外済み）。原文(TEXT)から新たに訳すこと。
    - 全entryを埋めること。分からない/判断がつかない場合のみ null のまま残してよい。
 3. ${fileName} 以外のファイルは一切編集しないこと。git操作やコマンド実行は不要（あなたには
    その権限がありません）。Bash・スクリプト実行・その他の回避策は一切試みないこと
