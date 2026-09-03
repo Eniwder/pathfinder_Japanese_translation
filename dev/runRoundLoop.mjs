@@ -147,29 +147,34 @@ function runExtract(start) {
   return files;
 }
 
-function chunkFullyTranslated(fileName) {
+// 新形式（blocks[].entries[]）・旧形式（entries[]、後方互換）の両方を平坦化する。
+// toBatchData.js の flattenEntries と同じロジック（このスクリプトはCLIしか呼ばないため
+// import できず、小さいので複製している）。
+function chunkEntries(fileName) {
   const c = JSON.parse(fs.readFileSync(path.join(chunksDir, fileName), 'utf8'));
-  return c.entries.every((e) => e.translation != null);
+  return Array.isArray(c.entries) ? c.entries : (c.blocks ?? []).flatMap((b) => b.entries ?? []);
+}
+
+function chunkFullyTranslated(fileName) {
+  return chunkEntries(fileName).every((e) => e.translation != null);
 }
 
 function buildChunkPrompt(fileName) {
   return `dev/lang/chunks/${fileName} の翻訳作業だけをお願いします。
 
-【前提（読むだけ、編集しないこと）】
-- dev/res/translationGuide.md の翻訳ルールに厳密に従うこと。特に読点は
-  「1文につき基本1個まで、例外は3つ以上の列挙・軍隊口調や強調のときの短文のみ」。
-  代名詞・指示語（he/she/they、繰り返しの「あなた」「それ」等）は文脈で分かるなら
-  訳しすぎない・省略する。
-- dev/res/v2CharacterNotes.md で登場人物の口調を確認する。
-- dev/res/glossary.json は各entryの glossary フィールドに必要分だけ抜粋済みなので、
-  ファイル全体は読まなくてよい。
+【前提】
+- dev/res/translationGuide.md の翻訳ルールに厳密に従うこと（先に一度だけ読む）。
+- 話者の口調・用語・直前の文脈・登場人物メモは ${fileName} 自身に埋め込み済み
+  （glossary / speakers / characterNotes / sceneNotes、各entryの speaker・ctx）。
+  dev/res/glossary.json・dev/res/v2CharacterNotes.md・dev/res/speakerProfiles.json は
+  読まなくてよい。
 
 【やること】
-1. ${fileName} を読み、各entryの TEXT フィールド（英語原文）を、speakerProfile・
-   previous文脈・v2CharacterNotes.mdの口調を踏まえて自然な日本語に訳す。
+1. ${fileName} を読み、blocks[].entries[] の各entryの "text"（英語原文）を、同entryの
+   speaker（speakers辞書のキー。無ければ話者不明/ナレーション扱い）・ctx（直前の文脈、
+   あれば）・characterNotes/sceneNotesを踏まえて自然な日本語に訳す。
 2. 各entryの "translation" フィールド（現在 null）に訳文を書き込む。
    - <ctrl_N/> トークンは一字一句変えない。
-   - 旧訳は entry に含まれていない（意図的に除外済み）。原文(TEXT)から新たに訳すこと。
    - 全entryを埋めること。分からない/判断がつかない場合のみ null のまま残してよい。
 3. ${fileName} 以外のファイルは一切編集しないこと。git操作やコマンド実行は不要（あなたには
    その権限がありません）。Bash・スクリプト実行・その他の回避策は一切試みないこと
@@ -188,9 +193,15 @@ function buildNotesPrompt(chunkFiles, roundNo) {
 
 【やること（該当があれば、なければ何もしない）】
 1. dev/res/v2CharacterNotes.md に載っていない新しい話者(speaker)が登場していたら、
-   短い口調メモを1〜2行で追記する（既存の項目のフォーマットに合わせる）。
-2. このroundを訳す中で気づいた、今後も使える新しい翻訳ルール・改善点があれば、
-   dev/res/translationGuide.md に一言だけ追記する（更新履歴セクションにも1行）。
+   「## 定着した話者」節に既存項目と同じ形式（`**表示名(speaker_id)**` 見出し＋1〜2行の
+   口調メモ）で追記する。この見出し形式は toBatchData.js の extract が自動抽出する際の
+   目印になっているため、必ず厳密に守ること（崩すと以後そのキャラのメモがchunkへ
+   埋め込まれなくなる）。
+2. このroundを訳す中で気づいた、今後も使える新しい翻訳ルールがあれば
+   dev/res/translationGuide.md の該当セクションに一言だけ、既存の簡潔さを保って追記する
+   （長い説明・経緯は書かない）。追記した経緯・きっかけのメモは
+   dev/res/translationGuideNotes.md の「更新履歴」に1行追記する
+   （translationGuide.md本体には経緯を書かない。読み込みコストを増やさないため）。
 3. dev/res/glossary.json を確認し、今回の訳文で使った固有名詞（人名・地名・組織名など）で
    まだ glossary に載っていないもの、または載っている表記と違う訳語を使ってしまったものが
    あれば、既存entryの形式（{"source": 英語, "target": 訳語, "note": 短い説明}、
@@ -201,7 +212,8 @@ function buildNotesPrompt(chunkFiles, roundNo) {
      迷ったら追記せず何もしない。
    - JSON構文を絶対に壊さないこと（配列の閉じ忘れ・カンマ漏れに注意）。
 
-編集してよいのは上記3ファイルだけです。他のファイルは触らないこと。
+編集してよいのは上記4ファイル（v2CharacterNotes.md / translationGuide.md /
+translationGuideNotes.md / glossary.json）だけです。他のファイルは触らないこと。
 git操作やコマンド実行は不要です（あなたにその権限はありません）。Bash・スクリプト実行・
 その他の回避策は一切試みないこと。
 
@@ -295,8 +307,14 @@ function collectDialogs(chunkFiles) {
   const dialogs = [];
   for (const f of chunkFiles) {
     const c = JSON.parse(fs.readFileSync(path.join(chunksDir, f), 'utf8'));
-    for (const e of c.entries) {
-      if (e.dialog && !dialogs.includes(e.dialog)) dialogs.push(e.dialog);
+    if (Array.isArray(c.blocks)) {
+      for (const b of c.blocks) {
+        if (b.dialog && !dialogs.includes(b.dialog)) dialogs.push(b.dialog);
+      }
+    } else {
+      for (const e of c.entries ?? []) {
+        if (e.dialog && !dialogs.includes(e.dialog)) dialogs.push(e.dialog);
+      }
     }
   }
   return dialogs;

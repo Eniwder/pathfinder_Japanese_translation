@@ -115,12 +115,14 @@
 
 ## 効率化のためのビュー生成ルール(スクリプト側の約束事)
 
-チャンクをテキスト化するとき、以下は省略してよい（quality低下なしと確認済み）:
-- speakerProfileの `personality` / `speechExamples` / `translationNotes` /
-  `constraints` / `notes` / `race` / `alignment` — 上の「定着した話者」表で足りる
-- `next`（未来の会話分岐）— 使わなくても翻訳の質に影響しなかった
+このセクションが検討していた圧縮方針は `toBatchData.js` の `extract` に実装済み
+（2026-09-04）。手動で気にする必要はない。詳細・実測は
+[dev/res/translationGuideNotes.md](translationGuideNotes.md) の更新履歴を参照。
 
-残すもの: `firstPerson`, `speechStyle`(簡略), `glossary`(source->targetのみ),
-`previous`(直前の1行のみ), `text`, `controlTags`(コンパクト表記), `current`。
-さらに同一チャンク内で同じ話者が繰り返す場合、2回目以降はプロフィール行を省略し
-`speaker=Lann_Companion(↑)` のように前出参照にしてよい。
+**このファイルの見出し形式が抽出の目印になっている点だけ注意すること：**
+- 「## 定着した話者」配下の各項目は必ず `**表示名(speaker_id)**` で始める
+  （`toBatchData.js` の `parseCharacterNotes()` がこの正規表現で話者を拾い、
+  該当キャラが登場するchunkにだけそのメモを埋め込む）。
+- 「## 進行中のシーン単位のメモ」配下の箇条書きは、対象の dialog 名を
+  `` `Diplomacy_2` `` のように必ずバッククォートで囲む（同じ仕組みで dialog 名から
+  逆引きしている）。
