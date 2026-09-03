@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 1350,
-  "updatedAt": "2026-09-02T14:00:00Z",
+  "nextStart": 1650,
+  "updatedAt": "2026-09-03T12:53:25.752Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -84,6 +84,24 @@
         "Military_4_dialogue(冒頭)"
       ],
       "note": "v2リライト第6弾。後方支援評議会シーン完結（Logistics_8で余剰資金の使い道を選択）。KTC_Military_ending_dialogueでOdan大尉が正式に登場（初登場時のnarrationでは無名、後に本名判明）。Military_2〜4は新設の参謀評議会（Military Council）シーン——Odan/Regill/Seelah/Greybor/Wenduag/Ulbrigが軍再編・遠距離部隊・騎兵について助言する分岐選択が続く。GreyborとUlbrigはv2初登場、v2CharacterNotes.mdに追記要。300件全て翻訳・タグ検証済みでchunks_reviewへ退避。"
+    },
+    {
+      "start": 1350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-03_round8/",
+      "coveredDialogs": [
+        "Military_4_dialogue",
+        "Military_5_dialogue",
+        "Military_6_dialogue",
+        "Military_7_true_dialogue",
+        "Military_8_true_dialogue",
+        "Military_Officer_dialogue",
+        "AeonRankUp_1_dialogue",
+        "AeonRankUp_2_dialogue",
+        "AeonRankUp_3correct_dialogue"
+      ],
+      "note": "v2リライト第8弾（runRoundLoop.mjs による自動実行）。 82件すべて翻訳しました。会話は `Military_4_dialogue`（36件）と `Military_5_dialogue`（46件）の2つで、参謀評議会（レギル・グレイボー・ウェンドゥアグ・ウルブリグ・シーラ・オダン隊長）による騎兵運用・戦術方針の議論です。気づいた点：`current`（旧訳）は「サルコリス／コッラムザデ／タルダン」等の表記ゆれがありましたが、v2訳は translat / All 20 ctrl_0/ctrl_1 pairs are present in translations, matching the 20 entries that have controlTags. 88件すべて翻訳を埋め終えました。\n\n- **訳した件数**: 88件全て（`translation` の null なし）\n- **登場した会話**: `Military_6_dialogue / 95件すべて翻訳しました。登場した会話は `Military_8_true_dialogue`（コッラムザデ対策の同盟先を選ぶ軍議シーン、シーラ/レギル/グレイボー/ウェンデュアグ/ウルブリッグとの会話）と `Military_Officer_dialogue`（キャプテン・オダンの個人イベント、罪悪感と前線復帰を巡る会話）の2本です。\n\n気づいた点：オダンの発言は `speaker: \"unsp / 全35件のtranslationが既に埋まっており、null（未訳）のentryは1件もありませんでした。したがって編集は不要です。\n\n- 件数: 35/35 既訳済み（作業なし、ファイル未変更）\n- 登場dialog: `AeonRankUp_1_dialogue` / `AeonRankUp_2_dialogue` / `AeonRankUp_3correct_dialogue`（アイオンの道"
     }
   ]
 }
