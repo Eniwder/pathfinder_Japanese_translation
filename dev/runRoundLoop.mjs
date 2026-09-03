@@ -172,7 +172,10 @@ function buildChunkPrompt(fileName) {
    - current フィールド（もしあれば）は無視してよい、参照も踏襲もしない。
    - 全entryを埋めること。分からない/判断がつかない場合のみ null のまま残してよい。
 3. ${fileName} 以外のファイルは一切編集しないこと。git操作やコマンド実行は不要（あなたには
-   その権限がありません）。
+   その権限がありません）。Bash・スクリプト実行・その他の回避策は一切試みないこと
+   （許可されているのは Read/Write/Edit/Grep/Glob のみで、それ以外は物理的に実行できません。
+   実行できない場合にスクリプトファイルを作るなどの代替手段を探すのではなく、Write/Editで
+   ${fileName} を直接編集する方法だけを使うこと）。
 
 作業が終わったら、1〜2行で「何件訳したか」「登場した会話(dialog名)」「気づいた点があれば一言」
 を報告して終了してください。長い説明は不要です。`;
@@ -188,9 +191,19 @@ function buildNotesPrompt(chunkFiles, roundNo) {
    短い口調メモを1〜2行で追記する（既存の項目のフォーマットに合わせる）。
 2. このroundを訳す中で気づいた、今後も使える新しい翻訳ルール・改善点があれば、
    dev/res/translationGuide.md に一言だけ追記する（更新履歴セクションにも1行）。
+3. dev/res/glossary.json を確認し、今回の訳文で使った固有名詞（人名・地名・組織名など）で
+   まだ glossary に載っていないもの、または載っている表記と違う訳語を使ってしまったものが
+   あれば、既存entryの形式（{"source": 英語, "target": 訳語, "note": 短い説明}、
+   必要なら"category"も）に合わせて glossary 配列に追記・修正する。
+   - 追記は「今後の一貫性のために記録しておく価値がある固有名詞」だけに絞ること
+     （一般語・言い回しは対象外）。
+   - 既存entryの target を書き換える場合は、それが誤記/表記ゆれの是正だと確信できるときだけにし、
+     迷ったら追記せず何もしない。
+   - JSON構文を絶対に壊さないこと（配列の閉じ忘れ・カンマ漏れに注意）。
 
-編集してよいのは上記2ファイルだけです。他のファイルは触らないこと。
-git操作やコマンド実行は不要です（あなたにその権限はありません）。
+編集してよいのは上記3ファイルだけです。他のファイルは触らないこと。
+git操作やコマンド実行は不要です（あなたにその権限はありません）。Bash・スクリプト実行・
+その他の回避策は一切試みないこと。
 
 作業が終わったら、何を追記したか（なければ「追記なし」)を1行で報告して終了してください。`;
 }
@@ -366,8 +379,20 @@ function runRound(start, roundNo) {
   console.log(`退避先: ${reviewDir}`);
 
   if (!skipNotes) {
-    console.log('\n--- 話者メモ/翻訳ルールの反省ステップ ---');
+    console.log('\n--- 話者メモ/翻訳ルール/glossaryの反省ステップ ---');
+    const glossaryPath = path.resolve('./res/glossary.json');
+    const glossaryBackup = fs.readFileSync(glossaryPath, 'utf8');
     callClaude(buildNotesPrompt(chunkFiles, roundNo), `round${roundNo}_notes`);
+    // glossary.json はJSON構文が壊れるとextractのmatchingGlossary()が以降全滅するので、
+    // Claudeの編集後にNode側で機械的に検証する。壊れていたら即座に元へ戻す。
+    try {
+      JSON.parse(fs.readFileSync(glossaryPath, 'utf8'));
+    } catch (e) {
+      fs.writeFileSync(glossaryPath, glossaryBackup);
+      console.warn(
+        `⚠ glossary.jsonの編集がJSONとして壊れていたため、この反省ステップの変更を破棄し元に戻しました（${e.message}）。`
+      );
+    }
   }
 
   updateProgressAndCommit(start, roundNo, reviewDir, coveredDialogs, summaries);
