@@ -28,11 +28,28 @@
 //   node runRoundLoop.mjs --limit=100      # 1roundのキー数を変える（デフォルト300）
 //   node runRoundLoop.mjs --dry-run        # 何も実行せず、やる予定の手順だけ表示
 //   node runRoundLoop.mjs --skip-notes     # 話者メモ/翻訳ルールの反省ステップを省く
+//   node runRoundLoop.mjs --max-retries=30 --retry-wait-minutes=20  # 利用上限時の再試行調整
+//
+// ⚠️ 実行場所について（重要）:
+//   このスクリプトは Claude Code の対話セッション（このスクリプトを書いた会話など）の
+//   Bashツール経由で"監視しながら"実行しないこと。利用上限に達すると数十分〜数時間
+//   待ってから自動再試行する設計になっており、対話セッション側でその待ちを逐一
+//   確認・ポーリングすると、外部プロセスに切り出した意味がなくなり、その対話セッション
+//   自体のコンテキストがどんどん膨らんでしまう（このスクリプトを設計した理由そのものが
+//   損なわれる）。**素のターミナル（Claude Codeの外）で実行し、放置すること。**
 //
 // 前提:
 //   - `claude` コマンドがPATHに通っていること（ログイン済みであること）
 //   - dev/res/v2Progress.json が存在し、nextStart が正しいこと
-//   - dev/lang/chunks/ が空であること（前roundの後始末が済んでいること）
+//
+// 再開について:
+//   - claude -p の呼び出しが利用上限などで失敗した場合、エラーメッセージから
+//     再開時刻（"resets H:MMam/pm" 等）を検出できればそこまで、できなければ
+//     --retry-wait-minutes（デフォルト20分）待ってから自動的に再試行する
+//     （--max-retries回まで、デフォルト30回）。
+//   - 同じroundを再実行した場合、既にtranslationが埋まっているchunkはスキップし、
+//     未処理のchunkだけを続きから翻訳する（extractも、既存のchunks/がこのroundの
+//     途中状態だと判断できれば再利用し、やり直さない）。
 
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -92,14 +109,26 @@ function sh(cmd, cmdArgs, opts = {}) {
 }
 
 function runExtract(start) {
-  if (fs.existsSync(chunksDir)) {
-    const leftover = fs.readdirSync(chunksDir);
-    if (leftover.length) {
-      throw new Error(
-        `./lang/chunks/ が空ではありません（${leftover.length}件残存）。前roundの後始末が` +
-          ' 済んでいない可能性があります。手動で確認してください。'
-      );
+  const manifestPath = path.join(chunksDir, 'manifest.json');
+  if (fs.existsSync(chunksDir) && fs.readdirSync(chunksDir).length) {
+    // 前回このroundの途中で（利用上限などで）落ちて、chunks/ にそのroundのファイルが
+    // 残っている可能性がある。manifest.json の start が一致すれば再利用（再開）、
+    // 一致しない/存在しなければ別roundの残骸なので人間の確認を求めて止める。
+    if (fs.existsSync(manifestPath)) {
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+      if (manifest.start === start) {
+        const files = fs
+          .readdirSync(chunksDir)
+          .filter((f) => /^chunk_\d+\.json$/.test(f))
+          .sort();
+        console.log(`./lang/chunks/ に同じround(start=${start})の途中状態を検出。再開します。`);
+        return files;
+      }
     }
+    throw new Error(
+      `./lang/chunks/ に別roundらしき残骸があります（start=${start}と一致しません）。` +
+        ' 手動で確認・退避してから再実行してください。'
+    );
   }
   sh('node', [
     '--max-old-space-size=8192',
@@ -116,6 +145,11 @@ function runExtract(start) {
     .sort();
   if (!files.length) throw new Error('extractがchunkファイルを生成しませんでした。');
   return files;
+}
+
+function chunkFullyTranslated(fileName) {
+  const c = JSON.parse(fs.readFileSync(path.join(chunksDir, fileName), 'utf8'));
+  return c.entries.every((e) => e.translation != null);
 }
 
 function buildChunkPrompt(fileName) {
@@ -161,7 +195,7 @@ git操作やコマンド実行は不要です（あなたにその権限はあ�
 作業が終わったら、何を追記したか（なければ「追記なし」)を1行で報告して終了してください。`;
 }
 
-function callClaude(prompt, logName) {
+function callClaudeOnce(prompt, logName) {
   ensureLogDir();
   const logPath = path.join(logDir, `${logName}_${Date.now()}.log`);
   // プロンプトは引数ではなく stdin 経由で渡す。理由: プロンプトに <ctrl_N/> のような
@@ -184,6 +218,55 @@ function callClaude(prompt, logName) {
   fs.writeFileSync(logPath, result);
   console.log(result);
   return result;
+}
+
+// Node に同期sleepは標準では無いが、Atomics.wait はメインスレッドをブロックできる
+// （ワーカースレッド不要）。放置実行が前提のスクリプトなので同期待機で十分。
+function sleepSync(ms) {
+  const sab = new SharedArrayBuffer(4);
+  const view = new Int32Array(sab);
+  Atomics.wait(view, 0, 0, ms);
+}
+
+function isRateLimitLike(text) {
+  return /session limit|usage limit|rate limit|weekly limit|resets? (at |in )?\d/i.test(text);
+}
+
+// "resets 2:50pm (Asia/Tokyo)" のような文言から次回再試行までの待機時間(ms)を推定する。
+// 解析できなければ null（呼び出し側がデフォルト待機時間にフォールバックする）。
+function parseResetWaitMs(text) {
+  const m = text.match(/resets\s+(\d{1,2}):(\d{2})\s*(am|pm)/i);
+  if (!m) return null;
+  let hour = Number(m[1]);
+  const minute = Number(m[2]);
+  const ap = m[3].toLowerCase();
+  if (ap === 'pm' && hour !== 12) hour += 12;
+  if (ap === 'am' && hour === 12) hour = 0;
+  const now = new Date();
+  const reset = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hour, minute, 0, 0);
+  if (reset.getTime() <= now.getTime()) reset.setDate(reset.getDate() + 1);
+  return reset.getTime() - now.getTime() + 2 * 60 * 1000; // 念のため2分のバッファ
+}
+
+function callClaude(prompt, logName) {
+  const maxRetries = Number(args['max-retries'] ?? 30);
+  const fallbackWaitMs = Number(args['retry-wait-minutes'] ?? 20) * 60 * 1000;
+
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return callClaudeOnce(prompt, logName);
+    } catch (err) {
+      const text = `${err.stdout || ''}\n${err.stderr || ''}\n${err.message || ''}`;
+      if (attempt >= maxRetries || !isRateLimitLike(text)) throw err;
+      const waitMs = parseResetWaitMs(text) ?? fallbackWaitMs;
+      const waitMin = Math.ceil(waitMs / 60000);
+      console.warn(
+        `\n⏳ 利用上限らしきエラーを検出（試行${attempt + 1}/${maxRetries}）。${waitMin}分待って自動再試行します。\n` +
+          `   検出内容: ${text.trim().split('\n')[0].slice(0, 200)}`
+      );
+      sleepSync(waitMs);
+    }
+  }
 }
 
 function validateChunks() {
@@ -254,6 +337,10 @@ function runRound(start, roundNo) {
 
   const summaries = [];
   for (const f of chunkFiles) {
+    if (chunkFullyTranslated(f)) {
+      console.log(`\n--- ${f} は既に翻訳済み（前回の再開分）、スキップ ---`);
+      continue;
+    }
     console.log(`\n--- ${f} を翻訳依頼 ---`);
     const result = callClaude(buildChunkPrompt(f), `round${roundNo}_${f.replace('.json', '')}`);
     summaries.push(result.trim().slice(0, 200));
