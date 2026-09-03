@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 1050,
-  "updatedAt": "2026-09-02T13:00:00Z",
+  "nextStart": 1350,
+  "updatedAt": "2026-09-02T14:00:00Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -46,6 +46,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-02_round5/",
       "coveredDialogs": ["Leadership_2〜8_dialogue(残り)", "Logistics_2〜5_dialogue", "Logistics_6_Dialogue", "Logistics_7_Dialogue"],
       "note": "v2リライト第5弾。新キャラ: Dorgelinda Stranglehold（後方支援評議会議長）、Logistics_Prisoner/Nickeld Bartley（round4後半）。300件全て翻訳完了・チャンク単位でchunks_reviewへ退避済み。今回から読点は最初の下書き段階で「1文1個まで、例外は3+列挙・軍隊口調/強調のみ」を適用（round1〜4は下書き後に別途手直しが必要だったが、round5は下書き時点でavg2.09、二度目の手直しで7件のみ）。"
+    },
+    {
+      "start": 1050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-02_round6/",
+      "coveredDialogs": ["Logistics_7_Dialogue(残り)", "Logistics_8-1_Dialogue", "Logistics_8-2_Dialogue", "Logistics_Officer_Dialogue", "KTC_Military_ending_dialogue", "Military_2_dialogue", "Military_3_dialogue", "Military_4_dialogue(冒頭)"],
+      "note": "v2リライト第6弾。後方支援評議会シーン完結（Logistics_8で余剰資金の使い道を選択）。KTC_Military_ending_dialogueでOdan大尉が正式に登場（初登場時のnarrationでは無名、後に本名判明）。Military_2〜4は新設の参謀評議会（Military Council）シーン——Odan/Regill/Seelah/Greybor/Wenduag/Ulbrigが軍再編・遠距離部隊・騎兵について助言する分岐選択が続く。GreyborとUlbrigはv2初登場、v2CharacterNotes.mdに追記要。300件全て翻訳・タグ検証済みでchunks_reviewへ退避。"
     }
   ]
 }
