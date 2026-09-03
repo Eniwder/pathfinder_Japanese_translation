@@ -2,8 +2,7 @@
 
 Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
 `CLAUDE.md` からはここへのリンクのみを置く（このファイルが更新の実体）。
-このファイルは**翻訳作業のたびに読む前提**なので、開発メモ・更新履歴・verifyの仕組み・
-control-tag機械修復パターンなど翻訳に不要な情報は置かない
+このファイルは**翻訳作業のたびに読む前提**なので、開発メモ・更新履歴・verifyの仕組み・control-tag機械修復パターンなど翻訳に不要な以下に記載。
 （[dev/res/translationGuideNotes.md](translationGuideNotes.md) を参照）。
 
 世界観：TRPG / D&D / 神話 / デーモン / 十字軍 / 中世。
