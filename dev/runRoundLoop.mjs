@@ -164,16 +164,23 @@ git操作やコマンド実行は不要です（あなたにその権限はあ�
 function callClaude(prompt, logName) {
   ensureLogDir();
   const logPath = path.join(logDir, `${logName}_${Date.now()}.log`);
-  const result = sh('claude', [
-    '-p',
-    prompt,
-    '--allowedTools',
-    CLAUDE_TOOLS,
-    '--permission-mode',
-    'dontAsk',
-    '--permission-prompts',
-    'none',
-  ]);
+  // プロンプトは引数ではなく stdin 経由で渡す。理由: プロンプトに <ctrl_N/> のような
+  // 山括弧が含まれると、Windows で shell:true 経由（.cmdシムの実行に必須）のとき
+  // cmd.exe がそれをリダイレクト演算子と誤解釈し、プロンプトが壊れて Edit が
+  // 一切実行されない（「権限がない」という的外れな応答になる）という事故があった。
+  // input経由ならシェルのコマンドライン解析を通らないため安全。
+  console.log(`$ claude -p (via stdin, ${prompt.length} chars) --allowedTools ${CLAUDE_TOOLS} ...`);
+  const result = execFileSync(
+    'claude',
+    ['-p', '--allowedTools', CLAUDE_TOOLS, '--permission-mode', 'dontAsk', '--permission-prompts', 'none'],
+    {
+      cwd: process.cwd(),
+      encoding: 'utf8',
+      maxBuffer: 1024 * 1024 * 64,
+      shell: process.platform === 'win32',
+      input: prompt,
+    }
+  );
   fs.writeFileSync(logPath, result);
   console.log(result);
   return result;
