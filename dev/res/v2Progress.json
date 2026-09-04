@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 3150,
-  "updatedAt": "2026-09-04T19:05:11.165Z",
+  "nextStart": 3450,
+  "updatedAt": "2026-09-04T19:40:33.072Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -215,6 +215,29 @@
         "SulVillage_dialogue"
       ],
       "note": "v2リライト第13弾（runRoundLoop.mjs による自動実行）。 86件すべて翻訳を記入しました（`translation: null`は0件）。登場した会話は `LannVenduChoose_dialogue`（ランとウェンデュアグ、ネザー軍勢を巡る対立と仲間選択の分岐）と `RadianceFound`（シーラが聖剣ラディアンスを発見する場面）の2つです。\n\n気づいた点：`3656cb11`の原文には `{mf|his|the}` という誤植（`her`の / 95件全て訳文を記入しました。登場した会話は `SavamelehHosilla_dialogue`（サヴァメレー×ホシラの怒り分岐）、`SulComesLabyrinth_dialogue`（スル族長との迷宮後会話）、`Dyra_Vendor_dialogue`（商人ディラ）、`HorgusAnevia_Dialogue`（ホルガス×アネヴィアの掛け合い）の4つです。スル族長は原文で「s→sh」 / 全59件中、残っていたnull翻訳をすべて埋めました（元々翻訳済みだった数件を除く59件全件が完了）。\n\n- **訳した件数**: null だった49件\n- **登場会話**: `Horgus_GetMeOut_dialogue`（ホルガスの自己紹介〜依頼交渉）、`LannWakeUp_dialogue`（ランが目覚めのシーンで迷宮への出発を促す）\n- **気づいた点**: Horgusブロック / chunk_0003.json の翻訳が完了しました。\n\n- **60件中60件を翻訳**（null残しなし）\n- 登場した会話（dialog）: `SulVillage_dialogue`（モングレルの村、スル族長・ラン・ウェンデュアグとの会話）\n- 気づいた点: Chief Sullの原文は歯が抜けた老人特有の「sh」訛り（uplandersh, ush等）が全編に入っていたため、一人称「わし"
+    },
+    {
+      "start": 3150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-05_round14/",
+      "coveredDialogs": [
+        "SulVillage_dialogue",
+        "VendougWakeUp_dialogue",
+        "VendougDontTell_dialogue",
+        "StitchGivesCrossbow_Dialogue",
+        "WelcomeDialogue",
+        "AlarmSE_Dialogue",
+        "Caleb_MainDialogue",
+        "SavedCrusader_AfterFireTrap",
+        "Storyteller_BlackWing",
+        "CorruptionBE_bookevent",
+        "AfterAttackIrabeth_Dialogue",
+        "AneviaWarning_Dialogue",
+        "Anevia_Dontgo_Dialogue",
+        "Bartender_DefHeart_Dialogue"
+      ],
+      "note": "v2リライト第14弾（runRoundLoop.mjs による自動実行）。 全69entry分を翻訳しました（nullなし）。登場した会話：SulVillage_dialogue、VendougWakeUp_dialogue、VendougDontTell_dialogue、StitchGivesCrossbow_Dialogue、WelcomeDialogue、AlarmSE_Dialogue。\n\n気づいた点：スル族長のセリフは原文が舌足らずな綴り（sh音の訛り）だった / 全73件すべて翻訳を埋めました（`translation: null`は残っていません)。登場した会話は `Caleb_MainDialogue`（隊長シャレブ・サゾマルを名乗る脱走兵と、デラン/ウォルジフ/ウェンデュアグ/ラン/ネニオ/エンバー/シーラーが絡む一連のやり取り）です。\n\n気づいた点：`{mf|sir|ma'am}`（シャレブがプレイヤーに使う敬称）は「旦那／姐さん」、`{mf|ma / 86件すべて翻訳を記入しました（null残しなし）。\n\n- **件数**: 86件（全entry翻訳済み）\n- **登場した会話**: `SavedCrusader_AfterFireTrap`（火炎トラップで救出した十字軍兵士クレイムとの会話）、`Storyteller_BlackWing`（盲目の老エルフ、ストーリーテラーとの初対面〜デランとのやり取り）、`CorruptionBE_booke / 56件すべて翻訳しました。登場したdialogは AfterAttackIrabeth_Dialogue／AneviaWarning_Dialogue／Anevia_Dontgo_Dialogue／Bartender_DefHeart_Dialogue の4会話です。\n\n気づいた点：`Anevia_Dontgo_Dialogue`と`Bartender_DefHeart_Dialogue`内のCu"
     }
   ]
 }

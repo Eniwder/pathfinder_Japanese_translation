@@ -100,6 +100,16 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   台詞（"Pulidinsh shud pee eh shampshuns."）をひらがな音写で崩して訳していた事例から
   translationGuide.mdにルール化。v2CharacterNotes.mdにAnevia Tirabade/Camelliaを追記
   （glossary.jsonには両名とも既存だったため変更なし）。
+- 2026-09-05: round14 chunk_0000〜0003（第1章ケナブレス冒頭、Wenduag/Chief Sull/
+  Storyteller/Dretch Stitch/Irabeth・Anevia Defender's Heart登場シーン）の訳し戻し
+  レビューで、`AfterAttackIrabeth_Dialogue`等の一部entryだけ台詞が日本語の鉤括弧「」
+  ではなく英語の `"..."` のまま残っていたのを発見しtranslationGuide.mdにルール化
+  （個別の訳し直しは対象外・次回以降の訳出から適用）。v2CharacterNotes.mdに
+  Dretch_Stitch/Storyteller/Hurlun_SilentCaster/IrabethTirabade_DH/
+  AneviaTirabade_DHを追記（後2者は既存のIrabeth Tirabade/Anevia Tirabadeと同一人物だが
+  blueprint側のspeaker idが異なりextractの自動抽出が拾えないため別出しで追記）。
+  glossary.jsonに複数の訳し分けがあったAreelu（アリールー/アレールー/アリーロ）を
+  正式追記して統一表記を明示。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
