@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 2550,
-  "updatedAt": "2026-09-04T09:28:28.148Z",
+  "nextStart": 2850,
+  "updatedAt": "2026-09-04T14:07:56.713Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -178,6 +178,25 @@
         "TricksterRankUp_4_dialogue"
       ],
       "note": "v2リライト第11弾（runRoundLoop.mjs による自動実行）。 全88件、null残さず翻訳完了しました（JSON構文も確認済み）。\n\n- 訳した件数: 88件全て\n- 登場した会話(dialog): `LegendRankUp_5_correct`（既訳済み分含む）、`LichRankUp_1_dialogue`、`LichRankUp_2_dialogue`、`LichRankUp_3_dialogue`、`LichRankUp_4_dialogue`（リ / 79件全て翻訳完了（null残り0件）。登場したdialog: `LichRankUp_5_dialogue`/`LichRankUp_6_dialogue`（ザカリウスがリッチ化した主人公にカルトの扱いや竜骨兵器を提案する場面）、`LocustRankUp_1_Dialogue`/`LocustRankUp_2_Dialogue`（デスカリ配下のイナゴ信奉者との対話）。\n\n気づいた点：`{mf| / 全65件を翻訳しました。登場した会話は `LocustRankUp_3〜5_Dialogue`（デスカリ配下へのイナゴ・グラウンダー信徒の勧誘イベント）と `TricksterRankUp_1〜2_dialogue`（ソコスベノスとフールキングの醸造所エピソード）です。\n\n気づいた点：Deskariの「Similar One」は文脈上プレイヤー（同格の悪魔）を指す蔑称めいた呼称なので「同類」で統一 / 35件すべて訳しました。登場した会話は `TricksterRankUp_3_dialogue`（ソコスベノス扮する謎の側近と愚者王フールキングの「滅茶苦茶戦争」「支離滅裂兵站」ネタ会話）と `TricksterRankUp_4_dialogue`（ソコスベノス変装体とシュカが将校たちの珍案「バードルイド・ドラゴンライダー斥候」「ウォーバーバリアン・レイジプリースト」を茶化す会話）の2本です。\n\n"
+    },
+    {
+      "start": 2550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-04_round12/",
+      "coveredDialogs": [
+        "TricksterRankUp_4_dialogue",
+        "TricksterRankUp_5_dialogue",
+        "TricksterRankUp_6_dialogue",
+        "AngelMythicMiracle",
+        "AngelMythic_BE",
+        "MeetCamelia",
+        "MeetLann",
+        "MeetSeelahAnevia_Dialogue",
+        "CorruptedMongrels_dialogue",
+        "LannVenduChoose_dialogue"
+      ],
+      "note": "v2リライト第12弾（runRoundLoop.mjs による自動実行）。 94件すべて翻訳しました。登場会話は `TricksterRankUp_4_dialogue`〜`_6_dialogue`（トリックスターの道ランクアップ、変装ソコスベノス・フール王・シュカの寸劇）。フール王の酔った台詞2箇所（gibberish \"Pulidinsh shud pee eh shampshuns...\")は意味を汲んで日本語の呂律の回らない台詞として意訳したので、必要なら確認して / 未訳だった「MeetCamelia」ブロックの18件を訳しました（既訳含め全65entry埋まり済み）。\n\n- 訳した件数：18件\n- 登場した会話：AngelMythicMiracle / AngelMythic_BE（既訳済み）、MeetCamelia（今回翻訳）\n- 気づいた点：MeetCameliaはカメリア初登場シーン。品位あるお嬢様口調を意識し、アネヴィアは「あたし」のフランクな口調で / 59件すべて翻訳しました。会話(dialog)は「MeetLann」1本のみ——ランとウェンデュアグ(モングレル)にシーラ・アネヴィアが出会う洞窟でのシーンです。\n\n気づいた点：話者名は「Lann」でもentry内に複数話者の台詞（ウェンデュアグ・ランの掛け合い）が混在するnodeがいくつかありました（`dc0c1b32`など）。文脈から判断して自然な口調で訳し分けています。 / 82件全訳しました。登場した会話は「MeetSeelahAnevia_Dialogue」（アネヴィア＆シーラとの出会い）「CorruptedMongrels_dialogue」（死んだモングレルの調査）「LannVenduChoose_dialogue」（ラン/ウェンデュアグどちらを仲間にするかの分岐）の3つです。\n\n気づいた点：`d44136f3`と`1f7c4fa7`の`{mf|brother"
     }
   ]
 }

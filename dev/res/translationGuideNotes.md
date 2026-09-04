@@ -95,6 +95,11 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   にルール化（統一表記へは未着手、次回以降の訳出から適用）。v2CharacterNotes.mdに
   Deskari/FoolKing/KTC_SocothbenothDisguised/Shyka/MythicLich_KTC_Elyanka/
   MythicLich_KTC_Septimusを追記、glossary.jsonにTar-Baphon/Xanthir Vang/Brevoy/Gebを追記。
+- 2026-09-04: round12 chunk_0000〜0003（TricksterRankUp_4/5、第1章冒頭のAnevia/Seelah/
+  Lann/Wenduag/Camellia初登場シーン）の訳し戻しレビューで、FoolKingの泥酔した支離滅裂な
+  台詞（"Pulidinsh shud pee eh shampshuns."）をひらがな音写で崩して訳していた事例から
+  translationGuide.mdにルール化。v2CharacterNotes.mdにAnevia Tirabade/Camelliaを追記
+  （glossary.jsonには両名とも既存だったため変更なし）。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
