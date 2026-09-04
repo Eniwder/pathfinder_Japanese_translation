@@ -1664,6 +1664,21 @@
       "source": "Mythic Feat",
       "target": "神話特技",
       "category": "Mythic"
+    },
+    {
+      "source": "Halaseliax",
+      "target": "ハラセリアックス",
+      "note": "ドラゴン・ランクアップに登場する黄金竜Halの本名。round10 chunk_0001/0002間で「ハラセリアックス」「ハラセリアクス」の表記ゆれがあったため統一。"
+    },
+    {
+      "source": "Shamira",
+      "target": "シャミラ",
+      "note": "アルシニラの太守（サキュバスの女王）。野心的で危険な策略を魅力の裏に隠す。"
+    },
+    {
+      "source": "Lauliegh",
+      "target": "ラウリー",
+      "note": "ノクティキュラの下僕のサキュバス。陽気でいたずら好き。"
     }
   ]
 }

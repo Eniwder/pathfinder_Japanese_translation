@@ -193,7 +193,7 @@ function buildNotesPrompt(chunkFiles, roundNo) {
 
 【やること（該当があれば、なければ何もしない）】
 1. dev/res/v2CharacterNotes.md に載っていない新しい話者(speaker)が登場していたら、
-   「## 定着した話者」節に既存項目と同じ形式（`**表示名(speaker_id)**` 見出し＋1〜2行の
+   「## 定着した話者」節に既存項目と同じ形式（\`**表示名(speaker_id)**\` 見出し＋1〜2行の
    口調メモ）で追記する。この見出し形式は toBatchData.js の extract が自動抽出する際の
    目印になっているため、必ず厳密に守ること（崩すと以後そのキャラのメモがchunkへ
    埋め込まれなくなる）。
