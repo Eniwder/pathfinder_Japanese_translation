@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 1950,
-  "updatedAt": "2026-09-03T18:12:36.876Z",
+  "nextStart": 2250,
+  "updatedAt": "2026-09-04T04:36:54.522Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -129,6 +129,30 @@
         "DemonRankUp_2_dialogue"
       ],
       "note": "v2リライト第9弾（runRoundLoop.mjs による自動実行）。 chunk_0001.json の翻訳作業が完了しました。\n\n- **84件中、未訳だった38件**を新たに翻訳し、`translation` フィールドを埋めました（残り46件は既訳済みでした）。\n- 登場した会話（dialog）: `AngelRankUp_4_dialogue`、`AngelRankUp_5_correct_dialogue`、`AngelRankUp_6_correct_d / 89件全て翻訳完了しました（元から18件は入力済みで、残り71件を今回訳出）。\n\n- **登場した会話**: AzataRankUp_1〜5_dialogue（アランカのランクアップ会話。宮廷の歌選び／ケイデン信者の徴募／オレイアス使者ストロングラング／アザータのトーナメント／夢見の儀式）\n- **気づいた点**: `current`（旧訳）で用語揺れがあった（例: Nethys→「ネティス」、C / 43件すべて翻訳完了しました（null残りなし）。登場した会話は `AzataRankUp_6_dialogue`（アランカ&アイヴのお祝いイベント、20件）と `DemonRankUp_1_dialogue` / `DemonRankUp_2_dialogue`（暗殺者ヨズとの会話、23件）。\n\n気づいた点：`current`フィールド（旧下訳）は読点が多め・逐語訳寄りだったため、読点1個ルール"
+    },
+    {
+      "start": 1950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-04_round10/",
+      "coveredDialogs": [
+        "DemonRankUp_2_dialogue",
+        "DemonRankUp_3_dialogue",
+        "DemonRankUp_4_dialogue",
+        "DemonRankUp_5_dialogue",
+        "DemonRankUp_6_dialogue",
+        "DragonRankUp_1_correct_dialogue",
+        "DragonRankUp_2_dialogue",
+        "DragonRankUp_3_dialogue",
+        "DragonRankUp_4_dialogue",
+        "DragonRankUp_5_correct_dialogue",
+        "LegendRankUp_1_dialogue",
+        "LegendRankUp_2_dialogue",
+        "LegendRankUp_3_dialogue",
+        "LegendRankUp_4_correct_dialogue",
+        "LegendRankUp_5_correct"
+      ],
+      "note": "v2リライト第10弾（runRoundLoop.mjs による自動実行）。 79件全て翻訳完了しました（null残り0件）。\n\n- **訳した件数**: 79件（全entry）\n- **登場した会話**: `DemonRankUp_2_dialogue`〜`DemonRankUp_5_dialogue`（デーモンの道ランクアップ4回分、ヨズとラウリーが案内役）\n- **気づいた点**: `speaker`未記載のCueでもsceneNotesや文脈からヨズの発言と判断でき / This section (lines 1-637) is all valid JSON now with no `null` translations and properly closed strings/commas. Combined with the earlier verified section (640-912), the entire file is now valid and  / 90件全て翻訳しました。登場した会話は `DragonRankUp_4`/`DragonRankUp_5_correct`（ハラセリアックスの竜ランクアップ）と `LegendRankUp_1`〜`3`（アイヴ・ソコスベノス&メフィストフェレス・エンジェルターゴナ&ハル&シャミラのレジェンドランクアップ）の5会話です。\n\n気づいた点：Legend2の冒頭entry（10c99a81）に生の `{m / 47件すべて翻訳完了しました（null残りなし）。\n\n- **訳した件数**: 47/47件\n- **登場会話**: `LegendRankUp_4_correct_dialogue`（ザカリウス／メフィストフェレス分岐、老戦士ヴァルトの腕輪エピソード）、`LegendRankUp_5_correct`（シャミラ・メフィストフェレス・幼竜による新規移住者の処遇会議）\n- **気づいた点**: `{"
     }
   ]
 }

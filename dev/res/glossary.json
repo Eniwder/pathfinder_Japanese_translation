@@ -1679,6 +1679,46 @@
       "source": "Lauliegh",
       "target": "ラウリー",
       "note": "ノクティキュラの下僕のサキュバス。陽気でいたずら好き。"
+    },
+    {
+      "source": "Nurgal",
+      "target": "ヌルガル",
+      "note": "Demon Lord of war and bloodlust, split from the Azlanti war god."
+    },
+    {
+      "source": "Jezelda",
+      "target": "ジェゼルダ",
+      "note": "Demon Lord of werewolves, Mistress of the Hungry Moon."
+    },
+    {
+      "source": "Vellexia",
+      "target": "ヴェレクシア",
+      "note": "アルシニラの貴族たちを率いていた太守（round10 DemonRankUp_6で失脚）。"
+    },
+    {
+      "source": "Azlant",
+      "target": "アズラント",
+      "note": "Ancient sunken civilization; former home of the war god later split into Nergal/Nurgal."
+    },
+    {
+      "source": "Avistan",
+      "target": "アヴィスタン",
+      "note": "Golarion北部の大陸。ドラゴンを敬う人々が多く暮らす地域として言及される。"
+    },
+    {
+      "source": "Garund",
+      "target": "ガルンド",
+      "note": "Golarion南部の大陸。"
+    },
+    {
+      "source": "Aspis Consortium",
+      "target": "アスピス・コンソーシアム",
+      "note": "パスファインダー・ソサエティの邪悪な双子と称される、富と影響力目当ての冒険者組合。"
+    },
+    {
+      "source": "Pathfinder Society",
+      "target": "パスファインダー・ソサエティ",
+      "note": "世界中を旅する探求者・冒険者の組織。"
     }
   ]
 }

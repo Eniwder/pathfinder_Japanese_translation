@@ -84,6 +84,11 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   Shamira/Zacharius/AngelTargona等がv2CharacterNotes.mdに未記載だったのもこのクラッシュの
   影響。手動でv2CharacterNotes.md・glossary.jsonに追記して埋め合わせた（Halaseliaxの
   「ハラセリアックス」/「ハラセリアクス」表記ゆれもこの時見つけて統一）。
+- 2026-09-04: round10 chunk_0000〜0003（DemonRankUp/DragonRankUp/LegendRankUp系）の
+  訳し戻しレビューで、デーモン・デビル・ドラゴンが人間種族全体を指す `mortal(s)` を
+  「定命の者」で訳す用法が定着していたためtranslationGuide.mdにルール化。glossary.jsonに
+  Nurgal/Jezelda/Vellexia/Azlant/Avistan/Garund/Aspis Consortium/Pathfinder Societyを追記
+  （いずれも本文中に複数回登場した固有名詞。一度きりのVarut/Chog/Hasi等は対象外とした）。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
