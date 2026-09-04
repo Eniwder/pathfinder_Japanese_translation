@@ -19,10 +19,28 @@ firstPerson, toneAndVoice, speechExamples } }, speakerAliases: {...} }`。
 /\{(?:g|d)\|[^}]*\}|\{\/(?:g|d)\}|\{n\}|\{\/n\}|\{br\}|\{name\}/g
 ```
 
-翻訳時は [toBatchData.js](../toBatchData.js) の `protectControlTags()` で `<ctrl_0/>` 形式の
+この正規表現にマッチする形（`{mf|...}` は**含まれない**——理由は下記）：
+
+| 形 | 例 | 意味 |
+|---|---|---|
+| `{g\|...}...{/g}` | `{g\|Encyclopedia:DC}DC{/g}` | 百科事典リンク |
+| `{d\|...}...{/d}` | | 同上系 |
+| `{n}...{/n}` / `{br}` | | 改行・段落 |
+| `{name}` | | プレイヤー名の差し込み |
+
+翻訳時は [toBatchData.js](../toBatchData.js) の `protectControlTags()` で、上記にマッチした
+**タグそのものだけ**（`{g|...}` や `{/g}` など、開始・終了タグ別々に）を `<ctrl_0/>` 形式の
 プレースホルダに退避し、`import` 時に `restoreControlTags()` で復元する方式を取っている。
+タグに挟まれた中身のテキスト（例の `DC`）はプレースホルダ化されず、chunkの `text` 中に
+普通の翻訳対象テキストとしてそのまま残る。
 v2チャンクの `tags` 配列は「値だけの配列（位置がそのまま `<ctrl_N/>` に対応）」という
 コンパクト表記（旧形式の `controlTags: [{token, value}]` は import 側が後方互換で読める）。
+
+`{mf|男性形|女性形}` は `CONTROL_TAG_RE` に含まれていないため `<ctrl_N/>`化されず、
+chunkの `text` に生のまま残る。日本語訳での扱い（男性形が先・丸ごと省略可）に
+翻訳者の判断が要るタグなので、意図的に保護対象から外し常に見える形にしてある。
+translationGuide.md側の説明はこの前提で書いているので、`CONTROL_TAG_RE` の対象を
+広げる変更をする場合はそちらの記述も合わせて見直すこと。
 
 ## 更新履歴（要点のみ）
 
@@ -56,6 +74,16 @@ v2チャンクの `tags` 配列は「値だけの配列（位置がそのまま 
   v2CharacterNotes.mdからの該当キャラ/シーンだけの抽出埋め込みに変更。
   translationGuide.mdも本ファイルへ更新履歴等を分離し縮小した。詳細は toBatchData.js
   冒頭コメントと本ファイルの各節を参照。
+- 2026-09-04: runRoundLoop.mjs の `buildNotesPrompt()` 内でバッククォートが1箇所エスケープ
+  漏れしており（構造圧縮の編集時に混入）、JSとしては構文エラーにならず「未定義識別子
+  `表示名(speaker_id)` への冪乗演算」として解釈されてしまうため、話者メモ反省ステップの
+  呼び出し時（chunkの翻訳・dry-run検証・chunks_reviewへの退避が終わった後）に
+  `ReferenceError`で毎回クラッシュする不具合があった。round10がこれで
+  progress更新・commit未達のまま止まっていたのを発見して修正（バッククォートを`\\`` に
+  エスケープ）。round9・round10で新登場したYozz/Lauliegh/Socothbenoth/Mephisto/Hal/
+  Shamira/Zacharius/AngelTargona等がv2CharacterNotes.mdに未記載だったのもこのクラッシュの
+  影響。手動でv2CharacterNotes.md・glossary.jsonに追記して埋め合わせた（Halaseliaxの
+  「ハラセリアックス」/「ハラセリアクス」表記ゆれもこの時見つけて統一）。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

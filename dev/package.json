@@ -8,10 +8,6 @@
     "import-chunks": "node ./toBatchData.js import",
     "speaker-audit": "node ./toBatchData.js audit",
     "missing-profiles": "node ./helper/extractMissingProfiles.js ./res/speakerAudit.json ./res/missingSpeakerNames.json",
-    "batch-import": "node ./batch2Lang.js",
     "verify": "node ./verify.js --report=test/verify-report.json"
-  },
-  "dependencies": {
-    "openai": "^4.68.1"
   }
 }
