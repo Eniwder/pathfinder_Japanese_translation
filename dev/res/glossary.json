@@ -1719,6 +1719,26 @@
       "source": "Pathfinder Society",
       "target": "パスファインダー・ソサエティ",
       "note": "世界中を旅する探求者・冒険者の組織。"
+    },
+    {
+      "source": "Tar-Baphon",
+      "target": "タル=バフォン",
+      "note": "かつてウスタラヴを支配した伝説のリッチ王。「囁く暴君」とも。"
+    },
+    {
+      "source": "Xanthir Vang",
+      "target": "ザンシア・ヴァング",
+      "note": "群れに身を変えたネクロマンサー。二つ名は「疫病のザンシア」。LocustRankUpで言及される。"
+    },
+    {
+      "source": "Brevoy",
+      "target": "ブレヴォイ",
+      "note": "Golarion北方の王国。"
+    },
+    {
+      "source": "Geb",
+      "target": "ゲブ",
+      "note": "生者と死者が死者法のもとに共存するネクロマンサーの国。"
     }
   ]
 }

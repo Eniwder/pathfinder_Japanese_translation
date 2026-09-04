@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 2250,
-  "updatedAt": "2026-09-04T04:36:54.522Z",
+  "nextStart": 2550,
+  "updatedAt": "2026-09-04T09:28:28.148Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -153,6 +153,31 @@
         "LegendRankUp_5_correct"
       ],
       "note": "v2リライト第10弾（runRoundLoop.mjs による自動実行）。 79件全て翻訳完了しました（null残り0件）。\n\n- **訳した件数**: 79件（全entry）\n- **登場した会話**: `DemonRankUp_2_dialogue`〜`DemonRankUp_5_dialogue`（デーモンの道ランクアップ4回分、ヨズとラウリーが案内役）\n- **気づいた点**: `speaker`未記載のCueでもsceneNotesや文脈からヨズの発言と判断でき / This section (lines 1-637) is all valid JSON now with no `null` translations and properly closed strings/commas. Combined with the earlier verified section (640-912), the entire file is now valid and  / 90件全て翻訳しました。登場した会話は `DragonRankUp_4`/`DragonRankUp_5_correct`（ハラセリアックスの竜ランクアップ）と `LegendRankUp_1`〜`3`（アイヴ・ソコスベノス&メフィストフェレス・エンジェルターゴナ&ハル&シャミラのレジェンドランクアップ）の5会話です。\n\n気づいた点：Legend2の冒頭entry（10c99a81）に生の `{m / 47件すべて翻訳完了しました（null残りなし）。\n\n- **訳した件数**: 47/47件\n- **登場会話**: `LegendRankUp_4_correct_dialogue`（ザカリウス／メフィストフェレス分岐、老戦士ヴァルトの腕輪エピソード）、`LegendRankUp_5_correct`（シャミラ・メフィストフェレス・幼竜による新規移住者の処遇会議）\n- **気づいた点**: `{"
+    },
+    {
+      "start": 2250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-04_round11/",
+      "coveredDialogs": [
+        "LegendRankUp_5_correct",
+        "LichRankUp_1_dialogue",
+        "LichRankUp_2_dialogue",
+        "LichRankUp_3_dialogue",
+        "LichRankUp_4_dialogue",
+        "LichRankUp_5_dialogue",
+        "LichRankUp_6_dialogue",
+        "LocustRankUp_1_Dialogue",
+        "LocustRankUp_2_Dialogue",
+        "LocustRankUp_3_Dialogue",
+        "LocustRankUp_4_Dialogue",
+        "LocustRankUp_5_Dialogue",
+        "TricksterRankUp_1_dialogue",
+        "TricksterRankUp_2_dialogue",
+        "TricksterRankUp_3_dialogue",
+        "TricksterRankUp_4_dialogue"
+      ],
+      "note": "v2リライト第11弾（runRoundLoop.mjs による自動実行）。 全88件、null残さず翻訳完了しました（JSON構文も確認済み）。\n\n- 訳した件数: 88件全て\n- 登場した会話(dialog): `LegendRankUp_5_correct`（既訳済み分含む）、`LichRankUp_1_dialogue`、`LichRankUp_2_dialogue`、`LichRankUp_3_dialogue`、`LichRankUp_4_dialogue`（リ / 79件全て翻訳完了（null残り0件）。登場したdialog: `LichRankUp_5_dialogue`/`LichRankUp_6_dialogue`（ザカリウスがリッチ化した主人公にカルトの扱いや竜骨兵器を提案する場面）、`LocustRankUp_1_Dialogue`/`LocustRankUp_2_Dialogue`（デスカリ配下のイナゴ信奉者との対話）。\n\n気づいた点：`{mf| / 全65件を翻訳しました。登場した会話は `LocustRankUp_3〜5_Dialogue`（デスカリ配下へのイナゴ・グラウンダー信徒の勧誘イベント）と `TricksterRankUp_1〜2_dialogue`（ソコスベノスとフールキングの醸造所エピソード）です。\n\n気づいた点：Deskariの「Similar One」は文脈上プレイヤー（同格の悪魔）を指す蔑称めいた呼称なので「同類」で統一 / 35件すべて訳しました。登場した会話は `TricksterRankUp_3_dialogue`（ソコスベノス扮する謎の側近と愚者王フールキングの「滅茶苦茶戦争」「支離滅裂兵站」ネタ会話）と `TricksterRankUp_4_dialogue`（ソコスベノス変装体とシュカが将校たちの珍案「バードルイド・ドラゴンライダー斥候」「ウォーバーバリアン・レイジプリースト」を茶化す会話）の2本です。\n\n"
     }
   ]
 }

@@ -89,6 +89,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   「定命の者」で訳す用法が定着していたためtranslationGuide.mdにルール化。glossary.jsonに
   Nurgal/Jezelda/Vellexia/Azlant/Avistan/Garund/Aspis Consortium/Pathfinder Societyを追記
   （いずれも本文中に複数回登場した固有名詞。一度きりのVarut/Chog/Hasi等は対象外とした）。
+- 2026-09-04: round11 chunk_0000〜0003（LegendRankUp/LichRankUp/LocustRankUp/
+  TricksterRankUp系）の訳し戻しレビューで、`[Choice effects]` タグの訳し方が
+  チャンクによって「[選択の効果]」/英語のまま、と割れていたのを発見しtranslationGuide.md
+  にルール化（統一表記へは未着手、次回以降の訳出から適用）。v2CharacterNotes.mdに
+  Deskari/FoolKing/KTC_SocothbenothDisguised/Shyka/MythicLich_KTC_Elyanka/
+  MythicLich_KTC_Septimusを追記、glossary.jsonにTar-Baphon/Xanthir Vang/Brevoy/Gebを追記。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
