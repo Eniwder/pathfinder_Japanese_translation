@@ -29,6 +29,15 @@
 //   node runRoundLoop.mjs --dry-run        # 何も実行せず、やる予定の手順だけ表示
 //   node runRoundLoop.mjs --skip-notes     # 話者メモ/翻訳ルールの反省ステップを省く
 //   node runRoundLoop.mjs --max-retries=30 --retry-wait-minutes=20  # 利用上限時の再試行調整
+//   node runRoundLoop.mjs --chunk-model=claude-haiku-4-5-20251001    # chunk翻訳に使うモデルを変更
+//   node runRoundLoop.mjs --notes-model=claude-sonnet-5              # notes反省ステップに使うモデルを変更
+//                                                                     # （--chunk-model / --notes-model 省略時はアカウントのデフォルトモデル）
+//
+// トークン消費量の実測について:
+//   各 claude -p 呼び出しは --output-format=json で実行し、返ってきた usage（入力/出力/
+//   キャッシュトークン数）を res/roundLogs/usage.jsonl に1行1レコードで追記する。
+//   「1roundの消費が重い」と感じたら、まずここを集計して重い呼び出し（chunk別/notes別/
+//   モデル別）を特定してから対策すること（勘に頼らない）。
 //
 // ⚠️ 実行場所について（重要）:
 //   このスクリプトは Claude Code の対話セッション（このスクリプトを書いた会話など）の
@@ -71,6 +80,9 @@ const limit = Number(args.limit ?? 300);
 const chunkSize = Number(args['chunk-size'] ?? 100);
 const dryRun = !!args['dry-run'];
 const skipNotes = !!args['skip-notes'];
+const chunkModel = typeof args['chunk-model'] === 'string' ? args['chunk-model'] : null;
+const notesModel = typeof args['notes-model'] === 'string' ? args['notes-model'] : null;
+const usageLogPath = path.resolve('./res/roundLogs/usage.jsonl');
 
 // dev/lang/enGB.json の strings 件数目安。CLAUDE.md の現状表と一致させておくこと。
 // ループの終了条件としてだけ使う（extractは実データを見て自分で判断するのでずれても実害はない）。
@@ -220,7 +232,16 @@ git操作やコマンド実行は不要です（あなたにその権限はあ�
 作業が終わったら、何を追記したか（なければ「追記なし」)を1行で報告して終了してください。`;
 }
 
-function callClaudeOnce(prompt, logName) {
+function appendUsageLog(record) {
+  try {
+    fs.mkdirSync(path.dirname(usageLogPath), { recursive: true });
+    fs.appendFileSync(usageLogPath, JSON.stringify(record) + '\n');
+  } catch (e) {
+    console.warn(`⚠ usage.jsonl への記録に失敗（無視して続行）: ${e.message}`);
+  }
+}
+
+function callClaudeOnce(prompt, logName, model) {
   ensureLogDir();
   const logPath = path.join(logDir, `${logName}_${Date.now()}.log`);
   // プロンプトは引数ではなく stdin 経由で渡す。理由: プロンプトに <ctrl_N/> のような
@@ -228,18 +249,43 @@ function callClaudeOnce(prompt, logName) {
   // cmd.exe がそれをリダイレクト演算子と誤解釈し、プロンプトが壊れて Edit が
   // 一切実行されない（「権限がない」という的外れな応答になる）という事故があった。
   // input経由ならシェルのコマンドライン解析を通らないため安全。
-  console.log(`$ claude -p (via stdin, ${prompt.length} chars) --allowedTools ${CLAUDE_TOOLS} ...`);
-  const result = execFileSync(
-    'claude',
-    ['-p', '--allowedTools', CLAUDE_TOOLS, '--permission-mode', 'dontAsk', '--permission-prompts', 'none'],
-    {
-      cwd: process.cwd(),
-      encoding: 'utf8',
-      maxBuffer: 1024 * 1024 * 64,
-      shell: process.platform === 'win32',
-      input: prompt,
-    }
-  );
+  const cliArgs = [
+    '-p',
+    '--allowedTools', CLAUDE_TOOLS,
+    '--permission-mode', 'dontAsk',
+    '--permission-prompts', 'none',
+    '--output-format', 'json', // usage（トークン数）を集計するため。resultフィールドに従来通りのテキストが入る。
+  ];
+  if (model) cliArgs.push('--model', model);
+  console.log(`$ claude -p (via stdin, ${prompt.length} chars)${model ? ` --model ${model}` : ''} --allowedTools ${CLAUDE_TOOLS} ...`);
+  const raw = execFileSync('claude', cliArgs, {
+    cwd: process.cwd(),
+    encoding: 'utf8',
+    maxBuffer: 1024 * 1024 * 64,
+    shell: process.platform === 'win32',
+    input: prompt,
+  });
+
+  let result = raw;
+  try {
+    const parsed = JSON.parse(raw);
+    result = typeof parsed.result === 'string' ? parsed.result : raw;
+    appendUsageLog({
+      ts: new Date().toISOString(),
+      logName,
+      model: model ?? '(default)',
+      usage: parsed.usage ?? null,
+      total_cost_usd: parsed.total_cost_usd ?? null,
+      duration_ms: parsed.duration_ms ?? null,
+      num_turns: parsed.num_turns ?? null,
+      is_error: parsed.is_error ?? null,
+    });
+  } catch (e) {
+    // --output-format json が使えないCLIバージョン等で生テキストが返ってきた場合のフォールバック。
+    // 従来通りテキストとして扱う（usageは記録できないが処理自体は継続する）。
+    console.warn(`⚠ claude -p の出力をJSONとして解釈できませんでした（usage未記録で続行）: ${e.message}`);
+  }
+
   fs.writeFileSync(logPath, result);
   console.log(result);
   return result;
@@ -273,13 +319,13 @@ function parseResetWaitMs(text) {
   return reset.getTime() - now.getTime() + 2 * 60 * 1000; // 念のため2分のバッファ
 }
 
-function callClaude(prompt, logName) {
+function callClaude(prompt, logName, model) {
   const maxRetries = Number(args['max-retries'] ?? 30);
   const fallbackWaitMs = Number(args['retry-wait-minutes'] ?? 20) * 60 * 1000;
 
   for (let attempt = 0; ; attempt++) {
     try {
-      return callClaudeOnce(prompt, logName);
+      return callClaudeOnce(prompt, logName, model);
     } catch (err) {
       const text = `${err.stdout || ''}\n${err.stderr || ''}\n${err.message || ''}`;
       if (attempt >= maxRetries || !isRateLimitLike(text)) throw err;
@@ -373,7 +419,7 @@ function runRound(start, roundNo) {
       continue;
     }
     console.log(`\n--- ${f} を翻訳依頼 ---`);
-    const result = callClaude(buildChunkPrompt(f), `round${roundNo}_${f.replace('.json', '')}`);
+    const result = callClaude(buildChunkPrompt(f), `round${roundNo}_${f.replace('.json', '')}`, chunkModel);
     summaries.push(result.trim().slice(0, 200));
   }
 
@@ -400,7 +446,7 @@ function runRound(start, roundNo) {
     console.log('\n--- 話者メモ/翻訳ルール/glossaryの反省ステップ ---');
     const glossaryPath = path.resolve('./res/glossary.json');
     const glossaryBackup = fs.readFileSync(glossaryPath, 'utf8');
-    callClaude(buildNotesPrompt(chunkFiles, roundNo), `round${roundNo}_notes`);
+    callClaude(buildNotesPrompt(chunkFiles, roundNo), `round${roundNo}_notes`, notesModel);
     // glossary.json はJSON構文が壊れるとextractのmatchingGlossary()が以降全滅するので、
     // Claudeの編集後にNode側で機械的に検証する。壊れていたら即座に元へ戻す。
     try {

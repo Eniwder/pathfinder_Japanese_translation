@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 4350,
-  "updatedAt": "2026-09-05T06:49:32.403Z",
+  "nextStart": 4650,
+  "updatedAt": "2026-09-05T16:08:48.811Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -296,6 +296,23 @@
         "DesnaAdept1_KenBur_dialog"
       ],
       "note": "v2リライト第17弾（runRoundLoop.mjs による自動実行）。"
+    },
+    {
+      "start": 4350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-06_round18/",
+      "coveredDialogs": [
+        "DesnaAdept1_KenBur_dialog",
+        "DesnaAdept3_Wizard_dialog",
+        "DesnaTemple_Final_dialog",
+        "Hurlun_KenabBurn_Dialogue",
+        "HurlunRamien_Early_Dialogue",
+        "HurlunRamien_Late_Dialogue",
+        "Hurlun_Tavern_Dialogue",
+        "MeetEmber_Dialogue"
+      ],
+      "note": "v2リライト第18弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }
