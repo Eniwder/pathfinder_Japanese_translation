@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 3750,
-  "updatedAt": "2026-09-05T00:19:54.970Z",
+  "nextStart": 4050,
+  "updatedAt": "2026-09-05T04:57:27.558Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -257,6 +257,24 @@
         "WoljifHeyYou_dialogue"
       ],
       "note": "v2リライト第15弾（runRoundLoop.mjs による自動実行）。 All entries in chunk_0000.json already had non-null translations filled in — I checked every entry across both halves of the file and found none left as `null`, so there was nothing left to translate. / 48件すべて翻訳完了。登場会話: `Jernaugh_DefHeart_Dialogue`（エラスティルの若き聖職者ジェルノー）、`Joran_Dialogue`（老ドワーフ鍛冶屋ジョラン、弟スタントン・ヴェインの過去語り）。ジョランは口調の指定が無かったため、鍛冶屋らしい素朴な老人口調（俺・〜だ/〜だな）で統一しました。 / 全79件を翻訳しました。登場した会話は `LiLura_DH_dialogue`（十字軍たちの前で戦史を語る学者インダラーと、モンク「PinkEye」の議論）と `SavedCrusader_Tavern_Dialogue`（酒場で本を読むクラームとの会話）の2つです。\n\n気づいた点：性別分岐タグ `{mf||s}he` が1箇所あり（\"said he/she\"の作り分け）、日本語では不要なため意 / 82件すべて翻訳しました。登場会話は `Staunton_DefHeart_Dialogue`（断罪兵団の元騎士スタントン・ヴェインとの会話）と `WoljifHeyYou_dialogue`（ウォルジフ初対面・解放のやり取り、町番デルヴァンも登場）の2本です。\n\n気づいた点：`Condemned`（罰を受けた兵士の部隊名）はこのchunkのglossaryに訳語が無かったため「断罪兵団」で統一し"
+    },
+    {
+      "start": 3750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-05_round16/",
+      "coveredDialogs": [
+        "WoljifHeyYou_dialogue",
+        "DemonScriptor_MainDialogue",
+        "Faxon_MainDialogue",
+        "Greybor_EstrodTower",
+        "Teldon_dialogue",
+        "Visions_EstrodTower_dialog",
+        "Minagho_Awakening_dialogue",
+        "Minagho_Final_GreyGarrison_Dialogue",
+        "Minagho_seduces_Staunton_Dialogue"
+      ],
+      "note": "v2リライト第16弾（runRoundLoop.mjs による自動実行）。 全81件を翻訳しました。null翻訳は0件です。\n\n- **訳した件数**: 81件（全entry）\n- **登場した会話(dialog)**: `WoljifHeyYou_dialogue`（ウォルジフの保釈依頼）、`DemonScriptor_MainDialogue`（テルマー/紙を食べるカルト教徒とのやり取り）、`Faxon_MainDialogue`（ファクソン戦前後の会話）\n- **気 / 29件全て翻訳しました。会話(dialog)は `Greybor_EstrodTower`（グレイボーとエストロッド塔でのやり取り）1本のみです。話者未指定のエントリはドワーフ=グレイボー本人のセリフ・ナレーションとして訳し分けました。 / 77件全て翻訳しました。登場会話は `Teldon_dialogue`（エストロッドの塔の博物館管理人テルドンとの会話一本のみ）。気づいた点：ウェンデュアグの `{mf|master|mistress}` は「ご主人様」「女主人様」で作り分けました。 / chunk_0003.jsonは93件中92件がすでに訳文入り済みで、1件（key: `400dea05-...`）だけ`\"translation\"`キーが重複しており、有効な訳文の直後に`null`が上書きされてJSONパース時にnull扱いになっていた不具合を発見・修正しました（訳文自体は既存のものをそのまま復元、新規翻訳はしていません）。\n\n- 訳した件数：実質1件（重複キーのバグ修正）、他 / 20件すべて翻訳済み（nullなし）。登場した会話は `Minagho_seduces_Staunton_Dialogue`（ミナゴーがスタントン・ヴェインを誘惑する場面、デラン/シーラ/ウェンドゥアグ/エンバーが横で論評）。気づいた点：entry内の一部（4, 15, 17, 19）は`speaker`未指定でしたが文脈からミナゴーの発言と判断して訳しています。"
     }
   ]
 }
