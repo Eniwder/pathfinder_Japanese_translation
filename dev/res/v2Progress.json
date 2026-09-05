@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 3450,
-  "updatedAt": "2026-09-04T19:40:33.072Z",
+  "nextStart": 3750,
+  "updatedAt": "2026-09-05T00:19:54.970Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -238,6 +238,25 @@
         "Bartender_DefHeart_Dialogue"
       ],
       "note": "v2リライト第14弾（runRoundLoop.mjs による自動実行）。 全69entry分を翻訳しました（nullなし）。登場した会話：SulVillage_dialogue、VendougWakeUp_dialogue、VendougDontTell_dialogue、StitchGivesCrossbow_Dialogue、WelcomeDialogue、AlarmSE_Dialogue。\n\n気づいた点：スル族長のセリフは原文が舌足らずな綴り（sh音の訛り）だった / 全73件すべて翻訳を埋めました（`translation: null`は残っていません)。登場した会話は `Caleb_MainDialogue`（隊長シャレブ・サゾマルを名乗る脱走兵と、デラン/ウォルジフ/ウェンデュアグ/ラン/ネニオ/エンバー/シーラーが絡む一連のやり取り）です。\n\n気づいた点：`{mf|sir|ma'am}`（シャレブがプレイヤーに使う敬称）は「旦那／姐さん」、`{mf|ma / 86件すべて翻訳を記入しました（null残しなし）。\n\n- **件数**: 86件（全entry翻訳済み）\n- **登場した会話**: `SavedCrusader_AfterFireTrap`（火炎トラップで救出した十字軍兵士クレイムとの会話）、`Storyteller_BlackWing`（盲目の老エルフ、ストーリーテラーとの初対面〜デランとのやり取り）、`CorruptionBE_booke / 56件すべて翻訳しました。登場したdialogは AfterAttackIrabeth_Dialogue／AneviaWarning_Dialogue／Anevia_Dontgo_Dialogue／Bartender_DefHeart_Dialogue の4会話です。\n\n気づいた点：`Anevia_Dontgo_Dialogue`と`Bartender_DefHeart_Dialogue`内のCu"
+    },
+    {
+      "start": 3450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-05_round15/",
+      "coveredDialogs": [
+        "Bartender_DefHeart_Dialogue",
+        "BeforeAttackIrabeth_Dialogue",
+        "Chapter1End_QueenVisit_cq_dialog",
+        "Irabeth_DefHeart_Dialogue",
+        "Jernaugh_DefHeart_Dialogue",
+        "Joran_Dialogue",
+        "LiLura_DH_dialogue",
+        "SavedCrusader_Tavern_Dialogue",
+        "Staunton_DefHeart_Dialogue",
+        "WoljifHeyYou_dialogue"
+      ],
+      "note": "v2リライト第15弾（runRoundLoop.mjs による自動実行）。 All entries in chunk_0000.json already had non-null translations filled in — I checked every entry across both halves of the file and found none left as `null`, so there was nothing left to translate. / 48件すべて翻訳完了。登場会話: `Jernaugh_DefHeart_Dialogue`（エラスティルの若き聖職者ジェルノー）、`Joran_Dialogue`（老ドワーフ鍛冶屋ジョラン、弟スタントン・ヴェインの過去語り）。ジョランは口調の指定が無かったため、鍛冶屋らしい素朴な老人口調（俺・〜だ/〜だな）で統一しました。 / 全79件を翻訳しました。登場した会話は `LiLura_DH_dialogue`（十字軍たちの前で戦史を語る学者インダラーと、モンク「PinkEye」の議論）と `SavedCrusader_Tavern_Dialogue`（酒場で本を読むクラームとの会話）の2つです。\n\n気づいた点：性別分岐タグ `{mf||s}he` が1箇所あり（\"said he/she\"の作り分け）、日本語では不要なため意 / 82件すべて翻訳しました。登場会話は `Staunton_DefHeart_Dialogue`（断罪兵団の元騎士スタントン・ヴェインとの会話）と `WoljifHeyYou_dialogue`（ウォルジフ初対面・解放のやり取り、町番デルヴァンも登場）の2本です。\n\n気づいた点：`Condemned`（罰を受けた兵士の部隊名）はこのchunkのglossaryに訳語が無かったため「断罪兵団」で統一し"
     }
   ]
 }

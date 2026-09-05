@@ -110,6 +110,14 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   blueprint側のspeaker idが異なりextractの自動抽出が拾えないため別出しで追記）。
   glossary.jsonに複数の訳し分けがあったAreelu（アリールー/アレールー/アリーロ）を
   正式追記して統一表記を明示。
+- 2026-09-05: round15 chunk_0000〜0003（Defender's Heart酒場のQueenGalfrey来訪/Jernaugh/
+  Joran/Staunton Vhane/LiLura(Indarah)/Woljif初登場シーン）の訳し戻しレビューで、
+  `Joran`（鍛冶師・スタントンの弟）が既存glossary の`Jorun Vane`と同一人物ながら別スペルで
+  登場し訳文も「ジョラン」と不統一になっていたのを発見、translationGuide.mdに
+  同一人物の表記ゆれをglossaryで確認・統一するルールを追加。v2CharacterNotes.mdに
+  Daeran（DH文脈の別speaker id）/LiLura_Kenabres(Indarah)を追記。glossary.jsonに
+  Indarah/Jistka/Absalom/Osirion/Minagho/Condemned/Heaven's Edge/Blackwing/Gemylを
+  追加し、Joranは`Jorun Vane`と同一人物として要統一の注記付きで追記。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
