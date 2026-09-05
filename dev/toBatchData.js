@@ -47,9 +47,10 @@ const HELP = `Usage:
                                [--glossary=PATH] [--character-notes=PATH] [--output-dir=PATH]
                                [--filter=todo|all|issues] [--issues-report=PATH] [--issue-types=a,b,c]
                                [--include-warnings] [--chunk-size=N] [--start=N] [--limit=N] [--no-clean]
+                               [--dialogs=NameA,NameB,...]
 
   node toBatchData.js import  [--chunks-dir=PATH] [--translated=PATH] [--backup=PATH]
-                               [--no-mark-done] [--dry-run]
+                               [--no-mark-done] [--dry-run] [--source=PATH]
 
   node toBatchData.js audit   [--graph=PATH] [--profiles=PATH] [--glossary=PATH] [--output=PATH]
 `;
@@ -82,7 +83,13 @@ function runExtract(options) {
 
   // 原文が空文字のキーは元から訳す対象が無いので、どのフィルタでも常に除外する。
   const candidateKeys = Object.keys(source).filter(key => source[key] !== '');
-  const filtered = applyFilter(candidateKeys, options, source, translated);
+  let filtered = applyFilter(candidateKeys, options, source, translated);
+  // --dialogs=NameA,NameB は「特定の会話だけを狙い撃ちで抽出したい」実験・調査用の絞り込み。
+  // 通常の start/limit（enGB_ordered.json上の連番範囲）と違い、対象dialogに属するキーだけを
+  // ファイル内での出現順のまま残す（会話名は dialogueGraph.json の "dialogs[].name"）。
+  if (options.dialogs) {
+    filtered = filtered.filter(key => options.dialogs.has(ctx.dialogueContext.get(key)?.dialog));
+  }
   const keys = filtered.slice(options.start, options.start + options.limit);
 
   if (keys.length === 0) {
@@ -308,6 +315,7 @@ function parseExtractOptions(args) {
     start: 0,
     limit: Infinity,
     clean: true,
+    dialogs: null,
   };
   for (const arg of args) {
     if (arg.startsWith('--input=')) result.input = arg.slice(8);
@@ -325,6 +333,7 @@ function parseExtractOptions(args) {
     else if (arg.startsWith('--start=')) result.start = Number(arg.slice(8));
     else if (arg.startsWith('--limit=')) result.limit = Number(arg.slice(8));
     else if (arg === '--no-clean') result.clean = false;
+    else if (arg.startsWith('--dialogs=')) result.dialogs = new Set(arg.slice(10).split(',').map(value => value.trim()).filter(Boolean));
     else if (arg === '--help' || arg === '-h') { console.log(HELP); process.exit(0); }
     else throw new Error(`Unknown option: ${arg}`);
   }
@@ -346,6 +355,18 @@ function runImport(options) {
     ? JSON.parse(fs.readFileSync(options.translated, 'utf8'))
     : { $id: '1', strings: {} };
 
+  // キー整合性チェック用。Claudeがchunkファイル全体を1回のWriteで書き戻す際に、
+  // UUIDキーを一字書き間違える事故が実際に起きた（例: 末尾が97ef-c0a9067831fe→
+  // 97f9-3e37bc81ee0cのように変わる）。これが起きると、本来のキーは翻訳対象から
+  // サイレントに消え、間違ったキーがzhCN.jsonにゴミエントリとして追加されてしまう
+  // （どちらもエラーなく素通りする）。原文の実在キー集合と突き合わせて弾く。
+  const knownKeys = fs.existsSync(options.source)
+    ? new Set(Object.keys(loadStrings(options.source)))
+    : null;
+  if (!knownKeys) {
+    console.warn(`⚠ --source=${options.source} が見つからないため、キー整合性チェックをスキップします（UUID書き間違いを検出できません）。`);
+  }
+
   let merged = 0;
   let skippedEmpty = 0;
   const invalid = [];
@@ -358,6 +379,11 @@ function runImport(options) {
     for (const entry of flattenEntries(chunk)) {
       if (entry.translation === null || entry.translation === undefined || entry.translation === '') {
         skippedEmpty++;
+        allResolved = false;
+        continue;
+      }
+      if (knownKeys && !knownKeys.has(entry.key)) {
+        invalid.push({ key: entry.key, file, problems: ['unknown key (原文に存在しない。書き写し時のUUID誤りの疑い)'] });
         allResolved = false;
         continue;
       }
@@ -428,6 +454,7 @@ function parseImportOptions(args) {
     backup: './lang/zhCN.json.bak',
     markDone: true,
     dryRun: false,
+    source: './lang/enGB.json',
   };
   for (const arg of args) {
     if (arg.startsWith('--chunks-dir=')) result.chunksDir = arg.slice(13);
@@ -435,6 +462,7 @@ function parseImportOptions(args) {
     else if (arg.startsWith('--backup=')) result.backup = arg.slice(9);
     else if (arg === '--no-mark-done') result.markDone = false;
     else if (arg === '--dry-run') result.dryRun = true;
+    else if (arg.startsWith('--source=')) result.source = arg.slice(9);
     else if (arg === '--help' || arg === '-h') { console.log(HELP); process.exit(0); }
     else throw new Error(`Unknown option: ${arg}`);
   }
