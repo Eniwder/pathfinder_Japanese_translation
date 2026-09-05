@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 4050,
-  "updatedAt": "2026-09-05T04:57:27.558Z",
+  "nextStart": 4350,
+  "updatedAt": "2026-09-05T06:49:32.403Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -275,6 +275,27 @@
         "Minagho_seduces_Staunton_Dialogue"
       ],
       "note": "v2リライト第16弾（runRoundLoop.mjs による自動実行）。 全81件を翻訳しました。null翻訳は0件です。\n\n- **訳した件数**: 81件（全entry）\n- **登場した会話(dialog)**: `WoljifHeyYou_dialogue`（ウォルジフの保釈依頼）、`DemonScriptor_MainDialogue`（テルマー/紙を食べるカルト教徒とのやり取り）、`Faxon_MainDialogue`（ファクソン戦前後の会話）\n- **気 / 29件全て翻訳しました。会話(dialog)は `Greybor_EstrodTower`（グレイボーとエストロッド塔でのやり取り）1本のみです。話者未指定のエントリはドワーフ=グレイボー本人のセリフ・ナレーションとして訳し分けました。 / 77件全て翻訳しました。登場会話は `Teldon_dialogue`（エストロッドの塔の博物館管理人テルドンとの会話一本のみ）。気づいた点：ウェンデュアグの `{mf|master|mistress}` は「ご主人様」「女主人様」で作り分けました。 / chunk_0003.jsonは93件中92件がすでに訳文入り済みで、1件（key: `400dea05-...`）だけ`\"translation\"`キーが重複しており、有効な訳文の直後に`null`が上書きされてJSONパース時にnull扱いになっていた不具合を発見・修正しました（訳文自体は既存のものをそのまま復元、新規翻訳はしていません）。\n\n- 訳した件数：実質1件（重複キーのバグ修正）、他 / 20件すべて翻訳済み（nullなし）。登場した会話は `Minagho_seduces_Staunton_Dialogue`（ミナゴーがスタントン・ヴェインを誘惑する場面、デラン/シーラ/ウェンドゥアグ/エンバーが横で論評）。気づいた点：entry内の一部（4, 15, 17, 19）は`speaker`未指定でしたが文脈からミナゴーの発言と判断して訳しています。"
+    },
+    {
+      "start": 4050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-05_round17/",
+      "coveredDialogs": [
+        "Minagho_seduces_Staunton_Dialogue",
+        "SuccubusKnights_Dialogue",
+        "Wardstone_BookEvent",
+        "Irabeth_FirstMeet_Dialogue",
+        "Minagho_First_Dialogue",
+        "Minagho_LightsOut_Dialogue",
+        "Minagho_Second_Dialogue",
+        "HorgusManor_dialogue",
+        "HorgusSecret_dialogue",
+        "BookEvent_Aeon",
+        "CravingForElysium_azata_BE",
+        "DesnaAdept1_KenBur_dialog"
+      ],
+      "note": "v2リライト第17弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }

@@ -1032,6 +1032,21 @@
       "note": "デスナの信徒。"
     },
     {
+      "source": "Finnean",
+      "target": "フィニアン",
+      "note": "シーラが持つ知性を持つ喋る武器。一人称「僕」。"
+    },
+    {
+      "source": "Great Beyond",
+      "target": "彼方の世界",
+      "note": "アイオンが顕現前に存在していたとされる、この世界の外側の領域。"
+    },
+    {
+      "source": "River of Souls",
+      "target": "魂の川",
+      "note": "生から死、死から生へと魂が巡るとされる形而上的な流れ。"
+    },
+    {
       "source": "Skeleton Trader",
       "target": "スケルトンの商人",
       "note": "怪しげな骨の商人。"
