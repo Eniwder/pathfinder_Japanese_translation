@@ -128,13 +128,17 @@ function buildChunkPayload(chunkKeys, source, ctx) {
   const blockKeyGroups = groupByDialog(chunkKeys, ctx.dialogueContext);
   const glossaryPool = new Map();
   const speakerPool = new Map();
-  const characterNoteSet = new Set();
   const dialogNames = new Set();
   let lastRawText = null; // 直前entryの原文。previousの重複判定に使う。
 
   const blocks = blockKeyGroups.map(blockKeys => {
     const dialog = ctx.dialogueContext.get(blockKeys[0])?.dialog ?? null;
     if (dialog) dialogNames.add(dialog);
+    // characterNotes はチャンク直下ではなくブロック単位で持たせる。1chunkに複数dialog
+    // （＝複数の話者集合）が混在する場合、無関係なブロックの話者ノートまで毎回全entryに
+    // 見せると「そのentryに関係ない口調」に引っ張られるリスクがあるため
+    // （実験で確認済み。res/translationGuideNotes.md参照）。
+    const blockCharacterNoteSet = new Set();
 
     const entries = blockKeys.map(key => {
       const node = ctx.dialogueContext.get(key);
@@ -146,7 +150,7 @@ function buildChunkPayload(chunkKeys, source, ctx) {
       }
 
       const noteText = findCharacterNote(node, ctx.characterBlocks);
-      if (noteText) characterNoteSet.add(noteText);
+      if (noteText) blockCharacterNoteSet.add(noteText);
 
       const entry = {
         key,
@@ -169,16 +173,25 @@ function buildChunkPayload(chunkKeys, source, ctx) {
       return entry;
     });
 
-    return { dialog, entries };
+    return blockCharacterNoteSet.size
+      ? { dialog, characterNotes: [...blockCharacterNoteSet], entries }
+      : { dialog, entries };
   });
 
   return {
-    glossary: [...glossaryPool.values()],
+    glossary: [...glossaryPool.values()].map(formatGlossaryLine),
     speakers: Object.fromEntries(speakerPool),
-    characterNotes: [...characterNoteSet],
     sceneNotes: findSceneNotes(dialogNames, ctx.sceneBlocks),
     blocks,
   };
+}
+
+// glossary.json の { source, target, note } を "source=target" 形式の1行に圧縮する
+// （note があれば " — note" で追記）。JSON構造のオーバーヘッド（キー名・クォート・
+// 波括弧）を削るのが目的で、曖昧語の判別に使うnote自体は落とさない
+// （実験で note を丸ごと削ると訳し間違い防止の情報が失われるリスクが判明したため）。
+function formatGlossaryLine(term) {
+  return term.note ? `${term.source}=${term.target} — ${term.note}` : `${term.source}=${term.target}`;
 }
 
 // entryの話者を解決する。既定話者（narrator/system/unspecified）は既定ルールに従う前提で
@@ -287,7 +300,6 @@ function writeChunk(dir, index, payload) {
     ],
     ...(payload.glossary.length ? { glossary: payload.glossary } : {}),
     ...(Object.keys(payload.speakers).length ? { speakers: payload.speakers } : {}),
-    ...(payload.characterNotes.length ? { characterNotes: payload.characterNotes } : {}),
     ...(payload.sceneNotes.length ? { sceneNotes: payload.sceneNotes } : {}),
     blocks: payload.blocks,
   };
