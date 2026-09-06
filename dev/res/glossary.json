@@ -317,6 +317,11 @@
       "note": "Demon Lord of apes and jungles."
     },
     {
+      "source": "Areshkagal",
+      "target": "アレシュカガル",
+      "note": "Demon Lord of secrets, keeper of the mysteries of the universe."
+    },
+    {
       "source": "Baphomet",
       "target": "バフォメット",
       "note": "Demon Lord of beasts and labyrinths."
@@ -675,6 +680,11 @@
       "source": "Mendev",
       "target": "メンデヴ",
       "note": "Northern kingdom waging crusades against demons."
+    },
+    {
+      "source": "River Kingdoms",
+      "target": "リバー・キングダム",
+      "note": "Lawless collection of small nations along the Sellen River."
     },
     {
       "source": "Sarkoris",

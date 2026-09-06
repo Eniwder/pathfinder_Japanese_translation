@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 4950,
-  "updatedAt": "2026-09-06T10:41:09.931Z",
+  "nextStart": 5250,
+  "updatedAt": "2026-09-06T14:29:21.920Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -333,6 +333,24 @@
         "Thieflings_Early_Dialogue"
       ],
       "note": "v2リライト第19弾（runRoundLoop.mjs による自動実行）。 74件すべて翻訳し、`translation`欄を埋めました。登場した会話は `MeetEmber_Dialogue`（十字軍の少年騎士たちがエルフの少女を疑い生け贄にしかける場面）と `MongrelsOutside_dialogue`（地下から出てきた若いモングレルたちとラン・ウェンデュアグのやり取り）の2つです。\n\n気づいた点：`{mf|He|She}`タグ（8ee6281b）は主人公の性別 / 97件すべて翻訳しました。登場した会話は `Daeran_Firstmeet_c1_dialog`（デラン伯爵との初対面）と `DesnaAdept2_Bard_dialog`（吟遊詩人アランカとの会話）です。デランのセリフ回しの一部（\"crush\"の駄洒落など）は日本語で完全再現できないため意訳で処理しました。 / All 75エントリはすでに翻訳済みで、`translation: null` のものは1件もありませんでした。編集不要と判断し、chunk_0002.jsonには一切手を加えていません。\n\n- 訳した件数：0件（既に全75件が翻訳済みのため作業なし）\n- 登場した会話：Ramien_KenBurn_Dialogue / Ramien_LateSaved_Dialogue / Ramien_Tav / 54件すべて翻訳しました。登場した会話は `Theatre_Trapped_c1_dialog`（劇団グレトレン一座がガラクタの下に閉じ込められているコミカルな寸劇イベント）と `Thieflings_Early_Dialogue`（瓦礫に埋まったティーフリングたちとのやり取り）の2つです。\n\n気づいた点：`3f1958cc-...`（劇中劇の芝居がかった台詞）は原文が意図的に古風・大仰な英語（t"
+    },
+    {
+      "start": 4950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-06_round20/",
+      "coveredDialogs": [
+        "Thieflings_Early_Dialogue",
+        "Thieflings_Late_Dialogue",
+        "Thiefling_Tavern_Dialogue",
+        "CultistExam_dialogue",
+        "MeetNenio_dialogue",
+        "NenioJoin_dialogue",
+        "Arusha_DrezenPrison_Dialogue",
+        "Bottleneck_Gate_Before_Fight_Dialogue",
+        "DrezenSiege_Council_Dialogue"
+      ],
+      "note": "v2リライト第20弾（runRoundLoop.mjs による自動実行）。 66件全て翻訳しました。登場dialogは `Thieflings_Early_Dialogue`（脱出を巡るティーフリング3人組との会話）、`Thieflings_Late_Dialogue`（瓦礫に埋まったティーフリングの救出）、`Thiefling_Tavern_Dialogue`（十字軍入りしたティーフリングとの酒場会話）の3件です。\n\n気づいた点：`Thiefling_Tavern_Di / JSONとして正しく、全43件を訳出済み（nullなし）。\n\n43件を翻訳。登場した会話：`CultistExam_dialogue`（バフォメット信者の「クイズ」寸劇）、`MeetNenio_dialogue`（ネニオとの初対面）。気づいた点：`Cultist_Baphomet_MeleeCaster_DialogMain`のspeakersプロファイルに「Demon Lord of Labyr / 59件すべて翻訳しました。会話は `NenioJoin_dialogue`（コンパニオン・ネニオの仲間加入イベント、狂信者の知能実験の掛け合い）です。ネニオの台詞は敬語（です・ます）で統一し、話者不明のナレーション部分もそれに合わせました。`[Attack]` タグは `[選択の効果]` の類例として `[攻撃]` と訳しています。 / 70件すべて翻訳しました。会話は「Arusha_DrezenPrison_Dialogue」（アルエシャラエの牢獄解放イベント）と「Bottleneck_Gate_Before_Fight_Dialogue」（ドレゼン門前の戦闘前会話）の2本です。気づいた点：`4d62c335`のみ`<ctrl_N/>`の出現順が原文と訳文で入れ替わりやすい構造だったため、順序を保ったまま訳文を組み直しました。 / 62件すべて翻訳しました。会話は「DrezenSiege_Council_Dialogue」(ドレゼン攻城戦前の軍議シーン)。気づいた点：ウェンデュアグの `{mf|master|mistress}` は「ご主人様/女主人様」と訳出し、原文の男性形優先順を維持しました。"
     }
   ]
 }

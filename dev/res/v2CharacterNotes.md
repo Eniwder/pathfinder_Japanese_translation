@@ -236,6 +236,26 @@
 **ウォルジフ(DLC1_Woljif_Companion)** — 既存の「ウォルジフ(Woljif_Companion)」と同一人物・
   同じ口調。DLCコンテンツ内の会話専用のspeaker id。Round19で新規確認。
 
+**ヌーラ(NuraDrezenBoss / Nurah)** — 一人称「私」。表向きは陽気な学者を装うが、本心は
+  企みを隠す裏切り者。慇懃だが底の見えない口調。ドレゼン攻略戦で寝返り者として登場
+  （`NuraDrezenBoss`）、その後の作戦会議にも同席（`Nurah`）。Round20で初登場。
+
+**アルエシャラエ(ArueshalaeImprisoned)** — 既存グロッサリーの「Arueshalae」（贖罪を望む
+  サキュバス）と同一人物。一人称「私」、怯えつつも誠実で控えめな敬語。ドレゼンの牢獄に
+  囚われている初登場シーン専用のspeaker id。Round20で初登場。
+
+**レギル(Regill)** — 既存の「レギル(Regill_Companion)」と同一人物・同じ口調。ドレゼン
+  包囲戦の作戦会議シーン専用のspeaker id。Round20で新規確認。
+
+**イラベス(Irabeth Tirabade)** — 既存の「イラベス(IrabethTirabade_DH)」と同一人物・
+  同じ口調。ドレゼン包囲戦の作戦会議シーン専用のspeaker id。Round20で新規確認。
+
+**ウェンドゥアグ(Wenduag)** — 既存の「ウェンドゥアグ(Wenduag_Companion)」と同一人物・
+  同じ口調。ドレゼン包囲戦の作戦会議シーン専用のspeaker id。Round20で新規確認。
+
+**ネニオ(Nenio_NPC_Level_Cultist)** — 既存の「ネニオ(Nenio_Companion)」と同一人物・
+  同じ口調。仲間になる前、バフォメット信者を試験する場面専用のspeaker id。Round20で新規確認。
+
 ## 進行中のシーン単位のメモ
 
 - `Diplomacy_2`〜`Diplomacy_8`: 外交評議会シーン一式。コノミ・ソシエル・デラン・ラン・
