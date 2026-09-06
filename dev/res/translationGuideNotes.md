@@ -118,6 +118,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   Daeran（DH文脈の別speaker id）/LiLura_Kenabres(Indarah)を追記。glossary.jsonに
   Indarah/Jistka/Absalom/Osirion/Minagho/Condemned/Heaven's Edge/Blackwing/Gemylを
   追加し、Joranは`Jorun Vane`と同一人物として要統一の注記付きで追記。
+- 2026-09-06: round19 chunk_0000〜0003（EmberKnight/モングレル・Daeran初対面パーティー/
+  Ramien/Aranka/劇団/ティーフリング系）の訳し戻しレビューで、既存glossaryが
+  `Chief Sull`→`スル族長`で確定しているにもかかわらず、同chunk内で`Sull`単体を
+  「サル」（猿と同音）と誤訳している箇所を発見。translationGuide.mdに固有名詞の音写が
+  既存の日本語単語と紛らわしくないか確認するルールを追加。v2CharacterNotes.mdに
+  DLC1_Woljif_Companion（既存Woljif_Companionと同一人物のDLC専用speaker id）を追記。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

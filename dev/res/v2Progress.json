@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 4650,
-  "updatedAt": "2026-09-05T16:08:48.811Z",
+  "nextStart": 4950,
+  "updatedAt": "2026-09-06T10:41:09.931Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -313,6 +313,26 @@
         "MeetEmber_Dialogue"
       ],
       "note": "v2リライト第18弾（runRoundLoop.mjs による自動実行）。"
+    },
+    {
+      "start": 4650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-06_round19/",
+      "coveredDialogs": [
+        "MeetEmber_Dialogue",
+        "MongrelsOutside_dialogue",
+        "Daeran_Firstmeet_c1_dialog",
+        "DesnaAdept2_Bard_dialog",
+        "Ramien_KenBurn_Dialogue",
+        "Ramien_LateSaved_Dialogue",
+        "Ramien_Tavern_Dialogue",
+        "RunningThiefling_dialogue",
+        "ServantAsksHelp_KenBurn_c1_dialog",
+        "Theatre_Trapped_c1_dialog",
+        "Thieflings_Early_Dialogue"
+      ],
+      "note": "v2リライト第19弾（runRoundLoop.mjs による自動実行）。 74件すべて翻訳し、`translation`欄を埋めました。登場した会話は `MeetEmber_Dialogue`（十字軍の少年騎士たちがエルフの少女を疑い生け贄にしかける場面）と `MongrelsOutside_dialogue`（地下から出てきた若いモングレルたちとラン・ウェンデュアグのやり取り）の2つです。\n\n気づいた点：`{mf|He|She}`タグ（8ee6281b）は主人公の性別 / 97件すべて翻訳しました。登場した会話は `Daeran_Firstmeet_c1_dialog`（デラン伯爵との初対面）と `DesnaAdept2_Bard_dialog`（吟遊詩人アランカとの会話）です。デランのセリフ回しの一部（\"crush\"の駄洒落など）は日本語で完全再現できないため意訳で処理しました。 / All 75エントリはすでに翻訳済みで、`translation: null` のものは1件もありませんでした。編集不要と判断し、chunk_0002.jsonには一切手を加えていません。\n\n- 訳した件数：0件（既に全75件が翻訳済みのため作業なし）\n- 登場した会話：Ramien_KenBurn_Dialogue / Ramien_LateSaved_Dialogue / Ramien_Tav / 54件すべて翻訳しました。登場した会話は `Theatre_Trapped_c1_dialog`（劇団グレトレン一座がガラクタの下に閉じ込められているコミカルな寸劇イベント）と `Thieflings_Early_Dialogue`（瓦礫に埋まったティーフリングたちとのやり取り）の2つです。\n\n気づいた点：`3f1958cc-...`（劇中劇の芝居がかった台詞）は原文が意図的に古風・大仰な英語（t"
     }
   ]
 }
