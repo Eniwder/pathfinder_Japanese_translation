@@ -1909,6 +1909,21 @@
       "source": "Arch of Refuge",
       "target": "避難の門",
       "note": "キャンドラロンが作った、エルフがゴラリオンから逃れるために使った門。"
+    },
+    {
+      "source": "Order of the Sunrise Sword",
+      "target": "サンライズ・ソード騎士団",
+      "note": "サーレンレイに仕えるパラディン騎士団。ガーゴイルの襲撃で壊滅的損害を受けた。"
+    },
+    {
+      "source": "Paralictor",
+      "target": "パラリクター",
+      "note": "ヘルナイト騎士団の階級名。団の長の二つ下に位置する現地部隊指揮官。"
+    },
+    {
+      "source": "Gray Garrison",
+      "target": "グレイ・ガリソン",
+      "note": "レギルの過去に関わる砦の地名。"
     }
   ]
 }

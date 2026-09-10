@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 6150,
-  "updatedAt": "2026-09-10T15:27:00.748Z",
+  "nextStart": 6450,
+  "updatedAt": "2026-09-10T15:50:36.057Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -411,6 +411,23 @@
         "DyingSunrise_dialog"
       ],
       "note": "v2リライト第23弾（runRoundLoop.mjs による自動実行）。 62件全て翻訳しました。登場した会話：BlindMan_GibberingSwarm_dialog（洞窟の亀裂の描写）、Nurah_GibberingSwarm_dialog（ギバリングスワーム討伐後の戦後報告と隊商跡での儀式発見）、PhylacterySwarm_dialogue（ザカリウスの杖にまつわる回想と分岐選択）。気づいた点：`4b35cc0d`のentryで\"tall figure\"を / 98件すべて翻訳しました。登場した会話は `SwarmProblem_BE`（ヴェスカヴァーの群れをめぐる作戦選択イベント）と `AreshkaProjectionBroken_dialogue`（壊れたアレシュカガルのスフィンクス投影との問答）の2つです。\n\n気づいた点：`{mf|he|she}` 等の性別分岐タグは指揮官を指す箇所が多く、いずれも日本語では主語省略で自然に訳せたため全て省きまし / All entries in chunk_0002.json already have translations filled in — the file is not in its original null state, so there's nothing left for me to do here.\n\n**結果:** chunk_0002.json は全92件すでに `translati / 48件すべて翻訳しました。登場したdialogは `PuzzleStart_dialogue`（アレシュカガルの謎解きイベント開幕）、`SolveManyPuzzles_dialogue`（同イベントの再訪版）、`DyingSunrise_dialog`（ガーゴイルに倒された太陽神教団の司祭2名とヘルナイトYakerの場面）の3件。\n\n気づいた点：「Mendevian」（メンデヴ）と「Core o"
+    },
+    {
+      "start": 6150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-11_round24/",
+      "coveredDialogs": [
+        "DyingSunrise_dialog",
+        "InjuredKnightsArgument_dialog",
+        "RegillAfterFight_dialog",
+        "RegillInBarge_dialog",
+        "Warcamp_Yaker_Start_Dialogue",
+        "Among_Ghouls_Dialogue",
+        "Anevia_Congratulations_Dialogue",
+        "Anevia_Start_Dialogue"
+      ],
+      "note": "v2リライト第24弾（runRoundLoop.mjs による自動実行）。 45件すべて翻訳しました。登場会話は「DyingSunrise_dialog」（死にゆく日昇の剣団の女神官とヘルナイトのやり取り）と「InjuredKnightsArgument_dialog」（負傷者処刑をめぐる対立）の2つ。`{mf|brother|sister}`は「同胞」で性別分岐を省略しました（自然な日本語優先のガイドに従った判断）。 / 102件すべて訳出（null残しなし）。登場会話は `RegillAfterFight_dialog`（レギル×指揮官の戦後会話、ヤーカーの処罰・サンライズ・ソード騎士団の去就・レギル部隊との協力を巡る分岐）。\n\n気づいた点：`{mf|his|her}`（entry `80d41b8f`）は日本語では性別を示さず自然に訳せたため、ルールに従いタグごと省略した。 / 94件すべて翻訳済み。登場したdialog: `RegillInBarge_dialog`（レギルとの初対面・ガーゴイル戦前会話）、`Warcamp_Yaker_Start_Dialogue`（ヤーカーの救援要請イベント）。\n\n気づいた点: 選択肢テキストがそのまま実際の発言として2回(cue)にも登場するケースがあり文脈が重複していたが、訳語は統一。ゴッドクロウ関連の神学問答が多く、glossa / 59件すべて翻訳しました（null残しなし）。登場したdialog: `Among_Ghouls_Dialogue`（グールの待ち伏せ）、`Anevia_Congratulations_Dialogue`（ケナブレス夜戦後の勝利会話、多数のコンパニオン+ガルフリー女王が登場）、`Anevia_Start_Dialogue`（アネヴィアとの礼拝堂前の会話）。\n\n気づいた点：Wenduagの `{mf"
     }
   ]
 }

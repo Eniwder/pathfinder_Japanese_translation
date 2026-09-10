@@ -132,6 +132,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   StauntonVane_Boss/Nura_DrezenCitadel_Minibossの計6件（いずれも既存キャラの
   シーン専用speaker id）を追記。glossary.jsonにDarrazand（グレイボーの依頼対象、
   本編未登場の言及のみ）を追加。
+- 2026-09-11: round24 chunk_0000〜0003（HellknightVsGargoyles/Regill初登場エピソード）の
+  レビューで、glossary未登録の`Order of the Sunrise Sword`がchunk内で
+  `日昇の剣団`/`サンライズ・ソード騎士団`/`サンライズソード騎士団`と3通りに訳し分けられて
+  いるのを発見。translationGuide.mdに、組織名がglossary未登録のままchunk内で複数回
+  訳出される場合は初出の訳語に揃えるルールを追記。glossary.jsonに
+  Order of the Sunrise Sword/Paralictor/Gray Garrisonを追加。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
