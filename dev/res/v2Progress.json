@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 5850,
-  "updatedAt": "2026-09-10T11:20:53.548Z",
+  "nextStart": 6150,
+  "updatedAt": "2026-09-10T15:27:00.748Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -392,6 +392,25 @@
         "BlindMan_GibberingSwarm_dialog"
       ],
       "note": "v2リライト第22弾（runRoundLoop.mjs による自動実行）。 81件全て翻訳しました。登場会話は「Nurah_After_Battle_Dialogue」（ヌーラの処遇を巡る戦闘後会話）と「Drezen_Smith_Dialogue」（鍛冶屋ジョルン・ヴェインとの兄弟愛を巡る会話）。CLAUDE.mdのglossary記載通りJoranはスタントンの弟なので、彼のセリフ内`brother`は全て「兄」（スタントン）で統一しました。 / 95件全て翻訳しました。登場した会話（dialog）は以下7つです：\n\n- `Ember_Soldier_Event_Dialogue`（老兵とエンバーの会話）\n- `GargoyleAttack_Camelia_Dialogue`\n- `GargoyleAttack_End_Dialogue`（アネヴィア・ヌーラ・ホーガス・ラン等）\n- `GargoyleAttack_Irabeth_Dialo / 97件すべて翻訳しました。登場dialog: GargoyleAttack_Start_Dialogue、GargoyleAttack_Ulbrig_Dialogue、GargoyleAttack_Quartermaster_Dialogue、Anevia_GibberingSwarm_dialog（ガーゴイル襲撃とヴェスカヴォル女王討伐のエピソード）。\n\n気づいた点: speakerフィールドが / 27件すべて訳出しました。会話は `BlindMan_GibberingSwarm_dialog`（ベスカヴォルの群れに襲われた盲目のハーフリング隊商員を巡るエピソード）です。ラン/ウォルジフ/エンバー/ウェンデュアグ/フィンネアン/リジル/ソシエルの各口調を意識して訳し分けました。"
+    },
+    {
+      "start": 5850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-11_round23/",
+      "coveredDialogs": [
+        "BlindMan_GibberingSwarm_dialog",
+        "Nurah_GibberingSwarm_dialog",
+        "PhylacterySwarm_dialogue",
+        "SwarmProblem_BE",
+        "AreshkaProjectionBroken_dialogue",
+        "KinyFreed_dialog",
+        "MaskedGhost_SE_dialog",
+        "PuzzleStart_dialogue",
+        "SolveManyPuzzles_dialogue",
+        "DyingSunrise_dialog"
+      ],
+      "note": "v2リライト第23弾（runRoundLoop.mjs による自動実行）。 62件全て翻訳しました。登場した会話：BlindMan_GibberingSwarm_dialog（洞窟の亀裂の描写）、Nurah_GibberingSwarm_dialog（ギバリングスワーム討伐後の戦後報告と隊商跡での儀式発見）、PhylacterySwarm_dialogue（ザカリウスの杖にまつわる回想と分岐選択）。気づいた点：`4b35cc0d`のentryで\"tall figure\"を / 98件すべて翻訳しました。登場した会話は `SwarmProblem_BE`（ヴェスカヴァーの群れをめぐる作戦選択イベント）と `AreshkaProjectionBroken_dialogue`（壊れたアレシュカガルのスフィンクス投影との問答）の2つです。\n\n気づいた点：`{mf|he|she}` 等の性別分岐タグは指揮官を指す箇所が多く、いずれも日本語では主語省略で自然に訳せたため全て省きまし / All entries in chunk_0002.json already have translations filled in — the file is not in its original null state, so there's nothing left for me to do here.\n\n**結果:** chunk_0002.json は全92件すでに `translati / 48件すべて翻訳しました。登場したdialogは `PuzzleStart_dialogue`（アレシュカガルの謎解きイベント開幕）、`SolveManyPuzzles_dialogue`（同イベントの再訪版）、`DyingSunrise_dialog`（ガーゴイルに倒された太陽神教団の司祭2名とヘルナイトYakerの場面）の3件。\n\n気づいた点：「Mendevian」（メンデヴ）と「Core o"
     }
   ]
 }

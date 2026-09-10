@@ -1889,6 +1889,26 @@
       "source": "Kabriri",
       "target": "カブリリ",
       "note": "グールの守護者とされるデーモンロード。最初のグールになったという伝承を持つ。"
+    },
+    {
+      "source": "Kiny",
+      "target": "キニー",
+      "note": "アレシュカガルの謎解きの試練に囚われていた幽霊。かつては「頑固者のキニー、秘密の盗人（Kiny the Stubborn, Thief of Secrets）」と呼ばれた。ストーリーテラーの旧友。"
+    },
+    {
+      "source": "Sovyrian",
+      "target": "ソヴィリオン",
+      "note": "エルフの故郷とされる神秘的な異世界。"
+    },
+    {
+      "source": "Candlaron",
+      "target": "キャンドラロン",
+      "note": "「彫刻家（the Sculptor）」の異名を持つ伝説の大魔道士エルフ。大地の崩落（Earthfall）からエルフを逃すため〈避難の門（Arch of Refuge）〉を作った。"
+    },
+    {
+      "source": "Arch of Refuge",
+      "target": "避難の門",
+      "note": "キャンドラロンが作った、エルフがゴラリオンから逃れるために使った門。"
     }
   ]
 }
