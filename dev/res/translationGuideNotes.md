@@ -124,6 +124,14 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   「サル」（猿と同音）と誤訳している箇所を発見。translationGuide.mdに固有名詞の音写が
   既存の日本語単語と紛らわしくないか確認するルールを追加。v2CharacterNotes.mdに
   DLC1_Woljif_Companion（既存Woljif_Companionと同一人物のDLC専用speaker id）を追記。
+- 2026-09-10: round21 chunk_0000〜0003（ドレゼン包囲戦の作戦会議〜城砦最終決戦〜
+  ヌーラ戦後会話）のレビューで、`{Name}`（大文字）や`{race}`が`{name}`小文字と違い
+  `<ctrl_N/>`化されず生のまま残ることに気づき、translationGuide.mdに一言追記
+  （そのまま訳文にコピーすればよいだけで、誤って訳したり削ったりした形跡はなかった）。
+  v2CharacterNotes.mdにUlbrig Olesk/Seelah/Camellia/Minagho_DrezenCitadel_Boss/
+  StauntonVane_Boss/Nura_DrezenCitadel_Minibossの計6件（いずれも既存キャラの
+  シーン専用speaker id）を追記。glossary.jsonにDarrazand（グレイボーの依頼対象、
+  本編未登場の言及のみ）を追加。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

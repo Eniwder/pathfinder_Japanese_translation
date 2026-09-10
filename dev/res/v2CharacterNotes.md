@@ -256,6 +256,26 @@
 **ネニオ(Nenio_NPC_Level_Cultist)** — 既存の「ネニオ(Nenio_Companion)」と同一人物・
   同じ口調。仲間になる前、バフォメット信者を試験する場面専用のspeaker id。Round20で新規確認。
 
+**ウルブリグ(Ulbrig Olesk)** — 既存の「ウルブリグ(Ulbrig_Companion)」と同一人物・同じ口調。
+  ドレゼン包囲戦の作戦会議シーン専用のspeaker id。Round21で新規確認。
+
+**シーラ(Seelah)** — 既存の「シーラ(Seelah_Companion)」と同一人物・同じ口調。ドレゼン
+  包囲戦の作戦会議シーン専用のspeaker id。Round21で新規確認。
+
+**カメリア(Camellia)** — 既存の「カメリア(Camellia_Companion)」と同一人物・同じ口調。
+  ドレゼン包囲戦の作戦会議シーン専用のspeaker id。Round21で新規確認。
+
+**ミナゴー(Minagho_DrezenCitadel_Boss)** — 既存の「ミナゴー(Minagho_GreyGarrison)」と
+  同一人物・同じ口調。ドレゼン城砦での最終決戦シーン専用のspeaker id。Round21で新規確認。
+
+**スタントン・ヴェイン(StauntonVane_Boss)** — 既存の「スタントン・ヴェイン(StauntonVane_GG)」
+  と同一人物。ただしこの場面では諦観よりも開き直った怒りと自己正当化が前面に出る（後述の
+  ドレゼン最終決戦での対決専用のspeaker id）。Round21で新規確認。
+
+**ヌーラ(Nura_DrezenCitadel_Miniboss)** — 既存の「ヌーラ(NuraDrezenBoss / Nurah)」と
+  同一人物・同じ口調（慇懃だが底の見えない裏切り者）。ドレゼン城砦での最終決戦シーン専用の
+  speaker id。Round21で新規確認。
+
 ## 進行中のシーン単位のメモ
 
 - `Diplomacy_2`〜`Diplomacy_8`: 外交評議会シーン一式。コノミ・ソシエル・デラン・ラン・
