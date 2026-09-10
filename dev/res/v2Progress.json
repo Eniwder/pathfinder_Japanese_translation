@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 6450,
-  "updatedAt": "2026-09-10T15:50:36.057Z",
+  "nextStart": 6750,
+  "updatedAt": "2026-09-10T20:40:50.335Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -428,6 +428,29 @@
         "Anevia_Start_Dialogue"
       ],
       "note": "v2リライト第24弾（runRoundLoop.mjs による自動実行）。 45件すべて翻訳しました。登場会話は「DyingSunrise_dialog」（死にゆく日昇の剣団の女神官とヘルナイトのやり取り）と「InjuredKnightsArgument_dialog」（負傷者処刑をめぐる対立）の2つ。`{mf|brother|sister}`は「同胞」で性別分岐を省略しました（自然な日本語優先のガイドに従った判断）。 / 102件すべて訳出（null残しなし）。登場会話は `RegillAfterFight_dialog`（レギル×指揮官の戦後会話、ヤーカーの処罰・サンライズ・ソード騎士団の去就・レギル部隊との協力を巡る分岐）。\n\n気づいた点：`{mf|his|her}`（entry `80d41b8f`）は日本語では性別を示さず自然に訳せたため、ルールに従いタグごと省略した。 / 94件すべて翻訳済み。登場したdialog: `RegillInBarge_dialog`（レギルとの初対面・ガーゴイル戦前会話）、`Warcamp_Yaker_Start_Dialogue`（ヤーカーの救援要請イベント）。\n\n気づいた点: 選択肢テキストがそのまま実際の発言として2回(cue)にも登場するケースがあり文脈が重複していたが、訳語は統一。ゴッドクロウ関連の神学問答が多く、glossa / 59件すべて翻訳しました（null残しなし）。登場したdialog: `Among_Ghouls_Dialogue`（グールの待ち伏せ）、`Anevia_Congratulations_Dialogue`（ケナブレス夜戦後の勝利会話、多数のコンパニオン+ガルフリー女王が登場）、`Anevia_Start_Dialogue`（アネヴィアとの礼拝堂前の会話）。\n\n気づいた点：Wenduagの `{mf"
+    },
+    {
+      "start": 6450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-11_round25/",
+      "coveredDialogs": [
+        "Anevia_Start_Dialogue",
+        "ArushaVision_LostChapel_Dialogue",
+        "Boss_End_Dialogue",
+        "Boss_Middle_Dialogue",
+        "Boss_Start_Dialogue",
+        "Church_Dialogue",
+        "Daeran_LostChapel_dialog",
+        "Companion_Ember_Dialogue",
+        "Companion_Regill_Dialogue",
+        "FleeingSoldier_Dialogue",
+        "GalfreyInChurch_LostChapel_dialog",
+        "GhoulCrafters_Dialogs",
+        "Graveyard_Dialogue",
+        "IrabethRegill_Dialogue"
+      ],
+      "note": "v2リライト第25弾（runRoundLoop.mjs による自動実行）。 All entries in chunk_0000.json already have `translation` filled (none are `null`). No editing needed — the file was already fully translated.\n\n93件すべて訳文が既に入っており、`translation: null` の未訳entryは存在しませんでした。 / 83件すべて翻訳しました。登場した会話は「Church_Dialogue」（礼拝堂でグール化したヴィッサリーとの対峙）「Daeran_LostChapel_dialog」「Companion_Ember_Dialogue」（エンバー・デランの合流イベント）の3つです。\n\n気づいた点：speaker未指定のentryはグール化した聖職者ヴィッサリーや幼いエンバーの台詞が多く、文脈から口調を判断して訳 / 99件すべて翻訳しました。登場した会話：Companion_Regill_Dialogue（レギル部隊の撤退報告）、FleeingSoldier_Dialogue（拷問された逃亡兵の会話）、GalfreyInChurch_LostChapel_dialog（ガルフリー女王との教会でのやり取り）、GhoulCrafters_Dialogs／Graveyard_Dialogue（グール職人による拷問シ / 25件すべて翻訳しました。登場会話は `IrabethRegill_Dialogue`（イラベスとレギルが鉤に吊るされている場面、司令官との初対面〜共闘の交渉まで）。気づいた点：Irabethの台詞はspeaker未設定でしたが、瀕死の息切れした話し方（「…」多用）で統一し、Regillの`{mf}`性別分岐は3箇所とも日本語では不要と判断し省略しました。"
     }
   ]
 }
