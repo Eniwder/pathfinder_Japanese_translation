@@ -208,17 +208,62 @@ function buildChunkPrompt(fileName) {
 を報告して終了してください。長い説明は不要です。`;
 }
 
-function buildNotesPrompt(chunkFiles, roundNo) {
-  const fileList = chunkFiles.map((f) => `dev/lang/chunks_review/${todayStr()}_round${roundNo}/${f}`).join('\n  ');
-  return `直前に翻訳された以下のchunkファイルを軽く確認してください（全文精読は不要、speakerとglossaryフィールドを流し見る程度でよい）:
-  ${fileList}
+// buildNotesPromptが「chunkファイルを自分で開いて探す」turnを消費しないよう、
+// Node側で事前に「v2CharacterNotes.mdに未掲載の話者」だけを抜き出しておく。
+// 各chunkファイルはトップレベルに speakers（このchunk内で既知として解決できた話者辞書）を
+// 持っており、entryのspeakerがそこに無ければ「未登録の話者」というシグナルになる
+// （toBatchData.js の resolveSpeakerTag と同じ判定方法）。
+// これにより notes ステップは数十〜百KB規模のchunkファイル本体をReadする必要がなくなり、
+// turn数・cache消費（実測で1round 13〜33turn、cache_read最大3.7Mトークンに達していた）を
+// 大きく減らせる見込み。
+const NOTES_IGNORED_SPEAKERS = new Set(['Player', 'PC', '']);
+
+function collectMissingSpeakerSamples(reviewDirAbs, chunkFiles) {
+  const samplesBySpeaker = new Map();
+  for (const f of chunkFiles) {
+    const filePath = path.join(reviewDirAbs, f);
+    if (!fs.existsSync(filePath)) continue;
+    const c = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const known = new Set(Object.keys(c.speakers ?? {}));
+    for (const b of c.blocks ?? []) {
+      for (const e of b.entries ?? []) {
+        const speaker = e.speaker;
+        if (!speaker || known.has(speaker) || NOTES_IGNORED_SPEAKERS.has(speaker)) continue;
+        if (!samplesBySpeaker.has(speaker)) samplesBySpeaker.set(speaker, []);
+        const arr = samplesBySpeaker.get(speaker);
+        if (arr.length < 3 && e.translation) {
+          arr.push({ dialog: b.dialog ?? null, text: e.text, translation: e.translation });
+        }
+      }
+    }
+  }
+  return samplesBySpeaker;
+}
+
+function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo) {
+  const missing = collectMissingSpeakerSamples(reviewDirAbs, chunkFiles);
+  const missingBlock = missing.size
+    ? [...missing.entries()]
+        .map(
+          ([speaker, samples]) =>
+            `- speaker_id: ${speaker}\n` +
+            samples.map((s) => `  - (${s.dialog ?? '?'}) 原文: ${s.text}\n    訳文: ${s.translation}`).join('\n')
+        )
+        .join('\n')
+    : '（未登録の話者は検出されませんでした）';
+
+  return `直前に${reviewDir}へ退避されたchunkファイルについて、以下の3点を確認してください。
+chunkファイル本体はReadしなくて構いません（1で必要な原文・訳文サンプルは下に埋め込み済みです。
+2・3を判断するのに実例が要る場合だけ、該当chunkファイル（${chunkFiles.join(', ')}）を開いてください）。
 
 【やること（該当があれば、なければ何もしない）】
-1. dev/res/v2CharacterNotes.md に載っていない新しい話者(speaker)が登場していたら、
-   「## 定着した話者」節に既存項目と同じ形式（\`**表示名(speaker_id)**\` 見出し＋1〜2行の
-   口調メモ）で追記する。この見出し形式は toBatchData.js の extract が自動抽出する際の
-   目印になっているため、必ず厳密に守ること（崩すと以後そのキャラのメモがchunkへ
-   埋め込まれなくなる）。
+1. 下記は dev/res/v2CharacterNotes.md にまだ載っていない話者(speaker_id)と、その原文/訳文サンプルです。
+${missingBlock}
+   このうち実在キャラとして口調メモを残す価値があるものだけ、「## 定着した話者」節に既存項目と
+   同じ形式（\`**表示名(speaker_id)**\` 見出し＋1〜2行の口調メモ）で追記する。この見出し形式は
+   toBatchData.js の extract が自動抽出する際の目印になっているため、必ず厳密に守ること
+   （崩すと以後そのキャラのメモがchunkへ埋め込まれなくなる）。ナレーション枠・その他の
+   非キャラクター的なspeaker_idは無視してよい。
 2. このroundを訳す中で気づいた、今後も使える新しい翻訳ルールがあれば
    dev/res/translationGuide.md の該当セクションに一言だけ、既存の簡潔さを保って追記する
    （長い説明・経緯は書かない）。追記した経緯・きっかけのメモは
@@ -239,6 +284,11 @@ translationGuideNotes.md / glossary.json）だけです。他のファイルは�
 git操作やコマンド実行は不要です（あなたにその権限はありません）。Bash・スクリプト実行・
 その他の回避策は一切試みないこと。
 
+【効率化のお願い】
+- 各対象ファイルはEditの前に1回読めば十分です。書いた内容を確認するための再読み込みは
+  不要（Edit/Writeが失敗すればツール自体がエラーを返します）。
+- 追記箇所を探すための試行錯誤や再確認を繰り返さず、目安10ターン以内で完了させてください。
+
 作業が終わったら、何を追記したか（なければ「追記なし」)を1行で報告して終了してください。`;
 }
 
@@ -248,6 +298,45 @@ function appendUsageLog(record) {
     fs.appendFileSync(usageLogPath, JSON.stringify(record) + '\n');
   } catch (e) {
     console.warn(`⚠ usage.jsonl への記録に失敗（無視して続行）: ${e.message}`);
+  }
+}
+
+// num_turnsの実測（2026-09時点）: chunk翻訳はほぼ常に4turn、notes反省ステップは13〜33turn。
+// round20_chunk_0001だけ48turnという外れ値が出たことがあり、後からusage.jsonlを集計して
+// 初めて気づいた。次に同様の外れ値が出たときにその場で気づけるよう、しきい値超過を
+// ここで即座に警告し、原因調査用に anomalies.log（該当呼び出しのprompt文字数なども含む）
+// に残しておく。しきい値は実測分布に少し余裕を持たせた値で、超えても実害はなく
+// 単なる注意喚起（処理は止めない）。
+const anomalyLogPath = path.resolve('./res/roundLogs/anomalies.log');
+const TURN_THRESHOLDS = { notes: 40, chunk: 12 };
+
+function checkTurnAnomaly(logName, promptLength, parsed) {
+  const kind = logName.endsWith('_notes') ? 'notes' : 'chunk';
+  const threshold = TURN_THRESHOLDS[kind];
+  const turns = parsed.num_turns;
+  if (typeof turns !== 'number' || turns <= threshold) return;
+  const msg =
+    `⚠ turn数が異常に多い呼び出しを検出: ${logName}（${kind}想定しきい値${threshold} turn → 実際${turns} turn、` +
+    `cost=$${(parsed.total_cost_usd ?? 0).toFixed(3)}, cache_read=${parsed.usage?.cache_read_input_tokens ?? '?'}）。` +
+    ` res/roundLogs/anomalies.log に詳細を記録しました。`;
+  console.warn(msg);
+  try {
+    fs.appendFileSync(
+      anomalyLogPath,
+      JSON.stringify({
+        ts: new Date().toISOString(),
+        logName,
+        kind,
+        threshold,
+        num_turns: turns,
+        total_cost_usd: parsed.total_cost_usd ?? null,
+        duration_ms: parsed.duration_ms ?? null,
+        cache_read_input_tokens: parsed.usage?.cache_read_input_tokens ?? null,
+        promptLength,
+      }) + '\n'
+    );
+  } catch (e) {
+    console.warn(`⚠ anomalies.log への記録に失敗（無視して続行）: ${e.message}`);
   }
 }
 
@@ -290,6 +379,7 @@ function callClaudeOnce(prompt, logName, model) {
       num_turns: parsed.num_turns ?? null,
       is_error: parsed.is_error ?? null,
     });
+    checkTurnAnomaly(logName, prompt.length, parsed);
   } catch (e) {
     // --output-format json が使えないCLIバージョン等で生テキストが返ってきた場合のフォールバック。
     // 従来通りテキストとして扱う（usageは記録できないが処理自体は継続する）。
@@ -384,7 +474,7 @@ function moveToReview(chunkFiles, roundNo) {
     const src = path.join(chunksDir, f);
     if (fs.existsSync(src)) fs.renameSync(src, path.join(reviewDirAbs, f));
   }
-  return `dev/${reviewDirRel}/`;
+  return { reviewDir: `dev/${reviewDirRel}/`, reviewDirAbs };
 }
 
 function updateProgressAndCommit(start, roundNo, reviewDir, coveredDialogs, summaries) {
@@ -449,14 +539,14 @@ function runRound(start, roundNo) {
   }
 
   const coveredDialogs = collectDialogs(chunkFiles);
-  const reviewDir = moveToReview(chunkFiles, roundNo);
+  const { reviewDir, reviewDirAbs } = moveToReview(chunkFiles, roundNo);
   console.log(`退避先: ${reviewDir}`);
 
   if (!skipNotes) {
     console.log('\n--- 話者メモ/翻訳ルール/glossaryの反省ステップ ---');
     const glossaryPath = path.resolve('./res/glossary.json');
     const glossaryBackup = fs.readFileSync(glossaryPath, 'utf8');
-    callClaude(buildNotesPrompt(chunkFiles, roundNo), `round${roundNo}_notes`, notesModel);
+    callClaude(buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo), `round${roundNo}_notes`, notesModel);
     // glossary.json はJSON構文が壊れるとextractのmatchingGlossary()が以降全滅するので、
     // Claudeの編集後にNode側で機械的に検証する。壊れていたら即座に元へ戻す。
     try {

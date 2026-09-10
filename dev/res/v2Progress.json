@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 5550,
-  "updatedAt": "2026-09-10T10:36:10.399Z",
+  "nextStart": 5850,
+  "updatedAt": "2026-09-10T11:20:53.548Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -369,6 +369,29 @@
         "Nurah_After_Battle_Dialogue"
       ],
       "note": "v2リライト第21弾（runRoundLoop.mjs による自動実行）。 25件すべて翻訳しました。会話は `Nurah_After_Battle_Dialogue`（ヌーラとの戦闘後会話、処遇の分岐）1本のみです。気づいた点：`Staunton`（既存キャラ名）はglossaryに無かったため「ストーントン」で音写しました。既存訳に別表記があれば揃えてください。"
+    },
+    {
+      "start": 5550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-10_round22/",
+      "coveredDialogs": [
+        "Nurah_After_Battle_Dialogue",
+        "Drezen_Smith_Dialogue",
+        "Ember_Soldier_Event_Dialogue",
+        "GargoyleAttack_Camelia_Dialogue",
+        "GargoyleAttack_End_Dialogue",
+        "GargoyleAttack_Irabeth_Dialogue",
+        "GargoyleAttack_Irabeth_EndDialogue",
+        "GargoyleAttack_Nurah_Dialogue",
+        "GargoyleAttack_Seelah_Dialogue",
+        "GargoyleAttack_Start_Dialogue",
+        "GargoyleAttack_Ulbrig_Dialogue",
+        "GargoyleAttack_Quartermaster_Dialogue",
+        "Anevia_GibberingSwarm_dialog",
+        "BlindMan_GibberingSwarm_dialog"
+      ],
+      "note": "v2リライト第22弾（runRoundLoop.mjs による自動実行）。 81件全て翻訳しました。登場会話は「Nurah_After_Battle_Dialogue」（ヌーラの処遇を巡る戦闘後会話）と「Drezen_Smith_Dialogue」（鍛冶屋ジョルン・ヴェインとの兄弟愛を巡る会話）。CLAUDE.mdのglossary記載通りJoranはスタントンの弟なので、彼のセリフ内`brother`は全て「兄」（スタントン）で統一しました。 / 95件全て翻訳しました。登場した会話（dialog）は以下7つです：\n\n- `Ember_Soldier_Event_Dialogue`（老兵とエンバーの会話）\n- `GargoyleAttack_Camelia_Dialogue`\n- `GargoyleAttack_End_Dialogue`（アネヴィア・ヌーラ・ホーガス・ラン等）\n- `GargoyleAttack_Irabeth_Dialo / 97件すべて翻訳しました。登場dialog: GargoyleAttack_Start_Dialogue、GargoyleAttack_Ulbrig_Dialogue、GargoyleAttack_Quartermaster_Dialogue、Anevia_GibberingSwarm_dialog（ガーゴイル襲撃とヴェスカヴォル女王討伐のエピソード）。\n\n気づいた点: speakerフィールドが / 27件すべて訳出しました。会話は `BlindMan_GibberingSwarm_dialog`（ベスカヴォルの群れに襲われた盲目のハーフリング隊商員を巡るエピソード）です。ラン/ウォルジフ/エンバー/ウェンデュアグ/フィンネアン/リジル/ソシエルの各口調を意識して訳し分けました。"
     }
   ]
 }
