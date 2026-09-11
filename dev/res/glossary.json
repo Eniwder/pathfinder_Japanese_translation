@@ -1999,6 +1999,46 @@
       "source": "Architect",
       "target": "建築者",
       "note": "アリールーの二つ名（\"the Architect of the Worldwound\"）。"
+    },
+    {
+      "source": "Dragon Burial Ground",
+      "target": "ドラゴンの墓所",
+      "note": "ラシマス（Lathimas the Antiquarian）が謎を追う古代遺跡の地名。"
+    },
+    {
+      "source": "Kellid",
+      "target": "ケリッド人",
+      "note": "デーモンの血の敵を自任する民族。ゴルムを崇拝する。モーグウェグ、その導き手の老人ともにケリッド人。"
+    },
+    {
+      "source": "Sarkorian",
+      "target": "サーコリア人",
+      "note": "Sarkoris（サーコリス）の民を指す形容詞形。"
+    },
+    {
+      "source": "Wintersun",
+      "target": "ウィンターサン",
+      "note": "古のサーコリア人の入植地だった地名。モーグウェグが向かったとされる。"
+    },
+    {
+      "source": "Simarron",
+      "target": "シマロン",
+      "note": "最初の世界（First World）にあったとされる森の名。ハグの起源譚に登場。"
+    },
+    {
+      "source": "First World",
+      "target": "最初の世界",
+      "note": "妖精の起源とされる、物質界に先立つ原初の世界。ハグの起源譚で言及。"
+    },
+    {
+      "source": "Fang of Malice",
+      "target": "悪意の牙",
+      "note": "シーア（Ciar）の物語に関わる呪われた武器。"
+    },
+    {
+      "source": "Little Fang",
+      "target": "小さな牙",
+      "note": "ケリッド人の氏族の護符（藁で編んだ狼）の名。"
     }
   ]
 }
