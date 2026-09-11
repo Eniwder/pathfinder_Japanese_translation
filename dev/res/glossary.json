@@ -1924,6 +1924,46 @@
       "source": "Gray Garrison",
       "target": "グレイ・ガリソン",
       "note": "レギルの過去に関わる砦の地名。"
+    },
+    {
+      "source": "Wardstones",
+      "target": "ウォードストーン",
+      "note": "Worldwoundの侵食・崩壊を食い止めている結界石。プレイヤーが救った実績で知られる。"
+    },
+    {
+      "source": "Threshold",
+      "target": "スレッショルド",
+      "note": "Worldwound最深部、深淵への入口とされる要塞。イズの街を抜けた先にある。"
+    },
+    {
+      "source": "Newfound Sanctuary",
+      "target": "ニューファウンド・サンクチュアリ",
+      "note": "リッチ・ザカリウスが最後の守人を名乗る隠れ拠点の地名。"
+    },
+    {
+      "source": "Eternal Rose",
+      "target": "エターナル・ローズ",
+      "note": "美と芸術を司る女神シェリンの異名。"
+    },
+    {
+      "source": "Jernaugh",
+      "target": "ジャーノー",
+      "note": "エラスティルの神官。戦争キャンプで登場する脇役NPC。"
+    },
+    {
+      "source": "Yaker Ankelle",
+      "target": "ヤーカー・アンケル",
+      "note": "援軍要請に来たヘルナイト。"
+    },
+    {
+      "source": "Hawkblade",
+      "target": "ホークブレード",
+      "note": "イオミダエ教会の高名な尋問官リオトルの異名。"
+    },
+    {
+      "source": "Chilly Creek",
+      "target": "チリー・クリーク",
+      "note": "長らく神官不在だった小さな寒村の地名。"
     }
   ]
 }

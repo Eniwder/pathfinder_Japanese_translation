@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 6750,
-  "updatedAt": "2026-09-10T20:40:50.335Z",
+  "nextStart": 7050,
+  "updatedAt": "2026-09-11T05:16:26.108Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -451,6 +451,28 @@
         "IrabethRegill_Dialogue"
       ],
       "note": "v2リライト第25弾（runRoundLoop.mjs による自動実行）。 All entries in chunk_0000.json already have `translation` filled (none are `null`). No editing needed — the file was already fully translated.\n\n93件すべて訳文が既に入っており、`translation: null` の未訳entryは存在しませんでした。 / 83件すべて翻訳しました。登場した会話は「Church_Dialogue」（礼拝堂でグール化したヴィッサリーとの対峙）「Daeran_LostChapel_dialog」「Companion_Ember_Dialogue」（エンバー・デランの合流イベント）の3つです。\n\n気づいた点：speaker未指定のentryはグール化した聖職者ヴィッサリーや幼いエンバーの台詞が多く、文脈から口調を判断して訳 / 99件すべて翻訳しました。登場した会話：Companion_Regill_Dialogue（レギル部隊の撤退報告）、FleeingSoldier_Dialogue（拷問された逃亡兵の会話）、GalfreyInChurch_LostChapel_dialog（ガルフリー女王との教会でのやり取り）、GhoulCrafters_Dialogs／Graveyard_Dialogue（グール職人による拷問シ / 25件すべて翻訳しました。登場会話は `IrabethRegill_Dialogue`（イラベスとレギルが鉤に吊るされている場面、司令官との初対面〜共闘の交渉まで）。気づいた点：Irabethの台詞はspeaker未設定でしたが、瀕死の息切れした話し方（「…」多用）で統一し、Regillの`{mf}`性別分岐は3箇所とも日本語では不要と判断し省略しました。"
+    },
+    {
+      "start": 6750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-11_round26/",
+      "coveredDialogs": [
+        "IrabethRegill_Dialogue",
+        "IrabethSoldier_Dialogue",
+        "SoldiersFighting_Dialogue",
+        "Sosiel_Dead_Hellknight_Dialogue",
+        "Yaker_Wounded_Dialogue",
+        "ZachariusLostChapel_dialogue",
+        "SummonFromHepzamirah",
+        "TheatreFirstVisit_dialog",
+        "Warcamp_Sosiel_Intro_dialogue",
+        "Irabeth_Army_Tutorial_Dialogue",
+        "Jernaugh_Warcamp_Dialogue",
+        "Warcamp_Tour_Seelah_Dialogue",
+        "Tour_End_Queen_Dialogue"
+      ],
+      "note": "v2リライト第26弾（runRoundLoop.mjs による自動実行）。 88件すべて翻訳しました（null残しなし）。登場した会話: IrabethRegill_Dialogue／IrabethSoldier_Dialogue／SoldiersFighting_Dialogue／Sosiel_Dead_Hellknight_Dialogue。気づいた点: `{mf|his|her}`は日本語で性別分岐が不要だったため`{mf}`ごと省略しました（司令官の到来を告げるだ / 98件すべて翻訳しました。登場した会話(dialog)は `Yaker_Wounded_Dialogue`（負傷したヤーカーとの会話）、`ZachariusLostChapel_dialogue`（リッチ・ザカリウスとの交渉）、`SummonFromHepzamirah`（召喚幻視の内面描写）の3つです。\n\n気づいた点：Zacharius戦（`ZachariusLostChapel_dialogu / 82件すべて翻訳しました。登場した会話：`TheatreFirstVisit_dialog`（劇団の主演選び）、`Warcamp_Sosiel_Intro_dialogue`（ソシエル初対面）、`Irabeth_Army_Tutorial_Dialogue`、`Jernaugh_Warcamp_Dialogue`、`Warcamp_Tour_Seelah_Dialogue`（シーラの武勇伝とイラベ / 32件すべて翻訳しました。会話は \"Tour_End_Queen_Dialogue\"（ガルフレイ女王がドレゼン奪還任務を告げる場面、ヌーラ・ソシエルとの初顔合わせ、リオトル審問官の予告を含む）。気づいた点：`{g|wardstone}`の訳語がglossary未登録だったため「護石」で訳出しましたが、他チャンクでの既存訳語と揺れがないか確認をおすすめします。"
     }
   ]
 }

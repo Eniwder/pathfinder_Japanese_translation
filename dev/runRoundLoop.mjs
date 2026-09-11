@@ -240,7 +240,94 @@ function collectMissingSpeakerSamples(reviewDirAbs, chunkFiles) {
   return samplesBySpeaker;
 }
 
-function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo) {
+// speakerと同じ発想で、glossary.json(実測56KB/379件、今後も増え続ける)を毎回フルで
+// 開かせないよう、「原文に出てきた大文字始まりの語・フレーズのうち、既存glossaryに
+// まだ載っていないもの」だけをNode側で事前に絞り込む。toBatchData.jsのmatchesGlossaryTerm
+// と同じ単語境界判定を流用し、既存glossaryとの重複は双方向（"Galfrey"⊂"Queen Galfrey"の
+// ような部分一致）でチェックする。
+//
+// 検証方法: round23/round24で実際に追加されたglossary項目（Kiny/Sovyrian/Candlaron/
+// Arch of Refuge/Order of the Sunrise Sword/Paralictor/Gray Garrison、計7件）を
+// 「そのroundのnotesが動く直前のglossary.json」に対してこの関数を通したところ、
+// 7件とも候補一覧に含まれることを確認済み（実際のAPI呼び出しはせず、既存の
+// chunks_review/とgit履歴だけを使ったオフライン検証）。候補件数もglossary全件379件に
+// 対して30〜60件程度まで絞り込めていた。
+const GLOSSARY_CANDIDATE_STOPWORDS = new Set([
+  'i','you','he','she','we','they','it','the','a','an','this','that','these','those',
+  'my','your','his','her','its','our','their','but','and','or','if','when','while',
+  'after','before','because','so','yes','no','well','oh','ah','hey','look','wait','now',
+  'then','perhaps','maybe','please','sir','madam','lord','lady','yeah','okay','ok','hmm',
+  'good','right','sure','thank','thanks','sorry','alright','indeed','actually','still',
+  'here','there','what','who','whom','whose','which','how','why','not','never','always',
+  'come','go','let','all','some','one','two','three','first','second','last','many','much',
+  'very','just','even','only','also','again','once','more','most','less','least','both',
+]);
+
+// "Order of the Sunrise Sword" のように連結語(of/the/and)が連続するケースも1フレーズと
+// して拾えるよう、連結語ブロックは1語ずつではなく1回以上の繰り返しを許可する。
+const GLOSSARY_PHRASE_RE = /\b[A-Z][a-zA-Z']{1,}(?:(?:\s+(?:of|the|and))+\s+[A-Z][a-zA-Z']{1,}|\s+[A-Z][a-zA-Z']{1,})*\b/g;
+
+function matchesGlossaryTerm(lowerText, source) {
+  const escaped = source.toLocaleLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?<![a-z])${escaped}(?![a-z])`, 'i').test(lowerText);
+}
+
+// 文頭（＝地の文の大文字化にすぎない可能性が高い位置）に出現しただけの語は候補から除く。
+function isSentenceInitial(text, matchIndex) {
+  let i = matchIndex - 1;
+  while (i >= 0 && /[\s"'“”]/.test(text[i])) i--;
+  if (i < 0) return true;
+  return /[.!?]/.test(text[i]);
+}
+
+function extractGlossaryCandidates(reviewDirAbs, chunkFiles, glossaryEntries, minFreq = 1) {
+  const glossarySources = glossaryEntries.map((e) => e.source).filter((s) => typeof s === 'string');
+  const counts = new Map();
+
+  for (const f of chunkFiles) {
+    const filePath = path.join(reviewDirAbs, f);
+    if (!fs.existsSync(filePath)) continue;
+    const c = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    for (const b of c.blocks ?? []) {
+      for (const e of b.entries ?? []) {
+        if (!e.text) continue;
+        for (const m of e.text.matchAll(GLOSSARY_PHRASE_RE)) {
+          const phrase = m[0].trim();
+          if (phrase.includes("'")) continue; // I'm/It's等の短縮形を除外
+          const words = phrase.split(/\s+/);
+          if (words.length === 1 && GLOSSARY_CANDIDATE_STOPWORDS.has(words[0].toLowerCase())) continue;
+          if (isSentenceInitial(e.text, m.index)) continue;
+          if (!counts.has(phrase)) counts.set(phrase, { count: 0, samples: [] });
+          const rec = counts.get(phrase);
+          rec.count++;
+          if (rec.samples.length < 2) rec.samples.push({ dialog: b.dialog ?? null, text: e.text });
+        }
+      }
+    }
+  }
+
+  let candidates = [];
+  for (const [phrase, rec] of counts) {
+    if (rec.count < minFreq) continue;
+    const lower = phrase.toLowerCase();
+    // 既存glossaryとの重複除外は双方向で見る（"Queen Galfrey"収録済みのとき"Galfrey"単独を
+    // 毎回未登録候補として出し続けないようにするため）。
+    if (glossarySources.some((s) => matchesGlossaryTerm(lower, s) || matchesGlossaryTerm(s.toLowerCase(), lower))) continue;
+    candidates.push({ phrase, count: rec.count, samples: rec.samples });
+  }
+  // 候補同士の重複（"Sunrise Sword" が "Order of the Sunrise Sword" に含まれる、等）も
+  // 長い方だけ残す。
+  candidates.sort((a, b) => b.phrase.length - a.phrase.length);
+  const kept = [];
+  for (const c of candidates) {
+    if (kept.some((k) => matchesGlossaryTerm(k.phrase.toLowerCase(), c.phrase.toLowerCase()))) continue;
+    kept.push(c);
+  }
+  kept.sort((a, b) => b.count - a.count);
+  return kept;
+}
+
+function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries) {
   const missing = collectMissingSpeakerSamples(reviewDirAbs, chunkFiles);
   const missingBlock = missing.size
     ? [...missing.entries()]
@@ -252,9 +339,25 @@ function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo) {
         .join('\n')
     : '（未登録の話者は検出されませんでした）';
 
+  const glossaryCandidates = extractGlossaryCandidates(reviewDirAbs, chunkFiles, glossaryEntries);
+  const glossaryBlock = glossaryCandidates.length
+    ? glossaryCandidates
+        .map(
+          (c) =>
+            `- "${c.phrase}"（${c.count}回）\n` +
+            c.samples.map((s) => `  - (${s.dialog ?? '?'}) ${s.text}`).join('\n')
+        )
+        .join('\n')
+    : '（既存glossaryに無い固有名詞は検出されませんでした）';
+  const glossaryFormatExamples = glossaryEntries
+    .slice(0, 2)
+    .map((e) => JSON.stringify(e))
+    .join('\n  ');
+
   return `直前に${reviewDir}へ退避されたchunkファイルについて、以下の3点を確認してください。
-chunkファイル本体はReadしなくて構いません（1で必要な原文・訳文サンプルは下に埋め込み済みです。
-2・3を判断するのに実例が要る場合だけ、該当chunkファイル（${chunkFiles.join(', ')}）を開いてください）。
+chunkファイル本体・dev/res/glossary.jsonはReadしなくて構いません（判断に必要な情報は
+下に埋め込み済みです。判断がつかない場合だけ、該当chunkファイル（${chunkFiles.join(', ')}）や
+dev/res/glossary.jsonを開いてください）。
 
 【やること（該当があれば、なければ何もしない）】
 1. 下記は dev/res/v2CharacterNotes.md にまだ載っていない話者(speaker_id)と、その原文/訳文サンプルです。
@@ -269,14 +372,18 @@ ${missingBlock}
    （長い説明・経緯は書かない）。追記した経緯・きっかけのメモは
    dev/res/translationGuideNotes.md の「更新履歴」に1行追記する
    （translationGuide.md本体には経緯を書かない。読み込みコストを増やさないため）。
-3. dev/res/glossary.json を確認し、今回の訳文で使った固有名詞（人名・地名・組織名など）で
-   まだ glossary に載っていないもの、または載っている表記と違う訳語を使ってしまったものが
-   あれば、既存entryの形式（{"source": 英語, "target": 訳語, "note": 短い説明}、
-   必要なら"category"も）に合わせて glossary 配列に追記・修正する。
-   - 追記は「今後の一貫性のために記録しておく価値がある固有名詞」だけに絞ること
-     （一般語・言い回しは対象外）。
-   - 既存entryの target を書き換える場合は、それが誤記/表記ゆれの是正だと確信できるときだけにし、
-     迷ったら追記せず何もしない。
+3. 下記は今回の原文に登場した語のうち、既存の dev/res/glossary.json にまだ無いものの候補です
+   （機械的な抽出なので固有名詞ではないノイズも混ざっています。実在の固有名詞だと判断できる
+   ものだけを対象にしてください）:
+${glossaryBlock}
+   既存entryのフォーマット例:
+  ${glossaryFormatExamples}
+   このうち「今後の一貫性のために記録しておく価値がある固有名詞（人名・地名・組織名など）」
+   だけを選び、同じ形式（{"source": 英語, "target": 訳語, "note": 短い説明}、必要なら
+   "category"も）で glossary.json の配列に追記する。
+   - 一般語・言い回し・候補に挙がっていない語は対象外（無理に探しにいかない）。
+   - 既存entryの誤記/表記ゆれ修正が必要だと確信できる場合のみ、glossary.jsonを実際に開いて
+     該当entryのtargetを直接書き換える。迷ったら何もしない。
    - JSON構文を絶対に壊さないこと（配列の閉じ忘れ・カンマ漏れに注意）。
 
 編集してよいのは上記4ファイル（v2CharacterNotes.md / translationGuide.md /
@@ -546,7 +653,12 @@ function runRound(start, roundNo) {
     console.log('\n--- 話者メモ/翻訳ルール/glossaryの反省ステップ ---');
     const glossaryPath = path.resolve('./res/glossary.json');
     const glossaryBackup = fs.readFileSync(glossaryPath, 'utf8');
-    callClaude(buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo), `round${roundNo}_notes`, notesModel);
+    const glossaryEntries = JSON.parse(glossaryBackup).glossary ?? [];
+    callClaude(
+      buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries),
+      `round${roundNo}_notes`,
+      notesModel
+    );
     // glossary.json はJSON構文が壊れるとextractのmatchingGlossary()が以降全滅するので、
     // Claudeの編集後にNode側で機械的に検証する。壊れていたら即座に元へ戻す。
     try {
