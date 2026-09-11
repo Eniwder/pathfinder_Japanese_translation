@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 7050,
-  "updatedAt": "2026-09-11T05:16:26.108Z",
+  "nextStart": 7350,
+  "updatedAt": "2026-09-11T09:35:59.828Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -473,6 +473,33 @@
         "Tour_End_Queen_Dialogue"
       ],
       "note": "v2リライト第26弾（runRoundLoop.mjs による自動実行）。 88件すべて翻訳しました（null残しなし）。登場した会話: IrabethRegill_Dialogue／IrabethSoldier_Dialogue／SoldiersFighting_Dialogue／Sosiel_Dead_Hellknight_Dialogue。気づいた点: `{mf|his|her}`は日本語で性別分岐が不要だったため`{mf}`ごと省略しました（司令官の到来を告げるだ / 98件すべて翻訳しました。登場した会話(dialog)は `Yaker_Wounded_Dialogue`（負傷したヤーカーとの会話）、`ZachariusLostChapel_dialogue`（リッチ・ザカリウスとの交渉）、`SummonFromHepzamirah`（召喚幻視の内面描写）の3つです。\n\n気づいた点：Zacharius戦（`ZachariusLostChapel_dialogu / 82件すべて翻訳しました。登場した会話：`TheatreFirstVisit_dialog`（劇団の主演選び）、`Warcamp_Sosiel_Intro_dialogue`（ソシエル初対面）、`Irabeth_Army_Tutorial_Dialogue`、`Jernaugh_Warcamp_Dialogue`、`Warcamp_Tour_Seelah_Dialogue`（シーラの武勇伝とイラベ / 32件すべて翻訳しました。会話は \"Tour_End_Queen_Dialogue\"（ガルフレイ女王がドレゼン奪還任務を告げる場面、ヌーラ・ソシエルとの初顔合わせ、リオトル審問官の予告を含む）。気づいた点：`{g|wardstone}`の訳語がglossary未登録だったため「護石」で訳出しましたが、他チャンクでの既存訳語と揺れがないか確認をおすすめします。"
+    },
+    {
+      "start": 7050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-11_round27/",
+      "coveredDialogs": [
+        "Tour_End_Queen_Dialogue",
+        "WorldwoundEdge_GMBE",
+        "BurnedWitch_AreeLab_dialog",
+        "FN3_Prologue_dialog",
+        "HeartOfLab_AreeLab_dialog",
+        "MagicProjector_dialog",
+        "MinionFirst_AreeLab_dialog",
+        "ArushaWish_Join_dialog",
+        "CameliaWish_Join_dialog",
+        "DaeranWish_Join_dialog",
+        "EmberWish_Join_dialog",
+        "GreyborWish_Join_dialog",
+        "LannWish_Join_dialog",
+        "NenioWish_dialogue",
+        "RegillWish_Join_dialog",
+        "SeelahWish_Join_dialog",
+        "SosielWish_Join_dialog",
+        "TheatreDemon_AreeLab_dialog"
+      ],
+      "note": "v2リライト第27弾（runRoundLoop.mjs による自動実行）。 93件すべて訳出しました（null残しなし）。登場会話は `Tour_End_Queen_Dialogue`（ガルフレイ女王とデランの謁見）、`WorldwoundEdge_GMBE`（行軍の地の文分岐）、`BurnedWitch_AreeLab_dialog`（アリールー実験体の年老いたモングレル）、`FN3_Prologue_dialog`（アリールーとスーチャーのプロローグ）。気づいた点とし / 76件全て翻訳しました。会話は `HeartOfLab_AreeLab_dialog`（アリールーの研究室でパラドックス辞典を巡るドレッチ・スーチュアとの対話）と `MagicProjector_dialog`（クリスタル投影装置の選択肢）の2つです。\n\n気づいた点：`{mf|He|She}`（2箇所）と`{mf|boy|girl}`は、日本語では性別を示さなくても自然に読めるため省略しました。ま / The file is already fully translated — no `\"translation\": null` entries remain, and every entry I read already has natural Japanese matching the guide's rules (control tags preserved, low comma usage, / 32件全て訳出しました。登場した会話は NenioWish_dialogue / RegillWish_Join_dialog / SeelahWish_Join_dialog / SosielWish_Join_dialog / TheatreDemon_AreeLab_dialog（アリールー・ヴォーレシュ関連の幻惑イベント）です。lilitu/painajaiは訳語未登録のためカタカナ音写（"
     }
   ]
 }
