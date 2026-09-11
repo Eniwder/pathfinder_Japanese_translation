@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 7350,
-  "updatedAt": "2026-09-11T09:35:59.828Z",
+  "nextStart": 7650,
+  "updatedAt": "2026-09-11T10:02:08.339Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -500,6 +500,26 @@
         "TheatreDemon_AreeLab_dialog"
       ],
       "note": "v2リライト第27弾（runRoundLoop.mjs による自動実行）。 93件すべて訳出しました（null残しなし）。登場会話は `Tour_End_Queen_Dialogue`（ガルフレイ女王とデランの謁見）、`WorldwoundEdge_GMBE`（行軍の地の文分岐）、`BurnedWitch_AreeLab_dialog`（アリールー実験体の年老いたモングレル）、`FN3_Prologue_dialog`（アリールーとスーチャーのプロローグ）。気づいた点とし / 76件全て翻訳しました。会話は `HeartOfLab_AreeLab_dialog`（アリールーの研究室でパラドックス辞典を巡るドレッチ・スーチュアとの対話）と `MagicProjector_dialog`（クリスタル投影装置の選択肢）の2つです。\n\n気づいた点：`{mf|He|She}`（2箇所）と`{mf|boy|girl}`は、日本語では性別を示さなくても自然に読めるため省略しました。ま / The file is already fully translated — no `\"translation\": null` entries remain, and every entry I read already has natural Japanese matching the guide's rules (control tags preserved, low comma usage, / 32件全て訳出しました。登場した会話は NenioWish_dialogue / RegillWish_Join_dialog / SeelahWish_Join_dialog / SosielWish_Join_dialog / TheatreDemon_AreeLab_dialog（アリールー・ヴォーレシュ関連の幻惑イベント）です。lilitu/painajaiは訳語未登録のためカタカナ音写（"
+    },
+    {
+      "start": 7350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-11_round28/",
+      "coveredDialogs": [
+        "TheatreDemon_AreeLab_dialog",
+        "UlbrigWish_Join_dialogue",
+        "WenduagWish_Join_dialog",
+        "WoljifWish_Join_dialogue",
+        "SoulJar_AreeLab_dialog",
+        "TargonaPrison_AreeLab_dialog",
+        "TargonaWings_AreeLab_dialog",
+        "BookEvent_ArushalaeCalls",
+        "Dialogue_Fortress_Arusha_End",
+        "Dialogue_Fortress_Arusha_Start",
+        "Dialogue_Fortress_Hag"
+      ],
+      "note": "v2リライト第28弾（runRoundLoop.mjs による自動実行）。 85件すべて翻訳しました。登場した会話は `TheatreDemon_AreeLab_dialog`（演劇デーモン戦後）、`UlbrigWish_Join_dialogue`／`WenduagWish_Join_dialog`／`WoljifWish_Join_dialogue`（幻影から目覚める仲間たち）、`SoulJar_AreeLab_dialog`（魂の器の調査）、`TargonaPris / 80件を翻訳しました（1件のみ元の\"keys\":81表記のまま、entry数は80件で全件翻訳済み）。登場したdialogは「TargonaWings_AreeLab_dialog」（凍結天使ターゴナの覚醒・翼の由来を巡る会話）と「BookEvent_ArushalaeCalls」（アルエシャラエが夢で司令官を導く場面）。気づいた点：`Areelu`単独と`Areelu Vorlesh`（フルネー / 44件全て翻訳しました。会話はアルエシャラエ（サキュバスコンパニオン）の墓前での告白イベント「Dialogue_Fortress_Arusha_End」（ウルブリグ・オレスク、シーラ、グレイボー、レギル、ソシエルの反応込み）。気づいた点：`{name}`はctrl_2/ctrl_0として原文中にプレースホルダのまま埋め込まれる形式だったため、そのまま`<ctrl_N/>`をコピーしています。 / 90件すべて翻訳し書き込みました。会話は `Dialogue_Fortress_Arusha_Start`（アルエシャラエとの再会～ハグ討伐の依頼）と `Dialogue_Fortress_Hag`（捕らえたハグ・ジャルニッカとの対峙）の2本です。気づいた点：同一文の言い回し違い（narration差分や「捕まえた/殺そうとした」等の分岐版）が複数あり、文脈に応じて微妙に訳し分けました。"
     }
   ]
 }

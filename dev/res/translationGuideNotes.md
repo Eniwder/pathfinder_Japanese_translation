@@ -138,6 +138,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   いるのを発見。translationGuide.mdに、組織名がglossary未登録のままchunk内で複数回
   訳出される場合は初出の訳語に揃えるルールを追記。glossary.jsonに
   Order of the Sunrise Sword/Paralictor/Gray Garrisonを追加。
+- 2026-09-11: round28 chunk_0000〜0003（AreeLab/TargonaPrison/TargonaWings、
+  Arueshalaeの要塞シーン）のレビューで、同一の選択肢`[Attack]`がchunk内で
+  `[攻撃]`（3箇所）/`[攻撃する]`（1箇所）と訳し分けられているのを発見。
+  組織名ルールと同様、選択肢の角括弧表記も統一する旨をtranslationGuide.mdに追記。
+  glossary.jsonにProtectress/Ivory Sanctum/Bell of Mercy/Jaruunicka/Architect
+  （アリールーの二つ名）を追加。新規話者は検出されずv2CharacterNotes.mdの変更なし。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

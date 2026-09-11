@@ -1974,6 +1974,31 @@
       "source": "Acemi",
       "target": "アセミ",
       "note": "シーラの過去に登場する、彼女を鍛え亡くなったパラディン。"
+    },
+    {
+      "source": "Protectress",
+      "target": "守護者",
+      "note": "TargonaPrisonの囚人たちが結界に囚われた天使に付けた呼び名。"
+    },
+    {
+      "source": "Ivory Sanctum",
+      "target": "アイボリー・サンクタム",
+      "note": "カルティストが入るデーモンの力の秘密が眠る施設の地名。"
+    },
+    {
+      "source": "Bell of Mercy",
+      "target": "慈悲の鐘",
+      "note": "要塞にあるデスナの聖遺物。ハグを捕らえるのに使う。"
+    },
+    {
+      "source": "Jaruunicka",
+      "target": "ジャルーニツカ",
+      "note": "要塞に潜む老いた人喰いハグの名。"
+    },
+    {
+      "source": "Architect",
+      "target": "建築者",
+      "note": "アリールーの二つ名（\"the Architect of the Worldwound\"）。"
     }
   ]
 }
