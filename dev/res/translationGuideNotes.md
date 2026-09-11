@@ -144,6 +144,13 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   組織名ルールと同様、選択肢の角括弧表記も統一する旨をtranslationGuide.mdに追記。
   glossary.jsonにProtectress/Ivory Sanctum/Bell of Mercy/Jaruunicka/Architect
   （アリールーの二つ名）を追加。新規話者は検出されずv2CharacterNotes.mdの変更なし。
+- 2026-09-12: round30 chunk_0000〜0003（Herald_Drezen_c3_dialog/GalfreyArrives_Drezen_c3_dialog/
+  Irabeth_C3_Intro_Dialogue/Hulrun_Dresen_Dialogue）のレビューで、天使など神話的存在が
+  主人公を「Champion」、人間の部下が「Commander」と呼び分けている点を確認。訳語が
+  「チャンピオン」「指揮官」で混同されないようtranslationGuide.mdに追記。glossary.jsonに
+  Midnight Fane/Red Morning Massacre/Starstone/Outer Planes/Khorramzadeh/Hepzamirah/
+  Cheliax/Houndhearts/Gray Road/Championを追加。新規話者は検出されずv2CharacterNotes.mdの
+  変更なし。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

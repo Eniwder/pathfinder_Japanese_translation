@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 7950,
-  "updatedAt": "2026-09-11T14:33:09.110Z",
+  "nextStart": 8250,
+  "updatedAt": "2026-09-11T20:36:02.171Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -539,6 +539,19 @@
         "GalfreyArrives_Drezen_c3_dialog"
       ],
       "note": "v2リライト第29弾（runRoundLoop.mjs による自動実行）。 82件すべて翻訳しました。会話は \"Dialogue_Fortress_Hag\"（要塞のハグ=ジャルーニツカとアルエシャラエを巡る一幕、ラン/ソシエル/レジル/ネニオ/ウルブリグ/エンバーの合いの手あり）。\n\n気づいた点：`speaker`未指定のentryはほぼアルエシャラエの台詞と判断し丁寧語で統一、`{mf}`分岐タグは今回のチャンクには含まれていませんでした。 / 81件全て翻訳し書き込み完了。登場した会話は KTC_ArueshalaeVSDemon_Dialogue／KTC_CameliaVSAeon_Dialogue／KTC_EveryoneVSLocust_Dialogue（アネヴィア）／KTC_SeelahVSLich_Dialogue／LatimasCaveEntrance_dialogue の5つ。null残しはなし。気づいた点：カメリア・アネ / 23件を訳しました。登場会話は `LatimasDoor_dialogue`（扉の謎解き、ネニオ/ウォルジフ絡み）と`LatimasHello_dialogue`（骨董商ラティマスの依頼会話、竜神話パート）。ラティマスが最終的に「定命の者」呼ばわりされる描写があり、竜（おそらくアプス/ダハクの化身）である示唆に沿って該当箇所は「定命の者」で統一しました。 / chunk_0003.json は79件すべてすでに翻訳済み（`translation`が全entryで埋まっており、`null`は1件もありません）でした。編集不要と判断し、ファイルには一切手を加えていません。\n\n- 訳した件数: 0件（既存の訳がすべて埋まっていたため）\n- 登場した会話: `Ciar_MainSquare`（シーア/モーグウェグ絡みの一連のやり取り）、`GalfreyArri"
+    },
+    {
+      "start": 7950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-12_round30/",
+      "coveredDialogs": [
+        "GalfreyArrives_Drezen_c3_dialog",
+        "Herald_Drezen_c3_dialog",
+        "Hulrun_Dresen_Dialogue",
+        "Irabeth_C3_Intro_Dialogue"
+      ],
+      "note": "v2リライト第30弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }

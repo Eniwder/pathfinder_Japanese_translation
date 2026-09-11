@@ -2039,6 +2039,56 @@
       "source": "Little Fang",
       "target": "小さな牙",
       "note": "ケリッド人の氏族の護符（藁で編んだ狼）の名。"
+    },
+    {
+      "source": "Midnight Fane",
+      "target": "真夜中の聖堂",
+      "note": "ドレゼン地下にあるデーモン卿の神殿。round30で登場。"
+    },
+    {
+      "source": "Red Morning Massacre",
+      "target": "赤い朝の虐殺",
+      "note": "ケナブレスで起きた粛清事件。フルルンが語る過去の逸話。"
+    },
+    {
+      "source": "Starstone",
+      "target": "スターストーン",
+      "note": "イオメダエが試練を受け神格を得たとされる遺物。「Test of the Starstone」＝「スターストーンの試練」。"
+    },
+    {
+      "source": "Outer Planes",
+      "target": "外方次元",
+      "note": "天使・悪魔などの不死の存在が多くの時間を過ごす、物質界の外にある諸次元。"
+    },
+    {
+      "source": "Khorramzadeh",
+      "target": "コラムザデフ",
+      "note": "デスカリ配下のバロー(balor)の一体。"
+    },
+    {
+      "source": "Hepzamirah",
+      "target": "ヘプザミラ",
+      "note": "デスカリ軍の将の一体、アビスの著名な悪魔。"
+    },
+    {
+      "source": "Cheliax",
+      "target": "チェリアクス",
+      "note": "イオメダエの出身地とされる、悪名高い国家。"
+    },
+    {
+      "source": "Houndhearts",
+      "target": "ハウンドハーツ",
+      "note": "十字軍の騎士エランが所属する家名/騎士団。"
+    },
+    {
+      "source": "Gray Road",
+      "target": "グレイロード",
+      "note": "イズやスレッショルドからデーモンの軍勢が進軍してくる街道。"
+    },
+    {
+      "source": "Champion",
+      "target": "チャンピオン",
+      "note": "天使など神話的存在が主人公を呼ぶ敬称（人間の指揮官には「Commander」を使う）。"
     }
   ]
 }
