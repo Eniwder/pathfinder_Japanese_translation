@@ -2089,6 +2089,136 @@
       "source": "Champion",
       "target": "チャンピオン",
       "note": "天使など神話的存在が主人公を呼ぶ敬称（人間の指揮官には「Commander」を使う）。"
+    },
+    {
+      "source": "Ustalav",
+      "target": "ウスタラヴ",
+      "note": "陰鬱な霧に閉ざされた国。ヴァンパイアやアンデッド信仰（Whispering Way）の本拠地。"
+    },
+    {
+      "source": "Whispering Way",
+      "target": "囁きの道",
+      "note": "タル=バフォンの遺志を継ぐネクロマンシー教団。アーガソアを密かに崇拝する。"
+    },
+    {
+      "source": "Elyanka",
+      "target": "エリヤンカ",
+      "note": "ウスタラヴ出身のヴァンパイアの老女。Whispering Wayの信奉者。"
+    },
+    {
+      "source": "Klaem",
+      "target": "クレーム",
+      "note": "燃える槍の騎士団の若い騎士。ブラックウィング図書館で焼死寸前を主人公に救われた過去を持つ。"
+    },
+    {
+      "source": "Order of the Flaming Lance",
+      "target": "燃える槍の騎士団",
+      "note": "ガルフリー女王配下の騎士団。旧リーダーのミアミールが行方不明。"
+    },
+    {
+      "source": "Nystra Flamefinger",
+      "target": "ニストラ・フレイムフィンガー",
+      "note": "燃える槍の騎士団の新リーダー。"
+    },
+    {
+      "source": "Miammir",
+      "target": "ミアミール",
+      "note": "燃える槍の騎士団の元リーダー。「Sister Miammir」「Miammir the Scholar」いずれも同一人物。デーモンの襲撃前にケナブレスを去り行方不明。"
+    },
+    {
+      "source": "Captain Seilkind",
+      "target": "セイルカインド隊長",
+      "note": "傭兵団ブラックストーン・カンパニーの先鋒を率いる隊長。"
+    },
+    {
+      "source": "Blackstone Company",
+      "target": "ブラックストーン・カンパニー",
+      "note": "アンドラン出身の傭兵団。"
+    },
+    {
+      "source": "Tsai",
+      "target": "ツァイ",
+      "note": "禁制のネクロマンシー用品を扱うダンピール（半吸血鬼）の密売人。"
+    },
+    {
+      "source": "Andoran",
+      "target": "アンドラン",
+      "note": "自由と平等を掲げる国家。ブラックストーン・カンパニーの出身地。"
+    },
+    {
+      "source": "Order of the Gate",
+      "target": "門の騎士団",
+      "note": "ヘルナイトの一派。パラリクター、アミノス・レンスが率いる。"
+    },
+    {
+      "source": "Order of the Pike",
+      "target": "槍の騎士団",
+      "note": "ヘルナイトの一派。パラリクター、レラーナ・タイが率いる。"
+    },
+    {
+      "source": "Order of the Pyre",
+      "target": "火刑の騎士団",
+      "note": "ヘルナイトの一派。パラリクター、ゲレン・デオサンが率いる。"
+    },
+    {
+      "source": "Bellflower Network",
+      "target": "ベルフラワー・ネットワーク",
+      "note": "ハーフリングの奴隷解放を掲げる組織。"
+    },
+    {
+      "source": "Knights of Ozem",
+      "target": "オゼムの騎士団",
+      "note": "かつて輝ける十字軍としてウスタラヴに侵攻した歴史上の騎士団。"
+    },
+    {
+      "source": "Boneyard",
+      "target": "骨の庭",
+      "note": "ファラズマが支配する死者の国。"
+    },
+    {
+      "source": "Pallid Princess",
+      "target": "蒼白の姫君",
+      "note": "アーガソアの異名。"
+    },
+    {
+      "source": "Inner Sea",
+      "target": "内海",
+      "note": "ゴラリオン中心部の海域。周辺諸国の総称としても使われる。"
+    },
+    {
+      "source": "Lastwall",
+      "target": "ラストウォール",
+      "note": "ウスタラヴの北に位置する国家。"
+    },
+    {
+      "source": "Varisians",
+      "target": "ヴァリシア人",
+      "note": "ウスタラヴ周辺に暮らす民族。"
+    },
+    {
+      "source": "Kyonin",
+      "target": "キョーニン",
+      "note": "エルフの国。"
+    },
+    {
+      "source": "Belkzen",
+      "target": "ベルクゼン",
+      "note": "オークの支配する地。"
+    },
+    {
+      "source": "Bifrons",
+      "target": "ビフロンス",
+      "note": "チェリアクスの一部で信仰される地獄の公爵。聖なる動物は狐。"
+    },
+    {
+      "source": "Lost Chapel",
+      "target": "失われた礼拝堂",
+      "note": "ナバスなどの強力なデーモンに襲撃された戦跡の地名。"
+    },
+    {
+      "source": "Greengates",
+      "target": "グリーンゲイツ",
+      "note": "アルエシャラエに関わる地名。"
     }
   ]
 }

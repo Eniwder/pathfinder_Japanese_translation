@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 8250,
-  "updatedAt": "2026-09-11T20:36:02.171Z",
+  "nextStart": 8550,
+  "updatedAt": "2026-09-11T21:02:00.750Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -552,6 +552,34 @@
         "Irabeth_C3_Intro_Dialogue"
       ],
       "note": "v2リライト第30弾（runRoundLoop.mjs による自動実行）。"
+    },
+    {
+      "start": 8250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-12_round31/",
+      "coveredDialogs": [
+        "Irabeth_C3_Intro_Dialogue",
+        "KTC_Arueshalae_GotoRedoubt_Dialogue",
+        "KTC_BlackStoneComing",
+        "KTC_Ciar_FirstVisit",
+        "KTC_Flamelance_Klejm_Dialogue",
+        "KTC_Flamelance_Nystra_Dialogue",
+        "HellknightsVisit_c3_ktc_dialog",
+        "KTC_IrabethStrong_Dialogue",
+        "KTC_Irabeth_AboutCiar",
+        "KTC_KingdomLost_c3_Dialogue",
+        "KTC_Prelate_Hulrun_Dialogue",
+        "KTC_Prelate_ChunD_Dialogue",
+        "KTC_Prelate_Ramien_Dialogue",
+        "ReactivityReinforcements_c3_ktc_dialog",
+        "KTC_StorytellerIsBack_dialogue",
+        "ChunD_Drezen_Dialogue",
+        "Morveg_MainSquare",
+        "BlackDealer_MainDialogue",
+        "Elyanka_MainDialogue"
+      ],
+      "note": "v2リライト第31弾（runRoundLoop.mjs による自動実行）。 92件全て翻訳しました。登場したdialogは Irabeth_C3_Intro_Dialogue／KTC_Arueshalae_GotoRedoubt_Dialogue／KTC_BlackStoneComing／KTC_Ciar_FirstVisit／KTC_Flamelance_Klejm_Dialogue／KTC_Flamelance_Nystra_Dialogue の6会話です。`{mf| / 91件すべて翻訳しました。登場した会話：HellknightsVisit_c3_ktc_dialog（ヘルナイト連合との会談）、KTC_IrabethStrong_Dialogue、KTC_Irabeth_AboutCiar、KTC_KingdomLost_c3_Dialogue、KTC_Prelate_Hulrun_Dialogue、KTC_Prelate_ChunD_Dialogue、KTC_ / 77件全て翻訳しました。登場したdialog: `ReactivityReinforcements_c3_ktc_dialog`（各種族の援軍受け入れ選択肢）、`KTC_StorytellerIsBack_dialogue`（ストーリーテラー再会）、`ChunD_Drezen_Dialogue`（守護者との問答）、`Morveg_MainSquare`（モーグウェグとシーア）、`BlackDeal / 40件すべて翻訳しました。登場会話は `Elyanka_MainDialogue`（ウスタラヴの死霊術師エリャンカと、MythicLich経路のセプティムスとの対話）。ザカリウス排除・アーガソア信仰・ウスタラヴの歴史・タル=バフォン(囁きの暴君)についての長い解説会話でした。`{mf|lord|lady}` は「閣下」「奥方様」で訳し分けています。"
     }
   ]
 }
