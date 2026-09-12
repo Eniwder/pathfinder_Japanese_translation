@@ -408,23 +408,38 @@ function appendUsageLog(record) {
   }
 }
 
-// num_turnsの実測（2026-09時点）: chunk翻訳はほぼ常に4turn、notes反省ステップは13〜33turn。
-// round20_chunk_0001だけ48turnという外れ値が出たことがあり、後からusage.jsonlを集計して
-// 初めて気づいた。次に同様の外れ値が出たときにその場で気づけるよう、しきい値超過を
-// ここで即座に警告し、原因調査用に anomalies.log（該当呼び出しのprompt文字数なども含む）
-// に残しておく。しきい値は実測分布に少し余裕を持たせた値で、超えても実害はなく
-// 単なる注意喚起（処理は止めない）。
+// 実測（2026-09時点、claude-sonnet-5）: chunk翻訳はturnはほぼ常に4だが、cost/durationは
+// 内容量やextended thinkingの深さでばらつく（中央値$0.66・384秒、p90 $0.89・540秒）。
+// notesはturn13〜33（round26以降の改修後は7〜9まで低下）、cost中央値$0.57・109秒。
+//
+// round20_chunk_0001（48turn）はturn数の外れ値だったが、round30_chunk_0001は逆にturn数は
+// 通常通り4のまま、thinking_tokens=92,149・output_tokens=183,164まで膨らみ、1回の呼び出しで
+// $2.48・27分（同roundの他chunkの3〜8倍）を消費していた。turn数だけを見張る従来のチェックは
+// これを素通りさせていたため、cost/durationのしきい値も追加した。
+// しきい値はいずれの指標も実測分布のp90より十分上、かつ既知の外れ値2件（round20_chunk_0001の
+// 48turn、round30_chunk_0001の$2.48/1603秒）は確実に検出できる値にしている。
 const anomalyLogPath = path.resolve('./res/roundLogs/anomalies.log');
-const TURN_THRESHOLDS = { notes: 40, chunk: 12 };
+const ANOMALY_THRESHOLDS = {
+  chunk: { turns: 12, costUsd: 1.5, durationMs: 900_000 }, // 900_000ms = 15分
+  notes: { turns: 40, costUsd: 2.0, durationMs: 600_000 }, // 600_000ms = 10分
+};
 
 function checkTurnAnomaly(logName, promptLength, parsed) {
   const kind = logName.endsWith('_notes') ? 'notes' : 'chunk';
-  const threshold = TURN_THRESHOLDS[kind];
+  const threshold = ANOMALY_THRESHOLDS[kind];
   const turns = parsed.num_turns;
-  if (typeof turns !== 'number' || turns <= threshold) return;
+  const cost = parsed.total_cost_usd ?? 0;
+  const duration = parsed.duration_ms ?? 0;
+
+  const reasons = [];
+  if (typeof turns === 'number' && turns > threshold.turns) reasons.push(`turns ${turns}>${threshold.turns}`);
+  if (cost > threshold.costUsd) reasons.push(`cost $${cost.toFixed(3)}>$${threshold.costUsd}`);
+  if (duration > threshold.durationMs) reasons.push(`duration ${(duration / 1000).toFixed(0)}s>${threshold.durationMs / 1000}s`);
+  if (!reasons.length) return;
+
   const msg =
-    `⚠ turn数が異常に多い呼び出しを検出: ${logName}（${kind}想定しきい値${threshold} turn → 実際${turns} turn、` +
-    `cost=$${(parsed.total_cost_usd ?? 0).toFixed(3)}, cache_read=${parsed.usage?.cache_read_input_tokens ?? '?'}）。` +
+    `⚠ 異常に重い呼び出しを検出: ${logName}（${reasons.join(' / ')}、` +
+    `cache_read=${parsed.usage?.cache_read_input_tokens ?? '?'}, output_tokens=${parsed.usage?.output_tokens ?? '?'}）。` +
     ` res/roundLogs/anomalies.log に詳細を記録しました。`;
   console.warn(msg);
   try {
@@ -434,11 +449,13 @@ function checkTurnAnomaly(logName, promptLength, parsed) {
         ts: new Date().toISOString(),
         logName,
         kind,
-        threshold,
+        reasons,
         num_turns: turns,
         total_cost_usd: parsed.total_cost_usd ?? null,
         duration_ms: parsed.duration_ms ?? null,
         cache_read_input_tokens: parsed.usage?.cache_read_input_tokens ?? null,
+        output_tokens: parsed.usage?.output_tokens ?? null,
+        thinking_tokens: parsed.usage?.output_tokens_details?.thinking_tokens ?? null,
         promptLength,
       }) + '\n'
     );

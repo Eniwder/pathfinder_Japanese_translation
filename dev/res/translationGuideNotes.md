@@ -132,6 +132,13 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   StauntonVane_Boss/Nura_DrezenCitadel_Minibossの計6件（いずれも既存キャラの
   シーン専用speaker id）を追記。glossary.jsonにDarrazand（グレイボーの依頼対象、
   本編未登場の言及のみ）を追加。
+- 2026-09-12: round32 chunk_0000〜0003（Elyanka/Septimus初登場、Seilkind、
+  Next-Door Theater劇団Grandma Gretlen登場エピソード）のレビューで、おどけた敬称
+  `your Commandership`/`{mf|his|her} Commandership`が同一chunk内で「指揮官殿」
+  「指揮官様」と訳し分けられているのを発見。`Commander`本体とは別語として扱い訳語を
+  統一するルールをtranslationGuide.mdに追記。新規話者は検出されずv2CharacterNotes.mdの
+  変更なし。glossary.jsonにSeptimus/Whispering Tyrant/Grandma Gretlen/Next-Door Theater/
+  Katapesh/Numeriaを追加。
 - 2026-09-11: round24 chunk_0000〜0003（HellknightVsGargoyles/Regill初登場エピソード）の
   レビューで、glossary未登録の`Order of the Sunrise Sword`がchunk内で
   `日昇の剣団`/`サンライズ・ソード騎士団`/`サンライズソード騎士団`と3通りに訳し分けられて

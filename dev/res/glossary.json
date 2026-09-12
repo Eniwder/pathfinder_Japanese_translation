@@ -2219,6 +2219,36 @@
       "source": "Greengates",
       "target": "グリーンゲイツ",
       "note": "アルエシャラエに関わる地名。"
+    },
+    {
+      "source": "Septimus",
+      "target": "セプティムス",
+      "note": "ゲブの血の君主の一人、ヴァンパイア。エリヤンカと共に相談役として登場。"
+    },
+    {
+      "source": "Whispering Tyrant",
+      "target": "囁く暴君",
+      "note": "タル=バフォンの異名。"
+    },
+    {
+      "source": "Grandma Gretlen",
+      "target": "グレトレン婆さん",
+      "note": "お隣劇場（Next-Door Theater）の芸術委員会を率いる老女。"
+    },
+    {
+      "source": "Next-Door Theater",
+      "target": "お隣劇場",
+      "note": "グレトレン婆さんが率いる劇団。プレイヤーの武勲を描いた芝居を制作中。"
+    },
+    {
+      "source": "Katapesh",
+      "target": "カタペシュ",
+      "note": "ゴラリオンの都市国家（言及のみ）。"
+    },
+    {
+      "source": "Numeria",
+      "target": "ヌメリア",
+      "note": "ゴラリオンの国名（言及のみ）。"
     }
   ]
 }
