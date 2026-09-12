@@ -158,6 +158,13 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   Midnight Fane/Red Morning Massacre/Starstone/Outer Planes/Khorramzadeh/Hepzamirah/
   Cheliax/Houndhearts/Gray Road/Championを追加。新規話者は検出されずv2CharacterNotes.mdの
   変更なし。
+- 2026-09-12: round34 chunk_0000〜0003（MidnightFaneFinal/Xanthir_before・after/
+  Barricade_MidnightFane/DarrazandFight/FreeCrusaders_Azata系）のレビューで、
+  Xanthirの台詞中に `"'Transformation.'"` のように `「」` の中にさらに `'...'` で
+  二つ名を囲む原文があり、そのまま単引用符を残す/二重に「」を使う訳が混在していたのを
+  発見。セリフ内の入れ子引用は `『』` を使うルールをtranslationGuide.mdに追記。
+  新規話者は検出されずv2CharacterNotes.mdの変更なし。glossary.jsonにKnight Commander/
+  Early Sunset/Kel Five Knives/Skerenthalを追加。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

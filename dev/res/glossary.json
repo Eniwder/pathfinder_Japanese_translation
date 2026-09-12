@@ -1857,7 +1857,7 @@
     },
     {
       "source": "Xanthir",
-      "target": "ザンティア",
+      "target": "ザンシア",
       "note": "疫病公と呼ばれるデーモン側の指揮官。ケナブレスの遺物略奪を命じた。"
     },
     {
@@ -2284,6 +2284,35 @@
       "source": "Gates of Midnight",
       "target": "真夜中の門",
       "note": "真夜中の聖堂(Midnight Fane)内にある、アビスに繋がる裂け目。round33で言及。"
+    },
+    {
+      "source": "Nahyndri",
+      "target": "ナヒンドリ",
+      "note": "Nahyndri was the first demon lord to be killed by Nocticula. "
+    },
+    {
+      "source": "Knight Commander",
+      "target": "ナイト・コマンダー",
+      "category": "Title",
+      "note": "主人公が十字軍で持つ公式の階級・称号。round34で言及。"
+    },
+    {
+      "source": "Early Sunset",
+      "target": "アーリー・サンセット",
+      "category": "Character",
+      "note": "真夜中の聖堂突入戦に参加する自由十字軍のアザタ。round34で登場。"
+    },
+    {
+      "source": "Kel Five Knives",
+      "target": "ケル・ファイブ・ナイブズ",
+      "category": "Character",
+      "note": "真夜中の聖堂突入戦に参加する自由十字軍の一人。round34で登場。"
+    },
+    {
+      "source": "Skerenthal",
+      "target": "スケレンサル",
+      "category": "Character",
+      "note": "真夜中の聖堂突入戦に参加する自由十字軍の一人（木の腕を持つ）。round34で登場。"
     }
   ]
 }

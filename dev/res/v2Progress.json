@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 9150,
-  "updatedAt": "2026-09-12T10:38:55.935Z",
+  "nextStart": 9450,
+  "updatedAt": "2026-09-12T12:19:55.016Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -620,6 +620,25 @@
         "Xanthir_after_dialogue"
       ],
       "note": "v2リライト第33弾（runRoundLoop.mjs による自動実行）。 84件全て翻訳しました。登場した会話(dialog)は Cage_Cultists_Dialogue／CultCamp_CultistFromEstrod_dialogue／Cultists_Baph_Desk の3本。気づいた点：`{mf|him|her}`が2箇所（指揮官=プレイヤーを指す）あり、日本語では性別を示さなくても自然だったため`{mf}`ごと省略しました。 / 81件すべて翻訳を記入しました（nullなし）。登場した会話は Cultists_Transformation_Dialog（ザンティア関連の実験シーン）、DragonEggs_Dialogue、Golems_DragonEggs_Dialogue（卵とゴーレムのやり取り）の3本です。気づいた点：`9888e0a6`の`<ctrl_2/>gone<ctrl_3/>`部分は`{d|...}`分岐タグ / 90件すべて翻訳しました。登場する会話は `JerribethGreetings_ISanctum_dialog`（ジェリベスとの初交渉）、`JerribethFinal_ISanctum_dialog`（取引完了後の最終会話・内なる悪魔の選択肢含む）、`MarhevokTransformed_ISanctum_dialog`（変異したマーヘヴォクとの遭遇）の3本です。\n\n気づいた点：`{mf|b / 45件すべて翻訳しました。登場会話は「Vrock_Sanctum_Dialogue」（デーモン・ヴォリメラークとのやり取り）と「Xanthir_after_dialogue」（撃破後のザンティアとの問答）の2つです。ヴォリメラークは自分を「ヴロック」と三人称で呼ぶ癖があるため、その口調をそのまま日本語にも反映しました。"
+    },
+    {
+      "start": 9150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-12_round34/",
+      "coveredDialogs": [
+        "Xanthir_after_dialogue",
+        "Xanthir_before_dialogue",
+        "ZanedraAndDemons_ISanctum_dialog",
+        "Dialogue_ChemicalLab_Comp",
+        "Dialogue_Altar",
+        "Barricade_MidnightFane_dialog",
+        "DarrazandFight_MidnightFane_dialog",
+        "Entrance_MidnightFane_dialog",
+        "MidnightFaneFinal_dialog",
+        "FreeCrusaders_Azata_MidnightFane_dialog"
+      ],
+      "note": "v2リライト第34弾（runRoundLoop.mjs による自動実行）。 95件すべて翻訳しました。登場した会話は `Xanthir_after_dialogue`（ザンティア撃破後の尋問パート）、`Xanthir_before_dialogue`（戦闘前の対峙）、`ZanedraAndDemons_ISanctum_dialog`（変容デーモン軍団との遭遇）の3つです。\n\n気づいた点：glossaryに `Xanthir=ザンティア` と `Xanthir Vang= / 83件すべて訳出しました。登場した会話は Dialogue_ChemicalLab_Comp、Dialogue_Altar、Barricade_MidnightFane_dialog、DarrazandFight_MidnightFane_dialog、Entrance_MidnightFane_dialog（ミナゴー・ダラザンドとの決戦〜ガルフレイ女王の作戦会議）。ミノタウロス（ルヴェグ）の片言 / 84件すべて翻訳しました。会話は \"MidnightFaneFinal_dialog\"（真夜中の聖堂到達後、ガルフリー女王が指揮官の行状を審問し、指揮権を剥奪してアビスへの使命を課す場面）。気づいた点：`{mf|he|she}`が2箇所出ましたが、いずれも性別中立に訳せたためタグごと省きました。 / 38件すべて翻訳しました。会話は `FreeCrusaders_Azata_MidnightFane_dialog`（真夜中の館襲撃後、自由十字軍の生存者とアーリー・サンセット/アイヴらのやり取り）。話者不明のentry（イレクスの台詞など）は文脈から人物を推測し口調を合わせています。"
     }
   ]
 }
