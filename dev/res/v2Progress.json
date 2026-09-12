@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 8850,
-  "updatedAt": "2026-09-12T06:08:53.370Z",
+  "nextStart": 9150,
+  "updatedAt": "2026-09-12T10:38:55.935Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -600,6 +600,26 @@
         "Cage_Cultists_Dialogue"
       ],
       "note": "v2リライト第32弾（runRoundLoop.mjs による自動実行）。 98件すべて翻訳し書き込み完了しました。\n\n- 登場した会話: `Elyanka_MainDialogue`、`KTC_ElyankaComing`、`KTC_SeptimusComing`、`Septimus_MainDialogue`、`Ramien_Dresen_Dialogue`（エリヤンカ／セプティムスの初対面〜対立と、ラミエンの雑談イベント）\n- 気づいた点: `a3c7af53`の` / 99件すべて翻訳を記入しました。登場した会話は Seilkind_dialogue（セイルカインド隊長との対話、サーコリス文化談義）、Theatre_SecondVisit_c3_dialog（劇団グレトレン婆さんとティナのカタパルト劇論争）、Veskavor_New_Queen_Dialogue（ヴェスカヴォアの若き女王との遭遇）の3件です。気づいた点：`{mf|master|mistress} / 94件すべて訳文を記入しました。登場したdialogは `DruidMaze_HiddenDemon_Dialogue`（囚われのデーモンとの交渉・戦闘分岐）と `DruidMaze_Tree_Dialogue`（守護トレントとの対話、道中で仲間たちが口々にコメントする場面）です。\n\n気づいた点：`{mf|brother|sister}` は「同胞よ」に統一して省略しました（性別を問わず自然に使え / 9件すべて翻訳しました。会話は「Cage_Cultists_Dialogue」（バフォメット信徒とテンプル騎士のカルティストが檻の獣を巡って対立する場面）。気づいた点：`Xanthir the Syphilitic One`はテンプル騎士側の蔑称なので、既存訳「疫病公」に対応する形で「梅毒公」と皮肉を効かせて訳しています。"
+    },
+    {
+      "start": 8850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-12_round33/",
+      "coveredDialogs": [
+        "Cage_Cultists_Dialogue",
+        "CultCamp_CultistFromEstrod_dialogue",
+        "Cultists_Baph_Desk",
+        "Cultists_Transformation_Dialog",
+        "DragonEggs_Dialogue",
+        "Golems_DragonEggs_Dialogue",
+        "JerribethGreetings_ISanctum_dialog",
+        "JerribethFinal_ISanctum_dialog",
+        "MarhevokTransformed_ISanctum_dialog",
+        "Vrock_Sanctum_Dialogue",
+        "Xanthir_after_dialogue"
+      ],
+      "note": "v2リライト第33弾（runRoundLoop.mjs による自動実行）。 84件全て翻訳しました。登場した会話(dialog)は Cage_Cultists_Dialogue／CultCamp_CultistFromEstrod_dialogue／Cultists_Baph_Desk の3本。気づいた点：`{mf|him|her}`が2箇所（指揮官=プレイヤーを指す）あり、日本語では性別を示さなくても自然だったため`{mf}`ごと省略しました。 / 81件すべて翻訳を記入しました（nullなし）。登場した会話は Cultists_Transformation_Dialog（ザンティア関連の実験シーン）、DragonEggs_Dialogue、Golems_DragonEggs_Dialogue（卵とゴーレムのやり取り）の3本です。気づいた点：`9888e0a6`の`<ctrl_2/>gone<ctrl_3/>`部分は`{d|...}`分岐タグ / 90件すべて翻訳しました。登場する会話は `JerribethGreetings_ISanctum_dialog`（ジェリベスとの初交渉）、`JerribethFinal_ISanctum_dialog`（取引完了後の最終会話・内なる悪魔の選択肢含む）、`MarhevokTransformed_ISanctum_dialog`（変異したマーヘヴォクとの遭遇）の3本です。\n\n気づいた点：`{mf|b / 45件すべて翻訳しました。登場会話は「Vrock_Sanctum_Dialogue」（デーモン・ヴォリメラークとのやり取り）と「Xanthir_after_dialogue」（撃破後のザンティアとの問答）の2つです。ヴォリメラークは自分を「ヴロック」と三人称で呼ぶ癖があるため、その口調をそのまま日本語にも反映しました。"
     }
   ]
 }

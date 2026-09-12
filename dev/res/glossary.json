@@ -2249,6 +2249,41 @@
       "source": "Numeria",
       "target": "ヌメリア",
       "note": "ゴラリオンの国名（言及のみ）。"
+    },
+    {
+      "source": "Jerribeth",
+      "target": "ジェリベス",
+      "note": "アイボリー・サンクタムをかつて支配していた悪魔。round33で登場。"
+    },
+    {
+      "source": "Zanedra",
+      "target": "ザネドラ",
+      "note": "アイボリー・サンクタムの主警備を率いるバフォメット教団員。round33で言及。"
+    },
+    {
+      "source": "Vorimeraak",
+      "target": "ヴォリメラーク",
+      "note": "自らを「偉大なる悪魔卿」と称するヴロック(vrock)の自称名。round33で登場。"
+    },
+    {
+      "source": "Zhan Sebao",
+      "target": "ザン・セバオ",
+      "note": "アイボリー・サンクタムでゴーレムの制御術式を組んだ筆頭学生。round33で言及。"
+    },
+    {
+      "source": "Yarok of Nex",
+      "target": "ネックスのヤロク",
+      "note": "ザン・セバオを妬むアイボリー・サンクタムの学生。round33で言及。"
+    },
+    {
+      "source": "Molten Scar",
+      "target": "モルテン・スカー",
+      "note": "ヴロックが軍勢を作ったとされる地。round33で言及。"
+    },
+    {
+      "source": "Gates of Midnight",
+      "target": "真夜中の門",
+      "note": "真夜中の聖堂(Midnight Fane)内にある、アビスに繋がる裂け目。round33で言及。"
     }
   ]
 }
