@@ -174,6 +174,18 @@ function chunkEntries(fileName) {
   return Array.isArray(c.entries) ? c.entries : (c.blocks ?? []).flatMap((b) => b.entries ?? []);
 }
 
+// thinking_tokensの外れ値調査用（2026-09実測）: chunkごとのthinking量は
+// 「entryの内容の難しさ」よりも「chunk内の原文総文字数」とほぼ線形に相関していた
+// （r=0.989、8chunkサンプル）。ここでは分割方式を変えず、原因の再現性を今後の
+// round実行で機械的に確認できるよう、chunk呼び出し時点の原文統計をusage.jsonlに
+// 追記するだけに留める。
+function chunkStats(fileName) {
+  const entries = chunkEntries(fileName);
+  let totalChars = 0;
+  for (const e of entries) totalChars += (e.text ?? '').length;
+  return { entries: entries.length, totalChars };
+}
+
 function chunkFullyTranslated(fileName) {
   return chunkEntries(fileName).every((e) => e.translation != null);
 }
@@ -490,7 +502,7 @@ const ANOMALY_THRESHOLDS = {
   notes: { turns: 40, costUsd: 2.0, durationMs: 600_000 }, // 600_000ms = 10分
 };
 
-function checkTurnAnomaly(logName, promptLength, parsed) {
+function checkTurnAnomaly(logName, promptLength, parsed, extraUsageFields) {
   const kind = logName.endsWith('_notes') ? 'notes' : 'chunk';
   const threshold = ANOMALY_THRESHOLDS[kind];
   const turns = parsed.num_turns;
@@ -523,6 +535,7 @@ function checkTurnAnomaly(logName, promptLength, parsed) {
         output_tokens: parsed.usage?.output_tokens ?? null,
         thinking_tokens: parsed.usage?.output_tokens_details?.thinking_tokens ?? null,
         promptLength,
+        ...(extraUsageFields ?? {}),
       }) + '\n'
     );
   } catch (e) {
@@ -530,7 +543,7 @@ function checkTurnAnomaly(logName, promptLength, parsed) {
   }
 }
 
-function callClaudeOnce(prompt, logName, model) {
+function callClaudeOnce(prompt, logName, model, extraUsageFields) {
   ensureLogDir();
   const logPath = path.join(logDir, `${logName}_${Date.now()}.log`);
   // プロンプトは引数ではなく stdin 経由で渡す。理由: プロンプトに <ctrl_N/> のような
@@ -568,8 +581,9 @@ function callClaudeOnce(prompt, logName, model) {
       duration_ms: parsed.duration_ms ?? null,
       num_turns: parsed.num_turns ?? null,
       is_error: parsed.is_error ?? null,
+      ...(extraUsageFields ?? {}),
     });
-    checkTurnAnomaly(logName, prompt.length, parsed);
+    checkTurnAnomaly(logName, prompt.length, parsed, extraUsageFields);
   } catch (e) {
     // --output-format json が使えないCLIバージョン等で生テキストが返ってきた場合のフォールバック。
     // 従来通りテキストとして扱う（usageは記録できないが処理自体は継続する）。
@@ -609,13 +623,13 @@ function parseResetWaitMs(text) {
   return reset.getTime() - now.getTime() + 2 * 60 * 1000; // 念のため2分のバッファ
 }
 
-function callClaude(prompt, logName, model) {
+function callClaude(prompt, logName, model, extraUsageFields) {
   const maxRetries = Number(args['max-retries'] ?? 30);
   const fallbackWaitMs = Number(args['retry-wait-minutes'] ?? 20) * 60 * 1000;
 
   for (let attempt = 0; ; attempt++) {
     try {
-      return callClaudeOnce(prompt, logName, model);
+      return callClaudeOnce(prompt, logName, model, extraUsageFields);
     } catch (err) {
       const text = `${err.stdout || ''}\n${err.stderr || ''}\n${err.message || ''}`;
       if (attempt >= maxRetries || !isRateLimitLike(text)) throw err;
@@ -718,7 +732,13 @@ function runRound(start, roundNo) {
       continue;
     }
     console.log(`\n--- ${f} を翻訳依頼 ---`);
-    const result = callClaude(buildChunkPrompt(f), `round${roundNo}_${f.replace('.json', '')}`, chunkModel);
+    const stats = chunkStats(f);
+    const result = callClaude(
+      buildChunkPrompt(f),
+      `round${roundNo}_${f.replace('.json', '')}`,
+      chunkModel,
+      { chunkEntries: stats.entries, chunkSourceChars: stats.totalChars }
+    );
     const { merged, hasFile } = mergeTranslations(f);
     if (!hasFile) {
       console.warn(
