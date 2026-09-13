@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 10350,
-  "updatedAt": "2026-09-13T10:40:40.575Z",
+  "nextStart": 10650,
+  "updatedAt": "2026-09-13T15:28:52.317Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -707,6 +707,32 @@
         "Staunton_In_Present_Welcome_Dialogue"
       ],
       "note": "v2リライト第37弾（runRoundLoop.mjs による自動実行）。 200件全て翻訳し chunk_0000.translations.json に書き込みました。\n\n- 件数: 200件（全entry訳出、null残しなし）\n- 登場dialog: AeonDrezenPriest_dialogue / AeonDrezenPriest_Tavern_dialogue（デズナ巫女ヴァレーニヤの麻薬売買の話）、AeonDrezenWeed_Court_dialog / 100件すべて翻訳し `chunk_0001.translations.json` に書き込みました。\n\n- **件数**: 100/100\n- **登場した会話(dialog)**: `AeonMainQuest_DrezenRift_dialogue`（ワールドウーンドの門の異形との遭遇）、`Joran_In_Present_Main_Dialogue`（鍛冶屋ジョランとの現在の会話）、`KT"
+    },
+    {
+      "start": 10350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-14_round38/",
+      "coveredDialogs": [
+        "Staunton_In_Present_Welcome_Dialogue",
+        "AngelAdjustNow_c3_dialog",
+        "HeraldCalling_MythicAngel_dialog",
+        "RoguePaladin1_angel_dialog",
+        "RoguePaladin2_angel_dialog",
+        "RoguePaladin3_angel_dialog",
+        "RoguePaladin_Drezen_dialog",
+        "Targona_Drezen_Angel_dialog",
+        "AzataFixNOW_dialog",
+        "ChildCrusadersArrive_azata_c3_dialog",
+        "MentorArrives_azata_c3_dialog",
+        "MimicsArrive_azata_c3_dialog",
+        "RobinHoodArrives_azata_c3_dialog",
+        "TrentsArrive_azata_c3_dialog",
+        "DracoshaIntro_MythicAzata_dialog",
+        "AlchemistVendor_azata_dialog",
+        "BigIntro_c3_azata_dialog"
+      ],
+      "note": "v2リライト第38弾（runRoundLoop.mjs による自動実行）。 186件中186件すべて訳出し、chunk_0000.translations.json に書き込みました。\n\n登場した会話（dialog）: Staunton_In_Present_Welcome_Dialogue / AngelAdjustNow_c3_dialog / HeraldCalling_MythicAngel_dialog / RoguePaladin1〜3_angel_dialo / 114件全て翻訳し、chunk_0001.translations.json に出力しました。\n\n- **件数**: 114/114（全entry翻訳済み、null残しなし）\n- **登場した会話(dialog)**: MentorArrives_azata_c3_dialog（アーリー・サンセット初登場）／MimicsArrive_azata_c3_dialog（ミミック家具の入団）／Robin"
     }
   ]
 }

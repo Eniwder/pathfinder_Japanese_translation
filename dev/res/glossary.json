@@ -2447,6 +2447,24 @@
       "target": "モナド",
       "category": "Mythic",
       "note": "全てのaeonの根源とされる半神・超越的存在。round37で言及。"
+    },
+    {
+      "source": "Berenguer",
+      "target": "ベレンゲル",
+      "category": "Character",
+      "note": "十字軍から離れ、単独で悪魔と戦い続ける老パラディン。round38で言及。"
+    },
+    {
+      "source": "Chelaxian",
+      "target": "チェリアクス人",
+      "category": "Location",
+      "note": "Chelaxの形容詞形/出身者を指す語。round38で言及。"
+    },
+    {
+      "source": "Lushbringer",
+      "target": "ラッシュブリンガー",
+      "category": "Mythic",
+      "note": "トレントたちが自由十字軍の指導者（主人公）に贈った異名。Azataパス関連。round38で言及。"
     }
   ]
 }
