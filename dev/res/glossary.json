@@ -2313,6 +2313,51 @@
       "target": "スケレンサル",
       "category": "Character",
       "note": "真夜中の聖堂突入戦に参加する自由十字軍の一人（木の腕を持つ）。round34で登場。"
+    },
+    {
+      "source": "Gresilla",
+      "target": "グレシラ",
+      "category": "Character",
+      "note": "ノクティキュラの聖堂を守るサキュバスの神官。round35で登場。"
+    },
+    {
+      "source": "Jannah",
+      "target": "ジャンナ",
+      "category": "Character",
+      "note": "モルテン・スカーで捕らわれていた脱走兵の女剣士。round35で登場。"
+    },
+    {
+      "source": "Wollard",
+      "target": "ウォラード",
+      "category": "Character",
+      "note": "デーモンの実験に囚われていた十字軍の騎士。round35で登場。"
+    },
+    {
+      "source": "Thomaz",
+      "target": "トーマズ",
+      "category": "Character",
+      "note": "ウォラードと共に囚われていた十字軍の騎士。round35で登場。"
+    },
+    {
+      "source": "Melies",
+      "target": "メリエス",
+      "category": "Character",
+      "note": "アイオンパスの相棒。大公メフィストフェレスに仕えるデビル。round35で登場。"
+    },
+    {
+      "source": "Caina",
+      "target": "カイナ",
+      "note": "地獄の第八階層。メフィストフェレスの支配領域。round35で言及。"
+    },
+    {
+      "source": "Mivon",
+      "target": "ミヴォン",
+      "note": "リバー・キングダムの都市。ジャンナの故郷。round35で言及。"
+    },
+    {
+      "source": "Crimson Rage",
+      "target": "深紅の激怒",
+      "note": "モングレルの赤子が時に患う、理性を怒りで覆うデーモン由来の疫病。round35で言及。"
     }
   ]
 }

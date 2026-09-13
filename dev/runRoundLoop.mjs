@@ -171,7 +171,34 @@ function chunkFullyTranslated(fileName) {
   return chunkEntries(fileName).every((e) => e.translation != null);
 }
 
+// chunkファイル名(chunk_0000.json)に対応する「訳文だけの中間ファイル」名。
+function translationsFileName(fileName) {
+  return fileName.replace(/\.json$/, '.translations.json');
+}
+
+// Claudeにはchunkファイル全体の書き戻しをさせず、entryの key→訳文 だけの
+// フラットなJSONを書かせて、実際のマージ（chunkファイルへの書き込み）はここで
+// Node側が決定的に行う。
+//
+// 経緯（2026-09、gold-set 120件での実測比較）:
+//   「ファイル全体をWriteで書き戻す」旧方式は、原文120件中訳文になる文字数は
+//   全体の1割強で、残りは原文テキスト・glossary・speakers辞書・key/dialog等の
+//   構造情報を毎回まるごとタイプし直しているだけだった（実測 output_tokens
+//   57,703のうちthinking 21,739を除いた可視出力だけで35,964）。
+//   「訳文だけ出力」に変えたところ、同一chunk・同一effortでcost -26%
+//   （$1.13→$0.84）、output_tokens -36%（57,703→37,018）、可視出力は-58%
+//   （35,964→14,919）。thinking_tokensはほぼ不変（21,739→22,099）で、
+//   「訳す判断」自体のコストは変わらず、無駄な書き写し分だけが削れたことを確認済み。
+//   訳文の完全性（120/120件・<ctrl_N/>整合）も損なわれていない。
+//   副次効果として、claude-sonnet-5の1レスポンスあたり出力上限
+//   （64,000トークン、CLAUDE_CODE_MAX_OUTPUT_TOKENSでも超えられないハード
+//   リミット）に対する余裕も増える。旧方式は120件chunkで既に61,909と上限の
+//   97%近くまで来ており、これがround20/round30/round32で観測した「異常に
+//   重いchunk」（thinking暴走・数十分化）の一因だった可能性が高い
+//   （実際、旧方式のまま240件chunkに増やす検証をしたところ64,000超過で
+//   エラー・リトライになり、コストも所要時間も悪化した）。
 function buildChunkPrompt(fileName) {
+  const transFile = translationsFileName(fileName);
   return `dev/lang/chunks/${fileName} の翻訳作業だけをお願いします。
 
 【前提】
@@ -181,31 +208,63 @@ function buildChunkPrompt(fileName) {
   dev/res/glossary.json・dev/res/v2CharacterNotes.md・dev/res/speakerProfiles.json は
   読まなくてよい。
 
-【やること】
+【やること（重要：出力方式が通常のファイル編集と違います）】
 1. ${fileName} を読み、blocks[].entries[] の各entryの "text"（英語原文）を、同entryの
    speaker（speakers辞書のキー。無ければ話者不明/ナレーション扱い）・ctx（直前の文脈、
    あれば）・characterNotes/sceneNotesを踏まえて自然な日本語に訳す。
-2. 各entryの "translation" フィールド（現在 null）に訳文を書き込む。
    - <ctrl_N/> トークンは一字一句変えない。
-   - 全entryを埋めること。分からない/判断がつかない場合のみ null のまま残してよい。
-3. ${fileName} 以外のファイルは一切編集しないこと。git操作やコマンド実行は不要（あなたには
-   その権限がありません）。Bash・スクリプト実行・その他の回避策は一切試みないこと
-   （許可されているのは Read/Write/Edit/Grep/Glob のみで、それ以外は物理的に実行できません。
-   実行できない場合にスクリプトファイルを作るなどの代替手段を探すのではなく、Write/Editで
-   ${fileName} を直接編集する方法だけを使うこと）。
+2. **${fileName} 自体は絶対に編集・書き換えしないこと。** 代わりに、翻訳結果だけを
+   新規ファイル dev/lang/chunks/${transFile} に、
+   { "<entryのkey>": "<翻訳文>", ... } という**キーと訳文だけのフラットなJSONオブジェクト**
+   として書き込むこと。原文(text)・話者・glossary・その他のフィールドは一切コピーしない
+   こと（訳文だけでよい）。
+3. 全entryを対象にすること。分からない/判断がつかない場合のみ、そのentryのkeyを
+   省略してよい（未訳のまま残る＝次回以降に再依頼される）。
+4. ${fileName} と ${transFile} 以外のファイルは一切編集しないこと（translationGuide.mdの
+   閲覧は可）。git操作やコマンド実行は不要（あなたにその権限がありません）。
+   Bash・スクリプト実行・その他の回避策は一切試みないこと（許可されているのは
+   Read/Write/Edit/Grep/Glob のみで、それ以外は物理的に実行できません）。
 
 【書き込み方法（重要）】
-- entryごとに小さなEditを何十回も呼ぶのは非効率なので絶対にしないこと。ファイル全体を
-  一度読んだら、全entryの翻訳をあなたの応答の中で組み立ててから、最後にWriteツールで
-  ファイル全体を1回だけ書き込むこと。
+- entryごとに小さなEditを何十回も呼ぶのは非効率なので絶対にしないこと。全entryの訳文を
+  あなたの応答の中で組み立ててから、最後にWriteツールで ${transFile} を1回だけ書き込むこと。
 - 確認や許可を求める質問は一切しないこと。これは非対話（自動実行）環境なので、質問しても
   誰も返答できず、作業が完了しないまま終了してしまう。効率化のアイデアがあっても質問せず、
-  そのまま最後までentryを埋めてWriteすることを最優先にすること。
+  そのまま最後までentryを埋めて ${transFile} をWriteすることを最優先にすること。
 - JSON構文を壊さないこと（特に閉じクォート"の書き忘れに注意）。書き込み後、自分で
   書いた内容がJSONとして正しいか目視確認すること。
 
 作業が終わったら、1〜2行で「何件訳したか」「登場した会話(dialog名)」「気づいた点があれば一言」
 を報告して終了してください。長い説明は不要です。`;
+}
+
+// buildChunkPromptがWriteした dev/lang/chunks/<chunk>.translations.json
+// （key→訳文のフラットJSON）を、chunkファイル本体の各entry.translationに
+// Node側が機械的にマージする。マージ後、中間ファイルは削除する（再マージによる
+// 二重適用や、次回runExtractの残骸検出の誤爆を防ぐため）。
+// 既にtranslationが埋まっているentryは上書きしない（Claudeが稀に直接chunk
+// ファイルを編集していた場合との併用でも安全なように）。
+function mergeTranslations(fileName) {
+  const transPath = path.join(chunksDir, translationsFileName(fileName));
+  if (!fs.existsSync(transPath)) return { merged: 0, hasFile: false };
+
+  const chunkPath = path.join(chunksDir, fileName);
+  const chunkObj = JSON.parse(fs.readFileSync(chunkPath, 'utf8'));
+  const entries = Array.isArray(chunkObj.entries) ? chunkObj.entries : (chunkObj.blocks ?? []).flatMap((b) => b.entries ?? []);
+  const translations = JSON.parse(fs.readFileSync(transPath, 'utf8'));
+
+  let merged = 0;
+  for (const e of entries) {
+    if (e.translation != null) continue;
+    const t = translations[e.key];
+    if (typeof t === 'string' && t.trim() !== '') {
+      e.translation = t;
+      merged++;
+    }
+  }
+  fs.writeFileSync(chunkPath, JSON.stringify(chunkObj, null, 2) + '\n');
+  fs.rmSync(transPath);
+  return { merged, hasFile: true };
 }
 
 // buildNotesPromptが「chunkファイルを自分で開いて探す」turnを消費しないよう、
@@ -598,6 +657,12 @@ function moveToReview(chunkFiles, roundNo) {
     const src = path.join(chunksDir, f);
     if (fs.existsSync(src)) fs.renameSync(src, path.join(reviewDirAbs, f));
   }
+  // 通常は各chunk呼び出し直後にmergeTranslationsが消しているはずだが、念のため
+  // 中間ファイルの残骸が残っていたら退避せず削除する（reviewには不要な情報なので）。
+  for (const f of chunkFiles) {
+    const leftover = path.join(chunksDir, translationsFileName(f));
+    if (fs.existsSync(leftover)) fs.rmSync(leftover);
+  }
   return { reviewDir: `dev/${reviewDirRel}/`, reviewDirAbs };
 }
 
@@ -638,12 +703,24 @@ function runRound(start, roundNo) {
 
   const summaries = [];
   for (const f of chunkFiles) {
+    // 前回このroundが利用上限等で落ちた際、chunk本体は書き換えず訳文だけ書いた
+    // *.translations.json が残っている可能性がある。呼び出し前に必ずマージを試みる。
+    mergeTranslations(f);
     if (chunkFullyTranslated(f)) {
       console.log(`\n--- ${f} は既に翻訳済み（前回の再開分）、スキップ ---`);
       continue;
     }
     console.log(`\n--- ${f} を翻訳依頼 ---`);
     const result = callClaude(buildChunkPrompt(f), `round${roundNo}_${f.replace('.json', '')}`, chunkModel);
+    const { merged, hasFile } = mergeTranslations(f);
+    if (!hasFile) {
+      console.warn(
+        `⚠ ${f}: *.translations.json が生成されませんでした（Claudeがchunk本体を直接編集した` +
+          ' か、失敗した可能性）。chunk本体側の状態をそのまま使用します。'
+      );
+    } else {
+      console.log(`${f}: ${merged}件を translations.json からマージしました。`);
+    }
     summaries.push(result.trim().slice(0, 200));
   }
 

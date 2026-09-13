@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 9450,
-  "updatedAt": "2026-09-12T12:19:55.016Z",
+  "nextStart": 9750,
+  "updatedAt": "2026-09-13T05:58:23.096Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -639,6 +639,25 @@
         "FreeCrusaders_Azata_MidnightFane_dialog"
       ],
       "note": "v2リライト第34弾（runRoundLoop.mjs による自動実行）。 95件すべて翻訳しました。登場した会話は `Xanthir_after_dialogue`（ザンティア撃破後の尋問パート）、`Xanthir_before_dialogue`（戦闘前の対峙）、`ZanedraAndDemons_ISanctum_dialog`（変容デーモン軍団との遭遇）の3つです。\n\n気づいた点：glossaryに `Xanthir=ザンティア` と `Xanthir Vang= / 83件すべて訳出しました。登場した会話は Dialogue_ChemicalLab_Comp、Dialogue_Altar、Barricade_MidnightFane_dialog、DarrazandFight_MidnightFane_dialog、Entrance_MidnightFane_dialog（ミナゴー・ダラザンドとの決戦〜ガルフレイ女王の作戦会議）。ミノタウロス（ルヴェグ）の片言 / 84件すべて翻訳しました。会話は \"MidnightFaneFinal_dialog\"（真夜中の聖堂到達後、ガルフリー女王が指揮官の行状を審問し、指揮権を剥奪してアビスへの使命を課す場面）。気づいた点：`{mf|he|she}`が2箇所出ましたが、いずれも性別中立に訳せたためタグごと省きました。 / 38件すべて翻訳しました。会話は `FreeCrusaders_Azata_MidnightFane_dialog`（真夜中の館襲撃後、自由十字軍の生存者とアーリー・サンセット/アイヴらのやり取り）。話者不明のentry（イレクスの台詞など）は文脈から人物を推測し口調を合わせています。"
+    },
+    {
+      "start": 9450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-13_round35/",
+      "coveredDialogs": [
+        "FreeCrusaders_Azata_MidnightFane_dialog",
+        "Hostages_MidnightFane_BE",
+        "MinaghoAndAzata_MidnightFane_dialog",
+        "Dialogue_NocticulaPriestess",
+        "TrueYaniel_MidnightFane_dialog",
+        "Azata_ValHalflings_MoltSxar_dialog",
+        "Deseter_MoltenScar_dialog",
+        "PrisonedKnight_dialogue",
+        "Vorimeraak_main",
+        "AeonDevilCompanion_dialogue"
+      ],
+      "note": "v2リライト第35弾（runRoundLoop.mjs による自動実行）。 54件全て訳出しました。登場した会話は `FreeCrusaders_Azata_MidnightFane_dialog`（アザータ勢の雑談）、`Hostages_MidnightFane_BE`（ミナゴーの人質シーン）、`MinaghoAndAzata_MidnightFane_dialog`（ミナゴー最終対話）の3本です。\n\n気づいた点：`e3d0b387`（Azata_MimicChest） / 98件全て訳出（未訳0件）。登場会話は `Dialogue_NocticulaPriestess`（サキュバス司祭グレシラとの会話、デラン・アイヴ・ウェンドゥアグ・アルエシャラエ・カメリアが顔出し）と `TrueYaniel_MidnightFane_dialog`（伝説の聖騎士ヤニエル救出イベント、エンバー・フィニアン・シーラ・スタントン絡み）。\n\n気づいた点：`{mf|Master|Mistr / 100件すべて訳出し、chunk_0002.translations.jsonに書き込みました（chunk_0002.json自体は未編集）。\n\n- 件数: 100/100\n- 登場した会話: Azata_ValHalflings_MoltSxar_dialog（ハーフリングの自由十字軍とのやり取り）、Deseter_MoltenScar_dialog（脱走兵ジャンナの救出/処刑分岐）、Priso / 48件全て訳し、chunk_0003.translations.json に書き込みました。登場した会話は `Vorimeraak_main`（デーモン化した人間を軍勢にするヴロック、ヴォリメラークとの対話）と `AeonDevilCompanion_dialogue`（デビル・メリエスとの対話）です。ヴロックは自分を三人称で呼ぶ拙い話し方が特徴的なキャラなので、その一人称回避の癖をそのまま日本語"
     }
   ]
 }
