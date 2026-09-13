@@ -657,6 +657,59 @@
       "note": "The planar rift connected to the Abyss, source of the demon invasion."
     },
     {
+      "source": "the Wound",
+      "target": "ワールドウーンド",
+      "note": "Colloquial shorthand for the Worldwound; must use the same translation, not a literal 'wound'."
+    },
+    {
+      "source": "Sillin",
+      "target": "シリン",
+      "note": "Averis's deceased sister, referenced in Ramley's looting trial (Aeon_DrezenMarodeur).",
+      "category": "Person"
+    },
+    {
+      "source": "Vamona",
+      "target": "ヴァモナ",
+      "note": "Young woman in Wintersun, Ravon's wife; nickname 'Vammy' is ヴァミー.",
+      "category": "Person"
+    },
+    {
+      "source": "Ravon",
+      "target": "ラヴォン",
+      "note": "Alias used by Count Orvenn Dalmora of Ormiravon while posing as a Sarkorian in Wintersun.",
+      "category": "Person"
+    },
+    {
+      "source": "Orvenn Dalmora",
+      "target": "オルヴェン・ダルモラ",
+      "note": "Count of Ormiravon; true identity behind the Ravon alias.",
+      "category": "Person"
+    },
+    {
+      "source": "Ormiravon",
+      "target": "オルミラヴォン",
+      "note": "Noble title/fief of Orvenn Dalmora ('Count of Ormiravon').",
+      "category": "Place"
+    },
+    {
+      "source": "Doloras",
+      "target": "ドロラス",
+      "note": "Fallen angel devil known as the 'Queen of the Night' in Hell.",
+      "category": "Person"
+    },
+    {
+      "source": "Kermel",
+      "target": "ケルメル",
+      "note": "Drezen watch officer put on trial for killing a demon near Wintersun.",
+      "category": "Person"
+    },
+    {
+      "source": "Adamantine Swamp",
+      "target": "アダマンタインの沼地",
+      "note": "Lair of the dark dragon god Dahak, in Hell.",
+      "category": "Place"
+    },
+    {
       "source": "Wardstone",
       "target": "ワードストーン",
       "note": "Magical barrier monoliths preventing Worldwound expansion."

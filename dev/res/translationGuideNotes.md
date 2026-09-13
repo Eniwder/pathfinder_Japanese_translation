@@ -44,6 +44,9 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 
 ## 更新履歴（要点のみ）
 
+- 2026-09-13: round36のchunk内で`the Wound`（Worldwoundの略称）が「世界傷痕」「ワウンド」と
+  訳がブレていた（既存glossaryの`Worldwound`＝「ワールドウーンド」と不一致）のを発見し、
+  略称でも同じ訳語に統一するルールをtranslationGuide.mdに追記。glossaryにも別名エントリを追加。
 - 2026-09-02: 読点の多用を避けるルールを追加（ユーザーフィードバック）。
 - 2026-09-02: `Daeran` の glossary target を `デエラン` → `デラン` に修正（不自然だったため）。
 - 2026-09-02: `verify.js` の `compareMfTags()` を修正。`{mf|...}` タグを丸ごと省略する

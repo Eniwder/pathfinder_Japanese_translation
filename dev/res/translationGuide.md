@@ -22,6 +22,8 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
 - 用語はchunkに埋め込まれた `glossary` の `target` を優先。
 - 同一人物が話者IDや原文スペル違い（`Joran`/`Jorun Vane` 等）で登場することがある。
   glossaryに既存の別名エントリがないか確認し、あれば訳語を合わせる。
+- `the Wound`（`Worldwound`の口語的な略称）は`Worldwound`と同じ「ワールドウーンド」で訳す
+  （「世界傷痕」「ワウンド」など略し方を独自に作らない）。
 - 騎士団・教団などの組織名がglossaryに未登録のままchunk内で複数回訳出される場合、
   カタカナ音写／中黒の有無を含め初出の訳語に必ず揃える（例: `Order of the X` → `Xの騎士団`）。
 - `[Attack]` のような選択肢アクションの角括弧表記も、同じ原文が複数箇所に出る場合は

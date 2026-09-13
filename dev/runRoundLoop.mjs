@@ -77,7 +77,14 @@ const logDir = path.resolve('./res/roundLogs');
 
 const maxRounds = args.rounds ? Number(args.rounds) : Infinity;
 const limit = Number(args.limit ?? 300);
-const chunkSize = Number(args['chunk-size'] ?? 100);
+// 2026-09、「訳文だけ出力」方式への変更後に実測: chunk-size=200（limit=300で概ね2chunkに
+// なる）でも64,000トークン/レスポンス上限には抵触しなかった（200件・200/200完了・
+// タグ整合性も問題なし）。旧方式（ファイル全体を1レスポンスで書き戻す）ではこの上限が
+// 実質chunk-sizeの天井だったが、新方式は複数turnに分けて出力できるため、この上限は
+// もう実質的なボトルネックではない。ただしcost/thinkingはchunk-sizeよりentryの内容
+// （長台詞・地の文混在の多さ等）の方が支配的にブレる（実測でsize200の1件が同entry数の
+// 旧chunk2つ分よりthinkingが多かった例あり）。複数roundの実測平均で効果を確認すること。
+const chunkSize = Number(args['chunk-size'] ?? 200);
 const dryRun = !!args['dry-run'];
 const skipNotes = !!args['skip-notes'];
 const chunkModel = typeof args['chunk-model'] === 'string' ? args['chunk-model'] : null;
