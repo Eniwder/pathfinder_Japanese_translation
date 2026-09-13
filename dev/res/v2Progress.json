@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 10650,
-  "updatedAt": "2026-09-13T15:28:52.317Z",
+  "nextStart": 10950,
+  "updatedAt": "2026-09-13T16:39:33.578Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -733,6 +733,24 @@
         "BigIntro_c3_azata_dialog"
       ],
       "note": "v2リライト第38弾（runRoundLoop.mjs による自動実行）。 186件中186件すべて訳出し、chunk_0000.translations.json に書き込みました。\n\n登場した会話（dialog）: Staunton_In_Present_Welcome_Dialogue / AngelAdjustNow_c3_dialog / HeraldCalling_MythicAngel_dialog / RoguePaladin1〜3_angel_dialo / 114件全て翻訳し、chunk_0001.translations.json に出力しました。\n\n- **件数**: 114/114（全entry翻訳済み、null残しなし）\n- **登場した会話(dialog)**: MentorArrives_azata_c3_dialog（アーリー・サンセット初登場）／MimicsArrive_azata_c3_dialog（ミミック家具の入団）／Robin"
+    },
+    {
+      "start": 10650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-14_round39/",
+      "coveredDialogs": [
+        "BigIntro_c3_azata_dialog",
+        "DesnaAdepts_Azataisland_dialog",
+        "Dracosha_AzataIsland_dialog",
+        "FieldOfWonders_azata_c3_dialog",
+        "MusicVsMusic_azata_c3_dialog",
+        "SoulCalling_azata_c3_dialog",
+        "SpringVsSpring_azata_c3_dialog",
+        "WeCanFly_azata_c3_dialog",
+        "WiseMentor_azata_dialog"
+      ],
+      "note": "v2リライト第39弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json を書き込みました。188件中186件を翻訳し（判断が難しいものはなく、ほぼ全件対応）、登場した会話は BigIntro_c3_azata_dialog（自由十字軍の結成）、DesnaAdepts_Azataisland_dialog（デズナ信徒3人の身の上話）、Dracosha_AzataIsland_dialog（アイヴとの雑談）、Fie / 112件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 112件（全entry訳出、未訳残しなし）\n- **登場した会話**: MusicVsMusic_azata_c3_dialog（アランカ/イレクスの楽器・鐘論争）、SoulCalling_azata_c3_dialog（転送儀式でアリールー研究室に飛ばされる件）、SpringVs"
     }
   ]
 }

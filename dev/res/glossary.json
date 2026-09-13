@@ -2465,6 +2465,47 @@
       "target": "ラッシュブリンガー",
       "category": "Mythic",
       "note": "トレントたちが自由十字軍の指導者（主人公）に贈った異名。Azataパス関連。round38で言及。"
+    },
+    {
+      "source": "Desnan",
+      "target": "デズナ教の",
+      "note": "デズナ（Desna）の信徒・聖職者を指す形容詞形。round39で言及。"
+    },
+    {
+      "source": "Chaldiran",
+      "target": "チャルディランの",
+      "category": "Location",
+      "note": "アザタコートに協力するハーフリングの集団を指す形容詞形の地名/民族名。round39で言及。"
+    },
+    {
+      "source": "Olla Devara",
+      "target": "オラ・デヴァーラ",
+      "category": "Character",
+      "note": "「メートレス（Maitresse）」と呼ばれるアザタコートの一員。round39で言及。"
+    },
+    {
+      "source": "Court of the Flaming Storm",
+      "target": "業火嵐の宮廷",
+      "category": "Location",
+      "note": "アザタの宮廷（Court）の一つの例として言及される固有名。round39で言及。"
+    },
+    {
+      "source": "Starward Gaze",
+      "target": "星への眼差し",
+      "category": "Item",
+      "note": "アランカとイルケスが手掛けるデズナ賛美歌の題名。round39で言及。"
+    },
+    {
+      "source": "Greengold",
+      "target": "グリーンゴールド",
+      "category": "Location",
+      "note": "キョニン（Kyonin）内にある人間の居住地。アランカの出身地。round39で言及。"
+    },
+    {
+      "source": "Shyka",
+      "target": "シューカ",
+      "category": "Character",
+      "note": "ファーストワールドのEldest（長老格の存在）の一人。round39で言及。"
     }
   ]
 }

@@ -44,6 +44,9 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 
 ## 更新履歴（要点のみ）
 
+- 2026-09-14: round39のchunk（Aivuが赤ちゃんドラゴンのセリフ`YES ME DRAGON YES`を引用する箇所）
+  を訳す際、正しい文法に直すべきか迷ったため、片言はそのまま片言で訳すルールを
+  translationGuide.mdに追記（既存の泥酔口調ルールと同様の考え方）。
 - 2026-09-13: round36のchunk内で`the Wound`（Worldwoundの略称）が「世界傷痕」「ワウンド」と
   訳がブレていた（既存glossaryの`Worldwound`＝「ワールドウーンド」と不一致）のを発見し、
   略称でも同じ訳語に統一するルールをtranslationGuide.mdに追記。glossaryにも別名エントリを追加。
