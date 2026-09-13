@@ -2411,6 +2411,42 @@
       "source": "Crimson Rage",
       "target": "深紅の激怒",
       "note": "モングレルの赤子が時に患う、理性を怒りで覆うデーモン由来の疫病。round35で言及。"
+    },
+    {
+      "source": "Damar",
+      "target": "ダマール",
+      "category": "NPC",
+      "note": "Officer。Kenabres駐屯部隊の指揮官で、部下への虐待が原因で殺害される。round37で言及。"
+    },
+    {
+      "source": "Lellan",
+      "target": "レラン",
+      "category": "NPC",
+      "note": "Officer。Damar殺害事件後の後任指揮官。round37で言及。"
+    },
+    {
+      "source": "Gorvo",
+      "target": "ゴルボ",
+      "category": "NPC",
+      "note": "Private。上官Damarを殺害した兵士。round37で言及。"
+    },
+    {
+      "source": "Half Measure",
+      "target": "ハーフ・メジャー",
+      "category": "Location",
+      "note": "Drezenにある酒場の名前。round37で言及。"
+    },
+    {
+      "source": "Varisia",
+      "target": "ヴァリシア",
+      "category": "Location",
+      "note": "Golarionの地方名。round37で言及。"
+    },
+    {
+      "source": "Monad",
+      "target": "モナド",
+      "category": "Mythic",
+      "note": "全てのaeonの根源とされる半神・超越的存在。round37で言及。"
     }
   ]
 }

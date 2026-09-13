@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 10050,
-  "updatedAt": "2026-09-13T06:51:06.032Z",
+  "nextStart": 10350,
+  "updatedAt": "2026-09-13T10:40:40.575Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -682,6 +682,31 @@
         "Aeon_DrezenMarodeur_Woman_dialogue"
       ],
       "note": "v2リライト第36弾（runRoundLoop.mjs による自動実行）。 全200件を翻訳しました。登場した会話（dialog）は AeonDevilCompanion_dialogue / AeonDevilOnce_dialogue（デビル、メリエス＝メフィストフェレスとの問答・契約交渉）、AeonWintersunRavon_dialogue とその裁判編、Aeon_KTC_Irabeth_Ravon_dialogue（脱走騎士オルヴェン＝ラヴォンの一件）、Aeo / 99件訳しました（chunk内の実entry数）。登場した会話は Aeon_DrezenMarodeur_Cave / Court / Ramley / Woman の4本（ラムリーの略奪裁判エピソード一連）。気づいた点：`{n}`/`{/n}`タグは元々`<ctrl_N/>`化されており、生の`{mf}`は本チャンクには登場しませんでした。"
+    },
+    {
+      "start": 10050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-13_round37/",
+      "coveredDialogs": [
+        "AeonDrezenPriest_dialogue",
+        "AeonDrezenPriest_Tavern_dialogue",
+        "AeonDrezenWeed_Court_dialogue",
+        "AeonSadistic_Court_dialogue",
+        "AeonSadistic_KTC_Irabeth_dialogue",
+        "Q9Aeon_KTC_Sadistic_dialogue",
+        "AeonMirrorCompanion_dialogue",
+        "AeonMirrorOnce_dialogue",
+        "AeonMainQuest_AreeluLab_dialogue",
+        "AeonMainQuest_AreeluRift_dialogue",
+        "AeonMainQuest_DrezenRift_dialogue",
+        "Joran_In_Present_Main_Dialogue",
+        "KTC_AeonFixNOW_dialogue",
+        "Staunton_In_Past_Dialogue",
+        "Staunton_In_Present_Main_Dialogue",
+        "Staunton_In_Present_Welcome_Dialogue"
+      ],
+      "note": "v2リライト第37弾（runRoundLoop.mjs による自動実行）。 200件全て翻訳し chunk_0000.translations.json に書き込みました。\n\n- 件数: 200件（全entry訳出、null残しなし）\n- 登場dialog: AeonDrezenPriest_dialogue / AeonDrezenPriest_Tavern_dialogue（デズナ巫女ヴァレーニヤの麻薬売買の話）、AeonDrezenWeed_Court_dialog / 100件すべて翻訳し `chunk_0001.translations.json` に書き込みました。\n\n- **件数**: 100/100\n- **登場した会話(dialog)**: `AeonMainQuest_DrezenRift_dialogue`（ワールドウーンドの門の異形との遭遇）、`Joran_In_Present_Main_Dialogue`（鍛冶屋ジョランとの現在の会話）、`KT"
     }
   ]
 }
