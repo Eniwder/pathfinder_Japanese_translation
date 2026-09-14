@@ -2593,7 +2593,7 @@
     },
     {
       "source": "Erebus",
-      "target": "エレブス",
+      "target": "エレボス",
       "category": "Location",
       "note": "地獄（Hell）の一層。round41で言及。"
     },
@@ -2602,6 +2602,42 @@
       "target": "ヴドラ人",
       "category": "Term",
       "note": "ヴドラ（Vudra）出身者を指す民族名。Chadaliが\"the Vudrani\"と呼ばれる場面あり。round41で言及。"
+    },
+    {
+      "source": "Council",
+      "target": "評議会",
+      "category": "Organization",
+      "note": "Socothbenothが招集した、悪魔・デビル・フェイなど非人間の存在からなる「真実」探求のための会議体（Eritrice/Shyka/Alichino/Cobblehoofらが参加）。round42で言及。"
+    },
+    {
+      "source": "Sir Allfrey",
+      "target": "サー・オールフリー",
+      "category": "Character",
+      "note": "NoMoreTentacles_dialogに登場する十字軍の騎士、見習い達の師。round42で言及。"
+    },
+    {
+      "source": "Alichino",
+      "target": "アリキーノ",
+      "category": "Character",
+      "note": "Councilのメンバーとされるデビル。Eritriceの台詞中で言及のみ、本人は未登場。round42で言及。"
+    },
+    {
+      "source": "Thaberdine Quintissimus Hierophantel",
+      "target": "サバーディン・クィンティシムス・ヒエロファンテル",
+      "category": "Character",
+      "note": "FoolKing（フール王）ことThaberdineの正式なフルネーム（自称）。round42で言及。"
+    },
+    {
+      "source": "Silken Sin",
+      "target": "絹の罪",
+      "category": "Character",
+      "note": "Socothbenothの二つ名。round42で言及。"
+    },
+    {
+      "source": "Darocath",
+      "target": "ダロカス",
+      "category": "Character",
+      "note": "Shykaの台詞に登場するリッチの名。本人は未登場、言及のみ。round42で言及。"
     }
   ]
 }

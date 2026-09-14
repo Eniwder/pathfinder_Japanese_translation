@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 11550,
-  "updatedAt": "2026-09-14T05:59:49.565Z",
+  "nextStart": 11850,
+  "updatedAt": "2026-09-14T11:53:17.566Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -793,6 +793,26 @@
         "Council_Eritrice_Dialogue"
       ],
       "note": "v2リライト第41弾（runRoundLoop.mjs による自動実行）。 175件全て訳しました。登場した会話は KTC_DemonFixNOW_dialogue（ヨズの誘惑）、Nocticula_C3_dialogue（ノクティキュラ謁見）、Nocticula_summon_BookEvent、HalDragonForm_dialogue／HalFirstMeeting_dialogue（黄金竜ハラセリアックス）、Council_1_Dialogue／Council_ / 122件訳しました（chunk_0001.json全entry分）。登場したdialog: Council_3_Dialogue、Council_3_SocothCheck_Dialogue、Council_Alichino_Dialogue、Council_Chadali_Dialogue、Council_Cobblehoof_Dialogue、Council_Eritrice_Dialogue"
+    },
+    {
+      "start": 11550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-14_round42/",
+      "coveredDialogs": [
+        "Council_Eritrice_Dialogue",
+        "Council_Shyka_Dialogue",
+        "Council_Socothbenoth_Dialogue",
+        "FoolKing_Coronation_Dialogue",
+        "FoolKing_Tavern_Dialogue",
+        "KTC_FindLab_Dialogue",
+        "KTC_FindLab_Alternate_Dialogue",
+        "KTC_FoolKingArrives_Dialogue",
+        "KTC_Socothbenoth_Dialogue",
+        "Socoth_Lexicon_Dialogue",
+        "NoMoreTentacles_dialog"
+      ],
+      "note": "v2リライト第42弾（runRoundLoop.mjs による自動実行）。 198件すべて翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 198件（chunk_0000.jsonの全entry）\n- **登場した会話**: Council_Eritrice_Dialogue / Council_Shyka_Dialogue / Council_Socothbenoth_Dialogue / FoolKing_Cor / 102件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 102件全て（省略なし）\n- **登場した会話**: `KTC_Socothbenoth_Dialogue`（ソコスベノス初登場の勧誘イベント）、`Socoth_Lexicon_Dialogue`（パラドックス辞典発見後の再訪）、`NoMoreTentacles_dialog`（"
     }
   ]
 }
