@@ -2506,6 +2506,72 @@
       "target": "シューカ",
       "category": "Character",
       "note": "ファーストワールドのEldest（長老格の存在）の一人。round39で言及。"
+    },
+    {
+      "source": "Battlebliss",
+      "target": "バトルブリス",
+      "category": "Location",
+      "note": "Irmangalethが仕切るアルシニラの闘技場。round40で言及。"
+    },
+    {
+      "source": "Gelderfang",
+      "target": "ゲルダーファング",
+      "category": "Character",
+      "note": "バトルブリスのvavakiaデーモン、闘技場チャンピオン。round40で言及。"
+    },
+    {
+      "source": "Ivory Labyrinth",
+      "target": "アイボリー・ラビリンス",
+      "category": "Organization",
+      "note": "Hepzamirah率いるテンプル騎士団。round40で言及。"
+    },
+    {
+      "source": "Ten Thousand Delights",
+      "target": "テン・サウザンド・ディライツ",
+      "category": "Location",
+      "note": "サキュバスの女主人Chivarroが営む娼館。round40で言及。"
+    },
+    {
+      "source": "Chivarro",
+      "target": "シヴァロ",
+      "category": "Character",
+      "note": "Ten Thousand Delightsを営むサキュバスの女主人。round40で言及。"
+    },
+    {
+      "source": "Coalition of Chaos",
+      "target": "混沌の同盟",
+      "category": "Organization",
+      "note": "デーモン卿たちが結成した同盟。Aolarの逸話に登場。round40で言及。"
+    },
+    {
+      "source": "Aolar",
+      "target": "アオラー",
+      "category": "Character",
+      "note": "故人の女デーモン卿、狩猟の女主人（Lady of the Hunt）。round40で言及。"
+    },
+    {
+      "source": "Mammoth Lords",
+      "target": "マンモス卿",
+      "category": "Faction",
+      "note": "北方の氏族連合。round40で言及。"
+    },
+    {
+      "source": "Golarian",
+      "target": "ゴラリアン",
+      "category": "Term",
+      "note": "Golarion出身者を指す呼称。Yozzがプレイヤーを呼ぶ際に使用。round40で言及。"
+    },
+    {
+      "source": "Grol",
+      "target": "グロル",
+      "category": "Character",
+      "note": "牢に囚われたドッペルゲンガーの傭兵の本名。round40で言及。"
+    },
+    {
+      "source": "Our Lady in Shadow",
+      "target": "影の貴婦人",
+      "category": "Title",
+      "note": "Nocticulaを指す信奉者の呼び方。round40で言及。"
     }
   ]
 }

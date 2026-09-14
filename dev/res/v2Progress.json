@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 10950,
-  "updatedAt": "2026-09-13T16:39:33.578Z",
+  "nextStart": 11250,
+  "updatedAt": "2026-09-14T05:38:03.908Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -751,6 +751,26 @@
         "WiseMentor_azata_dialog"
       ],
       "note": "v2リライト第39弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json を書き込みました。188件中186件を翻訳し（判断が難しいものはなく、ほぼ全件対応）、登場した会話は BigIntro_c3_azata_dialog（自由十字軍の結成）、DesnaAdepts_Azataisland_dialog（デズナ信徒3人の身の上話）、Dracosha_AzataIsland_dialog（アイヴとの雑談）、Fie / 112件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 112件（全entry訳出、未訳残しなし）\n- **登場した会話**: MusicVsMusic_azata_c3_dialog（アランカ/イレクスの楽器・鐘論争）、SoulCalling_azata_c3_dialog（転送儀式でアリールー研究室に飛ばされる件）、SpringVs"
+    },
+    {
+      "start": 10950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-14_round40/",
+      "coveredDialogs": [
+        "WiseMentor_azata_dialog",
+        "Gladiators_dialogue",
+        "Irmangaleth_C3_dialogue",
+        "c3_Alushinyrra_Minagho_Dialogue",
+        "Yozz_dialogue",
+        "Doppelganger_mainDialogue",
+        "HepzamirahTorture_dialogue",
+        "Hepzamirah_Summon_BookEvent",
+        "Irabeth_AboutDoppelganger_dialogue",
+        "Teleport_dialogue",
+        "KTC_DemonFixNOW_dialogue"
+      ],
+      "note": "v2リライト第40弾（runRoundLoop.mjs による自動実行）。 176件全て翻訳し `chunk_0000.translations.json` に書き出しました。\n\n- 件数: 176件（全entry対応、null残しなし）\n- 登場dialog: WiseMentor_azata_dialog（アーリー・サンセットの神話語り）/ Gladiators_dialogue / Irmangaleth_C3_dialogue（バトルブリス闘技場、イルマンガレス・ / 124件全て訳出しました。登場した会話は `HepzamirahTorture_dialogue`（ヘプザミラの拷問シーン）、`Hepzamirah_Summon_BookEvent`（召喚儀式の地の文）、`Irabeth_AboutDoppelganger_dialogue`（ドッペルゲンガー騒動）、`Teleport_dialogue`（脱出）、`KTC_DemonFixNOW_dialogu"
     }
   ]
 }
