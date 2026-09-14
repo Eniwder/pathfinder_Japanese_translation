@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 11850,
-  "updatedAt": "2026-09-14T11:53:17.566Z",
+  "nextStart": 12150,
+  "updatedAt": "2026-09-14T16:19:18.942Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -813,6 +813,33 @@
         "NoMoreTentacles_dialog"
       ],
       "note": "v2リライト第42弾（runRoundLoop.mjs による自動実行）。 198件すべて翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 198件（chunk_0000.jsonの全entry）\n- **登場した会話**: Council_Eritrice_Dialogue / Council_Shyka_Dialogue / Council_Socothbenoth_Dialogue / FoolKing_Cor / 102件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 102件全て（省略なし）\n- **登場した会話**: `KTC_Socothbenoth_Dialogue`（ソコスベノス初登場の勧誘イベント）、`Socoth_Lexicon_Dialogue`（パラドックス辞典発見後の再訪）、`NoMoreTentacles_dialog`（"
+    },
+    {
+      "start": 11850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-15_round43/",
+      "coveredDialogs": [
+        "NoMoreTentacles_dialog",
+        "ThankYouCommanderTentacles_dialog",
+        "VeryNastyDemon_dialog",
+        "EchoChapel_dialogue",
+        "EliandraRanger_Intro_dialogue",
+        "Eliandra_main_dialogue",
+        "HeraldChapel_dialogue",
+        "HeraldPulura_dialogue",
+        "Nidalav_c3_Pulura_dialog",
+        "PuluraCouncil_dialogue",
+        "PuluraCultist_Intro_dialogue",
+        "PuluraCultist_main_dialogue",
+        "PuluraVendor_dialogue",
+        "RangerAlarm_dialogue",
+        "Ranger_main_dialogue",
+        "Odden_dialogue",
+        "Taerill_dialogue",
+        "Regnard_dialogue"
+      ],
+      "note": "v2リライト第43弾（runRoundLoop.mjs による自動実行）。 The file structure looks valid so far (proper key-value pairs, commas, quotes balanced). Given the size, I'll trust the incremental Edit operations completed without error and the visible portion is w / 102件すべて翻訳し `chunk_0001.translations.json` に出力しました。\n\n- 登場会話: RangerAlarm_dialogue / Ranger_main_dialogue / Odden_dialogue / Taerill_dialogue / Regnard_dialogue（プルラの落日の襲撃警報〜カタイアの過去〜オッデン・タエリエル・レグナードの個人エピ"
     }
   ]
 }

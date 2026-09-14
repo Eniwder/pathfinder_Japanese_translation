@@ -2638,6 +2638,108 @@
       "target": "ダロカス",
       "category": "Character",
       "note": "Shykaの台詞に登場するリッチの名。本人は未登場、言及のみ。round42で言及。"
+    },
+    {
+      "source": "Taeriell",
+      "target": "タエリエル",
+      "category": "Character",
+      "note": "プルラの神殿の星読み。Katairの旧友。round43で言及。"
+    },
+    {
+      "source": "Odden",
+      "target": "オデン",
+      "category": "Character",
+      "note": "プルラの神殿の星読み。娘Ranhildと妻Grulhildを外界に残している。round43で言及。"
+    },
+    {
+      "source": "Regnard",
+      "target": "レグナード",
+      "category": "Character",
+      "note": "プルラの神殿の星読み。round43で言及。"
+    },
+    {
+      "source": "Ymris",
+      "target": "イムリス",
+      "category": "Character",
+      "note": "Katairの妻。外界に残されたまま。round43で言及。"
+    },
+    {
+      "source": "Vestari",
+      "target": "ヴェスタリ",
+      "category": "Character",
+      "note": "プルラの神殿の星読み。Cristryとの恋愛関係が発端で神殿内の恋愛が禁止された。round43で言及。"
+    },
+    {
+      "source": "Cristry",
+      "target": "クリストリー",
+      "category": "Character",
+      "note": "プルラの神殿の星読み。Vestariとの恋愛関係が発端で神殿内の恋愛が禁止された。round43で言及。"
+    },
+    {
+      "source": "Ranhild",
+      "target": "ランヒルド",
+      "category": "Character",
+      "note": "Oddenの娘。外界に残されたまま。round43で言及。"
+    },
+    {
+      "source": "Grulhild",
+      "target": "グルヒルド",
+      "category": "Character",
+      "note": "Oddenの妻。外界に残されたまま。round43で言及。"
+    },
+    {
+      "source": "Nidalav",
+      "target": "ニダラヴ",
+      "category": "Character",
+      "note": "プルラの神殿の神官。武器のスケッチを好む。round43で言及。"
+    },
+    {
+      "source": "Vigdis",
+      "target": "ヴィグディス",
+      "category": "Character",
+      "note": "プルラの元下級神官。現在は神殿の物資管理を担う老女。round43で言及。"
+    },
+    {
+      "source": "Stone Tree",
+      "target": "石の木",
+      "category": "Place",
+      "note": "Katairが偽装の墓を掘った場所。round43で言及。"
+    },
+    {
+      "source": "Darklands",
+      "target": "ダークランド",
+      "category": "Place",
+      "note": "ゴラリオン地下に広がる広大な地下世界。round43で言及。"
+    },
+    {
+      "source": "Rasping Rifts",
+      "target": "軋みの裂け目",
+      "category": "Place",
+      "note": "アビス内のDeskariの支配領域。round43で言及。"
+    },
+    {
+      "source": "Aurora Iobara",
+      "target": "オーロラ・イオバラ",
+      "category": "Place",
+      "note": "ヘヴンに属する天使の一団/宮廷。round43で言及。"
+    },
+    {
+      "source": "Mistress of Stars and Farewells",
+      "target": "星々と別れの女主",
+      "category": "Title",
+      "note": "Puluraの異名。round43で言及。"
+    },
+    {
+      "source": "Shimmering Maiden",
+      "target": "煌めきの乙女",
+      "category": "Title",
+      "note": "Puluraの異名。round43で言及。"
+    },
+    {
+      "source": "Lightbringer",
+      "target": "光をもたらす者",
+      "category": "Title",
+      "note": "Iomedaeの異名（Iomedae the Lightbringer）。round43で言及。"
     }
   ]
 }
