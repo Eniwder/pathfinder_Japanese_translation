@@ -926,7 +926,7 @@
     },
     {
       "source": "Areelu Vorlesh",
-      "target": "アーリィ＝ヴォルレシュ",
+      "target": "アレール＝ヴォーレス",
       "note": "ワールドウンドを開いた魔女。冷徹・知性・母性（屈折）。"
     },
     {
@@ -946,8 +946,8 @@
     },
     {
       "source": "Areelu",
-      "target": "アリールー",
-      "note": "アリールー・ヴォールシュ。ワールドウーンドを開いた裏切りの神話級魔術師（後のノクティキュラ）。訳文で「アレールー」「アリーロ」表記ゆれあり、要統一。"
+      "target": "アレール",
+      "note": "アレール・ヴォールシュ。ワールドウーンドを開いた裏切りの神話級魔術師（後のノクティキュラ）。"
     },
     {
       "source": "Hand of the Inheritor",
@@ -2051,7 +2051,7 @@
     {
       "source": "Architect",
       "target": "建築者",
-      "note": "アリールーの二つ名（\"the Architect of the Worldwound\"）。"
+      "note": "アレールの二つ名（\"the Architect of the Worldwound\"）。"
     },
     {
       "source": "Dragon Burial Ground",
@@ -2572,6 +2572,36 @@
       "target": "影の貴婦人",
       "category": "Title",
       "note": "Nocticulaを指す信奉者の呼び方。round40で言及。"
+    },
+    {
+      "source": "Chadali",
+      "target": "チャダリ",
+      "category": "Character",
+      "note": "幸運を司るエンパイリアル・ロード。Council関連ダイアログに登場。round41で言及。"
+    },
+    {
+      "source": "Eritrice",
+      "target": "エリトリス",
+      "category": "Character",
+      "note": "ライオンの顔を持つCouncilのメンバー。round41で言及。"
+    },
+    {
+      "source": "Cobblehoof",
+      "target": "コブルフーフ",
+      "category": "Character",
+      "note": "Councilに仕えるヒッポグリフ。人語は話さず鳴き声のみ。round41で言及。"
+    },
+    {
+      "source": "Erebus",
+      "target": "エレブス",
+      "category": "Location",
+      "note": "地獄（Hell）の一層。round41で言及。"
+    },
+    {
+      "source": "Vudrani",
+      "target": "ヴドラ人",
+      "category": "Term",
+      "note": "ヴドラ（Vudra）出身者を指す民族名。Chadaliが\"the Vudrani\"と呼ばれる場面あり。round41で言及。"
     }
   ]
 }

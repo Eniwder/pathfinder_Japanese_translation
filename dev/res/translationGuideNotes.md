@@ -171,6 +171,10 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   発見。セリフ内の入れ子引用は `『』` を使うルールをtranslationGuide.mdに追記。
   新規話者は検出されずv2CharacterNotes.mdの変更なし。glossary.jsonにKnight Commander/
   Early Sunset/Kel Five Knives/Skerenthalを追加。
+- 2026-09-14: round41 chunk_0000〜0001（Council系ダイアログ）のレビューで、人語を話さず
+  鳴き声のみのヒッポグリフCobblehoofが登場し、鳴き声を意味のある台詞に訳さず擬音のまま
+  音写するルールをtranslationGuide.mdに追記。v2CharacterNotes.mdにChadali/Eritrice/
+  Cobblehoofを追加、glossary.jsonにChadali/Eritrice/Cobblehoof/Erebus/Vudraniを追加。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

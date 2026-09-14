@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 11250,
-  "updatedAt": "2026-09-14T05:38:03.908Z",
+  "nextStart": 11550,
+  "updatedAt": "2026-09-14T05:59:49.565Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -771,6 +771,28 @@
         "KTC_DemonFixNOW_dialogue"
       ],
       "note": "v2リライト第40弾（runRoundLoop.mjs による自動実行）。 176件全て翻訳し `chunk_0000.translations.json` に書き出しました。\n\n- 件数: 176件（全entry対応、null残しなし）\n- 登場dialog: WiseMentor_azata_dialog（アーリー・サンセットの神話語り）/ Gladiators_dialogue / Irmangaleth_C3_dialogue（バトルブリス闘技場、イルマンガレス・ / 124件全て訳出しました。登場した会話は `HepzamirahTorture_dialogue`（ヘプザミラの拷問シーン）、`Hepzamirah_Summon_BookEvent`（召喚儀式の地の文）、`Irabeth_AboutDoppelganger_dialogue`（ドッペルゲンガー騒動）、`Teleport_dialogue`（脱出）、`KTC_DemonFixNOW_dialogu"
+    },
+    {
+      "start": 11250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-14_round41/",
+      "coveredDialogs": [
+        "KTC_DemonFixNOW_dialogue",
+        "Nocticula_C3_dialogue",
+        "Nocticula_summon_BookEvent",
+        "HalDragonForm_dialogue",
+        "HalFirstMeeting_dialogue",
+        "Council_1_Dialogue",
+        "Council_2_Dialogue",
+        "Council_3_Dialogue",
+        "Council_3_SocothCheck_Dialogue",
+        "Council_Alichino_Dialogue",
+        "Council_Chadali_Dialogue",
+        "Council_Cobblehoof_Dialogue",
+        "Council_Eritrice_Dialogue"
+      ],
+      "note": "v2リライト第41弾（runRoundLoop.mjs による自動実行）。 175件全て訳しました。登場した会話は KTC_DemonFixNOW_dialogue（ヨズの誘惑）、Nocticula_C3_dialogue（ノクティキュラ謁見）、Nocticula_summon_BookEvent、HalDragonForm_dialogue／HalFirstMeeting_dialogue（黄金竜ハラセリアックス）、Council_1_Dialogue／Council_ / 122件訳しました（chunk_0001.json全entry分）。登場したdialog: Council_3_Dialogue、Council_3_SocothCheck_Dialogue、Council_Alichino_Dialogue、Council_Chadali_Dialogue、Council_Cobblehoof_Dialogue、Council_Eritrice_Dialogue"
     }
   ]
 }
