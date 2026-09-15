@@ -63,6 +63,7 @@
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -502,6 +503,46 @@ const ANOMALY_THRESHOLDS = {
   notes: { turns: 40, costUsd: 2.0, durationMs: 600_000 }, // 600_000ms = 10分
 };
 
+// 2026-09、64k max_tokens 衝突のリカバリ方式を調査した結果: --output-format json の
+// 最上位レスポンスには stop_reason（最終ターンのもの）も session_id も含まれるが、
+// 「途中のどこかのターンで max_tokens に衝突したか」はそこからは分からない
+// （最終的に正常完了すれば is_error:false のまま埋もれる）。これを機械的に検知するには
+// セッションのフルトランスクリプト（~/.claude/projects/<sanitized-cwd>/<session_id>.jsonl、
+// claude Code CLIが自動保存している）を読み、各assistantターンの stop_reason を見るしかない。
+// ここでは「衝突したら別経路に切り替える」対策は行わず、観測のみ行う
+// （対策側は検知手段が無いと成立しないため、まずはこれで発生率・コストの実測を蓄積する）。
+function sanitizeCwdForProjectDir(cwd) {
+  return cwd.replace(/[^a-zA-Z0-9]/g, '-');
+}
+
+function detectMaxTokensHit(sessionId, cwd) {
+  if (!sessionId) return null;
+  try {
+    const projectDir = path.join(os.homedir(), '.claude', 'projects', sanitizeCwdForProjectDir(cwd));
+    const transcriptPath = path.join(projectDir, `${sessionId}.jsonl`);
+    if (!fs.existsSync(transcriptPath)) return null;
+    const lines = fs.readFileSync(transcriptPath, 'utf8').trim().split('\n');
+    const seenMsgIds = new Set();
+    let hitCount = 0;
+    let maxSingleTurnOutputTokens = 0;
+    for (const line of lines) {
+      let l;
+      try { l = JSON.parse(line); } catch { continue; }
+      if (l.type !== 'assistant') continue;
+      const key = l.message?.id ?? l.uuid;
+      if (seenMsgIds.has(key)) continue; // 同一ターンが複数行に分かれて出力されるケースの重複除去
+      seenMsgIds.add(key);
+      const out = l.message?.usage?.output_tokens ?? 0;
+      if (out > maxSingleTurnOutputTokens) maxSingleTurnOutputTokens = out;
+      if (l.message?.stop_reason === 'max_tokens') hitCount++;
+    }
+    return { maxTokensHit: hitCount > 0, maxTokensHitCount: hitCount, maxSingleTurnOutputTokens };
+  } catch (e) {
+    console.warn(`⚠ max_tokens衝突の検知に失敗（無視して続行）: ${e.message}`);
+    return null;
+  }
+}
+
 function checkTurnAnomaly(logName, promptLength, parsed, extraUsageFields) {
   const kind = logName.endsWith('_notes') ? 'notes' : 'chunk';
   const threshold = ANOMALY_THRESHOLDS[kind];
@@ -513,6 +554,9 @@ function checkTurnAnomaly(logName, promptLength, parsed, extraUsageFields) {
   if (typeof turns === 'number' && turns > threshold.turns) reasons.push(`turns ${turns}>${threshold.turns}`);
   if (cost > threshold.costUsd) reasons.push(`cost $${cost.toFixed(3)}>$${threshold.costUsd}`);
   if (duration > threshold.durationMs) reasons.push(`duration ${(duration / 1000).toFixed(0)}s>${threshold.durationMs / 1000}s`);
+  // cost/duration/turnsのしきい値を超えていなくても、max_tokens衝突自体は独立して記録価値がある
+  // シグナルなので、検知できていれば無条件でreasonsに加える（＝無条件でanomalies.logに残る）。
+  if (extraUsageFields?.maxTokensHit) reasons.push(`max_tokens衝突 x${extraUsageFields.maxTokensHitCount}`);
   if (!reasons.length) return;
 
   const msg =
@@ -572,6 +616,8 @@ function callClaudeOnce(prompt, logName, model, extraUsageFields) {
   try {
     const parsed = JSON.parse(raw);
     result = typeof parsed.result === 'string' ? parsed.result : raw;
+    const maxTokensInfo = detectMaxTokensHit(parsed.session_id, process.cwd());
+    const mergedExtraFields = { ...(extraUsageFields ?? {}), ...(maxTokensInfo ?? {}) };
     appendUsageLog({
       ts: new Date().toISOString(),
       logName,
@@ -581,9 +627,10 @@ function callClaudeOnce(prompt, logName, model, extraUsageFields) {
       duration_ms: parsed.duration_ms ?? null,
       num_turns: parsed.num_turns ?? null,
       is_error: parsed.is_error ?? null,
-      ...(extraUsageFields ?? {}),
+      session_id: parsed.session_id ?? null,
+      ...mergedExtraFields,
     });
-    checkTurnAnomaly(logName, prompt.length, parsed, extraUsageFields);
+    checkTurnAnomaly(logName, prompt.length, parsed, mergedExtraFields);
   } catch (e) {
     // --output-format json が使えないCLIバージョン等で生テキストが返ってきた場合のフォールバック。
     // 従来通りテキストとして扱う（usageは記録できないが処理自体は継続する）。
