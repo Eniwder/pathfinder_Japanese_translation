@@ -2855,6 +2855,42 @@
       "target": "絶望の牙",
       "category": "Item",
       "note": "シーアの物語に関わる呪われた武器群『牙』の一つ。Fang of Malice（悪意の牙）と対になる。round47で言及。"
+    },
+    {
+      "source": "Lady of Graves",
+      "target": "墓所の貴婦人",
+      "category": "Title",
+      "note": "ファラズマの異名（死者を裁く者としての呼称）。round48で言及。"
+    },
+    {
+      "source": "Grave Guards",
+      "target": "墓の守護者",
+      "category": "Title",
+      "note": "骸の柱の儀式で生み出されるアンデッドの守護者。round48で言及。"
+    },
+    {
+      "source": "The Pillar of Skulls",
+      "target": "骸の柱",
+      "category": "Character",
+      "note": "再生した頭蓋骨が連なる話す構造物（speaker id: SkullPillar_MainDialogue）。round48で登場。"
+    },
+    {
+      "source": "Runelord Zutha",
+      "target": "ルーンロード・ズサ",
+      "category": "Character",
+      "note": "古のルーンロード（大呪文使い）の一人。アンデッドの下僕に力を刻む秘紋を発案した。round48で言及。"
+    },
+    {
+      "source": "Lake of Mists and Veils",
+      "target": "霧と帷湖",
+      "category": "Place",
+      "note": "サーコリスからベルクゼンまで広がる湖。Egede（霧と帷湖岸の港湾都市）と同一の湖。round48で言及。"
+    },
+    {
+      "source": "Runebarrow",
+      "target": "ルーンバロウ",
+      "category": "Place",
+      "note": "マグリムが死者を迎える冥府の領域（ドワーフの死生観）。round48で言及。"
     }
   ]
 }

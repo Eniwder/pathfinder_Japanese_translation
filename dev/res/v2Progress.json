@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 13350,
-  "updatedAt": "2026-09-17T20:40:43.194Z",
+  "nextStart": 13650,
+  "updatedAt": "2026-09-17T21:03:18.068Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -917,6 +917,27 @@
         "SoanaBeforeBear_dialogue"
       ],
       "note": "v2リライト第47弾（runRoundLoop.mjs による自動実行）。 JSON構文は問題なし。191件すべて翻訳済みです。\n\n191件を訳出しました。登場した会話は `Miammir_Alone_Dialogue`／`Miammir_Siabrae_Dialogue`（半狂乱のドルイド学者ミアミールとシアブレイ）、`Morveg_Dying`／`Morveg_InTheShrine`／`Morveg_NearPazzle`（悪意の牙を巡る若きケリッド戦士モーグウェグ / 109件全て翻訳しました。登場したdialogは PeacefulWoodCarver_Wintersun_dialog（盲目の彫刻師ゲスメルハ）、SoanaAfterBear/SoanaAfterQuest/SoanaBear/SoanaBeforeBear_dialogue（老シャーマン・ソアナと熊オルソ）の5本。気づいた点：`[Execute the shaman]`は既存訳例が無かったため"
+    },
+    {
+      "start": 13350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round48/",
+      "coveredDialogs": [
+        "SoanaBeforeBear_dialogue",
+        "CiarFallen",
+        "Ciar_Zombie",
+        "KTC_SkullPillar_AboutUndeadRiot",
+        "KTC_ZachariusFirstCall",
+        "KTC_Zacharius_CallToRitual",
+        "SkullPillar_MainDialogue",
+        "StauntonZombie",
+        "Zacharius_BeginRitual",
+        "Zacharius_FailedRitual",
+        "Zacharius_main",
+        "AirAdventures_BookEvent"
+      ],
+      "note": "v2リライト第48弾（runRoundLoop.mjs による自動実行）。 198件全て訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 198件すべて翻訳（未訳キーなし）\n- **登場した会話**: `SoanaBeforeBear_dialogue`, `CiarFallen`, `Ciar_Zombie`, `KTC_SkullPillar_AboutUndeadRiot`, `KTC_ZachariusFirs / 102件すべて翻訳しました。登場した会話は `Zacharius_FailedRitual`（儀式失敗時の魂離脱シーン）、`Zacharius_main`（リッチの師ザカリウスとの本編会話）、`AirAdventures_BookEvent`（空の冒険イベントの選択肢）の3つです。\n\n気づいた点：`Zacharius_main` の大半のCueエントリには `speaker` フィールドがなかった"
     }
   ]
 }
