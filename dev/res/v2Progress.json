@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 13050,
-  "updatedAt": "2026-09-17T15:45:48.146Z",
+  "nextStart": 13350,
+  "updatedAt": "2026-09-17T20:40:43.194Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -896,6 +896,27 @@
         "Miammir_Alone_Dialogue"
       ],
       "note": "v2リライト第46弾（runRoundLoop.mjs による自動実行）。 178件全てを翻訳し、chunk_0000.translations.jsonに書き込み完了しました。\n\n- **訳した件数**: 178件（全entry）\n- **登場した会話(dialog)**: `TombOfDelamere_BookEvent`（デラメアの石棺）、`ZanedraInTemple`（ザネドラ戦前会話）、`BlindCarver_Wintersun_dialog`（盲目の木 / 122件すべて翻訳しました。登場した会話（dialog）は `JerribethReveal_Wintersun_dialog`（マーヘヴォクとジェリベス正体判明～対峙）、`MarhevokAmbush_Wintersun_dialog`（首長邸での対決・決闘）、`Miammir_After_Dialogue`（正気を失ったミアミールの処遇を巡る議論）、`Miammir_Alone_Dialogu"
+    },
+    {
+      "start": 13050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round47/",
+      "coveredDialogs": [
+        "Miammir_Alone_Dialogue",
+        "Miammir_Siabrae_Dialogue",
+        "Morveg_Dying",
+        "Morveg_InTheShrine",
+        "Morveg_NearPazzle",
+        "DemonVendor_Wintersun_dialog",
+        "PeacefulMarhevok_Wintersun_dialog",
+        "PeacefulWoodCarver_Wintersun_dialog",
+        "SoanaAfterBear_dialogue",
+        "SoanaAfterQuest_dialogue",
+        "SoanaBear_dialogue",
+        "SoanaBeforeBear_dialogue"
+      ],
+      "note": "v2リライト第47弾（runRoundLoop.mjs による自動実行）。 JSON構文は問題なし。191件すべて翻訳済みです。\n\n191件を訳出しました。登場した会話は `Miammir_Alone_Dialogue`／`Miammir_Siabrae_Dialogue`（半狂乱のドルイド学者ミアミールとシアブレイ）、`Morveg_Dying`／`Morveg_InTheShrine`／`Morveg_NearPazzle`（悪意の牙を巡る若きケリッド戦士モーグウェグ / 109件全て翻訳しました。登場したdialogは PeacefulWoodCarver_Wintersun_dialog（盲目の彫刻師ゲスメルハ）、SoanaAfterBear/SoanaAfterQuest/SoanaBear/SoanaBeforeBear_dialogue（老シャーマン・ソアナと熊オルソ）の5本。気づいた点：`[Execute the shaman]`は既存訳例が無かったため"
     }
   ]
 }

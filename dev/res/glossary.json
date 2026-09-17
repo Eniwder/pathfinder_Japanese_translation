@@ -2837,6 +2837,24 @@
       "target": "ゴートフォード",
       "category": "Location",
       "note": "ウルブリッグ・オレスクが言及する古戦場の地名。round46で言及。"
+    },
+    {
+      "source": "Orso",
+      "target": "オルソ",
+      "category": "Character",
+      "note": "ウィンターサンの森を守るアビスの精霊が憑いた熊。「Great Orso」「Orso the Terrible」も同一個体を指す呼称。round47で登場。"
+    },
+    {
+      "source": "Rekshenzi",
+      "target": "レクシェンジ",
+      "category": "Character",
+      "note": "ウィンターサンでハーフリングの商人を装うインキュバス（speaker id: WintersunIncubusTrader）。round47で登場。"
+    },
+    {
+      "source": "Fang of Despair",
+      "target": "絶望の牙",
+      "category": "Item",
+      "note": "シーアの物語に関わる呪われた武器群『牙』の一つ。Fang of Malice（悪意の牙）と対になる。round47で言及。"
     }
   ]
 }

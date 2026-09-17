@@ -311,7 +311,7 @@ function collectMissingSpeakerSamples(reviewDirAbs, chunkFiles) {
         if (!samplesBySpeaker.has(speaker)) samplesBySpeaker.set(speaker, []);
         const arr = samplesBySpeaker.get(speaker);
         if (arr.length < 3 && e.translation) {
-          arr.push({ dialog: b.dialog ?? null, text: e.text, translation: e.translation });
+          arr.push({ dialog: b.dialog ?? null, file: f, key: e.key, text: e.text, translation: e.translation });
         }
       }
     }
@@ -379,7 +379,7 @@ function extractGlossaryCandidates(reviewDirAbs, chunkFiles, glossaryEntries, mi
           if (!counts.has(phrase)) counts.set(phrase, { count: 0, samples: [] });
           const rec = counts.get(phrase);
           rec.count++;
-          if (rec.samples.length < 2) rec.samples.push({ dialog: b.dialog ?? null, text: e.text });
+          if (rec.samples.length < 2) rec.samples.push({ dialog: b.dialog ?? null, file: f, key: e.key, text: e.text });
         }
       }
     }
@@ -406,6 +406,20 @@ function extractGlossaryCandidates(reviewDirAbs, chunkFiles, glossaryEntries, mi
   return kept;
 }
 
+// notesステップの許可ツールにBashは無いが、実測でclaudeが「ファイル末尾を見たい」ために
+// `tail -c N` を試みて拒否される（turnを1つ無駄にするだけで何も得られない）ケースが
+// round44・round45の生トランスクリプトで確認された。原因は「末尾を見る手段が無い」ことでは
+// なく、Read（行offset指定）で代替できることをClaudeが把握していなかったこと。
+// ここで各対象ファイルの現在の行数を機械的に数えてpromptへ埋め込み、「offsetはこの値から
+// 引き算すればよい」と明示することで、Bashを試す動機自体を無くす。
+function countFileLines(relPath) {
+  try {
+    return fs.readFileSync(path.resolve(relPath), 'utf8').split('\n').length;
+  } catch {
+    return null;
+  }
+}
+
 function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries) {
   const missing = collectMissingSpeakerSamples(reviewDirAbs, chunkFiles);
   const missingBlock = missing.size
@@ -413,7 +427,9 @@ function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossary
         .map(
           ([speaker, samples]) =>
             `- speaker_id: ${speaker}\n` +
-            samples.map((s) => `  - (${s.dialog ?? '?'}) 原文: ${s.text}\n    訳文: ${s.translation}`).join('\n')
+            samples
+              .map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) 原文: ${s.text}\n    訳文: ${s.translation}`)
+              .join('\n')
         )
         .join('\n')
     : '（未登録の話者は検出されませんでした）';
@@ -424,7 +440,7 @@ function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossary
         .map(
           (c) =>
             `- "${c.phrase}"（${c.count}回）\n` +
-            c.samples.map((s) => `  - (${s.dialog ?? '?'}) ${s.text}`).join('\n')
+            c.samples.map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) ${s.text}`).join('\n')
         )
         .join('\n')
     : '（既存glossaryに無い固有名詞は検出されませんでした）';
@@ -433,10 +449,23 @@ function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossary
     .map((e) => JSON.stringify(e))
     .join('\n  ');
 
+  const lineCountBlock = [
+    ['dev/res/v2CharacterNotes.md', './res/v2CharacterNotes.md'],
+    ['dev/res/translationGuide.md', './res/translationGuide.md'],
+    ['dev/res/translationGuideNotes.md', './res/translationGuideNotes.md'],
+    ['dev/res/glossary.json', './res/glossary.json'],
+  ]
+    .map(([label, relPath]) => `- ${label}: ${countFileLines(relPath) ?? '?'}行`)
+    .join('\n');
+
   return `直前に${reviewDir}へ退避されたchunkファイルについて、以下の3点を確認してください。
 chunkファイル本体・dev/res/glossary.jsonはReadしなくて構いません（判断に必要な情報は
-下に埋め込み済みです。判断がつかない場合だけ、該当chunkファイル（${chunkFiles.join(', ')}）や
-dev/res/glossary.jsonを開いてください）。
+下に埋め込み済みです）。
+
+各候補行の \`[chunk_000N.json#<uuid>]\` は、その候補が実際に出現したentryの所在地（ファイル名と
+entryのkey）です。追加の文脈がどうしても必要な場合は、この情報を使って
+Grep（該当ファイル内で該当keyを検索）すれば1回で該当箇所に到達できます。ファイル全体を
+Readしたり、フレーズ名で全文検索し直したりする必要はありません（keyが分かっているので）。
 
 【やること（該当があれば、なければ何もしない）】
 1. 下記は dev/res/v2CharacterNotes.md にまだ載っていない話者(speaker_id)と、その原文/訳文サンプルです。
@@ -467,8 +496,13 @@ ${glossaryBlock}
 
 編集してよいのは上記4ファイル（v2CharacterNotes.md / translationGuide.md /
 translationGuideNotes.md / glossary.json）だけです。他のファイルは触らないこと。
-git操作やコマンド実行は不要です（あなたにその権限はありません）。Bash・スクリプト実行・
-その他の回避策は一切試みないこと。
+git操作やコマンド実行は不要です（あなたにその権限はありません）。Bashは許可ツールに
+含まれていないため、tail等のコマンドを試みても失敗してturnを無駄にするだけです
+（Bash・スクリプト実行・その他の回避策は一切試みないこと）。
+ファイル末尾（配列の閉じ括弧の位置など）を確認したい場合は、Readツールのoffsetパラメータで
+直接末尾付近を指定してください。各ファイルの現在の行数は以下の通りです
+（offsetにはこの値から10〜15引いた行番号を指定すれば十分です）:
+${lineCountBlock}
 
 【効率化のお願い】
 - 各対象ファイルはEditの前に1回読めば十分です。書いた内容を確認するための再読み込みは

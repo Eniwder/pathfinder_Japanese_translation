@@ -44,6 +44,9 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 
 ## 更新履歴（要点のみ）
 
+- 2026-09-18: round47のchunk（Morvegがゴルムに祈る場面）で`Rroumgr bar! Todan khtar! Gorum lakh!`
+  という架空言語の詠唱句をどう訳すか迷ったため、意味を持たない発明言語のフレーズは
+  カタカナ音写でそのまま移すルールをtranslationGuide.mdに追記。
 - 2026-09-17: round44のchunkで`Upper Planes`/`Lower Planes`/`Plane of Earth`の訳が
   「上位位界」「下位位界」「地の位界」で揃っていたため、`Plane`＝「位界」統一ルールを
   translationGuide.mdに追記。
