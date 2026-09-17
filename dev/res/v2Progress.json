@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 13650,
-  "updatedAt": "2026-09-17T21:03:18.068Z",
+  "nextStart": 13950,
+  "updatedAt": "2026-09-17T21:29:18.271Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -938,6 +938,20 @@
         "AirAdventures_BookEvent"
       ],
       "note": "v2リライト第48弾（runRoundLoop.mjs による自動実行）。 198件全て訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 198件すべて翻訳（未訳キーなし）\n- **登場した会話**: `SoanaBeforeBear_dialogue`, `CiarFallen`, `Ciar_Zombie`, `KTC_SkullPillar_AboutUndeadRiot`, `KTC_ZachariusFirs / 102件すべて翻訳しました。登場した会話は `Zacharius_FailedRitual`（儀式失敗時の魂離脱シーン）、`Zacharius_main`（リッチの師ザカリウスとの本編会話）、`AirAdventures_BookEvent`（空の冒険イベントの選択肢）の3つです。\n\n気づいた点：`Zacharius_main` の大半のCueエントリには `speaker` フィールドがなかった"
+    },
+    {
+      "start": 13650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round49/",
+      "coveredDialogs": [
+        "AirAdventures_BookEvent",
+        "AlushPortals_dialogue",
+        "ArenaHealer_dialogue",
+        "Atselm_dialogue",
+        "DireOneBattlebliss_dialogue"
+      ],
+      "note": "v2リライト第49弾（runRoundLoop.mjs による自動実行）。 187件全て訳出し、chunk_0000.translations.json に書き込みました。登場する会話は「AirAdventures_BookEvent」（コリフィア遠征のエアシップ航海イベント。ハーピー・ハリケーン・疫病・反乱・ヴァズグラルの墓など多数の分岐）と「AlushPortals_dialogue」（アルシニラの転移門アーチの調査パート）の2つです。\n\n気づいた点：`{mf|his / 113件すべて翻訳し、`chunk_0001.translations.json` に書き込みました。\n\n- 登場した会話: `ArenaHealer_dialogue`（バトルブリスの縫い師デーモン）、`Atselm_dialogue`（三位一体の妖精アトセルム）、`DireOneBattlebliss_dialogue`（トレヴァー）\n- 気づいた点: 縫い師デーモンは`speaker`未定義"
     }
   ]
 }

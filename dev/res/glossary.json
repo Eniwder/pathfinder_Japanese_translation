@@ -2891,6 +2891,102 @@
       "target": "ルーンバロウ",
       "category": "Place",
       "note": "マグリムが死者を迎える冥府の領域（ドワーフの死生観）。round48で言及。"
+    },
+    {
+      "source": "Vazglar",
+      "target": "ヴァズグラル",
+      "category": "Place",
+      "note": "アビスにあった古い魔道士の墓所島。宝を奪われた反動で崩壊し海に沈んだ。round49で言及。"
+    },
+    {
+      "source": "Ishiar",
+      "target": "イシアル",
+      "category": "Place",
+      "note": "アビスの海域。難破・漂着の舞台となる。round49で言及。"
+    },
+    {
+      "source": "Alir",
+      "target": "アリル",
+      "category": "Place",
+      "note": "アビスの島。奇怪な菌類の密航者が病を運んだ元凶。round49で言及。"
+    },
+    {
+      "source": "Mharah Island",
+      "target": "マラー島",
+      "category": "Place",
+      "note": "アビスの島。悪意と不和を空気感染のように広める瘴気に満ちる。round49で言及。"
+    },
+    {
+      "source": "Captain Kerz",
+      "target": "カーズ船長",
+      "category": "Character",
+      "note": "通称「刺され野郎（Got-Stabbed）」と呼ばれる海賊船長。round49で登場。"
+    },
+    {
+      "source": "Nezirrius",
+      "target": "ネジリウス",
+      "category": "Character",
+      "note": "アビスのフェイ。アツェルムの旧知で、殺し自体を好む性質を持つ。round49で言及。"
+    },
+    {
+      "source": "Wild Hunt",
+      "target": "ワイルドハント",
+      "category": "Title",
+      "note": "アツェルムが所属していたフェイの狩猟団。round49で言及。"
+    },
+    {
+      "source": "Mother of Monsters",
+      "target": "怪物の母",
+      "category": "Title",
+      "note": "ラマシュトゥの異名。round49で言及。"
+    },
+    {
+      "source": "Captain Mielarah",
+      "target": "ミエララ船長",
+      "category": "Character",
+      "note": "「グレイヴドラッガー」の呪いに苦しむ船長。round49で言及。"
+    },
+    {
+      "source": "Gravedragger",
+      "target": "グレイヴドラッガー",
+      "category": "Title",
+      "note": "船乗りに付きまとうとされる呪い・凶運の呼び名。round49で言及。"
+    },
+    {
+      "source": "Lord Irmangaleth",
+      "target": "イルマンガレス卿",
+      "category": "Character",
+      "note": "闘技場バトルブリスの所有者。round49で言及。"
+    },
+    {
+      "source": "Zeklex",
+      "target": "ゼクレックス",
+      "category": "Character",
+      "note": "闘技場バトルブリスの管理人。round49で言及。"
+    },
+    {
+      "source": "The Dire One",
+      "target": "ダイアワン",
+      "category": "Character",
+      "note": "闘技場の剣闘士の二つ名（speaker id: DireOneBattlebliss_dialogue）。獣的で寡黙。round49で登場。"
+    },
+    {
+      "source": "Willodus the Vivisectionist",
+      "target": "生体解剖医ウィロダス",
+      "category": "Character",
+      "note": "悪名高い解剖医。その手記が闘技場の治療師の会話で言及される。round49で言及。"
+    },
+    {
+      "source": "Midnight Bore",
+      "target": "ミッドナイト・ボア",
+      "category": "Title",
+      "note": "闘技場の治療師が皮肉る、装飾にこだわる一派の名。round49で言及。"
+    },
+    {
+      "source": "Xorges",
+      "target": "ゾルジェス",
+      "category": "Character",
+      "note": "海底の触手に支えられて現れる少年。round49で登場。"
     }
   ]
 }
