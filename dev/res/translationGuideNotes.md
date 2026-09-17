@@ -44,6 +44,9 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 
 ## 更新履歴（要点のみ）
 
+- 2026-09-17: round44のchunkで`Upper Planes`/`Lower Planes`/`Plane of Earth`の訳が
+  「上位位界」「下位位界」「地の位界」で揃っていたため、`Plane`＝「位界」統一ルールを
+  translationGuide.mdに追記。
 - 2026-09-14: round39のchunk（Aivuが赤ちゃんドラゴンのセリフ`YES ME DRAGON YES`を引用する箇所）
   を訳す際、正しい文法に直すべきか迷ったため、片言はそのまま片言で訳すルールを
   translationGuide.mdに追記（既存の泥酔口調ルールと同様の考え方）。

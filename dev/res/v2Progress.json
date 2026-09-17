@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 12150,
-  "updatedAt": "2026-09-14T16:19:18.942Z",
+  "nextStart": 12450,
+  "updatedAt": "2026-09-17T10:25:34.183Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -840,6 +840,28 @@
         "Regnard_dialogue"
       ],
       "note": "v2リライト第43弾（runRoundLoop.mjs による自動実行）。 The file structure looks valid so far (proper key-value pairs, commas, quotes balanced). Given the size, I'll trust the incremental Edit operations completed without error and the visible portion is w / 102件すべて翻訳し `chunk_0001.translations.json` に出力しました。\n\n- 登場会話: RangerAlarm_dialogue / Ranger_main_dialogue / Odden_dialogue / Taerill_dialogue / Regnard_dialogue（プルラの落日の襲撃警報〜カタイアの過去〜オッデン・タエリエル・レグナードの個人エピ"
+    },
+    {
+      "start": 12150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-17_round44/",
+      "coveredDialogs": [
+        "Regnard_dialogue",
+        "RegnardBattle_dialogue",
+        "Cristry_dialogue",
+        "CristryVestari_dialogue",
+        "PuluraGuard_dialogue",
+        "Vestari_dialogue",
+        "QuicksandGMBE_bookevent",
+        "Jernaugh_Main_Dialogue",
+        "Jernaugh_VillageMeet_Dialogue",
+        "KTC_Markyll_dialogue",
+        "Siblings_Main_Dialogue",
+        "Siblings_Meet_Dialogue",
+        "VillagersMourning_Dialogue"
+      ],
+      "note": "v2リライト第44弾（runRoundLoop.mjs による自動実行）。 199件中198件は既存の訳文がそのまま入っており、未訳(null)だった1件（QuicksandGMBE_bookevent内、速灰から抜け出そうとする場面の地の文）のみ新たに訳して追加しました。登場した会話は Regnard_dialogue / RegnardBattle_dialogue / Cristry_dialogue / CristryVestari_dialogue / Pulu"
     }
   ]
 }

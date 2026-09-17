@@ -2740,6 +2740,51 @@
       "target": "光をもたらす者",
       "category": "Title",
       "note": "Iomedaeの異名（Iomedae the Lightbringer）。round43で言及。"
+    },
+    {
+      "source": "Icy Rill",
+      "target": "アイシー・リル",
+      "note": "チリー・クリーク村が「母」として崇める川。round44で言及。"
+    },
+    {
+      "source": "Markyll",
+      "target": "マルキル",
+      "note": "チリー・クリーク村の漁師、マレッサの兄。round44で登場。"
+    },
+    {
+      "source": "Malessa",
+      "target": "マレッサ",
+      "note": "チリー・クリーク村の女性、マルキルの妹。round44で登場。"
+    },
+    {
+      "source": "Katair",
+      "target": "カタイル",
+      "note": "プルラの神殿の星詠み学者（speaker id: PuluraFall_Katair）。round44でカナ表記確認。"
+    },
+    {
+      "source": "Ailberije",
+      "target": "アイルベリジェ",
+      "note": "イズを治めたと伝わる古代の統治者（Master of Iz）。round44で言及。"
+    },
+    {
+      "source": "Rage of Ice",
+      "target": "氷の怒り",
+      "note": "アイルベリジェが共に葬られたとされる剣。round44で言及。"
+    },
+    {
+      "source": "Tarrasque",
+      "target": "タラスク",
+      "note": "星座名としても言及される怪物。round44で言及。"
+    },
+    {
+      "source": "Sellen",
+      "target": "セレン",
+      "note": "リバー・キングダムを流れる大河。round44で「大セレン(Great Sellen)」として言及。"
+    },
+    {
+      "source": "Plane of Earth",
+      "target": "地の位界",
+      "note": "石の民（オレアド等）の出自とされる元素位界。round44で言及。"
     }
   ]
 }

@@ -20,6 +20,7 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
 - Player（主人公）の発言は一人称を固定せず原文に合わせて自然に訳す。
   性別分岐（`{mf}`）は原文の意図を尊重する。
 - 用語はchunkに埋め込まれた `glossary` の `target` を優先。
+- 宇宙論の `Plane`（`Upper/Lower Planes` `Plane of Earth` 等）は「位界」で統一する（「次元」にしない）。
 - 同一人物が話者IDや原文スペル違い（`Joran`/`Jorun Vane` 等）で登場することがある。
   glossaryに既存の別名エントリがないか確認し、あれば訳語を合わせる。
 - `the Wound`（`Worldwound`の口語的な略称）は`Worldwound`と同じ「ワールドウーンド」で訳す
