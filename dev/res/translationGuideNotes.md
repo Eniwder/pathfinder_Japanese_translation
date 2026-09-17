@@ -178,6 +178,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   鳴き声のみのヒッポグリフCobblehoofが登場し、鳴き声を意味のある台詞に訳さず擬音のまま
   音写するルールをtranslationGuide.mdに追記。v2CharacterNotes.mdにChadali/Eritrice/
   Cobblehoofを追加、glossary.jsonにChadali/Eritrice/Cobblehoof/Erebus/Vudraniを追加。
+- 2026-09-18: round45 chunk_0000〜0001（キャド初登場のエラスティル神殿シーン、
+  デラメアの納骨堂対話、骸骨の行商人エピソード）のレビューで、デラメアの原文がサ行を
+  伸ばす特有の話し方（`wasss`等）だが訳文は音写で崩さずなめらかな丁寧語で再現していた
+  ため、歯擦音を伸ばす話し方は無理に崩さなくてよい旨をtranslationGuide.mdに追記。
+  v2CharacterNotes.mdにKyadoDrezen/Kyado_main_dialogue/KyadoPityPriest/DelamereInTomb/
+  SkeletalSalesmanSE_dialogueを追加、glossary.jsonにKyado/Rathimusを追加。
 
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 

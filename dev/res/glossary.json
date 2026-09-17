@@ -2785,6 +2785,16 @@
       "source": "Plane of Earth",
       "target": "地の位界",
       "note": "石の民（オレアド等）の出自とされる元素位界。round44で言及。"
+    },
+    {
+      "source": "Kyado",
+      "target": "キャド",
+      "note": "エラスティルの神殿を守る若き聖職者、羊飼い出身。round45で本格登場。"
+    },
+    {
+      "source": "Rathimus",
+      "target": "ラティムス",
+      "note": "キャドの亡き師にあたる神官。本編未登場・言及のみ。round45で言及。"
     }
   ]
 }

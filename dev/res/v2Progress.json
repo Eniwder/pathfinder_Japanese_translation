@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 12450,
-  "updatedAt": "2026-09-17T10:25:34.183Z",
+  "nextStart": 12750,
+  "updatedAt": "2026-09-17T15:25:27.851Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -862,6 +862,22 @@
         "VillagersMourning_Dialogue"
       ],
       "note": "v2リライト第44弾（runRoundLoop.mjs による自動実行）。 199件中198件は既存の訳文がそのまま入っており、未訳(null)だった1件（QuicksandGMBE_bookevent内、速灰から抜け出そうとする場面の地の文）のみ新たに訳して追加しました。登場した会話は Regnard_dialogue / RegnardBattle_dialogue / Cristry_dialogue / CristryVestari_dialogue / Pulu"
+    },
+    {
+      "start": 12450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round45/",
+      "coveredDialogs": [
+        "VillagersMourning_Dialogue",
+        "SkeletalSalesmanSE_dialogue",
+        "DelamereInTomb",
+        "KyadoDrezen",
+        "KyadoPityPriest",
+        "Kyado_main_dialogue",
+        "TombOfDelamere_BookEvent"
+      ],
+      "note": "v2リライト第45弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }
