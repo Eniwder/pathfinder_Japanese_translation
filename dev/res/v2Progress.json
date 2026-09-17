@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 13950,
-  "updatedAt": "2026-09-17T21:29:18.271Z",
+  "nextStart": 14250,
+  "updatedAt": "2026-09-17T21:55:27.792Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -952,6 +952,27 @@
         "DireOneBattlebliss_dialogue"
       ],
       "note": "v2リライト第49弾（runRoundLoop.mjs による自動実行）。 187件全て訳出し、chunk_0000.translations.json に書き込みました。登場する会話は「AirAdventures_BookEvent」（コリフィア遠征のエアシップ航海イベント。ハーピー・ハリケーン・疫病・反乱・ヴァズグラルの墓など多数の分岐）と「AlushPortals_dialogue」（アルシニラの転移門アーチの調査パート）の2つです。\n\n気づいた点：`{mf|his / 113件すべて翻訳し、`chunk_0001.translations.json` に書き込みました。\n\n- 登場した会話: `ArenaHealer_dialogue`（バトルブリスの縫い師デーモン）、`Atselm_dialogue`（三位一体の妖精アトセルム）、`DireOneBattlebliss_dialogue`（トレヴァー）\n- 気づいた点: 縫い師デーモンは`speaker`未定義"
+    },
+    {
+      "start": 13950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round50/",
+      "coveredDialogs": [
+        "DireOneBattlebliss_dialogue",
+        "FinalBattleBliss_dialogue",
+        "Gelderfang_dialogue",
+        "GolarionSlaves_BattleBliss_dialogue",
+        "Herald_Battlebliss_dialogue",
+        "HiredSuccubs_dialogue",
+        "HiringSuccubs_dialogue",
+        "Irmangaleth_dialogue",
+        "Ruksa_dialogue",
+        "SkilledGladiators_dialogue",
+        "WinThirdFight_dialogue",
+        "ZeklexAfterImprisonment_dialogue"
+      ],
+      "note": "v2リライト第50弾（runRoundLoop.mjs による自動実行）。 149件を訳出しました（chunk_0000.jsonの全entryをカバー、manifest記載の152とは一致しませんが実ファイル内容と照合済み）。登場した会話は DireOneBattlebliss、FinalBattleBliss（ゼクレックス×イルマンガレスの決着）、Gelderfang、GolarionSlaves_BattleBliss、Herald_Battlebliss、Hire / 148件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 件数: 148件（全entry）\n- 登場した会話: Irmangaleth_dialogue（闘技場支配人イルマンガレスによる奴隷化イベント）、Ruksa_dialogue（ヴァヴァキアの剣闘士ルクサ）、SkilledGladiators_dialogue（購入した剣闘士たち）、WinThir"
     }
   ]
 }

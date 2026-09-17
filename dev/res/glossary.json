@@ -2987,6 +2987,36 @@
       "target": "ゾルジェス",
       "category": "Character",
       "note": "海底の触手に支えられて現れる少年。round49で登場。"
+    },
+    {
+      "source": "Nahyndrian League",
+      "target": "ナインドリアン・リーグ",
+      "category": "Organization",
+      "note": "闘技場バトルブリスの剣闘士集団。round50で登場。"
+    },
+    {
+      "source": "The Mephit Slayer",
+      "target": "メフィット・スレイヤー",
+      "category": "Title",
+      "note": "主人公が闘技場バトルブリスで得た二つ名。round50で登場。"
+    },
+    {
+      "source": "Fleshmarkets",
+      "target": "フレッシュマーケット",
+      "category": "Location",
+      "note": "アルシニラの奴隷市場。round50で登場。"
+    },
+    {
+      "source": "Wirlong",
+      "target": "ワーロング",
+      "category": "Character",
+      "note": "闘技場バトルブリスの初代チャンピオン、二つ名「The Dire One（ダイアワン）」。round50で登場。"
+    },
+    {
+      "source": "Atselm",
+      "target": "アトセルム",
+      "category": "Character",
+      "note": "主人公が倒した闘技場の剣闘士。round50で言及。"
     }
   ]
 }
