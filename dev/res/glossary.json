@@ -2795,6 +2795,48 @@
       "source": "Rathimus",
       "target": "ラティムス",
       "note": "キャドの亡き師にあたる神官。本編未登場・言及のみ。round45で言及。"
+    },
+    {
+      "source": "Lady of the Sun",
+      "target": "太陽の貴婦人",
+      "category": "Epithet",
+      "note": "ウィンターサンを支配するデーモン・ジェリベスが名乗る称号。round46で「陽光の貴婦人」表記も混在したため「太陽の貴婦人」に統一。"
+    },
+    {
+      "source": "Gesmerha",
+      "target": "ゲスメルハ",
+      "category": "Character",
+      "note": "ウィンターサンの盲目の彫刻師。round46で登場。"
+    },
+    {
+      "source": "Old Deadeye",
+      "target": "オールド・デッドアイ",
+      "category": "Epithet",
+      "note": "エラスティルの異名（弓の名手を意味する）。round46で言及。"
+    },
+    {
+      "source": "Horned God",
+      "target": "角の神",
+      "category": "Epithet",
+      "note": "バフォメットを指す異名（鹿角の神として崇められていたことから）。round46で言及。"
+    },
+    {
+      "source": "Beverach",
+      "target": "ベヴェラフ",
+      "category": "Character",
+      "note": "マーヘヴォクが飼うドラゴン。round46で言及。"
+    },
+    {
+      "source": "Kverrekh",
+      "target": "クヴェレク",
+      "category": "Character",
+      "note": "マーヘヴォクの曾祖父（故人）。round46で言及。"
+    },
+    {
+      "source": "Goatford",
+      "target": "ゴートフォード",
+      "category": "Location",
+      "note": "ウルブリッグ・オレスクが言及する古戦場の地名。round46で言及。"
     }
   ]
 }
