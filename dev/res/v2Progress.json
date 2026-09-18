@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 15450,
-  "updatedAt": "2026-09-18T03:15:32.218Z",
+  "nextStart": 15750,
+  "updatedAt": "2026-09-18T13:32:06.453Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1038,6 +1038,21 @@
         "SutureFleshMarket_dialogue"
       ],
       "note": "v2リライト第54弾（runRoundLoop.mjs による自動実行）。 192件全て翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 192件（全entry完了、未訳なし）\n- **登場した会話**: `KingpinSlaver_dialogue`（サルザクシスの奴隷市場/通訳ティーフリング）、`MeatSlaver_dialogue`（ダンクの食用奴隷取引、シヴァロ/ヘラックス）、`MeatSlaves / 108件すべて翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 登場した会話: MysticSlaves_dialogue（狂人化した奴隷）、ObsidianMask_dialogue（黒曜石の仮面＝ワーロング）、RabbleSlaver_dialogue（奴隷商ラギー）、RabbleSlaves_dialogue、SutureFleshMarket_di"
+    },
+    {
+      "start": 15450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round55/",
+      "coveredDialogs": [
+        "SutureFleshMarket_dialogue",
+        "GateGuard_dialogue",
+        "Latverk_Final_dialogue",
+        "Latverk_dialogue",
+        "RedMask_dialogue",
+        "TrashAssasins_dialogue"
+      ],
+      "note": "v2リライト第55弾（runRoundLoop.mjs による自動実行）。 147件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 訳した件数: 147/147（全entry）\n- 登場した会話: SutureFleshMarket_dialogue（ドレッチのスーチャー）、GateGuard_dialogue（アルシニラ門番デーモンとの応対・雑バーク）、Latverk_Final_dialogue（アーシマーの連続殺人鬼ラト / 152件を訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場した会話: `Latverk_dialogue`（アーシマーの慈善家ラトヴェルクとその裏の顔）/`RedMask_dialogue`（復讐者レッドマスクの正体）/`TrashAssasins_dialogue`（雑魚アサシンとヴァヴァキアのガウジャー）\n- 気づいた点: マニフェストの`keys:"
     }
   ]
 }

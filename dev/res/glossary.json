@@ -3245,6 +3245,66 @@
       "target": "アッパーシティ",
       "category": "Location",
       "note": "アルシニラの上層区画。Lower City（下層都市）の対。round54で言及。"
+    },
+    {
+      "source": "Latverk",
+      "target": "ラトヴェルク",
+      "category": "Character",
+      "note": "拐われたアーシマー女性たちを救おうとする貴族的なアーシマー男性。round55で登場。"
+    },
+    {
+      "source": "Red Mask",
+      "target": "赤仮面",
+      "category": "Character",
+      "note": "常に赤い仮面を着けた正体不明の女性。Bad Luckに入り浸る。round55で登場。"
+    },
+    {
+      "source": "Harem of Ardent Dreams",
+      "target": "熱情の夢のハーレム",
+      "category": "Location",
+      "note": "Middle Cityにある施設。女主人Shamiraが取り仕切る。round55で言及。"
+    },
+    {
+      "source": "Gouger",
+      "target": "ガウジャー",
+      "category": "Character",
+      "note": "下水道で拾われた頭のイカれたヴァヴァキア（デモン）。round55で登場。"
+    },
+    {
+      "source": "Bad Luck",
+      "target": "バッドラック",
+      "category": "Location",
+      "note": "Red Maskが入り浸る酒場の名前。round55で言及。"
+    },
+    {
+      "source": "Upper Planes",
+      "target": "上位次元",
+      "category": "General",
+      "note": "アビス（下位次元）の対となる、天界系プレインの総称。round55で言及。"
+    },
+    {
+      "source": "Middle City",
+      "target": "ミドルシティ",
+      "category": "Location",
+      "note": "アルシニラの中層区画。奴隷市場や快楽街がある実質的な中心区画。round55で言及。"
+    },
+    {
+      "source": "Spinner of Nightmares",
+      "target": "悪夢の紡ぎ手",
+      "category": "Character",
+      "note": "門番デモンが噂する、頭をおかしくさせる謎の存在。round55で言及。"
+    },
+    {
+      "source": "Baphomites",
+      "target": "バフォメット教徒",
+      "category": "General",
+      "note": "デモン卿バフォメットの信奉者たち。round55で言及。"
+    },
+    {
+      "source": "Dimalchio",
+      "target": "ディマルキオ",
+      "category": "Character",
+      "note": "堕天したアザタ。round55で言及（既に倒された存在として言及されるのみ）。"
     }
   ]
 }

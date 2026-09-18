@@ -29,6 +29,10 @@
 //   node runRoundLoop.mjs --dry-run        # 何も実行せず、やる予定の手順だけ表示
 //   node runRoundLoop.mjs --skip-notes     # 話者メモ/翻訳ルールの反省ステップを省く
 //   node runRoundLoop.mjs --max-retries=30 --retry-wait-minutes=20  # 利用上限時の再試行調整
+//   node runRoundLoop.mjs --min-remaining-percent=35  # chunk/notes呼び出し直前にセッション残り
+//                                                       # 使用率(`/usage`)を確認し、この%未満なら
+//                                                       # 呼び出さずreset待ち（デフォルト35）
+//   node runRoundLoop.mjs --skip-usage-check           # 上記の事前チェックを無効化
 //   node runRoundLoop.mjs --chunk-model=claude-haiku-4-5-20251001    # chunk翻訳に使うモデルを変更
 //   node runRoundLoop.mjs --notes-model=claude-sonnet-5              # notes反省ステップに使うモデルを変更
 //                                                                     # （--chunk-model / --notes-model 省略時はアカウントのデフォルトモデル）
@@ -688,6 +692,81 @@ function isRateLimitLike(text) {
   return /session limit|usage limit|rate limit|weekly limit|resets? (at |in )?\d/i.test(text);
 }
 
+// 2026-09、長時間の中断（利用上限に達して待機→再開、または端末を閉じて放置後の再起動）を
+// 挟むと、既に翻訳済みだったはずのchunkが丸ごと再翻訳され、$1〜2規模の無駄な課金が発生する
+// ケースを実測で確認した（round19: 4chunk中2chunkがほぼ全量再翻訳、$2.68→$2.26の二重払い。
+// round44でも同様、48時間ギャップで再現）。原因はコードからは断定できなかったが（おそらく
+// mergeTranslationsの反映がプロセス中断で失われるケースがある）、対策として「chunk呼び出しの
+// 前にセッション残り使用率を確認し、閾値を切っていたら呼び出さずにreset待ちする」ことで、
+// 「中断されて失われる可能性がある呼び出し」自体を未然に防ぐ。
+//
+// `/usage` は `claude -p` の引数として渡すと（スラッシュコマンドとして解釈されず）ただの
+// プロンプトとして扱われてしまい、実測で$0.2程度課金される。一方、素の`claude`にstdin経由で
+// `/usage\n`を渡すとビルトインコマンドとして処理され、モデルを一切呼ばずに即座に結果が返る
+// （実測: costフィールドすら出力されない＝無料）。そのため素の`claude`をstdin経由で呼ぶ。
+function parseUsageOutput(text) {
+  const m = text.match(
+    /Current session:\s*(\d+)%\s*used\s*(?:·|\.)?\s*resets\s+([A-Za-z]{3})\s+(\d{1,2}),?\s*(\d{1,2}):(\d{2})\s*(am|pm)/i
+  );
+  if (!m) return null;
+  const usedPercent = Number(m[1]);
+  const [, , monStr, dayStr, hourStr, minStr, ap] = m;
+  const now = new Date();
+  let resetAt = new Date(`${monStr} ${dayStr} ${now.getFullYear()} ${hourStr}:${minStr} ${ap}`);
+  if (!isNaN(resetAt.getTime()) && resetAt.getTime() < now.getTime() - 60 * 60 * 1000) {
+    // 年またぎ（12月→1月）想定。
+    resetAt = new Date(`${monStr} ${dayStr} ${now.getFullYear() + 1} ${hourStr}:${minStr} ${ap}`);
+  }
+  return { usedPercent, resetAt: isNaN(resetAt.getTime()) ? null : resetAt };
+}
+
+function getSessionUsage() {
+  try {
+    const out = execFileSync('claude', [], {
+      cwd: process.cwd(),
+      encoding: 'utf8',
+      maxBuffer: 1024 * 1024,
+      shell: process.platform === 'win32',
+      input: '/usage\n',
+      timeout: 30000,
+    });
+    const info = parseUsageOutput(out);
+    if (!info) console.warn(`⚠ /usage の出力形式を解析できませんでした（無視して続行）:\n${out}`);
+    return info;
+  } catch (e) {
+    console.warn(`⚠ /usage の取得に失敗（無視して続行）: ${e.message}`);
+    return null;
+  }
+}
+
+const usageCheckEnabled = !args['skip-usage-check'];
+const minRemainingPercent = Number(args['min-remaining-percent'] ?? 35);
+
+// chunk/notes呼び出し直前に呼ぶ。セッション残りが閾値未満なら、そのまま呼び出さずreset時刻まで
+// 待ってから返る（＝プロセスは終了しない。呼び出し側からは「少し待ってから普段通り進む」だけに
+// 見える）。/usage自体の取得に失敗した場合は素通りする（fail-open。このアカウントは追加利用
+// (overage)がOFFであることを確認済みなので、素通りしても最悪ケースは既存のisRateLimitLikeの
+// retry-waitに委ねられるだけで、無限に暴走課金する経路にはならない）。
+function ensureSessionBudget(label) {
+  if (!usageCheckEnabled) return;
+  for (;;) {
+    const info = getSessionUsage();
+    if (!info) return;
+    const remaining = 100 - info.usedPercent;
+    if (remaining >= minRemainingPercent) return;
+    const waitMs = info.resetAt
+      ? Math.max(info.resetAt.getTime() - Date.now() + 2 * 60 * 1000, 60 * 1000)
+      : 20 * 60 * 1000;
+    console.warn(
+      `⏳ [${label}] セッション残り${remaining}%（閾値${minRemainingPercent}%未満）のため呼び出し前に待機します。` +
+        (info.resetAt
+          ? ` resetまで約${Math.ceil(waitMs / 60000)}分。`
+          : ' reset時刻を解析できなかったため20分待機します。')
+    );
+    sleepSync(waitMs);
+  }
+}
+
 // "resets 2:50pm (Asia/Tokyo)" のような文言から次回再試行までの待機時間(ms)を推定する。
 // 解析できなければ null（呼び出し側がデフォルト待機時間にフォールバックする）。
 function parseResetWaitMs(text) {
@@ -813,6 +892,7 @@ function runRound(start, roundNo) {
       continue;
     }
     console.log(`\n--- ${f} を翻訳依頼 ---`);
+    ensureSessionBudget(`round${roundNo}_${f.replace('.json', '')}`);
     const stats = chunkStats(f);
     const result = callClaude(
       buildChunkPrompt(f),
@@ -856,6 +936,7 @@ function runRound(start, roundNo) {
     const glossaryPath = path.resolve('./res/glossary.json');
     const glossaryBackup = fs.readFileSync(glossaryPath, 'utf8');
     const glossaryEntries = JSON.parse(glossaryBackup).glossary ?? [];
+    ensureSessionBudget(`round${roundNo}_notes`);
     callClaude(
       buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries),
       `round${roundNo}_notes`,
