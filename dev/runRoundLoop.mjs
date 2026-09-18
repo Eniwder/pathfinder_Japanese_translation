@@ -29,9 +29,9 @@
 //   node runRoundLoop.mjs --dry-run        # 何も実行せず、やる予定の手順だけ表示
 //   node runRoundLoop.mjs --skip-notes     # 話者メモ/翻訳ルールの反省ステップを省く
 //   node runRoundLoop.mjs --max-retries=30 --retry-wait-minutes=20  # 利用上限時の再試行調整
-//   node runRoundLoop.mjs --min-remaining-percent=35  # chunk/notes呼び出し直前にセッション残り
+//   node runRoundLoop.mjs --min-remaining-percent=25  # chunk/notes呼び出し直前にセッション残り
 //                                                       # 使用率(`/usage`)を確認し、この%未満なら
-//                                                       # 呼び出さずreset待ち（デフォルト35）
+//                                                       # 呼び出さずreset待ち（デフォルト25）
 //   node runRoundLoop.mjs --skip-usage-check           # 上記の事前チェックを無効化
 //   node runRoundLoop.mjs --chunk-model=claude-haiku-4-5-20251001    # chunk翻訳に使うモデルを変更
 //   node runRoundLoop.mjs --notes-model=claude-sonnet-5              # notes反省ステップに使うモデルを変更
