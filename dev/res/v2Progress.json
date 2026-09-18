@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 16950,
-  "updatedAt": "2026-09-18T18:45:24.897Z",
+  "nextStart": 17250,
+  "updatedAt": "2026-09-18T22:49:52.903Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1142,6 +1142,27 @@
         "Alinythia_dialogue"
       ],
       "note": "v2リライト第59弾（runRoundLoop.mjs による自動実行）。 180件全て翻訳し、`chunk_0000.translations.json` に書き込みました。登場した会話は「MarketSearch_azata_c4_dialog」「MentorInNexus_azata_c4_dialog」「MentorSaysHi_azata_c4_dialog」「SlaveEscapes_azata_c4_dialog」「Ar-Mikhet_dialogue」「H / 120件すべて訳出し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場した会話: Tarshari_MainDialogue（シャドウデーモンの下僕タルシャリー）、YozzFirstTalk_dialogue／Yozz_InTheGuild_dialogue（暗殺者ギルド長ヨズ）、Alinythia_dialogue（洞窟の幽霊デーモン、短い断片のみ）\n- 気"
+    },
+    {
+      "start": 16950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round60/",
+      "coveredDialogs": [
+        "Alinythia_dialogue",
+        "AlinythiaAwakening_dialogue",
+        "NalfeshneeMines_dialogue",
+        "Zacharius_FirstProjection_dialogue",
+        "Zacharius_KilledPassions_dialogue",
+        "Zacharius_SecondProjection_dialogue",
+        "Council_Lexicon2_Dialogue",
+        "KTC_Fail_Mythic_Trickster_Dialogue",
+        "SocotAlush_Dialogue",
+        "SocotProjection_Dialogue",
+        "HeraldDoubt_MythAngel_dialog",
+        "HeraldIntro_Nexus_c4_dialog"
+      ],
+      "note": "v2リライト第60弾（runRoundLoop.mjs による自動実行）。 168件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 件数: 168件（全entry翻訳、null残しなし）\n- 会話: Alinythia_dialogue / AlinythiaAwakening_dialogue / NalfeshneeMines_dialogue / Zacharius_FirstProjection_dialogue /  / 109件訳しました（132エントリ中、話者不明の単純な繋ぎ台詞など判断がついた分含む）。登場した会話は Council_Lexicon2_Dialogue（評議会の会合）、KTC_Fail_Mythic_Trickster_Dialogue、SocotAlush_Dialogue、SocotProjection_Dialogue（以上ソコスベノス関連）、HeraldDoubt_MythAngel_"
     }
   ]
 }
