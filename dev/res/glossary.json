@@ -3305,6 +3305,30 @@
       "target": "ディマルキオ",
       "category": "Character",
       "note": "堕天したアザタ。round55で言及（既に倒された存在として言及されるのみ）。"
+    },
+    {
+      "source": "Ardent Dream",
+      "target": "熱情の夢",
+      "category": "Title",
+      "note": "シャミラの二つ名（「ハーレム・オブ・アーデント・ドリームズ」の主）。round56で言及。"
+    },
+    {
+      "source": "Shadowspawn",
+      "target": "シャドウスポーン",
+      "category": "General",
+      "note": "ノクティキュラに連なる者たちを指す呼称。シャミラが「シャドウスポーンの王/女王」と呼ばれる。round56で言及。"
+    },
+    {
+      "source": "Deskarite",
+      "target": "デスカリ信奉者",
+      "category": "General",
+      "note": "デモン卿デスカリの信奉者。round56で言及（Deskaritesの単数/複数形）。"
+    },
+    {
+      "source": "Golarian",
+      "target": "ゴラリアン",
+      "category": "General",
+      "note": "ゴラリオンの住人を指す呼称。round56で言及。"
     }
   ]
 }
