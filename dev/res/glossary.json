@@ -3047,6 +3047,66 @@
       "target": "ゼルマンガレス",
       "category": "Character",
       "note": "ZeklexとIrmangalethが融合した存在の名前（合成語）。round51で登場。"
+    },
+    {
+      "source": "The Fulsome Queen",
+      "target": "フルサムの女王",
+      "category": "Character",
+      "note": "ノクティキュラを騙る醜悪な悪魔。島を支配する自称女王。round52で言及。"
+    },
+    {
+      "source": "Ygefeles",
+      "target": "イジフェレス",
+      "category": "Character",
+      "note": "バフォメットの祖父。子孫にウォルジフがいるとされる。round52で言及。"
+    },
+    {
+      "source": "Colyphyr",
+      "target": "コリファー",
+      "category": "Location",
+      "note": "ウォルジフが船で向かっていたとされる目的地。round52で言及。"
+    },
+    {
+      "source": "Order of the Burning Fist",
+      "target": "燃える拳の騎士団",
+      "category": "Organization",
+      "note": "ケストグリルがかつて所属していたパラディン騎士団。round52で言及。"
+    },
+    {
+      "source": "Voetiel",
+      "target": "ヴォティエル",
+      "category": "Character",
+      "note": "ヘプザミラーの配下でウォルジフを追っていた者。死亡済み。round52で言及。"
+    },
+    {
+      "source": "Nexus",
+      "target": "ネクサス",
+      "category": "Location",
+      "note": "アビス内、鉱山と門が集まるヘプザミラーの拠点。round52で言及。"
+    },
+    {
+      "source": "Cessily",
+      "target": "セシリー",
+      "category": "Character",
+      "note": "ケストグリルの亡き妻の名。round52で言及。"
+    },
+    {
+      "source": "Neathholm",
+      "target": "ニースホルム",
+      "category": "Location",
+      "note": "ランが食料調達で訪れたことのある地名。round52で言及。"
+    },
+    {
+      "source": "Lord of Beasts",
+      "target": "獣の王",
+      "category": "Title",
+      "note": "バフォメットを指す呼び名。round52で言及。"
+    },
+    {
+      "source": "Queen of the Succubi",
+      "target": "サキュバスの女王",
+      "category": "Title",
+      "note": "ノクティキュラを指す呼び名。round52で言及。"
     }
   ]
 }
