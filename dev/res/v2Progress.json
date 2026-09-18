@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 14850,
-  "updatedAt": "2026-09-18T02:29:22.343Z",
+  "nextStart": 15150,
+  "updatedAt": "2026-09-18T02:52:44.952Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1003,6 +1003,23 @@
         "NocticulaAfterBaph_dialogue"
       ],
       "note": "v2リライト第52弾（runRoundLoop.mjs による自動実行）。 158件すべて訳しchunk_0000.translations.jsonに書き込みました。登場した会話はBaphomet_dialogue（バフォメット謁見）、FulsomeQueen_dialogue（フルサム・クイーン攻略）、Hepzamirah_MainDialogue（ヘプザミラ最終決戦）の3件です。\n\n気づいた点：フルサム・クイーンの口癖「powaful/powafulness」は言い / 142件全て翻訳し chunk_0001.translations.json に書き込みました。登場した会話は Kestoglyr_dialogue（ケストグライアの過去語り）、KestoglyrsCage_dialogue（檻からの脱出）、Mutasafen_FinalC4_dialog（ムタサフェンとの対峙）、NocticulaAfterBaph_dialogue（バフォメット討伐後のノクティ"
+    },
+    {
+      "start": 14850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round53/",
+      "coveredDialogs": [
+        "NocticulaAfterBaph_dialogue",
+        "PrisonerOfKestoglyr_dialogue",
+        "SlavemasterInterrogation_dialogue",
+        "AasimarSlaves_dialogue",
+        "BattleSlaver_dialogue",
+        "HologramSlaver_dialog",
+        "Kerz_dialogue",
+        "KingpinSlaver_dialogue"
+      ],
+      "note": "v2リライト第53弾（runRoundLoop.mjs による自動実行）。 144件全訳し、chunk_0000.translations.json を作成しました。\n\n- 件数: 144件全て翻訳（未訳なし）\n- 登場dialog: NocticulaAfterBaph_dialogue（ノクティキュラ×バフォメット決着後）、PrisonerOfKestoglyr_dialogue（ケケストグライアと捕虜）、SlavemasterInterrogation_dialog / 155件訳しました。登場した会話は BattleSlaver_dialogue（ワーロング）、HologramSlaver_dialog（ラミサ）、Kerz_dialogue（カーズ船長）、KingpinSlaver_dialogue（サルザクシス）の4本です。\n\n気づいた点：dc72c791のentryは `<ctrl_1/>Suture<ctrl_2/>` のように単語を囲む変則的なタグ配置だ"
     }
   ]
 }

@@ -3107,6 +3107,90 @@
       "target": "サキュバスの女王",
       "category": "Title",
       "note": "ノクティキュラを指す呼び名。round52で言及。"
+    },
+    {
+      "source": "Master Sarzaksys",
+      "target": "マスター・サルザクシス",
+      "category": "Character",
+      "note": "Fleshmarketsのティーフリングの奴隷商人。round53で言及（本人は通訳を介して話す）。"
+    },
+    {
+      "source": "Lady Vorlesh",
+      "target": "レディ・ヴォーレシュ",
+      "category": "Character",
+      "note": "ノクティキュラに仕える存在。Nahyndrianクリスタルの力を強化したとされる。round53で言及。"
+    },
+    {
+      "source": "Ramisa",
+      "target": "ラミサ",
+      "category": "Character",
+      "note": "Fleshmarketsのマリリスの奴隷商人。二つ名は「Sloughed Skin」。round53で登場。"
+    },
+    {
+      "source": "Sloughed Skin",
+      "target": "抜け殻",
+      "category": "Title",
+      "note": "Ramisaの二つ名。round53で言及。"
+    },
+    {
+      "source": "the Echo",
+      "target": "エコー",
+      "category": "Character",
+      "note": "アシミアの奴隷を探し求めていたとされるデーモンの二つ名。round53で言及（本編未登場）。"
+    },
+    {
+      "source": "The Bloody Bitch",
+      "target": "ブラッディ・ビッチ号",
+      "category": "Vehicle",
+      "note": "海賊Kerzの飛空船の名。round53で言及。"
+    },
+    {
+      "source": "Nameless Ruins",
+      "target": "名もなき遺跡",
+      "category": "Location",
+      "note": "仮面を使った謎解きがある遺跡。round53で言及（本編未登場）。"
+    },
+    {
+      "source": "Plagued One",
+      "target": "疫病の者",
+      "category": "Title",
+      "note": "Golarionのある魔術師の二つ名。round53で言及（本編未登場）。"
+    },
+    {
+      "source": "Hellknight",
+      "target": "ヘルナイト",
+      "category": "Organization",
+      "note": "地獄の契約に基づく法秩序の騎士団。round53で言及。"
+    },
+    {
+      "source": "Lower City",
+      "target": "下層都市",
+      "category": "Location",
+      "note": "Alushinyrraの区画の一つ。round53で言及。"
+    },
+    {
+      "source": "Alinythia",
+      "target": "アリニュシア",
+      "category": "Location",
+      "note": "クリスタル採掘が行われていた島。round53で言及（本編未登場）。"
+    },
+    {
+      "source": "Ziforian",
+      "target": "ジフォリアン",
+      "category": "Character",
+      "note": "かつてAlushinyrraを支配していたとされる人物。round53で言及（本編未登場）。"
+    },
+    {
+      "source": "Xuneki",
+      "target": "ズネキ",
+      "category": "Character",
+      "note": "元奴隷から監督役になったデーモン。round53で登場。"
+    },
+    {
+      "source": "Migorg",
+      "target": "マイゴルグ",
+      "category": "Location",
+      "note": "海賊Kerzの昔語りに登場する地名。round53で言及（本編未登場）。"
     }
   ]
 }

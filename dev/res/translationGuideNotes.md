@@ -191,6 +191,14 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   v2CharacterNotes.mdにKyadoDrezen/Kyado_main_dialogue/KyadoPityPriest/DelamereInTomb/
   SkeletalSalesmanSE_dialogueを追加、glossary.jsonにKyado/Rathimusを追加。
 
+- 2026-09-18: round53 chunk_0000〜0001（Fleshmarketsの奴隷商人Sarzaksys/Ramisa/Kerz、
+  ノクティキュラとBaphomet後の対話系）のレビューで、金額の選択肢（`thirty-five thousand
+  gold coins`等）が英語の綴り数詞のまま並ぶchunkが複数あったため、算用数字に変換する
+  ルールをtranslationGuide.mdに追記。新規話者は検出されずv2CharacterNotes.mdの変更なし。
+  glossary.jsonにMaster Sarzaksys/Lady Vorlesh/Ramisa/Sloughed Skin/the Echo/
+  The Bloody Bitch/Nameless Ruins/Plagued One/Hellknight/Lower City/Alinythia/
+  Ziforian/Xuneki/Migorgを追加。
+
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
 `node toBatchData.js extract --filter=issues` で拾える control-tag 不整合は、実際には

@@ -32,6 +32,8 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
 - 固有名詞の音写は既存の日本語単語と紛らわしくないか確認する（例: `Sull`→`スル`を
   `サル`（猿）と誤記しない）。
 - `[Choice effects]` は `[選択の効果]` に統一して訳す（英語のまま残さない）。
+- 金額など英語で綴られた数詞（`thirty-five thousand gold coins` 等）は算用数字に変換する
+  （例: `thirty-five thousand gold coins` → `3万5000ゴールド`）。
 - 天使など神話的存在が主人公を呼ぶ「Champion」と、人間の部下が呼ぶ「Commander」は
   訳し分ける（「チャンピオン」「指揮官」を混同しない）。
 - おどけた敬称「(your/his/her) Commandership」は`Commander`とは別語として訳し方を
