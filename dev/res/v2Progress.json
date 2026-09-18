@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 16050,
-  "updatedAt": "2026-09-18T13:50:19.185Z",
+  "nextStart": 16350,
+  "updatedAt": "2026-09-18T18:03:18.506Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1071,6 +1071,32 @@
         "Ziforian_dialogue"
       ],
       "note": "v2リライト第56弾（runRoundLoop.mjs による自動実行）。 125件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- 登場したdialog: TrashAssasins_dialogue（グレイボー/ウォルジフの暗殺者ギルド絡み）、ChiefBeggar_dialogue、DoorWithBell_dialogue（ストーリーテラー登場）、FirstBeggar_dialogue、HaremGuard_dial / 175件全て翻訳し、chunk_0001.translations.json に書き込みました。登場会話は Shamira_dialogue（アルシニラの太守シャミラとの一連の対話）と Ziforian_dialogue（前太守で今は物乞いのジフォリアンとの対話）。ソコスベノス・ヘプザミラの `{g|}` タグは中身のカタカナ表記と揃え、`{mf|son of a bitch|bitch}` は「"
+    },
+    {
+      "start": 16050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round57/",
+      "coveredDialogs": [
+        "Ziforian_dialogue",
+        "JoCat_Flirt_Beggar_Dialogue",
+        "JoCat_Jeocot_Final_Dialogue",
+        "MinaghoAfterCombat_Dialogue",
+        "Nezirrius_Dialogue",
+        "C4Aeon_AreeluPast_dialogue",
+        "C4Aeon_FirstXanthirPast_dialogue",
+        "C4Aeon_SecondtXanthirPast_dialogue",
+        "C4Aeon_ThirdXanthirPast_AfterBattle_dialogue",
+        "C4Aeon_XanthirFuture_dialogue",
+        "C4Aeon_Shaxa_Court_dialogue",
+        "C4Aeon_Tumberd_Court_dialogue",
+        "C4Aeon_Zeklex_Court_dialogue",
+        "C4Aeon_Mirror_dialogue",
+        "C4Aeon_Rift_dialogue",
+        "AngelCouncil_Nexus_c4_dialog",
+        "Berenger_MythAngel_c4_nexus_dialog"
+      ],
+      "note": "v2リライト第57弾（runRoundLoop.mjs による自動実行）。 180件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- **登場した会話**: Ziforian_dialogue（アルシニラの乞食デーモン）/ JoCat_Flirt_Beggar_Dialogue・JoCat_Jeocot_Final_Dialogue（デーモンとのデート研究青年）/ MinaghoAfterCombat_Dialogue（ミナゴ / 120件全て訳出し、chunk_0001.translations.json に書き込みました。\n\n- 登場した会話: `C4Aeon_XanthirFuture_dialogue`（ザンシア・ヴァング）、`C4Aeon_Shaxa_Court_dialogue`／`Tumberd_Court`／`Zeklex_Court`（ノクティキュラの法廷三題）、`C4Aeon_Mirror_dialogu"
     }
   ]
 }

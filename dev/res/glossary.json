@@ -3329,6 +3329,24 @@
       "target": "ゴラリアン",
       "category": "General",
       "note": "ゴラリオンの住人を指す呼称。round56で言及。"
+    },
+    {
+      "source": "Xarra",
+      "target": "ザーラ",
+      "category": "Character",
+      "note": "イシアルの娘、ゾルジェスの母。アビスの裁きの場で創造の禁忌を問われる。round57で言及。"
+    },
+    {
+      "source": "Decemvirate of Pathfinders",
+      "target": "パスファインダー十人委員会",
+      "category": "Organization",
+      "note": "パスファインダー協会の最高意思決定機関。round57で言及。"
+    },
+    {
+      "source": "Midnight Archipelago",
+      "target": "ミッドナイト諸島",
+      "category": "Place",
+      "note": "ノクティキュラが支配するアビスの領域を指す呼称。round57で言及。"
     }
   ]
 }
