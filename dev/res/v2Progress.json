@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 16350,
-  "updatedAt": "2026-09-18T18:03:18.506Z",
+  "nextStart": 16650,
+  "updatedAt": "2026-09-18T18:22:01.487Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1097,6 +1097,30 @@
         "Berenger_MythAngel_c4_nexus_dialog"
       ],
       "note": "v2リライト第57弾（runRoundLoop.mjs による自動実行）。 180件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- **登場した会話**: Ziforian_dialogue（アルシニラの乞食デーモン）/ JoCat_Flirt_Beggar_Dialogue・JoCat_Jeocot_Final_Dialogue（デーモンとのデート研究青年）/ MinaghoAfterCombat_Dialogue（ミナゴ / 120件全て訳出し、chunk_0001.translations.json に書き込みました。\n\n- 登場した会話: `C4Aeon_XanthirFuture_dialogue`（ザンシア・ヴァング）、`C4Aeon_Shaxa_Court_dialogue`／`Tumberd_Court`／`Zeklex_Court`（ノクティキュラの法廷三題）、`C4Aeon_Mirror_dialogu"
+    },
+    {
+      "start": 16350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round58/",
+      "coveredDialogs": [
+        "Berenger_MythAngel_c4_nexus_dialog",
+        "Berenger_Abyss_SE_dialog",
+        "Devastator_EchoLair_MythAngel_dialog",
+        "EchoGate_MythAngel_c4_dialog",
+        "EchoLair_Final_dialog",
+        "EliandraSaved_MythAngel_c4_dialog",
+        "KatairSaved_MythAngel_c4_dialog",
+        "Larielsaved_MythAngel_dialog",
+        "TargonaSearch_MythAngel_c4_dialog",
+        "Yaniel_Nexus_MythAngel_dialog",
+        "ConfrontMentor_azata_c4_dialog",
+        "Dracarys_azata_c4_dialog",
+        "DracoshaKidnapped_azata_c4_dialog",
+        "HologramTrade_azata_c4_dialog",
+        "MarketSearch_azata_c4_dialog"
+      ],
+      "note": "v2リライト第58弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の全182件を訳し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 182件すべて翻訳（null残しなし）\n- 登場会話: Berenger_MythAngel_c4_nexus / Berenger_Abyss_SE / Devastator_EchoLair_MythAngel / EchoGate_MythAngel / 118件全て訳し、chunk_0001.translations.jsonに書き込みました。登場した会話は5つ（ConfrontMentor/Dracarys/DracoshaKidnapped/HologramTrade/MarketSearch_azata_c4_dialog）で、正体を明かすメフィストフェレス（アーリー・サンセット）とラミサ・シェド・スキン絡みのアビス救出エピソードです。気づ"
     }
   ]
 }

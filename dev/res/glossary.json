@@ -3347,6 +3347,36 @@
       "target": "ミッドナイト諸島",
       "category": "Place",
       "note": "ノクティキュラが支配するアビスの領域を指す呼称。round57で言及。"
+    },
+    {
+      "source": "Holy Wardens",
+      "target": "聖なる守護者",
+      "category": "Mythic",
+      "note": "Targonaが言及した新たな天使の力/称号。round58で言及。"
+    },
+    {
+      "source": "Shed-Skin",
+      "target": "シェッドスキン",
+      "category": "Character",
+      "note": "azataストーリーラインに登場する逃亡奴隷を追う人物。round58で言及。"
+    },
+    {
+      "source": "Anthoclitus",
+      "target": "アントクリトゥス",
+      "category": "Character",
+      "note": "Iomedae教会の高位聖職者。Yanielの旧知。round58で言及。"
+    },
+    {
+      "source": "Devastator",
+      "target": "デヴァステイター",
+      "category": "Place",
+      "note": "Echoの隠れ家にある拷問用の炉の名称。round58で言及。"
+    },
+    {
+      "source": "Rift of Repose",
+      "target": "安息の裂け目",
+      "category": "Place",
+      "note": "アビス内、堕落した悪魔領主たちが眠るとされる領域。round58で言及。"
     }
   ]
 }
