@@ -3191,6 +3191,60 @@
       "target": "マイゴルグ",
       "category": "Location",
       "note": "海賊Kerzの昔語りに登場する地名。round53で言及（本編未登場）。"
+    },
+    {
+      "source": "Krebus",
+      "target": "クレブス",
+      "category": "Character",
+      "note": "MysticSlaver_dialogueの奴隷商人（手のひらの文字で会話するインヴィディアク）。round54で登場。"
+    },
+    {
+      "source": "Vyriavaxus",
+      "target": "ヴィリアヴァクサス",
+      "category": "Character",
+      "note": "影の王（Lord of Shadows）と呼ばれた元デーモンロード。ノクティキュラに討たれ死亡済み。round54で言及。"
+    },
+    {
+      "source": "Lord of Shadows",
+      "target": "影の王",
+      "category": "Title",
+      "note": "Vyriavaxusの称号。round54で言及。"
+    },
+    {
+      "source": "Ar-Mikheth",
+      "target": "アー・ミケス",
+      "category": "Character",
+      "note": "ノクティキュラ派インヴィディアク（シャドウデーモン）の指導者、死亡済み。round54で言及。"
+    },
+    {
+      "source": "Rankarrus",
+      "target": "ランカラス",
+      "category": "Location",
+      "note": "Vyriavaxusが支配していたとされる領域。round54で言及（本編未登場）。"
+    },
+    {
+      "source": "Herrax",
+      "target": "ヘラックス",
+      "category": "Character",
+      "note": "Ten Thousand Delightsの現オーナー（Chivarroの後継）。speaker idはHerraxa。round54で登場。"
+    },
+    {
+      "source": "Dyunk",
+      "target": "ダンク",
+      "category": "Character",
+      "note": "Fleshmarketsの快楽奴隷調教師。奴隷たちには「パパダンク(Daddy Dyunk)」と呼ばせる。round54で登場。"
+    },
+    {
+      "source": "Woo-Woo",
+      "target": "ウー・ウー",
+      "category": "Character",
+      "note": "闘技場チャンピオンWirlongの仮面が変質した後に名乗る新たな人格・名前。round54で登場。"
+    },
+    {
+      "source": "Upper City",
+      "target": "アッパーシティ",
+      "category": "Location",
+      "note": "アルシニラの上層区画。Lower City（下層都市）の対。round54で言及。"
     }
   ]
 }
