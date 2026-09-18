@@ -151,7 +151,7 @@ function runExtract(start) {
     }
     throw new Error(
       `./lang/chunks/ に別roundらしき残骸があります（start=${start}と一致しません）。` +
-        ' 手動で確認・退避してから再実行してください。'
+      ' 手動で確認・退避してから再実行してください。'
     );
   }
   sh('node', [
@@ -336,14 +336,14 @@ function collectMissingSpeakerSamples(reviewDirAbs, chunkFiles) {
 // chunks_review/とgit履歴だけを使ったオフライン検証）。候補件数もglossary全件379件に
 // 対して30〜60件程度まで絞り込めていた。
 const GLOSSARY_CANDIDATE_STOPWORDS = new Set([
-  'i','you','he','she','we','they','it','the','a','an','this','that','these','those',
-  'my','your','his','her','its','our','their','but','and','or','if','when','while',
-  'after','before','because','so','yes','no','well','oh','ah','hey','look','wait','now',
-  'then','perhaps','maybe','please','sir','madam','lord','lady','yeah','okay','ok','hmm',
-  'good','right','sure','thank','thanks','sorry','alright','indeed','actually','still',
-  'here','there','what','who','whom','whose','which','how','why','not','never','always',
-  'come','go','let','all','some','one','two','three','first','second','last','many','much',
-  'very','just','even','only','also','again','once','more','most','less','least','both',
+  'i', 'you', 'he', 'she', 'we', 'they', 'it', 'the', 'a', 'an', 'this', 'that', 'these', 'those',
+  'my', 'your', 'his', 'her', 'its', 'our', 'their', 'but', 'and', 'or', 'if', 'when', 'while',
+  'after', 'before', 'because', 'so', 'yes', 'no', 'well', 'oh', 'ah', 'hey', 'look', 'wait', 'now',
+  'then', 'perhaps', 'maybe', 'please', 'sir', 'madam', 'lord', 'lady', 'yeah', 'okay', 'ok', 'hmm',
+  'good', 'right', 'sure', 'thank', 'thanks', 'sorry', 'alright', 'indeed', 'actually', 'still',
+  'here', 'there', 'what', 'who', 'whom', 'whose', 'which', 'how', 'why', 'not', 'never', 'always',
+  'come', 'go', 'let', 'all', 'some', 'one', 'two', 'three', 'first', 'second', 'last', 'many', 'much',
+  'very', 'just', 'even', 'only', 'also', 'again', 'once', 'more', 'most', 'less', 'least', 'both',
 ]);
 
 // "Order of the Sunrise Sword" のように連結語(of/the/and)が連続するケースも1フレーズと
@@ -428,25 +428,25 @@ function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossary
   const missing = collectMissingSpeakerSamples(reviewDirAbs, chunkFiles);
   const missingBlock = missing.size
     ? [...missing.entries()]
-        .map(
-          ([speaker, samples]) =>
-            `- speaker_id: ${speaker}\n` +
-            samples
-              .map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) 原文: ${s.text}\n    訳文: ${s.translation}`)
-              .join('\n')
-        )
-        .join('\n')
+      .map(
+        ([speaker, samples]) =>
+          `- speaker_id: ${speaker}\n` +
+          samples
+            .map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) 原文: ${s.text}\n    訳文: ${s.translation}`)
+            .join('\n')
+      )
+      .join('\n')
     : '（未登録の話者は検出されませんでした）';
 
   const glossaryCandidates = extractGlossaryCandidates(reviewDirAbs, chunkFiles, glossaryEntries);
   const glossaryBlock = glossaryCandidates.length
     ? glossaryCandidates
-        .map(
-          (c) =>
-            `- "${c.phrase}"（${c.count}回）\n` +
-            c.samples.map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) ${s.text}`).join('\n')
-        )
-        .join('\n')
+      .map(
+        (c) =>
+          `- "${c.phrase}"（${c.count}回）\n` +
+          c.samples.map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) ${s.text}`).join('\n')
+      )
+      .join('\n')
     : '（既存glossaryに無い固有名詞は検出されませんでした）';
   const glossaryFormatExamples = glossaryEntries
     .slice(0, 2)
@@ -740,7 +740,7 @@ function getSessionUsage() {
 }
 
 const usageCheckEnabled = !args['skip-usage-check'];
-const minRemainingPercent = Number(args['min-remaining-percent'] ?? 35);
+const minRemainingPercent = Number(args['min-remaining-percent'] ?? 25);
 
 // chunk/notes呼び出し直前に呼ぶ。セッション残りが閾値未満なら、そのまま呼び出さずreset時刻まで
 // 待ってから返る（＝プロセスは終了しない。呼び出し側からは「少し待ってから普段通り進む」だけに
@@ -749,7 +749,7 @@ const minRemainingPercent = Number(args['min-remaining-percent'] ?? 35);
 // retry-waitに委ねられるだけで、無限に暴走課金する経路にはならない）。
 function ensureSessionBudget(label) {
   if (!usageCheckEnabled) return;
-  for (;;) {
+  for (; ;) {
     const info = getSessionUsage();
     if (!info) return;
     const remaining = 100 - info.usedPercent;
@@ -759,9 +759,9 @@ function ensureSessionBudget(label) {
       : 20 * 60 * 1000;
     console.warn(
       `⏳ [${label}] セッション残り${remaining}%（閾値${minRemainingPercent}%未満）のため呼び出し前に待機します。` +
-        (info.resetAt
-          ? ` resetまで約${Math.ceil(waitMs / 60000)}分。`
-          : ' reset時刻を解析できなかったため20分待機します。')
+      (info.resetAt
+        ? ` resetまで約${Math.ceil(waitMs / 60000)}分。`
+        : ' reset時刻を解析できなかったため20分待機します。')
     );
     sleepSync(waitMs);
   }
@@ -797,7 +797,7 @@ function callClaude(prompt, logName, model, extraUsageFields) {
       const waitMin = Math.ceil(waitMs / 60000);
       console.warn(
         `\n⏳ 利用上限らしきエラーを検出（試行${attempt + 1}/${maxRetries}）。${waitMin}分待って自動再試行します。\n` +
-          `   検出内容: ${text.trim().split('\n')[0].slice(0, 200)}`
+        `   検出内容: ${text.trim().split('\n')[0].slice(0, 200)}`
       );
       sleepSync(waitMs);
     }
@@ -904,7 +904,7 @@ function runRound(start, roundNo) {
     if (!hasFile) {
       console.warn(
         `⚠ ${f}: *.translations.json が生成されませんでした（Claudeがchunk本体を直接編集した` +
-          ' か、失敗した可能性）。chunk本体側の状態をそのまま使用します。'
+        ' か、失敗した可能性）。chunk本体側の状態をそのまま使用します。'
       );
     } else {
       console.log(`${f}: ${merged}件を translations.json からマージしました。`);
@@ -917,13 +917,13 @@ function runRound(start, roundNo) {
   if (invalid > 0) {
     throw new Error(
       `import --dry-run で invalid が${invalid}件あります。dev/lang/chunks/ を確認してから` +
-        ' 手動で直すか、このroundをやり直してください（自動化は続行しません）。'
+      ' 手動で直すか、このroundをやり直してください（自動化は続行しません）。'
     );
   }
   if (untranslated > 0) {
     console.warn(
       `⚠ ${untranslated}件が翻訳されないまま残っています（Claudeがnullのままにした分）。` +
-        ' このまま退避しますが、後で人間の確認が必要です。'
+      ' このまま退避しますが、後で人間の確認が必要です。'
     );
   }
 
