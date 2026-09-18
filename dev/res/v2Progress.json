@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 14250,
-  "updatedAt": "2026-09-17T21:55:27.792Z",
+  "nextStart": 14550,
+  "updatedAt": "2026-09-18T02:02:22.644Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -973,6 +973,20 @@
         "ZeklexAfterImprisonment_dialogue"
       ],
       "note": "v2リライト第50弾（runRoundLoop.mjs による自動実行）。 149件を訳出しました（chunk_0000.jsonの全entryをカバー、manifest記載の152とは一致しませんが実ファイル内容と照合済み）。登場した会話は DireOneBattlebliss、FinalBattleBliss（ゼクレックス×イルマンガレスの決着）、Gelderfang、GolarionSlaves_BattleBliss、Herald_Battlebliss、Hire / 148件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 件数: 148件（全entry）\n- 登場した会話: Irmangaleth_dialogue（闘技場支配人イルマンガレスによる奴隷化イベント）、Ruksa_dialogue（ヴァヴァキアの剣闘士ルクサ）、SkilledGladiators_dialogue（購入した剣闘士たち）、WinThir"
+    },
+    {
+      "start": 14250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-18_round51/",
+      "coveredDialogs": [
+        "ZeklexAfterImprisonment_dialogue",
+        "Zeklex_dialogue",
+        "Zermangaleth_dialogue",
+        "Wardens_Colyphyr_MythAngel_dialog",
+        "Baphomet_dialogue"
+      ],
+      "note": "v2リライト第51弾（runRoundLoop.mjs による自動実行）。 47件全て訳出しました。会話は「ZeklexAfterImprisonment_dialogue」（バトルブリス闘技場のティーフリング、ゼクレックスが投獄後に主人公と交渉する場面）1本のみです。気づいた点：この会話ではゼクレックスに`speaker`フィールドが付いていないentryが大半でしたが、ctx・内容から一貫して同一人物（ゼクレックス）と判断し、丁寧語で口調を統一しました。 / 191件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 訳した件数: 191件（全entry）\n- 登場した会話: `Zeklex_dialogue`（バトルブリス闘技場の取次役ゼクレックスとの一連の交渉・雑談）\n- 気づいた点: 同一の長台詞（「イルマンガレス打倒の取引」演説や「イルマンガレスは芸術家…」等）が複数キーで繰り返し使われていたため、訳語 / 62件中62件を訳出（未訳なし）。登場した会話：`Zermangaleth_dialogue`（ゼクレックス＋イルマンガレス融合デーモン）、`Wardens_Colyphyr_MythAngel_dialog`（天使ターゴナ）、`Baphomet_dialogue`（バフォメット戦前後の会話）。\n\n気づいた点：`{mf|him|her}`（追放された定命の者＝プレイヤー指示）と`{mf|son o"
     }
   ]
 }

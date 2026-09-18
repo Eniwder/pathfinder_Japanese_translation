@@ -3017,6 +3017,36 @@
       "target": "アトセルム",
       "category": "Character",
       "note": "主人公が倒した闘技場の剣闘士。round50で言及。"
+    },
+    {
+      "source": "Kro",
+      "target": "クロ",
+      "category": "Character",
+      "note": "Zeklexの使い魔のインプ。round51で登場。"
+    },
+    {
+      "source": "Flayer Twins",
+      "target": "フレイヤー・ツインズ",
+      "category": "Character",
+      "note": "闘技場バトルブリスの対戦相手として言及される双子の剣闘士。round51で言及。"
+    },
+    {
+      "source": "Mutasafen",
+      "target": "ムタサフェン",
+      "category": "Character",
+      "note": "Gelderfangに施術を行った悪魔。round51で言及。"
+    },
+    {
+      "source": "Zekly",
+      "target": "ゼクリー",
+      "category": "Character",
+      "note": "Zeklexの愛称（Zermangaleth内のIrmangaleth人格が使う呼び方）。round51で言及。"
+    },
+    {
+      "source": "Zermangaleth",
+      "target": "ゼルマンガレス",
+      "category": "Character",
+      "note": "ZeklexとIrmangalethが融合した存在の名前（合成語）。round51で登場。"
     }
   ]
 }
