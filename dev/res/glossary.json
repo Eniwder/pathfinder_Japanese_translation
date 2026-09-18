@@ -3377,6 +3377,42 @@
       "target": "安息の裂け目",
       "category": "Place",
       "note": "アビス内、堕落した悪魔領主たちが眠るとされる領域。round58で言及。"
+    },
+    {
+      "source": "Abode of Shadows",
+      "target": "影の館",
+      "category": "Place",
+      "note": "影の悪魔（invidiak）Ar-Mikhethの支配領域。round59で言及。"
+    },
+    {
+      "source": "Shadow Plane",
+      "target": "影の位界",
+      "category": "Place",
+      "note": "影の悪魔invidiakの起源とされる位界。round59で言及。"
+    },
+    {
+      "source": "Tarshary",
+      "target": "タルシャリー",
+      "category": "Character",
+      "note": "影の悪魔invidiakたちの代弁者。round59で言及。"
+    },
+    {
+      "source": "Horzalah",
+      "target": "ホルザラー",
+      "category": "Character",
+      "note": "HepzamirahのAssassins' Guildの妹。round59で言及。"
+    },
+    {
+      "source": "Narita",
+      "target": "ナリタ",
+      "category": "Character",
+      "note": "Nerosyanの女司祭、若き十字軍の元家庭教師。round59で言及。"
+    },
+    {
+      "source": "Charming Minx",
+      "target": "チャーミング・ミンクス",
+      "category": "Character",
+      "note": "奴隷として囚われていたキツネの獣人が自称するニックネーム。round59で言及。"
     }
   ]
 }
