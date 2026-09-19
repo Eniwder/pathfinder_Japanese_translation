@@ -3683,6 +3683,36 @@
       "target": "チュン",
       "category": "Character",
       "note": "十字軍の戦士。仲間の死を悼む場面に登場。"
+    },
+    {
+      "source": "Linkers",
+      "target": "リンカーズ",
+      "category": "Character",
+      "note": "Galfreyの新しい従騎士。護衛の指揮を任されている。"
+    },
+    {
+      "source": "Laya",
+      "target": "ラヤ",
+      "category": "Character",
+      "note": "Galfreyが若い頃の自分に重ねる人物。"
+    },
+    {
+      "source": "Edme",
+      "target": "エドメ",
+      "category": "Location",
+      "note": "Ramienの出身地。"
+    },
+    {
+      "source": "Great Dreamer",
+      "target": "偉大なる夢見手",
+      "category": "Term",
+      "note": "Desnaの異名。"
+    },
+    {
+      "source": "Outer Sphere",
+      "target": "外なる領域",
+      "category": "Term",
+      "note": "Pharasmaの法廷がある死後の世界の概念。"
     }
   ]
 }

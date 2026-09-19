@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 19950,
-  "updatedAt": "2026-09-19T10:24:21.071Z",
+  "nextStart": 20250,
+  "updatedAt": "2026-09-19T10:39:10.937Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1308,6 +1308,18 @@
         "Coronation_Dialogue"
       ],
       "note": "v2リライト第69弾（runRoundLoop.mjs による自動実行）。 176件全て翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 176件（全entry対応、null残しなし）\n- **登場した会話**: ShadowOfAreshka_dialogue / StatueChallenge_dialogue / VowingToAreshka_dialogue / VowToAreshka_dialog / 124件全て訳しました。会話は`Coronation_Dialogue`（ドレゼン凱旋の演説シーン、秩序/デーモン/アンデッド/コミカル路線の分岐を含む）。デーモン路線のPlayer口調は「俺」、秩序・アンデッド路線は「私」で統一し、`{mf|master|mistress}`は「ご主人様」に、`{mf|he|she}`系は文脈で省略しました。"
+    },
+    {
+      "start": 19950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round70/",
+      "coveredDialogs": [
+        "Coronation_Dialogue",
+        "DrezenC5_Ramien_dialogue",
+        "Galfrey_Drezen_c5_dialog"
+      ],
+      "note": "v2リライト第70弾（runRoundLoop.mjs による自動実行）。 203件全て翻訳しchunk_0000.translations.jsonに書き込みました。会話は「Coronation_Dialogue」（ドレゼン戴冠式のスピーチ場面、各神話の道に応じた演説とガルフリー女王との対峙）1本のみです。\n\n気づいた点：この会話はプレイヤーの神話の道（デーモン/デビル/エンジェル/ゴールドドラゴン/アイオン/レジェンド等）ごとに分岐する長い演説が中心で、一人称は文脈に / 97件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 登場した会話: `DrezenC5_Ramien_dialogue`（ラミエン、12件）、`Galfrey_Drezen_c5_dialog`（ガルフリー、85件）\n- 気づいた点: このchunkには`speakers`辞書が含まれていなかったため、既知キャラ（ラミエン=デズナ神官で丁寧語、ガル"
     }
   ]
 }
