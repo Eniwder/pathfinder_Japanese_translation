@@ -3731,6 +3731,18 @@
       "target": "ラムキン",
       "category": "Character",
       "note": "旅回り一座の用心棒的な団員。"
+    },
+    {
+      "source": "Beth",
+      "target": "ベス",
+      "category": "Character",
+      "note": "AneviaがドレーゼンでともにCommander派閥に残った仲間として言及する女性。"
+    },
+    {
+      "source": "Aponavicius",
+      "target": "アポナヴィキウス",
+      "category": "Character",
+      "note": "Orengoftaと並んでドレーゼンを挟撃した悪魔の指揮官（女性）。"
     }
   ]
 }

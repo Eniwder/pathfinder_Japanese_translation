@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 20550,
-  "updatedAt": "2026-09-19T13:45:00.134Z",
+  "nextStart": 20850,
+  "updatedAt": "2026-09-19T14:24:16.719Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1339,6 +1339,19 @@
         "AneviaDrezenPartisans_dialogue"
       ],
       "note": "v2リライト第71弾（runRoundLoop.mjs による自動実行）。 79件全て訳出しました。会話はGalfrey_Drezen_c5_dialog（ガルフリーとの恋愛関係の対話）、Hulrun_Drezen_c5_Dialogue（ハルランとの信仰・裁きを巡る対話）、Klejm_c5_Dialogue（クレームとミアミールの後継についての対話）の3本。ガルフリーとハルランは`speakers`辞書未提供のためchunkのglossaryメモ（穏やか/狂信的等）と文 / 188件全て訳しました。登場した会話は `KTC_AneviaStart_Dialogue`（ドレゼン解放後、アネヴィア＆イラベス報告）、`KTC_KingdomLost_c5_Dialogue`（オダン大尉の包囲戦報告）、`KTC_ReinforcementsFromNocta_Dialogue`（ノクティキュラの淫魔ラウリー来訪）、`TheatreCalls_c5_ktc_dialog`（お隣 / 33件すべて翻訳しました。登場した会話は Miammir_c5_Dialogue（ミアミールとの再会）、Nystra_c5_Dialogue（ニストラとの対話）、AneviaDrezenPartisans_dialogue（アネヴィア・デランとの空白期間の説明）の3本です。\n\n気づいた点：d7c73094は`ad60fdf0`/`a53d0f70`と分岐が重複しているように見えますが（同じctxか"
+    },
+    {
+      "start": 20550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round72/",
+      "coveredDialogs": [
+        "AneviaDrezenPartisans_dialogue",
+        "AneviaStopYou_dialogue",
+        "FreeGraveknightStaunton_Fallen_dialogue",
+        "Goddesses_Summit_dialogue"
+      ],
+      "note": "v2リライト第72弾（runRoundLoop.mjs による自動実行）。 114件を翻訳し `chunk_0000.translations.json` に書き込みました（chunk記載の115件のうち、entriesを数えたところ114件でした）。\n\n- 登場した会話: `AneviaDrezenPartisans_dialogue`（アネヴィアとの再会・ドレゼン陥落の経緯）、`AneviaStopYou_dialogue`（アネヴィアの奇襲・冗談の場面）、`Free / 185件全て翻訳し、`chunk_0001.translations.json` を新規作成しました。\n\n- **件数**: 185件（chunk_0001の全entry）\n- **会話(dialog)**: `Goddesses_Summit_dialogue`（ドレゼン陥落後、アイオーメディとノクティキュラがプレイヤーの前に降臨し、ミシック能力の是非を巡って対話する山場のシーン）\n- **気づ"
     }
   ]
 }
