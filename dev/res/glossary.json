@@ -3134,9 +3134,15 @@
     },
     {
       "source": "the Echo",
-      "target": "エコー",
+      "target": "『残響』",
       "category": "Character",
       "note": "アシミアの奴隷を探し求めていたとされるデーモンの二つ名。round53で言及（本編未登場）。"
+    },
+    {
+      "source": "Echo of Deskari",
+      "target": "デスカリの残響",
+      "category": "Character",
+      "note": "an avatar who could bring Deskari to Sarkoris and tear a hole in reality to the Rasping Rifts. "
     },
     {
       "source": "The Bloody Bitch",
