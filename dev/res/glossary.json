@@ -3569,6 +3569,24 @@
       "target": "ランタン王",
       "category": "Character",
       "note": "First Worldのフェイの王。round66のHerraxa_dialogueで言及。"
+    },
+    {
+      "source": "Zerieks",
+      "target": "ゼリークス",
+      "category": "Character",
+      "note": "サキュバス(?)Morevetの相方の悪魔。round67のHerraxa_dialogue等に頻出。"
+    },
+    {
+      "source": "Morevet Honeyed Tongue",
+      "target": "甘言のモレヴェット",
+      "category": "Character",
+      "note": "娼婦モレヴェットの二つ名。round67のMorevetBrothel_dialogueで自己紹介に使用。"
+    },
+    {
+      "source": "Betrayer of Humanity",
+      "target": "人類を裏切りし者",
+      "category": "Character",
+      "note": "Areelu Vorleshへの蔑称。round67のAreeluCell_AreeluLabAgain_c5_dialogで使用。"
     }
   ]
 }

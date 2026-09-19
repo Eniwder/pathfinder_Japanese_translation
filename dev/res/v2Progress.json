@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 19050,
-  "updatedAt": "2026-09-19T05:59:26.765Z",
+  "nextStart": 19350,
+  "updatedAt": "2026-09-19T08:48:49.760Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1250,6 +1250,23 @@
         "Herraxa_dialogue"
       ],
       "note": "v2リライト第66弾（runRoundLoop.mjs による自動実行）。 196件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 196件全件（未訳スキップなし）\n- **会話**: Shaxah_Vendor_dialogue（ザーラとゾルジェス母子）、XorgesTiefling_dialogue（ゾルジェス保護後の展開）、BrothelGuard_dialogue（テン・サウザンド・ディライツ門番）、C / 104件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 会話: Herraxa_dialogue（テン・サウザンド・ディライツの女主人ヘラックス、カメリアの生贄依頼、シナーズ三姉妹・フェイ・インキュバス ロクホーンとの接待シーン）\n- 気づいた点: `{mf|hero|heroine}` は「英雄」で性別中立に処理し `{mf}` ごと省略。Rokh"
+    },
+    {
+      "start": 19050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round67/",
+      "coveredDialogs": [
+        "Herraxa_dialogue",
+        "MagicDoor_dialogue",
+        "MorevetBrothel_dialogue",
+        "MorevetZeriexRoof_dialogue",
+        "Torlek_dialogue",
+        "ZeriexRoof_dialogue",
+        "TheatreThirdVisit_c4_dialog",
+        "AreeluCell_AreeluLabAgain_c5_dialog"
+      ],
+      "note": "v2リライト第67弾（runRoundLoop.mjs による自動実行）。 199件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- 登場した会話(dialog): Herraxa_dialogue / MagicDoor_dialogue / MorevetBrothel_dialogue / MorevetZeriexRoof_dialogue / Torlek_dialogue（いずれもテン・サウザンド・ディライツ娼館周 / 101件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場した会話: `ZeriexRoof_dialogue`（デーモン・ゼリークスとの交渉/戦闘分岐）、`TheatreThirdVisit_c4_dialog`（お隣劇場一座のコント）、`AreeluCell_AreeluLabAgain_c5_dialog`（アレールとの対話・分岐選択肢多数）"
     }
   ]
 }
