@@ -3761,6 +3761,18 @@
       "target": "イネルクタブル・プリズン",
       "category": "Location",
       "note": "アビス内の獄。Baphometの手先がプレイヤーの皮を飾ると語る場面で言及（round73）。"
+    },
+    {
+      "source": "Impostor",
+      "target": "偽者",
+      "category": "Character",
+      "note": "DeskariがプレイヤーをNocticulaや天界と通じた者として呼ぶ二つ名（round74、Iz決戦）。"
+    },
+    {
+      "source": "Temple of Stone Manuscripts",
+      "target": "石版写本の神殿",
+      "category": "Location",
+      "note": "サルコリスに現存する数少ない魔術図書館の一つ。Izにあり、Deskariの手先が破壊しようとしている（round74）。"
     }
   ]
 }
