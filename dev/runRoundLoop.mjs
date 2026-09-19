@@ -115,6 +115,16 @@ function todayStr() {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
+function formatJST(d = new Date()) {
+  const jst = new Date(d.getTime() + 9 * 60 * 60 * 1000);
+  const yyyy = jst.getUTCFullYear();
+  const mm = String(jst.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(jst.getUTCDate()).padStart(2, '0');
+  const hh = String(jst.getUTCHours()).padStart(2, '0');
+  const mi = String(jst.getUTCMinutes()).padStart(2, '0');
+  return `${yyyy}/${mm}/${dd} ${hh}:${mi}`;
+}
+
 function ensureLogDir() {
   if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });
 }
@@ -956,6 +966,7 @@ function runRound(start, roundNo) {
     } else {
       console.log(`${f}: ${merged}件を translations.json からマージしました。`);
     }
+    console.log(`--- ${f} 翻訳完了: ${formatJST()} ---`);
     summaries.push(result.trim().slice(0, 200));
   }
 
