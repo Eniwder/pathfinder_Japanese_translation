@@ -3587,6 +3587,54 @@
       "target": "人類を裏切りし者",
       "category": "Character",
       "note": "Areelu Vorleshへの蔑称。round67のAreeluCell_AreeluLabAgain_c5_dialogで使用。"
+    },
+    {
+      "source": "Opon",
+      "target": "オポン",
+      "category": "Character",
+      "note": "Threshold監獄で死んだサルコリス出身の呪文使いの亡霊。Areelu Vorleshと同じ牢にいた。"
+    },
+    {
+      "source": "Setrei Devimai",
+      "target": "セトレイ・デヴィマイ",
+      "category": "Character",
+      "note": "Thresholdの初代witch hunterだった亡霊。Foundlast一族出身。"
+    },
+    {
+      "source": "Foundlast",
+      "target": "ファウンドラスト",
+      "category": "Faction",
+      "note": "Setrei Devimaiが属するThreshold所属のwitch hunter一族。"
+    },
+    {
+      "source": "the Faceless Sphinx",
+      "target": "フェイスレス・スフィンクス",
+      "category": "Character",
+      "note": "Enigmaに関わる仮面の人格/存在。Areshkagalの謎かけと結び付く。"
+    },
+    {
+      "source": "the Enigma",
+      "target": "エニグマ",
+      "category": "Location",
+      "note": "Areshkagalのアビサル・リアルム。Nenioの背景に関わる異界。"
+    },
+    {
+      "source": "Green Faith",
+      "target": "グリーン・フェイス",
+      "category": "Religion",
+      "note": "druidが信仰する自然崇拝の教え。"
+    },
+    {
+      "source": "Keeper of Secrets",
+      "target": "秘密の守り手",
+      "category": "Character",
+      "note": "Areshkagalの二つ名（Lamashtuの娘）。"
+    },
+    {
+      "source": "Dyinglight",
+      "target": "ダイイングライト",
+      "category": "Location",
+      "note": "Setrei Devimaiの回想に出る地名（Iz, Dyinglight, the steppeと並列）。"
     }
   ]
 }
