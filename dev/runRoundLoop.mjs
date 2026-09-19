@@ -410,6 +410,37 @@ function extractGlossaryCandidates(reviewDirAbs, chunkFiles, glossaryEntries, mi
   return kept;
 }
 
+// 話者・glossaryと同じ発想で、②の「今後も使える新しい翻訳ルール」候補にも機械抽出を
+// 試験導入する（③実験）。②はこれまでNode側の候補抽出が無く、Claudeが「気づいたことが
+// あれば」という抽象的な指示だけを頼りに、chunk_review内を自分で読みに行く動機になって
+// いた（round44/45のトランスクリプトで確認済み）。
+// ここでは最も機械的に判定しやすいシグナルとして「同一原文なのに訳し方が割れている
+// entry（表記ゆれ）」だけを対象にする。これ自体は「ルール化すべきか」の判断ではなく、
+// あくまで気づきのきっかけを渡すだけ（採用するかはこれまで通りClaude任せ）。
+function collectInconsistentTranslations(reviewDirAbs, chunkFiles) {
+  const byText = new Map();
+  for (const f of chunkFiles) {
+    const filePath = path.join(reviewDirAbs, f);
+    if (!fs.existsSync(filePath)) continue;
+    const c = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    for (const b of c.blocks ?? []) {
+      for (const e of b.entries ?? []) {
+        if (!e.text || !e.translation) continue;
+        if (!byText.has(e.text)) byText.set(e.text, []);
+        byText.get(e.text).push({ dialog: b.dialog ?? null, file: f, key: e.key, translation: e.translation });
+      }
+    }
+  }
+  const inconsistent = [];
+  for (const [text, occurrences] of byText) {
+    const distinctTranslations = new Set(occurrences.map((o) => o.translation));
+    if (distinctTranslations.size > 1) {
+      inconsistent.push({ text, occurrences });
+    }
+  }
+  return inconsistent;
+}
+
 // notesステップの許可ツールにBashは無いが、実測でclaudeが「ファイル末尾を見たい」ために
 // `tail -c N` を試みて拒否される（turnを1つ無駄にするだけで何も得られない）ケースが
 // round44・round45の生トランスクリプトで確認された。原因は「末尾を見る手段が無い」ことでは
@@ -453,6 +484,17 @@ function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossary
     .map((e) => JSON.stringify(e))
     .join('\n  ');
 
+  const inconsistentTranslations = collectInconsistentTranslations(reviewDirAbs, chunkFiles);
+  const inconsistencyBlock = inconsistentTranslations.length
+    ? inconsistentTranslations
+      .map(
+        (i) =>
+          `- 原文: ${i.text}\n` +
+          i.occurrences.map((o) => `  - [${o.file}#${o.key}] (${o.dialog ?? '?'}) 訳文: ${o.translation}`).join('\n')
+      )
+      .join('\n')
+    : '（同一原文で訳し方が割れているentryは検出されませんでした）';
+
   const lineCountBlock = [
     ['dev/res/v2CharacterNotes.md', './res/v2CharacterNotes.md'],
     ['dev/res/translationGuide.md', './res/translationGuide.md'],
@@ -479,11 +521,16 @@ ${missingBlock}
    toBatchData.js の extract が自動抽出する際の目印になっているため、必ず厳密に守ること
    （崩すと以後そのキャラのメモがchunkへ埋め込まれなくなる）。ナレーション枠・その他の
    非キャラクター的なspeaker_idは無視してよい。
-2. このroundを訳す中で気づいた、今後も使える新しい翻訳ルールがあれば
-   dev/res/translationGuide.md の該当セクションに一言だけ、既存の簡潔さを保って追記する
-   （長い説明・経緯は書かない）。追記した経緯・きっかけのメモは
+2. 下記は同一原文なのに訳し方が割れているentryです（機械的に検出したものなので、
+   単に文脈違いで訳し分けが正しいケースも混ざっています）:
+${inconsistencyBlock}
+   これや、このroundを訳す中で気づいたその他の点も含めて、今後も使える新しい翻訳ルールが
+   あれば dev/res/translationGuide.md の該当セクションに一言だけ、既存の簡潔さを保って
+   追記する（長い説明・経緯は書かない）。追記した経緯・きっかけのメモは
    dev/res/translationGuideNotes.md の「更新履歴」に1行追記する
    （translationGuide.md本体には経緯を書かない。読み込みコストを増やさないため）。
+   - 上記の表記ゆれ候補は「ルール化する価値があるか」の判断材料であって、機械的に
+     全部直す・全部ルール化する必要はない（無ければ何もしない）。
 3. 下記は今回の原文に登場した語のうち、既存の dev/res/glossary.json にまだ無いものの候補です
    （機械的な抽出なので固有名詞ではないノイズも混ざっています。実在の固有名詞だと判断できる
    ものだけを対象にしてください）:
