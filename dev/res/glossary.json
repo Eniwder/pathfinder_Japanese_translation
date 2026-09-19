@@ -3743,6 +3743,24 @@
       "target": "アポナヴィキウス",
       "category": "Character",
       "note": "Orengoftaと並んでドレーゼンを挟撃した悪魔の指揮官（女性）。"
+    },
+    {
+      "source": "Anemora",
+      "target": "アネモラ",
+      "category": "Character",
+      "note": "以前の遭遇で顔を潰された女性デーモン。round73で再登場。"
+    },
+    {
+      "source": "Lord of the Labyrinth",
+      "target": "迷宮の王",
+      "category": "Character",
+      "note": "Baphometの二つ名。round73でOrengoftaの台詞に言及。"
+    },
+    {
+      "source": "Ineluctable Prison",
+      "target": "イネルクタブル・プリズン",
+      "category": "Location",
+      "note": "アビス内の獄。Baphometの手先がプレイヤーの皮を飾ると語る場面で言及（round73）。"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 20850,
-  "updatedAt": "2026-09-19T14:24:16.719Z",
+  "nextStart": 21150,
+  "updatedAt": "2026-09-19T14:45:10.071Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1352,6 +1352,21 @@
         "Goddesses_Summit_dialogue"
       ],
       "note": "v2リライト第72弾（runRoundLoop.mjs による自動実行）。 114件を翻訳し `chunk_0000.translations.json` に書き込みました（chunk記載の115件のうち、entriesを数えたところ114件でした）。\n\n- 登場した会話: `AneviaDrezenPartisans_dialogue`（アネヴィアとの再会・ドレゼン陥落の経緯）、`AneviaStopYou_dialogue`（アネヴィアの奇襲・冗談の場面）、`Free / 185件全て翻訳し、`chunk_0001.translations.json` を新規作成しました。\n\n- **件数**: 185件（chunk_0001の全entry）\n- **会話(dialog)**: `Goddesses_Summit_dialogue`（ドレゼン陥落後、アイオーメディとノクティキュラがプレイヤーの前に降臨し、ミシック能力の是非を巡って対話する山場のシーン）\n- **気づ"
+    },
+    {
+      "start": 20850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round73/",
+      "coveredDialogs": [
+        "Goddesses_Summit_dialogue",
+        "HilorDangerousPrison_dialogue",
+        "Orengofta_dialogue",
+        "StorytellerDangerousDrezen_dialogue",
+        "VendorDangerousTavern_dialogue",
+        "Anemora_Dialogue"
+      ],
+      "note": "v2リライト第73弾（runRoundLoop.mjs による自動実行）。 150件すべて翻訳し、chunk_0000.translations.json に書き込みました。登場した会話は Goddesses_Summit_dialogue(女神たちの審判の場、アビスの影を浄化するか力を保持するかの選択と companions の反応)と HilorDangerousPrison_dialogue(ドレゼン牢獄でのヒロール救出戦)。気づいた点: `{mf|master|m / 150件すべて翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 件数: 150件（未訳スキップなし）\n- 登場会話: Orengofta_dialogue（オレンゴフタ戦前の煽り＋群れ/デーモン/アイオン/ゴールドドラゴン等マイティックパス分岐）、StorytellerDangerousDrezen_dialogue（ストーリーテラー・イラベス再会）、Ve"
     }
   ]
 }
