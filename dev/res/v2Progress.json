@@ -1212,10 +1212,15 @@
     {
       "start": 18150,
       "limit": 300,
-      "merged": false,
-      "reviewDir": "dev/lang/chunks_review/2026-09-19_round64/",
-      "coveredDialogs": [],
-      "note": "v2リライト第64弾（runRoundLoop.mjs による自動実行）。"
+      "merged": true,
+      "coveredDialogs": [
+        "Velexia_First_Date_dialogue",
+        "Velexia_MainDialogue",
+        "Velexia_Second_Date_dialogue",
+        "Velexia_Third_Date_dialogue",
+        "EchoDeskari_SEbosses_c4_dialog"
+      ],
+      "note": "v2リライト第64弾（runRoundLoop.mjs による自動実行）。300件全て翻訳済みだったが、moveToReviewでchunks_review/へ退避されず（manifest.jsonのみ退避、chunk本体はlang/chunks/に残留する異常終了）、lang/chunks/に生データが残った状態でセッションが終了していた。後続セッションでchunk_0000.json中1件（327f5221-...）のctrl_0/ctrl_1欠落を修正し、ユーザーの明示的な指示でtoBatchData.js importにより直接zhCN.jsonへマージ（通常のmergePolicyの例外運用）。マージ後、lang/chunks/の残骸(*.done.json)とchunks_review/2026-09-19_round64/(manifest.jsonのみの不完全な退避)を削除して次回roundに備えた。"
     }
   ]
 }
