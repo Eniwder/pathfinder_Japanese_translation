@@ -3713,6 +3713,24 @@
       "target": "外なる領域",
       "category": "Term",
       "note": "Pharasmaの法廷がある死後の世界の概念。"
+    },
+    {
+      "source": "Odan",
+      "target": "オーダン",
+      "category": "Character",
+      "note": "ドレーゼン駐屯の十字軍大尉（Captain Odan）。"
+    },
+    {
+      "source": "Orengofta",
+      "target": "オレンゴフタ",
+      "category": "Character",
+      "note": "ドレーゼン解放戦で言及される大食漢の敵指揮官。"
+    },
+    {
+      "source": "Lambkin",
+      "target": "ラムキン",
+      "category": "Character",
+      "note": "旅回り一座の用心棒的な団員。"
     }
   ]
 }

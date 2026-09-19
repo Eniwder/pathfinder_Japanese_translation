@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 20250,
-  "updatedAt": "2026-09-19T10:39:10.937Z",
+  "nextStart": 20550,
+  "updatedAt": "2026-09-19T13:45:00.134Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1320,6 +1320,25 @@
         "Galfrey_Drezen_c5_dialog"
       ],
       "note": "v2リライト第70弾（runRoundLoop.mjs による自動実行）。 203件全て翻訳しchunk_0000.translations.jsonに書き込みました。会話は「Coronation_Dialogue」（ドレゼン戴冠式のスピーチ場面、各神話の道に応じた演説とガルフリー女王との対峙）1本のみです。\n\n気づいた点：この会話はプレイヤーの神話の道（デーモン/デビル/エンジェル/ゴールドドラゴン/アイオン/レジェンド等）ごとに分岐する長い演説が中心で、一人称は文脈に / 97件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 登場した会話: `DrezenC5_Ramien_dialogue`（ラミエン、12件）、`Galfrey_Drezen_c5_dialog`（ガルフリー、85件）\n- 気づいた点: このchunkには`speakers`辞書が含まれていなかったため、既知キャラ（ラミエン=デズナ神官で丁寧語、ガル"
+    },
+    {
+      "start": 20250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round71/",
+      "coveredDialogs": [
+        "Galfrey_Drezen_c5_dialog",
+        "Hulrun_Drezen_c5_Dialogue",
+        "Klejm_c5_Dialogue",
+        "KTC_AneviaStart_Dialogue",
+        "KTC_KingdomLost_c5_Dialogue",
+        "KTC_ReinforcementsFromNocta_Dialogue",
+        "TheatreCalls_c5_ktc_dialog",
+        "Miammir_c5_Dialogue",
+        "Nystra_c5_Dialogue",
+        "AneviaDrezenPartisans_dialogue"
+      ],
+      "note": "v2リライト第71弾（runRoundLoop.mjs による自動実行）。 79件全て訳出しました。会話はGalfrey_Drezen_c5_dialog（ガルフリーとの恋愛関係の対話）、Hulrun_Drezen_c5_Dialogue（ハルランとの信仰・裁きを巡る対話）、Klejm_c5_Dialogue（クレームとミアミールの後継についての対話）の3本。ガルフリーとハルランは`speakers`辞書未提供のためchunkのglossaryメモ（穏やか/狂信的等）と文 / 188件全て訳しました。登場した会話は `KTC_AneviaStart_Dialogue`（ドレゼン解放後、アネヴィア＆イラベス報告）、`KTC_KingdomLost_c5_Dialogue`（オダン大尉の包囲戦報告）、`KTC_ReinforcementsFromNocta_Dialogue`（ノクティキュラの淫魔ラウリー来訪）、`TheatreCalls_c5_ktc_dialog`（お隣 / 33件すべて翻訳しました。登場した会話は Miammir_c5_Dialogue（ミアミールとの再会）、Nystra_c5_Dialogue（ニストラとの対話）、AneviaDrezenPartisans_dialogue（アネヴィア・デランとの空白期間の説明）の3本です。\n\n気づいた点：d7c73094は`ad60fdf0`/`a53d0f70`と分岐が重複しているように見えますが（同じctxか"
     }
   ]
 }
