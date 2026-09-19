@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 17850,
-  "updatedAt": "2026-09-19T03:38:57.947Z",
+  "nextStart": 18150,
+  "updatedAt": "2026-09-19T04:02:29.929Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1190,6 +1190,24 @@
         "Nocticula_MainDialogue"
       ],
       "note": "v2リライト第62弾（runRoundLoop.mjs による自動実行）。 59件全て翻訳しました。登場した会話は `Companions_NoCamp_dialogue`（ネクサス帰還後の仲間たちとの会話、野営地全滅の顛末）と `XorgesAlone_dialogue`（少年ゾルジェスとの再会）です。ケナブレス地下のモングレル定住地への言及があったので glossary の Kenabres/Mongrel の訳語で揃えました。 / 241件中241件を訳出しました。会話は「Nocticula_MainDialogue」（ノクティキュラとの本編対話、ジフォリアン裁判イベントやネニオの下ネタ質問なども含む）。ノクティキュラの一人称・二人称は「私」「そなた」で統一し、`{mf|he|she}`等の性別分岐は自然な日本語訳で不要になった箇所は省略しました。"
+    },
+    {
+      "start": 17850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round63/",
+      "coveredDialogs": [
+        "Nocticula_MainDialogue",
+        "Nocticula_message_dialogue",
+        "NocticulaPalaceGuards_dialogue",
+        "Audience_Areelu_c4_dialog",
+        "Portal_ToColyphyr_dialogue",
+        "HeraldDoubt_Velexia_dialogue",
+        "Jerribeth_Velexia_dialogue",
+        "MagicGates_dialogue",
+        "Velexia_First_Date_dialogue"
+      ],
+      "note": "v2リライト第63弾（runRoundLoop.mjs による自動実行）。 153件全て翻訳し、chunk_0000.translations.json に書き込みました。登場した会話は Nocticula_MainDialogue、Nocticula_message_dialogue、NocticulaPalaceGuards_dialogue、Audience_Areelu_c4_dialog の4本（ノクティキュラとの謁見、通信、宮殿警備兵とのやり取り、アレールとの / 146件訳し、chunk_0001.translations.jsonに書き出しました。\n\n- 登場した会話（dialog）: Portal_ToColyphyr_dialogue（ポータル前の内省・カメリアとの別れ話）、HeraldDoubt_Velexia_dialogue（ヴェレクシアとの関係を巡るヘラルドの問いかけ）、Jerribeth_Velexia_dialogue（ジェリベスの警告）"
     }
   ]
 }

@@ -3443,6 +3443,12 @@
       "target": "イナゴ卿",
       "category": "Character",
       "note": "Deskariの蔑称・二つ名。Nocticula_MainDialogueで言及。round62で言及。"
+    },
+    {
+      "source": "Rapture of Rupture",
+      "target": "ラプチャー・オブ・ラプチャー",
+      "category": "Location",
+      "note": "Jerribeth/Vellexiaが身を隠すAlushinyrraの館の名。カタカナ音写で統一。round63で言及。"
     }
   ]
 }
