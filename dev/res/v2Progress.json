@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 18150,
-  "updatedAt": "2026-09-19T04:02:29.929Z",
+  "nextStart": 18450,
+  "updatedAt": "2026-09-19T05:08:41.866Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1208,6 +1208,14 @@
         "Velexia_First_Date_dialogue"
       ],
       "note": "v2リライト第63弾（runRoundLoop.mjs による自動実行）。 153件全て翻訳し、chunk_0000.translations.json に書き込みました。登場した会話は Nocticula_MainDialogue、Nocticula_message_dialogue、NocticulaPalaceGuards_dialogue、Audience_Areelu_c4_dialog の4本（ノクティキュラとの謁見、通信、宮殿警備兵とのやり取り、アレールとの / 146件訳し、chunk_0001.translations.jsonに書き出しました。\n\n- 登場した会話（dialog）: Portal_ToColyphyr_dialogue（ポータル前の内省・カメリアとの別れ話）、HeraldDoubt_Velexia_dialogue（ヴェレクシアとの関係を巡るヘラルドの問いかけ）、Jerribeth_Velexia_dialogue（ジェリベスの警告）"
+    },
+    {
+      "start": 18150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round64/",
+      "coveredDialogs": [],
+      "note": "v2リライト第64弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }
