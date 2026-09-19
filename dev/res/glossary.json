@@ -3419,6 +3419,30 @@
       "target": "《長老》",
       "category": "Character",
       "note": "ファーストワールドのEldest（Shyka等と同格の長老格の存在）の一人を指す呼称。Council_Lexicon2_Dialogueで登場。round60で言及。"
+    },
+    {
+      "source": "Laulieh",
+      "target": "ラウリー",
+      "category": "Character",
+      "note": "Nocticulaに仕える有能な助手（デーモン）。Nocticula_MainDialogueで言及。round62で言及。"
+    },
+    {
+      "source": "Cricket the Younger",
+      "target": "若きコオロギ",
+      "category": "Character",
+      "note": "「the Echo」の二つ名。Nocticula_MainDialogueでAroden絡みの因縁と共に言及。round62で言及。"
+    },
+    {
+      "source": "Lord Goat",
+      "target": "山羊卿",
+      "category": "Character",
+      "note": "Baphometの蔑称・二つ名。Nocticula_MainDialogueで言及。round62で言及。"
+    },
+    {
+      "source": "Lord Locust",
+      "target": "イナゴ卿",
+      "category": "Character",
+      "note": "Deskariの蔑称・二つ名。Nocticula_MainDialogueで言及。round62で言及。"
     }
   ]
 }

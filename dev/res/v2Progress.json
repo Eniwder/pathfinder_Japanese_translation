@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 17550,
-  "updatedAt": "2026-09-19T02:53:26.827Z",
+  "nextStart": 17850,
+  "updatedAt": "2026-09-19T03:38:57.947Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1178,6 +1178,18 @@
         "CampSurvived_dialogue"
       ],
       "note": "v2リライト第61弾（runRoundLoop.mjs による自動実行）。 176件全て訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 登場会話: HeraldIntro_Nexus_c4_dialog（継承者の手とのミッドナイト諸島/アビス到着シーン、各神格別の内面描写×24種、Daeranとの会話）、HeraldLetsGo_Nexus_c4_dialog（アルシニラへのポータル突入）、Herald_camp_dialogue（ / 124件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 訳数: 124/124件\n- 登場会話: DyingSuccubus_Nexus_c4_dialog（瀕死のサキュバスとの対話・ソシエルの安楽死処置）、MinionInMine_c4_Nexus_dialog（ドレッチ「ザ・スーチャー」との会話）、CampSurvived_dialogue（帰還後"
+    },
+    {
+      "start": 17550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round62/",
+      "coveredDialogs": [
+        "Companions_NoCamp_dialogue",
+        "XorgesAlone_dialogue",
+        "Nocticula_MainDialogue"
+      ],
+      "note": "v2リライト第62弾（runRoundLoop.mjs による自動実行）。 59件全て翻訳しました。登場した会話は `Companions_NoCamp_dialogue`（ネクサス帰還後の仲間たちとの会話、野営地全滅の顛末）と `XorgesAlone_dialogue`（少年ゾルジェスとの再会）です。ケナブレス地下のモングレル定住地への言及があったので glossary の Kenabres/Mongrel の訳語で揃えました。 / 241件中241件を訳出しました。会話は「Nocticula_MainDialogue」（ノクティキュラとの本編対話、ジフォリアン裁判イベントやネニオの下ネタ質問なども含む）。ノクティキュラの一人称・二人称は「私」「そなた」で統一し、`{mf|he|she}`等の性別分岐は自然な日本語訳で不要になった箇所は省略しました。"
     }
   ]
 }
