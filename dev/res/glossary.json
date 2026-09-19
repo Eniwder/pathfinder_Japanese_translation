@@ -3455,6 +3455,72 @@
       "target": "蠱惑の狂喜",
       "category": "Location",
       "note": "Jerribeth/Vellexiaが身を隠すAlushinyrraの館の名。round63で言及。"
+    },
+    {
+      "source": "Starcatcher the First",
+      "target": "初代スターキャッチャー",
+      "category": "Location",
+      "note": "Mielarahがかつて乗っていた飛行船。呪いにより難破した。round65のTumberd_dialogueで言及。"
+    },
+    {
+      "source": "Starcatcher the Second",
+      "target": "二代目スターキャッチャー",
+      "category": "Location",
+      "note": "Mielarahの2隻目の飛行船。Alinythiaの岩礁で反乱の末に大破。round65のTumberd_dialogueで言及。"
+    },
+    {
+      "source": "Starcatcher the Third",
+      "target": "三代目スターキャッチャー",
+      "category": "Location",
+      "note": "Mielarah船長の現在の飛行船の名。round65のTumberd_dialogueで言及。"
+    },
+    {
+      "source": "Magister Mielarah",
+      "target": "マギステル・ミエララ",
+      "category": "Character",
+      "note": "Arcanamirium出身の女魔術師、Starcatcher the Thirdの船長。round65のTumberd_dialogueで初登場。"
+    },
+    {
+      "source": "Arcanamirium",
+      "target": "アルカナミリウム",
+      "category": "Location",
+      "note": "AbsalomにあるPathfinder世界屈指の魔術学院。round65でMielarahの出身校として言及。"
+    },
+    {
+      "source": "Shackles Pirates",
+      "target": "シャックルズの海賊",
+      "category": "Faction",
+      "note": "Shackles諸島を根城にする海賊たち。round65のTumberd_dialogueで言及。"
+    },
+    {
+      "source": "Magnimar",
+      "target": "マグニマール",
+      "category": "Location",
+      "note": "Golarion本土Varisiaの都市。round65のTumberd_dialogueで言及。"
+    },
+    {
+      "source": "Tian Xia",
+      "target": "ティアンシア",
+      "category": "Location",
+      "note": "Golarionの東方大陸。round65のTumberd_dialogueで言及。"
+    },
+    {
+      "source": "Golarians",
+      "target": "ゴラリオン人",
+      "category": "Race",
+      "note": "Golarion出身者を指す一般的な呼称。round65のInnkeeper_MainDialogueで言及。"
+    },
+    {
+      "source": "Samcrow",
+      "target": "サムクロウ",
+      "category": "Character",
+      "note": "BlindHalfling_dialogueに登場するハーフリング。round65で言及。"
+    },
+    {
+      "source": "Bhurgaz",
+      "target": "ブルガズ",
+      "category": "Character",
+      "note": "Innkeeper_MainDialogueに登場する宿屋の主人デーモン。round65で言及。"
     }
   ]
 }

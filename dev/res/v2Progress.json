@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 18450,
-  "updatedAt": "2026-09-19T05:08:41.866Z",
+  "nextStart": 18750,
+  "updatedAt": "2026-09-19T05:37:04.074Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1221,6 +1221,21 @@
         "EchoDeskari_SEbosses_c4_dialog"
       ],
       "note": "v2リライト第64弾（runRoundLoop.mjs による自動実行）。300件全て翻訳済みだったが、moveToReviewでchunks_review/へ退避されず（manifest.jsonのみ退避、chunk本体はlang/chunks/に残留する異常終了）、lang/chunks/に生データが残った状態でセッションが終了していた。後続セッションでchunk_0000.json中1件（327f5221-...）のctrl_0/ctrl_1欠落を修正し、ユーザーの明示的な指示でtoBatchData.js importにより直接zhCN.jsonへマージ（通常のmergePolicyの例外運用）。マージ後、lang/chunks/の残骸(*.done.json)とchunks_review/2026-09-19_round64/(manifest.jsonのみの不完全な退避)を削除して次回roundに備えた。"
+    },
+    {
+      "start": 18450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round65/",
+      "coveredDialogs": [
+        "EchoDeskari_SEbosses_c4_dialog",
+        "Mutasafen_SEbosses_dialog",
+        "BlindHalfling_dialogue",
+        "Innkeeper_MainDialogue",
+        "Tumberd_dialogue",
+        "Shaxah_Vendor_dialogue"
+      ],
+      "note": "v2リライト第65弾（runRoundLoop.mjs による自動実行）。 76件全て翻訳し、chunk_0000.translations.jsonに書き込みました。登場した会話は `EchoDeskari_SEbosses_c4_dialog`（アビスでのデスカリのエコー戦前会話、ターゴナ・ヤニエル・ベレンガー合流）、`Mutasafen_SEbosses_dialog`（ムタサフェン戦前会話）、`BlindHalfling_dialogue`（サムクロウとの再会、ウ / 149件全て訳出し、chunk_0001.translations.json に書き込みました。会話は `Innkeeper_MainDialogue`(宿屋主人ブルガズとの会話、ウェンデュアグ・ラン・シーラ・アイヴとの飲み比べ雑談を含む)一本です。気づいた点として、`{mf|master|mistress}` は用語集通り「ご主人様」に統一して省略、`{mf|sir|my lady}` も性別中 / 75件すべて翻訳しました。会話は `Tumberd_dialogue`（飛行船船長ミエラーラとの交渉・身の上話、ラン/グレイボーの絡み）と `Shaxah_Vendor_dialogue`（悪魔ザーラとその息子ゾルジェスとのやり取り）。\n\n気づいた点：Tian Xia（`天下`）は既存グロッサリーに訳語が無かったため一旦「ティアンシア」音写にしました。既訳が別語で確定しているなら要確認です。"
     }
   ]
 }
