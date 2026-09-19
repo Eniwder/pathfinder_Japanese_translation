@@ -3635,6 +3635,54 @@
       "target": "ダイイングライト",
       "category": "Location",
       "note": "Setrei Devimaiの回想に出る地名（Iz, Dyinglight, the steppeと並列）。"
+    },
+    {
+      "source": "Jharsygax Aghamornalyandre",
+      "target": "ジャーシガックス・アガモーナリアンドレ",
+      "category": "Character",
+      "note": "聖なる子と呼ばれる金属竜の幼体。フルネーム。"
+    },
+    {
+      "source": "King Thaberdine",
+      "target": "サバーダイン王",
+      "category": "Character",
+      "note": "Drezenの酔いどれ王。「His Drunken Majesty」とも呼ばれる。"
+    },
+    {
+      "source": "Sorrowmaker",
+      "target": "ソロウメイカー",
+      "category": "Mythic",
+      "note": "Dahakの二つ名。"
+    },
+    {
+      "source": "Lathimas the Antiquarian",
+      "target": "骨董家ラティマス",
+      "category": "Character",
+      "note": "Lathimas（Latimas）のフルタイトル。幽霊の学者。"
+    },
+    {
+      "source": "Hokugaul Ruzyreph",
+      "target": "ホクガウル・ルジレフ",
+      "category": "Character",
+      "note": "聖なる子の守護竜Hokugaulのフルネーム。"
+    },
+    {
+      "source": "Emerald Song",
+      "target": "エメラルドの歌",
+      "category": "Location",
+      "note": "Elysiumにある地名。Aivuの回想に登場。"
+    },
+    {
+      "source": "Hevelathimas",
+      "target": "ヘヴェラティマス",
+      "category": "Character",
+      "note": "Dahakに仕える黒竜。"
+    },
+    {
+      "source": "Chun",
+      "target": "チュン",
+      "category": "Character",
+      "note": "十字軍の戦士。仲間の死を悼む場面に登場。"
     }
   ]
 }

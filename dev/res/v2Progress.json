@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 19650,
-  "updatedAt": "2026-09-19T10:04:23.523Z",
+  "nextStart": 19950,
+  "updatedAt": "2026-09-19T10:24:21.071Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1287,6 +1287,27 @@
         "ShadowOfAreshka_dialogue"
       ],
       "note": "v2リライト第68弾（runRoundLoop.mjs による自動実行）。 191件全て翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **登場会話(dialog)**: `AreeluCell_AreeluLabAgain_c5_dialog`（アレール投影体×デスカリ）、`Opon_AreeluLabAgain_c5_dialog`（幽霊オポンとサーコリス回想）、`Witchunter_AreeluLabAgain_c5 / 109件すべて翻訳しました。登場会話は `CrossingTheRift3_dialogue`（虚空での問答）、`EnygmaEnter_dialogue`（エニグマ入場、ネニオ・ラン・アルエシャラエ等の反応）、`FoxDontLeave_dialogue`／`FoxMyself_dialogue`（ネニオが「アノーマリー」と化す哲学的問答）、`ShadowOfAreshka_dialogue`（"
+    },
+    {
+      "start": 19650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round69/",
+      "coveredDialogs": [
+        "ShadowOfAreshka_dialogue",
+        "StatueChallenge_dialogue",
+        "VowingToAreshka_dialogue",
+        "VowToAreshka_dialogue",
+        "DragonHatched_dialogue",
+        "DragonsBeforeBattle_dialogue",
+        "HokugolAfterBattle_dialogue",
+        "KTC_LatimasCalls_dialogue",
+        "LatimasAfterBattle_dialogue",
+        "Chun_Drezen_c5_Dialogue",
+        "Ciar_c5_Dialogue",
+        "Coronation_Dialogue"
+      ],
+      "note": "v2リライト第69弾（runRoundLoop.mjs による自動実行）。 176件全て翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 176件（全entry対応、null残しなし）\n- **登場した会話**: ShadowOfAreshka_dialogue / StatueChallenge_dialogue / VowingToAreshka_dialogue / VowToAreshka_dialog / 124件全て訳しました。会話は`Coronation_Dialogue`（ドレゼン凱旋の演説シーン、秩序/デーモン/アンデッド/コミカル路線の分岐を含む）。デーモン路線のPlayer口調は「俺」、秩序・アンデッド路線は「私」で統一し、`{mf|master|mistress}`は「ご主人様」に、`{mf|he|she}`系は文脈で省略しました。"
     }
   ]
 }
