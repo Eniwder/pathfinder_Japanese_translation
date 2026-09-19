@@ -3521,6 +3521,54 @@
       "target": "ブルガズ",
       "category": "Character",
       "note": "Innkeeper_MainDialogueに登場する宿屋の主人デーモン。round65で言及。"
+    },
+    {
+      "source": "Mireya",
+      "target": "ミレヤ",
+      "category": "Character",
+      "note": "カメリアが生贄の儀式を捧げる対象。round66のHerraxa_dialogueで言及。"
+    },
+    {
+      "source": "Rokhorn",
+      "target": "ロクホーン",
+      "category": "Character",
+      "note": "Ten Thousand Delightsのインキュバス。round66のHerraxa_dialogueに登場。"
+    },
+    {
+      "source": "Willodus",
+      "target": "ウィロダス",
+      "category": "Character",
+      "note": "陰の貴婦人に仕える宮廷魔術師。round66のHerraxa_dialogue/Shaxah_Vendor_dialogueで言及。"
+    },
+    {
+      "source": "Rotten Guttery",
+      "target": "腐れどぶ",
+      "category": "Place",
+      "note": "下層都市にあるデーモンの巣窟。round66のChivarro_dialogueで言及。"
+    },
+    {
+      "source": "Den of Sweet Horror",
+      "target": "甘美な恐怖の巣",
+      "category": "Place",
+      "note": "Spinnerが以前構えていたTen Thousand Delights内の一角。round66で言及。"
+    },
+    {
+      "source": "Palace of Incest and Degeneracy",
+      "target": "近親相姦と堕落の館",
+      "category": "Place",
+      "note": "上層都市にある娼館の建物名。round66のChivarro_dialogueで言及。"
+    },
+    {
+      "source": "Mad Glowworm",
+      "target": "狂気の光虫",
+      "category": "Character",
+      "note": "Ten Thousand Delightsに滞在するフェイ。round66のHerraxa_dialogueで言及。"
+    },
+    {
+      "source": "Lantern King",
+      "target": "ランタン王",
+      "category": "Character",
+      "note": "First Worldのフェイの王。round66のHerraxa_dialogueで言及。"
     }
   ]
 }

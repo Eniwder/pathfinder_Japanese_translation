@@ -199,6 +199,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   The Bloody Bitch/Nameless Ruins/Plagued One/Hellknight/Lower City/Alinythia/
   Ziforian/Xuneki/Migorgを追加。
 
+- 2026-09-19: round66 chunk_0000〜0001（Ten Thousand Delights娼館のChivarro_dialogue/
+  Herraxa_dialogue）のレビューで、`brothel` の訳語が「店」「娼館」で割れていたため「娼館」に
+  統一するルールをtranslationGuide.mdに追記。新規話者は検出されずv2CharacterNotes.mdの
+  変更なし。glossary.jsonにMireya/Rokhorn/Willodus/Rotten Guttery/Den of Sweet Horror/
+  Palace of Incest and Degeneracy/Mad Glowworm/Lantern Kingを追加。
+
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
 `node toBatchData.js extract --filter=issues` で拾える control-tag 不整合は、実際には

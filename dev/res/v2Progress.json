@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 18750,
-  "updatedAt": "2026-09-19T05:37:04.074Z",
+  "nextStart": 19050,
+  "updatedAt": "2026-09-19T05:59:26.765Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1236,6 +1236,20 @@
         "Shaxah_Vendor_dialogue"
       ],
       "note": "v2リライト第65弾（runRoundLoop.mjs による自動実行）。 76件全て翻訳し、chunk_0000.translations.jsonに書き込みました。登場した会話は `EchoDeskari_SEbosses_c4_dialog`（アビスでのデスカリのエコー戦前会話、ターゴナ・ヤニエル・ベレンガー合流）、`Mutasafen_SEbosses_dialog`（ムタサフェン戦前会話）、`BlindHalfling_dialogue`（サムクロウとの再会、ウ / 149件全て訳出し、chunk_0001.translations.json に書き込みました。会話は `Innkeeper_MainDialogue`(宿屋主人ブルガズとの会話、ウェンデュアグ・ラン・シーラ・アイヴとの飲み比べ雑談を含む)一本です。気づいた点として、`{mf|master|mistress}` は用語集通り「ご主人様」に統一して省略、`{mf|sir|my lady}` も性別中 / 75件すべて翻訳しました。会話は `Tumberd_dialogue`（飛行船船長ミエラーラとの交渉・身の上話、ラン/グレイボーの絡み）と `Shaxah_Vendor_dialogue`（悪魔ザーラとその息子ゾルジェスとのやり取り）。\n\n気づいた点：Tian Xia（`天下`）は既存グロッサリーに訳語が無かったため一旦「ティアンシア」音写にしました。既訳が別語で確定しているなら要確認です。"
+    },
+    {
+      "start": 18750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-19_round66/",
+      "coveredDialogs": [
+        "Shaxah_Vendor_dialogue",
+        "XorgesTiefling_dialogue",
+        "BrothelGuard_dialogue",
+        "Chivarro_dialogue",
+        "Herraxa_dialogue"
+      ],
+      "note": "v2リライト第66弾（runRoundLoop.mjs による自動実行）。 196件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 196件全件（未訳スキップなし）\n- **会話**: Shaxah_Vendor_dialogue（ザーラとゾルジェス母子）、XorgesTiefling_dialogue（ゾルジェス保護後の展開）、BrothelGuard_dialogue（テン・サウザンド・ディライツ門番）、C / 104件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 会話: Herraxa_dialogue（テン・サウザンド・ディライツの女主人ヘラックス、カメリアの生贄依頼、シナーズ三姉妹・フェイ・インキュバス ロクホーンとの接待シーン）\n- 気づいた点: `{mf|hero|heroine}` は「英雄」で性別中立に処理し `{mf}` ごと省略。Rokh"
     }
   ]
 }
