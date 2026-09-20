@@ -4213,6 +4213,60 @@
       "target": "スート",
       "category": "Character",
       "note": "エンバーが飼っているカラスの名前（FinalLegend_c5_dialog、round85）。"
+    },
+    {
+      "source": "Caarel",
+      "target": "カーレル",
+      "category": "Character",
+      "note": "格闘術に長けたエルフの斥候。訓練用ダミーの前で言い合う兵士の一人（SoldierParty_Dummy_dialogue、round86）。"
+    },
+    {
+      "source": "Tayne",
+      "target": "テイン",
+      "category": "Character",
+      "note": "金髪で筋骨隆々の兵士。カーレルに好意を示している（SoldierParty_Dummy_dialogue、round86）。"
+    },
+    {
+      "source": "Viggsbard Ogg",
+      "target": "ヴィグスバード・オッグ",
+      "category": "Character",
+      "note": "ハイヘルム出身のドワーフ兵士。共通語を含む言語全般が苦手（SoldierParty_Dummy_dialogue、round86）。"
+    },
+    {
+      "source": "Five Kings Mountains",
+      "target": "ファイブ・キングズ山脈",
+      "category": "Location",
+      "note": "ドワーフの都市ハイヘルムを擁する山脈地帯（SoldierParty_Dummy_dialogue、round86）。"
+    },
+    {
+      "source": "Wilcer Garms",
+      "target": "ウィルサー・ガームズ",
+      "category": "Character",
+      "note": "気弱な軍需担当官（Quartermaster）。パーティの世話役（SoldierParty_GarmsOnTheParty_dialogue、round86）。"
+    },
+    {
+      "source": "Silket",
+      "target": "シルケット",
+      "category": "Character",
+      "note": "ガームズ配下の凄腕の斥候（SoldierParty_GarmsOnTheParty_dialogue、round86）。"
+    },
+    {
+      "source": "Unn Valley",
+      "target": "アン渓谷",
+      "category": "Location",
+      "note": "ドルム産の高級ワインの産地（SoldierParty_LostWine_dialogue、round86）。"
+    },
+    {
+      "source": "Cayden Cailean",
+      "target": "ケイデン・カイレアン",
+      "category": "Character",
+      "note": "酒と冒険と自由を司る神。デンリーンの正体（SoldierParty_Sorry_dialogue、round86）。"
+    },
+    {
+      "source": "Accidental God",
+      "target": "事故の神",
+      "category": "Character",
+      "note": "ケイデン・カイレアンの自称の二つ名（SoldierParty_Sorry_dialogue、round86）。"
     }
   ]
 }

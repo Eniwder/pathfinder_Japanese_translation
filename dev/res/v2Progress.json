@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 24750,
-  "updatedAt": "2026-09-20T13:18:58.238Z",
+  "nextStart": 25050,
+  "updatedAt": "2026-09-20T13:36:16.665Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1606,6 +1606,23 @@
         "SoldierParty_CoolStories_dialogue"
       ],
       "note": "v2リライト第85弾（runRoundLoop.mjs による自動実行）。 159件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 159件全て翻訳（未訳スキップなし）\n- **登場した会話**: TerendelevUndead_dialogue／TerendelevUndeadCompanion_dialogue（テレンデレヴのアンデッド関連）、FinalLegend_c5_dialog／IAMLegend / 141件すべて翻訳し、chunk_0001.translations.json に書き込みました。登場した会話は LegendFane_c5_dialog（アレールとの対話・神話パス幻影)、LegendKenabres_c5_dialog、LegendLostChapel_c5_dialog（自己の亡霊イベント)、SoldierParty_Armwrestling_dialogue（デンリーンとの"
+    },
+    {
+      "start": 24750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round86/",
+      "coveredDialogs": [
+        "SoldierParty_CoolStories_dialogue",
+        "SoldierParty_DrinkChallenge_dialogue",
+        "SoldierParty_Dummy_dialogue",
+        "SoldierParty_GarmsOnTheParty_dialogue",
+        "SoldierParty_KTCGarms_dialogue",
+        "SoldierParty_LostWine_dialogue",
+        "SoldierParty_Sorry_dialogue",
+        "BeatedCounselor_dialogue"
+      ],
+      "note": "v2リライト第86弾（runRoundLoop.mjs による自動実行）。 162件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 162/162（全entry訳出、null残しなし）\n- 登場した会話: SoldierParty_CoolStories_dialogue（デーモン・アビス・ノクティキュラ絡みの法螺話）、SoldierParty_DrinkChallenge_dialogue（デンリーンとの飲み比べ→ / 138件全て翻訳しました。登場した会話は `SoldierParty_GarmsOnTheParty_dialogue`（宴の乾杯シーン）、`SoldierParty_KTCGarms_dialogue`（招待の場面）、`SoldierParty_LostWine_dialogue`（ワイン紛失の口論）、`SoldierParty_Sorry_dialogue`（カイデン・カイリーエン正体判明）、"
     }
   ]
 }
