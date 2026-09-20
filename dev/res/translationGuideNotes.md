@@ -44,6 +44,10 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 
 ## 更新履歴（要点のみ）
 
+- 2026-09-20: round84のchunkで"I have to go."/"I have no more questions."が複数の会話ファイルに
+  またがって同一訳（句読点のみ微差）で使い回されていた（機械検出の表記ゆれ候補）のを見て、
+  汎用的な離脱・質問終了の定型選択肢は句読点も含めて既存の訳し方に揃えるルールを
+  translationGuide.mdに追記。
 - 2026-09-20: round77のchunkで"What is this place?"/"What are you doing here?"が
   話者違いで訳し分けられていた（機械検出の表記ゆれ候補）のを見て、既存の統一ルールが
   地の台詞には及ばない旨をtranslationGuide.mdに明記。

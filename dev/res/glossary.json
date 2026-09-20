@@ -4141,6 +4141,48 @@
       "target": "ゴルゴラド",
       "category": "Character",
       "note": "デイマヴィガの個体名。ソウルズクルセイダーズ計画の実行役（DevilishTemptation_SoulsCrusaders_dialogue、round83）。"
+    },
+    {
+      "source": "Tyvanadis",
+      "target": "ティヴァナディス",
+      "category": "Character",
+      "note": "銅竜。ハラセリアクスと共にコマンダーを試す一員（DragonsKenabres_dialogue、round84）。"
+    },
+    {
+      "source": "Parnoneryx",
+      "target": "パルノネリクス",
+      "category": "Character",
+      "note": "ゴラリオンの英雄として言及される竜の名（Hal_companion_dialogue、round84）。"
+    },
+    {
+      "source": "Reudger the White",
+      "target": "白のロイガー",
+      "category": "Character",
+      "note": "サルコリスの名工、チーズ職人（NidalynnQuest1_dialogue、round84）。"
+    },
+    {
+      "source": "Windstep",
+      "target": "ウィンドステップ",
+      "category": "Faction",
+      "note": "サルコリスの氏族名（NidalynnQuest1_dialogue、round84）。"
+    },
+    {
+      "source": "Pharast",
+      "target": "ファラスト",
+      "category": "Calendar",
+      "note": "ゴラリオン暦の月名（OrgomandiasQuest2_dialogue、round84）。"
+    },
+    {
+      "source": "Moonday",
+      "target": "ムーンデイ",
+      "category": "Calendar",
+      "note": "ゴラリオン暦の曜日名（OrgomandiasQuest2_dialogue、round84）。"
+    },
+    {
+      "source": "Master Oreevo",
+      "target": "オリーヴォ先生",
+      "category": "Character",
+      "note": "オルゴマンディアスの学者仲間にして好敵手（OrgomandiasQuest2_dialogue、round84）。"
     }
   ]
 }
