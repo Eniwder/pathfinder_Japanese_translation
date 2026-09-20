@@ -4183,6 +4183,36 @@
       "target": "オリーヴォ先生",
       "category": "Character",
       "note": "オルゴマンディアスの学者仲間にして好敵手（OrgomandiasQuest2_dialogue、round84）。"
+    },
+    {
+      "source": "Lannica",
+      "target": "ランニカ",
+      "category": "Character",
+      "note": "兵士たちの雑談で怪談を語る吟遊詩人風の兵士（SoldierParty_CoolStories_dialogue、round85）。"
+    },
+    {
+      "source": "Baronet Venko",
+      "target": "ヴェンコ准男爵",
+      "category": "Character",
+      "note": "兵士パーティの一員、髭の男（SoldierParty_CoolStories_dialogue、round85）。"
+    },
+    {
+      "source": "Hill",
+      "target": "ヒル",
+      "category": "Character",
+      "note": "ひび割れた眼鏡をかけた皮肉屋の魔術師、兵士パーティの一員（SoldierParty_CoolStories_dialogue、round85）。"
+    },
+    {
+      "source": "Bumpy",
+      "target": "バンピー",
+      "category": "Character",
+      "note": "兵士の怪談に登場する、近所の農場で飼われていた気性の荒い山羊（後にデーモン化）（SoldierParty_CoolStories_dialogue、round85）。"
+    },
+    {
+      "source": "Soot",
+      "target": "スート",
+      "category": "Character",
+      "note": "エンバーが飼っているカラスの名前（FinalLegend_c5_dialog、round85）。"
     }
   ]
 }

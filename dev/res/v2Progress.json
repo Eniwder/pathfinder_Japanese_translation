@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 24450,
-  "updatedAt": "2026-09-20T12:58:11.450Z",
+  "nextStart": 24750,
+  "updatedAt": "2026-09-20T13:18:58.238Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1586,6 +1586,26 @@
         "TerendelevUndead_dialogue"
       ],
       "note": "v2リライト第84弾（runRoundLoop.mjs による自動実行）。 130件全て翻訳し、chunk_0001.translations.json に書き込みました。登場した会話は Hal_companion_dialogue（ハラセリアックス）、SevalrosDying_dialogue／SevalrosEvil_dialogue（セヴァルロス）、TerendelevUndead_dialogue（アンデッド化したテレンデレヴ）の4本。ハラセリアックスの一人称・"
+    },
+    {
+      "start": 24450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round85/",
+      "coveredDialogs": [
+        "TerendelevUndead_dialogue",
+        "TerendelevUndeadCompanion_dialogue",
+        "FinalLegend_c5_dialog",
+        "IAMLegend_c5_dialog",
+        "MythicImpressarios_Legend_c5_ktc_dialog",
+        "LegendDrezen_c5_dialog",
+        "LegendFane_c5_dialog",
+        "LegendKenabres_c5_dialog",
+        "LegendLostChapel_c5_dialog",
+        "SoldierParty_Armwrestling_dialogue",
+        "SoldierParty_CoolStories_dialogue"
+      ],
+      "note": "v2リライト第85弾（runRoundLoop.mjs による自動実行）。 159件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 159件全て翻訳（未訳スキップなし）\n- **登場した会話**: TerendelevUndead_dialogue／TerendelevUndeadCompanion_dialogue（テレンデレヴのアンデッド関連）、FinalLegend_c5_dialog／IAMLegend / 141件すべて翻訳し、chunk_0001.translations.json に書き込みました。登場した会話は LegendFane_c5_dialog（アレールとの対話・神話パス幻影)、LegendKenabres_c5_dialog、LegendLostChapel_c5_dialog（自己の亡霊イベント)、SoldierParty_Armwrestling_dialogue（デンリーンとの"
     }
   ]
 }
