@@ -3773,6 +3773,42 @@
       "target": "石版写本の神殿",
       "category": "Location",
       "note": "サルコリスに現存する数少ない魔術図書館の一つ。Izにあり、Deskariの手先が破壊しようとしている（round74）。"
+    },
+    {
+      "source": "Alderpash",
+      "target": "アルダーパッシュ",
+      "category": "Character",
+      "note": "バクラカンの暴君、憤怒のルーンロード。Baphometに囚われリッチと化した太古の魔術師（round75）。"
+    },
+    {
+      "source": "Thassilon",
+      "target": "サシリオン",
+      "category": "Location",
+      "note": "一万年前に栄えたルーンロードたちの帝国（round75、Alderpashの回想）。"
+    },
+    {
+      "source": "Sorshen",
+      "target": "ソーシェン",
+      "category": "Character",
+      "note": "色欲のルーンロード。Alderpashとの因縁が語られる（round75）。"
+    },
+    {
+      "source": "Alaznist",
+      "target": "アラズニスト",
+      "category": "Character",
+      "note": "憤怒のルーンロード。かつてAlderpashの獄を訪れ髑髏を奪った（round75）。"
+    },
+    {
+      "source": "Runelord of Wrath",
+      "target": "憤怒のルーンロード",
+      "category": "Term",
+      "note": "AlderpashやAlaznistなど複数のルーンロードに使われる称号（round75）。"
+    },
+    {
+      "source": "Usher of the Apocalypse",
+      "target": "終末の先触れ",
+      "category": "Character",
+      "note": "デーモン卿デスカリの二つ名（round75、Iz決戦後の語り）。"
     }
   ]
 }

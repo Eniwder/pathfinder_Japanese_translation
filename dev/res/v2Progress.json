@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 21450,
-  "updatedAt": "2026-09-19T15:06:31.803Z",
+  "nextStart": 21750,
+  "updatedAt": "2026-09-20T03:07:35.461Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1382,6 +1382,23 @@
         "GalfreyOnTheEgde_Iz_c5_dialog"
       ],
       "note": "v2リライト第74弾（runRoundLoop.mjs による自動実行）。 151件すべて翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 151件（全entry）\n- **登場した会話**: Anemora_Dialogue（アネモラとの問答・戦闘）、AreeluIntro_c5_Iz_dialog（アレール登場シーン）、Banner_Iz_Dizlogue（勇気の剣をめぐる勝敗分岐）\n- **気づいた点**: A / 149件すべて訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 149件全て翻訳（null残しなし）\n- **会話**: `DeskariFight_Iz_c5_dialog`（デスカリとの対峙・戦闘）、`GalfreyAfter_Iz_c5_dialog`（戦後のガルフリーとの対話）、`GalfreyOnTheEgde_Iz_c5_dialo"
+    },
+    {
+      "start": 21450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round75/",
+      "coveredDialogs": [
+        "GalfreyOnTheEgde_Iz_c5_dialog",
+        "IrabethDies_Iz_c5_dialog",
+        "IrabethSurvives_Dialogue",
+        "Patrol_Chun_Dialogue",
+        "Iz_Patrol_Hulrun_Dialogue",
+        "Storyteller_Iz_c5_dialog",
+        "KTC_WintersunHelp_dialogue",
+        "Alderpash_dialogue"
+      ],
+      "note": "v2リライト第75弾（runRoundLoop.mjs による自動実行）。 chunk_0001.json の全88エントリを翻訳し、`chunk_0001.translations.json` に書き込みました（chunk_0001.json自体は未編集）。\n\n- 会話: `Alderpash_dialogue`（アイボリー・ラビリンス〜イネルクタブル・プリズンに幽閉されたリッチ、ルーンロード・アルダーパッシュとの対話）\n- 気づいた点: 話者プロファイルがchunkに"
     }
   ]
 }
