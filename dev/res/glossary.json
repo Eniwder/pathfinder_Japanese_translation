@@ -4267,6 +4267,24 @@
       "target": "事故の神",
       "category": "Character",
       "note": "ケイデン・カイレアンの自称の二つ名（SoldierParty_Sorry_dialogue、round86）。"
+    },
+    {
+      "source": "The Steward of the Skein",
+      "target": "糸の管理者",
+      "category": "Character",
+      "note": "ファラズマの使者を務める霊の二つ名（StewardOfTheSkein_dialogue、round87）。"
+    },
+    {
+      "source": "the Inheritor",
+      "target": "継承者",
+      "category": "Character",
+      "note": "アイオーメディの二つ名（Galfrey_Zombie_dialogue、round87）。"
+    },
+    {
+      "source": "Garundi",
+      "target": "ガルンディ人",
+      "category": "Term",
+      "note": "ガルンド大陸出身を指す民族形容詞（KTC_PriestWithWarning、round87）。"
     }
   ]
 }
