@@ -4019,6 +4019,30 @@
       "target": "グレイ・ガリソン",
       "category": "Location",
       "note": "アイオンの記憶に登場する陥落した砦（MirrorReveal_dialogue、round79）。"
+    },
+    {
+      "source": "Last-Verse-of-Spring-Song",
+      "target": "春の歌の最終節",
+      "category": "Character",
+      "note": "エラスタ双子（AzataLillendTwin2）の名（VendorTwins_azatac5_dialog、round80）。"
+    },
+    {
+      "source": "First-Verse-of-Summer-Song",
+      "target": "夏の歌の第一節",
+      "category": "Character",
+      "note": "エラスタ双子（AzataLillendTwin1）の名（VendorTwins_azatac5_dialog、round80）。"
+    },
+    {
+      "source": "Chuckling Twins",
+      "target": "くすくす笑いの双子",
+      "category": "Character",
+      "note": "上記2体の通称（VendorTwins_azatac5_dialog、round80）。"
+    },
+    {
+      "source": "Mirror of Joy",
+      "target": "喜びの鏡",
+      "category": "Item",
+      "note": "双子の一方が自分の鏡像と出会った鏡（VendorTwins_azatac5_dialog、round80）。"
     }
   ]
 }

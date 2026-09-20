@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 22950,
-  "updatedAt": "2026-09-20T07:58:26.910Z",
+  "nextStart": 23250,
+  "updatedAt": "2026-09-20T08:16:39.878Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1476,6 +1476,28 @@
         "LeapOfFaith_Mythangel_c5_GMBE"
       ],
       "note": "v2リライト第79弾（runRoundLoop.mjs による自動実行）。 189件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 件数: 189件（全entry対応、未訳なし）\n- 登場した会話: DevilsJudgement_dialogue（メフィストフェレスの審判）、DevilSnatch_bookevent、DevilsOffer_dialogue（メリエスの契約勧誘）、InevitableCompanion_di / 111件全て訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場した会話: TerendelevPresent_dialogue（テレンデレヴとの再会）、Angel_FarewellToMythic_GMBE（デーモン路線での天使たちとの決別）、IomedaeSecondVisit_MythAngel_c5_dialog（アイオーメディ二度目の来訪・エンジェ"
+    },
+    {
+      "start": 22950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round80/",
+      "coveredDialogs": [
+        "LeapOfFaith_Mythangel_c5_GMBE",
+        "TargonaFinal_MutasafenLab_dialog",
+        "TargonaIntro_MutasafenLab_dialog",
+        "WardensBefore_MythAngel_c5_dialog",
+        "AgainstMentor_azata_c5_dialog",
+        "ArankaExplains_azata_c5_dialog",
+        "ElysiumWelcome_azata_c5_dialog",
+        "FarewellToMythic_azata_c5_dialog",
+        "IslandTalk_azata_c5_dialog",
+        "VendorTwins_azatac5_dialog",
+        "Irmangaleth_Consp_dialogue",
+        "Tarshari_Consp_dialogue",
+        "Vellexia_Consp_dialogue"
+      ],
+      "note": "v2リライト第80弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の181件中180件を翻訳しました（chunk_0000.translations.jsonに出力、原文ファイルは未編集）。\n\n- 登場した会話: `LeapOfFaith_Mythangel_c5_GMBE`（ターゴナの投影通信）、`TargonaFinal_MutasafenLab_dialog`／`TargonaIntro_MutasafenLab_dialo / 119件すべて翻訳し、`chunk_0001.translations.json` に書き込みました。\n\n- **件数**: 119/119\n- **会話**: IslandTalk_azata_c5_dialog（アランカ/アイヴらとの島トーク）、VendorTwins_azatac5_dialog（春の歌・夏の歌の双子アザタ商人）、Irmangaleth_Consp_dialogue、Tars"
     }
   ]
 }
