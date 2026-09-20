@@ -210,6 +210,13 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   変更なし。glossary.jsonにMireya/Rokhorn/Willodus/Rotten Guttery/Den of Sweet Horror/
   Palace of Incest and Degeneracy/Mad Glowworm/Lantern Kingを追加。
 
+- 2026-09-20: round78 chunk_0000〜0001（Sarkorisのthe Mineshaft/Foreman_dialogue、
+  Seilkind_Cave_dialogue、DrezenDouble/DrezenLiar/DevilsJudgement_dialogue）のレビュー。
+  新規ルール化するほどの表記ゆれ・新規話者は検出されず、translationGuide.md/
+  v2CharacterNotes.mdの変更なし。glossary.jsonにForeman/Jarocen/Mineshaft Fourteen/
+  Sarkorians/Galfreyzu/Taker of Armies/Grand Duchy of Alkenstar/Zasvel/Morten/Pitax/
+  Neroysanを追加。
+
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
 `node toBatchData.js extract --filter=issues` で拾える control-tag 不整合は、実際には

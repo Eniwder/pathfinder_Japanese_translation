@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 22350,
-  "updatedAt": "2026-09-20T03:46:44.931Z",
+  "nextStart": 22650,
+  "updatedAt": "2026-09-20T04:06:34.577Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1431,6 +1431,26 @@
         "Foreman_dialogue"
       ],
       "note": "v2リライト第77弾（runRoundLoop.mjs による自動実行）。 197件全て翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 197/197件（未訳スキップなし）\n- **会話(dialog)**: `Herald_IvoryLabyrinth_dialog`（継承者の手ルート）、`Prison_Baph_dialogue`（バフォメット鏡像との対話）、`Prison_HepzamirahGhost / 103件すべて翻訳しました。登場した会話は `Prison_Vrock_dialogue`（ヴォリメラーク/ヴロック戦）、`Svendack_PrisonBoss_dialogue`・`Svendack_Welcome_dialogue`（ドロウ司祭スヴェンダック）、`Foreman_dialogue`（現場監督）の4つです。ヴォリメラークは自分を三人称「ヴロック」と呼ぶ片言口調を一貫させ、`{m"
+    },
+    {
+      "start": 22350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round78/",
+      "coveredDialogs": [
+        "Foreman_dialogue",
+        "LiLura_Bye_dialogue",
+        "LiLura_Shrine_dialogue",
+        "Seilkind_Cave_dialogue",
+        "DrezenBribe_dialogue",
+        "DrezenDouble_dialogue",
+        "DrezenLiar_dialogue",
+        "DrezenLooter_dialogue",
+        "DrezenOath_dialogue",
+        "DrezenThief_dialogue",
+        "DevilsJudgement_dialogue"
+      ],
+      "note": "v2リライト第78弾（runRoundLoop.mjs による自動実行）。 199件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- **件数**: 199件（全entry、null残しなし）\n- **登場した会話**: Foreman_dialogue（サーコリア人避難所のフォアマン/セイルカインド）、LiLura_Bye_dialogue・LiLura_Shrine_dialogue（インダラー戦術談義）、Seilkind / 101件全て翻訳し、`chunk_0001.translations.json` に書き込みました。\n\n- 件数: 101件（全entry訳出、null残しなし）\n- 登場した会話: `DrezenLiar_dialogue`／`DrezenLooter_dialogue`／`DrezenOath_dialogue`／`DrezenThief_dialogue`（Aeon路線でPlayerが兵士の"
     }
   ]
 }

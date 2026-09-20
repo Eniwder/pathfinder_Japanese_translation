@@ -3899,6 +3899,72 @@
       "target": "三柱の聖堂",
       "category": "Location",
       "note": "Foreman_dialogueで言及される地名（round77）。"
+    },
+    {
+      "source": "Foreman",
+      "target": "フォアマン",
+      "category": "Character",
+      "note": "the Mineshaftの最年長者を代々指す称号兼あだ名。本名はJarocen（round78）。"
+    },
+    {
+      "source": "Jarocen",
+      "target": "ヤロツェン",
+      "category": "Character",
+      "note": "Foremanの本名（round78）。"
+    },
+    {
+      "source": "Mineshaft Fourteen",
+      "target": "第十四坑道",
+      "category": "Location",
+      "note": "デーモンから逃れた人々が代々暮らす旧鉱山（round78）。"
+    },
+    {
+      "source": "Sarkorians",
+      "target": "サーコリア人",
+      "category": "Term",
+      "note": "Sarkoris出身者を指す民族名（round78）。"
+    },
+    {
+      "source": "Galfreyzu",
+      "target": "ガルフレイズ",
+      "category": "Character",
+      "note": "陥落後のSarkorisを支配するデーモン公（round78）。"
+    },
+    {
+      "source": "Taker of Armies",
+      "target": "軍団の簒奪者",
+      "category": "Term",
+      "note": "Galfreyzuの二つ名（round78）。"
+    },
+    {
+      "source": "Grand Duchy of Alkenstar",
+      "target": "アルケンスター大公国",
+      "category": "Location",
+      "note": "火器を発明した国として言及される（round78）。"
+    },
+    {
+      "source": "Zasvel",
+      "target": "ザスヴェル",
+      "category": "Location",
+      "note": "デーモンに焼き払われた鉱山町（round78）。"
+    },
+    {
+      "source": "Morten",
+      "target": "モーテン",
+      "category": "Character",
+      "note": "DrezenDouble/DrezenLiar_dialogueで裁かれる兵士（round78）。"
+    },
+    {
+      "source": "Pitax",
+      "target": "ピタクス",
+      "category": "Location",
+      "note": "DrezenLiar_dialogueで言及される地名（round78）。"
+    },
+    {
+      "source": "Neroysan",
+      "target": "ネロシャン",
+      "category": "Location",
+      "note": "裁判のため送られる都市。原文に`Nerosyan`表記揺れがあるが訳語は統一（round78）。"
     }
   ]
 }
