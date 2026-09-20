@@ -4105,6 +4105,42 @@
       "target": "イグニティエル",
       "category": "Character",
       "note": "イオメダエに仕える天使（DevilishTemptation_Angels_dialogue、round82）。"
+    },
+    {
+      "source": "Egorian",
+      "target": "エゴリアン",
+      "category": "Place",
+      "note": "チェリアクスの首都（KindAbrogail_dialogue / MegidiahCompanion_dialogue、round83）。"
+    },
+    {
+      "source": "Empire of Taldor",
+      "target": "タルドール帝国",
+      "category": "Place",
+      "note": "チェリアクスの母体となった帝国（MegidiahCompanion_dialogue、round83）。"
+    },
+    {
+      "source": "House Thrune",
+      "target": "スルーン家",
+      "category": "Faction",
+      "note": "チェリアクスの王家（MegidiahCompanion_dialogue、round83）。"
+    },
+    {
+      "source": "Her Majestrix",
+      "target": "女帝陛下",
+      "category": "Title",
+      "note": "アブロガイル（チェリアクス女王）に対する敬称。Her Majesty（ガルフリー）と訳し分ける（KindAbrogail_dialogue / MegidiahCompanion_dialogue、round83）。"
+    },
+    {
+      "source": "Deimavigga",
+      "target": "デイマヴィガ",
+      "category": "Creature",
+      "note": "メフィストフェレスに雇われた悪魔の一種族（DevilishTemptation_SoulsCrusaders_dialogue、round83）。"
+    },
+    {
+      "source": "Gorgorad",
+      "target": "ゴルゴラド",
+      "category": "Character",
+      "note": "デイマヴィガの個体名。ソウルズクルセイダーズ計画の実行役（DevilishTemptation_SoulsCrusaders_dialogue、round83）。"
     }
   ]
 }

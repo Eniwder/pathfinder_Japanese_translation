@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 23850,
-  "updatedAt": "2026-09-20T08:47:50.727Z",
+  "nextStart": 24150,
+  "updatedAt": "2026-09-20T09:05:18.804Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1545,6 +1545,27 @@
         "DevilishTemptation_KTC_MephistoOffer_dialogue"
       ],
       "note": "v2リライト第82弾（runRoundLoop.mjs による自動実行）。 193件全て翻訳しました。登場会話は Shamira の裏切り劇（Shamira_BetrayNocticula/IMadeMyDecision/YouAreNext）、UltimateWin、Abrogail/Cheliax関連（AbrogailVisit/CheliaxComing/DevilCongratulations）、DevilishTemptation系（AfterRaid/Ange / 107件すべて翻訳し、chunk_0001.translations.json に書き込みました。\n\n- **登場会話**: DevilishTemptation_GalfreyAfterSex_dialogue／GalfreyIsReady_dialogue／GalfreyRaid_dialogue／KTC_MephistoOffer_dialogue（ガルフリー女王のデビル堕落ルート一式）\n-"
+    },
+    {
+      "start": 23850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round83/",
+      "coveredDialogs": [
+        "DevilishTemptation_KTC_MephistoOffer_dialogue",
+        "DevilishTemptation_Linkers_dialogue",
+        "DevilishTemptation_SoulsCrusaders_dialogue",
+        "DevilishTemptation_Turmoil_dialogue",
+        "EvilAbrogail_dialogue",
+        "KindAbrogail_dialogue",
+        "MegidiahCompanion_dialogue",
+        "MegidiahKTC1_dialogue",
+        "MegidiahKTC2_dialogue",
+        "MegidiahKTC3_dialogue",
+        "MegidiahKTC4_dialogue",
+        "MegidiahKTC5_dialogue"
+      ],
+      "note": "v2リライト第83弾（runRoundLoop.mjs による自動実行）。 173件すべて翻訳し、chunk_0000.translations.json に書き込みました。\n\n- **件数**: 173/173（未訳なし）\n- **登場dialog**: DevilishTemptation_KTC_MephistoOffer_dialogue / DevilishTemptation_Linkers_dialogue / DevilishTemptation_Soul / 127件全て翻訳しました。登場会話は `KindAbrogail_dialogue`（アブロガイル女王＋メフィストフェレスによるサーコリス総督就任の勧誘交渉）、`MegidiahCompanion_dialogue`（メギディア個人との対話）、`MegidiahKTC1〜5_dialogue`（チェリアクスとの協力イベント選択肢群）です。\n\n気づいた点: Abrogailの一人称は原文の roya"
     }
   ]
 }
