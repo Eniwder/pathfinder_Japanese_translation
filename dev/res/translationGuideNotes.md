@@ -44,6 +44,9 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 
 ## 更新履歴（要点のみ）
 
+- 2026-09-20: round77のchunkで"What is this place?"/"What are you doing here?"が
+  話者違いで訳し分けられていた（機械検出の表記ゆれ候補）のを見て、既存の統一ルールが
+  地の台詞には及ばない旨をtranslationGuide.mdに明記。
 - 2026-09-20: round76のchunk（"Where should I look for it?"の訳が全角？と半角?で表記ゆれ
   していた）を見て、疑問符・感嘆符を全角に統一するルールをtranslationGuide.mdに追記。
 - 2026-09-18: round50のchunk（観客が"Me-phit Sla-yer!"と音節を区切って叫ぶ場面）で

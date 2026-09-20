@@ -3875,6 +3875,30 @@
       "target": "アースフォール",
       "category": "Term",
       "note": "巨大隕石落下による大災厄。ゴラリオン史の転換点（round76）。"
+    },
+    {
+      "source": "Svendack",
+      "target": "スヴェンダック",
+      "category": "Character",
+      "note": "Ineluctable Prisonの新任の看守長（マリリス）。Aponaviciusの後任（round77）。"
+    },
+    {
+      "source": "Archpriestess",
+      "target": "大司祭",
+      "category": "Term",
+      "note": "バフォメット配下で最高位の女性聖職者を指す称号（round77）。"
+    },
+    {
+      "source": "Abadius",
+      "target": "アバディウス",
+      "category": "Term",
+      "note": "アブサロム暦の最初の月の名（round77、比喩的な言い回しで言及）。"
+    },
+    {
+      "source": "Shrine of the Three",
+      "target": "三柱の聖堂",
+      "category": "Location",
+      "note": "Foreman_dialogueで言及される地名（round77）。"
     }
   ]
 }

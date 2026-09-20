@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 22050,
-  "updatedAt": "2026-09-20T03:28:42.353Z",
+  "nextStart": 22350,
+  "updatedAt": "2026-09-20T03:46:44.931Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1415,6 +1415,22 @@
         "GroaningGate_dialogue"
       ],
       "note": "v2リライト第76弾（runRoundLoop.mjs による自動実行）。 161件全て訳しました（未訳なし）。会話は Alderpash_dialogue（バフォメットの獄に囚われたリッチのルーンロード、アルダーパッシュとの対話）、Aponavicius_PrisonBoss_dialogue、Aponavicius_Welcome_dialogue（獄吏マリリス・アポナヴィキウス戦）、AzataDestroy_dialogue（イネルクタブル・プリズン破壊）の4本。ア / 139件全て訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 件数: 139/139（全entry訳出）\n- 登場した会話: `Cessily_dialogue`（セシリーの亡霊とケストグリルの悲恋譚）、`DeadHeartOfHerald_dialogue`（継承者の手の心臓）、`GroaningGate_dialogue`（うめく門の攻略分岐）\n- 気づい"
+    },
+    {
+      "start": 22050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round77/",
+      "coveredDialogs": [
+        "Herald_IvoryLabyrinth_dialog",
+        "Prison_Baph_dialogue",
+        "Prison_HepzamirahGhost_dialogue",
+        "Prison_Vrock_dialogue",
+        "Svendack_PrisonBoss_dialogue",
+        "Svendack_Welcome_dialogue",
+        "Foreman_dialogue"
+      ],
+      "note": "v2リライト第77弾（runRoundLoop.mjs による自動実行）。 197件全て翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 197/197件（未訳スキップなし）\n- **会話(dialog)**: `Herald_IvoryLabyrinth_dialog`（継承者の手ルート）、`Prison_Baph_dialogue`（バフォメット鏡像との対話）、`Prison_HepzamirahGhost / 103件すべて翻訳しました。登場した会話は `Prison_Vrock_dialogue`（ヴォリメラーク/ヴロック戦）、`Svendack_PrisonBoss_dialogue`・`Svendack_Welcome_dialogue`（ドロウ司祭スヴェンダック）、`Foreman_dialogue`（現場監督）の4つです。ヴォリメラークは自分を三人称「ヴロック」と呼ぶ片言口調を一貫させ、`{m"
     }
   ]
 }
