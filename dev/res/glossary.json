@@ -4063,6 +4063,48 @@
       "target": "喜びの鏡",
       "category": "Item",
       "note": "双子の一方が自分の鏡像と出会った鏡（VendorTwins_azatac5_dialog、round80）。"
+    },
+    {
+      "source": "General Megidiah Vallys",
+      "target": "メギディア・ヴァリス将軍",
+      "category": "Character",
+      "note": "アブロガイルに仕えるケリアックスの将軍（AbrogailVisit_dialogue、round82）。"
+    },
+    {
+      "source": "Lord of the Pit",
+      "target": "奈落の王",
+      "category": "Character",
+      "note": "アスモデウスの異名（DevilishTemptation_KTC_MephistoOffer_dialogue、round82）。"
+    },
+    {
+      "source": "Her Infernal Majestrix Abrogail Thrune",
+      "target": "地獄の女帝陛下アブロガイル・スルーン",
+      "category": "Character",
+      "note": "ケリアックス女王アブロガイル・スルーンの正式称号（AbrogailVisit_dialogue、round82）。"
+    },
+    {
+      "source": "Thrice-Damned House of Thrune",
+      "target": "三重に呪われしスルーン家",
+      "category": "Character",
+      "note": "ケリアックスを統べるスルーン家の異名（AbrogailVisit_dialogue、round82）。"
+    },
+    {
+      "source": "Centurion of the Sun",
+      "target": "太陽の百人隊長",
+      "category": "Character",
+      "note": "天使イグニティエルの二つ名（DevilishTemptation_Angels_dialogue、round82）。"
+    },
+    {
+      "source": "Lord of the Eighth",
+      "target": "第八圏の支配者",
+      "category": "Character",
+      "note": "メフィストフェレス（地獄八層カニアの主）の異名（DevilishTemptation_KTC_MephistoOffer_dialogue、round82）。"
+    },
+    {
+      "source": "Ignitiel",
+      "target": "イグニティエル",
+      "category": "Character",
+      "note": "イオメダエに仕える天使（DevilishTemptation_Angels_dialogue、round82）。"
     }
   ]
 }

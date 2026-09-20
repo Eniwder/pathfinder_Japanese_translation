@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 23550,
-  "updatedAt": "2026-09-20T08:33:42.304Z",
+  "nextStart": 23850,
+  "updatedAt": "2026-09-20T08:47:50.727Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1522,6 +1522,29 @@
         "Shamira_BetrayNocticula_dialogue"
       ],
       "note": "v2リライト第81弾（runRoundLoop.mjs による自動実行）。 190件全て訳しchunk_0000.translations.jsonに書き込みました。登場した会話はVellexia/Yozz/Zeklex/Ziforian/Tarshariの陰謀話（Consp）と各キャラのHailNewLord（新君主への謁見）、およびKTC_YozzSoDiappointed（プレイヤーがデーモン路線を拒んだ場合のヨズの絶縁シーン）です。「my {mf|lord|lad / 110件全て翻訳し `chunk_0001.translations.json` に書き込みました。登場した会話は `KTC_Yozz_ComeWithMe`（ヨズが主人公をシャミラのもとへ誘う）、`Nocticula_WeHaveBetrayal_dialogue`（シャミラ一派の反乱をノクティキュラが看破）、`Nocticula_YouAreMyBestServant_dialogue`（反乱"
+    },
+    {
+      "start": 23550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round82/",
+      "coveredDialogs": [
+        "Shamira_BetrayNocticula_dialogue",
+        "Shamira_IMadeMyDecision_dialogue",
+        "Shamira_YouAreNext_dialogue",
+        "UltimateWin_dialogue",
+        "AbrogailVisit_dialogue",
+        "CheliaxComing_dialogue",
+        "DevilCongratulations_dialogue",
+        "DevilishTemptation_AfterRaid_dialogue",
+        "DevilishTemptation_Angels_dialogue",
+        "DevilishTemptation_Congratulations_dialogue",
+        "DevilishTemptation_GalfreyAfterSex_dialogue",
+        "DevilishTemptation_GalfreyIsReady_dialogue",
+        "DevilishTemptation_GalfreyRaid_dialogue",
+        "DevilishTemptation_KTC_MephistoOffer_dialogue"
+      ],
+      "note": "v2リライト第82弾（runRoundLoop.mjs による自動実行）。 193件全て翻訳しました。登場会話は Shamira の裏切り劇（Shamira_BetrayNocticula/IMadeMyDecision/YouAreNext）、UltimateWin、Abrogail/Cheliax関連（AbrogailVisit/CheliaxComing/DevilCongratulations）、DevilishTemptation系（AfterRaid/Ange / 107件すべて翻訳し、chunk_0001.translations.json に書き込みました。\n\n- **登場会話**: DevilishTemptation_GalfreyAfterSex_dialogue／GalfreyIsReady_dialogue／GalfreyRaid_dialogue／KTC_MephistoOffer_dialogue（ガルフリー女王のデビル堕落ルート一式）\n-"
     }
   ]
 }
