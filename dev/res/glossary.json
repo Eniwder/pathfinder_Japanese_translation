@@ -3809,6 +3809,72 @@
       "target": "終末の先触れ",
       "category": "Character",
       "note": "デーモン卿デスカリの二つ名（round75、Iz決戦後の語り）。"
+    },
+    {
+      "source": "Prince of Darkness",
+      "target": "闇の王",
+      "category": "Term",
+      "note": "アスモデウスの二つ名（round76、Alderpashの台詞）。"
+    },
+    {
+      "source": "Abyssal",
+      "target": "アビスの",
+      "category": "Term",
+      "note": "「Abyss」の形容詞形。「Abyssal armies」は「アビス軍勢」など（round76）。"
+    },
+    {
+      "source": "Ivory Hunter",
+      "target": "象牙の狩人",
+      "category": "Term",
+      "note": "バフォメットの寵愛を受けたリンノルム使いの称号（round76、Aponavicius関連）。"
+    },
+    {
+      "source": "Jandelay",
+      "target": "ジャンデレイ",
+      "category": "Place",
+      "note": "死んだ星々の墓場とされる異界。Alderpashが言及（round76）。"
+    },
+    {
+      "source": "Osirian",
+      "target": "オシリアン語",
+      "category": "Term",
+      "note": "オシリオン由来の古い暗号文字。Alderpashが言及（round76）。"
+    },
+    {
+      "source": "Azlanti",
+      "target": "アズランティ",
+      "category": "Term",
+      "note": "失われた大陸アズラントに由来する人々・血統を指す形容詞（round76）。"
+    },
+    {
+      "source": "Dimensional Lock",
+      "target": "ディメンジョナル・ロック",
+      "category": "Term",
+      "note": "空間移動系の魔法を封じる呪文名。バフォメットが獄に施した（round76）。"
+    },
+    {
+      "source": "Wadjet",
+      "target": "ワジェト",
+      "category": "Character",
+      "note": "遠方に座す女神。Alderpashが古い巻物の魔法に関連して言及（round76）。"
+    },
+    {
+      "source": "Inger-Maggor",
+      "target": "インガー=マゴール",
+      "category": "Character",
+      "note": "象牙の狩人の称号を得たバフォメットの手下。門の鍵を持っていた（round76）。"
+    },
+    {
+      "source": "Dawnflower",
+      "target": "暁の花",
+      "category": "Character",
+      "note": "サレンレイの二つ名（round76、Cessilyの台詞）。"
+    },
+    {
+      "source": "Earthfall",
+      "target": "アースフォール",
+      "category": "Term",
+      "note": "巨大隕石落下による大災厄。ゴラリオン史の転換点（round76）。"
     }
   ]
 }
