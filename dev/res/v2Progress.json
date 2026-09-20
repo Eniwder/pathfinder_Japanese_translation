@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 23250,
-  "updatedAt": "2026-09-20T08:16:39.878Z",
+  "nextStart": 23550,
+  "updatedAt": "2026-09-20T08:33:42.304Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1498,6 +1498,30 @@
         "Vellexia_Consp_dialogue"
       ],
       "note": "v2リライト第80弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の181件中180件を翻訳しました（chunk_0000.translations.jsonに出力、原文ファイルは未編集）。\n\n- 登場した会話: `LeapOfFaith_Mythangel_c5_GMBE`（ターゴナの投影通信）、`TargonaFinal_MutasafenLab_dialog`／`TargonaIntro_MutasafenLab_dialo / 119件すべて翻訳し、`chunk_0001.translations.json` に書き込みました。\n\n- **件数**: 119/119\n- **会話**: IslandTalk_azata_c5_dialog（アランカ/アイヴらとの島トーク）、VendorTwins_azatac5_dialog（春の歌・夏の歌の双子アザタ商人）、Irmangaleth_Consp_dialogue、Tars"
+    },
+    {
+      "start": 23250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round81/",
+      "coveredDialogs": [
+        "Vellexia_Consp_dialogue",
+        "Yozz_Consp_dialogue",
+        "Zeklex_Consp_dialogue",
+        "Ziforian_Consp_dialogue",
+        "Irmangaleth_HailNewLord",
+        "Tarshari_Drezen_dialogue",
+        "Vellexia_HailNewLord_dialogue",
+        "Yozz_HailNewLord_dialogue",
+        "Zeklex_HailNewLord_dialogue",
+        "Ziforian_HailNewLord_dialogue",
+        "KTC_YozzSoDiappointed",
+        "KTC_Yozz_ComeWithMe",
+        "Nocticula_WeHaveBetrayal_dialogue",
+        "Nocticula_YouAreMyBestServant_dialogue",
+        "Shamira_BetrayNocticula_dialogue"
+      ],
+      "note": "v2リライト第81弾（runRoundLoop.mjs による自動実行）。 190件全て訳しchunk_0000.translations.jsonに書き込みました。登場した会話はVellexia/Yozz/Zeklex/Ziforian/Tarshariの陰謀話（Consp）と各キャラのHailNewLord（新君主への謁見）、およびKTC_YozzSoDiappointed（プレイヤーがデーモン路線を拒んだ場合のヨズの絶縁シーン）です。「my {mf|lord|lad / 110件全て翻訳し `chunk_0001.translations.json` に書き込みました。登場した会話は `KTC_Yozz_ComeWithMe`（ヨズが主人公をシャミラのもとへ誘う）、`Nocticula_WeHaveBetrayal_dialogue`（シャミラ一派の反乱をノクティキュラが看破）、`Nocticula_YouAreMyBestServant_dialogue`（反乱"
     }
   ]
 }

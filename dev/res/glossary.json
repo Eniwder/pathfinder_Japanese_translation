@@ -352,6 +352,16 @@
       "note": "Demon Lord of darkness and lust."
     },
     {
+      "source": "Lady in Shadow",
+      "target": "影の貴婦人",
+      "note": "Epithet for Nocticula, often used as 'The Lady in Shadow'."
+    },
+    {
+      "source": "Lord of Locusts",
+      "target": "蝗の王",
+      "note": "Epithet for Deskari."
+    },
+    {
       "source": "Orcus",
       "target": "オルクス",
       "note": "Demon Lord of undead and necromancy."
@@ -815,6 +825,11 @@
       "note": "The lawful neutral outer plane, home to aeons."
     },
     {
+      "source": "Nirvana",
+      "target": "ニルヴァーナ",
+      "note": "The neutral good outer plane, home to agathions."
+    },
+    {
       "source": "Material Plane",
       "target": "物質界",
       "note": "The mortal realm (Golarion)."
@@ -828,6 +843,11 @@
       "source": "Midnight Isles",
       "target": "ミッドナイト諸島",
       "note": "Abyssal realm ruled by Nocticula."
+    },
+    {
+      "source": "Bloody Cauldron Week",
+      "target": "血の大釜週間",
+      "note": "A recurring event/holiday in the arena of the Midnight Isles."
     },
     {
       "source": "Nahyndrian Crystal",
