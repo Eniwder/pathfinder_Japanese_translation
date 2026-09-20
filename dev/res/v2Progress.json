@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 22650,
-  "updatedAt": "2026-09-20T04:06:34.577Z",
+  "nextStart": 22950,
+  "updatedAt": "2026-09-20T07:58:26.910Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1451,6 +1451,31 @@
         "DevilsJudgement_dialogue"
       ],
       "note": "v2リライト第78弾（runRoundLoop.mjs による自動実行）。 199件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- **件数**: 199件（全entry、null残しなし）\n- **登場した会話**: Foreman_dialogue（サーコリア人避難所のフォアマン/セイルカインド）、LiLura_Bye_dialogue・LiLura_Shrine_dialogue（インダラー戦術談義）、Seilkind / 101件全て翻訳し、`chunk_0001.translations.json` に書き込みました。\n\n- 件数: 101件（全entry訳出、null残しなし）\n- 登場した会話: `DrezenLiar_dialogue`／`DrezenLooter_dialogue`／`DrezenOath_dialogue`／`DrezenThief_dialogue`（Aeon路線でPlayerが兵士の"
+    },
+    {
+      "start": 22650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-20_round79/",
+      "coveredDialogs": [
+        "DevilsJudgement_dialogue",
+        "DevilSnatch_bookevent",
+        "DevilsOffer_dialogue",
+        "InevitableCompanion_dialogue",
+        "Inevitable_KTC_dialogue",
+        "KenabresFlashback_dialogue",
+        "KenabresMarevo_dialogue",
+        "MirrorAgain_dialogue",
+        "MirrorReveal_dialogue",
+        "StauntonAtIz_dialogue",
+        "TerendelevCompanion_diaogue",
+        "TerendelevPast_dialogue",
+        "TerendelevPresent_dialogue",
+        "Angel_FarewellToMythic_GMBE",
+        "IomedaeSecondVisit_MythAngel_c5_dialog",
+        "LeapOfFaith_Mythangel_c5_GMBE"
+      ],
+      "note": "v2リライト第79弾（runRoundLoop.mjs による自動実行）。 189件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 件数: 189件（全entry対応、未訳なし）\n- 登場した会話: DevilsJudgement_dialogue（メフィストフェレスの審判）、DevilSnatch_bookevent、DevilsOffer_dialogue（メリエスの契約勧誘）、InevitableCompanion_di / 111件全て訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場した会話: TerendelevPresent_dialogue（テレンデレヴとの再会）、Angel_FarewellToMythic_GMBE（デーモン路線での天使たちとの決別）、IomedaeSecondVisit_MythAngel_c5_dialog（アイオーメディ二度目の来訪・エンジェ"
     }
   ]
 }

@@ -3965,6 +3965,60 @@
       "target": "ネロシャン",
       "category": "Location",
       "note": "裁判のため送られる都市。原文に`Nerosyan`表記揺れがあるが訳語は統一（round78）。"
+    },
+    {
+      "source": "Godmind",
+      "target": "ゴッドマインド",
+      "category": "Lore",
+      "note": "アクシスを統治するアクシオマイトの超越評議体（InevitableCompanion_dialogue、round79）。"
+    },
+    {
+      "source": "Khovereth",
+      "target": "コヴェレス",
+      "category": "Character",
+      "note": "ゴッドマインドの命で送られたインエビタブル（InevitableCompanion_dialogue、round79）。"
+    },
+    {
+      "source": "Imezlen",
+      "target": "イメズレン",
+      "category": "Character",
+      "note": "アリーリュ・ヴォーレッシュに捕らえられたインエビタブル（InevitableCompanion_dialogue、round79）。"
+    },
+    {
+      "source": "Aktun",
+      "target": "アクトゥン",
+      "category": "Location",
+      "note": "アクシスの首都、アバダーの神域に位置する（InevitableCompanion_dialogue、round79）。"
+    },
+    {
+      "source": "Adamantine Crucible",
+      "target": "アダマンティンの坩堝",
+      "category": "Location",
+      "note": "インエビタブルが鍛造される場所（InevitableCompanion_dialogue、round79）。"
+    },
+    {
+      "source": "Bastion of Justice",
+      "target": "正義の要塞",
+      "category": "Location",
+      "note": "ケナブレス近郊の廃墟、メリエスとの密会場所（DevilsOffer_dialogue、round79）。"
+    },
+    {
+      "source": "Bretheda",
+      "target": "ブレセダ",
+      "category": "Location",
+      "note": "「月の揺り籠」と称される天体（MirrorReveal_dialogue、round79）。"
+    },
+    {
+      "source": "Liavara",
+      "target": "リアヴァラ",
+      "category": "Location",
+      "note": "ブレセダの環に囚われた炎の天体（MirrorReveal_dialogue、round79）。"
+    },
+    {
+      "source": "Grey Garrison",
+      "target": "グレイ・ガリソン",
+      "category": "Location",
+      "note": "アイオンの記憶に登場する陥落した砦（MirrorReveal_dialogue、round79）。"
     }
   ]
 }
