@@ -4285,6 +4285,18 @@
       "target": "ガルンディ人",
       "category": "Term",
       "note": "ガルンド大陸出身を指す民族形容詞（KTC_PriestWithWarning、round87）。"
+    },
+    {
+      "source": "Izyagna",
+      "target": "イジャグナ",
+      "category": "Character",
+      "note": "デスカリの軍勢に連なる存在。倒したエコーがその知識を宿していた（RaspenRifts_Echo_End_Dialogue、round88）。"
+    },
+    {
+      "source": "Iz",
+      "target": "イズ",
+      "category": "Location",
+      "note": "「蝗の都」と呼ばれる聖地（KTC_LocustC5_CultistsArrive_Dialogue、round88）。"
     }
   ]
 }

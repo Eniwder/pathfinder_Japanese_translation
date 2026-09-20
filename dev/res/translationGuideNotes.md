@@ -221,6 +221,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   Sarkorians/Galfreyzu/Taker of Armies/Grand Duchy of Alkenstar/Zasvel/Morten/Pitax/
   Neroysanを追加。
 
+- 2026-09-21: round88 chunk_0000〜0001（LocustC5系/RaspenRifts_Echo_End_Dialogue/
+  TheDarkestRitual_dialogue/Zacharius_FinalBetrayal_dialogue）のレビュー。"Who are you?"
+  "What do you want?" 等の定型セリフの訳し分けは話者・文脈違いによるもので既存ルール
+  （地の台詞は文脈次第で訳し分けてよい）の範囲内と判断し、新規ルール追記は見送り。
+  新規話者は検出されずv2CharacterNotes.mdの変更なし。glossary.jsonにIzyagna/Izを追加。
+
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
 `node toBatchData.js extract --filter=issues` で拾える control-tag 不整合は、実際には

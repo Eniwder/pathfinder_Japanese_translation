@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 25350,
-  "updatedAt": "2026-09-20T14:06:39.052Z",
+  "nextStart": 25650,
+  "updatedAt": "2026-09-20T18:00:19.453Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1645,6 +1645,27 @@
         "TheDarkestRitual_dialogue"
       ],
       "note": "v2リライト第87弾（runRoundLoop.mjs による自動実行）。 186件全て翻訳し、chunk_0000.translations.jsonに書き出しました。登場した会話は BeatedCounselor_dialogue／BecomeLich_AfterBattle_dialogue／DeadTerendelev_lich_dialogue／Galfrey_Zombie_dialogue／HepzamirahGhost_dialogue／KTC_Pharas / 114件すべて訳出し、chunk_0001.translations.json に書き込みました。\n\n- 会話: `KTC_PriestWithWarning`（ファラズマの警告司祭）、`KTC_Zacharius_CallToZiggurat`／`NoMoreLich_dialogue`／`TheDarkestRitual_dialogue`（ザカリウス関連）、`SkullPillarAbour"
+    },
+    {
+      "start": 25350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round88/",
+      "coveredDialogs": [
+        "TheDarkestRitual_dialogue",
+        "Zacharius_FinalBetrayal_dialogue",
+        "BookEvent_DreamDeskari",
+        "LocustC5_Companions_Reckoning_Dialogue",
+        "LocustC5_Cultist_Eatme_Dialogue",
+        "KTC_LocustC5_CultistsArrive_Dialogue",
+        "LocustC5_MeetAnemora_Dialogue",
+        "LocustC5_Queen_Find_Dialogue",
+        "LocustC5_Queen_Kill_Dialogue",
+        "RaspenRifts_Echo_End_Dialogue",
+        "RaspenRifts_Echo_Start_Dialogue",
+        "RaspenRifts_Izyagna_Dialogue"
+      ],
+      "note": "v2リライト第88弾（runRoundLoop.mjs による自動実行）。 199件すべて翻訳し `chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 199/199（未訳なし）\n- **登場会話(dialog)**: `TheDarkestRitual_dialogue`（ザカリウスのリッチ化儀式）、`Zacharius_FinalBetrayal_dialogue`（儀式後の裏切り）、`BookEvent_DreamD / 101件全て翻訳し chunk_0001.translations.json に出力しました。登場した会話は LocustC5_MeetAnemora_Dialogue / LocustC5_Queen_Find_Dialogue / LocustC5_Queen_Kill_Dialogue / RaspenRifts_Echo_End_Dialogue / RaspenRifts_Echo_St"
     }
   ]
 }
