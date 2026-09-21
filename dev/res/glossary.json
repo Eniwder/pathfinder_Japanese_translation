@@ -4414,6 +4414,48 @@
       "target": "『ナショナル・アルケミー』",
       "category": "Work",
       "note": "ジュビロストが寄稿する架空の学術誌名（RenownExplorer_dialog、round91）。"
+    },
+    {
+      "source": "Verbovezzor",
+      "target": "ヴェルボヴェゾール",
+      "category": "Creature",
+      "note": "召喚される悪魔の名（VerbovezzorGMBE_bookevent、round92）。"
+    },
+    {
+      "source": "Domora",
+      "target": "ドモラ",
+      "category": "Location",
+      "note": "「偉大な家畜の群れの都市」。Verbovezzorに滅ぼされた都市（VerbovezzorGMBE_bookevent、round92）。"
+    },
+    {
+      "source": "Makia",
+      "target": "マキア",
+      "category": "Character",
+      "note": "劇中でハーフオークの女優が演じる役名（TheatrePlay_c5_dialog、round92）。"
+    },
+    {
+      "source": "Pretzel",
+      "target": "プレッツェル",
+      "category": "Creature",
+      "note": "劇に使われるポニーの名前（TheatrePlay_c5_dialog、round92）。"
+    },
+    {
+      "source": "Leelly",
+      "target": "リーリー",
+      "category": "Character",
+      "note": "劇に出演するダンサーの名前（TheatrePlay_c5_dialog、round92）。"
+    },
+    {
+      "source": "Rubbledum",
+      "target": "ラブルダム",
+      "category": "Character",
+      "note": "双子のノームの兄弟の一人。Harifantの肩の上に乗って演じる（TheatrePlay_c5_dialog、round92）。"
+    },
+    {
+      "source": "Harifant",
+      "target": "ハリファント",
+      "category": "Character",
+      "note": "双子のノームの兄弟の一人（愛称Hari）。Rubbledumと組んで演じる（TheatrePlay_c5_dialog、round92）。"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 26550,
-  "updatedAt": "2026-09-21T00:39:30.233Z",
+  "nextStart": 26850,
+  "updatedAt": "2026-09-21T00:59:03.987Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1724,6 +1724,21 @@
         "SinisterVillage_Hags_Dialogue"
       ],
       "note": "v2リライト第91弾（runRoundLoop.mjs による自動実行）。 63件全て訳し、chunk_0000.translations.jsonに書き込みました。登場会話は「PuluraLeaderSaved_c5_dialog」(カタイル/エリアンドラ司祭たちとの別れ)と「RamienPulura_dialogue」(ラミエンとの再会)。気づいた点：Katair/EliandraやRamienなど speaker欄がないentryが多く、文脈から人物を推測して訳しま / 179件すべて翻訳し、chunk_0001.translations.jsonに書き込み完了。登場会話はRenownExplorer_dialog（探検家ジュビロスト・ナースロップルとの出会い、ネニオとの蒸留論争、レギル/グレイボー/デランとの絡み）、Bride_Dialogue、Groom_Dialogue（サーコリスの死霊の花嫁エンネリと花婿セルデンの復讐譚）の3本。\n\n気づいた点：Sarco / 58件すべて翻訳し、`chunk_0002.translations.json` を新規作成しました。\n\n- 登場会話：`BookEvent_Boat`（舟で島へ渡る選択肢イベント、霧・嵐・氷の魔法描写）、`SinisterVillage_Hags_Dialogue`（三姉妹の魔女とマルキル/マレッサ兄妹の対峙シーン）\n- 気づいた点：`c178300b`（speaker: Hag_Loreda）"
+    },
+    {
+      "start": 26550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round92/",
+      "coveredDialogs": [
+        "SinisterVillage_Hags_Dialogue",
+        "Jernaugh_Dying_Dialogue",
+        "KTC_Malessa_Dialogue",
+        "MalessaFinal_Dialogue",
+        "TheatrePlay_c5_dialog",
+        "VerbovezzorGMBE_bookevent"
+      ],
+      "note": "v2リライト第92弾（runRoundLoop.mjs による自動実行）。 140件全て訳出しました。登場会話は `SinisterVillage_Hags_Dialogue`（55件、チリー・クリーク村のハグ三姉妹とマレッサ/マルキルの取引・呪い）、`Jernaugh_Dying_Dialogue`（28件、瀕死のジャーノーの独白）、`KTC_Malessa_Dialogue`（21件、マレッサの救援依頼）、`MalessaFinal_Dialogue`（36件、事件後 / 160件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 会話: `TheatrePlay_c5_dialog`(お隣劇場の芝居パート、99件)、`VerbovezzorGMBE_bookevent`(ヴェルボヴェゾール／ヴェスカヴォアの群体意識イベント、61件)\n- 気づいた点: `{mf|his|her}` は「指揮官」を主語にすることで性別分岐が"
     }
   ]
 }
