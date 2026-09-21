@@ -4522,6 +4522,12 @@
       "target": "ヴァリシア人",
       "category": "Culture",
       "note": "ヴァリシア地方出身の人・民族を指す形容詞（Dialgoue_CameliaMain、round97）。"
+    },
+    {
+      "source": "demon lord",
+      "target": "デーモン・ロード",
+      "category": "Term",
+      "note": "デーモンの中で最強なのはアビスのデーモン・ロードであり、影響力の強い悪と混沌の実体であり、それぞれが広大な恐怖と邪悪の領土を支配している強力な半神である。"
     }
   ]
 }
