@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 26850,
-  "updatedAt": "2026-09-21T00:59:03.987Z",
+  "nextStart": 27150,
+  "updatedAt": "2026-09-21T05:07:28.708Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1739,6 +1739,25 @@
         "VerbovezzorGMBE_bookevent"
       ],
       "note": "v2リライト第92弾（runRoundLoop.mjs による自動実行）。 140件全て訳出しました。登場会話は `SinisterVillage_Hags_Dialogue`（55件、チリー・クリーク村のハグ三姉妹とマレッサ/マルキルの取引・呪い）、`Jernaugh_Dying_Dialogue`（28件、瀕死のジャーノーの独白）、`KTC_Malessa_Dialogue`（21件、マレッサの救援依頼）、`MalessaFinal_Dialogue`（36件、事件後 / 160件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 会話: `TheatrePlay_c5_dialog`(お隣劇場の芝居パート、99件)、`VerbovezzorGMBE_bookevent`(ヴェルボヴェゾール／ヴェスカヴォアの群体意識イベント、61件)\n- 気づいた点: `{mf|his|her}` は「指揮官」を主語にすることで性別分岐が"
+    },
+    {
+      "start": 26850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round93/",
+      "coveredDialogs": [
+        "VerbovezzorGMBE_bookevent",
+        "AreeluLetsFinalFight_Aeon_dialogue",
+        "GrandFinal_Aeon_dialogue",
+        "LastMarevo_dialogue",
+        "SetreiOponFighting_dialogue",
+        "Areelu_AllTruth_dialog",
+        "Imezlen_dialogue",
+        "NocticulaThreshold_dialogue",
+        "DeskariMeetsAngel_MythAngel_c6_dialog",
+        "HeavensGate_MythAngel_c6_dialog"
+      ],
+      "note": "v2リライト第93弾（runRoundLoop.mjs による自動実行）。 200件すべて訳出し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 200/200（未訳なし）\n- 登場した会話: VerbovezzorGMBE_bookevent（ドモラ市街探索イベント）、AreeluLetsFinalFight_Aeon_dialogue／GrandFinal_Aeon_dialogue／LastMarevo_dialogue（ / 100件すべて翻訳しました。登場dialogは Imezlen_dialogue（インエビタブル・イメズレンの投降勧告会話）、NocticulaThreshold_dialogue（ノクティキュラ／アイオーメディの祝福・冒涜の贈り物イベント）、DeskariMeetsAngel_MythAngel_c6_dialog（デスカリ最終対決）、HeavensGate_MythAngel_c6_dialo"
     }
   ]
 }
