@@ -4510,6 +4510,18 @@
       "target": "スティクス川",
       "category": "Place",
       "note": "オーシャン・イシアールの河口近く、Nocticulaの領域の近くにある川（Dialogue_Arueshalae_Main、round96）。"
+    },
+    {
+      "source": "House of Silken Shadows",
+      "target": "絹影の館",
+      "category": "Place",
+      "note": "Nocticulaの宮殿（Dialogue_Arueshalae_Main、round97）。"
+    },
+    {
+      "source": "Varisian",
+      "target": "ヴァリシア人",
+      "category": "Culture",
+      "note": "ヴァリシア地方出身の人・民族を指す形容詞（Dialgoue_CameliaMain、round97）。"
     }
   ]
 }

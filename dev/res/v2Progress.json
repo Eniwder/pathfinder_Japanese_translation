@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 28050,
-  "updatedAt": "2026-09-21T05:56:27.641Z",
+  "nextStart": 28350,
+  "updatedAt": "2026-09-21T06:13:10.876Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1821,6 +1821,17 @@
         "Dialogue_Arueshalae_Main"
       ],
       "note": "v2リライト第96弾（runRoundLoop.mjs による自動実行）。 166件全て翻訳しました。登場した会話：TreverFarewell_Dialogue、WenduagFarewell_dialogue、WoljifFarewell_dialogue、Galfrey_Threshold_dialogue、IrabethAnevia_Threshold_dialogue、NorthernLights_dialogue、TESuggest_dialog、Summon / 134件を全て訳し、chunk_0001.translations.json に書き込みました。\n\n- 会話: `Dialogue_Arueshalae_Main`（アルエシャラエとの companion 対話・愛の告白後〜夢の探索〜身の上話〜アビス/アルシニラの解説）\n- 気づいた点: `{name}` プレースホルダー（`e35df01c`の`<ctrl_0/><ctrl_1/>`＝Nocti"
+    },
+    {
+      "start": 28050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round97/",
+      "coveredDialogs": [
+        "Dialogue_Arueshalae_Main",
+        "Dialgoue_CameliaMain"
+      ],
+      "note": "v2リライト第97弾（runRoundLoop.mjs による自動実行）。 129件全て翻訳し、`chunk_0000.translations.json` に書き込みました。会話は `Dialogue_Arueshalae_Main`（コンパニオン、アルエシャラエとの会話）1本のみです。\n\n気づいた点: entry `a30fbebf-93d8-43b7-8248-eddee339f93e`（\"Return to the Abyss? Why?\"）はセリフですが元ent / chunk_0001.json の全171件を翻訳し、`chunk_0001.translations.json` を作成しました。会話は `Dialgoue_CameliaMain`（カメリアとの会話）1本のみです。\n\n気づいた点：この会話はカメリアの裏の顔（連続殺人・生贄儀式）に関する内容で、お嬢様口調（〜ですわ／〜ますの）と冷酷さのギャップを意識して訳し分けました。同一原文の繰り返し（\"Wh"
     }
   ]
 }
