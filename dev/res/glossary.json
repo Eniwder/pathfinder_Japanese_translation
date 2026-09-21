@@ -4528,6 +4528,24 @@
       "target": "デーモン・ロード",
       "category": "Term",
       "note": "デーモンの中で最強なのはアビスのデーモン・ロードであり、影響力の強い悪と混沌の実体であり、それぞれが広大な恐怖と邪悪の領土を支配している強力な半神である。"
+    },
+    {
+      "source": "Redeemed Brotherhood",
+      "target": "贖われし同胞団",
+      "category": "Faction",
+      "note": "Emberを聖人として信奉する信者たちが自称する組織名（Dialogue_Ember_Main、round98）。"
+    },
+    {
+      "source": "Armasse",
+      "target": "アルマッセ",
+      "category": "Event",
+      "note": "Mendevの現行の祝祭日。旧来のCrossing Festivalに取って代わった（Daeran_Main_dialog、round98）。"
+    },
+    {
+      "source": "Lord Lebeda",
+      "target": "レベダ卿",
+      "category": "Person",
+      "note": "Riverlandsの若き貴族。Daeranの文通相手（Daeran_Main_dialog、round98）。"
     }
   ]
 }

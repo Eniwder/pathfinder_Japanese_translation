@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 28350,
-  "updatedAt": "2026-09-21T06:13:10.876Z",
+  "nextStart": 28650,
+  "updatedAt": "2026-09-21T06:31:09.960Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1832,6 +1832,18 @@
         "Dialgoue_CameliaMain"
       ],
       "note": "v2リライト第97弾（runRoundLoop.mjs による自動実行）。 129件全て翻訳し、`chunk_0000.translations.json` に書き込みました。会話は `Dialogue_Arueshalae_Main`（コンパニオン、アルエシャラエとの会話）1本のみです。\n\n気づいた点: entry `a30fbebf-93d8-43b7-8248-eddee339f93e`（\"Return to the Abyss? Why?\"）はセリフですが元ent / chunk_0001.json の全171件を翻訳し、`chunk_0001.translations.json` を作成しました。会話は `Dialgoue_CameliaMain`（カメリアとの会話）1本のみです。\n\n気づいた点：この会話はカメリアの裏の顔（連続殺人・生贄儀式）に関する内容で、お嬢様口調（〜ですわ／〜ますの）と冷酷さのギャップを意識して訳し分けました。同一原文の繰り返し（\"Wh"
+    },
+    {
+      "start": 28350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round98/",
+      "coveredDialogs": [
+        "Dialgoue_CameliaMain",
+        "Daeran_Main_dialog",
+        "Dialogue_Ember_Main"
+      ],
+      "note": "v2リライト第98弾（runRoundLoop.mjs による自動実行）。 60件すべて翻訳しました。会話は `Dialgoue_CameliaMain`（カメリアとのメインダイアログ、生贄の儀式・娼館での出来事・関係を巡るやり取り）。気づいた点：`{n}{/n}`は`<ctrl_N/>`化済みでtagsに素の値も重複して載っていましたが、textの`<ctrl_N/>`をそのまま維持し訳文には反映していません（tags側は無視でOKと判断）。 / chunk_0001.json の全199件（Daeran_Main_dialog、デランのメインコンパニオン会話）を翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n気づいた点：デランは冷笑的・退廃的な貴族口調で一貫させ、Playerの一人称は性別中立な「私」のまま統一。制御タグ・`{g|}`タグは全て原文どおりの位置に保持しています。 / 41件すべて訳しました。会話は `Dialogue_Ember_Main`（エンバーとの出会い〜身の上話）1本のみです。記憶喪失で泣いているエンバーとの再会シーンと、その後の生い立ち語り（リバーシティ／十字軍／アイオーメディ）が中心で、口調は幼く無邪気な少女らしさを意識して統一しました。"
     }
   ]
 }
