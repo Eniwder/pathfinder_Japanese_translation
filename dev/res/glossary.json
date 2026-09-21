@@ -4355,6 +4355,65 @@
       "target": "シルバーマウント",
       "category": "Location",
       "note": "ヌメリアにある遺跡/発掘地（MageWithAHundredFaces_dialogue、round90）。"
+    },
+    {
+      "source": "Jubilost Narthropple",
+      "target": "ジュビロスト・ナースロップル",
+      "category": "Person",
+      "note": "自称・科学者兼ジャーナリストのノーム。時間旅行者を名乗る（RenownExplorer_dialog、round91）。"
+    },
+    {
+      "source": "Lavixia",
+      "target": "ラヴィクシア",
+      "category": "Person",
+      "note": "Sinister Villageに登場するハグの一人（SinisterVillage_Hags_Dialogue、round91）。"
+    },
+    {
+      "source": "Letinda",
+      "target": "レティンダ",
+      "category": "Person",
+      "note": "Sinister Villageに登場するハグの一人。他のハグから「old Letinda」と呼ばれる（SinisterVillage_Hags_Dialogue、round91）。"
+    },
+    {
+      "source": "Loreda",
+      "target": "ロレダ",
+      "category": "Person",
+      "note": "Sinister Villageに登場するハグの一人（SinisterVillage_Hags_Dialogue、round91）。"
+    },
+    {
+      "source": "Enneri of the Neverrun",
+      "target": "エンネリ・オブ・ザ・ネヴァラン",
+      "category": "Person",
+      "note": "結婚式の日に死んだ花嫁の亡霊。単に「Enneri」とも呼ばれる（Bride_Dialogue、round91）。"
+    },
+    {
+      "source": "Pikefin",
+      "target": "パイクフィン",
+      "category": "Location",
+      "note": "船で向かう黒い岩場の島の名前（BookEvent_Boat、round91）。"
+    },
+    {
+      "source": "College of Mysteries",
+      "target": "神秘学院",
+      "category": "Faction",
+      "note": "ジュビロストが所属を狙う学術機関（RenownExplorer_dialog、round91）。"
+    },
+    {
+      "source": "Eye of Abendego",
+      "target": "アベンデゴの目",
+      "category": "Location",
+      "note": "ゴラリオン世界の巨大な永久嵐の海域（RenownExplorer_dialog、round91）。"
+    },
+    {
+      "source": "Age of Lost Omens",
+      "target": "喪われた予兆の時代",
+      "note": "ゴラリオン現代を指す時代区分名（RenownExplorer_dialog、round91）。"
+    },
+    {
+      "source": "National Alchemy",
+      "target": "『ナショナル・アルケミー』",
+      "category": "Work",
+      "note": "ジュビロストが寄稿する架空の学術誌名（RenownExplorer_dialog、round91）。"
     }
   ]
 }

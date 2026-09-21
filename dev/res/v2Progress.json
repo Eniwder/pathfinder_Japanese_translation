@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 26250,
-  "updatedAt": "2026-09-21T00:19:58.918Z",
+  "nextStart": 26550,
+  "updatedAt": "2026-09-21T00:39:30.233Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1708,6 +1708,22 @@
         "PuluraLeaderSaved_c5_dialog"
       ],
       "note": "v2リライト第90弾（runRoundLoop.mjs による自動実行）。 159件全て翻訳し、chunk_0000.translations.jsonに書き込みました。登場した会話は SocothBriefing_Dialogue／SocothInCloset_Dialogue（ソコスベノスのクローゼット寸劇）、AutomaticDoor_dialogue（天空金属の門の謎解き）、BeatenCyborg_dialogue／Bunker_Chief_dialogue（鉢 / 141件全て翻訳し、`chunk_0001.translations.json` に出力しました。\n\n- 登場会話（dialog）: MageWithAHundredFaces_dialogue（ハンドレッド・フェイス対話）、RebelCyborg_dialogue（改造された女性十字軍兵士）、TheDevice_dialogue、DelamereDefeated_dialogue、Mutasaf"
+    },
+    {
+      "start": 26250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round91/",
+      "coveredDialogs": [
+        "PuluraLeaderSaved_c5_dialog",
+        "RamienPulura_dialogue",
+        "RenownExplorer_dialog",
+        "Bride_Dialogue",
+        "Groom_Dialogue",
+        "BookEvent_Boat",
+        "SinisterVillage_Hags_Dialogue"
+      ],
+      "note": "v2リライト第91弾（runRoundLoop.mjs による自動実行）。 63件全て訳し、chunk_0000.translations.jsonに書き込みました。登場会話は「PuluraLeaderSaved_c5_dialog」(カタイル/エリアンドラ司祭たちとの別れ)と「RamienPulura_dialogue」(ラミエンとの再会)。気づいた点：Katair/EliandraやRamienなど speaker欄がないentryが多く、文脈から人物を推測して訳しま / 179件すべて翻訳し、chunk_0001.translations.jsonに書き込み完了。登場会話はRenownExplorer_dialog（探検家ジュビロスト・ナースロップルとの出会い、ネニオとの蒸留論争、レギル/グレイボー/デランとの絡み）、Bride_Dialogue、Groom_Dialogue（サーコリスの死霊の花嫁エンネリと花婿セルデンの復讐譚）の3本。\n\n気づいた点：Sarco / 58件すべて翻訳し、`chunk_0002.translations.json` を新規作成しました。\n\n- 登場会話：`BookEvent_Boat`（舟で島へ渡る選択肢イベント、霧・嵐・氷の魔法描写）、`SinisterVillage_Hags_Dialogue`（三姉妹の魔女とマルキル/マレッサ兄妹の対峙シーン）\n- 気づいた点：`c178300b`（speaker: Hag_Loreda）"
     }
   ]
 }
