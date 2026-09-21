@@ -3153,7 +3153,7 @@
       "note": "Ramisaの二つ名。round53で言及。"
     },
     {
-      "source": "the Echo",
+      "source": "Echo",
       "target": "『残響』",
       "category": "Character",
       "note": "アシミアの奴隷を探し求めていたとされるデーモンの二つ名。round53で言及（本編未登場）。"
@@ -4290,13 +4290,37 @@
       "source": "Izyagna",
       "target": "イジャグナ",
       "category": "Character",
-      "note": "デスカリの軍勢に連なる存在。倒したエコーがその知識を宿していた（RaspenRifts_Echo_End_Dialogue、round88）。"
+      "note": "デスカリの軍勢に連なる存在。倒した残響がその知識を宿していた（RaspenRifts_Echo_End_Dialogue、round88）。"
     },
     {
       "source": "Iz",
       "target": "イズ",
       "category": "Location",
       "note": "「蝗の都」と呼ばれる聖地（KTC_LocustC5_CultistsArrive_Dialogue、round88）。"
+    },
+    {
+      "source": "Maelstrom",
+      "target": "マエルストロム",
+      "category": "Location",
+      "note": "プロテアンの本拠地となる次元界（Shyka_Offer_Dialogue、round89）。"
+    },
+    {
+      "source": "Abaddon",
+      "target": "アバドン",
+      "category": "Location",
+      "note": "デーモンの本拠地となる次元界（Shyka_Offer_Dialogue、round89）。"
+    },
+    {
+      "source": "Serpent Muse",
+      "target": "サーペント・ミューズ",
+      "category": "Character",
+      "note": "「夜の女王たち」に連なる存在として言及される称号/人物（MythicTrickster_Council_5-2_Dialogue、round89）。"
+    },
+    {
+      "source": "Nevi",
+      "target": "ネヴィ",
+      "category": "Character",
+      "note": "十字軍の戦友として呼びかけられる名（MythicLocustC5_Reborn_Dialogue、round89）。"
     }
   ]
 }

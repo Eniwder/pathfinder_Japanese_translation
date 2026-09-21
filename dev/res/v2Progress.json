@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 25650,
-  "updatedAt": "2026-09-20T18:00:19.453Z",
+  "nextStart": 25950,
+  "updatedAt": "2026-09-21T00:01:00.492Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1666,6 +1666,26 @@
         "RaspenRifts_Izyagna_Dialogue"
       ],
       "note": "v2リライト第88弾（runRoundLoop.mjs による自動実行）。 199件すべて翻訳し `chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 199/199（未訳なし）\n- **登場会話(dialog)**: `TheDarkestRitual_dialogue`（ザカリウスのリッチ化儀式）、`Zacharius_FinalBetrayal_dialogue`（儀式後の裏切り）、`BookEvent_DreamD / 101件全て翻訳し chunk_0001.translations.json に出力しました。登場した会話は LocustC5_MeetAnemora_Dialogue / LocustC5_Queen_Find_Dialogue / LocustC5_Queen_Kill_Dialogue / RaspenRifts_Echo_End_Dialogue / RaspenRifts_Echo_St"
+    },
+    {
+      "start": 25650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round89/",
+      "coveredDialogs": [
+        "RaspenRifts_Izyagna_Dialogue",
+        "MythicLocustC5_Reborn_Dialogue",
+        "MythicTrickster_Council_5-1_Dialogue",
+        "MythicTrickster_Council_5-2_Dialogue",
+        "Debrief_Council_Dialogue",
+        "Debrief_Nocta_Dialogue",
+        "KTC_MythicC5_Socot_Dialogue",
+        "KTC_SocotFail_Dialogue",
+        "Nocticula_TricksterC5_Dialogue",
+        "Shyka_Offer_Dialogue",
+        "SocothBriefing_Dialogue"
+      ],
+      "note": "v2リライト第89弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }
