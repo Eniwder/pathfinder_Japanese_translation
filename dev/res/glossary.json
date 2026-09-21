@@ -4321,6 +4321,40 @@
       "target": "ネヴィ",
       "category": "Character",
       "note": "十字軍の戦友として呼びかけられる名（MythicLocustC5_Reborn_Dialogue、round89）。"
+    },
+    {
+      "source": "Khara",
+      "target": "カーラ",
+      "category": "Character",
+      "note": "Blackwaterクランの族長（Bunker_Chief_dialogue、round90）。"
+    },
+    {
+      "source": "Blackwater",
+      "target": "ブラックウォーター",
+      "category": "Faction",
+      "note": "サルコリスにあった一族/クランの名。デーモンに滅ぼされた（Bunker_Chief_dialogue、round90）。"
+    },
+    {
+      "source": "Numerian",
+      "target": "ヌメリアの",
+      "note": "Numeria（ヌメリア）の形容詞形（round90）。"
+    },
+    {
+      "source": "Hallit",
+      "target": "ハリット語",
+      "note": "ヌメリアで話される言語（MageWithAHundredFaces_dialogue、round90）。"
+    },
+    {
+      "source": "Technic League",
+      "target": "テクニック・リーグ",
+      "category": "Faction",
+      "note": "ヌメリアで地中の機械技術を独占的に発掘・研究する組織（MageWithAHundredFaces_dialogue、round90）。"
+    },
+    {
+      "source": "Silver Mount",
+      "target": "シルバーマウント",
+      "category": "Location",
+      "note": "ヌメリアにある遺跡/発掘地（MageWithAHundredFaces_dialogue、round90）。"
     }
   ]
 }
