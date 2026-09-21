@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 27450,
-  "updatedAt": "2026-09-21T05:24:05.949Z",
+  "nextStart": 27750,
+  "updatedAt": "2026-09-21T05:39:42.674Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1776,6 +1776,32 @@
         "GrandFinal_dialog"
       ],
       "note": "v2リライト第94弾（runRoundLoop.mjs による自動実行）。 168件全て訳して chunk_0000.translations.json に書き込みました。登場した会話は HeavensGate_MythAngel_c6_dialog／HolyWardens_dialog／LetsGoAbyss_MythAngel_c6_dialog／Areelu_BurnTheWitch_dialog／Areelu_LetsFinalFight_dialog／Deska / 132件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 件数: 132/132（未訳なし）\n- 登場した会話: `Deskari_Threshold_dialogue`（スレッショルドでのデスカリ戦）、`Echo_Threshold_dialogue`（デスカリの残響戦）、`GrandFinal_dialog`（エンディング分岐・ワールドウーンド処遇"
+    },
+    {
+      "start": 27450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round95/",
+      "coveredDialogs": [
+        "GrandFinal_dialog",
+        "InTheWound_Legend_dialog",
+        "AreeluThresholdWelcome_c6_dialog",
+        "ComeInside_dialogue",
+        "AivuFarewell_dialog",
+        "ArueshalaeFarewell_Dialogue",
+        "CamelliaFarewell_dialogue",
+        "DaeranFarewell_dialog",
+        "EmberFarewell_Dialogue",
+        "GreyborFarewell_dialogue",
+        "LannFarewell_dialogue",
+        "NenioFarewell_dialogue",
+        "RegillFarewell_dialog",
+        "SeelahFarewell_dialog",
+        "ShifterFarewell_dialogue",
+        "Sosiel_Farewell_Dialogue",
+        "TreverFarewell_Dialogue"
+      ],
+      "note": "v2リライト第95弾（runRoundLoop.mjs による自動実行）。 全182件中182件を翻訳しました（未訳なし）。登場した会話は GrandFinal_dialog（アレール決戦～エンディング分岐）、InTheWound_Legend_dialog（シャドウとの対話）、AreeluThresholdWelcome_c6_dialog、ComeInside_dialogue、AivuFarewell_dialog、ArueshalaeFarewell_Dialog / 118件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 118件（全entry）\n- **登場した会話**: GreyborFarewell / LannFarewell / NenioFarewell / RegillFarewell / SeelahFarewell / ShifterFarewell（Ulbrig）/ Sosiel"
     }
   ]
 }

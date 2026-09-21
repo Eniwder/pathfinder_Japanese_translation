@@ -4468,6 +4468,24 @@
       "target": "大司祭",
       "category": "Title",
       "note": "闇の貴婦人（ノクティキュラ）に仕える大司祭の称号。{mf|Archpriest|Archpriestess}（Areelu_BurnTheWitch_dialog、round94）。"
+    },
+    {
+      "source": "Gundrun",
+      "target": "グンドルン",
+      "category": "Place",
+      "note": "Shifterが戦後に向かうと語る地名（苦難を経た人々を助けに行く、ShifterFarewell_dialogue、round95）。"
+    },
+    {
+      "source": "Arendae",
+      "target": "アレンダエ",
+      "category": "Title",
+      "note": "Daeranが主人公に冗談交じりに提案する称号「{mf|Lord|Countess} Arendae」（DaeranFarewell_dialog、round95）。"
+    },
+    {
+      "source": "River City",
+      "target": "リバーシティ",
+      "category": "Place",
+      "note": "Emberが自身の出自として語る地名（EmberFarewell_Dialogue、round95）。"
     }
   ]
 }
