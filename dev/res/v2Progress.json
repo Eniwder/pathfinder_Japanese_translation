@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 27750,
-  "updatedAt": "2026-09-21T05:39:42.674Z",
+  "nextStart": 28050,
+  "updatedAt": "2026-09-21T05:56:27.641Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1802,6 +1802,25 @@
         "TreverFarewell_Dialogue"
       ],
       "note": "v2リライト第95弾（runRoundLoop.mjs による自動実行）。 全182件中182件を翻訳しました（未訳なし）。登場した会話は GrandFinal_dialog（アレール決戦～エンディング分岐）、InTheWound_Legend_dialog（シャドウとの対話）、AreeluThresholdWelcome_c6_dialog、ComeInside_dialogue、AivuFarewell_dialog、ArueshalaeFarewell_Dialog / 118件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 118件（全entry）\n- **登場した会話**: GreyborFarewell / LannFarewell / NenioFarewell / RegillFarewell / SeelahFarewell / ShifterFarewell（Ulbrig）/ Sosiel"
+    },
+    {
+      "start": 27750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round96/",
+      "coveredDialogs": [
+        "TreverFarewell_Dialogue",
+        "WenduagFarewell_dialogue",
+        "WoljifFarewell_dialogue",
+        "Galfrey_Threshold_dialogue",
+        "IrabethAnevia_Threshold_dialogue",
+        "NorthernLights_dialogue",
+        "TESuggest_dialog",
+        "SummonDemonLords_TE_dialog",
+        "TE_Final_dialog",
+        "Dialogue_Arueshalae_Main"
+      ],
+      "note": "v2リライト第96弾（runRoundLoop.mjs による自動実行）。 166件全て翻訳しました。登場した会話：TreverFarewell_Dialogue、WenduagFarewell_dialogue、WoljifFarewell_dialogue、Galfrey_Threshold_dialogue、IrabethAnevia_Threshold_dialogue、NorthernLights_dialogue、TESuggest_dialog、Summon / 134件を全て訳し、chunk_0001.translations.json に書き込みました。\n\n- 会話: `Dialogue_Arueshalae_Main`（アルエシャラエとの companion 対話・愛の告白後〜夢の探索〜身の上話〜アビス/アルシニラの解説）\n- 気づいた点: `{name}` プレースホルダー（`e35df01c`の`<ctrl_0/><ctrl_1/>`＝Nocti"
     }
   ]
 }

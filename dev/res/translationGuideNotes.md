@@ -44,6 +44,9 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 
 ## 更新履歴（要点のみ）
 
+- 2026-09-21: round96のchunkで"What are you going to do after we win?"がGalfrey（単数のyou）と
+  IrabethAnevia（複数のyou）で「あなた」「あなたたち」に訳し分けられていた（機械検出の表記ゆれ
+  候補）のを確認。地の台詞の訳し分けは既存ルール通り問題なしと判断し、ルール追記はなし。
 - 2026-09-20: round84のchunkで"I have to go."/"I have no more questions."が複数の会話ファイルに
   またがって同一訳（句読点のみ微差）で使い回されていた（機械検出の表記ゆれ候補）のを見て、
   汎用的な離脱・質問終了の定型選択肢は句読点も含めて既存の訳し方に揃えるルールを

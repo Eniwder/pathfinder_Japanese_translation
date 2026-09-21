@@ -4486,6 +4486,30 @@
       "target": "リバーシティ",
       "category": "Place",
       "note": "Emberが自身の出自として語る地名（EmberFarewell_Dialogue、round95）。"
+    },
+    {
+      "source": "Midnight Bolts",
+      "target": "ミッドナイト・ボルト",
+      "category": "Item",
+      "note": "Nahyndrian crystal製のクロスボウ用ボルト。デーモンロード討伐用に改良された（TESuggest_dialog、round96）。"
+    },
+    {
+      "source": "Lord of the Locust Host",
+      "target": "蝗の大群の王",
+      "category": "Title",
+      "note": "Deskariの二つ名（TESuggest_dialog、round96）。Deskariの訳語「デスカリ」と併記して使う。"
+    },
+    {
+      "source": "Tender of Dreams",
+      "target": "夢の番人",
+      "category": "Title",
+      "note": "Desnaの二つ名（Dialogue_Arueshalae_Main、round96）。"
+    },
+    {
+      "source": "River Styx",
+      "target": "スティクス川",
+      "category": "Place",
+      "note": "オーシャン・イシアールの河口近く、Nocticulaの領域の近くにある川（Dialogue_Arueshalae_Main、round96）。"
     }
   ]
 }
