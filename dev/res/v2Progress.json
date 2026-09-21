@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 28650,
-  "updatedAt": "2026-09-21T06:31:09.960Z",
+  "nextStart": 28950,
+  "updatedAt": "2026-09-21T11:29:50.454Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1844,6 +1844,18 @@
         "Dialogue_Ember_Main"
       ],
       "note": "v2リライト第98弾（runRoundLoop.mjs による自動実行）。 60件すべて翻訳しました。会話は `Dialgoue_CameliaMain`（カメリアとのメインダイアログ、生贄の儀式・娼館での出来事・関係を巡るやり取り）。気づいた点：`{n}{/n}`は`<ctrl_N/>`化済みでtagsに素の値も重複して載っていましたが、textの`<ctrl_N/>`をそのまま維持し訳文には反映していません（tags側は無視でOKと判断）。 / chunk_0001.json の全199件（Daeran_Main_dialog、デランのメインコンパニオン会話）を翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n気づいた点：デランは冷笑的・退廃的な貴族口調で一貫させ、Playerの一人称は性別中立な「私」のまま統一。制御タグ・`{g|}`タグは全て原文どおりの位置に保持しています。 / 41件すべて訳しました。会話は `Dialogue_Ember_Main`（エンバーとの出会い〜身の上話）1本のみです。記憶喪失で泣いているエンバーとの再会シーンと、その後の生い立ち語り（リバーシティ／十字軍／アイオーメディ）が中心で、口調は幼く無邪気な少女らしさを意識して統一しました。"
+    },
+    {
+      "start": 28650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round99/",
+      "coveredDialogs": [
+        "Dialogue_Ember_Main",
+        "Finnean_main_dialogue",
+        "GrimborMainDialogue"
+      ],
+      "note": "v2リライト第99弾（runRoundLoop.mjs による自動実行）。 117件全て翻訳し、chunk_0000.translations.jsonに書き込みました（chunk_0000.json自体は未編集）。\n\n- **件数**: 117件（未訳なし）\n- **会話**: `Dialogue_Ember_Main`（エンバーの身の上話・神々や希望についての問答）、`Finnean_main_dialogue`（フィニアンの過去・ブレードスミスの拷問・パスファインダ / 183件全て翻訳し、chunk_0001.translations.jsonに書き込みました。会話はGrimborMainDialogue(グレイボーとの会話)。気づいた点: chunkに`speakers`辞書が付いていなかったため、口調はグレイボーの人物像（皮肉屋・冷静沈着な老練の暗殺者、指揮官に「お前」で呼びかける気安さ）から判断して統一しました。"
     }
   ]
 }

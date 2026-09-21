@@ -4546,6 +4546,66 @@
       "target": "レベダ卿",
       "category": "Person",
       "note": "Riverlandsの若き貴族。Daeranの文通相手（Daeran_Main_dialog、round98）。"
+    },
+    {
+      "source": "Bladesmith",
+      "target": "ブレードスミス",
+      "category": "Person",
+      "note": "Finneanを拷問し魂を引き裂いた謎の人物（Finnean_main_dialogue、round99）。"
+    },
+    {
+      "source": "Daggermark",
+      "target": "ダガーマーク",
+      "category": "Place",
+      "note": "River Kingdomsにある盗賊・暗殺者の都市。Grimborの出身地（GrimborMainDialogue、round99）。"
+    },
+    {
+      "source": "Morah",
+      "target": "モーラ",
+      "category": "Person",
+      "note": "Greyborの娘の名前（GrimborMainDialogue、round99）。"
+    },
+    {
+      "source": "Jallor Clovesh",
+      "target": "ジャロル・クローヴェッシュ",
+      "category": "Person",
+      "note": "Grimborがダガーマークで兵役についた際の指揮官（GrimborMainDialogue、round99）。"
+    },
+    {
+      "source": "Red Mantis",
+      "target": "レッドマンティス",
+      "category": "Faction",
+      "note": "Achaekekを崇める狂信的な暗殺者組織（GrimborMainDialogue、round99）。"
+    },
+    {
+      "source": "Anaphexia",
+      "target": "アナフェクシア",
+      "category": "Place",
+      "note": "秘密の知識を守る沈黙の修道士たちの拠点（GrimborMainDialogue、round99）。"
+    },
+    {
+      "source": "Licktoad",
+      "target": "リックトード",
+      "category": "Faction",
+      "note": "ゴブリンの部族名（GrimborMainDialogue、round99）。"
+    },
+    {
+      "source": "Clockwork Cathedral",
+      "target": "クロックワーク・カテドラル",
+      "category": "Place",
+      "note": "Absalomにある機巧仕掛けの隠れ家（GrimborMainDialogue、round99）。"
+    },
+    {
+      "source": "Grand Lodge",
+      "target": "グランドロッジ",
+      "category": "Place",
+      "note": "Absalomにあるパスファインダー・ソサエティ総本部（Finnean_main_dialogue、round99）。"
+    },
+    {
+      "source": "Grandmother Crow",
+      "target": "グランドマザー・クロウ",
+      "category": "Person",
+      "note": "エンパイリアル・ロードAndolettaの異名（Dialogue_Ember_Main、round99）。"
     }
   ]
 }
