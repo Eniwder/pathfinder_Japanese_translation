@@ -4456,6 +4456,18 @@
       "target": "ハリファント",
       "category": "Character",
       "note": "双子のノームの兄弟の一人（愛称Hari）。Rubbledumと組んで演じる（TheatrePlay_c5_dialog、round92）。"
+    },
+    {
+      "source": "Locust of the Apocalypse",
+      "target": "終末のイナゴ",
+      "category": "Title",
+      "note": "デスカリの二つ名（Deskari_Threshold_dialogue、round94）。"
+    },
+    {
+      "source": "Archpriest",
+      "target": "大司祭",
+      "category": "Title",
+      "note": "闇の貴婦人（ノクティキュラ）に仕える大司祭の称号。{mf|Archpriest|Archpriestess}（Areelu_BurnTheWitch_dialog、round94）。"
     }
   ]
 }

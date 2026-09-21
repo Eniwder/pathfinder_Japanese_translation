@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 27150,
-  "updatedAt": "2026-09-21T05:07:28.708Z",
+  "nextStart": 27450,
+  "updatedAt": "2026-09-21T05:24:05.949Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1758,6 +1758,24 @@
         "HeavensGate_MythAngel_c6_dialog"
       ],
       "note": "v2リライト第93弾（runRoundLoop.mjs による自動実行）。 200件すべて訳出し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 200/200（未訳なし）\n- 登場した会話: VerbovezzorGMBE_bookevent（ドモラ市街探索イベント）、AreeluLetsFinalFight_Aeon_dialogue／GrandFinal_Aeon_dialogue／LastMarevo_dialogue（ / 100件すべて翻訳しました。登場dialogは Imezlen_dialogue（インエビタブル・イメズレンの投降勧告会話）、NocticulaThreshold_dialogue（ノクティキュラ／アイオーメディの祝福・冒涜の贈り物イベント）、DeskariMeetsAngel_MythAngel_c6_dialog（デスカリ最終対決）、HeavensGate_MythAngel_c6_dialo"
+    },
+    {
+      "start": 27150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-21_round94/",
+      "coveredDialogs": [
+        "HeavensGate_MythAngel_c6_dialog",
+        "HolyWardens_dialog",
+        "LetsGoAbyss_MythAngel_c6_dialog",
+        "Areelu_BurnTheWitch_dialog",
+        "Areelu_LetsFinalFight_dialog",
+        "DeskariProjection_Threshold_dialogue",
+        "Deskari_Threshold_dialogue",
+        "Echo_Threshold_dialogue",
+        "GrandFinal_dialog"
+      ],
+      "note": "v2リライト第94弾（runRoundLoop.mjs による自動実行）。 168件全て訳して chunk_0000.translations.json に書き込みました。登場した会話は HeavensGate_MythAngel_c6_dialog／HolyWardens_dialog／LetsGoAbyss_MythAngel_c6_dialog／Areelu_BurnTheWitch_dialog／Areelu_LetsFinalFight_dialog／Deska / 132件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 件数: 132/132（未訳なし）\n- 登場した会話: `Deskari_Threshold_dialogue`（スレッショルドでのデスカリ戦）、`Echo_Threshold_dialogue`（デスカリの残響戦）、`GrandFinal_dialog`（エンディング分岐・ワールドウーンド処遇"
     }
   ]
 }
