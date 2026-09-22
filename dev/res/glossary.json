@@ -4606,6 +4606,24 @@
       "target": "グランドマザー・クロウ",
       "category": "Person",
       "note": "エンパイリアル・ロードAndolettaの異名（Dialogue_Ember_Main、round99）。"
+    },
+    {
+      "source": "Shield Maze",
+      "target": "盾の迷宮",
+      "category": "Place",
+      "note": "洞窟のマングレルが目指す狩人の試練の名。Wenduagが挑もうとしていた（Lann_Main_dialog、round100）。"
+    },
+    {
+      "source": "Firidazzle",
+      "target": "フィリダズル",
+      "category": "Organization",
+      "note": "Ria Neathが所属する商会名「Firidazzle & Co. Trading House」（Lann_Main_dialog、round100）。"
+    },
+    {
+      "source": "Ria Neath",
+      "target": "リア・ニース",
+      "category": "Person",
+      "note": "NerosyanのFiridazzle商会に所属する商人。名刺で言及される（Lann_Main_dialog、round100）。"
     }
   ]
 }
