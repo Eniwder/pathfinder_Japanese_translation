@@ -2031,7 +2031,7 @@
     {
       "source": "Hawkblade",
       "target": "ホークブレード",
-      "note": "イオミダエ教会の高名な尋問官リオトールの異名。"
+      "note": "イオミダエ教会の高名な尋問官リオトルの異名。"
     },
     {
       "source": "Chilly Creek",
@@ -4774,6 +4774,40 @@
       "target": "ラズミラン",
       "category": "Location",
       "note": "River Kingdomsにある、King Razmirが治める国（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Rillik",
+      "target": "リリック",
+      "category": "Person",
+      "note": "Camelliaの儀式の犠牲となったMendev貴族の末息子。話者により名前がRellik/Rillakとうろ覚えで揺れる（CamelliaRedHanded_dialogue、round106）。"
+    },
+    {
+      "source": "Nestrin",
+      "target": "ネストリン",
+      "category": "Person",
+      "note": "Daeranの後見人・師だったアイオーメディの司祭。アレンダエ家の惨劇で死亡（Inquisitor_DaeranQ2_dialog、round107）。"
+    },
+    {
+      "source": "Silaena",
+      "target": "シラエナ",
+      "category": "Person",
+      "note": "Daeranの母。Countess Silaena＝シラエナ伯爵夫人（Inquisitor_DaeranQ2_dialog、round107）。"
+    },
+    {
+      "source": "Iris",
+      "target": "アイリス",
+      "category": "Person",
+      "note": "Camelliaの亡き母、Horgus Gwermの妻（HorgusRevealsTruth_dialogue、round107）。"
+    },
+    {
+      "source": "Ulfen",
+      "target": "ウルフェン",
+      "note": "北方の民族。Liotrの出自（Inquisitor_DaeranQ2_dialog、round107）。"
+    },
+    {
+      "source": "the Other",
+      "target": "『異なる者』",
+      "note": "Daeranに宿る謎の存在をLiotrが名付けた呼称（WhatHappened_DaeranQ2_dialog、round108）。"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 30750,
-  "updatedAt": "2026-09-24T10:47:35.358Z",
+  "nextStart": 31650,
+  "updatedAt": "2026-09-24T13:28:57.291Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1935,6 +1935,71 @@
         "ArueShalaeQ3_BackToReality_Dialogue"
       ],
       "note": "v2リライト第105弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。登場した会話は EvilArueshalaeCompanion / MeetEvilArusha / DreamVisit_1-1・1-2 / KTC_VisitMyDream / ArushaAfterBattle / Dimalchio / Dimalchio-after の8つです。気づいた点 / 全100件を訳し、`chunk_0001.translations.json` に書き込みました。JSONの構文と `<ctrl_N/>` の個数・順序は目視で確認しただけで、import の dry-run などコマンドによる検証はしていません。対象の会話は `Arueshalae_Q2_Dream_End_Dialogue`、`Arueshalae_Q2_Dream_Start_Dialogu"
+    },
+    {
+      "start": 30750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round106/",
+      "coveredDialogs": [
+        "ArueShalaeQ3_BackToReality_Dialogue",
+        "ArushaQ3_FinalDream_Dialogue",
+        "Arueshalae_Q3_KTC_AskAnevia_dialogue",
+        "AneviaResults_dialogue",
+        "CamelliaRedHanded_dialogue",
+        "FindMurderer_dialogue",
+        "KTC_CamelliaEscaped_dialogue",
+        "DemonsLoveCommander_dialogue",
+        "Camellia_EnterRoom_dialogue",
+        "Camellia_HeartsDesire_dialogue",
+        "KTC_LetsGoBrothel_dialogue",
+        "AfterHorgus_Dialogue"
+      ],
+      "note": "v2リライト第106弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 Camellia関連会話（RedHanded/HeartsDesire/娼館）、アルーシャラエ夢、DemonsLoveCommander等を訳了。glossaryにRillik追加。415b50b1は話者IDがAlushinyrraHeraldだが原文はIomedaeの使者で割当ずれの可能性"
+    },
+    {
+      "start": 31050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round107/",
+      "coveredDialogs": [
+        "AfterHorgus_Dialogue",
+        "EnterManor_dialogue",
+        "FinalTruth_dialogue",
+        "HorgusRevealsTruth_dialogue",
+        "KTC_ReturnToManor_dialogue",
+        "CamelliaRoom_dialogue",
+        "DogGrave_dialogue",
+        "FlowerBed_dialogue",
+        "MeAndFather_dialogue",
+        "TortureCellar_dialogue",
+        "VarisianTeacher_dialogue",
+        "Inquisitor_DaeranQ2_dialog",
+        "Intro_HeavenDoorstep_DaeranQ2_dialog",
+        "ParkDistract_DaeranQ2_dialog"
+      ],
+      "note": "v2リライト第107弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 Camellia個人クエスト（屋敷・Horgusの真相・母Iris）とDaeranQ2（審問官リオトール・天の縁）を訳了。glossaryにNestrin/Silaena/Iris/Ulfen追加。glossaryのLiotr表記がリオトール/リオトルで揺れている"
+    },
+    {
+      "start": 31350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round108/",
+      "coveredDialogs": [
+        "ParkDistract_DaeranQ2_dialog",
+        "Park_FirstVision_DaeranQ2_dialog",
+        "Room_Distract_DaeranQ2_dialog",
+        "Room_SecondVision_DaeranQ2_dialog",
+        "ThirdVision_DaeranQ2_dialog",
+        "ThirdDistract_DaeranQ2_dialog",
+        "WhatHappened_DaeranQ2_dialog",
+        "Aftermath_DaeranQ3_dialog",
+        "DearanVsInquisitor_DaeranQ3_dialog",
+        "DaeranGifts_ktc_c3_dialog",
+        "LiotrLetter_c3_DaeranQ3_ktc_dialog",
+        "LiotrSetsTrap_DaeranQ3_ktc_dialog"
+      ],
+      "note": "v2リライト第108弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 DaeranQ2（天涯の館の幻視）とDaeranQ3（審問官との対決・罠）を訳了。the Otherは chunk_0000=『異なる者』/chunk_0001=他者 で割れ、glossaryは『異なる者』で登録。Liotrもリオトール/リオトルで揺れあり"
     }
   ]
 }
