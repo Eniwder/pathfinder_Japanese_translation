@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 30150,
-  "updatedAt": "2026-09-24T10:31:03.586Z",
+  "nextStart": 30450,
+  "updatedAt": "2026-09-24T10:40:28.790Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1902,6 +1902,18 @@
         "Wenduag_dialogue_main"
       ],
       "note": "v2リライト第103弾（runRoundLoop.mjs による自動実行）。 141件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き出しました（会話は `Dialogue_Sosiel_Main` の1つ）。JSONの形と `<ctrl_N/>` の個数・順序は書きながら目で確認しただけで、指示どおりスクリプトでのチェックはしていません。\n\n気づいた点：\n- **Aron Kir の表記**：用語集になかっ / 159件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き出しました。キー数は原文チャンクと一致しています（159件）。登場した会話は `Wenduag_dialogue_main` だけです。\n\n- **ウェンデュアグの口調:** 過去ラウンドの訳に合わせ、一人称は「私」、呼び方は「ご主人様」に統一しました。ご主人様に話すときは丁寧語"
+    },
+    {
+      "start": 30150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round104/",
+      "coveredDialogs": [
+        "Wenduag_dialogue_main",
+        "DialogueWoljif_main",
+        "EvilArueshalaeCompanion_Dialogue"
+      ],
+      "note": "v2リライト第104弾（runRoundLoop.mjs による自動実行）。 全91件を訳し、`chunk_0000.translations.json` に書き込みました（会話は `Wenduag_dialogue_main` のみ）。JSONは目視で確認しましたが、import の dry-run は実行していないので、`<ctrl_N/>` の検証はまだです。\n\n気づいた点：`{mf|master|mistress}` はルール通り「ご主人様」にまとめました。一方、` / `chunk_0001.translations.json` に、チャンク内の全entryの訳を書き込みました（1件も省略していません）。会話は DialogueWoljif_main の1つだけです。JSON は目視で確認しました。スクリプトは実行できない指示だったため、`<ctrl_N/>` が揃っているかの dry-run はまだ回していません。\n\n気づいた点は2つです。\n- **話者と呼び / 39件すべて訳し、`chunk_0002.translations.json` に書き込みました（会話は EvilArueshalaeCompanion_Dialogue のみ）。JSON構文は目視で確認しただけで、実行による検証はしていません。\nCue 側に `speakers` 辞書がなかったので、話者は悪堕ちしたアルエシャラエとみなして、奔放で甘えた女性口調にしました。`old lady M"
     }
   ]
 }

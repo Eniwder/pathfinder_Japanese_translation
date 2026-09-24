@@ -4702,6 +4702,72 @@
       "target": "アロン・キル",
       "category": "Person",
       "note": "Sosielが描いていた青年の名（Dialogue_Sosiel_Main、round103）。"
+    },
+    {
+      "source": "Sister Kerismei",
+      "target": "シスター・ケリスメイ",
+      "category": "Person",
+      "note": "Woljifが所属するティーフリング盗賊団Familyの女性幹部（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Melroun",
+      "target": "メルルーン",
+      "category": "Person",
+      "note": "Family所属のWoljifの「兄弟」分。戦死した（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Yger",
+      "target": "イーガー",
+      "category": "Person",
+      "note": "Woljifの最初の師匠だったティーフリングの近所の老人（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Fyllemen",
+      "target": "フィレメン",
+      "category": "Person",
+      "note": "骨董店Ancientries and Wondersの店主の老人（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Ancientries and Wonders",
+      "target": "古物と不思議の店",
+      "category": "Location",
+      "note": "Fyllemenの店。Moon of the Abyssが収蔵されていた（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Golden Hands",
+      "target": "ゴールデン・ハンズ",
+      "category": "Organization",
+      "note": "Woljifが過去に所属した盗賊団（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Owlbears",
+      "target": "アウルベアーズ",
+      "category": "Organization",
+      "note": "Woljifが過去に所属した地区のギャング（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Northmen",
+      "target": "ノースメン",
+      "category": "Organization",
+      "note": "Woljifが過去に所属したギャング。首都から来た連中に追い出された（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Family",
+      "target": "ファミリー",
+      "category": "Organization",
+      "note": "Woljifが所属するティーフリング主体の盗賊団。「」なしのカタカナで統一（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "King Razmir",
+      "target": "ラズミル王",
+      "category": "Person",
+      "note": "River Kingdomsの国Razmiranを治める自称神（DialogueWoljif_main、round104）。"
+    },
+    {
+      "source": "Razmiran",
+      "target": "ラズミラン",
+      "category": "Location",
+      "note": "River Kingdomsにある、King Razmirが治める国（DialogueWoljif_main、round104）。"
     }
   ]
 }
