@@ -946,7 +946,7 @@
     },
     {
       "source": "Areelu Vorlesh",
-      "target": "アレール・ヴォーレス",
+      "target": "アレール＝ヴォーレス",
       "note": "ワールドウンドを開いた魔女。冷徹・知性・母性（屈折）。"
     },
     {
@@ -967,7 +967,7 @@
     {
       "source": "Areelu",
       "target": "アレール",
-      "note": "アレール・ヴォーレス。ワールドウーンドを開いた裏切りの神話級魔術師（後のノクティキュラ）。"
+      "note": "アレール・ヴォールシュ。ワールドウーンドを開いた裏切りの神話級魔術師（後のノクティキュラ）。"
     },
     {
       "source": "Hand of the Inheritor",
@@ -4974,6 +4974,116 @@
       "source": "Arran",
       "target": "アラン",
       "note": "ランの部族の娘。エルフとの結婚を望む（LannCantDo_KTC、round113）。"
+    },
+    {
+      "source": "Wendu",
+      "target": "ウェンドゥ",
+      "note": "ランがウェンデュアグを呼ぶ愛称（WenduagCave、round114）。"
+    },
+    {
+      "source": "Rullo",
+      "target": "ルロ",
+      "note": "ランの幼少期に行方不明になったモングレル。深淵で再登場（SavamelekhAbyss、round114）。"
+    },
+    {
+      "source": "Gorom",
+      "target": "ゴロム",
+      "note": "「Old Gorom（ゴロム爺さん等）」。Rulloと同じく行方不明のモングレル（SavamelekhAbyss、round114）。"
+    },
+    {
+      "source": "Order of the Scourge",
+      "target": "鞭の騎士団",
+      "category": "Organization",
+      "note": "ヘルナイト騎士団のひとつ。レギルの元所属（HellknightsVendor、round115）。"
+    },
+    {
+      "source": "Order of the Nail",
+      "target": "釘の騎士団",
+      "category": "Organization",
+      "note": "ヘルナイト騎士団のひとつ（HellknightsVendor、round115）。"
+    },
+    {
+      "source": "Extirpators",
+      "target": "エクスターペイター",
+      "note": "釘の騎士団の支部名。「Extirpator chapter」＝エクスターペイター支部（HellknightsVendor、round115）。"
+    },
+    {
+      "source": "Bleaching",
+      "target": "退色",
+      "note": "ノーム特有の色が抜けていく現象（{g|Bleaching}、round115）。"
+    },
+    {
+      "source": "Kiranda",
+      "target": "キランダ",
+      "note": "偽ヘルナイトが口にするデーモンの名（FakeHellknights_RegillQ2、round115）。"
+    },
+    {
+      "source": "Uplanders",
+      "target": "地上人",
+      "note": "地下出身のモングレルが地上の人々を指す呼称（ウェンデュアグ、round115）。"
+    },
+    {
+      "source": "Aminos Renth",
+      "target": "アミノス・レンス",
+      "note": "ゴッドクロー騎士団のパラリクター。単独では「レンス」「アミノス」（RegillQ2/Q3、round116）。"
+    },
+    {
+      "source": "Tye",
+      "target": "タイ",
+      "note": "ヘルナイトのパラリクター（レンス、デオサンと並んで登場、round116）。"
+    },
+    {
+      "source": "Deothan",
+      "target": "デオサン",
+      "note": "ヘルナイトのパラリクター（レンス、タイと並んで登場、round116）。"
+    },
+    {
+      "source": "Measure and the Chain",
+      "target": "尺度と鎖",
+      "note": "ヘルナイトの教義（the tenets of the Measure and the Chain、round116）。"
+    },
+    {
+      "source": "Orders",
+      "target": "騎士団",
+      "note": "ヘルナイト諸騎士団の総称（the Orders）。単数Orderも「騎士団」（round116）。"
+    },
+    {
+      "source": "Kiana",
+      "target": "キアナ",
+      "category": "Person",
+      "note": "エランの婚約者（SeelahQ1/Q2、round117）。"
+    },
+    {
+      "source": "Darek Sunhammer",
+      "target": "ダレク・サンハンマー",
+      "category": "Person",
+      "note": "メンデヴ一の宝石職人。Master Darek＝ダレク親方（round117）。"
+    },
+    {
+      "source": "Macabre Menagerie",
+      "target": "怪奇動物園",
+      "note": "キアナの結婚式の余興テント（SeelahQ2、round118）。"
+    },
+    {
+      "source": "Old Killy",
+      "target": "オールド・キリー",
+      "note": "結婚式会場の作り物の骸骨（SeelahQ2、round118）。"
+    },
+    {
+      "source": "Rascal",
+      "target": "ラスカル",
+      "note": "怪奇動物園の犬の名前（SeelahQ2、round118）。"
+    },
+    {
+      "source": "Tiara of Beautiful Fey",
+      "target": "美しきフェイのティアラ",
+      "category": "Item",
+      "note": "サンハンマー作のティアラ（SeelahQ2、round118）。"
+    },
+    {
+      "source": "The Cup of Wishes",
+      "target": "願いの杯",
+      "note": "結婚式で祝いの品を入れる風習（SeelahQ2、round118）。"
     }
   ]
 }

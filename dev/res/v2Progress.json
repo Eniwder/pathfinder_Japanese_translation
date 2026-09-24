@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 33150,
-  "updatedAt": "2026-09-24T14:06:57.586Z",
+  "nextStart": 34650,
+  "updatedAt": "2026-09-24T15:41:04.318Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2098,6 +2098,112 @@
         "SulWaiting_dialogue"
       ],
       "note": "v2リライト第113弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 グレイボー暗殺未遂の尋問（ガルトの元捜査官）、ランの母リアとの再会、スル族長とネアソルムの近況を訳出。ガルト・髑髏内閣・灰色の庭師等7件をglossary追加"
+    },
+    {
+      "start": 33150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round114/",
+      "coveredDialogs": [
+        "SulWaiting_dialogue",
+        "WenduagCave_dialogue",
+        "WenduagDefeated_dialogue",
+        "WenduagTraitorCompanion_dialogue",
+        "LannFeelsBad_dialogue",
+        "LannFeelsWorse_dialogue",
+        "LannGoBeat_KTC_dialogue",
+        "MongrelsDefeated_dialogue",
+        "SavamelekhAbyss_dialogue",
+        "LannDying_dialogue",
+        "LannThankYou_dialogue"
+      ],
+      "note": "v2リライト第114弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ラン編クライマックス（ウェンデュアグの洞窟・サヴァメレク・ランの死と感謝）を訳出。Wendu/Rullo/Goromをglossary追加。uplanderの訳が0113(地上の者)と0114(地上人)で揺れ"
+    },
+    {
+      "start": 33450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round115/",
+      "coveredDialogs": [
+        "LannThankYou_dialogue",
+        "LannTrustMe_dialogue",
+        "SavamelekhFinal_dialogue",
+        "SullAftermath_dialogue",
+        "SullExplains_dialogue",
+        "SullWeak_dialogue",
+        "WenduagHelloAgain_dialogue",
+        "WenduDubious_Companion_dialogue",
+        "FoxReveal_dialogue",
+        "FakeHellknights_RegillQ2_dialog",
+        "HellknightsVendor_dialog",
+        "PoorCultist_RegillQ2_dialog"
+      ],
+      "note": "v2リライト第115弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ラン編後日談（サヴァメレク最終戦・スル族長・ウェンデュアグ再会）、ネニオの狐像、レギルQ2（偽ヘルナイト）を訳出。騎士団名等6件をglossary追加。スルのsh訛りの表現が前roundと揃っているか要確認"
+    },
+    {
+      "start": 33750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round116/",
+      "coveredDialogs": [
+        "PoorCultist_RegillQ2_dialog",
+        "JoinOrLeave_RegillQ2_dialog",
+        "RegillReveal_Q2_dialog",
+        "SuccubusTea_dialog",
+        "YakerReportsAttack_RegillQ2_dialog",
+        "Avowal_RegillQ3_dialog",
+        "Report_RegillQ3_ktc_dialog",
+        "HellknightsTribunal_RegillQ3_dialog",
+        "CartRescue_SeelahQ1_dialog"
+      ],
+      "note": "v2リライト第116弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 レギルQ2〜Q3（偽ヘルナイトの真相・キランダとの茶会・ヘルナイト法廷）、シーラQ1（ビール荷車救出）を訳出。アミノス・レンス等5件をglossary追加。Bleachingが0115(退色)と0116(漂白化)で揺れ"
+    },
+    {
+      "start": 34050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round117/",
+      "coveredDialogs": [
+        "CartRescue_SeelahQ1_dialog",
+        "SeelahMeetsFriends_dialog",
+        "KnightCamp_SeelahQ1_dialog",
+        "Seelah_Q1_Conclusion_dialog",
+        "ArsinoeAtWedding_SeelahQ2_dialog",
+        "DisasterNews_Drezen_SeelahQ2_dialog",
+        "ElanGreetsSeelah_SeelahQ2_dialog",
+        "ElanIsDesperate_SeelahQ2_dialog",
+        "ElanMonarch_SeelahQ2_dialog",
+        "Golem_Vendor_Drezen_dialog",
+        "Jeweler_WarmWelcome_dialog",
+        "SeelahGoShopping_ktc_SeelahQ2_dialog"
+      ],
+      "note": "v2リライト第117弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 シーラQ1〜Q2（荷車同盟・エランの指輪・結婚式の惨劇とダレク・サンハンマー）、ドレズンのゴーレム商人を訳出。Kiana/Darek Sunhammerをglossary追加"
+    },
+    {
+      "start": 34350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round118/",
+      "coveredDialogs": [
+        "SeelahGoShopping_ktc_SeelahQ2_dialog",
+        "KyanaWelcome_SeelahQ2_dialog",
+        "ProbablyFakeShyka_SeelahQ2_dialog",
+        "SeelahSpeech_q2_dialog",
+        "TentFirstWorld_SeelahQ2_dialog",
+        "TentGeb_SeelahQ2_dialog",
+        "TheBeast_SeelahQ2_dialog",
+        "WeddingIntro_SeelahQ2_dialog",
+        "WeddingUnexpected_SeelahQ2_dialog",
+        "CurlAftermath_SeelahQ3_dialog",
+        "ElanKianaAftermath_SeelahQ3_diaog",
+        "ElanDying_SeelahQ3_dialog",
+        "HideoutIntro_SeelahQ3_dialog",
+        "JewelerFinal_SeelahQ3_dialog",
+        "KianaAloneAftermath_SeelahQ3_dialog",
+        "DeserterJoins_SeelahQ3_ktc_dialog",
+        "ElanCalls_SeelahQ3_ktc_dialog"
+      ],
+      "note": "v2リライト第118弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 シーラQ2〜Q3（エランとキアナのウスタラヴ風結婚式・願いの杯・ダレク・サンハンマーとの決着・ジャナの処遇）を訳出。怪奇動物園等5件をglossary追加。ダレクの話者メモ(俺・無骨)が実際の慇懃な口調と不一致"
     }
   ]
 }
