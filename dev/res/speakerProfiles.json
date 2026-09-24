@@ -6320,25 +6320,9 @@
         "rule": "Use おいら by default."
       }
     },
-    "DLC5_CR0_ShadowPlaneGollumsBrother": {
-      "personalitySummary": "A furtive and twisted creature lurking within the Shadow Plane, driven by fear and obsession.",
-      "toneAndVoice": "Sneaky, muttering, and paranoid. Frequently speaks in fragmented thoughts and anxious repetition.",
-      "firstPerson": {
-        "term": "俺",
-        "rule": "Use 俺 consistently."
-      }
-    },
     "WildHunt_AtselmYoung": {
       "personalitySummary": "Atselm, a member of the Wild Hunt.",
       "toneAndVoice": "Cold, eerie, and detached.",
-      "firstPerson": {
-        "term": "私",
-        "rule": "Use 私 consistently."
-      }
-    },
-    "CR0_ArueshalaeNightmare": {
-      "personalitySummary": "A redeeming succubus striving to overcome her demonic nature.",
-      "toneAndVoice": "Soft, earnest, and cautious. Shows traces of practiced seductive phrasing under stress or old habits, though she actively suppresses them.",
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
@@ -6788,14 +6772,6 @@
       "notes": [
         "Lord of the Raspers."
       ]
-    },
-    "HomunculusHorgus": {
-      "personalitySummary": "A wealthy noble whose arrogance masks genuine intelligence and hidden concern for those close to him.",
-      "toneAndVoice": "Refined, sarcastic, and demanding. Frequently complains or criticizes others but remains articulate and composed.",
-      "firstPerson": {
-        "term": "私",
-        "rule": "Use 私 consistently."
-      }
     },
     "AreshkagalStranger_Elf_Female_dialog": {
       "gender": "female",
@@ -7385,14 +7361,6 @@
         "rule": "Use 私 consistently."
       }
     },
-    "Azata_RobinHood_Bandit_female": {
-      "personalitySummary": "An Azata-inspired trickster who enjoys helping the oppressed and defying authority.",
-      "toneAndVoice": "Playful, mischievous, and idealistic.",
-      "firstPerson": {
-        "term": "僕",
-        "rule": "Use 僕 consistently."
-      }
-    },
     "FoolKingMounted": {
       "personalitySummary": "A bizarre ruler whose foolishness masks an unpredictable and whimsical nature.",
       "toneAndVoice": "Eccentric, theatrical, and erratic. Frequently shifts between humor, nonsense, and unexpected insight.",
@@ -7606,44 +7574,6 @@
       ],
       "notes": [
         "Monarch of Mendev."
-      ]
-    },
-    "AneviaTirabade_GibberingSwarm": {
-      "gender": "female",
-      "race": "human",
-      "alignment": "neutral good",
-      "personality": "Frank, pragmatic, and resourceful scout leader. Slightly rough-spoken but fiercely loyal.",
-      "firstPerson": {
-        "term": "あたし",
-        "rule": "Always use あたし."
-      },
-      "addressingPlayer": {
-        "commander": "あんた",
-        "rule": "Use casual forms like あんた or 指揮官."
-      },
-      "speechStyle": [
-        "casual",
-        "pragmatic",
-        "direct",
-        "street-smart",
-        "supportive"
-      ],
-      "speechExamples": [
-        "裏の情報ならあたしに任せときな。綺麗事じゃ悪魔との戦いには勝てないよ。",
-        "あんたが前線で派手に暴れてくれるなら、あた影でしっかり路地裏を固めてやるさ。",
-        "無事だったかい？ まぁ、あんたならそう簡単にくたばらないと思ってたけどね。"
-      ],
-      "translationNotes": [
-        "飾り気のないフランクな口調（〜だよ、〜かい、〜さ、〜ね）を用いる。",
-        "実務的で要頭が良く、ストリートスマートな雰囲気を出すために短い文章で手際よく喋らせる。",
-        "一人称は「あたし」、二人称は「あんた」を徹底し、気取らない信頼感を出す。"
-      ],
-      "constraints": [
-        "堅苦しい敬語や貴族的な言い回しは使用しない。",
-        "品を作りすぎたお嬢様風の女性語にならないよう注意する。"
-      ],
-      "notes": [
-        "Head of intelligence in Kenabres."
       ]
     },
     "QueenGalfreyDrezen": {
