@@ -14,7 +14,7 @@
 //   node dev/cloud.mjs merge <round>
 //   node dev/cloud.mjs check <round>
 //   node dev/cloud.mjs notes-prompt <round>
-//   node dev/cloud.mjs finish <round> [--summary="..."]
+//   node dev/cloud.mjs finish <round> [--summary="..."] [--allow-untranslated]
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -160,6 +160,11 @@ function finish(round) {
   const r = checkRound(dir);
   printCheck(round, r);
   if (r.invalid.length) throw new Error('invalid のentryがあります。<ctrl_N/> を補ってから再実行してください。');
+  if (r.untranslated && !flags['allow-untranslated']) {
+    throw new Error(
+      `未訳が${r.untranslated}件あります。該当chunkを訳し直すか、やり直しても埋まらない場合だけ --allow-untranslated を付けてください。`
+    );
+  }
   // glossary.json が壊れると以後のextractが全滅するので、notesステップ後に機械的に検証する。
   try {
     JSON.parse(fs.readFileSync('./res/glossary.json', 'utf8'));

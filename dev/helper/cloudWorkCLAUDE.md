@@ -33,7 +33,8 @@ dev/cloud.mjs                作業用CLI（プロンプト生成・マージ・
 3. 全chunkのサブエージェントが終わったら `node dev/cloud.mjs merge <round>` を実行する。
    - 出力の `invalid` が0件であることを確認する。invalidが出たら、該当entry（chunkファイル内の
      `translation`）に欠けている `<ctrl_N/>` をEditで補い、`node dev/cloud.mjs check <round>` で確認する。
-   - 未訳が残ったchunkがあれば、手順2をそのchunkだけやり直す（2回やっても埋まらなければnullのまま進めてよい）。
+   - 未訳が残ったchunkがあれば、手順2をそのchunkだけやり直す（2回やっても埋まらなければ、手順5の
+     `finish` に `--allow-untranslated` を付けてnullのまま進めてよい）。
 4. `node dev/cloud.mjs notes-prompt <round>` の出力をそのまま新しいサブエージェントに渡す
    （話者メモ・翻訳ルール・glossaryの追記）。
 5. `node dev/cloud.mjs finish <round> --summary="<訳した会話や気づいた点を1行で>"` を実行する。
