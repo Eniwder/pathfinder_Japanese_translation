@@ -4696,6 +4696,12 @@
       "target": "リクター・レサーク・オウンター",
       "category": "Person",
       "note": "Regillの上官、Order of the Godclawの長（Regill_Main_dialog、round102）。"
+    },
+    {
+      "source": "Aron Kir",
+      "target": "アロン・キル",
+      "category": "Person",
+      "note": "Sosielが描いていた青年の名（Dialogue_Sosiel_Main、round103）。"
     }
   ]
 }

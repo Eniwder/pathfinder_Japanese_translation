@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 29850,
-  "updatedAt": "2026-09-24T10:21:25.744Z",
+  "nextStart": 30150,
+  "updatedAt": "2026-09-24T10:31:03.586Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1891,6 +1891,17 @@
         "Dialogue_Sosiel_Main"
       ],
       "note": "v2リライト第102弾（runRoundLoop.mjs による自動実行）。 141件すべてを訳し、`chunk_0000.translations.json` に書き出しました。登場した会話は NenioCompanion_dialogue と Regill_Main_dialog の2つです。JSON構文と `<ctrl_N/>` の個数・順序は目視で確認しましたが、`import --dry-run` は実行していません。\n\n気づいた点：\n- チャンクに `speak / 159件すべてを訳し、`chunk_0001.translations.json` に書き込みました。キー数は原文と同じ159件でそろっています。JSONは目視で確認しただけで、パース検証とimportのdry-runはしていません。対象の会話は `Seelah_Main_dialog` と `Dialogue_Sosiel_Main` です。\n\n気づいた点：「League of the (Ins"
+    },
+    {
+      "start": 29850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round103/",
+      "coveredDialogs": [
+        "Dialogue_Sosiel_Main",
+        "Wenduag_dialogue_main"
+      ],
+      "note": "v2リライト第103弾（runRoundLoop.mjs による自動実行）。 141件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き出しました（会話は `Dialogue_Sosiel_Main` の1つ）。JSONの形と `<ctrl_N/>` の個数・順序は書きながら目で確認しただけで、指示どおりスクリプトでのチェックはしていません。\n\n気づいた点：\n- **Aron Kir の表記**：用語集になかっ / 159件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き出しました。キー数は原文チャンクと一致しています（159件）。登場した会話は `Wenduag_dialogue_main` だけです。\n\n- **ウェンデュアグの口調:** 過去ラウンドの訳に合わせ、一人称は「私」、呼び方は「ご主人様」に統一しました。ご主人様に話すときは丁寧語"
     }
   ]
 }
