@@ -4630,6 +4630,72 @@
       "target": "ゴラリオニカ百科",
       "category": "Item",
       "note": "Nenioが将来著すと豪語する百科事典（NenioCompanion_dialogue、round101）。"
+    },
+    {
+      "source": "Solku",
+      "target": "ソルク",
+      "category": "Location",
+      "note": "Seelahの育った孤児と寡婦の街（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "Kyra",
+      "target": "カイラ",
+      "category": "Person",
+      "note": "Seelahの昔の仲間の女司祭（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "Milos",
+      "target": "ミロス",
+      "category": "Person",
+      "note": "Seelahがかつて絞首台から救った若者（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "Sunhammer",
+      "target": "サンハンマー",
+      "category": "Person",
+      "note": "十字軍兵士の魂を奪った者（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "League of the Inspiring Cart",
+      "target": "心躍る荷車同盟",
+      "category": "Organization",
+      "note": "略称League of the Cart＝荷車同盟（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "Elan",
+      "target": "エラン",
+      "category": "Person",
+      "note": "Seelahが友人と見なす騎士（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "Curl",
+      "target": "カール",
+      "category": "Person",
+      "note": "指輪を盗もうとして悪魔に憑かれた者（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "Carpenden",
+      "target": "カーペンデン",
+      "category": "Location",
+      "note": "Andoranの大きく豊かな都市、Sosielの故郷（Dialogue_Sosiel_Main、round102）。"
+    },
+    {
+      "source": "Aldori",
+      "target": "アルドリ",
+      "category": "Organization",
+      "note": "Jannahが属する剣士の流派（Seelah_Main_dialog、round102）。"
+    },
+    {
+      "source": "Crown of the World",
+      "target": "世界の冠",
+      "category": "Location",
+      "note": "極寒の北方大陸（NenioCompanion_dialogue、round102）。"
+    },
+    {
+      "source": "Lictor Resarc Ountor",
+      "target": "リクター・レサーク・オウンター",
+      "category": "Person",
+      "note": "Regillの上官、Order of the Godclawの長（Regill_Main_dialog、round102）。"
     }
   ]
 }
