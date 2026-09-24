@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 29250,
-  "updatedAt": "2026-09-22T07:12:17.170Z",
+  "nextStart": 29550,
+  "updatedAt": "2026-09-24T09:54:37.116Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -1868,6 +1868,16 @@
         "NenioCompanion_dialogue"
       ],
       "note": "v2リライト第100弾（runRoundLoop.mjs による自動実行）。 53件全て訳出しました。会話は \"GrimborMainDialogue\"（実質グレイボーとの会話）。気づいた点：`<ctrl_0/>`Torag`<ctrl_1/>`のように地の文中に神名がタグで挟まれている箇所があったため、glossaryの「トローグ」表記をそのまま反映しました。 / 210件全て翻訳し、`chunk_0001.translations.json` に書き込みました。会話は `Lann_Main_dialog`（コンパニオン、ランのメイン会話）1本のみです。\n\n気づいた点：この会話はランの生い立ち・部族・ウェンデュアグとの関係・ロマンス分岐まで幅広く含む長編で、同一台詞が複数箇所（`d75c81a5`と重複する`d2594a39`、`77315238`と`730 / 37件すべて翻訳しました。会話は `NenioCompanion_dialogue`（ネニオの入団後イベント、名もなき遺跡の話と「友情実験」の小ネタ会話）。\n\n気づいた点：`\"Creation\"/\"Crustacean\"/\"Cogitation\"` の脚韻ジョークは日本語で音を合わせるのが困難だったため、意味重視の訳（創造／甲殻類／思考）にしました（直後の台詞で「あまりいい韻じゃなかった」と本人が"
+    },
+    {
+      "start": 29250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round101/",
+      "coveredDialogs": [
+        "NenioCompanion_dialogue"
+      ],
+      "note": "v2リライト第101弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全300件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。キー数は元チャンクと一致しています。JSONが正しいかは目で確認しただけで、パーサーには通していません。`<ctrl_N/>` の欠落チェック（`import --dry-run`）もまだです。\n\n- **会話:** `NenioCompanio"
     }
   ]
 }
