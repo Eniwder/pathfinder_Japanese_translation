@@ -157,11 +157,15 @@ function syncWorkRepo() {
 
 function commitAndPushWork(message) {
   git(workDir, 'add', '-A');
-  if (!gitQuiet(workDir, 'status', '--porcelain')) {
-    console.log('作業用リポジトリに変更はありません。');
+  if (gitQuiet(workDir, 'status', '--porcelain')) git(workDir, 'commit', '-m', message);
+  // 以前 --no-push で実行した分など、未pushのコミットが残っていればそれも送る。
+  const unpushed = gitQuiet(workDir, 'rev-parse', '--verify', 'origin/main')
+    ? Number(gitQuiet(workDir, 'rev-list', '--count', 'origin/main..HEAD') ?? 0)
+    : Number(gitQuiet(workDir, 'rev-list', '--count', 'HEAD') ?? 0);
+  if (!unpushed) {
+    console.log('作業用リポジトリに送る変更はありません。');
     return;
   }
-  git(workDir, 'commit', '-m', message);
   if (noPush) console.log('--no-push のため作業用リポジトリへのpushは省略しました。');
   else git(workDir, 'push', '-u', 'origin', 'main');
 }
