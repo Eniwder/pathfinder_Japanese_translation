@@ -4808,6 +4808,172 @@
       "source": "the Other",
       "target": "『異なる者』",
       "note": "Daeranに宿る謎の存在をLiotrが名付けた呼称（WhatHappened_DaeranQ2_dialog、round108）。"
+    },
+    {
+      "source": "Thasgarodd",
+      "target": "タスガロッド",
+      "note": "バフォメットの配下のデーモン将軍。テンプル騎士の残党を率いる（EmberQ3_Brotherhood_Dialogue、round109）。"
+    },
+    {
+      "source": "Terta",
+      "target": "テルタ",
+      "note": "エンバーに救われた元教団員の煉瓦職人（KTC_EmberTaken_Dialogue、round109）。"
+    },
+    {
+      "source": "Toil",
+      "target": "トイル",
+      "note": "エンバーを信奉する元教団員の騎士（女性）（EmberQ3_Brotherhood_Dialogue、round109）。"
+    },
+    {
+      "source": "Holy Martyr",
+      "target": "聖なる殉教者",
+      "note": "元教団員の騎士たちがエンバーを呼ぶ尊称（EmberQ3_Brotherhood_Dialogue、round109）。"
+    },
+    {
+      "source": "Templars",
+      "target": "テンプル騎士",
+      "note": "バフォメット信奉の騎士団員（EmberQ3_FinalSermon_Dialogue、round110）。"
+    },
+    {
+      "source": "Redeemer Queen",
+      "target": "贖いの女王",
+      "note": "Nocticulaの二つ名（EmberQ3_FinalSermon_Dialogue、round110）。"
+    },
+    {
+      "source": "Purple City",
+      "target": "紫の都",
+      "note": "Nocticulaの支配する都市（EmberQ3_DemonsRedemption_Dialogue、round110）。"
+    },
+    {
+      "source": "Specimen Three-Six-Seven",
+      "target": "標本367番",
+      "note": "Finneanの魂を宿した武器の実験体番号（ApprenticeAmbush_dialogue、round110）。"
+    },
+    {
+      "source": "Three Tigers of Sin",
+      "target": "罪の三虎",
+      "note": "Yozzのギルドに属する武僧3人組（BattleWithTheAssasins_dialogue、round111）。"
+    },
+    {
+      "source": "Blood Moon",
+      "target": "ブラッドムーン",
+      "note": "罪の三虎の一人、サキュバスの魔術師の名（BattleWithTheAssasins_dialogue、round111）。"
+    },
+    {
+      "source": "Boulder",
+      "target": "ボルダー",
+      "note": "罪の三虎の一人、巨体のデーモンの名（BattleWithTheAssasins_dialogue、round111）。"
+    },
+    {
+      "source": "Houses of Perfection",
+      "target": "完成の家",
+      "note": "ジャルメレイにあるイロリの修道院群（BattleWithTheAssasins_dialogue、round111）。"
+    },
+    {
+      "source": "Jalmeray",
+      "target": "ジャルメレイ",
+      "note": "イロリ信仰の武術の島（BattleWithTheAssasins_dialogue、round111）。"
+    },
+    {
+      "source": "Stolen Lands",
+      "target": "ストールンランド",
+      "note": "ブレヴォイ南方の辺境地帯（StoryTellerAndDragonGoodEnter、round111）。"
+    },
+    {
+      "source": "Tartuccio",
+      "target": "タルトゥッチオ",
+      "note": "ストーリーテラーが語る物語中の人物（StoryTellerAndDragonGoodEnter、round111）。"
+    },
+    {
+      "source": "Jamandi Aldori",
+      "target": "ジャマンディ・アルドリ",
+      "note": "アルドリ家の女当主。物語中の人物（StoryTellerAndDragonGoodEnter、round111）。"
+    },
+    {
+      "source": "Swordlords",
+      "target": "ソードロード",
+      "note": "アルドリのソードロード（剣術の達人集団）（StoryTellerAndDragonGoodEnter、round111）。"
+    },
+    {
+      "source": "Grimwood",
+      "target": "グリムウッド",
+      "note": "ドレゼン西方の森（GrimborDrezen、round111）。"
+    },
+    {
+      "source": "Great Destroyer",
+      "target": "大破壊者",
+      "note": "Rovagugの二つ名（BE_Manor、round111）。"
+    },
+    {
+      "source": "Blood Marquis",
+      "target": "血の侯爵",
+      "note": "Shaxの二つ名（BE_Manor、round111）。"
+    },
+    {
+      "source": "Andirifkhu",
+      "target": "アンディリフク",
+      "category": "Character",
+      "note": "デーモン・ロード。二つ名は剃刀の姫君（YozzDying、round112）。"
+    },
+    {
+      "source": "Razor Princess",
+      "target": "剃刀の姫君",
+      "note": "Andirifkhuの二つ名（YozzDying、round112）。"
+    },
+    {
+      "source": "Cruel Fate",
+      "target": "残酷なる運命",
+      "note": "ヨズの右手の刃。Andirifkhuが鍛えた（YozzDying、round112）。"
+    },
+    {
+      "source": "Merciful Fate",
+      "target": "慈悲深き運命",
+      "note": "ヨズの左手の刃。Cruel Fateと対（YozzDying、round112）。"
+    },
+    {
+      "source": "House of Wicked Knowledge",
+      "target": "邪悪なる知識の館",
+      "note": "アルシニラ上層市にあるウィロダスの邸宅（GreyborNewsAboutVillodus、round112）。"
+    },
+    {
+      "source": "Vivisector",
+      "target": "生体解剖者",
+      "note": "ウィロダスの異名。会話中では『』で括る（Villodus_dialogue、round112）。"
+    },
+    {
+      "source": "Galt",
+      "target": "ガルト",
+      "note": "革命が続く国。形容詞Galtanも「ガルト」で処理（InterrogationAfterAssasination、round113）。"
+    },
+    {
+      "source": "Cabinet of Skulls",
+      "target": "髑髏内閣",
+      "note": "ガルトの旧支配評議会。初出は『』で括る（round113）。"
+    },
+    {
+      "source": "Grey Gardeners",
+      "target": "灰色の庭師",
+      "note": "ガルト革命の公式衛兵にして処刑人（round113）。"
+    },
+    {
+      "source": "Dry Crossroads",
+      "target": "乾いた十字路",
+      "note": "ドレゼンから西への街道沿いの場所。『』で括る（KTC_GreyborAlarm、round113）。"
+    },
+    {
+      "source": "Deep Dwellers",
+      "target": "ディープ・ドウェラー",
+      "note": "ニーソルムの地下の敵対勢力（SullNeatholmNews、round113）。"
+    },
+    {
+      "source": "Kinn",
+      "target": "キン",
+      "note": "ランの父。リア・ニースの夫（Mama_dialogue、round113）。"
+    },
+    {
+      "source": "Arran",
+      "target": "アラン",
+      "note": "ランの部族の娘。エルフとの結婚を望む（LannCantDo_KTC、round113）。"
     }
   ]
 }

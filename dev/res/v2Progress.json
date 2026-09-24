@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 31650,
-  "updatedAt": "2026-09-24T13:28:57.291Z",
+  "nextStart": 33150,
+  "updatedAt": "2026-09-24T14:06:57.586Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2000,6 +2000,104 @@
         "LiotrSetsTrap_DaeranQ3_ktc_dialog"
       ],
       "note": "v2リライト第108弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 DaeranQ2（天涯の館の幻視）とDaeranQ3（審問官との対決・罠）を訳了。the Otherは chunk_0000=『異なる者』/chunk_0001=他者 で割れ、glossaryは『異なる者』で登録。Liotrもリオトール/リオトルで揺れあり"
+    },
+    {
+      "start": 31650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round109/",
+      "coveredDialogs": [
+        "LiotrSetsTrap_DaeranQ3_ktc_dialog",
+        "LiotrTellsVerdict_c5_ktc_dialog",
+        "LiotrWake_c5_ktc_dialog",
+        "Other_MidFight_DaeranQ3_dialog",
+        "Persuading_DaeranQ3_dialog",
+        "KTC_EmberTaken_Dialogue",
+        "Sermon_Dialogue",
+        "Shrine_Final_Dialogue",
+        "Demon_Sermon_Dialogue",
+        "EmberQ3_Brotherhood_Dialogue"
+      ],
+      "note": "v2リライト第109弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ダレンQ3（リオトル裁判・異端審問）、エンバー誘拐と兄弟団・バフォメット祭壇、アルシニーラでのエンバーの説教を訳出。Thasgarodd/Terta/Toil/Holy Martyrをglossary追加"
+    },
+    {
+      "start": 31950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round110/",
+      "coveredDialogs": [
+        "EmberQ3_Brotherhood_Dialogue",
+        "EmberQ3_DemonsRedemption_Dialogue",
+        "EmberQ3_EndDiscuss_Dialogue",
+        "EmberQ3_FinalSermon_Dialogue",
+        "EmberQ3_ZoneStart_Dialogue",
+        "ApprenticeAmbush_dialogue",
+        "FinneanAfterBattle_dialogue",
+        "FinneanHello_dialogue",
+        "FinneanLab_dialogue",
+        "DragonHuntBookEvent1",
+        "DragonHuntBookEvent2",
+        "DragonHuntBookEvent3"
+      ],
+      "note": "v2リライト第110弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 エンバーQ3終盤（兄弟団・最後の説教・ノクティキュラ）、フィニアンの頭蓋骨とブレードスミス、竜狩り本イベントを訳出。Templars/Redeemer Queen/Purple City/標本367番をglossary追加。Thasgarodd表記がタスガロッド/タズガロッドで揺れ"
+    },
+    {
+      "start": 32250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round111/",
+      "coveredDialogs": [
+        "DragonHuntBookEvent3",
+        "GrimborAmbush",
+        "GrimborCompanionDialogeDragonHunt",
+        "GrimborDrezen",
+        "GrimborSanctum",
+        "KTC_GrimborAssasination",
+        "GrimborWyrmLair",
+        "StoryTellerAndDragonBadEnter",
+        "StoryTellerAndDragonGoodEnter",
+        "BattleWithTheAssasins_dialogue",
+        "BE_Manor",
+        "GreyborNewsAboutVillodus_dialogue"
+      ],
+      "note": "v2リライト第111弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 グレイボーの竜狩り（語り部と竜・グリムウッド）、罪の三虎との戦い、ゲームブック形式のBE_Manor（ウィロドゥス邸）を訳出。固有名詞12件をglossary追加"
+    },
+    {
+      "start": 32550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round112/",
+      "coveredDialogs": [
+        "GreyborNewsAboutVillodus_dialogue",
+        "HorzalahFirst_dialogue",
+        "Villodus_dialogue",
+        "YozzAndGreybor_dialogue",
+        "YozzDying_dialogue",
+        "AssassinHunter_dialogue",
+        "Horzalah_Ambush_dialogue",
+        "Horzalah_Mercy_dialogue"
+      ],
+      "note": "v2リライト第112弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 グレイボーの暗殺者ギルド編（ウィロドゥス討伐・ヨズとの対決・ホルザラーの正体と待ち伏せ）を訳出。アンディリフク・残酷なる運命/慈悲深き運命等6件をglossary追加"
+    },
+    {
+      "start": 32850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-24_round113/",
+      "coveredDialogs": [
+        "Horzalah_Mercy_dialogue",
+        "InterrogationAfterAssasination_dialogue",
+        "KTC_GreyborAlarm",
+        "LannCantDo_KTC",
+        "LannComeNeathholm_dialogue",
+        "Mama_dialogue",
+        "MamaDrezen_KTC",
+        "MamaMeetsLann_dialogue",
+        "SulDrezen_dialogue",
+        "SullNeatholmNews_dialogue",
+        "SulWaiting_dialogue"
+      ],
+      "note": "v2リライト第113弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 グレイボー暗殺未遂の尋問（ガルトの元捜査官）、ランの母リアとの再会、スル族長とネアソルムの近況を訳出。ガルト・髑髏内閣・灰色の庭師等7件をglossary追加"
     }
   ]
 }
