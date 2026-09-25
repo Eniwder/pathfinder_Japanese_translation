@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 34650,
-  "updatedAt": "2026-09-24T15:41:04.318Z",
+  "nextStart": 36150,
+  "updatedAt": "2026-09-25T11:11:56.848Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2204,6 +2204,103 @@
         "ElanCalls_SeelahQ3_ktc_dialog"
       ],
       "note": "v2リライト第118弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 シーラQ2〜Q3（エランとキアナのウスタラヴ風結婚式・願いの杯・ダレク・サンハンマーとの決着・ジャナの処遇）を訳出。怪奇動物園等5件をglossary追加。ダレクの話者メモ(俺・無骨)が実際の慇懃な口調と不一致"
+    },
+    {
+      "start": 34650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round119/",
+      "coveredDialogs": [
+        "ElanCalls_SeelahQ3_ktc_dialog",
+        "InDoubt_SeelahQ3_dialog",
+        "SeelahThanks_q3_dialog",
+        "Sosiel_Funeral_AfterFight_Dialogue",
+        "Sosiel_Funeral_BeforeFight_Dialogue",
+        "Buried_A-dead_dialogue",
+        "SosielQ0_Treason_Dialogue",
+        "Q01_SosielFindsOut_Dialogue",
+        "Impostor_Prison_Dialogue",
+        "KTC_ImpostorArrives",
+        "SosielFugitives_Dialogue"
+      ],
+      "note": "v2リライト第119弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 セーラQ3(エラン・疑念・感謝)、ソシエルの葬儀/反逆/兄トレヴァーの行方と偽者の会話を訳出。Marenta・Winged Woodをglossary追加"
+    },
+    {
+      "start": 34950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round120/",
+      "coveredDialogs": [
+        "SosielFugitives_Dialogue",
+        "SosielMonster_Dialogue",
+        "Dialogue_Sosiel_Q3_KTC",
+        "MeetTrever_Dialogue",
+        "OutsideArena_Sosiel_Dialogue",
+        "TreverCompanion_Dialogue",
+        "KTC_Wenduag_ComeNeathholm",
+        "Lann_Duel_dialogue",
+        "Lann_DuelLost_dialogue"
+      ],
+      "note": "v2リライト第120弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ソシエル兄トレヴァー救出(逃亡者・闘技場・再会)とラン対ウェンデュアグの決闘を訳出。Vaenic・Grahamをglossary追加"
+    },
+    {
+      "start": 35250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round121/",
+      "coveredDialogs": [
+        "Lann_DuelLost_dialogue",
+        "MongrelVendorDrezen_dialogue",
+        "MongrelVendorWendu_dialogue",
+        "SullLannIsNeutralized_dialogue",
+        "Sull_IWantMyMongrels_dialogue",
+        "WenduAndSull_dialogue",
+        "WenduTrainingIntervention_dialogue",
+        "AfterBattle_SavamelechsManshion_dialogue",
+        "KTC_ISmellHim",
+        "NearManshion_dialogue",
+        "SavaAndWendu_dialogue",
+        "Savamelech_Welcome_dialogue"
+      ],
+      "note": "v2リライト第121弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ランの決闘後・ネズホルムのスル/ダイラ/ウェンデュアグの部族騒動とサヴァメレクの屋敷を訳出。メモ追記なし"
+    },
+    {
+      "start": 35550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round122/",
+      "coveredDialogs": [
+        "Savamelech_Welcome_dialogue",
+        "Uppertown_HeIsClose_dialogue",
+        "FinalSava_dialogue",
+        "LannDubious_Companion_dialogue",
+        "SavaIsDeadNow_dialogue",
+        "WenduTraitor_DrezensStreet_dialogue",
+        "Q1WoljifAfterBattle_dialogue",
+        "Q1WoljifAfterTraitor_dialogue",
+        "Q1WoljifShopGolem_dialogue",
+        "Q1WoljifShopOwner_dialogue"
+      ],
+      "note": "v2リライト第122弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ウェンデュアグとサヴァメレクの決着(父との再会・裏切り分岐)、ランの疑念、ウォルジフQ1(ゴーレムの店)を訳出。Gaffrein・Jewelers Alleyをglossary追加"
+    },
+    {
+      "start": 35850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round123/",
+      "coveredDialogs": [
+        "Q1WoljifShopOwner_dialogue",
+        "Q1WoljifTraitor_dialogue",
+        "Q2WoljifCultCrusader_dialogue",
+        "Q2WoljifCultDeval_dialogue",
+        "Q2WoljifCultHighPriest_dialogue",
+        "Q2WoljifCultSacrifice_dialogue",
+        "Q2WoljifCultVoetiel_dialogue",
+        "Q3WoljifAbyss_Voetiel_dialogue",
+        "Q3WoljifAfterBattle_dialogue",
+        "Q3WoljifDouble_dialogue"
+      ],
+      "note": "v2リライト第123弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ウォルジフQ1〜Q3(裏切り者探し・バフォメット教団の生贄・ヴォエティエルとの対決)を訳出。ウォルジフの元仲間4名とデヴァル・グウェンヴィアをglossary追加"
     }
   ]
 }

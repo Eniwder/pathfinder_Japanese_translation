@@ -1030,6 +1030,16 @@
       "note": "ソシエルの兄。元パラディン/元ヘルナイト。トラウマ。"
     },
     {
+      "source": "Vaenic",
+      "target": "ヴェイニック",
+      "note": "ソシエルとトレヴァーの姓。Master Vaenic＝ヴェイニック様、Vaenic brothers＝ヴェイニック兄弟。"
+    },
+    {
+      "source": "Graham",
+      "target": "グレアム",
+      "note": "釘の騎士団の脱走兵の仲間。トレヴァーの従者だった男。"
+    },
+    {
       "source": "Staunton Vhane",
       "target": "スタントン・ヴェイン",
       "note": "表記揺れ用（Vane / Vhane）"
@@ -5084,6 +5094,67 @@
       "source": "The Cup of Wishes",
       "target": "願いの杯",
       "note": "結婚式で祝いの品を入れる風習（SeelahQ2、round118）。"
+    },
+    {
+      "source": "Marenta",
+      "target": "マレンタ",
+      "note": "釘の騎士団エクスターペイター支部からレジルの部隊へ転属した女性騎士。トレヴァーの盾を所持していた（Sosiel関連、round119）。"
+    },
+    {
+      "source": "Winged Wood",
+      "target": "ウィングド・ウッド",
+      "note": "ワールドウーンド内の古い森。デーモンの放った消えない火で燃え続けている（SeelahQ3、round119）。"
+    },
+    {
+      "source": "Gaffrein",
+      "target": "ガフレイン",
+      "note": "ネロシャンのゴーレム製作者。「Gaffrein & Son & Son」は「ガフレイン・アンド・サン・アンド・サン社」（Woljif Q1、round122）。"
+    },
+    {
+      "source": "Jewelers Alley",
+      "target": "宝石商通り",
+      "note": "ネロシャンの通り。ガフレイン工房の所在地（Woljif Q1、round122）。"
+    },
+    {
+      "source": "Dalna",
+      "target": "ダルナ",
+      "note": "ウォルジフの元仲間のティーフリング（「シスター・ダルナ」）。裏切り者候補（Woljif Q1、round123）。"
+    },
+    {
+      "source": "Doffie",
+      "target": "ドフィ",
+      "note": "ウォルジフの元仲間のティーフリング。裏切り者候補（Woljif Q1、round123）。"
+    },
+    {
+      "source": "Tavie",
+      "target": "タヴィ",
+      "note": "ウォルジフの元仲間のティーフリング。裏切り者候補（Woljif Q1、round123）。"
+    },
+    {
+      "source": "Varnir",
+      "target": "ヴァルニア",
+      "note": "ウォルジフの元仲間のティーフリング。裏切り者候補（Woljif Q1、round123）。"
+    },
+    {
+      "source": "Deval Gwenviar",
+      "target": "デヴァル・グウェンヴィア",
+      "note": "カルトに捕らわれていた若い十字軍兵士。メンデヴ東部の貴族グウェンヴィア家の三男（Woljif Q2、round123）。"
+    },
+    {
+      "source": "thiefling",
+      "target": "シーフリング",
+      "note": "thief+tieflingの造語。ケリスメイ一味などティーフリングの盗賊を指す俗称（Woljif Q1、round122-123）。"
+    },
+    {
+      "source": "thieflings",
+      "target": "シーフリング",
+      "note": "thieflingの複数形。語幹は「シーフリング」で固定し、文脈に応じて「シーフリングたち」（中立）／「シーフリングども」（蔑み）のように複数表現を付けてよい。"
+    },
+    {
+      "source": "Moon of the Abyss",
+      "target": "アビスの月",
+      "category": "Item",
+      "note": "Ancientries and Wondersに収蔵されていた宝物。ウォルジフ・クエストの鍵となる品（Woljif Q1-Q3）。"
     }
   ]
 }
