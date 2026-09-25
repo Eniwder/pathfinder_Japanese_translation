@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 37050,
-  "updatedAt": "2026-09-25T11:41:37.774Z",
+  "nextStart": 37350,
+  "updatedAt": "2026-09-25T15:26:20.742Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2366,6 +2366,28 @@
         "TeachMeHowToBreathe_dialog"
       ],
       "note": "v2リライト第126弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 entry（186件）を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き出しました。chunk 側の `keys` は 187 なので1件ずれていますが、ファイル内の entry はすべて訳しています。JSON の構文は目で確認しただけで、スクリプトでの検証は実行していません。\n\n- **会話:** Normal / `chunk_0001.translations.json` に全113件の訳を書き込みました（`chunk_0001.json` は編集していません）。会話は NightVisit_dialog、NotADate_dialog、LetsHide_dialog、TeachMeHowToBreathe_dialog の4つです。\n\n気づいた点：\n- このチャンクには `speakers` と `ch"
+    },
+    {
+      "start": 37050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round127/",
+      "coveredDialogs": [
+        "TeachMeHowToBreathe_dialog",
+        "HolyCarpet_dialog",
+        "SexyBathing_dialog",
+        "SweetReunion_dialog",
+        "InviteNotADate_ktc_dialog",
+        "OtherIsWatching_BE",
+        "GalfreyAfterSex_dialogue",
+        "GalfreyDrink_dialogue",
+        "GalfreyInDisarray_dialogue",
+        "Jealousy_dialogue",
+        "LannSparring_dialogue",
+        "LannWantsTraining_KTC",
+        "LannVasted_dialogue"
+      ],
+      "note": "v2リライト第127弾（runRoundLoop.mjs による自動実行）。 186件すべてを訳し、`chunk_0000.translations.json` に書き込みました。書いた内容はJSONとして正しいか目視で確認しました。スクリプトは実行していないので、`<ctrl_N/>` の数と順序は機械的には検証できていません。\n\n- **登場した会話:** TeachMeHowToBreathe / HolyCarpet / SexyBathing / SweetReu / chunk_0001 の全114件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き出しました。書き込み後に目視で確認し、JSONの構文と `<ctrl_N/>` の個数・順序は崩れていないと判断しています。ただ、コマンドを実行できない環境なので、import の dry-run による検証はまだです。\n\n登場した会話は GalfreyIn"
     }
   ]
 }
