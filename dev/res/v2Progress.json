@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 36450,
-  "updatedAt": "2026-09-25T11:23:19.348Z",
+  "nextStart": 36750,
+  "updatedAt": "2026-09-25T11:31:56.508Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2322,6 +2322,27 @@
         "Arueshalae_Romance_C3_Jailed_Dialogue"
       ],
       "note": "v2リライト第124弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.json` の全entryを訳して、`chunk_0000.translations.json` に書き出しました。ヘッダーの `keys` は194件ですが、ファイル内の entry は全部訳しています。JSON の検証と import の dry-run は、この環境では実行できていません。\n\n- **会話:** Q3WoljifDouble / ShouldGo /  / chunk_0001の全106件を訳し、`chunk_0001.translations.json` に書き込みました。登場した会話は Arueshalae_Romance_C4_Brothel_Entrance_Dialogue、Arueshalae_Romance_C4_Brothel_Inside_Dialogue、Arueshalae_Romance_C3_Jailed_Dialogue "
+    },
+    {
+      "start": 36450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round125/",
+      "coveredDialogs": [
+        "Arueshalae_Romance_C3_Jailed_Dialogue",
+        "KTC_Arueshalae_Romance_C3_Anevia_Dialogue",
+        "KTC_Arueshalae_Romance_C4_Dialogue",
+        "Arueshalae_Romance_C4_Nightmares_Dialogue",
+        "Arueshalae_Romance_C4_Wakeup_Dialogue",
+        "Arueshalae_Romance_C5_BackFromDream_Dialogue",
+        "Arueshalae_Romance_BestEnding_Dialogue",
+        "BalconyAwaits_dialogue",
+        "BalconySex_dialogue",
+        "GiveMeAnIdea_dialogue",
+        "ImNotNormal_dialogue",
+        "NormalDate_dialogue"
+      ],
+      "note": "v2リライト第125弾（runRoundLoop.mjs による自動実行）。 185件すべて訳して `dev/lang/chunks/chunk_0000.translations.json` に書き込みました。キー1件の書き間違いは見つけて直しましたが、書き込み後のファイルは読み直しておらず、JSON構文と `<ctrl_N/>` が揃っているかの機械チェックもしていません。\n\n- **会話:** Arueshalae_Romance_C3_Jailed / KTC_Ar / 115件すべて訳し、`chunk_0001.translations.json` に書き出しました。JSONとして正しいか、`<ctrl_N/>` が抜けていないかは書き込み前に目で確認しただけで、dry-run の import は実行していません。\n会話は BalconySex_dialogue / GiveMeAnIdea_dialogue / ImNotNormal_dialogue / "
     }
   ]
 }
