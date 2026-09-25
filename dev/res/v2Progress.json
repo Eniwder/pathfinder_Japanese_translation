@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 36150,
-  "updatedAt": "2026-09-25T11:11:56.848Z",
+  "nextStart": 36450,
+  "updatedAt": "2026-09-25T11:23:19.348Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2301,6 +2301,27 @@
         "Q3WoljifDouble_dialogue"
       ],
       "note": "v2リライト第123弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ウォルジフQ1〜Q3(裏切り者探し・バフォメット教団の生贄・ヴォエティエルとの対決)を訳出。ウォルジフの元仲間4名とデヴァル・グウェンヴィアをglossary追加"
+    },
+    {
+      "start": 36150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-25_round124/",
+      "coveredDialogs": [
+        "Q3WoljifDouble_dialogue",
+        "Q3WoljifShouldGo_dialogue",
+        "Q3WoljifSmall_dialogue",
+        "Q3WoljifThieflings_dialogue",
+        "Q3WoljifYgefeles_dialogue",
+        "WoljifNewVendor_dialogue",
+        "Arueshalae_Romance_C3_After_Lab_Dialogue",
+        "Arueshalae_Romance_C3_After_Wintersun_Dialogue",
+        "Arueshalae_Romance_C4_Beggar_Dialogue",
+        "Arueshalae_Romance_C4_Brothel_Entrance_Dialogue",
+        "Arueshalae_Romance_C4_Brothel_Inside_Dialogue",
+        "Arueshalae_Romance_C3_Jailed_Dialogue"
+      ],
+      "note": "v2リライト第124弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.json` の全entryを訳して、`chunk_0000.translations.json` に書き出しました。ヘッダーの `keys` は194件ですが、ファイル内の entry は全部訳しています。JSON の検証と import の dry-run は、この環境では実行できていません。\n\n- **会話:** Q3WoljifDouble / ShouldGo /  / chunk_0001の全106件を訳し、`chunk_0001.translations.json` に書き込みました。登場した会話は Arueshalae_Romance_C4_Brothel_Entrance_Dialogue、Arueshalae_Romance_C4_Brothel_Inside_Dialogue、Arueshalae_Romance_C3_Jailed_Dialogue "
     }
   ]
 }
