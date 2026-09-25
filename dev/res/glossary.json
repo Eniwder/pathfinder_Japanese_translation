@@ -5155,6 +5155,12 @@
       "target": "アビスの月",
       "category": "Item",
       "note": "Ancientries and Wondersに収蔵されていた宝物。ウォルジフ・クエストの鍵となる品（Woljif Q1-Q3）。"
+    },
+    {
+      "source": "Kelesh",
+      "target": "ケレッシュ",
+      "category": "Location",
+      "note": "ゴラリオン東方の大帝国（ケレッシュ帝国）。"
     }
   ]
 }
