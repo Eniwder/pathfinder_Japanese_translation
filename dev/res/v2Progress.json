@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 37350,
-  "updatedAt": "2026-09-25T15:26:20.742Z",
+  "nextStart": 37650,
+  "updatedAt": "2026-09-25T15:35:59.098Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2388,6 +2388,28 @@
         "LannVasted_dialogue"
       ],
       "note": "v2リライト第127弾（runRoundLoop.mjs による自動実行）。 186件すべてを訳し、`chunk_0000.translations.json` に書き込みました。書いた内容はJSONとして正しいか目視で確認しました。スクリプトは実行していないので、`<ctrl_N/>` の数と順序は機械的には検証できていません。\n\n- **登場した会話:** TeachMeHowToBreathe / HolyCarpet / SexyBathing / SweetReu / chunk_0001 の全114件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き出しました。書き込み後に目視で確認し、JSONの構文と `<ctrl_N/>` の個数・順序は崩れていないと判断しています。ただ、コマンドを実行できない環境なので、import の dry-run による検証はまだです。\n\n登場した会話は GalfreyIn"
+    },
+    {
+      "start": 37350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round128/",
+      "coveredDialogs": [
+        "LannVasted_dialogue",
+        "ArsinoeWedding_dialogue",
+        "DateWithLann_dialogue",
+        "LannAndDateKTC",
+        "LannMyLove_dialogue",
+        "LannAndFeelings_KTC",
+        "LannAndBook_dialogue",
+        "LannAndKids_dialogue",
+        "LannMamaLetter_dialogue",
+        "LannGift_dialogue",
+        "Dialogue_KTC_SosielCards",
+        "KTC_SosielCards_Again_Dialogue",
+        "SosielCards_Dialogue"
+      ],
+      "note": "v2リライト第128弾（runRoundLoop.mjs による自動実行）。 全186件を訳して `chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません（コマンド実行権限がないため）。\n\n- **会話:** LannVasted, ArsinoeWedding, DateWithLann, LannAndDateKTC, LannMyLove, Lann / 114件すべて訳して `chunk_0001.translations.json` に書き込みました。JSONの構文と `<ctrl_N/>` の個数・順序は目で見て確認しただけで、import の dry-run は実行していません。会話は `Dialogue_KTC_SosielCards`、`KTC_SosielCards_Again_Dialogue`、`SosielCards_Dialo"
     }
   ]
 }
