@@ -5229,6 +5229,12 @@
       "target": "マエストロ・エクレ",
       "category": "Character",
       "note": "アランカが最後のレクイエムの楽譜を持つと語る故人の作曲家。"
+    },
+    {
+      "source": "Protean",
+      "target": "プロテアン",
+      "category": "Creature",
+      "note": "混沌の来訪者種族。DLC1のシラメシュニクらが該当。"
     }
   ]
 }
