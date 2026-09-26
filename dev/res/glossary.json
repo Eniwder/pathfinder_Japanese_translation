@@ -5443,6 +5443,26 @@
       "source": "Savored Sting",
       "target": "甘美なる毒針",
       "note": "女神カリストリアの異名。"
+    },
+    {
+      "source": "The Helmsman",
+      "target": "操舵手",
+      "note": "DLC3の骨の船を操る老人。「舵取り」とはしない。"
+    },
+    {
+      "source": "Star Rattle",
+      "target": "スター・ラトル",
+      "note": "ナヒンドリの宝を盗んだプロテアン。"
+    },
+    {
+      "source": "Sithhud",
+      "target": "シスハッド",
+      "note": "センドリを狙う仮面の男が仕える存在。"
+    },
+    {
+      "source": "Great One",
+      "target": "大いなる者",
+      "note": "シスハッドの配下が主を呼ぶ尊称。"
     }
   ]
 }
