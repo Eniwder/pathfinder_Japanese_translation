@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 37650,
-  "updatedAt": "2026-09-25T15:35:59.098Z",
+  "nextStart": 37950,
+  "updatedAt": "2026-09-26T05:44:09.237Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2410,6 +2410,25 @@
         "SosielCards_Dialogue"
       ],
       "note": "v2リライト第128弾（runRoundLoop.mjs による自動実行）。 全186件を訳して `chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません（コマンド実行権限がないため）。\n\n- **会話:** LannVasted, ArsinoeWedding, DateWithLann, LannAndDateKTC, LannMyLove, Lann / 114件すべて訳して `chunk_0001.translations.json` に書き込みました。JSONの構文と `<ctrl_N/>` の個数・順序は目で見て確認しただけで、import の dry-run は実行していません。会話は `Dialogue_KTC_SosielCards`、`KTC_SosielCards_Again_Dialogue`、`SosielCards_Dialo"
+    },
+    {
+      "start": 37650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round129/",
+      "coveredDialogs": [
+        "SosielCards_Dialogue",
+        "Dialogue_SosielVerse",
+        "Dialogue_Sosiel_Flower",
+        "Sosiel_Romance_Confession_Dialogue",
+        "Sosiel_and_Trever_Prival_Dialogue",
+        "Dialogue_Sosiel_Nabrosok",
+        "Dialogue_Sosiel_Eskiz",
+        "Eskiz_KTC_Sosiel_Dialogue",
+        "Dialogue_Sosiel_Romance_Etyud",
+        "KTC_DatingMonster_SosielRomance_Dialogue"
+      ],
+      "note": "v2リライト第129弾（runRoundLoop.mjs による自動実行）。 165件すべてを訳し、`chunk_0000.translations.json` に書き込みました（`<ctrl_N/>` はそのまま残しています）。JSONの構文は目視で確認しただけで、import --dry-run のような機械検証はしていません。登場した会話は SosielCards_Dialogue、Dialogue_SosielVerse、Dialogue_Sosiel_Flower / 135件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。訳文に半角の `\"` は入れておらず、JSONの形式は目で確認しています（パース検証はしていません）。対象の会話は Dialogue_Sosiel_Eskiz、Eskiz_KTC_Sosiel_Dialogue、Dialogue_Sosiel_Romance_Ety"
     }
   ]
 }
