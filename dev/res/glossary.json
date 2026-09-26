@@ -3680,7 +3680,7 @@
     },
     {
       "source": "King Thaberdine",
-      "target": "サバーダイン王",
+      "target": "サバーディン王",
       "category": "Character",
       "note": "Drezenの酔いどれ王。「His Drunken Majesty」とも呼ばれる。"
     },
@@ -5235,6 +5235,162 @@
       "target": "プロテアン",
       "category": "Creature",
       "note": "混沌の来訪者種族。DLC1のシラメシュニクらが該当。"
+    },
+    {
+      "source": "Erdareth",
+      "target": "エルダレス",
+      "category": "Character",
+      "note": "DLC1でヴァルマロスの管理下にあるインエビタブル（InevitableOverseer）。"
+    },
+    {
+      "source": "Aravashnial",
+      "target": "アラヴァシュニアル",
+      "category": "Character",
+      "note": "ケナブレスのエルフの魔術師。DLC1のStorytellerの語りで言及。"
+    },
+    {
+      "source": "Lord of Vice",
+      "target": "悪徳卿",
+      "category": "Title",
+      "note": "別の過去で王となったデランの異名（DLC1 Storyteller）。"
+    },
+    {
+      "source": "Marchioness Von Candysnoutoff",
+      "target": "キャンディスナウトフ侯爵夫人",
+      "category": "Character",
+      "note": "FoolKing（サバーディン）が愛馬と称する豚。DLC1。"
+    },
+    {
+      "source": "Sayley Hemps",
+      "target": "セイリー・ヘンプス",
+      "category": "Character",
+      "note": "DLC1のメフィストフェレス裁判で言及される、ハムスターと引き換えに魂を売った6歳の少女。"
+    },
+    {
+      "source": "Inevitable",
+      "target": "インエビタブル",
+      "category": "Creature",
+      "note": "アクシスの秩序の守護者たる構築物的来訪者。複数形Inevitablesも同訳。"
+    },
+    {
+      "source": "Answering Rite",
+      "target": "応答の儀",
+      "category": "Character",
+      "note": "ヴァルマロスの別名。危険な無許可魔法を監視・無力化する原初のインエビタブル（DLC1）。"
+    },
+    {
+      "source": "Frada Linsdoten",
+      "target": "フラダ・リンスドテン",
+      "category": "Character",
+      "note": "市議会特別監察官の老女。50年勤続（Abad_Personal_dlaiogue、DLC1）。"
+    },
+    {
+      "source": "Brodie",
+      "target": "ブロディ",
+      "category": "Character",
+      "note": "墓地の墓守。病に罹っている（Grave_Personal_dialogue、DLC1）。"
+    },
+    {
+      "source": "Gray Lady",
+      "target": "灰色の貴婦人",
+      "category": "Deity",
+      "note": "ファラズマの異名。"
+    },
+    {
+      "source": "Zach",
+      "target": "ザック",
+      "category": "Character",
+      "note": "ザカリウスが自分を指して使う愛称（「ザック爺」など、DLC1）。"
+    },
+    {
+      "source": "Inai",
+      "target": "イナイ",
+      "category": "Character",
+      "note": "ケナブレスの施療院の老ヒーラー。毒舌な老婆（DLC2）。"
+    },
+    {
+      "source": "Venrad",
+      "target": "ヴェンラド",
+      "category": "Character",
+      "note": "灰色守備隊の軍曹。新兵を率いて地下へ逃れる（DLC2）。"
+    },
+    {
+      "source": "Bemir the Squeezer",
+      "target": "『締め屋』のベミル",
+      "category": "Character",
+      "note": "粉屋を装った犯罪者。単独では「ベミル」（DLC2）。"
+    },
+    {
+      "source": "Langrat Messini",
+      "target": "ラングラット・メッシーニ",
+      "category": "Character",
+      "note": "ケナブレス劇場の元第一ヴァイオリン奏者（DLC2）。"
+    },
+    {
+      "source": "Talia Vesse",
+      "target": "タリア・ヴェッセ",
+      "category": "Character",
+      "note": "「辺境の薔薇」と呼ばれた十字軍の英雄にして歌姫。故人。"
+    },
+    {
+      "source": "Rose of the Borderland",
+      "target": "辺境の薔薇",
+      "category": "Character",
+      "note": "タリア・ヴェッセの異名。"
+    },
+    {
+      "source": "Weitz Tammel",
+      "target": "ワイツ・タンメル",
+      "category": "Character",
+      "note": "ラングラットの旧友。市庁舎の裏手に住む（DLC2）。"
+    },
+    {
+      "source": "Reverend Drailey",
+      "target": "ドレイリー師",
+      "category": "Character",
+      "note": "ケナブレスの名高い芸術の後援者（DLC2）。"
+    },
+    {
+      "source": "Millorn Brouwer",
+      "target": "ミローン・ブラウアー",
+      "category": "Character",
+      "note": "地下に逃れたドワーフの錬金術師・商人（DLC2）。"
+    },
+    {
+      "source": "Quinnie",
+      "target": "クイニー",
+      "category": "Character",
+      "note": "ミローンの首に付くこぶ状のペット。「クインテセンス（Quintessence）」の略。"
+    },
+    {
+      "source": "Frada",
+      "target": "フラダ",
+      "category": "Character",
+      "note": "ケナブレスのドワーフの女性（DLC2）。"
+    },
+    {
+      "source": "Judge of the Gods",
+      "target": "神々の裁判官",
+      "category": "Deity",
+      "note": "アバダルの異名。"
+    },
+    {
+      "source": "Locust Lord",
+      "target": "蝗の王",
+      "category": "Deity",
+      "note": "デスカリの異名（Lord of Locustsと同訳）。RestBookEvent_1、round141。"
+    },
+    {
+      "source": "Bemir",
+      "target": "ベミル",
+      "category": "Character",
+      "note": "『締め屋』の異名を持つ大柄な犯罪者。劇場脱出に同行（DLC2）。"
+    },
+    {
+      "source": "Defender's Heart",
+      "target": "ディフェンダーズ・ハート",
+      "category": "Location",
+      "note": "ケナブレスの要塞。イーグル・ウォッチがバリケードを築く拠点（DLC2）。"
     }
   ]
 }

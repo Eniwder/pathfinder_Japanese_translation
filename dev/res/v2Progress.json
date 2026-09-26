@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 40050,
-  "updatedAt": "2026-09-26T11:04:40.566Z",
+  "nextStart": 41550,
+  "updatedAt": "2026-09-26T12:37:58.569Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2548,6 +2548,88 @@
         "DLC1_Hilor_dialogue"
       ],
       "note": "v2リライト第136弾（runRoundLoop.mjs による自動実行）。 152件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き出しました。対象の会話は DLC1_Yozz_dialogue、DLC1_YozzFallen_dialogue、EnterThreshold_dialogue です。出力したJSONの構文と `<ctrl_N/>` の保持は目視で確認しただけで、import の dry-ru / 148件すべて訳し、`chunk_0001.translations.json` に書き出しました。JSONの構文は目視で確認済みです。対象の会話は HelloSsila_dialogue と DLC1_Hilor_dialogue の2つです。\n\n気づいた点が2つあります。\n- 「Ssila'meshnik」「Ulbrig」「inevitable」「axiomite」はglossaryに無かった"
+    },
+    {
+      "start": 40050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round137/",
+      "coveredDialogs": [
+        "DLC1_Hilor_dialogue",
+        "InevitableOverseer_dialogue",
+        "IntroTeleport_dialogue",
+        "DLC1_Lariel_dialogue",
+        "DLC1_Mephisto_dialogue"
+      ],
+      "note": "v2リライト第137弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 DLC1のヒロール/ローリー、ラリエル、メフィストフェレス裁判、およびインエヴィタブル監督者・転移導入の会話を訳出。Erdarethをglossaryに追加"
+    },
+    {
+      "start": 40350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round138/",
+      "coveredDialogs": [
+        "DLC1_Mephisto_dialogue",
+        "ProteanBehavior_dialogue",
+        "DLC1_Storyteller_dialogue",
+        "DLC1_FoolKing_dialogue"
+      ],
+      "note": "v2リライト第138弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 DLC1のメフィストフェレス裁判後半、酔いどれ王サバーディン、語り部、プロテアン行動の会話を訳出。glossaryにアラヴァシュニアル等4件追加。サバーディン/サバーダインの表記ゆれあり"
+    },
+    {
+      "start": 40650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round139/",
+      "coveredDialogs": [
+        "DLC1_FoolKing_dialogue",
+        "ValmallosConfession_dialogue",
+        "ValmallosWelcome_dialogue",
+        "DLC1_Zacharius_dialogue",
+        "Abad_Personal_dlaiogue",
+        "Grave_Personal_dialogue"
+      ],
+      "note": "v2リライト第139弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 DLC1の酔いどれ王(続き)、ヴァルマロス歓迎/告白、ザカリウス二重人格、フラダ・ブロディの個人クエスト会話を訳出。glossaryにインエビタブル等6件追加"
+    },
+    {
+      "start": 40950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round140/",
+      "coveredDialogs": [
+        "Grave_Personal_dialogue",
+        "Grom_Personal_dialogue",
+        "Healer_Personal_dialogue",
+        "Muse_Personal_Dialogue",
+        "DLC2Start_interchapter",
+        "DLC2_Outro_1_Fled",
+        "DLC2_Outro_2_Fought",
+        "Mercenaries_dialogue",
+        "Millorn_Vendor_dialogue",
+        "Abad_dialogue",
+        "AbadInDistress_dialogue",
+        "DoorDown_Dialogue"
+      ],
+      "note": "v2リライト第140弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 ケナブレス地下の個人クエスト(ブロディ/グロム/イナイ/ラングラット)、傭兵ヴェンラド、ミローン商人、フラダ救出、DLC2導入/結末を訳出。glossaryに12件追加。フラダ姓がリンスドテン/リンズドーテンで揺れ"
+    },
+    {
+      "start": 41250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round141/",
+      "coveredDialogs": [
+        "DoorDown_Dialogue",
+        "DoorToParter_dialogue",
+        "DoorWell_dialogue",
+        "Door_Sleepy_dialogue",
+        "FirstCultistAttack_dialogue",
+        "Grom_dialogue",
+        "Muse_dialogue",
+        "MusicianStart_dialogue",
+        "RestBookEvent_1",
+        "ScoutScene_dialogue"
+      ],
+      "note": "v2リライト第141弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 DLC2の劇場脱出(扉・井戸・ラングラット/ベミル/レカース)と地下脱出の選択式イベント、斥候シーンを訳出。Locust Lordをglossary追加。ベミル/ベミール表記ゆれあり"
     }
   ]
 }
