@@ -5166,6 +5166,34 @@
       "source": "The Elegy of Ever-Blossoming Spring",
       "target": "永遠に咲き誇る春の哀歌",
       "note": "ソシエルのロマンス（スケッチの場面）で演じられる芸術作品の題名。訳文では『』で括る。"
+    },
+    {
+      "source": "Valmallos",
+      "target": "ヴァルマロス",
+      "category": "Character",
+      "note": "DLCに登場する存在。アリールーの知識と記憶から余剰体を生み出した。"
+    },
+    {
+      "source": "Excess",
+      "target": "余剰体",
+      "note": "DLCでアリールーの余剰の神話の力から生まれた存在への呼び名（呼びかけにも使う）。"
+    },
+    {
+      "source": "Zorm",
+      "target": "ゾルム",
+      "category": "Character",
+      "note": "ウェンドゥアグの父。"
+    },
+    {
+      "source": "Laag",
+      "target": "ラーグ",
+      "category": "Character",
+      "note": "ウェンドゥアグの母。"
+    },
+    {
+      "source": "The Portal of Wishes",
+      "target": "願いのポータル",
+      "note": "DLC1で願いを叶えると呼び込む喋るポータル。"
     }
   ]
 }
