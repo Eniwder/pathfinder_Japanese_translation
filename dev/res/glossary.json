@@ -5194,6 +5194,12 @@
       "source": "The Portal of Wishes",
       "target": "願いのポータル",
       "note": "DLC1で願いを叶えると呼び込む喋るポータル。"
+    },
+    {
+      "source": "Stag God",
+      "target": "牡鹿の神",
+      "category": "Deity",
+      "note": "エラスティルの異名。"
     }
   ]
 }
