@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 42150,
-  "updatedAt": "2026-09-26T15:38:44.107Z",
+  "nextStart": 42450,
+  "updatedAt": "2026-09-26T15:48:43.567Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2663,6 +2663,29 @@
         "RQ_Liars_dialogue"
       ],
       "note": "v2リライト第143弾（runRoundLoop.mjs による自動実行）。 96件すべてを訳し、`chunk_0000.translations.json` に書き出しました。登場した会話は RestBookEvent_2、SavedHealer_dialogue、SorcererAfterUndead_dialogue、Muse_friend_01、Muse_friend_02 の5つです。JSON構文と `<ctrl_N/>` の順序は目で確認しただけで、import / 186件をすべて訳し、`chunk_0001.translations.json` に書き込みました。会話は RestBookEvent_3、RichQuarter_Entrance_dialogue、RQ_Inquisitors_dialogue の3つです。JSONは目視で確認しただけで、パーサーやimportのdry-runは実行していません。\n\n気づいた点が2つあります。\n- **`{fl / 18件すべてを訳し、`chunk_0002.translations.json` に書き込みました。会話は RQ_Liars_dialogue だけです。JSONの構文と `<ctrl_N/>` の個数・順序は目視で確認しましたが、スクリプトによる検証は実行していません。\n気づいた点として、嘘つきのノームは状況に合わせて口調を変えています。親しげなふりをしている間は軽い口調、正体を明かしてからは脅"
+    },
+    {
+      "start": 42150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round144/",
+      "coveredDialogs": [
+        "RQ_Liars_dialogue",
+        "RQ_LiarsSurvivors",
+        "RQ_Marauders_Dialogue",
+        "Militia_dialog",
+        "TownHall_Dialogue",
+        "Wounded_cap_dialogue",
+        "NT_GettingThrough_BookEvent",
+        "NT_Minotaur_Dialogue",
+        "Tavern_Anevia_dialog",
+        "Tavern_Irabeth_Dialog",
+        "Tavern_Joran_dialog",
+        "Tavern_Keeper_dialog",
+        "Tavern_Priest_dialog",
+        "Abducted_dialogue"
+      ],
+      "note": "v2リライト第144弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 entry を訳し、訳文だけを `dev/lang/chunks/chunk_0000.translations.json` に1回で書き出しました。省略した entry はありません。ヘッダの件数は192件ですが、書き出した件数は数えていません。JSON の正しさも目視で確認しただけで、パースや import の dry-run は実行していません。\n\n- **登場し / chunk_0001 の全108件を訳し、`chunk_0001.translations.json` に書き出しました。登場した会話は Tavern_Anevia / Tavern_Irabeth / Tavern_Joran / Tavern_Keeper / Tavern_Priest / Abducted の6つです。JSONの構文は目視で確認しましたが、import の dry-run "
     }
   ]
 }
