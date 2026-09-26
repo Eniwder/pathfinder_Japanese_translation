@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 41550,
-  "updatedAt": "2026-09-26T12:37:58.569Z",
+  "nextStart": 41850,
+  "updatedAt": "2026-09-26T12:47:16.420Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2630,6 +2630,21 @@
         "ScoutScene_dialogue"
       ],
       "note": "v2リライト第141弾（クラウドセッションで実行、cloudSync.mjs で取り込み）。 DLC2の劇場脱出(扉・井戸・ラングラット/ベミル/レカース)と地下脱出の選択式イベント、斥候シーンを訳出。Locust Lordをglossary追加。ベミル/ベミール表記ゆれあり"
+    },
+    {
+      "start": 41550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round142/",
+      "coveredDialogs": [
+        "ScoutScene_dialogue",
+        "Violence_BookEvent",
+        "WhatTheHell_dialogue",
+        "Boss_dialogue",
+        "PartySeesHealer_dialogue",
+        "RestBookEvent_2"
+      ],
+      "note": "v2リライト第142弾（runRoundLoop.mjs による自動実行）。 153件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。登場した会話は ScoutScene_dialogue、Violence_BookEvent、WhatTheHell_dialogue、Boss_dialogue、PartySeesHealer_dialogue の5つです。\n\n気づいた点:\n- 地の文の `{mf / 147件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話は RestBookEvent_2 のみです（DLC2 の脱出行を描く本形式イベント）。\n\n- 選択肢の断片（`...was given to X.` など）は、直前の書き出し（「この役目は……」など）につながる地の文として訳しています。\n- 生のまま残っている `{flag|XxxState"
     }
   ]
 }
