@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 38550,
-  "updatedAt": "2026-09-26T06:05:56.711Z",
+  "nextStart": 38850,
+  "updatedAt": "2026-09-26T06:14:53.966Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2467,6 +2467,23 @@
         "DLC1_WounderFieldPortal_dialogue"
       ],
       "note": "v2リライト第131弾（runRoundLoop.mjs による自動実行）。 151件すべてを訳し、`chunk_0000.translations.json` に書き出しました。対象の会話は WenduRom_PersonalPunishment、WenduRom_SomeThingsAboutMyFather、WenduRom_SullAboutWenduag、WenduRom_ThatIsFinal の4つです。JSON は目視で確認しただけで、パーサーでの検証はして / 149件すべてを訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目で確認しただけで、スクリプトによる構文チェックや import の dry-run はしていません。対象の会話は WenduRom_TooMuchStress、WenduRom_YanielsDeath、DLCAreelu_dialogue、DLC1"
+    },
+    {
+      "start": 38550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round132/",
+      "coveredDialogs": [
+        "DLC1_WounderFieldPortal_dialogue",
+        "DLC1Travel_BookEvent",
+        "DLC1_after_interchapter",
+        "DLC1_before_interchapter",
+        "GesmerhaMain_dialogue",
+        "DLC1_Irabeth_dialogue",
+        "MarhevokFinal_dialogue",
+        "MarhevokMain_dialogue"
+      ],
+      "note": "v2リライト第132弾（runRoundLoop.mjs による自動実行）。 198件すべて訳し、`chunk_0000.translations.json` に書き込みました。件数が原文のキー数と一致することは確認済みです。ただ、JSONとして正しいかどうかは目で見て確認しただけで、パース検証や `import --dry-run` はまだ実行していません。対象の会話は DLC1_WounderFieldPortal_dialogue、DLC1Travel_BookEve / 102件すべて訳し、`chunk_0001.translations.json` に書き出しました。会話は DLC1_Irabeth_dialogue / MarhevokFinal_dialogue / MarhevokMain_dialogue の3つです。JSONはスクリプトで検証しておらず、目視で確認しただけです。\n\n気づいた点が2つあります。\n- `3455483f` の `{mf|si"
     }
   ]
 }
