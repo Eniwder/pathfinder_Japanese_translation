@@ -5124,8 +5124,8 @@
       "personalitySummary": "Nahindry, a powerful shadow balor associated with the dangerous forces of the Shadow Plane.",
       "toneAndVoice": "Menacing, arrogant, and cruel. Speaks with the confidence of a powerful demon.",
       "firstPerson": {
-        "term": "俺",
-        "rule": "Use 俺 consistently."
+        "term": "私",
+        "rule": "Use 私 consistently."
       }
     },
     "Penta_companion_NPC": {

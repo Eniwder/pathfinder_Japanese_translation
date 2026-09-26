@@ -3325,9 +3325,9 @@
     },
     {
       "source": "Upper Planes",
-      "target": "上位次元",
+      "target": "上方位界",
       "category": "General",
-      "note": "アビス（下位次元）の対となる、天界系プレインの総称。round55で言及。"
+      "note": "アビスの対となる、天界系プレインの総称。round55で言及。"
     },
     {
       "source": "Middle City",
@@ -5463,6 +5463,46 @@
       "source": "Great One",
       "target": "大いなる者",
       "note": "シスハッドの配下が主を呼ぶ尊称。"
+    },
+    {
+      "source": "I have to go.",
+      "target": "もう行かなければ",
+      "note": "定型句。相手や文脈に応じて語尾を変えてもよい。"
+    },
+    {
+      "source": "Esilla",
+      "target": "エシラ",
+      "note": "DLC3の幽霊船の航海士。エルフの女性。"
+    },
+    {
+      "source": "Angler",
+      "target": "アングラー",
+      "note": "DLC3の港で仲間の斡旋をする傷だらけの男の通り名。"
+    },
+    {
+      "source": "Murky Grotto",
+      "target": "濁水の洞窟",
+      "note": "DLC3の地名。"
+    },
+    {
+      "source": "Chest of the Drowned",
+      "target": "溺れし者の宝箱",
+      "note": "DLC3。海賊の女神ベスマラーの聖遺物。"
+    },
+    {
+      "source": "Hunger That Moves",
+      "target": "蠢く飢え",
+      "note": "DLC4。死体に入り込んで動かす小さなデーモンの群れ。訳文では『』で括る。"
+    },
+    {
+      "source": "Ysenna",
+      "target": "イセナ",
+      "note": "DLC4の人物名。"
+    },
+    {
+      "source": "Holgan",
+      "target": "ホルガン",
+      "note": "DLC4の人物名。地元民の部隊を訓練している。"
     }
   ]
 }

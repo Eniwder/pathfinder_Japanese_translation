@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 42750,
-  "updatedAt": "2026-09-26T15:57:22.205Z",
+  "nextStart": 43050,
+  "updatedAt": "2026-09-26T16:05:10.831Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2710,6 +2710,32 @@
         "DLC3_Salesman_dialogue"
       ],
       "note": "v2リライト第145弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の全 entry を訳し、`chunk_0000.translations.json` に書き込みました。ヘッダーの keys 値は 195 ですが、件数は数えていません。省略した entry はありません。JSON の構文は書き込み前に目視で確認しましたが、`import --dry-run` は実行していません。\n\n- **登場した会話:** Abducted_ / 105件中105件を訳し、`chunk_0001.translations.json` に書き出しました。会話は Dialogue_DLC3_FigureHead_start、DLC3_FirstMythic_dialogue、DLC3_Gemgolem_dialog、DLC3_Int_Nocta_Messenger_dialogue、DLC3_Nocticula_dialogue、DLC3_Sa"
+    },
+    {
+      "start": 42750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round146/",
+      "coveredDialogs": [
+        "DLC3_Salesman_dialogue",
+        "DLC3_Figurehead_dialogue",
+        "DLC3_Finale_dialogue",
+        "DLC3_Inter_End",
+        "DLC3_Inter_Start",
+        "DLC3_KTC_c3_Anevia",
+        "DLC3_KTC_c5_Ghost",
+        "DLC3_KTC_c5_GhostAlter",
+        "DLC3_Navigator_dialogue",
+        "DLC3_PortMercCap_dilaogue",
+        "DLC3_PortVendor_Dlaiogue",
+        "DLC3_ShipVendor_dialogue",
+        "DLC3_StrandedSailor_dialogue",
+        "Dialogue_DLC4_Gundrun_SecondState_EpicSpeech",
+        "Dialogue_DLC4_HolganFireSupport",
+        "DLC4_MarketSquare_Dialog",
+        "Dialogue_DLC4_SecondState_ShamanWarlord_DefenceDialog"
+      ],
+      "note": "v2リライト第146弾（runRoundLoop.mjs による自動実行）。 全182件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。自分の目で見てJSON構文を確認しただけで、スクリプトでの検証はしていません。\n登場した会話は DLC3_Salesman / Figurehead / Finale / Inter_End / Inter_Start / KTC_c3_Anevia / KTC_c5_ / 118件中118件を訳し、`chunk_0001.translations.json` に書き出しました。書き込み後にJSONの構文は目で確認しましたが、`import --dry-run` は実行していないので `<ctrl_N/>` の検証はまだです。対象の会話は DLC3_PortVendor_Dlaiogue / DLC3_ShipVendor_dialogue / DLC3_Strand"
     }
   ]
 }
