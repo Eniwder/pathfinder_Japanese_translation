@@ -1021,7 +1021,7 @@
     },
     {
       "source": "Kestoglyr",
-      "target": "ケケストグライア",
+      "target": "ケストグライア",
       "note": "リッチパス専用コンパニオン。古のアンデッド騎士。忠実。"
     },
     {
@@ -5200,6 +5200,29 @@
       "target": "牡鹿の神",
       "category": "Deity",
       "note": "エラスティルの異名。"
+    },
+    {
+      "source": "Lourry",
+      "target": "ローリー",
+      "category": "Character",
+      "note": "DLC1に登場する少女。父は元冒険者。"
+    },
+    {
+      "source": "Chaleb",
+      "target": "カレブ",
+      "category": "Character",
+      "note": "DLC1で蘇るカレブ・サゾマル。ケナブレスのブラックウィング図書館でストーリーテラーを襲った。"
+    },
+    {
+      "source": "Devarra",
+      "target": "デヴァーラ",
+      "category": "Character",
+      "note": "DLC1でカレブと共に蘇る人物。"
+    },
+    {
+      "source": "Colorless Lord",
+      "target": "無色の王",
+      "note": "DLC1のプロテアンが口にする主の呼び名。"
     }
   ]
 }

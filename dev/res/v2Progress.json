@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 39150,
-  "updatedAt": "2026-09-26T10:36:28.383Z",
+  "nextStart": 39450,
+  "updatedAt": "2026-09-26T10:46:29.981Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2503,6 +2503,23 @@
         "DLC1_Lourry_dialogue"
       ],
       "note": "v2リライト第133弾（runRoundLoop.mjs による自動実行）。 170件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSONの構文は目視で確認済みです。対象の会話は MarhevokMain / MarhevokWelcome / SoanaMain / DLC1_TargonaIz / DLC1_ElyankaSeptimus / DLC1_SkullPillar です。\n\n気 / 130件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON は目視で確認しただけで、スクリプトでの検証はしていません。会話は DLC1_ZombieGalfrey_dialogue、GetHorns_dialogue、DLC1_HilorIllusion_dialogue、DLC1_Lourry_dialogue の4つです。\n\n気づいた点：用語"
+    },
+    {
+      "start": 39150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round134/",
+      "coveredDialogs": [
+        "DLC1_Lourry_dialogue",
+        "DLC1_Chaleb_dialogue",
+        "DLC1_StorytellerEnd_dialogue",
+        "FinalBattleDLC1_dialogue",
+        "IAmPower_dialogue",
+        "NocticulaAmused_dialogue",
+        "SomeoneCalling_dialogue",
+        "TalkToSelf_dialogue"
+      ],
+      "note": "v2リライト第134弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全197件を訳し、`chunk_0000.translations.json` に書き出しました。chunk_0000.json 本体は編集していません。\n会話は DLC1_Lourry_dialogue、DLC1_Chaleb_dialogue、DLC1_StorytellerEnd_dialogue、FinalBattleDLC1_dialogue の4つです。\n\n気づ / 全103件を訳して `chunk_0001.translations.json` に書き込みました。JSONは目視で確認しただけで、スクリプトによる構文チェックや `import --dry-run` は実行していません。会話は IAmPower_dialogue、NocticulaAmused_dialogue、SomeoneCalling_dialogue、TalkToSelf_dialogu"
     }
   ]
 }
