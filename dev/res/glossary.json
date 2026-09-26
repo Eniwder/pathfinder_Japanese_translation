@@ -5223,6 +5223,12 @@
       "source": "Colorless Lord",
       "target": "無色の王",
       "note": "DLC1のプロテアンが口にする主の呼び名。"
+    },
+    {
+      "source": "Maestro Ecclé",
+      "target": "マエストロ・エクレ",
+      "category": "Character",
+      "note": "アランカが最後のレクイエムの楽譜を持つと語る故人の作曲家。"
     }
   ]
 }
