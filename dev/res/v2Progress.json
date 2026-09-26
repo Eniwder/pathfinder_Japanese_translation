@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 37950,
-  "updatedAt": "2026-09-26T05:44:09.237Z",
+  "nextStart": 38250,
+  "updatedAt": "2026-09-26T05:54:44.701Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2429,6 +2429,27 @@
         "KTC_DatingMonster_SosielRomance_Dialogue"
       ],
       "note": "v2リライト第129弾（runRoundLoop.mjs による自動実行）。 165件すべてを訳し、`chunk_0000.translations.json` に書き込みました（`<ctrl_N/>` はそのまま残しています）。JSONの構文は目視で確認しただけで、import --dry-run のような機械検証はしていません。登場した会話は SosielCards_Dialogue、Dialogue_SosielVerse、Dialogue_Sosiel_Flower / 135件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。訳文に半角の `\"` は入れておらず、JSONの形式は目で確認しています（パース検証はしていません）。対象の会話は Dialogue_Sosiel_Eskiz、Eskiz_KTC_Sosiel_Dialogue、Dialogue_Sosiel_Romance_Ety"
+    },
+    {
+      "start": 37950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-26_round130/",
+      "coveredDialogs": [
+        "KTC_DatingMonster_SosielRomance_Dialogue",
+        "KTC_SosielRomance_Portrait_Invitation_Dialogue",
+        "KTC_Sosiel_Romance_Breakup_Dialogue",
+        "KTC_TreverDead",
+        "Sosiel_Romance_Portrait_Dialogue",
+        "WenduRom_AfterSex",
+        "WenduRom_Autostart_dialogue",
+        "WenduRom_CantUnderstand",
+        "WenduRom_GoToFinal",
+        "WenduRom_HavocInTheTavern",
+        "KTC_WenduRom_TroublesInTheTavern",
+        "WenduRom_PersonalPunishment"
+      ],
+      "note": "v2リライト第130弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の全entryを訳し、`chunk_0000.translations.json` に書き出しました（chunk の記載は172キー）。JSON の構文と `<ctrl_N/>` の個数・順序は目視で確認しましたが、スクリプトによる検証はしていません。\n\n- **会話**: KTC_DatingMonster_SosielRomance_Dialogue、KTC_S / 全128件を訳し、`chunk_0001.translations.json` に書き出しました。JSON として正しいかは目視で確認しています。登場した会話は WenduRom_CantUnderstand、WenduRom_GoToFinal、WenduRom_HavocInTheTavern、KTC_WenduRom_TroublesInTheTavern、WenduRom_Personal"
     }
   ]
 }
