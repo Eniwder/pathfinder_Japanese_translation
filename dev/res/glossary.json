@@ -5396,6 +5396,23 @@
       "target": "ディフェンダーズ・ハート",
       "category": "Location",
       "note": "ケナブレスの要塞。イーグル・ウォッチがバリケードを築く拠点（DLC2）。"
+    },
+    {
+      "source": "Sister Albre",
+      "target": "シスター・アルブレ",
+      "category": "Character",
+      "note": "富裕区で合言葉と指を検める審問官の女性（DLC2）。"
+    },
+    {
+      "source": "Irrisen",
+      "target": "イリセン",
+      "category": "Location",
+      "note": "氷の魔女が治める極寒の国。"
+    },
+    {
+      "source": "Song of the Spheres",
+      "target": "天球の歌",
+      "note": "女神デズナの異名。"
     }
   ]
 }

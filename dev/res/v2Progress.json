@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 41850,
-  "updatedAt": "2026-09-26T12:47:16.420Z",
+  "nextStart": 42150,
+  "updatedAt": "2026-09-26T15:38:44.107Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2645,6 +2645,24 @@
         "RestBookEvent_2"
       ],
       "note": "v2リライト第142弾（runRoundLoop.mjs による自動実行）。 153件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。登場した会話は ScoutScene_dialogue、Violence_BookEvent、WhatTheHell_dialogue、Boss_dialogue、PartySeesHealer_dialogue の5つです。\n\n気づいた点:\n- 地の文の `{mf / 147件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話は RestBookEvent_2 のみです（DLC2 の脱出行を描く本形式イベント）。\n\n- 選択肢の断片（`...was given to X.` など）は、直前の書き出し（「この役目は……」など）につながる地の文として訳しています。\n- 生のまま残っている `{flag|XxxState"
+    },
+    {
+      "start": 41850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round143/",
+      "coveredDialogs": [
+        "RestBookEvent_2",
+        "SavedHealer_dialogue",
+        "SorcererAfterUndead_dialogue",
+        "Muse_friend_01",
+        "Muse_friend_02",
+        "RestBookEvent_3",
+        "RichQuarter_Entrance_dialogue",
+        "RQ_Inquisitors_dialogue",
+        "RQ_Liars_dialogue"
+      ],
+      "note": "v2リライト第143弾（runRoundLoop.mjs による自動実行）。 96件すべてを訳し、`chunk_0000.translations.json` に書き出しました。登場した会話は RestBookEvent_2、SavedHealer_dialogue、SorcererAfterUndead_dialogue、Muse_friend_01、Muse_friend_02 の5つです。JSON構文と `<ctrl_N/>` の順序は目で確認しただけで、import / 186件をすべて訳し、`chunk_0001.translations.json` に書き込みました。会話は RestBookEvent_3、RichQuarter_Entrance_dialogue、RQ_Inquisitors_dialogue の3つです。JSONは目視で確認しただけで、パーサーやimportのdry-runは実行していません。\n\n気づいた点が2つあります。\n- **`{fl / 18件すべてを訳し、`chunk_0002.translations.json` に書き込みました。会話は RQ_Liars_dialogue だけです。JSONの構文と `<ctrl_N/>` の個数・順序は目視で確認しましたが、スクリプトによる検証は実行していません。\n気づいた点として、嘘つきのノームは状況に合わせて口調を変えています。親しげなふりをしている間は軽い口調、正体を明かしてからは脅"
     }
   ]
 }
