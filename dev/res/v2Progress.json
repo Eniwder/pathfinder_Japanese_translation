@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 43050,
-  "updatedAt": "2026-09-26T16:05:10.831Z",
+  "nextStart": 43350,
+  "updatedAt": "2026-09-26T16:11:34.985Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2736,6 +2736,31 @@
         "Dialogue_DLC4_SecondState_ShamanWarlord_DefenceDialog"
       ],
       "note": "v2リライト第146弾（runRoundLoop.mjs による自動実行）。 全182件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。自分の目で見てJSON構文を確認しただけで、スクリプトでの検証はしていません。\n登場した会話は DLC3_Salesman / Figurehead / Finale / Inter_End / Inter_Start / KTC_c3_Anevia / KTC_c5_ / 118件中118件を訳し、`chunk_0001.translations.json` に書き出しました。書き込み後にJSONの構文は目で確認しましたが、`import --dry-run` は実行していないので `<ctrl_N/>` の検証はまだです。対象の会話は DLC3_PortVendor_Dlaiogue / DLC3_ShipVendor_dialogue / DLC3_Strand"
+    },
+    {
+      "start": 43050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round147/",
+      "coveredDialogs": [
+        "Dialogue_DLC4_SecondState_ShamanWarlord_DefenceDialog",
+        "DLC4_SecondState_TwoGuardsDialog",
+        "Dialogue_DLC4_CorpseOnATree",
+        "Dialogue_DLC4_CowardlyThieves",
+        "Dialogue_DLC4_FireFliesBait",
+        "Dialogue_DLC4_DolmainBeforeTheFight",
+        "DLC4_RuinedVillage_SpiritToRest",
+        "Stone_FirstTouch_dialogue",
+        "Stone_SecondTouch",
+        "Dialogue_DLC4_GhostHunter_Dialog",
+        "Dialogue_DLC4_TeleportToGundrun_dialogue",
+        "Dialogue_DLC4_Wilds_BearSoul_Dialog",
+        "Dialogue_DLC4_Wilds_DeerSoul_Dialog",
+        "Dialogue_DLC4_Wilds_GhostHunters_Found",
+        "Dialogue_DLC4_Wilds_Scout_Dialog",
+        "Dialogue_DLC4_Wilds_WolfSoul_Dialog"
+      ],
+      "note": "v2リライト第147弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に、chunk内の全entry分の訳文を書き込みました。ヘッダーの `keys` は197ですが、書き込んだ件数は数えておらず、JSONとしての構文チェックも実行していません。訳文に `\"` を入れないように書いただけです。\n\n- **会話**: ShamanWarlord_DefenceDialog、T / 103件すべてを訳し、`chunk_0001.translations.json` に書き出しました。書き出した内容はJSONとして正しいことを目視で確認済みで、`<ctrl_N/>` も原文どおりの個数と順序で残しています。\n今回の会話は Dialogue_DLC4_Wilds_DeerSoul_Dialog、GhostHunters_Found、Scout_Dialog、WolfSoul_Di"
     }
   ]
 }

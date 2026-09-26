@@ -5503,6 +5503,26 @@
       "source": "Holgan",
       "target": "ホルガン",
       "note": "DLC4の人物名。地元民の部隊を訓練している。"
+    },
+    {
+      "source": "Vinchek",
+      "target": "ヴィンチェク",
+      "note": "DLC4の人物名。ハーフリングの幽霊ハンター兼作家。"
+    },
+    {
+      "source": "Alaviel",
+      "target": "アラヴィエル",
+      "note": "DLC4の人物名。廃村に留まるドルイドの霊。"
+    },
+    {
+      "source": "Stone of Voices",
+      "target": "声の石",
+      "note": "DLC4。サルコリスの霊と交信する者たちが伝言に使う魔法の石。"
+    },
+    {
+      "source": "Grimgrove",
+      "target": "グリムグローブ",
+      "note": "DLC4の地名。ヴィンチェクが名付けた森。"
     }
   ]
 }
