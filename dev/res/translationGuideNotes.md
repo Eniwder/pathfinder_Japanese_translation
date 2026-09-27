@@ -283,3 +283,6 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
 - 2026-09-28（round160）: 表記ゆれ検出で"I'm not interested."の訳が句読点の有無で割れていた
   （DLC6_ArenaMasterArrival_dialogue/Dialogue_DLC6_Madam_InLoveの両方でPlayerの汎用拒否選択肢）
   ことから、translationGuide.mdの定型選択肢統一ルールに同フレーズを追記。
+- 2026-09-28（round161）: Dialogue_DLC6_TheaterFailで"Impossible Kingdoms"/"Possible Kingdoms"の
+  ダジャレの掛け合いが登場したことから、translationGuide.mdに語呂合わせ地名は音写より意味優先で
+  訳す旨を追記（この2語自体は文脈依存の一発ネタなのでglossaryには載せていない）。

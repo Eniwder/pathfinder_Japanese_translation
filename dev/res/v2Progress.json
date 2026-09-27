@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 47250,
-  "updatedAt": "2026-09-27T16:28:19.486Z",
+  "nextStart": 47550,
+  "updatedAt": "2026-09-27T16:47:08.892Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3014,6 +3014,29 @@
         "Dialogue_DLC6_MageMerchant"
       ],
       "note": "v2リライト第160弾（runRoundLoop.mjs による自動実行）。 155件全て翻訳しました。登場する会話は `ArenaAnnouncer_AfterWin`（トーナメント優勝後の影の主とのやり取り）、`MasterOfArena_Introduction`（闘技場への強制招待・仲間の反応）、`MasterOfArena_Kenabres`／`DLC6_ArenaMasterArrival_dialogue`（ケナブレスでの勧誘）、`Dialogue_DLC6_ / 145件全て翻訳し、chunk_0001.translations.jsonに書き込みました。登場した会話は Dialogue_DLC6_Kerismey（ケリスメイと家族団の会話）、Dialogue_DLC6_Madam_InLove（美人局詐欺コンビ+衛兵）、Dialogue_DLC6_MageMerchant（エルフ商人と衛兵の石化トラブル）の3本。気づいた点：`{mf|him|her}`等"
+    },
+    {
+      "start": 47250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round161/",
+      "coveredDialogs": [
+        "Dialogue_DLC6_MageMerchant",
+        "Dialogue_DLC6_Protester",
+        "DLC6_RobberDialogue",
+        "BE_SwarmGate",
+        "Dialogue_SwarmBarricade",
+        "Dialogue_SwarmCommander",
+        "Dialogue_SwarmEvac",
+        "Dialogue_SwarmHellBattle",
+        "Dialog_SwarmHideout",
+        "Dialogue_SwarmInquis",
+        "Dialogue_SwarmTeleport",
+        "Dialogue_SwarmTerror",
+        "Dialogue_DLC6_Flags",
+        "Dialogue_DLC6_TheaterFail"
+      ],
+      "note": "v2リライト第161弾（runRoundLoop.mjs による自動実行）。 182件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 182/182（未訳なし）\n- 登場した会話: Dialogue_DLC6_MageMerchant / Dialogue_DLC6_Protester / DLC6_RobberDialogue / BE_SwarmGate / Dialogue_SwarmBarricade / Di / 118件全て訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場した会話：Dialogue_SwarmTeleport（偽ラズミルによる群れ捕縛）、Dialogue_SwarmTerror（バフォメット教団のカルト2人組）、Dialogue_DLC6_Flags（オレアードの旗係ビーズ＆イコル）、Dialogue_DLC6_TheaterFail（幻術師と衛"
     }
   ]
 }

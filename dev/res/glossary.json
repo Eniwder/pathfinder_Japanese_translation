@@ -5883,6 +5883,30 @@
       "target": "タラテル",
       "category": "Character",
       "note": "キョニンから来た魔法商人。Dialogue_DLC6_MageMerchantで自己紹介として言及（round160）。"
+    },
+    {
+      "source": "Razmir",
+      "target": "ラズミル",
+      "category": "Person",
+      "note": "「King Razmir」の別名エントリ。地の文でKing無しの単独名で登場（Dialogue_SwarmTeleportで自称、round161）。既存の「ラズミル王」と訳語を揃える。"
+    },
+    {
+      "source": "Ichol",
+      "target": "イコル",
+      "category": "NPC",
+      "note": "オレアドの男性。Bheesの連れ。Dialogue_DLC6_Flagsに登場（round161）。"
+    },
+    {
+      "source": "Bhees",
+      "target": "ビース",
+      "category": "NPC",
+      "note": "オレアドの女性。Icholの連れ。Dialogue_DLC6_Flagsに登場（round161）。"
+    },
+    {
+      "source": "Eval Vitald",
+      "target": "エヴァル・ヴィタルド",
+      "category": "NPC",
+      "note": "ケナブレスの副市長。Dialogue_DLC6_Protesterで自己紹介として言及（round161）。"
     }
   ]
 }
