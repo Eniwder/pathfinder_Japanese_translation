@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 44550,
-  "updatedAt": "2026-09-27T07:07:27.165Z",
+  "nextStart": 44850,
+  "updatedAt": "2026-09-27T07:30:34.763Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2843,6 +2843,23 @@
         "Shifter_EvilShrine_dialogue"
       ],
       "note": "v2リライト第151弾（runRoundLoop.mjs による自動実行）。 200件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **訳した件数**: 200/200件（全entry）\n- **登場した会話**: Wolf_Meet_dialogue（ケレナイ/ウルブリッグの記憶回復）、GrifRemains_dialogue、GrifNest_dialogue、Ulbrig_Letsfly_c5_dialogue、Anev / 100件すべて翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 登場した会話(dialog): `Nexus_UlbrigUpset_dialogue`（ウルブリグの離反危機）、`KTC_UlbrigCallsToGarden_dialogue`／`Ulbrig_GardenGods_Final_dialogue`（神々の庭園でのプロポーズ）、`Shift"
+    },
+    {
+      "start": 44550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round152/",
+      "coveredDialogs": [
+        "Shifter_EvilShrine_dialogue",
+        "AbductedAgain_dialogue",
+        "DLC5_AfterAdventure_1A_dialogue",
+        "DLC5_AfterAdventure_1B_dialogue",
+        "DLC5_AfterAdventure_2A_dialogue",
+        "DLC5_AfterAdventure_2B_dialogue",
+        "DLC5_AndroidJoin_dialogue",
+        "DLC5_Hermit_dialogue"
+      ],
+      "note": "v2リライト第152弾（runRoundLoop.mjs による自動実行）。 171件を翻訳しました。登場した会話は Shifter_EvilShrine_dialogue（ウルブリグの部族疑惑エピソード）、AbductedAgain_dialogue（センドリ再誘拐）、DLC5_AfterAdventure_1A/1B/2A/2B_dialogue（DLC5道中の欠片回収後の仲間会話）です。センドリの隠し事の告白パートは口調・罪悪感の描写が多く、常体と丁寧語の切り替えに注 / 128件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 128件（未訳なし、全entry対応）\n- **登場したdialog**: `DLC5_AndroidJoin_dialogue`（ペンタ加入イベント）、`DLC5_Hermit_dialogue`（天使シュタールマーとの魂の欠片を巡る対話）\n- **気づいた点**: `efaa"
     }
   ]
 }

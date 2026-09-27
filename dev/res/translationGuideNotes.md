@@ -242,6 +242,13 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   translationGuide.mdに揃えるルールを追記。新規話者は検出されずv2CharacterNotes.mdの
   変更なし。glossary.jsonにGreat Hareを追加。
 
+- 2026-09-27: round152 chunk_0000〜0001（DLC5_AfterAdventure系/DLC5_Hermit_dialogue/
+  DLC5_AndroidJoin_dialogue等）のレビュー。"We have to go."の訳が「もう行かないと」
+  「もう行かなければ」に割れていた（機械検出の表記ゆれ候補）が、別会話・別話者での
+  地の台詞であり既存ルール通り問題なしと判断、ルール追記はなし。新規話者は検出されず
+  v2CharacterNotes.mdの変更なし。glossary.jsonにAethylia/Usurviel/Norte/Ulab/
+  Stahlmar/Blazing Squadron/Nine Hellsを追加。
+
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
 `node toBatchData.js extract --filter=issues` で拾える control-tag 不整合は、実際には

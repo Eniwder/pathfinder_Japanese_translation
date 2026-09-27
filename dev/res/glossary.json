@@ -5661,6 +5661,48 @@
       "target": "偉大なる兎",
       "category": "Deity",
       "note": "動物崇拝的な信仰で崇められる兎の神格（GrifRemains_dialogueで言及）。"
+    },
+    {
+      "source": "Aethylia",
+      "target": "エシリア",
+      "category": "NPC",
+      "note": "魔法塔でUsurvielの元にいた人物。野生魔法の暴発に関与（DLC5_AfterAdventure_1B_dialogueで言及）。"
+    },
+    {
+      "source": "Usurviel",
+      "target": "ウスルヴィエル",
+      "category": "NPC",
+      "note": "魔法塔にいた死亡済みの老魔術師。ゴブリンや生物を捕らえていた（DLC5_AfterAdventure_1B_dialogueで言及）。"
+    },
+    {
+      "source": "Norte",
+      "target": "ノルテ",
+      "category": "NPC",
+      "note": "ゴブリン。DLC5_AfterAdventure_1B_dialogueで動向が話題になる。"
+    },
+    {
+      "source": "Ulab",
+      "target": "ウラブ",
+      "category": "NPC",
+      "note": "拷問部屋に自ら留まっていたゴブリン兄弟の一人（DLC5_AfterAdventure_2A_dialogueで言及）。"
+    },
+    {
+      "source": "Stahlmar",
+      "target": "シュタルマール",
+      "category": "NPC",
+      "note": "サレンラエに仕えるBlazing Squadron隊長の天使（DLC5_Hermit_dialogueで登場）。"
+    },
+    {
+      "source": "Blazing Squadron",
+      "target": "灼熱部隊",
+      "category": "Organization",
+      "note": "Stahlmarが隊長を務める、サレンラエに仕える天使部隊。"
+    },
+    {
+      "source": "Nine Hells",
+      "target": "九層地獄",
+      "category": "Location",
+      "note": "悪魔の本拠地たる位界。慣用句的な言及（DLC5_AndroidJoin_dialogue）。"
     }
   ]
 }
