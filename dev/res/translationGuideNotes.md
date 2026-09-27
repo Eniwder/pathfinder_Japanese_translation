@@ -236,6 +236,12 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
   （地の台詞は文脈次第で訳し分けてよい）の範囲内と判断し、新規ルール追記は見送り。
   新規話者は検出されずv2CharacterNotes.mdの変更なし。glossary.jsonにIzyagna/Izを追加。
 
+- 2026-09-27: round151 chunk_0000〜0001（GrifRemains/GrifNest/UlbrigMourning/
+  Ulbrig_GardenGods系/Nexus_UlbrigUpset等のUlbrigロマンス関連dialogue）のレビュー。
+  Playerの同情・お悔やみ用途の"I'm sorry."が「気の毒に」「残念だ」に割れていたため
+  translationGuide.mdに揃えるルールを追記。新規話者は検出されずv2CharacterNotes.mdの
+  変更なし。glossary.jsonにGreat Hareを追加。
+
 ## 機械的に直せる control-tag 不整合パターン（2026-09-02 調査）
 
 `node toBatchData.js extract --filter=issues` で拾える control-tag 不整合は、実際には

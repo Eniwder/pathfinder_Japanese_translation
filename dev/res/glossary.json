@@ -5655,6 +5655,12 @@
       "target": "神々の庭園",
       "category": "Location",
       "note": "Ulbrigにとって思い出深い場所（ロマンス関連の言及）。"
+    },
+    {
+      "source": "Great Hare",
+      "target": "偉大なる兎",
+      "category": "Deity",
+      "note": "動物崇拝的な信仰で崇められる兎の神格（GrifRemains_dialogueで言及）。"
     }
   ]
 }

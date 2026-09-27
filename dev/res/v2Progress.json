@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 44250,
-  "updatedAt": "2026-09-27T06:47:52.335Z",
+  "nextStart": 44550,
+  "updatedAt": "2026-09-27T07:07:27.165Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2819,6 +2819,30 @@
         "Wolf_Meet_dialogue"
       ],
       "note": "v2リライト第150弾（runRoundLoop.mjs による自動実行）。 189件を訳し chunk_0000.translations.json に書き出しました（190件中1件、キー`e8062724`は文脈的に不要と判断し訳さず未訳のまま残しています）。\n\n- 会話: Gundrun_Welcome_dialogue／KTC_ShifterComeLate_dialogue／KTC_ShifterQuest2／Shifter_CompanionDialogue（す / 110件全て訳出し、chunk_0001.translations.jsonに書き込みました。登場した会話は Shifter_Defheart_dialogue（ウルブリッグ初登場）、Shifter_Warcamp_dialogue、Book_ShifterPast_1/2（幻視回想）、Shifter_EvilDemon_dialogue（兄弟デーモンとの対決）、Wolf_Meet_dialogu"
+    },
+    {
+      "start": 44250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round151/",
+      "coveredDialogs": [
+        "Wolf_Meet_dialogue",
+        "GrifRemains_dialogue",
+        "GrifNest_dialogue",
+        "Ulbrig_Letsfly_c5_dialogue",
+        "AneviaCallsToUlbrig_dialogue",
+        "UlbrigMourning_dialogue",
+        "Ulbrig_GardenGods_First_dialogue",
+        "Ulbrig_GardenGods_Second_dialogue",
+        "Nexus_UlbrigAfterFly_dialogue",
+        "Nexus_UlbrigFly_dialogue",
+        "Nexus_UlbrigUpset_dialogue",
+        "KTC_UlbrigCallsToGarden_dialogue",
+        "Ulbrig_GardenGods_Final_dialogue",
+        "Shifter_EntersRuins_dialogue",
+        "Shifter_EvilShrine_dialogue"
+      ],
+      "note": "v2リライト第151弾（runRoundLoop.mjs による自動実行）。 200件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **訳した件数**: 200/200件（全entry）\n- **登場した会話**: Wolf_Meet_dialogue（ケレナイ/ウルブリッグの記憶回復）、GrifRemains_dialogue、GrifNest_dialogue、Ulbrig_Letsfly_c5_dialogue、Anev / 100件すべて翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 登場した会話(dialog): `Nexus_UlbrigUpset_dialogue`（ウルブリグの離反危機）、`KTC_UlbrigCallsToGarden_dialogue`／`Ulbrig_GardenGods_Final_dialogue`（神々の庭園でのプロポーズ）、`Shift"
     }
   ]
 }
