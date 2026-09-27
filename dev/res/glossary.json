@@ -5793,6 +5793,36 @@
       "target": "闇の公子",
       "category": "Deity",
       "note": "ヴェルストラクが仕える存在への呼称（おそらくZon-Kuthonの異名）。AngryKyton_dialogueで言及（round156）。"
+    },
+    {
+      "source": "Storasta",
+      "target": "ストラスタ",
+      "category": "Location",
+      "note": "サルコリスにあった滅びた都市。DLC5_b2_first_meet_dialogue等で言及（round157）。"
+    },
+    {
+      "source": "Carrock",
+      "target": "キャロック",
+      "category": "NPC",
+      "note": "ストラスタの死者を安らかに眠らせないという老いた狂人。DLC5系dialogueで言及（round157）。"
+    },
+    {
+      "source": "Hovool",
+      "target": "ホヴール",
+      "category": "NPC",
+      "note": "森の部族の賢明な長。DLC5_b2_first_meet_dialogueで言及（round157）。"
+    },
+    {
+      "source": "Edric",
+      "target": "エドリック",
+      "category": "NPC",
+      "note": "薬草医の助手。黄色いベストを着た若者。DLC5_b2_healer_dialogueで言及（round157）。"
+    },
+    {
+      "source": "Milin",
+      "target": "ミリン",
+      "category": "NPC",
+      "note": "信頼されている医師。DLC5_Storasta_CharmedGuys_2で言及（round157）。"
     }
   ]
 }

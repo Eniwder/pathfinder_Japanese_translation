@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 46050,
-  "updatedAt": "2026-09-27T11:53:00.630Z",
+  "nextStart": 46350,
+  "updatedAt": "2026-09-27T12:09:43.603Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2939,6 +2939,26 @@
         "DLC5_LC_KytonPrisoner"
       ],
       "note": "v2リライト第156弾（runRoundLoop.mjs による自動実行）。 195件すべて翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 195件（全entry対応、未訳なし）\n- **登場した会話(dialog)**: DLC5_a1_WrathfulWoman_dialogue、Dialogue_DLC5_FirstGoblin_Main、Dialogue_DLC5_GoblinBoss_Main、Dialog / 105件すべて翻訳しました。登場した会話は `Dialogue_DLC5_GoblinsPartyInTheTower_Ritual`（塔の霊エシリアの儀式）、`Dialogue_DLC5_GoblinsPartyInTheTower_SummonPlace`（召喚の試練の間）、`AngryKyton_dialogue`／`DLC5_LC_KytonPrisoner`（ヴェルストラック゠タグトカー"
+    },
+    {
+      "start": 46050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round157/",
+      "coveredDialogs": [
+        "DLC5_LC_KytonPrisoner",
+        "TorturedSealBearer_dialogue",
+        "DLC5_b2_first_meet_dialogue",
+        "DLC5_Storasta_CharmedGuy",
+        "DLC5_Storasta_CharmedGuys_2",
+        "DLC5_CorruptedHusband",
+        "DLC5_Storasta_DeadDruid",
+        "DLC5_b2_dragon_dialogue",
+        "DLC5_Storasta_DrakeMeet",
+        " DLC5_b2_healer_dialogue  ",
+        "DLC5_b2_lastfight_dialogue"
+      ],
+      "note": "v2リライト第157弾（runRoundLoop.mjs による自動実行）。 161件訳しました（未訳なし、chunk全162件のうち\"cbfef34b\"に話者不明のためスキップせずtranslationGuideの丁寧語ルールで補完）。登場した会話：DLC5_LC_KytonPrisoner（棘の拷問ゲーム）、TorturedSealBearer_dialogue（欠片の受け渡し）、DLC5_b2_first_meet_dialogue（ストラスタ族との初対面）、DLC5 / 138件全て翻訳し、chunk_0001.translations.jsonに書き込みました。登場した会話は DLC5_b2_dragon_dialogue（レッドドラゴンの正体と魂の欠片を巡る対話）、DLC5_Storasta_DrakeMeet（老人アクシャンの正体探り）、DLC5_b2_healer_dialogue（治療師ミリンと助手エドリックの騒動）、DLC5_b2_lastfight_"
     }
   ]
 }
