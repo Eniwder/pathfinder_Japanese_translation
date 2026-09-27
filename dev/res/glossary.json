@@ -5619,6 +5619,42 @@
       "target": "暁断ち",
       "category": "Item",
       "note": "Sigvorn一族に伝わる剣の名。"
+    },
+    {
+      "source": "Olesks",
+      "target": "オレスク族",
+      "category": "Faction",
+      "note": "UlbrigがかつてChieftainを務めていたSarkorisの氏族。"
+    },
+    {
+      "source": "Neverhome",
+      "target": "ネヴァーホーム氏族",
+      "category": "Faction",
+      "note": "Olesk族が臣従していた上位氏族。"
+    },
+    {
+      "source": "Ustalavs",
+      "target": "ウスタラヴ人",
+      "category": "Race",
+      "note": "Ustalav出身の人々を指す民族呼称。"
+    },
+    {
+      "source": "Numerians",
+      "target": "ヌメリア人",
+      "category": "Race",
+      "note": "Numeria出身の人々を指す民族呼称。"
+    },
+    {
+      "source": "Barzhag",
+      "target": "バルザーグ",
+      "category": "NPC",
+      "note": "Sarkoris部族連合に討たれた歴史上のオーク族長。"
+    },
+    {
+      "source": "Garden of the Gods",
+      "target": "神々の庭園",
+      "category": "Location",
+      "note": "Ulbrigにとって思い出深い場所（ロマンス関連の言及）。"
     }
   ]
 }
