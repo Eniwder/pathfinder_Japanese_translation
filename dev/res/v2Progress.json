@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 47550,
-  "updatedAt": "2026-09-27T16:47:08.892Z",
+  "nextStart": 47850,
+  "updatedAt": "2026-09-27T17:02:51.183Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3037,6 +3037,30 @@
         "Dialogue_DLC6_TheaterFail"
       ],
       "note": "v2リライト第161弾（runRoundLoop.mjs による自動実行）。 182件全て翻訳し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 182/182（未訳なし）\n- 登場した会話: Dialogue_DLC6_MageMerchant / Dialogue_DLC6_Protester / DLC6_RobberDialogue / BE_SwarmGate / Dialogue_SwarmBarricade / Di / 118件全て訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場した会話：Dialogue_SwarmTeleport（偽ラズミルによる群れ捕縛）、Dialogue_SwarmTerror（バフォメット教団のカルト2人組）、Dialogue_DLC6_Flags（オレアードの旗係ビーズ＆イコル）、Dialogue_DLC6_TheaterFail（幻術師と衛"
+    },
+    {
+      "start": 47550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round162/",
+      "coveredDialogs": [
+        "Dialogue_DLC6_TheaterFail",
+        "Dialogue_Ghost_Theater",
+        "Dialogue_DLC6_RazmEvent2_InterruptingTheRitual",
+        "DLC6_LocustStart_KTC_dialogue",
+        "DLC6_Start_KTC_dialogue",
+        "Dialogue_Tavern_Evening_Coolstory",
+        "Dialogue_Tavern_Evening_EarlyStart",
+        "Dialogue_Tavern_Evening_Nenio",
+        "Dialogue_Tavern_Evening_Regill",
+        "Spymaster_Tavern_dialogue",
+        "Dialogue_Tavern_Evening_Table",
+        "Dialogue_Tavern_Fun_Camellia",
+        "Dialogue_Tavern_Fun_Cards",
+        "Dialogue_Tavern_Fun_Daeran",
+        "Dialogue_Tavern_Fun_Dance"
+      ],
+      "note": "v2リライト第162弾（runRoundLoop.mjs による自動実行）。 179件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **登場した会話**: 劇場での逮捕騒動(Dialogue_DLC6_TheaterFail)、幻術師の見世物(Dialogue_Ghost_Theater)、ラズミラン教徒の妨害(DLC6_RazmEvent2)、スウォームカルト徒(DLC6_LocustStart_KTC)、祭りの招待(DLC / 110件を翻訳し、chunk_0001.translations.json に書き出しました（chunk_0001.json自体は未編集）。\n\n登場した会話(dialog)は Dialogue_Tavern_Evening_Table（厨房での食べ物盗み）、Dialogue_Tavern_Fun_Camellia、Dialogue_Tavern_Fun_Cards（サイコロ勝負・いかさま）、Dia"
     }
   ]
 }

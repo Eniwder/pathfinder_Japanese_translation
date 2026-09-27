@@ -5907,6 +5907,30 @@
       "target": "エヴァル・ヴィタルド",
       "category": "NPC",
       "note": "ケナブレスの副市長。Dialogue_DLC6_Protesterで自己紹介として言及（round161）。"
+    },
+    {
+      "source": "Impossible Kingdoms",
+      "target": "インポッシブル・キングダムズ",
+      "category": "Location",
+      "note": "旅の見世物師が語る遠方の異国。Dialogue_Ghost_Theaterに登場（round162）。"
+    },
+    {
+      "source": "Rovus",
+      "target": "ロヴス",
+      "category": "NPC",
+      "note": "酒場に現れる老スパイマスター。Spymaster_Tavern_dialogueに登場（round162）。"
+    },
+    {
+      "source": "Undarin",
+      "target": "アンダリン",
+      "category": "Location",
+      "note": "ウーンド南東の都市。悪魔の侵攻で早期に陥落した。Spymaster_Tavern_dialogueで言及（round162）。"
+    },
+    {
+      "source": "Razmirans",
+      "target": "ラズミラン人",
+      "category": "Faction",
+      "note": "生神ラズミールの信奉者・臣民を指す語。Spymaster_Tavern_dialogueで言及（round162）。"
     }
   ]
 }
