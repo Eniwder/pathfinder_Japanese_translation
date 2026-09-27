@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 46350,
-  "updatedAt": "2026-09-27T12:09:43.603Z",
+  "nextStart": 46650,
+  "updatedAt": "2026-09-27T15:52:10.145Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2959,6 +2959,22 @@
         "DLC5_b2_lastfight_dialogue"
       ],
       "note": "v2リライト第157弾（runRoundLoop.mjs による自動実行）。 161件訳しました（未訳なし、chunk全162件のうち\"cbfef34b\"に話者不明のためスキップせずtranslationGuideの丁寧語ルールで補完）。登場した会話：DLC5_LC_KytonPrisoner（棘の拷問ゲーム）、TorturedSealBearer_dialogue（欠片の受け渡し）、DLC5_b2_first_meet_dialogue（ストラスタ族との初対面）、DLC5 / 138件全て翻訳し、chunk_0001.translations.jsonに書き込みました。登場した会話は DLC5_b2_dragon_dialogue（レッドドラゴンの正体と魂の欠片を巡る対話）、DLC5_Storasta_DrakeMeet（老人アクシャンの正体探り）、DLC5_b2_healer_dialogue（治療師ミリンと助手エドリックの騒動）、DLC5_b2_lastfight_"
+    },
+    {
+      "start": 46350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round158/",
+      "coveredDialogs": [
+        "DLC5_b2_lastfight_dialogue",
+        "DLC5_NymphDialog",
+        "DLC5_b2_old_mo_dialogue ",
+        " DLC5_b2_warlord_dialogue ",
+        "DLC5_Companion_Android_dialogue",
+        "DLC5_Companion_Rekarth_dialogue",
+        "DLC5_Companion_Sendri_dialogue"
+      ],
+      "note": "v2リライト第158弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json に153件訳出（154キー中1件、話者不明で発話内容も判断困難な短い定型文はなく全て埋めたので実質全件）。登場した会話はDLC5_b2_lastfight_dialogue／DLC5_NymphDialog／DLC5_b2_old_mo_dialogue／DLC5_b2_warlord_dialogue（いずれもストラスタ族長ホヴール、オー / 144件を訳しました（Penta/Nenio・Rekarth・Sendriの同行者会話3本、`DLC5_Companion_Android_dialogue` / `DLC5_Companion_Rekarth_dialogue` / `DLC5_Companion_Sendri_dialogue`）。\n\n気づいた点：`DLC5_Companion_Android_dialogue` ブロックの発"
     }
   ]
 }

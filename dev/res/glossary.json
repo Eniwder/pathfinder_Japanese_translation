@@ -5823,6 +5823,36 @@
       "target": "ミリン",
       "category": "NPC",
       "note": "信頼されている医師。DLC5_Storasta_CharmedGuys_2で言及（round157）。"
+    },
+    {
+      "source": "Wonderbloom",
+      "target": "ワンダーブルーム",
+      "category": "Item",
+      "note": "DLC5のニンフたちが崇める花。ファーストワールドの花に似ているとされる。DLC5_NymphDialogで言及（round158）。"
+    },
+    {
+      "source": "Alabastrine Peaks",
+      "target": "アラバストリン山脈",
+      "category": "Place",
+      "note": "クラウン・オブ・ザ・ワールド内の山脈。DLC5_Companion_Sendri_dialogueで言及（round158）。"
+    },
+    {
+      "source": "Petal Abode",
+      "target": "花びらの棲家",
+      "category": "Place",
+      "note": "DLC5のニンフたちが暮らす場所。DLC5_NymphDialogで言及（round158）。"
+    },
+    {
+      "source": "Old Mo",
+      "target": "オールド・モー",
+      "category": "NPC",
+      "note": "DLC5に登場する年老いたドワーフの女性。DLC5_b2_old_mo_dialogueで言及（round158）。"
+    },
+    {
+      "source": "Pentatonica",
+      "target": "ペンタトニカ",
+      "category": "NPC",
+      "note": "アンドロイドの仲間ペンタ(Penta)のフルネーム。DLC5_Companion_Android_dialogueで言及（round158）。"
     }
   ]
 }

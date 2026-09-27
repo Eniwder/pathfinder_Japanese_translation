@@ -274,3 +274,9 @@ translationGuide.md側の説明はこの前提で書いているので、`CONTRO
 上記を先に流してから `extract --filter=issues` をやり直すと、残るのは本当に文脈判断が
 要る（タグをどこに挿入するか、文章のどこが欠落しているか）少数のキーだけになる。
 mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽出すること。
+
+## 更新履歴
+
+- 2026-09-28（round158）: 表記ゆれ検出で"Tell me about yourself."の訳が割れていた
+  （companion毎に「あなたのことを聞かせてくれ」/「あなた自身のことを聞かせてくれ」）ことから、
+  translationGuide.mdの定型選択肢統一ルールに同フレーズを追記。
