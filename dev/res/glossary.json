@@ -5853,6 +5853,24 @@
       "target": "ペンタトニカ",
       "category": "NPC",
       "note": "アンドロイドの仲間ペンタ(Penta)のフルネーム。DLC5_Companion_Android_dialogueで言及（round158）。"
+    },
+    {
+      "source": "Lord Zuset Ekhox Zego",
+      "target": "ロード・ズセト・エコックス・ゼゴ",
+      "category": "Character",
+      "note": "闘技場の主催者。異名は「Nihiloi（ニヒロイ）」、シャドウ・ロード。ArenaAnnouncer_AfterWinで言及（round159）。"
+    },
+    {
+      "source": "Inner and Outer Spheres",
+      "target": "内圏・外圏",
+      "category": "Cosmology",
+      "note": "ArenaAnnouncer_AfterWinに登場する宇宙論用語（round159）。"
+    },
+    {
+      "source": "Velhen",
+      "target": "ヴェルヘン",
+      "category": "Character",
+      "note": "DLC5に登場するドワーフの鍛冶師・錬金術師。DLC5_Velhen_dialogueで言及（round159）。"
     }
   ]
 }

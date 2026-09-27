@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 46650,
-  "updatedAt": "2026-09-27T15:52:10.145Z",
+  "nextStart": 46950,
+  "updatedAt": "2026-09-27T16:11:26.768Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2975,6 +2975,28 @@
         "DLC5_Companion_Sendri_dialogue"
       ],
       "note": "v2リライト第158弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json に153件訳出（154キー中1件、話者不明で発話内容も判断困難な短い定型文はなく全て埋めたので実質全件）。登場した会話はDLC5_b2_lastfight_dialogue／DLC5_NymphDialog／DLC5_b2_old_mo_dialogue／DLC5_b2_warlord_dialogue（いずれもストラスタ族長ホヴール、オー / 144件を訳しました（Penta/Nenio・Rekarth・Sendriの同行者会話3本、`DLC5_Companion_Android_dialogue` / `DLC5_Companion_Rekarth_dialogue` / `DLC5_Companion_Sendri_dialogue`）。\n\n気づいた点：`DLC5_Companion_Android_dialogue` ブロックの発"
+    },
+    {
+      "start": 46650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round159/",
+      "coveredDialogs": [
+        "DLC5_Companion_Sendri_dialogue",
+        "DLC5_Kerismei_dialogue",
+        "DLC5_SendriLies_dialogue",
+        "DLC5_Survivor_Bemir_dialogue",
+        "DLC5_Survivor_Brodie_dialogue",
+        "DLC5_Survivor_Frada_dialogue",
+        "DLC5_Survivor_Inai_dialogue",
+        "DLC5_Survivor_Langrat_dialogue",
+        "DLC5_TavernKeeper_dialogue",
+        "DLC5_Velhen_dialogue",
+        "DLC5_Veteran_dialogue",
+        "Dialogue_Cat_is_a_spy",
+        "ArenaAnnouncer_AfterWin"
+      ],
+      "note": "v2リライト第159弾（runRoundLoop.mjs による自動実行）。 180件全て訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 180件（全entry、null残しなし）\n- **登場した会話**: DLC5_Companion_Sendri_dialogue／DLC5_Kerismei_dialogue／DLC5_SendriLies_dialogue／DLC5_Survivor_Bemir_dial / 120件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 登場会話: DLC5_Velhen_dialogue（ドワーフの武器商人ヴェルヘン）、DLC5_Veteran_dialogue（軍曹ヴェンラド）、Dialogue_Cat_is_a_spy（猫を売る老婆＝実は正体不明の何か）、ArenaAnnouncer_AfterWin（シャドウロード・ゼゼ"
     }
   ]
 }
