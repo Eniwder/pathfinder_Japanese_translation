@@ -5781,6 +5781,18 @@
       "target": "ケリッド人",
       "category": "Faction",
       "note": "Golarion北方の蛮族的な人間種族。DLC5_a1_Traitor_dialogueで言及（round155）。"
+    },
+    {
+      "source": "Master Usur",
+      "target": "マスター・ウスル",
+      "category": "NPC",
+      "note": "ゴブリンNorteがかつて仕えていた魔法使い。故人。Dialogue_DLC5_FirstGoblin_Mainで言及（round156）。"
+    },
+    {
+      "source": "Dark Prince",
+      "target": "闇の公子",
+      "category": "Deity",
+      "note": "ヴェルストラクが仕える存在への呼称（おそらくZon-Kuthonの異名）。AngryKyton_dialogueで言及（round156）。"
     }
   ]
 }

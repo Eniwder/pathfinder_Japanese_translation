@@ -6065,11 +6065,11 @@
       }
     },
     "DLC5_InformatorNaked": {
-      "personalitySummary": "An informant who survives by gathering and selling useful information.",
-      "toneAndVoice": "Nervous, cautious, and opportunistic. Chooses words carefully to protect himself.",
+      "personalitySummary": "A female hunter (Reyna) turned informant who survives by gathering and selling useful information.",
+      "toneAndVoice": "Nervous, cautious, and opportunistic. Chooses words carefully to protect herself.",
       "firstPerson": {
-        "term": "俺",
-        "rule": "Use 俺 consistently."
+        "term": "私",
+        "rule": "Use 私 consistently (source narration explicitly identifies her as a woman)."
       }
     },
     "DLC5_CR0_ShadowPlaneCitizenMaleKytonSlave": {

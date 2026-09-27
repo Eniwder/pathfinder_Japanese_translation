@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 45750,
-  "updatedAt": "2026-09-27T11:34:06.675Z",
+  "nextStart": 46050,
+  "updatedAt": "2026-09-27T11:53:00.630Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2920,6 +2920,25 @@
         "DLC5_a1_WrathfulWoman_dialogue"
       ],
       "note": "v2リライト第155弾（runRoundLoop.mjs による自動実行）。 165件全て翻訳し、chunk_0000.translations.jsonに書き込みました（元のchunk_0000.jsonは未変更）。\n\n- **件数**: 165/165件（省略なし）\n- **登場した会話(dialog)**: Dialogue_DLC5_LC_WallOfPain_Dialog / KTC_GoKillStihhud_dialogue / DLC5_SithhudHim / 135件すべて翻訳しました。登場した会話は `DLC5_a1_FirstMeet_dialogue`（ケリッド族長アーディンとの初対面）、`DLC5_a1_BrothersPlans_dialogue`（兄弟の作戦会議）、`DLC5_a1_BrothersReunion_dialogue`（巨人陣営での潜入）、`DLC5_a1_Traitor_dialogue`（裏切り者の通訳との交渉）、`DLC"
+    },
+    {
+      "start": 45750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round156/",
+      "coveredDialogs": [
+        "DLC5_a1_WrathfulWoman_dialogue",
+        "Dialogue_DLC5_FirstGoblin_Main",
+        "Dialogue_DLC5_GoblinBoss_Main",
+        "Dialogue_DLC5_GoblinsPartyInTheTower_BodyOfTowerSpirit",
+        "Dialogue_DLC5_GoblinsPartyInTheTower_CageForAnimal",
+        "Dialogue_DLC5_GoblinsPartyInTheTower_FinalDialog",
+        "Dialogue_DLC5_GoblinsPartyInTheTower_Ritual",
+        "Dialogue_DLC5_GoblinsPartyInTheTower_SummonPlace",
+        "AngryKyton_dialogue",
+        "DLC5_LC_KytonPrisoner"
+      ],
+      "note": "v2リライト第156弾（runRoundLoop.mjs による自動実行）。 195件すべて翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 195件（全entry対応、未訳なし）\n- **登場した会話(dialog)**: DLC5_a1_WrathfulWoman_dialogue、Dialogue_DLC5_FirstGoblin_Main、Dialogue_DLC5_GoblinBoss_Main、Dialog / 105件すべて翻訳しました。登場した会話は `Dialogue_DLC5_GoblinsPartyInTheTower_Ritual`（塔の霊エシリアの儀式）、`Dialogue_DLC5_GoblinsPartyInTheTower_SummonPlace`（召喚の試練の間）、`AngryKyton_dialogue`／`DLC5_LC_KytonPrisoner`（ヴェルストラック゠タグトカー"
     }
   ]
 }
