@@ -280,3 +280,6 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
 - 2026-09-28（round158）: 表記ゆれ検出で"Tell me about yourself."の訳が割れていた
   （companion毎に「あなたのことを聞かせてくれ」/「あなた自身のことを聞かせてくれ」）ことから、
   translationGuide.mdの定型選択肢統一ルールに同フレーズを追記。
+- 2026-09-28（round160）: 表記ゆれ検出で"I'm not interested."の訳が句読点の有無で割れていた
+  （DLC6_ArenaMasterArrival_dialogue/Dialogue_DLC6_Madam_InLoveの両方でPlayerの汎用拒否選択肢）
+  ことから、translationGuide.mdの定型選択肢統一ルールに同フレーズを追記。

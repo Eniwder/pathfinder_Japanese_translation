@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 46950,
-  "updatedAt": "2026-09-27T16:11:26.768Z",
+  "nextStart": 47250,
+  "updatedAt": "2026-09-27T16:28:19.486Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2997,6 +2997,23 @@
         "ArenaAnnouncer_AfterWin"
       ],
       "note": "v2リライト第159弾（runRoundLoop.mjs による自動実行）。 180件全て訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 180件（全entry、null残しなし）\n- **登場した会話**: DLC5_Companion_Sendri_dialogue／DLC5_Kerismei_dialogue／DLC5_SendriLies_dialogue／DLC5_Survivor_Bemir_dial / 120件全て翻訳し、chunk_0001.translations.json に書き込みました。\n\n- 登場会話: DLC5_Velhen_dialogue（ドワーフの武器商人ヴェルヘン）、DLC5_Veteran_dialogue（軍曹ヴェンラド）、Dialogue_Cat_is_a_spy（猫を売る老婆＝実は正体不明の何か）、ArenaAnnouncer_AfterWin（シャドウロード・ゼゼ"
+    },
+    {
+      "start": 46950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round160/",
+      "coveredDialogs": [
+        "ArenaAnnouncer_AfterWin",
+        "MasterOfArena_Introduction",
+        "MasterOfArena_Kenabres",
+        "DLC6_ArenaMasterArrival_dialogue",
+        "Dialogue_DLC6_InterrogationOfTheSpy",
+        "Dialogue_DLC6_Kerismey",
+        "Dialogue_DLC6_Madam_InLove",
+        "Dialogue_DLC6_MageMerchant"
+      ],
+      "note": "v2リライト第160弾（runRoundLoop.mjs による自動実行）。 155件全て翻訳しました。登場する会話は `ArenaAnnouncer_AfterWin`（トーナメント優勝後の影の主とのやり取り）、`MasterOfArena_Introduction`（闘技場への強制招待・仲間の反応）、`MasterOfArena_Kenabres`／`DLC6_ArenaMasterArrival_dialogue`（ケナブレスでの勧誘）、`Dialogue_DLC6_ / 145件全て翻訳し、chunk_0001.translations.jsonに書き込みました。登場した会話は Dialogue_DLC6_Kerismey（ケリスメイと家族団の会話）、Dialogue_DLC6_Madam_InLove（美人局詐欺コンビ+衛兵）、Dialogue_DLC6_MageMerchant（エルフ商人と衛兵の石化トラブル）の3本。気づいた点：`{mf|him|her}`等"
     }
   ]
 }

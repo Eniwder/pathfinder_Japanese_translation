@@ -5871,6 +5871,18 @@
       "target": "ヴェルヘン",
       "category": "Character",
       "note": "DLC5に登場するドワーフの鍛冶師・錬金術師。DLC5_Velhen_dialogueで言及（round159）。"
+    },
+    {
+      "source": "Drimo",
+      "target": "ドリモ",
+      "category": "Character",
+      "note": "DLC6の闘技場の従者(steward)。DLC6_ArenaMasterArrival_dialogue/ArenaAnnouncer_AfterWinに登場（round160）。"
+    },
+    {
+      "source": "Talathel",
+      "target": "タラテル",
+      "category": "Character",
+      "note": "キョニンから来た魔法商人。Dialogue_DLC6_MageMerchantで自己紹介として言及（round160）。"
     }
   ]
 }
