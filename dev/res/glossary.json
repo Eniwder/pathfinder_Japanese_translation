@@ -5565,6 +5565,60 @@
       "target": "デスカリ教徒",
       "category": "Term",
       "note": "デーモン卿Deskariの信奉者たち。"
+    },
+    {
+      "source": "Kerenai",
+      "target": "ケレナイ",
+      "category": "Deity",
+      "note": "Gundrunで信仰される女神。異名Kerenai the Protector。狼の姿と結び付けて語られる。"
+    },
+    {
+      "source": "Cerenna",
+      "target": "セレンナ",
+      "category": "Deity",
+      "note": "Gundrunで語られる神狼の名（Cerenna the Swift-Pawed等）。Kerenaiと同一視されている可能性あり。"
+    },
+    {
+      "source": "Dautri",
+      "target": "ドートリ",
+      "category": "NPC",
+      "note": "GundrunのSigvornの一族名（Sigvorn Dautri、祖先Aswold/Walder/Troven/Wilber Dautri）。"
+    },
+    {
+      "source": "Baron of Varlau",
+      "target": "ヴァルロー男爵",
+      "category": "Title",
+      "note": "商人Arysen Kreiの称号。"
+    },
+    {
+      "source": "Wolfshome",
+      "target": "ウルフズホーム",
+      "category": "Place",
+      "note": "GundrunのUlbrigの家の名。"
+    },
+    {
+      "source": "Starfall",
+      "target": "スターフォール",
+      "category": "Place",
+      "note": "Ustalavの都市。Sigvornが言及。"
+    },
+    {
+      "source": "Aervahr",
+      "target": "アーヴァール",
+      "category": "Deity",
+      "note": "天空のグリフィンの神。Ulbrigが言及。"
+    },
+    {
+      "source": "Bleming",
+      "target": "ブレミング",
+      "category": "NPC",
+      "note": "Gundrunの商人。Numeriaから交易品を運ぶ。"
+    },
+    {
+      "source": "Dawncutter",
+      "target": "暁断ち",
+      "category": "Item",
+      "note": "Sigvorn一族に伝わる剣の名。"
     }
   ]
 }

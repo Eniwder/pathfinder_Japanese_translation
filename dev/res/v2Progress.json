@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 43650,
-  "updatedAt": "2026-09-27T06:02:22.172Z",
+  "nextStart": 43950,
+  "updatedAt": "2026-09-27T06:24:08.550Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2781,6 +2781,25 @@
         "Gundrun_Negotiant_dialogue"
       ],
       "note": "v2リライト第148弾（runRoundLoop.mjs による自動実行）。"
+    },
+    {
+      "start": 43650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round149/",
+      "coveredDialogs": [
+        "Gundrun_Negotiant_dialogue",
+        "Gundrun_negotiant_saveus_dialogue",
+        "Gundrun_saveus_general_dialogue",
+        "Gundrun_Shaman_dialogue",
+        "Gundrun_shaman_saveus_dialogue",
+        "Gundrun_Sick_dialogue",
+        "Gundrun_Trader_dialogue",
+        "Gundrun_Warlord_dialogue",
+        "Gundrun_warlord_saveus_dialogue",
+        "Gundrun_Welcome_dialogue"
+      ],
+      "note": "v2リライト第149弾（runRoundLoop.mjs による自動実行）。 173件全て訳し、chunk_0000.translations.jsonに書き込みました。登場した会話は Gundrun_Negotiant_dialogue、Gundrun_negotiant_saveus_dialogue、Gundrun_saveus_general_dialogue、Gundrun_Shaman_dialogue、Gundrun_shaman_saveus_dialogu / 127件全て訳出しました（chunk_0001.json内の全entry）。登場会話は「Gundrun_Warlord_dialogue」「Gundrun_warlord_saveus_dialogue」「Gundrun_Welcome_dialogue」の3本で、グンドルン村の族長シグヴォルンとシャーマン・イセナ、古の族長ウルブリグが絡む一連の会話です。1点気づいた点として、原文中で女神の名が「"
     }
   ]
 }
