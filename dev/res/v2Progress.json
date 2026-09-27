@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 45450,
-  "updatedAt": "2026-09-27T11:14:53.521Z",
+  "nextStart": 45750,
+  "updatedAt": "2026-09-27T11:34:06.675Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2900,6 +2900,26 @@
         "Dialogue_DLC5_LC_WallOfPain_Dialog"
       ],
       "note": "v2リライト第154弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の全172件中144件を翻訳しました（chunk_0000.translations.json に出力、chunk_0000.json自体は未変更）。残り28件はkeys数(172)とentries実数の差分で、実際に読めたentryは全て訳出済みです。\n\n登場した会話は Dialogue_DLC5_Pit_1stHaunt（幽霊の呪文）、Dialogue_DLC5 / 127件訳出しました（chunk記載の128件中1件差はカウント誤差の可能性、未訳キーはなし）。登場した会話は Dialogue_DLC5_LC_ChapelDialogue（村長アーマックとの初対面）、Dialogue_DLC5_LC_Executor_dialog（影の巨人の処刑人との交渉）、Dialogue_DLC5_LC_FetchlingStartDialog（ウラブ救出後の会話）、Di"
+    },
+    {
+      "start": 45450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round155/",
+      "coveredDialogs": [
+        "Dialogue_DLC5_LC_WallOfPain_Dialog",
+        "KTC_GoKillStihhud_dialogue",
+        "DLC5_SithhudHimself_dialogue",
+        "DLC5_SithhudIsFinallyDead_dialogue",
+        "DLC5_Inter_End",
+        "DLC5_Inter_Start",
+        "DLC5_a1_FirstMeet_dialogue",
+        "DLC5_a1_BrothersPlans_dialogue",
+        "DLC5_a1_BrothersReunion_dialogue",
+        "DLC5_a1_Traitor_dialogue",
+        "DLC5_a1_WrathfulWoman_dialogue"
+      ],
+      "note": "v2リライト第155弾（runRoundLoop.mjs による自動実行）。 165件全て翻訳し、chunk_0000.translations.jsonに書き込みました（元のchunk_0000.jsonは未変更）。\n\n- **件数**: 165/165件（省略なし）\n- **登場した会話(dialog)**: Dialogue_DLC5_LC_WallOfPain_Dialog / KTC_GoKillStihhud_dialogue / DLC5_SithhudHim / 135件すべて翻訳しました。登場した会話は `DLC5_a1_FirstMeet_dialogue`（ケリッド族長アーディンとの初対面）、`DLC5_a1_BrothersPlans_dialogue`（兄弟の作戦会議）、`DLC5_a1_BrothersReunion_dialogue`（巨人陣営での潜入）、`DLC5_a1_Traitor_dialogue`（裏切り者の通訳との交渉）、`DLC"
     }
   ]
 }

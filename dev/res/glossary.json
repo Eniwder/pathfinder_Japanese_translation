@@ -5739,6 +5739,48 @@
       "target": "アルムク",
       "category": "Character",
       "note": "Dialogue_DLC5_LC_ChapelDialogueに登場する村の長老（round154）。"
+    },
+    {
+      "source": "Ardin",
+      "target": "アーディン",
+      "category": "Character",
+      "note": "DLC5_a1系ダイアログに登場する部族の長の息子（round155）。"
+    },
+    {
+      "source": "Tokum",
+      "target": "トクム",
+      "category": "Character",
+      "note": "DLC5_a1_BrothersReunion_dialogueに登場するArdinの兄弟（round155）。"
+    },
+    {
+      "source": "Caretaker",
+      "target": "ケアテイカー",
+      "category": "Character",
+      "note": "DLC5_Inter_Endで言及される、Sithhudの魂の欠片を守る番人的存在（round155）。"
+    },
+    {
+      "source": "Frozen Lord",
+      "target": "氷結の王",
+      "category": "Title",
+      "note": "Sithhudの異名。「Lord of Ice and Bones（氷と骨の王）」も同一人物を指す（round155）。"
+    },
+    {
+      "source": "Lord of Ice and Bones",
+      "target": "氷と骨の王",
+      "category": "Title",
+      "note": "Sithhudの異名。「Frozen Lord（氷結の王）」も同一人物を指す（round155）。"
+    },
+    {
+      "source": "Blood Tear",
+      "target": "ブラッドティア",
+      "category": "Item",
+      "note": "DLC5_a1_BrothersPlans_dialogueで儀式に必要とされる鉱石（round155）。"
+    },
+    {
+      "source": "Kellids",
+      "target": "ケリッド人",
+      "category": "Faction",
+      "note": "Golarion北方の蛮族的な人間種族。DLC5_a1_Traitor_dialogueで言及（round155）。"
     }
   ]
 }
