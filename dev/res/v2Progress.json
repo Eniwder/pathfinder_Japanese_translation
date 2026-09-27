@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 45150,
-  "updatedAt": "2026-09-27T10:57:43.470Z",
+  "nextStart": 45450,
+  "updatedAt": "2026-09-27T11:14:53.521Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2881,6 +2881,25 @@
         "Dialogue_DLC5_Pit_1stHaunt"
       ],
       "note": "v2リライト第153弾（runRoundLoop.mjs による自動実行）。 195件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 195件全て翻訳完了（未訳なし）\n- **登場した会話**: DLC5_Hermit_dialogue、DLC5_Hermit_Meet_dialogue、NecromancerDead_dialogue、DLC5_ReadyToRitual_dialogue、ReadyToRit / 105件すべて訳出しました（未訳なし）。登場した会話は `Dialogue_DLC5_DeleteStones`（レカース/センドリ/ペンタとの瓦礫撤去シーン）、`Dialogue_DLC5_GiantBossDead`（巨人撃破後の氷の欠片を誰が持つか決める場面）、`Dialogue_DLC5_Pit_1stHaunt`（ケリッド人の亡霊との遭遇）です。\n\n気づいた点：この chunk では `"
+    },
+    {
+      "start": 45150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round154/",
+      "coveredDialogs": [
+        "Dialogue_DLC5_Pit_1stHaunt",
+        "Dialogue_DLC5_SpiritOfTheTower_Main",
+        "Dialogue_DLC5_BellTower_Dialog",
+        "Dialogue_DLC5_LC_BasementDialog",
+        "DLC5_LC_BrotherDialog",
+        "Dialogue_DLC5_LC_ChapelDialogue",
+        "Dialogue_DLC5_LC_Executor_dialog",
+        "Dialogue_DLC5_LC_FetchlingStartDialog",
+        "Dialogue_DLC5_LC_GolemsDialog",
+        "Dialogue_DLC5_LC_WallOfPain_Dialog"
+      ],
+      "note": "v2リライト第154弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の全172件中144件を翻訳しました（chunk_0000.translations.json に出力、chunk_0000.json自体は未変更）。残り28件はkeys数(172)とentries実数の差分で、実際に読めたentryは全て訳出済みです。\n\n登場した会話は Dialogue_DLC5_Pit_1stHaunt（幽霊の呪文）、Dialogue_DLC5 / 127件訳出しました（chunk記載の128件中1件差はカウント誤差の可能性、未訳キーはなし）。登場した会話は Dialogue_DLC5_LC_ChapelDialogue（村長アーマックとの初対面）、Dialogue_DLC5_LC_Executor_dialog（影の巨人の処刑人との交渉）、Dialogue_DLC5_LC_FetchlingStartDialog（ウラブ救出後の会話）、Di"
     }
   ]
 }

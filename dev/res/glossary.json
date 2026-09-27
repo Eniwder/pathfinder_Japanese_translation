@@ -5715,6 +5715,30 @@
       "target": "万物の支配者",
       "category": "Title",
       "note": "Sithhudが自称する称号（round153、Rekarthの台詞）。"
+    },
+    {
+      "source": "Itham",
+      "target": "イサム",
+      "category": "Character",
+      "note": "Ulabの弟。DLC5_LC_BrotherDialogほかで言及される人物名（round154）。"
+    },
+    {
+      "source": "Buuze",
+      "target": "ブーゼ",
+      "category": "Character",
+      "note": "Usurviel塔に仕えていたゴブリン。Dialogue_DLC5_SpiritOfTheTower_Mainで言及（round154）。"
+    },
+    {
+      "source": "Shadow World",
+      "target": "影の世界",
+      "category": "Location",
+      "note": "kayal（fetchling）の故郷である位界。Dialogue_DLC5_LC_ChapelDialogueで言及（round154）。"
+    },
+    {
+      "source": "Armuk",
+      "target": "アルムク",
+      "category": "Character",
+      "note": "Dialogue_DLC5_LC_ChapelDialogueに登場する村の長老（round154）。"
     }
   ]
 }
