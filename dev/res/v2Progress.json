@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 44850,
-  "updatedAt": "2026-09-27T07:30:34.763Z",
+  "nextStart": 45150,
+  "updatedAt": "2026-09-27T10:57:43.470Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2860,6 +2860,27 @@
         "DLC5_Hermit_dialogue"
       ],
       "note": "v2リライト第152弾（runRoundLoop.mjs による自動実行）。 171件を翻訳しました。登場した会話は Shifter_EvilShrine_dialogue（ウルブリグの部族疑惑エピソード）、AbductedAgain_dialogue（センドリ再誘拐）、DLC5_AfterAdventure_1A/1B/2A/2B_dialogue（DLC5道中の欠片回収後の仲間会話）です。センドリの隠し事の告白パートは口調・罪悪感の描写が多く、常体と丁寧語の切り替えに注 / 128件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 128件（未訳なし、全entry対応）\n- **登場したdialog**: `DLC5_AndroidJoin_dialogue`（ペンタ加入イベント）、`DLC5_Hermit_dialogue`（天使シュタールマーとの魂の欠片を巡る対話）\n- **気づいた点**: `efaa"
+    },
+    {
+      "start": 44850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round153/",
+      "coveredDialogs": [
+        "DLC5_Hermit_dialogue",
+        "DLC5_Hermit_Meet_dialogue",
+        "NecromancerDead_dialogue",
+        "DLC5_ReadyToRitual_dialogue",
+        "ReadyToRitualSendri_dialogue",
+        "DLC5_Sacrifice",
+        "SendriVisitsTemple",
+        "Dialogue_DLC5_AlernativeStart",
+        "Dialogue_DLC5_2ndHaunt",
+        "Dialogue_DLC5_DeleteStones",
+        "Dialogue_DLC5_GiantBossDead",
+        "Dialogue_DLC5_Pit_1stHaunt"
+      ],
+      "note": "v2リライト第153弾（runRoundLoop.mjs による自動実行）。 195件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 195件全て翻訳完了（未訳なし）\n- **登場した会話**: DLC5_Hermit_dialogue、DLC5_Hermit_Meet_dialogue、NecromancerDead_dialogue、DLC5_ReadyToRitual_dialogue、ReadyToRit / 105件すべて訳出しました（未訳なし）。登場した会話は `Dialogue_DLC5_DeleteStones`（レカース/センドリ/ペンタとの瓦礫撤去シーン）、`Dialogue_DLC5_GiantBossDead`（巨人撃破後の氷の欠片を誰が持つか決める場面）、`Dialogue_DLC5_Pit_1stHaunt`（ケリッド人の亡霊との遭遇）です。\n\n気づいた点：この chunk では `"
     }
   ]
 }

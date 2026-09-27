@@ -5703,6 +5703,18 @@
       "target": "九層地獄",
       "category": "Location",
       "note": "悪魔の本拠地たる位界。慣用句的な言及（DLC5_AndroidJoin_dialogue）。"
+    },
+    {
+      "source": "Everlight",
+      "target": "永遠の光",
+      "category": "Character",
+      "note": "サレンレイの二つ名。祈りの呼びかけ「Hear me, O Everlight...」で使用（round153）。"
+    },
+    {
+      "source": "Lord of Everything",
+      "target": "万物の支配者",
+      "category": "Title",
+      "note": "Sithhudが自称する称号（round153、Rekarthの台詞）。"
     }
   ]
 }
