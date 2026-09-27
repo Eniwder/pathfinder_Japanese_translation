@@ -5523,6 +5523,48 @@
       "source": "Grimgrove",
       "target": "グリムグローブ",
       "note": "DLC4の地名。ヴィンチェクが名付けた森。"
+    },
+    {
+      "source": "Sigvorn",
+      "target": "シグヴォルン",
+      "category": "NPC",
+      "note": "Gundrun村の顧問(Adviser)。"
+    },
+    {
+      "source": "Bjord",
+      "target": "ビョルド",
+      "category": "NPC",
+      "note": "Gundrun村の住人。"
+    },
+    {
+      "source": "Arysen Krei",
+      "target": "アリセン・クレイ",
+      "category": "NPC",
+      "note": "Ustalavの商人。作中ではMr. Kreiとも呼ばれる。"
+    },
+    {
+      "source": "Rubus",
+      "target": "ルーブス",
+      "category": "NPC",
+      "note": "Gundrunで死んだ犬の名前。"
+    },
+    {
+      "source": "Currantglen",
+      "target": "カラントグレン",
+      "category": "Place",
+      "note": "Sarkoris地方の地名（言及のみ）。"
+    },
+    {
+      "source": "Bjordolf",
+      "target": "ビョルドルフ",
+      "category": "NPC",
+      "note": "Gundrunの住人（Bjordとは別人の可能性あり）。"
+    },
+    {
+      "source": "Deskarites",
+      "target": "デスカリ教徒",
+      "category": "Term",
+      "note": "デーモン卿Deskariの信奉者たち。"
     }
   ]
 }

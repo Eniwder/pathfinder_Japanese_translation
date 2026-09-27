@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 43350,
-  "updatedAt": "2026-09-26T16:11:34.985Z",
+  "nextStart": 43650,
+  "updatedAt": "2026-09-27T06:02:22.172Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -2761,6 +2761,26 @@
         "Dialogue_DLC4_Wilds_WolfSoul_Dialog"
       ],
       "note": "v2リライト第147弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に、chunk内の全entry分の訳文を書き込みました。ヘッダーの `keys` は197ですが、書き込んだ件数は数えておらず、JSONとしての構文チェックも実行していません。訳文に `\"` を入れないように書いただけです。\n\n- **会話**: ShamanWarlord_DefenceDialog、T / 103件すべてを訳し、`chunk_0001.translations.json` に書き出しました。書き出した内容はJSONとして正しいことを目視で確認済みで、`<ctrl_N/>` も原文どおりの個数と順序で残しています。\n今回の会話は Dialogue_DLC4_Wilds_DeerSoul_Dialog、GhostHunters_Found、Scout_Dialog、WolfSoul_Di"
+    },
+    {
+      "start": 43350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-27_round148/",
+      "coveredDialogs": [
+        "Dialogue_DLC4_Wilds_WolfSoul_Dialog",
+        "Gundrun_Adviser_dialogue",
+        "Gundrun_Boy_dialogue",
+        "Gundrun_Bridgeguard_dialogue",
+        "Gundrun_Deadbody_dialogue",
+        "Gundrun_DeadDog_dialogue",
+        "Gundrun_Drunkard_dialogue",
+        "Gundrun_final_dialogue",
+        "Gundrun_holgan_dialogue",
+        "Gundrun_necromancer_dialogue",
+        "Gundrun_Negotiant_dialogue"
+      ],
+      "note": "v2リライト第148弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }
