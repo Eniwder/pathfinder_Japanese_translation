@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 48150,
-  "updatedAt": "2026-09-27T17:18:09.563Z",
+  "nextStart": 48450,
+  "updatedAt": "2026-09-28T10:21:22.578Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3081,6 +3081,23 @@
         "Arueshalae_Event_dialogue"
       ],
       "note": "v2リライト第163弾（runRoundLoop.mjs による自動実行）。 199件すべて翻訳し `chunk_0000.translations.json` に書き込みました。会話は Dance/Drink/Survivors（酒場の祭り）、Night_Debate（哲学談義）、Evilrue（アルエシャラエの誘惑）、Night_Woljif（盗み）、DLC6_interchapter_after、Aivu_Event_Cake の8本。用語（定命の者・アーシマー/ティ / 101件すべて翻訳しました。登場した会話は `Aivu_Event_Ride_dialogue`（子供たちとアイヴの触れ合い）、`Aivu_Event_Start_dialogue`（アイヴが遊び相手を探す）、`Arueshalae_Event_dialogue`（祭りに紛れたいアルエシャラエ）の3件。アイヴの一人称は`speakers`辞書の`fp`指定通り「アイヴ」（自分の名前で自称する幼い口"
+    },
+    {
+      "start": 48150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round164/",
+      "coveredDialogs": [
+        "Arueshalae_Event_dialogue",
+        "Arueshalae_Event_Cosplayers_dialogue",
+        "Camellia_Event_Corpse_dialogue",
+        "Camellia_Event_HappyNow_dialogue",
+        "Camellia_Event_Killer_dialogue",
+        "Camellia_Event_KillingTime_dialogue",
+        "Camellia_Event_Unhappy_dialogue",
+        "Daeran_Contest_dialogue"
+      ],
+      "note": "v2リライト第164弾（runRoundLoop.mjs による自動実行）。 184件すべて訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 会話: Arueshalae_Event_dialogue（幼女ヴァリサとの出会い）、Arueshalae_Event_Cosplayers_dialogue（コスプレイヤーたちとのやり取り）、Camellia_Event_Corpse_dialogue（死体発見・衛兵）、Camellia_Eve / 116件すべて訳出し、chunk_0001.translations.json に書き込み完了しました。\n\n- 登場した会話: `Camellia_Event_KillingTime_dialogue`、`Camellia_Event_Unhappy_dialogue`、`Daeran_Contest_dialogue`（デランの物真似コンテストイベント）\n- 気づいた点: `DLC6_Daera"
     }
   ]
 }

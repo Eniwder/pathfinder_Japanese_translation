@@ -5931,6 +5931,12 @@
       "target": "ラズミラン人",
       "category": "Faction",
       "note": "生神ラズミールの信奉者・臣民を指す語。Spymaster_Tavern_dialogueで言及（round162）。"
+    },
+    {
+      "source": "Valisa",
+      "target": "ヴァリサ",
+      "category": "NPC",
+      "note": "アルエシャラエの仮装をした祭りの参加者。Arueshalae_Event_dialogueに登場（round164）。"
     }
   ]
 }
