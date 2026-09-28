@@ -5955,6 +5955,12 @@
       "target": "トゥヴィア",
       "category": "Location",
       "note": "香辛料入りペストリーで知られる国。Lann_Event_FreeFood_dialogueで言及（round165、形容詞形Thuvianで登場）。"
+    },
+    {
+      "source": "Bushey Wohf",
+      "target": "ブシー・ウォフ",
+      "category": "NPC",
+      "note": "市場広場の門を守る軍曹。GateInspection_dialogueに登場（round166）。"
     }
   ]
 }

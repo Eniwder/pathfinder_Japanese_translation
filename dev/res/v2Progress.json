@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 48750,
-  "updatedAt": "2026-09-28T10:34:09.306Z",
+  "nextStart": 49050,
+  "updatedAt": "2026-09-28T10:46:29.517Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3114,6 +3114,27 @@
         "Nenio_Event_CatchDemon_dialogue"
       ],
       "note": "v2リライト第165弾（runRoundLoop.mjs による自動実行）。 164件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 164件（全entry訳出、未訳なし）\n- **登場した会話**: Daeran_Contest_dialogue（デランの物真似コンテスト）、Aristocrats_dialogue（貴族とエンバー・浮浪児）、GreyborCosplayer_1_dialogue／Greybor / 136件全て訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場dialog: `Lann_Event_FreeFood_dialogue`（ランと祝祭料理を試す会話）、`Nenio_Event_CatchDemon_dialogue`（ネニオがデーモン襲撃の統計分析を語る会話）\n- 気づいた点: 1311f1ac のエントリは口いっぱいで喋る滑舌崩れ（\"T"
+    },
+    {
+      "start": 48750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round166/",
+      "coveredDialogs": [
+        "Nenio_Event_CatchDemon_dialogue",
+        "Nenio_Event_NotADemon_dialogue",
+        "RazmEvent1_FakeCommander_dialogue",
+        "RazmEvent1_Spymaster_dialogue",
+        " RazmEvent2_SpymasterLetsGo_dialogue",
+        "RazmEvent2_TheyCultists_dialogue",
+        "RazmEvent2_WhereEveryone_dialogue",
+        "RazmEvent3_Cosplay_dialogue",
+        "RazmEvent3_Threats",
+        "GateInspection_dialogue",
+        "Regill_Event_2_dialogue",
+        "Regill_Event_dialogue"
+      ],
+      "note": "v2リライト第166弾（runRoundLoop.mjs による自動実行）。 178件すべて翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 会話: Nenio_Event_CatchDemon_dialogue / Nenio_Event_NotADemon_dialogue（ネニオの藁人形デーモン騒動）、RazmEvent1_FakeCommander_dialogue / RazmEvent1_Spymaster_dialogu / 全122件を翻訳し、`chunk_0001.translations.json`に書き込み完了しました。\n\n登場した会話: RazmEvent2_WhereEveryone_dialogue／RazmEvent3_Cosplay_dialogue／RazmEvent3_Threats／GateInspection_dialogue／Regill_Event_2_dialogue／Regill_Ev"
     }
   ]
 }
