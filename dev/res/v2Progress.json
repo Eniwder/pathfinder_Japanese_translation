@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 49350,
-  "updatedAt": "2026-09-28T10:59:41.202Z",
+  "nextStart": 49650,
+  "updatedAt": "2026-09-28T14:51:44.724Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3154,6 +3154,24 @@
         "Sosiel_Winemakers_dialogue"
       ],
       "note": "v2リライト第167弾（runRoundLoop.mjs による自動実行）。 189件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 会話: Regill_Event_dialogue、RiftInspection_dialogue、StageInspection_dialogue、CartTrouble_dialogue、HelpTippler_dialogue、SaveThePet_dialogue、Seelah_Event / 111件全て訳し、chunk_0001.translations.jsonに書き込みました。登場した会話は「Seelah_Event_dialogue」（祭りでのシーラとの雑談）、「Degustation_dialogue」「Sosiel_Winemakers_dialogue」（ノームの醸造家ユミリアンとソシエルのワイン試飲イベント）の3本です。ワイン試飲パートは軽妙なコメディ調のため、原文の誇"
+    },
+    {
+      "start": 49350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round168/",
+      "coveredDialogs": [
+        "Sosiel_Winemakers_dialogue",
+        "Ulbrig_Event_Interview_dialogue",
+        "Ulbrig_Event_Scientists_dialogue",
+        "Wenduag_Event_dialogue",
+        "FirstGuards_dialogue",
+        "SecondGuards_dialogue",
+        "ThirdGuards_dialogue",
+        "Woljif_Event_dialogue",
+        "StandingInLine_dialogue"
+      ],
+      "note": "v2リライト第168弾（runRoundLoop.mjs による自動実行）。 200件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 件数: 200件（全entry対応、未訳なし）\n- 登場した会話: Sosiel_Winemakers_dialogue（ソシエルとのワイン試飲）、Ulbrig_Event_Interview_dialogue／Ulbrig_Event_Scientists_dialogue（学者ダグルとウルブリ / 100件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場したdialog: SecondGuards_dialogue（若い衛兵とウォルジフ物真似の話）、ThirdGuards_dialogue（イセラ・ヴォイルの過去話）、Woljif_Event_dialogue（ウォルジフの露店イベント）、StandingInLine_dialogue（コス"
     }
   ]
 }
