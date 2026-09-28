@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 50850,
-  "updatedAt": "2026-09-28T15:43:15.832Z",
+  "nextStart": 51150,
+  "updatedAt": "2026-09-28T15:58:59.843Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3240,6 +3240,22 @@
         "Wenduag_TakeMeHome_dialogue"
       ],
       "note": "v2リライト第172弾（runRoundLoop.mjs による自動実行）。 117件全て翻訳し、`chunk_0000.translations.json` に書き込みました。登場した会話は `RooftopDate1_dialogue` / `RooftopDate2_dialogue`（ソシエルとの屋上デート、火の位界への儀式を巡る分岐含む）です。気づいた点：`154a0ec9` のCue（speaker: Sosiel）が実際にはPlayer側の乾杯の台詞を含んでい / 183件全訳しました。登場した会話は `UlbrigGardenDate`（駒遊びからロマンス成就まで）、`UlbrigToGarden`、`Wenduag_Labyrith_dialogue`（盾の迷宮でのシリアスな告白）、`Wenduag_TakeMeHome_dialogue`（宴の場）の4本。気づいた点：`{mf|him|her}`（f7846bc4）は動詞「殺す」に性別差がなく作り分け不"
+    },
+    {
+      "start": 50850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round173/",
+      "coveredDialogs": [
+        "Wenduag_TakeMeHome_dialogue",
+        "John_Meet_dialogue",
+        "KTC_Morta_Anevia",
+        "KTC_Morta_Arsinoe",
+        "Lucy_Main_dialogue",
+        "MortaGoblins_dialogue",
+        "Epilogues_epilogues"
+      ],
+      "note": "v2リライト第173弾（runRoundLoop.mjs による自動実行）。 172件すべて訳しました。登場会話は `Wenduag_TakeMeHome_dialogue`（ウェンドアグの誘い）、`John_Meet_dialogue`／`Lucy_Main_dialogue`（DLC7のバーグソン父娘救出）、`KTC_Morta_Anevia`／`KTC_Morta_Arsinoe`（ゴブリン偵察の報告）の5会話です。\n\n気づいた点：「I can see you are / 128件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 128件（全entry）\n- **会話**: `MortaGoblins_dialogue`（ゴブリン難民との交渉、片言英語のゴブリンリーダーの台詞）、`Epilogues_epilogues`（周回エンディングのナレーション群）\n- **気づいた点**: ゴブリンリーダーの片言英"
     }
   ]
 }

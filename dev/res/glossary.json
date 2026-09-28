@@ -6063,6 +6063,36 @@
       "target": "シェリン教徒",
       "category": "Term",
       "note": "女神Shelynの信徒・聖職者を指す語（RooftopDate1_dialogue、round171）。"
+    },
+    {
+      "source": "Corruption",
+      "target": "穢れ",
+      "category": "Term",
+      "note": "LucyたちBergson家の世界でMount Mortaから広がる汚染。動植物を狂わせ魔物化させる（Lucy_Main_dialogue、round173）。"
+    },
+    {
+      "source": "Bergson",
+      "target": "バーグソン",
+      "category": "Person",
+      "note": "異世界から来たLucyと父Johnの一族名。「バーグソン家」のように一族全体を指す用法もある（Lucy_Main_dialogue/John_Meet_dialogue、round173）。"
+    },
+    {
+      "source": "Mount Morta",
+      "target": "モルタ山",
+      "category": "Location",
+      "note": "Bergson家の世界にある山。Corruption（穢れ）の発生源（Lucy_Main_dialogue、round173）。"
+    },
+    {
+      "source": "Rea-Dana",
+      "target": "レア＝ダーナ",
+      "category": "Deity",
+      "note": "Bergson家が信仰する女神。Corruptionとの戦いを一族に命じた（Lucy_Main_dialogue、round173）。"
+    },
+    {
+      "source": "Crossroads of Worlds",
+      "target": "世界の交差路",
+      "category": "Location",
+      "note": "エピローグで語られる、閉じなかったWorldwoundが変貌した後の姿。異界の者たちで賑わう場所（Epilogues_epilogues、round173）。"
     }
   ]
 }
