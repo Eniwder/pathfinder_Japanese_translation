@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 49050,
-  "updatedAt": "2026-09-28T10:46:29.517Z",
+  "nextStart": 49350,
+  "updatedAt": "2026-09-28T10:59:41.202Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3135,6 +3135,25 @@
         "Regill_Event_dialogue"
       ],
       "note": "v2リライト第166弾（runRoundLoop.mjs による自動実行）。 178件すべて翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 会話: Nenio_Event_CatchDemon_dialogue / Nenio_Event_NotADemon_dialogue（ネニオの藁人形デーモン騒動）、RazmEvent1_FakeCommander_dialogue / RazmEvent1_Spymaster_dialogu / 全122件を翻訳し、`chunk_0001.translations.json`に書き込み完了しました。\n\n登場した会話: RazmEvent2_WhereEveryone_dialogue／RazmEvent3_Cosplay_dialogue／RazmEvent3_Threats／GateInspection_dialogue／Regill_Event_2_dialogue／Regill_Ev"
+    },
+    {
+      "start": 49050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round167/",
+      "coveredDialogs": [
+        "Regill_Event_dialogue",
+        "RiftInspection_dialogue",
+        "StageInspection_dialogue",
+        "CartTrouble_dialogue",
+        "HelpTippler_dialogue",
+        "SaveThePet_dialogue",
+        "Seelah_Event_2_dialogue",
+        "Seelah_Event_dialogue",
+        "Degustation_dialogue",
+        "Sosiel_Winemakers_dialogue"
+      ],
+      "note": "v2リライト第167弾（runRoundLoop.mjs による自動実行）。 189件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 会話: Regill_Event_dialogue、RiftInspection_dialogue、StageInspection_dialogue、CartTrouble_dialogue、HelpTippler_dialogue、SaveThePet_dialogue、Seelah_Event / 111件全て訳し、chunk_0001.translations.jsonに書き込みました。登場した会話は「Seelah_Event_dialogue」（祭りでのシーラとの雑談）、「Degustation_dialogue」「Sosiel_Winemakers_dialogue」（ノームの醸造家ユミリアンとソシエルのワイン試飲イベント）の3本です。ワイン試飲パートは軽妙なコメディ調のため、原文の誇"
     }
   ]
 }

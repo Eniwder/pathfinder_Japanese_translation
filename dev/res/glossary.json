@@ -5961,6 +5961,30 @@
       "target": "ブシー・ウォフ",
       "category": "NPC",
       "note": "市場広場の門を守る軍曹。GateInspection_dialogueに登場（round166）。"
+    },
+    {
+      "source": "Clementine",
+      "target": "クレメンタイン",
+      "category": "NPC",
+      "note": "少女が木の上から助けを求めるペットの名前。SaveThePet_dialogueに登場（round167）。"
+    },
+    {
+      "source": "Razmiri",
+      "target": "ラズミラン",
+      "category": "Faction",
+      "note": "邪教ラズミランの信徒を指す形容詞形（Razmiri cultists）。Regill_Event_dialogueに登場（round167）。"
+    },
+    {
+      "source": "Yumillian Nikdel-Trazze",
+      "target": "ユミリアン・ニクデル=トラッゼ",
+      "category": "NPC",
+      "note": "独特な製法でワインを作るヴィントナー。Sosiel_Winemakers_dialogue/Degustation_dialogueに登場（round167）。"
+    },
+    {
+      "source": "Sapphire of Gurat",
+      "target": "グラートのサファイア",
+      "category": "Item",
+      "note": "遅摘みの甘口ブドウ品種名。Sosiel_Winemakers_dialogueに登場（round167）。"
     }
   ]
 }
