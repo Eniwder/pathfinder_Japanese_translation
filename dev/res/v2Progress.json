@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 50550,
-  "updatedAt": "2026-09-28T15:31:55.514Z",
+  "nextStart": 50850,
+  "updatedAt": "2026-09-28T15:43:15.832Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3225,6 +3225,21 @@
         "RooftopDate1_dialogue"
       ],
       "note": "v2リライト第171弾（runRoundLoop.mjs による自動実行）。 189件すべて訳しました。登場した会話は VeryOfficialInvitation_dialog（オラクル召使いからの招待）、WelcomeDarling_dialog（デランとの逢瀬）、LongGoodbye_dialogue / TimeToLeave_dialogue（ガルフレイ女王との別れ）、LannAfterRide_dialogue（ランとの乗馬デート後）の5会話です。\n\n気づいた / 111件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 件数: 111件（未訳なし）\n- 登場した会話: SurpriseDate_dialogue（ラン）、LetMeBurn_dialogue（ソシエルを焼身から救う/見捨てる分岐）、LetsGoRooftop_dialogue／RooftopDate1_dialogue（ソシエルとの屋上デート）\n"
+    },
+    {
+      "start": 50550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round172/",
+      "coveredDialogs": [
+        "RooftopDate1_dialogue",
+        "RooftopDate2_dialogue",
+        "UlbrigGardenDate",
+        "UlbrigToGarden",
+        "Wenduag_Labyrith_dialogue",
+        "Wenduag_TakeMeHome_dialogue"
+      ],
+      "note": "v2リライト第172弾（runRoundLoop.mjs による自動実行）。 117件全て翻訳し、`chunk_0000.translations.json` に書き込みました。登場した会話は `RooftopDate1_dialogue` / `RooftopDate2_dialogue`（ソシエルとの屋上デート、火の位界への儀式を巡る分岐含む）です。気づいた点：`154a0ec9` のCue（speaker: Sosiel）が実際にはPlayer側の乾杯の台詞を含んでい / 183件全訳しました。登場した会話は `UlbrigGardenDate`（駒遊びからロマンス成就まで）、`UlbrigToGarden`、`Wenduag_Labyrith_dialogue`（盾の迷宮でのシリアスな告白）、`Wenduag_TakeMeHome_dialogue`（宴の場）の4本。気づいた点：`{mf|him|her}`（f7846bc4）は動詞「殺す」に性別差がなく作り分け不"
     }
   ]
 }
