@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 48450,
-  "updatedAt": "2026-09-28T10:21:22.578Z",
+  "nextStart": 48750,
+  "updatedAt": "2026-09-28T10:34:09.306Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3098,6 +3098,22 @@
         "Daeran_Contest_dialogue"
       ],
       "note": "v2リライト第164弾（runRoundLoop.mjs による自動実行）。 184件すべて訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 会話: Arueshalae_Event_dialogue（幼女ヴァリサとの出会い）、Arueshalae_Event_Cosplayers_dialogue（コスプレイヤーたちとのやり取り）、Camellia_Event_Corpse_dialogue（死体発見・衛兵）、Camellia_Eve / 116件すべて訳出し、chunk_0001.translations.json に書き込み完了しました。\n\n- 登場した会話: `Camellia_Event_KillingTime_dialogue`、`Camellia_Event_Unhappy_dialogue`、`Daeran_Contest_dialogue`（デランの物真似コンテストイベント）\n- 気づいた点: `DLC6_Daera"
+    },
+    {
+      "start": 48450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-28_round165/",
+      "coveredDialogs": [
+        "Daeran_Contest_dialogue",
+        "Aristocrats_dialogue",
+        "GreyborCosplayer_1_dialogue",
+        "GreyborCosplayer_2_dialogue",
+        "Greybor_Event_dialogue",
+        "Lann_Event_FreeFood_dialogue",
+        "Nenio_Event_CatchDemon_dialogue"
+      ],
+      "note": "v2リライト第165弾（runRoundLoop.mjs による自動実行）。 164件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 164件（全entry訳出、未訳なし）\n- **登場した会話**: Daeran_Contest_dialogue（デランの物真似コンテスト）、Aristocrats_dialogue（貴族とエンバー・浮浪児）、GreyborCosplayer_1_dialogue／Greybor / 136件全て訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場dialog: `Lann_Event_FreeFood_dialogue`（ランと祝祭料理を試す会話）、`Nenio_Event_CatchDemon_dialogue`（ネニオがデーモン襲撃の統計分析を語る会話）\n- 気づいた点: 1311f1ac のエントリは口いっぱいで喋る滑舌崩れ（\"T"
     }
   ]
 }

@@ -5937,6 +5937,24 @@
       "target": "ヴァリサ",
       "category": "NPC",
       "note": "アルエシャラエの仮装をした祭りの参加者。Arueshalae_Event_dialogueに登場（round164）。"
+    },
+    {
+      "source": "Grinders Alley",
+      "target": "グラインダーズ・アレイ",
+      "category": "Location",
+      "note": "武具職人が集まる通り。Greybor_Event_dialogueで言及（round165）。"
+    },
+    {
+      "source": "Diobel",
+      "target": "ディオベル",
+      "category": "Location",
+      "note": "焼き魚料理で知られる地域/国。Lann_Event_FreeFood_dialogueで言及（round165）。形容詞形はDiobelian。"
+    },
+    {
+      "source": "Thuvia",
+      "target": "トゥヴィア",
+      "category": "Location",
+      "note": "香辛料入りペストリーで知られる国。Lann_Event_FreeFood_dialogueで言及（round165、形容詞形Thuvianで登場）。"
     }
   ]
 }
