@@ -6039,6 +6039,18 @@
       "target": "二十五段目",
       "category": "Term",
       "note": "Razmir教における聖職者の階級呼称。DLC6_ChoirDialogに登場（round169）。"
+    },
+    {
+      "source": "A Treatise on the Ninetieth Level of Mythical Mythics",
+      "target": "『神話的神秘学 九十階梯に関する論考』",
+      "category": "Term",
+      "note": "TrueRazmirLoser_2_dialogueに登場する架空の胡散臭い自己啓発本のタイトル（round170）。"
+    },
+    {
+      "source": "House of Dreams",
+      "target": "夢の館",
+      "category": "Location",
+      "note": "夜の逢い引きに使われる施設名。ToTheTemple_dialogueに登場（round170）。"
     }
   ]
 }
