@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 50250,
-  "updatedAt": "2026-09-28T15:19:37.100Z",
+  "nextStart": 50550,
+  "updatedAt": "2026-09-28T15:31:55.514Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3207,6 +3207,24 @@
         "VeryOfficialInvitation_dialog"
       ],
       "note": "v2リライト第170弾（runRoundLoop.mjs による自動実行）。 187件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 登場会話: FakeRazmir_dialogue、SpymasterBeforeRazmir_dialogue、TrueRazmirLoser_2_dialogue、TrueRazmirRevelation_2_Dialogue、Intimacy_dialogue、ToTheTemple_dia / 113件すべて訳出しました。登場した会話は `ComeUpstairs_dialogue`（カメリアとの夜会後の誘い）、`WouldYouMissMe_dialogue`（カメリアがダガーで背中を刺す倒錯的な緊張シーン）、`AndNowTrueWelcome_dialog`（デランとのロマンス会話）、`VeryOfficialInvitation_dialog`（アレンダエ伯爵の従者からの招待）で"
+    },
+    {
+      "start": 50250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round171/",
+      "coveredDialogs": [
+        "VeryOfficialInvitation_dialog",
+        "WelcomeDarling_dialog",
+        "LongGoodbye_dialogue",
+        "TimeToLeave_dialogue",
+        "LannAfterRide_dialogue",
+        "SurpriseDate_dialogue",
+        "LetMeBurn_dialogue",
+        "LetsGoRooftop_dialogue",
+        "RooftopDate1_dialogue"
+      ],
+      "note": "v2リライト第171弾（runRoundLoop.mjs による自動実行）。 189件すべて訳しました。登場した会話は VeryOfficialInvitation_dialog（オラクル召使いからの招待）、WelcomeDarling_dialog（デランとの逢瀬）、LongGoodbye_dialogue / TimeToLeave_dialogue（ガルフレイ女王との別れ）、LannAfterRide_dialogue（ランとの乗馬デート後）の5会話です。\n\n気づいた / 111件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 件数: 111件（未訳なし）\n- 登場した会話: SurpriseDate_dialogue（ラン）、LetMeBurn_dialogue（ソシエルを焼身から救う/見捨てる分岐）、LetsGoRooftop_dialogue／RooftopDate1_dialogue（ソシエルとの屋上デート）\n"
     }
   ]
 }

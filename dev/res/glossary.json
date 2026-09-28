@@ -6051,6 +6051,18 @@
       "target": "夢の館",
       "category": "Location",
       "note": "夜の逢い引きに使われる施設名。ToTheTemple_dialogueに登場（round170）。"
+    },
+    {
+      "source": "Mendevian Inquisition",
+      "target": "メンデヴ異端審問",
+      "category": "Organization",
+      "note": "メンデヴで異端・悪魔崇拝者を取り締まる組織。Mendevian Crusadesとは別組織（WelcomeDarling_dialog、round171）。"
+    },
+    {
+      "source": "Shelynite",
+      "target": "シェリン教徒",
+      "category": "Term",
+      "note": "女神Shelynの信徒・聖職者を指す語（RooftopDate1_dialogue、round171）。"
     }
   ]
 }
