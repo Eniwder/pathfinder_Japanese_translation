@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 49650,
-  "updatedAt": "2026-09-28T14:51:44.724Z",
+  "nextStart": 49950,
+  "updatedAt": "2026-09-28T15:04:44.678Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3172,6 +3172,22 @@
         "StandingInLine_dialogue"
       ],
       "note": "v2リライト第168弾（runRoundLoop.mjs による自動実行）。 200件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 件数: 200件（全entry対応、未訳なし）\n- 登場した会話: Sosiel_Winemakers_dialogue（ソシエルとのワイン試飲）、Ulbrig_Event_Interview_dialogue／Ulbrig_Event_Scientists_dialogue（学者ダグルとウルブリ / 100件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- 登場したdialog: SecondGuards_dialogue（若い衛兵とウォルジフ物真似の話）、ThirdGuards_dialogue（イセラ・ヴォイルの過去話）、Woljif_Event_dialogue（ウォルジフの露店イベント）、StandingInLine_dialogue（コス"
+    },
+    {
+      "start": 49650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round169/",
+      "coveredDialogs": [
+        "StandingInLine_dialogue",
+        "SwarmLine",
+        "WelcomeToCelebration_dialogue",
+        "BookEvent_Razmir_dialogue",
+        "DLC6_ChoirDialog",
+        "DLC6_CultistDialog",
+        "FakeRazmir_dialogue"
+      ],
+      "note": "v2リライト第169弾（runRoundLoop.mjs による自動実行）。 116件全て翻訳し、chunk_0000.translations.jsonに書き込みました。\n\n- 登場会話: StandingInLine_dialogue（祭りの行列での町人・仮装者とのやり取り）、SwarmLine（ドレゼンの蝗の群れ襲来）、WelcomeToCelebration_dialogue（祭りの司会DLC6_RazmirManagerとの会話）\n- 気づいた点: SwarmLi / 183件を翻訳し、chunk_0001.translations.jsonに書き出しました。\n\n- 会話: `BookEvent_Razmir_dialogue`（ラズミル宮殿脱出パート）、`DLC6_ChoirDialog`（クナッボ司祭）、`DLC6_CultistDialog`（ヴァレストリー）、`FakeRazmir_dialogue`\n- 気づいた点: `{mf|he|she}`等の性別"
     }
   ]
 }

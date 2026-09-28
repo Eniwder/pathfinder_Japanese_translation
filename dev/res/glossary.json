@@ -6009,6 +6009,36 @@
       "target": "暁の涙",
       "category": "Item",
       "note": "白桃色の実をつけるぶどう品種名。Sosiel_Winemakers_dialogueに登場（round168）。"
+    },
+    {
+      "source": "Reverend Knubbo",
+      "target": "クナッボ導師",
+      "category": "NPC",
+      "note": "Razmir教団の巡回説教師。DLC6_ChoirDialogに登場（round169）。"
+    },
+    {
+      "source": "Gold of Faith",
+      "target": "信仰の黄金",
+      "category": "Term",
+      "note": "Razmir教の説教で語られる「魂に宿る黄金」。対義語はGold of Earth。DLC6_ChoirDialogに登場（round169）。"
+    },
+    {
+      "source": "Gold of Earth",
+      "target": "地上の黄金",
+      "category": "Term",
+      "note": "Razmir教の説教で語られる「財布にある黄金」。対義語はGold of Faith。DLC6_ChoirDialogに登場（round169）。"
+    },
+    {
+      "source": "Living God",
+      "target": "生ける神",
+      "category": "Term",
+      "note": "Razmirを指す教団内の呼称。DLC6_CultistDialogに登場（round169）。"
+    },
+    {
+      "source": "Twenty-Fifth Step",
+      "target": "二十五段目",
+      "category": "Term",
+      "note": "Razmir教における聖職者の階級呼称。DLC6_ChoirDialogに登場（round169）。"
     }
   ]
 }
