@@ -617,7 +617,9 @@ function buildContext(options) {
   function matchingGlossary(text) {
     const normalized = text.toLocaleLowerCase();
     return glossary
-      .filter(entry => typeof entry.source === 'string' && matchesGlossaryTerm(normalized, entry.source))
+      .filter(entry => typeof entry.source === 'string' && (entry.caseSensitive
+        ? matchesGlossaryTermCaseSensitive(text, entry.source)
+        : matchesGlossaryTerm(normalized, entry.source)))
       .sort((left, right) => right.source.length - left.source.length)
       .map(entry => ({ source: entry.source, target: entry.target, ...(entry.note ? { note: entry.note } : {}) }));
   }
@@ -630,6 +632,13 @@ function matchesGlossaryTerm(text, source) {
   // text は事前処理で .toLocaleLowerCase() 済みだが、RegExp に 'i' フラグがついている
   // また、[a-z] の単語境界判定では アンダースコアや数字、あるいは他の文字が含まれる単語に注意が必要
   return new RegExp(`(?<![a-z])${escaped}(?![a-z])`, 'i').test(text);
+}
+
+// glossary の caseSensitive: true のエントリ用。一般語と綴りが同じ用語（Will セーヴ／助動詞 will 等）を
+// 大文字小文字で区別する。text は小文字化していない原文を渡す。
+function matchesGlossaryTermCaseSensitive(text, source) {
+  const escaped = source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?<![A-Za-z])${escaped}(?![A-Za-z])`).test(text);
 }
 
 // v2CharacterNotes.md の「## 定着した話者」（**表示名(speaker_id)** 見出しのブロック）と
