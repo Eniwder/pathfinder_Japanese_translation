@@ -11067,6 +11067,4458 @@
       "target": "ポーション",
       "category": "Ability",
       "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Saving Throw",
+      "target": "セーヴィング・スロー",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Animal Companion",
+      "target": "動物の相棒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ability score",
+      "target": "能力値",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Combat Maneuver",
+      "target": "戦技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mythic Power",
+      "target": "神話パワー",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Armor Proficiency",
+      "target": "鎧習熟",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wild Shape",
+      "target": "自然の化身",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hit Dice",
+      "target": "ヒット・ダイス",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Pool",
+      "target": "秘術集積",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Class skill",
+      "target": "クラス技能",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rage Power",
+      "target": "激怒パワー",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Body",
+      "target": "元素の体",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unarmed Strike",
+      "target": "素手打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Reservoir",
+      "target": "秘術蓄積",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Heavy Armor",
+      "target": "重装鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Smite Evil",
+      "target": "悪を討つ一撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bardic Performance",
+      "target": "呪芸",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: バードの呪芸。"
+    },
+    {
+      "source": "Bonus Feat",
+      "target": "ボーナス特技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Medium Armor",
+      "target": "中装鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Resistance",
+      "target": "火に対する抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ki Pool",
+      "target": "気蓄積",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 気プール。"
+    },
+    {
+      "source": "Elemental Form",
+      "target": "元素形態",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Defensive Stance",
+      "target": "防御の構え",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Channel Positive Energy",
+      "target": "正のエネルギー放出",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cold Resistance",
+      "target": "冷気に対する抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blood Pool",
+      "target": "蓄血",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Killing Blow",
+      "target": "殺人の一撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Electricity Resistance",
+      "target": "電気に対する抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weapon Training",
+      "target": "武器訓練",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 武器修練／武器鍛錬。"
+    },
+    {
+      "source": "Acid Resistance",
+      "target": "酸に対する抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sacred Weapon",
+      "target": "清浄なる武器",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 清浄な武器。"
+    },
+    {
+      "source": "The Bridge",
+      "target": "橋梁座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rogue Talent",
+      "target": "ローグの技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Raging Song",
+      "target": "激怒の歌",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Channel Negative Energy",
+      "target": "負のエネルギー放出",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Daughter",
+      "target": "娘座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Black Blade",
+      "target": "ブラック・ブレード",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ki Power",
+      "target": "気の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sacred Armor",
+      "target": "清浄なる鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Studied Target",
+      "target": "観察",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Stranger",
+      "target": "流れ者座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bloodline Arcana",
+      "target": "血脈の秘法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dirty Trick",
+      "target": "裏技追撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Mother",
+      "target": "母堂座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Alchemist's Fire",
+      "target": "錬金術師の火",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Armor Training",
+      "target": "鎧修練",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grand Mutagen",
+      "target": "大いなる変異薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Mutagen",
+      "target": "上級変異薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Favored Terrain",
+      "target": "得意な地形",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Change Shape",
+      "target": "変身",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 形態変化。"
+    },
+    {
+      "source": "The Pack",
+      "target": "群獣座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Stargazer",
+      "target": "星詠み座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grand Cognatogen",
+      "target": "大いなる進化薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Cognatogen",
+      "target": "上級進化薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Charming Smile",
+      "target": "魅力的な微笑み",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inspired Rage",
+      "target": "激怒想起",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inspire Ferocity",
+      "target": "凶暴の奮起",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dragon Form",
+      "target": "竜形態",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wandering Spirit",
+      "target": "浮遊霊",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aura of Protection",
+      "target": "守護のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Serpent's Fang",
+      "target": "蛇の牙",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blast Rune",
+      "target": "破壊の刻印",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Drunken Ki",
+      "target": "酒気",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Force of Will",
+      "target": "意志の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Divine Guardian",
+      "target": "神の守護者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Battle Rage",
+      "target": "戦の激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Nimbus of Light",
+      "target": "後光",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Dart",
+      "target": "酸の矢",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magus Arcana",
+      "target": "メイガスの秘奥",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ready for Anything",
+      "target": "覚悟",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shared Skill",
+      "target": "技能共有",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Rider",
+      "target": "騎手座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Teamwork Feat",
+      "target": "チームワーク特技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fast Movement",
+      "target": "高速移動",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Storm Burst",
+      "target": "暴風の爆発",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Battle Companion",
+      "target": "戦場の相棒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Evasion",
+      "target": "身かわし強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Guarded Stance",
+      "target": "慎重なる構え",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aura of Efficiency",
+      "target": "効率性のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Follower",
+      "target": "後追い座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tower Shield Specialist",
+      "target": "タワー・シールド専門家",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Poison Use",
+      "target": "毒の使用",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "From the Grave",
+      "target": "墓より参る者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Divine Bond",
+      "target": "信仰の絆",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Ray",
+      "target": "元素の光線",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Physical Enhancement",
+      "target": "肉体強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Water",
+      "target": "聖水",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Wagon",
+      "target": "荷馬車座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Minor Spirit",
+      "target": "下級霊",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Final Revelation",
+      "target": "最後の啓示",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 最終啓示。"
+    },
+    {
+      "source": "Aura of Heroism",
+      "target": "勇気のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death Attack",
+      "target": "致死攻撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Player Character",
+      "target": "プレイヤー・キャラクター",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Water Blast",
+      "target": "水の爆発",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stern Gaze",
+      "target": "断固とした凝視",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Oracle's Curse",
+      "target": "オラクルの呪い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Alchemist's Kit",
+      "target": "錬金術キット",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bramble Armor",
+      "target": "棘の鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dazing Touch",
+      "target": "幻惑の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 幻惑の接触。"
+    },
+    {
+      "source": "Aura of Courage",
+      "target": "勇気のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Wall",
+      "target": "精霊の壁",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Swift Death",
+      "target": "迅速なる死",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Alchemical Weapon",
+      "target": "錬金術武器",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Divine Troth",
+      "target": "信仰の貞節",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weapon and Armor Proficiency",
+      "target": "武器と防具の習熟",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 武器と鎧への習熟。"
+    },
+    {
+      "source": "Spontaneous Healing",
+      "target": "任意治癒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Chosen Alignment",
+      "target": "指定属性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Energy Shield",
+      "target": "エネルギー盾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inspiring Word",
+      "target": "鼓舞の言葉",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weapon Mastery",
+      "target": "武器体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inspiring Command",
+      "target": "鼓舞の命令",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 鼓舞の指令。"
+    },
+    {
+      "source": "Aura of Despair",
+      "target": "絶望のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Renewed Vigor",
+      "target": "新たな活力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Force Missile",
+      "target": "力場のミサイル",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Abundant Casting",
+      "target": "目標数増加発動",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Always a Chance",
+      "target": "常なる希望",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Bond",
+      "target": "秘術の絆",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Bloodrage",
+      "target": "秘術たぎる血の激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Strength Surge",
+      "target": "筋力招来",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 力の招来。"
+    },
+    {
+      "source": "Ice Strike",
+      "target": "氷の打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Moment of Triumph",
+      "target": "凱旋の瞬間",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Beast Totem",
+      "target": "獣のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Warding Rune",
+      "target": "保護の刻印",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Nature Bond",
+      "target": "自然との絆",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sharp Claw",
+      "target": "鋭き爪",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ward Against Death",
+      "target": "死への守り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bit of Luck",
+      "target": "ちょっとしたツキ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resistant Touch",
+      "target": "抵抗の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Telekinetic Fist",
+      "target": "念動の拳",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ranged Legerdemain",
+      "target": "遠隔精密作業",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 遠隔手品。"
+    },
+    {
+      "source": "Focused Rage",
+      "target": "集中する激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Negative Energy Affinity",
+      "target": "負のエネルギーへの親和性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hard to Kill",
+      "target": "殺し難きもの",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Last Stand",
+      "target": "背水の陣",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Eldritch Surge",
+      "target": "妖力急騰",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hide In Plain Sight",
+      "target": "影隠れ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Potent Magic",
+      "target": "魔術強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Resistance",
+      "target": "元素の抵抗力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 元素に対する抵抗／元素の抵抗。"
+    },
+    {
+      "source": "One Foot in the Grave",
+      "target": "墓に片足を埋めて",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Master Hunter",
+      "target": "狩人の極み",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dirge of Doom",
+      "target": "悲運の葬送歌",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Gentle Rest",
+      "target": "穏やかな休息",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "War Mind",
+      "target": "戦心",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Agile Feet",
+      "target": "敏捷な足",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dimensional Hop",
+      "target": "次元渡り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Bane",
+      "target": "上級滅ぼし",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grand Hex",
+      "target": "大いなる呪術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protective Aura",
+      "target": "防御のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Guarded Hearth",
+      "target": "家庭の守り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cold Blast",
+      "target": "冷気の一撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Void Form",
+      "target": "虚空形態",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 虚空の姿。"
+    },
+    {
+      "source": "Evil Subtype",
+      "target": "（悪）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wild Gaze",
+      "target": "野生の凝視",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wild Hunt Link",
+      "target": "ワイルド・ハントのリンク",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Scythe of Evil",
+      "target": "悪の大鎌",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Master's Illusion",
+      "target": "達人の幻影",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Glory",
+      "target": "栄光の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death's Embrace",
+      "target": "死の抱擁",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Bolt",
+      "target": "炎の矢",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Purity of Body",
+      "target": "無病身",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 肉体の純粋性。"
+    },
+    {
+      "source": "Fey Magic",
+      "target": "フェイの魔術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Diviner's Fortune",
+      "target": "占術士の幸運",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elven Magic",
+      "target": "エルフの魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "War Beast",
+      "target": "戦闘獣",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Teaching Moment",
+      "target": "教育の瞬間",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Lantern Bearer",
+      "target": "灯持ち座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Meat Shield",
+      "target": "肉の盾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Prescient Attack",
+      "target": "予知攻撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Accuracy",
+      "target": "精密な秘術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit Animal",
+      "target": "霊獣",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ice Missile",
+      "target": "氷の矢",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Energy Absorption",
+      "target": "エネルギー吸収",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Indomitable Will",
+      "target": "不屈の意思",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wandering Hex",
+      "target": "浮遊呪術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bardic Knowledge",
+      "target": "バードの知識",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Strength of Will",
+      "target": "意志の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Animal Fury",
+      "target": "動物の怒り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 獣の憤怒。"
+    },
+    {
+      "source": "Feral Mutagen",
+      "target": "凶暴変異薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Knight's Challenge",
+      "target": "騎士の挑戦",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "True Judgment",
+      "target": "真実の審判",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death Curse",
+      "target": "死の呪い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spark of Life",
+      "target": "命の煌き",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Smite Good",
+      "target": "善を討つ一撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Rage",
+      "target": "大激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Charming Gaze",
+      "target": "魅了の凝視",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Poison Immunity",
+      "target": "毒に対する完全耐性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Evil",
+      "target": "悪の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bleeding Touch",
+      "target": "出血の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lightning Lord",
+      "target": "雷の君主",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Destructive Aura",
+      "target": "破壊的なオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Armor Mastery",
+      "target": "鎧体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "School Power",
+      "target": "系統の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Impromptu Sneak Attack",
+      "target": "臨機急所攻撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magical Tail",
+      "target": "魔法の尾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Skill rank",
+      "target": "技能ランク",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Archaeologist's Luck",
+      "target": "考古学者の幸運",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enduring Blade",
+      "target": "不朽の刃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hasted Assault",
+      "target": "神速の強襲",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Recall",
+      "target": "呪文喚起",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Feral Mount",
+      "target": "暴れ乗騎",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blessing of the Faithful",
+      "target": "信徒の祝福",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Otherworldly Companion",
+      "target": "異界の相棒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mystic Interference",
+      "target": "阻害の秘伝",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Jet",
+      "target": "酸の噴射",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Flame Arc",
+      "target": "炎弧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lightning Lance",
+      "target": "稲妻の槍",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Burning Flame",
+      "target": "灼熱の炎",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Uncanny Dodge",
+      "target": "直感回避強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Bloodrage",
+      "target": "血の大激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit of Nature",
+      "target": "自然の意気",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Battle Spirit",
+      "target": "闘争の霊",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lore Master",
+      "target": "博識",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lucky Presence",
+      "target": "幸運なる存在",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death's Touch",
+      "target": "死の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Strike",
+      "target": "酸の打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Storm Strike",
+      "target": "嵐の打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Strike",
+      "target": "火の打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hand of the Acolyte",
+      "target": "従者の見えざる手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dispelling Bomb",
+      "target": "解呪爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extend Potion",
+      "target": "ポーション拡張",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enhance Potion",
+      "target": "ポーション強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grand Discovery",
+      "target": "偉大な発見",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mental Acuity",
+      "target": "精神の鋭さ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit Totem",
+      "target": "魂のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fiend Totem",
+      "target": "フィーンドのトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Body of Ice",
+      "target": "氷の体",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Way of the Bow",
+      "target": "弓術の法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Power of Faith",
+      "target": "信仰の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shining Light",
+      "target": "輝ける光",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spiritual Bond",
+      "target": "魂の絆",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bear Trap",
+      "target": "トラバサミ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Dance",
+      "target": "呪舞",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Halfling Luck",
+      "target": "ハーフリングの幸運",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blood Infusion",
+      "target": "血の注入",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hard as Stone",
+      "target": "石の堅さ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Subtype",
+      "target": "（エレメンタル）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lawful Subtype",
+      "target": "（秩序）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Subtype",
+      "target": "（火）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mighty Rage",
+      "target": "超激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Calming Touch",
+      "target": "なだめの手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Chaos Blade",
+      "target": "混沌の刃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Good",
+      "target": "善の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Lance",
+      "target": "聖なる槍",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Law",
+      "target": "秩序の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Staff of Order",
+      "target": "秩序の杖",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Destructive Smite",
+      "target": "破壊的な一撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Still Mind",
+      "target": "不動心",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Divine Grace",
+      "target": "信仰の恩寵",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aura of Resolve",
+      "target": "不屈のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fast Stealth",
+      "target": "高速隠密",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 素早い隠密。"
+    },
+    {
+      "source": "Master Strike",
+      "target": "打撃の極み",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grave Touch",
+      "target": "墓場よりの接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 死の接触。"
+    },
+    {
+      "source": "Hand of the Apprentice",
+      "target": "徒弟の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Invisible Thief",
+      "target": "不可視の盗賊",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "No Retreat",
+      "target": "逃れること能わず",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Celestial Totem",
+      "target": "天上のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sacred Shield",
+      "target": "清浄な盾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 清浄なる盾。"
+    },
+    {
+      "source": "Choking Bomb",
+      "target": "窒息玉",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Danger Sense",
+      "target": "危険感知",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Patriarch",
+      "target": "古老座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "The Thrush",
+      "target": "ツグミ座",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Nauseating Flesh",
+      "target": "吐き気がする肉",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Uncontrolled Rage",
+      "target": "制御されぬ激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fighter Training",
+      "target": "ファイター訓練",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blinding Bomb",
+      "target": "目潰し玉",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Critical Strike",
+      "target": "会心の追撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Natural healing",
+      "target": "自然の癒し",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mysterious Stranger",
+      "target": "神秘的な異邦人",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Silver Tongue",
+      "target": "銀の舌",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Movement",
+      "target": "元素の移動",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 精霊の移動。"
+    },
+    {
+      "source": "Powerful Change",
+      "target": "強力なる変化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Share Transmutation",
+      "target": "変成術付与",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Surge",
+      "target": "上級妖力急騰",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 上級活性。"
+    },
+    {
+      "source": "Bottomless Well",
+      "target": "底なし井戸",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Indomitable Stance",
+      "target": "堅忍持久",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 不屈の姿勢。"
+    },
+    {
+      "source": "Mutagen Discovery",
+      "target": "変異薬の発見",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Spell Combat",
+      "target": "呪文戦闘強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crumbling Blast",
+      "target": "滅びの炸裂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shadowy Mist Form",
+      "target": "影霧形態",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Spell Resistance",
+      "target": "上級呪文抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Angelic Protection",
+      "target": "天使の守護",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Arcane Bloodrage",
+      "target": "上級秘術たぎる血の激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death's Gift",
+      "target": "死の恵み",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Woodland Stride",
+      "target": "森渡り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 森またぎ。"
+    },
+    {
+      "source": "Poison Resistance",
+      "target": "毒に対する抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 毒に対する抵抗力。"
+    },
+    {
+      "source": "Stone Stability",
+      "target": "石の安定性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Acid",
+      "target": "酸の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Air Barrier",
+      "target": "空気の防壁",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Life Link",
+      "target": "生命共有",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Life Sight",
+      "target": "生命視覚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Battle Ward",
+      "target": "闘争の護り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hampering Hex",
+      "target": "妨害の呪術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Beckoning Chill",
+      "target": "手招く寒気",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bone Ward",
+      "target": "骨の護り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Flame",
+      "target": "炎の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Song of the Fallen",
+      "target": "再起の歌",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 戦死者の歌。"
+    },
+    {
+      "source": "Spell Kenning",
+      "target": "呪文理解",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aspect of War",
+      "target": "戦の相",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fight as One",
+      "target": "連係攻撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lead by Example",
+      "target": "模範指導",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Armor of Ice",
+      "target": "氷の鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Persistent Mutagen",
+      "target": "持続変異薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "For the Faith",
+      "target": "信仰のために",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mounted Mastery",
+      "target": "騎乗体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "For the King",
+      "target": "王のために",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Combat Healer",
+      "target": "戦闘の癒し手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Battlefield Clarity",
+      "target": "戦場の明快さ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ice Armor",
+      "target": "氷の鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wintry Touch",
+      "target": "冬の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Near Death",
+      "target": "臨死",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Swallow Whole",
+      "target": "飲み込み",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Witch's Familiar",
+      "target": "ウィッチの使い魔",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Major Healing",
+      "target": "上級治癒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Come and Get Me",
+      "target": "来るなら来い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wand Mastery",
+      "target": "ワンド体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: ワンドを極めし者。"
+    },
+    {
+      "source": "Devastating Blow",
+      "target": "破壊の一打",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 壊滅的な打撃。"
+    },
+    {
+      "source": "Chain Spear",
+      "target": "チェイン・スピア",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Clear Mind",
+      "target": "明晰な心",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Increased Damage Reduction",
+      "target": "ダメージ減少増加",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: ダメージ減少上昇。"
+    },
+    {
+      "source": "Internal Fortitude",
+      "target": "頑健なる体調",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 内なる頑健。"
+    },
+    {
+      "source": "Renewed Defense",
+      "target": "再起する防御",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dance of Avoidance",
+      "target": "舞踏回避",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Gnome Magic",
+      "target": "ノームの魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Illusion Resistance",
+      "target": "幻術抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Orc Ferocity",
+      "target": "オークの凶暴性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Diminished Spellcasting",
+      "target": "呪文発動能力低下",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 呪文発動能力の減少／低下した呪文発動／呪文能力減衰。"
+    },
+    {
+      "source": "Celestial Armor",
+      "target": "天界の鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Focused Infusion",
+      "target": "集中の注入",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sickening Infusion",
+      "target": "不調の注入",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shadow Blend",
+      "target": "影潜み",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 影との混合。"
+    },
+    {
+      "source": "Chaotic Subtype",
+      "target": "（混沌）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Good Subtype",
+      "target": "（善）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extraplanar Subtype",
+      "target": "（他次元界）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Earth Subtype",
+      "target": "（地）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Water Subtype",
+      "target": "（水）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cold Subtype",
+      "target": "（冷気）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tireless Rage",
+      "target": "無疲労激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deadly Performance",
+      "target": "死に至る芸術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Freedom's Call",
+      "target": "自由の呼び声",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rebuke Death",
+      "target": "死の調伏",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Healer's Blessing",
+      "target": "癒し手の祝福",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dispelling Touch",
+      "target": "解呪の手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Nature Sense",
+      "target": "自然感覚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resist Nature's Lure",
+      "target": "自然の誘惑への抵抗力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aura of Faith",
+      "target": "信仰のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hunter's Bond",
+      "target": "狩人の絆",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 狩人の繋がり。"
+    },
+    {
+      "source": "Laughing Touch",
+      "target": "笑いの接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grasp of the Dead",
+      "target": "亡者の掴み",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blinding Ray",
+      "target": "盲目の光線",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Invisibility Field",
+      "target": "不可視の領域",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dense Rubble",
+      "target": "重度の瓦礫",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Heat Wave",
+      "target": "熱波",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dragon Bite",
+      "target": "竜の噛みつき",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Canny Defense",
+      "target": "抜け目なき守り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Summon Shadow",
+      "target": "シャドウ招来",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hag Transformation",
+      "target": "ハグの変換",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Scorching Heat",
+      "target": "灼熱",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ranged Spell Combat",
+      "target": "遠隔呪文戦闘",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Perfect Body",
+      "target": "完璧な身体",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Draconic Resilience",
+      "target": "ドラゴンの頑丈さ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cleanser of Evil",
+      "target": "悪の洗浄",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Zone of Sanctification",
+      "target": "聖化の場",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Perfect Defense",
+      "target": "完璧な防御",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Know Thy Enemy",
+      "target": "敵を知る",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Breath Weapon Bomb",
+      "target": "ブレス攻撃爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deadly Accuracy",
+      "target": "致命的精度",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Devoted Blade",
+      "target": "献身の刃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ghost Blade",
+      "target": "亡霊の刃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bane Blade",
+      "target": "滅ぼしの刃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hunter's Blessing",
+      "target": "狩人の祝福",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "First Blood",
+      "target": "最初の流血",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wand Wielder",
+      "target": "ワンドを振るう者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Infused Curative",
+      "target": "注入薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Power Over Death",
+      "target": "死を乗り越える力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dance of the Dead",
+      "target": "死者の踊り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Powerful Exploit",
+      "target": "強力なる秘技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Transmutation Supremacy",
+      "target": "至高なる変成術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Font of Power",
+      "target": "力の泉",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Surge",
+      "target": "妖力急騰強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Dance",
+      "target": "炎舞",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fast Rider",
+      "target": "高速騎乗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 敏速な騎手／駿馬乗り。"
+    },
+    {
+      "source": "Unfettered Fury",
+      "target": "森渡る怒り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Summoning Rager",
+      "target": "怒者の招来",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Furious Summoning",
+      "target": "逆上招来術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blood of Life",
+      "target": "生命の血",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Eating",
+      "target": "呪文喰",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blood Deflection",
+      "target": "反発の血",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Domain Mastery",
+      "target": "領域体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bonded Holy Symbol",
+      "target": "聖印との絆",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Talented Slayer",
+      "target": "才覚ある討伐者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Eldritch Pool",
+      "target": "妖力集積",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Spell Combat",
+      "target": "上級呪文戦闘",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crowded Vessel",
+      "target": "満ちた器",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unnatural Mien",
+      "target": "異様な振る舞い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Restless Magic",
+      "target": "休みなき魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Laugh at Death",
+      "target": "死を笑う",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Counter Curse",
+      "target": "呪い対処",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rousing Retort",
+      "target": "覚醒の音",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Horn Call",
+      "target": "喇叭の一吹き",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Determined Zeal",
+      "target": "確たる熱情",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Divine Anathema",
+      "target": "神の罵倒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Vanguard's Bond",
+      "target": "先陣の絆",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ever Ready",
+      "target": "準備万端",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 即応態勢／常なる準備。"
+    },
+    {
+      "source": "Banish Enchantment",
+      "target": "強化消去",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Exploiter Exploit",
+      "target": "秘技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Barrier",
+      "target": "秘術の障壁",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dimensional Slide",
+      "target": "次元滑り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Force Strike",
+      "target": "力場の一撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Swift Consume",
+      "target": "即行消費",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dancing Electricity",
+      "target": "電撃乱舞",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Icy Tomb",
+      "target": "氷結の墓",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lingering Acid",
+      "target": "とどまる酸",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magical Supremacy",
+      "target": "魔術支配",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blood Sanctuary",
+      "target": "血の庇護",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tireless Bloodrage",
+      "target": "血の無疲労激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mighty Bloodrage",
+      "target": "血の超激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hellfire Strike",
+      "target": "業火の打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Infernal Resistance",
+      "target": "地獄の抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 地獄の抵抗力。"
+    },
+    {
+      "source": "Diabolical Arrogance",
+      "target": "悪魔の如き傲慢",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hellfire Charge",
+      "target": "業火の突撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fiend of the Pit",
+      "target": "深淵に住む不浄なるもの",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Celestial Resistance",
+      "target": "天界の抵抗力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wings of Heaven",
+      "target": "天界の翼",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Demonic Bulk",
+      "target": "魔鬼の巨躯",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Abyssal Bloodrage",
+      "target": "奈落たる血の激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Demonic Aura",
+      "target": "魔鬼のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Disruptive Bloodrage",
+      "target": "発動を妨げる血の激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Caster's Scourge",
+      "target": "術者への懲罰",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "True Arcane Bloodrage",
+      "target": "真なる秘術たる血の激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Caster's Bane",
+      "target": "術者殺し",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Confusing Critical",
+      "target": "混乱化クリティカル",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Leaping Charger",
+      "target": "跳びかかり突撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "One with Nature",
+      "target": "自然との一体化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fury of the Fey",
+      "target": "フェイの怒り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Frightful Charger",
+      "target": "恐ろしき突撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ghost Strike",
+      "target": "幽霊の如き打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Incorporeal Bloodrager",
+      "target": "非実体化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Draconic Resistance",
+      "target": "竜の抵抗力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Precise Companion",
+      "target": "精密なる相棒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "One with the Wild",
+      "target": "自然との合一",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Metal Curse",
+      "target": "金属の呪い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Body of Earth",
+      "target": "地の身体",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Entangling Curse",
+      "target": "絡まりの呪い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Companion Animal",
+      "target": "動物の相棒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wind Ward",
+      "target": "風の護り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shocking Touch",
+      "target": "電気の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spark Soul",
+      "target": "電気の魂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Healer's Touch",
+      "target": "癒やし手の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Quick Healing",
+      "target": "迅速なる治癒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 高速治療。"
+    },
+    {
+      "source": "Battle Master",
+      "target": "戦いの達人",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enemies' Bane",
+      "target": "敵滅ぼし",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Paragon of Battle",
+      "target": "闘争の化身",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fluid Mastery",
+      "target": "流体体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fearful Gaze",
+      "target": "恐るべき視線",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bone Lock",
+      "target": "骨の固定",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of the Grave",
+      "target": "墓よりの接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shard Soul",
+      "target": "魂の欠片",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shedding Form",
+      "target": "幽体形態",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cinder Dance",
+      "target": "残り火の舞踏",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 灰舞踏。"
+    },
+    {
+      "source": "Flame Curse",
+      "target": "炎の呪い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fiery Soul",
+      "target": "燃え上がる魂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Song of Strength",
+      "target": "力の歌",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Master Skald",
+      "target": "達人スカルド",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Slayer Camouflage",
+      "target": "殺害者カモフラージュ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Slayer's Advance",
+      "target": "速歩術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Quarry",
+      "target": "獲物強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Master Slayer",
+      "target": "達人スレイヤー",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unholy Strike",
+      "target": "不浄なる打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Back to the Grave",
+      "target": "墓地送り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 墓場へ戻れ。"
+    },
+    {
+      "source": "Battle Lust",
+      "target": "闘争心",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Glorious Presence",
+      "target": "壮麗なる存在",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Demoralizing Glory",
+      "target": "士気をくじく栄光",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Freedom's Shout",
+      "target": "自由の叫び",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Zephyr's Gift",
+      "target": "そよ風の贈り物",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Soaring Assault",
+      "target": "滑空強襲",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Madness Supremacy",
+      "target": "狂気の優越",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Communal Aid",
+      "target": "援護強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unlucky Enemy",
+      "target": "不運なる敵",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crafter's Wrath",
+      "target": "作り手の憤怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Anarchic Strike",
+      "target": "無秩序なる打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Increased Defense",
+      "target": "防御力増幅",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Strike",
+      "target": "聖なる打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Armor of Earth",
+      "target": "地の鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lore Keeper",
+      "target": "伝承の守り手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Monster Lore",
+      "target": "魔物の知識",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Axiomatic Strike",
+      "target": "秩序の打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Powerful Healer",
+      "target": "強力なる癒やし手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wind Barrier",
+      "target": "風の障壁",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Heart of Carnage",
+      "target": "修羅の心",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Armor of Flame",
+      "target": "炎の鎧",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blessed Magic",
+      "target": "祝福された魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Charming Presence",
+      "target": "魅了する存在",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dominance Aura",
+      "target": "支配のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Darkened Vision",
+      "target": "陰る視界",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Smoke Bomb",
+      "target": "煙玉",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Precise Bomb",
+      "target": "精密爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sticky Bomb",
+      "target": "粘着爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "True Mutagen",
+      "target": "真実の変異薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 真の変異薬。"
+    },
+    {
+      "source": "Awakened Intellect",
+      "target": "知性の覚醒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cavalier's Charge",
+      "target": "キャヴァリアーの突撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Tactician",
+      "target": "上級戦術家",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mighty Charge",
+      "target": "力強き突撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Demanding Challenge",
+      "target": "高度な挑戦",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Banner",
+      "target": "上級旗印",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Supreme Charge",
+      "target": "突撃の神髄",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Steal Glory",
+      "target": "栄光の簒奪",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "By My Honor",
+      "target": "我が名誉により",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lion's Call",
+      "target": "獅子吼",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield of the Liege",
+      "target": "君主の盾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cunning Initiative",
+      "target": "ずる賢いイニシアチブ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Second Judgment",
+      "target": "二度目の審判",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Third Judgment",
+      "target": "三度目の審判",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Clobbering Strike",
+      "target": "打ち倒す一撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mighty Pebble",
+      "target": "強力な小石",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Skin",
+      "target": "酸の皮膚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shard Explosion",
+      "target": "陶片の爆発",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Erosion Touch",
+      "target": "腐食の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Electricity",
+      "target": "電気の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lightning Breath",
+      "target": "電撃のブレス",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spark Skin",
+      "target": "火花の皮膚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Safe Curing",
+      "target": "安全な回復",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit Boost",
+      "target": "精体促進",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Maneuver Mastery",
+      "target": "巧技体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 戦技を極めし者。"
+    },
+    {
+      "source": "War Sight",
+      "target": "戦争の視界",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Iron Skin",
+      "target": "鉄の皮膚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 鉄皮／鉄の肌。"
+    },
+    {
+      "source": "Icy Skin",
+      "target": "凍った皮膚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Punitive Transformation",
+      "target": "罰による変成",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fluid Nature",
+      "target": "流動的自然",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resist Life",
+      "target": "生命に対する抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Soul Siphon",
+      "target": "魂の吸い上げ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Molten Skin",
+      "target": "溶けた皮膚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Heat Aura",
+      "target": "熱のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Burning Magic",
+      "target": "燃焼魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Form of Flame",
+      "target": "炎形態",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Natural Armor",
+      "target": "外皮強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Life Giver",
+      "target": "生命付与者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Beast Totem, Lesser",
+      "target": "初級獣のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Beast Totem, Greater",
+      "target": "上級獣のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit Totem, Lesser",
+      "target": "初級魂のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit Totem, Greater",
+      "target": "上級魂のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fiend Totem, Lesser",
+      "target": "初級フィーンドのトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fiend Totem, Greater",
+      "target": "上級フィーンドのトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extreme Endurance",
+      "target": "極地への持久力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 極限の耐性。"
+    },
+    {
+      "source": "Arctic Native",
+      "target": "極地生まれ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Flurry Form",
+      "target": "吹雪の姿",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unstoppable Strike",
+      "target": "止められぬ一打",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 止められぬ一撃。"
+    },
+    {
+      "source": "Overhand Chop",
+      "target": "振り下ろし",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Power Attack",
+      "target": "上級強打",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Zen Archery",
+      "target": "弓禅一如",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Reflexive Shot",
+      "target": "反応射撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Drunken Courage",
+      "target": "酒の勢い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Drunken Resilience",
+      "target": "酒の生命力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ki Weapon",
+      "target": "気の代用武器",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 気武器。"
+    },
+    {
+      "source": "Aura of Life",
+      "target": "命のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 生命のオーラ。"
+    },
+    {
+      "source": "Combat Style Feat",
+      "target": "戦闘スタイル特技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Canny Observer",
+      "target": "慎重な観察者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hunter's Surprise",
+      "target": "狩人の奇襲",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Brutal Beating",
+      "target": "凶暴打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Strength of Stone",
+      "target": "石の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Scaled Soul",
+      "target": "鱗ある魂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Terrain Mastery",
+      "target": "地形体得",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fearless Defense",
+      "target": "恐れなしの防御",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Roused Defense",
+      "target": "奮起する防御",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Slow and Steady",
+      "target": "ゆっくり着実",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Double Jeopardy",
+      "target": "一事不再理",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 二重の危険。"
+    },
+    {
+      "source": "Stone Body",
+      "target": "石の肉体",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Movement",
+      "target": "秘術移動",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Dance of Avoidance",
+      "target": "上級舞踏回避",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Danger Ward",
+      "target": "危険への守り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Canine Ferocity",
+      "target": "犬の凶暴性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Giant Slayer",
+      "target": "巨人殺し",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sin Eater",
+      "target": "罪喰らい",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sacred Scourge",
+      "target": "清浄なる鞭",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Undead Resistance",
+      "target": "アンデッドの抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resist Level Drain",
+      "target": "レベル吸収に対する抵抗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Commanding Infusion",
+      "target": "命令の注入",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Perfect Infusion",
+      "target": "注入の完成",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Desert Mirage",
+      "target": "砂漠の蜃気楼",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bones of Stone",
+      "target": "石の骨",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Body of Stone",
+      "target": "石の体",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Soul of Stone",
+      "target": "石の魂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stone Self",
+      "target": "石なる我が身",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Kitsune Magic",
+      "target": "キツネの魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Azata Subtype",
+      "target": "（アザータ）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Angel Subtype",
+      "target": "（エンジェル）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Air Subtype",
+      "target": "（風）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Daemon Subtype",
+      "target": "（ダイモン）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Devil Subtype",
+      "target": "（デヴィル）の副種別",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Heretical Soul",
+      "target": "異端の魂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Amorphous Anatomy",
+      "target": "不定形の構造",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fearless Rage",
+      "target": "恐れ知らずの激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rolling Dodge",
+      "target": "しなやかな回避",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Swift Foot",
+      "target": "駿足",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Soothing Performance",
+      "target": "癒しの呪芸",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: なだめる演奏。"
+    },
+    {
+      "source": "Frightening Tune",
+      "target": "戦慄の音色",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Venom Immunity",
+      "target": "毒への耐性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 毒に対する完全耐性。"
+    },
+    {
+      "source": "Divine Health",
+      "target": "頑健なる肉体",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Champion",
+      "target": "聖なるチャンピオン",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Combat Trick",
+      "target": "戦闘技術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Power of the Pit",
+      "target": "深淵の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Blast",
+      "target": "元素の奔流",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Demonic Might",
+      "target": "魔鬼の力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "New Arcana",
+      "target": "新たなる秘術",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fleeting Glance",
+      "target": "つかのまの一瞥",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Soul of the Fey",
+      "target": "フェイの魂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cold Snap",
+      "target": "寒波",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Everburning Torch",
+      "target": "消えずの松明",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Save Bonus Against Poison",
+      "target": "毒に対するセーヴへのボーナス",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enhanced Mobility",
+      "target": "強行突破強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elaborate Defense",
+      "target": "巧みな防御",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Diverse Training",
+      "target": "多角的訓練",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Critical",
+      "target": "呪文クリティカル",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Directed Blast",
+      "target": "指向爆発",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Staggering Blast",
+      "target": "よろめき化爆発",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aura of Blood",
+      "target": "出血のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Feast of Blood",
+      "target": "饗宴の血",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Celestial Totem, Greater",
+      "target": "上級天上のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Celestial Totem, Lesser",
+      "target": "初級天上のトーテム",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Throat Cutter",
+      "target": "喉斬り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hag Fortitude",
+      "target": "ハグの頑健性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Curse Conduit",
+      "target": "呪いの導管",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Painful Strike",
+      "target": "痛撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Serpent Fang",
+      "target": "蛇の牙",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dispelling Strike",
+      "target": "解呪打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 解呪撃。"
+    },
+    {
+      "source": "Soul Shield",
+      "target": "魂の盾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Defensive Challenge",
+      "target": "防衛的な挑戦",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 守勢の挑戦。"
+    },
+    {
+      "source": "Unbalancing Trick",
+      "target": "不平衡の技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Planar Hunter",
+      "target": "次元狩り",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Reach Magic",
+      "target": "射程延長魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ranged Spellstrike",
+      "target": "遠隔呪文撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Powerless Prophecy",
+      "target": "無力な予言",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Courageous Defense",
+      "target": "勇気ある防御",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Intimidating Display",
+      "target": "威嚇演舞",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Feat",
+      "target": "追加特技",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Righteous Oath",
+      "target": "正義の制約",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield Adept",
+      "target": "盾の熟達者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mythic Resolve",
+      "target": "神話級の回復",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lethal Accuracy",
+      "target": "致死的精度",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Reflexive Dodge",
+      "target": "反射的回避",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resilience of Steel",
+      "target": "鋼の弾力",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Clever Explorer",
+      "target": "巧妙な探索者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Banner of Solace",
+      "target": "慰藉の旗印",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Awesome Pennon",
+      "target": "荘厳なる槍旗",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Transfixing Charge",
+      "target": "貫通突撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Burst Barrier",
+      "target": "爆発障壁",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tower Shield Training",
+      "target": "タワー・シールド修練",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tower Shield Defense",
+      "target": "タワー・シールド防御",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tower Shield Evasion",
+      "target": "タワー・シールド身かわし",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deflective Shield",
+      "target": "そらす盾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Critical Perfection",
+      "target": "クリティカル完璧化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Insightful Strike",
+      "target": "看破の打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mystic Wisdom",
+      "target": "神秘的な知識",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Devoted Guardian",
+      "target": "献身的な守護者",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Monastic Mount",
+      "target": "修道院の騎乗動物",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Martial Arts Master",
+      "target": "武道の達人",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shared Precision",
+      "target": "精密性共有",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Distant Mercy",
+      "target": "遠隔慈悲",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Righteous Hunter",
+      "target": "正義の狩人",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weapon Snatcher",
+      "target": "武器強奪",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sneak Stab",
+      "target": "急所への一突き",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blade Sense",
+      "target": "刃感知",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unfair Advantage",
+      "target": "不当な優位",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Empowered Magic",
+      "target": "威力強化魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Maximized Magic",
+      "target": "最大威力魔法",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Quickened Magic",
+      "target": "高速詠唱",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Spell Recall",
+      "target": "呪文喚起強化",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Simple Reanimation",
+      "target": "簡易蘇生",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Secrets of the Grave",
+      "target": "墓の秘密",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Haunting Refrain",
+      "target": "忘れられないリフレイン",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aerial Evasion",
+      "target": "空中身かわし",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hex Arcana",
+      "target": "呪術の秘奥",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Life Drinker",
+      "target": "生命収奪",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sacred Council",
+      "target": "神聖なる審議",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit Walk",
+      "target": "精体歩き",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit of the Warrior",
+      "target": "戦士の霊魂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Phantom Touch",
+      "target": "亡霊の接触",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirit Shield",
+      "target": "霊魂の盾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aura of Purity",
+      "target": "純粋のオーラ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Ray",
+      "target": "火の光線",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Bolt",
+      "target": "秘術の矢",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Gaze",
+      "target": "凝視",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Alignment",
+      "target": "属性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Summon",
+      "target": "招来",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Reach",
+      "target": "間合い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Mercy",
+      "target": "慈悲",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Bite",
+      "target": "噛みつき",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Familiar",
+      "target": "使い魔",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Deity",
+      "target": "神格",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bomb",
+      "target": "爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Concentration",
+      "target": "精神集中",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Claw",
+      "target": "爪",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。別訳: かぎ爪。"
+    },
+    {
+      "source": "Judgment",
+      "target": "審判",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Slam",
+      "target": "叩きつけ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Scent",
+      "target": "鋭敏嗅覚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Trip",
+      "target": "足払い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Masterwork",
+      "target": "マスターワーク",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grab",
+      "target": "つかみ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Cognatogen",
+      "target": "進化薬",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Flail",
+      "target": "フレイル",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Thrown",
+      "target": "投擲武器",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Discovery",
+      "target": "発見",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Bloodrage",
+      "target": "血の激怒",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sting",
+      "target": "針",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Gore",
+      "target": "突き刺し",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Blindsense",
+      "target": "非視覚的感知",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ferocity",
+      "target": "凶暴性",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Compulsion",
+      "target": "強制",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Bravery",
+      "target": "武勇",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Ghoul",
+      "target": "グール",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fervor",
+      "target": "熱狂",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Quarry",
+      "target": "獲物",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Bardiche",
+      "target": "バルディッシュ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Pounce",
+      "target": "飛びかかり",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Falcata",
+      "target": "ファルカタ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cackle",
+      "target": "魔女笑い",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blindsight",
+      "target": "擬似視覚",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shaitan",
+      "target": "シャイタン",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tentacle",
+      "target": "触手",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Haramaki",
+      "target": "ハラマキ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tremorsense",
+      "target": "振動感知",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crowbar",
+      "target": "かなてこ",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Opportunist",
+      "target": "追い討ち",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Trapfinding",
+      "target": "罠探し",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Harpoon",
+      "target": "ハープーン",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Djinni",
+      "target": "ジン",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Efreeti",
+      "target": "イフリート",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Marid",
+      "target": "マーリド",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Riposte",
+      "target": "突き返し",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Multiattack",
+      "target": "複数回攻撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lifesense",
+      "target": "生命感知",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Pepperbox",
+      "target": "ペッパーボックス",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blinding Strike",
+      "target": "盲目化打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 盲目の光。"
+    },
+    {
+      "source": "Acid Bomb",
+      "target": "酸爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Frost Bomb",
+      "target": "霜爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shock Bomb",
+      "target": "電撃爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Explosive Bomb",
+      "target": "爆散爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Force Bomb",
+      "target": "力場爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dispelling Attack",
+      "target": "解呪攻撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。別訳: 解呪攻撃。"
+    },
+    {
+      "source": "Crippling Strike",
+      "target": "弱体化打撃",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tanglefoot Bomb",
+      "target": "足留め爆弾",
+      "category": "PRD Term",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dead",
+      "target": "死亡状態",
+      "category": "Conditions",
+      "note": "ルール文での状態名のときのみ。台詞の一般語は自然に訳す。"
+    },
+    {
+      "source": "Broken",
+      "target": "破損状態",
+      "category": "Conditions",
+      "note": "ルール文での状態名のときのみ。台詞の一般語は自然に訳す。"
     }
   ]
 }
