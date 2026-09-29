@@ -6183,6 +6183,33 @@
       "target": "シェリンの信奉者",
       "category": "Organization",
       "note": "Shelynを崇める者たち（Dialogue_AneviaMain、round175）。"
+    },
+    {
+      "source": "Crinukh",
+      "target": "クリヌク",
+      "note": "Drezenに潜む人語を話すコボルドの密偵、Night Rubyの生き残り（Crinukh_dialogue、round176）。"
+    },
+    {
+      "source": "Night Ruby",
+      "target": "ナイト・ルビー",
+      "category": "Organization",
+      "note": "Crinukhの出身であるコボルドの部族名。かつて悪魔と契約し繁栄したが、後にドロウの奴隷となった（Crinukh_dialogue、round176）。"
+    },
+    {
+      "source": "Urmaak",
+      "target": "ウルマーク",
+      "note": "Night Ruby部族の元指導者。悪魔との契約締結を拒んだ人物（Crinukh_dialogue、round176）。"
+    },
+    {
+      "source": "Green Crows",
+      "target": "緑鴉団",
+      "category": "Organization",
+      "note": "Galfrey女王が潜伏時に名乗った小規模な騎士団（Galfrey_Incognito_Warcamp_dialog、round176）。"
+    },
+    {
+      "source": "Kitrane",
+      "target": "キトレーン",
+      "note": "Galfrey女王が潜伏中に名乗る偽名（Galfrey_Incognito_Warcamp_dialog、round176）。"
     }
   ]
 }
