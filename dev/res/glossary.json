@@ -6320,6 +6320,60 @@
       "target": "イアダラ",
       "category": "Place",
       "note": "Fornの出身地（Forn_main_dialogue、round179）。"
+    },
+    {
+      "source": "Karamorros",
+      "target": "カラモロス",
+      "category": "Person",
+      "note": "黒竜。Isle of Terrorを縄張りとし、NaragaとIstravekの母（StoryTeller_MainDialogue、round180）。"
+    },
+    {
+      "source": "Naraga",
+      "target": "ナラガ",
+      "category": "Person",
+      "note": "Karamorrosの娘。Istravekの姉妹（round180）。"
+    },
+    {
+      "source": "Istravek",
+      "target": "イストラヴェク",
+      "category": "Person",
+      "note": "Karamorrosの子。Naragaの兄弟（round180）。"
+    },
+    {
+      "source": "Isle of Terror",
+      "target": "テラー島",
+      "category": "Place",
+      "note": "Karamorrosの棲み処（round180）。"
+    },
+    {
+      "source": "Tonka",
+      "target": "トンカ",
+      "category": "Person",
+      "note": "サーコリスの女狩人。山の翁を討つと誓った（round180）。"
+    },
+    {
+      "source": "Old Man of the Mountain",
+      "target": "山の翁",
+      "category": "Person",
+      "note": "巨大なマンモス。Tonkaが討つと誓った相手（round180）。"
+    },
+    {
+      "source": "White Madness",
+      "target": "白き狂気",
+      "category": "Event",
+      "note": "サーコリスを襲った極寒の大災厄（round180）。"
+    },
+    {
+      "source": "Lord of the Red Tide",
+      "target": "赤き潮の主",
+      "category": "Person",
+      "note": "Arodenが戦ったデーモンロード（round180）。"
+    },
+    {
+      "source": "Horned Horror",
+      "target": "角ある恐怖",
+      "category": "Person",
+      "note": "デーモンの自称名（round180）。"
     }
   ]
 }

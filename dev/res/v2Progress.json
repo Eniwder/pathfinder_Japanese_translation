@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 52950,
-  "updatedAt": "2026-09-29T09:50:26.318Z",
+  "nextStart": 53250,
+  "updatedAt": "2026-09-29T11:55:51.532Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3343,6 +3343,19 @@
         "Nurah-Prison_Dialogue"
       ],
       "note": "v2リライト第179弾（runRoundLoop.mjs による自動実行）。 163件すべて翻訳し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 163/163（全entry訳出済み）\n- 登場会話: Forn_main_dialogue（フォーン初対面）、Kaylessa_main_dialogue（変装したケイレッサとの遭遇・正体露見）、Kaylessa_Reveal_dialogue（フォーンの死とケイレッサの過去・最期の / 137件すべて翻訳し、`chunk_0001.translations.json` に出力しました（chunk_0001.json 自体は未変更）。\n\n- 件数: 137件（全entry翻訳済み、nullのまま残したものなし）\n- 登場した会話: `Nurah_Warcamp_Dialogue`（ヌーラの雑談・裏切り発覚シーン）、`Nurah-Prison_Dialogue`（投獄後の尋問シーン）"
+    },
+    {
+      "start": 52950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round180/",
+      "coveredDialogs": [
+        "Nurah-Prison_Dialogue",
+        "ScrollVendor_New_Dialogue",
+        "ScrollVendor_Old_Dialogue",
+        "StoryTeller_MainDialogue"
+      ],
+      "note": "v2リライト第180弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全57件を訳して書き込みました。対象の会話は `Nurah-Prison_Dialogue`、`ScrollVendor_New_Dialogue`、`ScrollVendor_Old_Dialogue` です。書き込んだ JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\n`Comm / chunk_0001 の 243 件をすべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認しましたが、スクリプトによる検証や `import --dry-run` はしていません。対象の会話は `StoryTeller_MainDialogue` の1つです。\n\n気づいた点が3つあります。\n- 生の `{"
     }
   ]
 }
