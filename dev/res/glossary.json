@@ -1544,87 +1544,128 @@
     },
     {
       "source": "Fatigued",
-      "target": "疲労",
-      "category": "Conditions"
+      "target": "疲労状態",
+      "category": "Conditions",
+      "note": "状態異常名はPF日本語版の「〜状態」に統一する（translationGuide.md参照）。文中では「疲労状態になる」等。"
     },
     {
       "source": "Exhausted",
-      "target": "消耗",
-      "category": "Conditions"
+      "target": "過労状態",
+      "category": "Conditions",
+      "note": "「消耗」「疲労」にしない（Fatiguedと紛れる）。"
     },
     {
       "source": "Shaken",
-      "target": "動揺",
-      "category": "Conditions"
+      "target": "怯え状態",
+      "category": "Conditions",
+      "note": "恐怖系の段階は 怯え(Shaken) < 恐れ(Frightened) < 恐慌(Panicked)。台詞中の一般語の shaken はこの限りでない。"
     },
     {
       "source": "Frightened",
-      "target": "恐慌",
+      "target": "恐れ状態",
       "category": "Conditions"
     },
     {
       "source": "Panicked",
-      "target": "パニック",
+      "target": "恐慌状態",
       "category": "Conditions"
+    },
+    {
+      "source": "Cowering",
+      "target": "戦慄状態",
+      "category": "Conditions",
+      "note": "「萎縮」「おびえ」にしない（Shaken/Frightened系と紛れる）。"
     },
     {
       "source": "Sickened",
-      "target": "吐き気",
-      "category": "Conditions"
+      "target": "不調状態",
+      "category": "Conditions",
+      "note": "「病気」はDiseaseと、「吐き気」はNauseatedと衝突するので使わない。"
     },
     {
       "source": "Nauseated",
-      "target": "吐き気（重度）",
+      "target": "吐き気がする状態",
       "category": "Conditions"
     },
     {
       "source": "Staggered",
-      "target": "よろめき",
+      "target": "よろめき状態",
       "category": "Conditions"
     },
     {
       "source": "Stunned",
-      "target": "気絶",
-      "category": "Conditions"
+      "target": "朦朧状態",
+      "category": "Conditions",
+      "note": "「スタン」「気絶」にしない（気絶はUnconscious）。"
     },
     {
       "source": "Dazed",
-      "target": "茫然",
+      "target": "幻惑状態",
+      "category": "Conditions",
+      "note": "「混乱」（Confused）「茫然」「デイズ」にしない。"
+    },
+    {
+      "source": "Dazzled",
+      "target": "目が眩んだ状態",
+      "category": "Conditions",
+      "note": "「幻惑」はDazedの訳語なので使わない。"
+    },
+    {
+      "source": "Fascinated",
+      "target": "恍惚状態",
+      "category": "Conditions",
+      "note": "「魅惑」「魅了」はCharm系と紛れるので使わない。"
+    },
+    {
+      "source": "Confused",
+      "target": "混乱状態",
       "category": "Conditions"
     },
     {
       "source": "Prone",
-      "target": "転倒",
-      "category": "Conditions"
+      "target": "伏せ状態",
+      "category": "Conditions",
+      "note": "「転倒」「うつ伏せ」にしない。「伏せ状態になる」「伏せ状態の敵」等。"
     },
     {
       "source": "Flat-Footed",
-      "target": "不意打ち状態",
-      "category": "Conditions"
+      "target": "立ちすくみ状態",
+      "category": "Conditions",
+      "note": "「不意打ち」にしない（奇襲ラウンド等と紛れる）。"
     },
     {
       "source": "Helpless",
-      "target": "無力",
+      "target": "無防備状態",
       "category": "Conditions"
     },
     {
       "source": "Grappled",
-      "target": "組みつかれた",
+      "target": "組みつき状態",
+      "category": "Conditions"
+    },
+    {
+      "source": "Pinned",
+      "target": "押さえ込まれた状態",
       "category": "Conditions"
     },
     {
       "source": "Entangled",
-      "target": "絡みつかれた",
+      "target": "絡みつかれた状態",
       "category": "Conditions"
     },
     {
       "source": "Paralyzed",
-      "target": "麻痺",
+      "target": "麻痺状態",
       "category": "Conditions"
     },
     {
       "source": "Petrified",
-      "target": "石化",
+      "target": "石化状態",
+      "category": "Conditions"
+    },
+    {
+      "source": "Blinded",
+      "target": "盲目状態",
       "category": "Conditions"
     },
     {
@@ -1634,19 +1675,80 @@
       "note": "Blind condition — not the noun \"window blind\"."
     },
     {
+      "source": "Deafened",
+      "target": "聴覚喪失状態",
+      "category": "Conditions"
+    },
+    {
       "source": "Deaf",
       "target": "聴覚喪失",
       "category": "Conditions"
     },
     {
       "source": "Invisible",
-      "target": "不可視",
+      "target": "不可視状態",
       "category": "Conditions"
     },
     {
-      "source": "Confused",
-      "target": "混乱",
+      "source": "Incorporeal",
+      "target": "非実体状態",
+      "category": "Conditions",
+      "note": "「無形」「非物質」「インコーポリアル」にしない。「非実体のクリーチャー」等。"
+    },
+    {
+      "source": "Unconscious",
+      "target": "気絶状態",
       "category": "Conditions"
+    },
+    {
+      "source": "Dying",
+      "target": "瀕死状態",
+      "category": "Conditions",
+      "note": "ルール文での状態名のときのみ。台詞の一般語は自然に訳す。"
+    },
+    {
+      "source": "Disabled",
+      "target": "満身創痍状態",
+      "category": "Conditions",
+      "note": "ルール文での状態名のときのみ。"
+    },
+    {
+      "source": "Stable",
+      "target": "容態安定状態",
+      "category": "Conditions",
+      "note": "ルール文での状態名のときのみ。"
+    },
+    {
+      "source": "Bleed",
+      "target": "出血状態",
+      "category": "Conditions",
+      "note": "ルール文での状態名のときのみ。"
+    },
+    {
+      "source": "Energy Drained",
+      "target": "生命力吸収状態",
+      "category": "Conditions"
+    },
+    {
+      "source": "Slowed",
+      "target": "減速状態",
+      "category": "Conditions",
+      "note": "呪文名の Slow はカタカナ（スロウ）。状態名は「鈍足」「スロー」にしない。"
+    },
+    {
+      "source": "Swift Action",
+      "target": "即行アクション",
+      "category": "Rules"
+    },
+    {
+      "source": "Immediate Action",
+      "target": "割り込みアクション",
+      "category": "Rules"
+    },
+    {
+      "source": "Free Action",
+      "target": "フリー・アクション",
+      "category": "Rules"
     },
     {
       "source": "Dominated",
@@ -1662,24 +1764,6 @@
       "source": "Diseased",
       "target": "病気",
       "category": "Conditions"
-    },
-    {
-      "source": "Dazzled",
-      "target": "目が眩んだ状態",
-      "category": "Conditions",
-      "note": "PF/D&D日本語版の定訳。「幻惑」はDazed（朦朧・茫然系）の定訳と衝突するので使わない。"
-    },
-    {
-      "source": "Cowering",
-      "target": "縮こまり状態",
-      "category": "Conditions",
-      "note": "恐怖で身動きが取れない状態。「萎縮」「おびえ」にしない（Shaken/Frightened系と紛れるため）。"
-    },
-    {
-      "source": "Fascinated",
-      "target": "恍惚状態",
-      "category": "Conditions",
-      "note": "PF/D&D日本語版の定訳。「魅惑」「魅了」はCharm系と紛れるので使わない。"
     },
     {
       "source": "Lawful Good",
