@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 51450,
-  "updatedAt": "2026-09-29T05:09:06.044Z",
+  "nextStart": 51750,
+  "updatedAt": "2026-09-29T05:29:25.663Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3266,6 +3266,26 @@
         "Epilogues_epilogues"
       ],
       "note": "v2リライト第174弾（runRoundLoop.mjs による自動実行）。 JSON structure looks valid and complete.\n\n全300件を翻訳し、`chunk_0000.translations.json` に書き込みました（`chunk_0000.json` 自体は未編集）。\n\n- 件数: 300件すべて翻訳（未訳のまま残したものなし）\n- 登場した会話: `Epilogues_epilogues`（第五次十字軍のエピローグ・スライドシ"
+    },
+    {
+      "start": 51450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round175/",
+      "coveredDialogs": [
+        "Epilogues_epilogues",
+        "Epilogues_afterlogues_dialogue",
+        "c0_before_interchapter",
+        "c0_c1_interchapter",
+        "c1_c2_interchapter",
+        "c2-c3_interchapter",
+        "c3-c4_interchapter",
+        "c4-c5_interchapter",
+        "c5-c6_interchapter",
+        "Dialogue_AneviaMain",
+        "Fye_Bartender_dialog"
+      ],
+      "note": "v2リライト第175弾（runRoundLoop.mjs による自動実行）。 86件全て訳出し、chunk_0000.translations.jsonに書き込みました。\n\n- **件数**: 86/86件（未訳なし）\n- **登場した会話**: Epilogues_epilogues（グレイボー/アルエシャラエ等のエピローグ地の文）、Epilogues_afterlogues_dialogue（アレール・ヴォーレスとファラズマの対話、Player介入選択肢）、各章間インタ / 120件すべて訳出しました。会話はDialogue_AneviaMain（アネヴィアとの雑談・身の上話・アルエシャラエとのパン談義など）。ロヴス/ヴェイン隊長離脱/ヴェスカヴォーの巣/ミナゴー逃走など既存キャラ設定との整合は保ちつつ訳しています。翻訳エントリはchunk_0001.translations.jsonに新規作成、chunk_0001.json本体は未編集です。 / 94件すべて訳し、chunk_0002.translations.jsonに書き込みました。会話は「Fye_Bartender_dialog」（ドレゼンの酒場「ハーフ・メジャー」の店主ファイと主人公の雑談・裁定イベント）1本のみ。気づいた点：`{mf|guy|girl}`等の性別分岐タグはガイドに従い自然な日本語（「ただの人間」「ただの普通の者」等）に統一して省略しています。"
     }
   ]
 }

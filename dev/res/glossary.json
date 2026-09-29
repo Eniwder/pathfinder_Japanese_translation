@@ -6153,6 +6153,36 @@
       "target": "アルカディア",
       "category": "Location",
       "note": "Golarion世界の大陸名（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Nidal",
+      "target": "ニダール",
+      "category": "Location",
+      "note": "Aneviaの出身国。影に呑まれた暗い国（Dialogue_AneviaMain、round175）。"
+    },
+    {
+      "source": "Nisroch",
+      "target": "ニスロック",
+      "category": "Location",
+      "note": "Nidalの首都。Silent Shroudの修道士が守る（Dialogue_AneviaMain、round175）。"
+    },
+    {
+      "source": "Kuthites",
+      "target": "クスの信奉者",
+      "category": "Organization",
+      "note": "Zon-Kuthonを崇める者たち。Nidal出身のAneviaを狙う集団（Dialogue_AneviaMain、round175）。"
+    },
+    {
+      "source": "Silent Shroud",
+      "target": "沈黙の帳",
+      "category": "Organization",
+      "note": "口を縫われたNisrochの守衛僧団（Dialogue_AneviaMain、round175）。"
+    },
+    {
+      "source": "Shelynites",
+      "target": "シェリンの信奉者",
+      "category": "Organization",
+      "note": "Shelynを崇める者たち（Dialogue_AneviaMain、round175）。"
     }
   ]
 }

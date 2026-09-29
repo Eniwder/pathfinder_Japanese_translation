@@ -286,3 +286,6 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
 - 2026-09-28（round161）: Dialogue_DLC6_TheaterFailで"Impossible Kingdoms"/"Possible Kingdoms"の
   ダジャレの掛け合いが登場したことから、translationGuide.mdに語呂合わせ地名は音写より意味優先で
   訳す旨を追記（この2語自体は文脈依存の一発ネタなのでglossaryには載せていない）。
+- 2026-09-29（round175）: Dialogue_AneviaMainでAneviaの出身にまつわるNidal/Nisroch/
+  Kuthites/Silent Shroud/Shelynitesが未登録だったためglossaryに追記。あわせて神格名+`-ite(s)`
+  （信奉者を指す語）は「〜の信奉者」で統一する旨をtranslationGuide.mdに追記。
