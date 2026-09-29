@@ -16222,6 +16222,17 @@
       "category": "Conditions",
       "note": "ルール文での状態名のときのみ。台詞の一般語は自然に訳す。",
       "caseSensitive": true
+    },
+    {
+      "source": "Besmaran",
+      "target": "ベスマラー",
+      "note": "Besmaraの形容詞形（Besmaran pirates＝ベスマラーの海賊）。"
+    },
+    {
+      "source": "Inspire Greatness",
+      "target": "偉大鼓舞",
+      "category": "Ability",
+      "note": "バードの呪芸。Inspire Courage/Heroicsと同系の訳語。"
     }
   ]
 }

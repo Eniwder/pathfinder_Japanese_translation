@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 54750,
-  "updatedAt": "2026-09-29T16:32:18.241Z",
+  "nextStart": 55050,
+  "updatedAt": "2026-09-29T18:05:24.631Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3409,6 +3409,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round185/",
       "coveredDialogs": [],
       "note": "v2リライト第185弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の訳文ファイルは書き込み済みです。今は、手で写したキーが原文と食い違っていないかの確認中です。1件（鍛冶屋のキー）は食い違っていたので直しました。\n\n残りは Grep で個別に照合できます。ただし今回は指示どおり Bash やスクリプトを使っていません。\n\n**報告**\n- `chunk_0000.translations.json` に 200 件を訳して書き込みました。` / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はすべて `null` で、呪文・状態異常・天候・病気などのシステム文言のみです。\n\n- **JSON確認**: 実行権限がないため、構文は目視確認のみです。\n- **`<ctrl_N/>`**: 各entryのトークンは個数・内容とも保持し、日本語の語順に合わせて位置だけ入れ替えた"
+    },
+    {
+      "start": 54750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round186/",
+      "coveredDialogs": [],
+      "note": "v2リライト第186弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に全200件を書き込みました。JSON の構文とキー数の検証は、ファイルを読み返しても実行してもいません。dialog は全ブロックが `null` で、会話ではなくバフ・状態異常・追い風などのシステム文言です。\n\nglossary に無い訳語を当てたので、追記を提案します。\n- 状態: `Invigor / chunk_0001 の 100 件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話ではなくシステム文言（遠征の恩恵・追い風・潮流などの効果説明と名称）で、`dialog` は全件 null です。\n\n- **`<ctrl_N/>` の順序:** 一部の entry では訳文の語順に合わせて `<ctrl_N/>` の順序を入れ替えてしまいました（"
     }
   ]
 }
