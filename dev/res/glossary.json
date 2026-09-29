@@ -10610,6 +10610,60 @@
       "target": "レゾネイティング・ワード",
       "category": "Spell",
       "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fine",
+      "target": "極小",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Diminutive",
+      "target": "微小",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Tiny",
+      "target": "超小型",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Small",
+      "target": "小型",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Medium",
+      "target": "中型",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。 職業の medium（霊媒）とも区別する。"
+    },
+    {
+      "source": "Large",
+      "target": "大型",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Huge",
+      "target": "超大型",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Gargantuan",
+      "target": "巨大",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Colossal",
+      "target": "超巨大",
+      "category": "Size",
+      "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
     }
   ]
 }
