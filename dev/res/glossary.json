@@ -3132,10 +3132,16 @@
       "note": "ランが食料調達で訪れたことのある地名。round52で言及。"
     },
     {
+      "source": "neather",
+      "target": "地底の民",
+      "category": "Term",
+      "note": "文脈に応じて「ニースホルムの民」や「ニースホルム出身」などと訳してもよい。"
+    },
+    {
       "source": "Neathers",
       "target": "地底の民",
       "category": "Term",
-      "note": "ニースホルムに住む人々を指す呼称。"
+      "note": "ニースホルムに住む人々を指す呼称。文脈に応じて「ニースホルムの民」などと訳す。"
     },
     {
       "source": "Lord of Beasts",
@@ -6093,6 +6099,60 @@
       "target": "世界の交差路",
       "category": "Location",
       "note": "エピローグで語られる、閉じなかったWorldwoundが変貌した後の姿。異界の者たちで賑わう場所（Epilogues_epilogues、round173）。"
+    },
+    {
+      "source": "the Count",
+      "target": "伯爵",
+      "category": "Title",
+      "note": "エピローグでDaeran Arendaeを指す通称（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Queen Abrogail",
+      "target": "アブロガイル女王",
+      "category": "Person",
+      "note": "チェリアックスを統べる女王（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Lands of the Linnorm Kings",
+      "target": "リンノーム王国群",
+      "category": "Location",
+      "note": "エピローグに登場する北方の地域名（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Temple of the Good Hunt",
+      "target": "善き狩りの神殿",
+      "category": "Location",
+      "note": "Delamereが最期に赴く廃墟の神殿（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Midnight Isle",
+      "target": "真夜中の島",
+      "category": "Location",
+      "note": "Deskariの遺骸の上に築かれたという島（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Techslayers",
+      "target": "テックスレイヤーズ",
+      "category": "Organization",
+      "note": "Numerian Deviceを打倒するために結成された十字軍の一派（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Saltlands",
+      "target": "ソルトランド",
+      "category": "Location",
+      "note": "Wenduagがmongrelmenのために切り開いた土地の名（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Sevalros",
+      "target": "セヴァルロス",
+      "category": "Character",
+      "note": "行方不明になったドラゴンの名（Epilogues_epilogues、round174）。"
+    },
+    {
+      "source": "Arcadia",
+      "target": "アルカディア",
+      "category": "Location",
+      "note": "Golarion世界の大陸名（Epilogues_epilogues、round174）。"
     }
   ]
 }

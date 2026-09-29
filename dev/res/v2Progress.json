@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 51150,
-  "updatedAt": "2026-09-28T15:58:59.843Z",
+  "nextStart": 51450,
+  "updatedAt": "2026-09-29T05:09:06.044Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3256,6 +3256,16 @@
         "Epilogues_epilogues"
       ],
       "note": "v2リライト第173弾（runRoundLoop.mjs による自動実行）。 172件すべて訳しました。登場会話は `Wenduag_TakeMeHome_dialogue`（ウェンドアグの誘い）、`John_Meet_dialogue`／`Lucy_Main_dialogue`（DLC7のバーグソン父娘救出）、`KTC_Morta_Anevia`／`KTC_Morta_Arsinoe`（ゴブリン偵察の報告）の5会話です。\n\n気づいた点：「I can see you are / 128件全て翻訳し、chunk_0001.translations.jsonに書き込みました。\n\n- **件数**: 128件（全entry）\n- **会話**: `MortaGoblins_dialogue`（ゴブリン難民との交渉、片言英語のゴブリンリーダーの台詞）、`Epilogues_epilogues`（周回エンディングのナレーション群）\n- **気づいた点**: ゴブリンリーダーの片言英"
+    },
+    {
+      "start": 51150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round174/",
+      "coveredDialogs": [
+        "Epilogues_epilogues"
+      ],
+      "note": "v2リライト第174弾（runRoundLoop.mjs による自動実行）。 JSON structure looks valid and complete.\n\n全300件を翻訳し、`chunk_0000.translations.json` に書き込みました（`chunk_0000.json` 自体は未編集）。\n\n- 件数: 300件すべて翻訳（未訳のまま残したものなし）\n- 登場した会話: `Epilogues_epilogues`（第五次十字軍のエピローグ・スライドシ"
     }
   ]
 }
