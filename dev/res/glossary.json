@@ -1384,7 +1384,8 @@
     {
       "source": "Spell Resistance",
       "target": "呪文抵抗",
-      "category": "Combat Stats"
+      "category": "Combat Stats",
+      "note": "ルール用語。呪文名の Spell Resistance は「スペル・レジスタンス」。"
     },
     {
       "source": "SR",
@@ -1410,13 +1411,15 @@
     },
     {
       "source": "Spell Penetration",
-      "target": "呪文抵抗突破",
-      "category": "Combat Stats"
+      "target": "抵抗破り",
+      "category": "Feat",
+      "note": "特技名（PRD日本語版の訳語）。上級は《上級抵抗破り》。"
     },
     {
       "source": "Mobility",
       "target": "軽業",
-      "category": "Skills"
+      "category": "Skills",
+      "note": "技能名。特技名の Mobility は《強行突破》。"
     },
     {
       "source": "Athletics",
@@ -1722,7 +1725,7 @@
       "source": "Bleed",
       "target": "出血状態",
       "category": "Conditions",
-      "note": "ルール文での状態名のときのみ。"
+      "note": "ルール文での状態名のときのみ。 呪文名の Bleed は「ブリード」。"
     },
     {
       "source": "Energy Drained",
@@ -1733,7 +1736,7 @@
       "source": "Slowed",
       "target": "減速状態",
       "category": "Conditions",
-      "note": "呪文名の Slow はカタカナ（スロウ）。状態名は「鈍足」「スロー」にしない。"
+      "note": "呪文名の Slow は「スロー」。状態名は「鈍足」「スロー」にしない。"
     },
     {
       "source": "Swift Action",
@@ -6603,61 +6606,4010 @@
       "category": "Disease",
       "note": "敏捷力ダメージの病気（round185）。"
     },
-    { "source": "Blinding Sickness", "target": "失明病", "category": "Disease" },
-    { "source": "Bubonic Plague", "target": "腺ペスト", "category": "Disease", "note": "PF日本語版では「腺ペスト（普通のペスト）」。ゲーム内の名称としては括弧を省いてよい。" },
-    { "source": "Cackle Fever", "target": "狂笑熱", "category": "Disease" },
-    { "source": "Demon Fever", "target": "悪魔熱", "category": "Disease" },
-    { "source": "Devil Chills", "target": "悪魔風邪", "category": "Disease" },
-    { "source": "Filth Fever", "target": "汚穢熱", "category": "Disease" },
-    { "source": "Leprosy", "target": "癩病", "category": "Disease" },
-    { "source": "Mummy Rot", "target": "ミイラ腐敗病", "category": "Disease" },
-    { "source": "Red Ache", "target": "赤腫れ病", "category": "Disease" },
-    { "source": "Slimy Doom", "target": "溶死病", "category": "Disease" },
-    { "source": "Werewolf Lycanthropy", "target": "ワーウルフのライカンスロピー", "category": "Disease" },
-    { "source": "Curse of the Ages", "target": "加齢の呪い", "category": "Curse" },
-    { "source": "Bestow Curse Trap", "target": "ビストウ・カースの罠", "category": "Curse" },
-    { "source": "Unluck", "target": "不運", "category": "Curse" },
-    { "source": "Baleful Polymorph Spell", "target": "ベイルフル・ポリモーフの呪文", "category": "Curse" },
-    { "source": "Arsenic", "target": "ヒ素", "category": "Poison" },
-    { "source": "Belladonna", "target": "ベラドンナ", "category": "Poison" },
-    { "source": "Black Adder Venom", "target": "ブラック・アダーの毒", "category": "Poison", "note": "PF日本語版では「ブラック・アダー（クロクサリヘビ）の毒」。" },
-    { "source": "Black Lotus Extract", "target": "ブラック・ロータス抽出液", "category": "Poison", "note": "PF日本語版では「ブラック・ロータス（黒い蓮）抽出液」。" },
-    { "source": "Bloodroot", "target": "アカネグサ", "category": "Poison" },
-    { "source": "Blue Whinnis", "target": "ブルー・フィニス", "category": "Poison" },
-    { "source": "Burnt Othur Fumes", "target": "オーサー焼香", "category": "Poison" },
-    { "source": "Dark Reaver Powder", "target": "ダーク・リーヴァーの粉末", "category": "Poison" },
-    { "source": "Deathblade", "target": "デスブレード", "category": "Poison" },
-    { "source": "Dragon Bile", "target": "ドラゴンの胆汁", "category": "Poison" },
-    { "source": "Drow Poison", "target": "ドラウの毒", "category": "Poison" },
-    { "source": "Giant Wasp Poison", "target": "ジャイアント・ワスプの毒", "category": "Poison" },
-    { "source": "Green Prismatic Poison", "target": "グリーン・プリズマティック・ポイズン", "category": "Poison" },
-    { "source": "Greenblood Oil", "target": "グリーンブラッド・オイル", "category": "Poison" },
-    { "source": "Hemlock", "target": "ヘムロック", "category": "Poison", "note": "PF日本語版では「ヘムロック（毒人参）」。" },
-    { "source": "Id Moss", "target": "イド苔", "category": "Poison" },
-    { "source": "Insanity Mist", "target": "狂気の霧", "category": "Poison" },
-    { "source": "King's Sleep", "target": "王の眠り", "category": "Poison" },
-    { "source": "Large Scorpion Venom", "target": "大型スコーピオン毒", "category": "Poison" },
-    { "source": "Lich Dust", "target": "リッチ・ダスト", "category": "Poison" },
-    { "source": "Malyass Root Paste", "target": "マリスの根のペースト", "category": "Poison" },
-    { "source": "Medium Spider Venom", "target": "中型スパイダー毒", "category": "Poison" },
-    { "source": "Nightmare Vapor", "target": "悪夢の水蒸気", "category": "Poison" },
-    { "source": "Nitharit", "target": "ニサリット", "category": "Poison" },
-    { "source": "Oil of Taggit", "target": "タギットのオイル", "category": "Poison" },
-    { "source": "Purple Worm Poison", "target": "パープル・ワームの毒", "category": "Poison" },
-    { "source": "Sassone Leaf Residue", "target": "サソーヌの葉の残滓", "category": "Poison" },
-    { "source": "Shadow Essence", "target": "シャドウ・エッセンス", "category": "Poison" },
-    { "source": "Small Centipede Poison", "target": "小型センチピード毒", "category": "Poison" },
-    { "source": "Striped Toadstool", "target": "縞模様のキノコ", "category": "Poison" },
-    { "source": "Tears of Death", "target": "死の涙", "category": "Poison" },
-    { "source": "Terinav Root", "target": "トリアネフの根", "category": "Poison" },
-    { "source": "Ungol Dust", "target": "アンゴル・ダスト", "category": "Poison" },
-    { "source": "Wolfsbane", "target": "トリカブト", "category": "Poison" },
-    { "source": "Wyvern Poison", "target": "ワイヴァーンの毒", "category": "Poison" },
-    { "source": "Becoming Even More Fearful", "target": "恐怖が増していく", "category": "Rules", "note": "怯え→恐れ→恐慌と恐怖状態が重なって悪化するルールの見出し。" },
-    { "source": "Targeted Spells", "target": "目標型呪文", "category": "Rules" },
-    { "source": "Area Spells", "target": "範囲型呪文", "category": "Rules" },
-    { "source": "Effect Spells", "target": "効果型呪文", "category": "Rules" },
-    { "source": "When Spell Resistance Applies", "target": "呪文抵抗が適用される場合", "category": "Rules" },
-    { "source": "Successful Spell Resistance", "target": "呪文抵抗の成功", "category": "Rules" }
+    {
+      "source": "Blinding Sickness",
+      "target": "失明病",
+      "category": "Disease"
+    },
+    {
+      "source": "Bubonic Plague",
+      "target": "腺ペスト",
+      "category": "Disease",
+      "note": "PF日本語版では「腺ペスト（普通のペスト）」。ゲーム内の名称としては括弧を省いてよい。"
+    },
+    {
+      "source": "Cackle Fever",
+      "target": "狂笑熱",
+      "category": "Disease"
+    },
+    {
+      "source": "Demon Fever",
+      "target": "悪魔熱",
+      "category": "Disease"
+    },
+    {
+      "source": "Devil Chills",
+      "target": "悪魔風邪",
+      "category": "Disease"
+    },
+    {
+      "source": "Filth Fever",
+      "target": "汚穢熱",
+      "category": "Disease"
+    },
+    {
+      "source": "Leprosy",
+      "target": "癩病",
+      "category": "Disease"
+    },
+    {
+      "source": "Mummy Rot",
+      "target": "ミイラ腐敗病",
+      "category": "Disease"
+    },
+    {
+      "source": "Red Ache",
+      "target": "赤腫れ病",
+      "category": "Disease"
+    },
+    {
+      "source": "Slimy Doom",
+      "target": "溶死病",
+      "category": "Disease"
+    },
+    {
+      "source": "Werewolf Lycanthropy",
+      "target": "ワーウルフのライカンスロピー",
+      "category": "Disease"
+    },
+    {
+      "source": "Curse of the Ages",
+      "target": "加齢の呪い",
+      "category": "Curse"
+    },
+    {
+      "source": "Bestow Curse Trap",
+      "target": "ビストウ・カースの罠",
+      "category": "Curse"
+    },
+    {
+      "source": "Unluck",
+      "target": "不運",
+      "category": "Curse"
+    },
+    {
+      "source": "Baleful Polymorph Spell",
+      "target": "ベイルフル・ポリモーフの呪文",
+      "category": "Curse"
+    },
+    {
+      "source": "Arsenic",
+      "target": "ヒ素",
+      "category": "Poison"
+    },
+    {
+      "source": "Belladonna",
+      "target": "ベラドンナ",
+      "category": "Poison"
+    },
+    {
+      "source": "Black Adder Venom",
+      "target": "ブラック・アダーの毒",
+      "category": "Poison",
+      "note": "PF日本語版では「ブラック・アダー（クロクサリヘビ）の毒」。"
+    },
+    {
+      "source": "Black Lotus Extract",
+      "target": "ブラック・ロータス抽出液",
+      "category": "Poison",
+      "note": "PF日本語版では「ブラック・ロータス（黒い蓮）抽出液」。"
+    },
+    {
+      "source": "Bloodroot",
+      "target": "アカネグサ",
+      "category": "Poison"
+    },
+    {
+      "source": "Blue Whinnis",
+      "target": "ブルー・フィニス",
+      "category": "Poison"
+    },
+    {
+      "source": "Burnt Othur Fumes",
+      "target": "オーサー焼香",
+      "category": "Poison"
+    },
+    {
+      "source": "Dark Reaver Powder",
+      "target": "ダーク・リーヴァーの粉末",
+      "category": "Poison"
+    },
+    {
+      "source": "Deathblade",
+      "target": "デスブレード",
+      "category": "Poison"
+    },
+    {
+      "source": "Dragon Bile",
+      "target": "ドラゴンの胆汁",
+      "category": "Poison"
+    },
+    {
+      "source": "Drow Poison",
+      "target": "ドラウの毒",
+      "category": "Poison"
+    },
+    {
+      "source": "Giant Wasp Poison",
+      "target": "ジャイアント・ワスプの毒",
+      "category": "Poison"
+    },
+    {
+      "source": "Green Prismatic Poison",
+      "target": "グリーン・プリズマティック・ポイズン",
+      "category": "Poison"
+    },
+    {
+      "source": "Greenblood Oil",
+      "target": "グリーンブラッド・オイル",
+      "category": "Poison"
+    },
+    {
+      "source": "Hemlock",
+      "target": "ヘムロック",
+      "category": "Poison",
+      "note": "PF日本語版では「ヘムロック（毒人参）」。"
+    },
+    {
+      "source": "Id Moss",
+      "target": "イド苔",
+      "category": "Poison"
+    },
+    {
+      "source": "Insanity Mist",
+      "target": "狂気の霧",
+      "category": "Poison"
+    },
+    {
+      "source": "King's Sleep",
+      "target": "王の眠り",
+      "category": "Poison"
+    },
+    {
+      "source": "Large Scorpion Venom",
+      "target": "大型スコーピオン毒",
+      "category": "Poison"
+    },
+    {
+      "source": "Lich Dust",
+      "target": "リッチ・ダスト",
+      "category": "Poison"
+    },
+    {
+      "source": "Malyass Root Paste",
+      "target": "マリスの根のペースト",
+      "category": "Poison"
+    },
+    {
+      "source": "Medium Spider Venom",
+      "target": "中型スパイダー毒",
+      "category": "Poison"
+    },
+    {
+      "source": "Nightmare Vapor",
+      "target": "悪夢の水蒸気",
+      "category": "Poison"
+    },
+    {
+      "source": "Nitharit",
+      "target": "ニサリット",
+      "category": "Poison"
+    },
+    {
+      "source": "Oil of Taggit",
+      "target": "タギットのオイル",
+      "category": "Poison"
+    },
+    {
+      "source": "Purple Worm Poison",
+      "target": "パープル・ワームの毒",
+      "category": "Poison"
+    },
+    {
+      "source": "Sassone Leaf Residue",
+      "target": "サソーヌの葉の残滓",
+      "category": "Poison"
+    },
+    {
+      "source": "Shadow Essence",
+      "target": "シャドウ・エッセンス",
+      "category": "Poison"
+    },
+    {
+      "source": "Small Centipede Poison",
+      "target": "小型センチピード毒",
+      "category": "Poison"
+    },
+    {
+      "source": "Striped Toadstool",
+      "target": "縞模様のキノコ",
+      "category": "Poison"
+    },
+    {
+      "source": "Tears of Death",
+      "target": "死の涙",
+      "category": "Poison"
+    },
+    {
+      "source": "Terinav Root",
+      "target": "トリアネフの根",
+      "category": "Poison"
+    },
+    {
+      "source": "Ungol Dust",
+      "target": "アンゴル・ダスト",
+      "category": "Poison"
+    },
+    {
+      "source": "Wolfsbane",
+      "target": "トリカブト",
+      "category": "Poison"
+    },
+    {
+      "source": "Wyvern Poison",
+      "target": "ワイヴァーンの毒",
+      "category": "Poison"
+    },
+    {
+      "source": "Becoming Even More Fearful",
+      "target": "恐怖が増していく",
+      "category": "Rules",
+      "note": "怯え→恐れ→恐慌と恐怖状態が重なって悪化するルールの見出し。"
+    },
+    {
+      "source": "Targeted Spells",
+      "target": "目標型呪文",
+      "category": "Rules"
+    },
+    {
+      "source": "Area Spells",
+      "target": "範囲型呪文",
+      "category": "Rules"
+    },
+    {
+      "source": "Effect Spells",
+      "target": "効果型呪文",
+      "category": "Rules"
+    },
+    {
+      "source": "When Spell Resistance Applies",
+      "target": "呪文抵抗が適用される場合",
+      "category": "Rules"
+    },
+    {
+      "source": "Successful Spell Resistance",
+      "target": "呪文抵抗の成功",
+      "category": "Rules"
+    },
+    {
+      "source": "Abjuration",
+      "target": "防御術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Conjuration",
+      "target": "召喚術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Divination",
+      "target": "占術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。呪文名の Divination は「ディヴィネーション」。"
+    },
+    {
+      "source": "Enchantment",
+      "target": "心術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Evocation",
+      "target": "力術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Illusion",
+      "target": "幻術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Necromancy",
+      "target": "死霊術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Transmutation",
+      "target": "変成術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Universal",
+      "target": "総合術",
+      "category": "Spell School",
+      "note": "呪文の系統名（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Extra Arcanist Exploit",
+      "target": "アーケイニストの秘技追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Pummeling Charge",
+      "target": "拳打突撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Pummeling Style",
+      "target": "拳打の型",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Pummeling Bully",
+      "target": "拳打のごろつき",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Slashing Grace",
+      "target": "斬撃の優美",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Nature Magic",
+      "target": "自然魔法",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Slayer's Feint",
+      "target": "スレイヤーのフェイント",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Slayer Talent",
+      "target": "スレイヤーの技追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Favored Enemy Spellcasting",
+      "target": "得意な敵への呪文発動",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Reservoir",
+      "target": "秘術蓄積追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Taunt",
+      "target": "嘲り",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Crippling Critical",
+      "target": "足萎えさせるクリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Racial Heritage",
+      "target": "異種族の祖先",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Smash",
+      "target": "打ち砕き",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Elemental Focus",
+      "target": "エレメンタル熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Fist",
+      "target": "エレメンタルの拳",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dreadful Carnage",
+      "target": "恐るべき虐殺",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "In Harm's Way",
+      "target": "庇う",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Perfect Strike",
+      "target": "完璧なる打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mounted Shield",
+      "target": "騎乗盾",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Outflank",
+      "target": "協調挟撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Coordinated Maneuvers",
+      "target": "協調戦技",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Coordinated Defense",
+      "target": "協調防御",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Point-Blank Master",
+      "target": "近距離射撃体得",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Rage Power",
+      "target": "激怒パワー追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Focused Shot",
+      "target": "乾坤の一射",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ray Shield",
+      "target": "光線を弾く盾",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lingering Performance",
+      "target": "持続する呪芸",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Allied Spellcaster",
+      "target": "呪文発動支援",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Dirty Trick",
+      "target": "上級裏技",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Elemental Focus",
+      "target": "上級エレメンタル熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Blind Fight",
+      "target": "上級無視界戦闘",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Razortusk",
+      "target": "鋭き牙",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Precise Strike",
+      "target": "精密なる協調攻撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shielded Caster",
+      "target": "盾に守られた術者",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield Wall",
+      "target": "盾の壁",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ironguts",
+      "target": "鉄の胃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Ironhide",
+      "target": "鉄の皮膚",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Breadth of Experience",
+      "target": "年の功",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bashing Finish",
+      "target": "とどめの盾攻撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Second Chance",
+      "target": "二度目の正直",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Steel Soul",
+      "target": "鋼の魂",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Bombs",
+      "target": "爆弾追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Discovery",
+      "target": "発見追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Disarming Strike",
+      "target": "武器落とし打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bodyguard",
+      "target": "ボディガード",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Improved Blind Fight",
+      "target": "無視界戦闘強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Missile Shield",
+      "target": "矢を弾く盾",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Rogue Talent",
+      "target": "ローグの技追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deceitful",
+      "target": "欺きの名人",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Command Undead",
+      "target": "コマンド・アンデッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。特技名の場合は《アンデッド威伏》。"
+    },
+    {
+      "source": "Dazzling Display",
+      "target": "威圧演舞",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Initiative",
+      "target": "イニシアチブ強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Lay On Hands",
+      "target": "癒しの手回数追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Alertness",
+      "target": "鋭敏感覚",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Dodge",
+      "target": "回避",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Exhausting Critical",
+      "target": "過労化クリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Great Fortitude",
+      "target": "頑健無比",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Great Fortitude",
+      "target": "頑健無比強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Penetrating Strike",
+      "target": "貫通打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Trample",
+      "target": "騎乗蹂躙",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Mounted Combat",
+      "target": "騎乗戦闘",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Skill Focus",
+      "target": "技能熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Ki",
+      "target": "気の力追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Power Attack",
+      "target": "強打",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deft Hands",
+      "target": "器用な指先",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Point-Blank Shot",
+      "target": "近距離射撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Critical",
+      "target": "クリティカル強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Critical Focus",
+      "target": "クリティカル熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Critical Mastery",
+      "target": "クリティカル体得",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Agile Maneuvers",
+      "target": "軽妙なる戦術",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Rage",
+      "target": "激怒時間追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Natural Spell",
+      "target": "化身時発動",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Overrun",
+      "target": "蹴散らし強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Combat Expertise",
+      "target": "攻防一体",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Vital Strike",
+      "target": "渾身の一打",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Vital Strike",
+      "target": "渾身の一打強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Endurance",
+      "target": "持久力",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Stealthy",
+      "target": "忍びの技",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Extra Mercy",
+      "target": "慈悲追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Performance",
+      "target": "呪芸時間追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bleeding Critical",
+      "target": "出血化クリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Focus",
+      "target": "呪文熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spellbreaker",
+      "target": "呪文潰し",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Greater Trip",
+      "target": "上級足払い",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Penetrating Strike",
+      "target": "上級貫通打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Spell Focus",
+      "target": "上級呪文熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Shield Focus",
+      "target": "上級盾熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Vital Strike",
+      "target": "上級渾身の一打",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Bull Rush",
+      "target": "上級突き飛ばし",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Spell Penetration",
+      "target": "上級抵抗破り",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Two-Weapon Fighting",
+      "target": "上級二刀流",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Disarm",
+      "target": "上級武器落とし",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Weapon Specialization",
+      "target": "上級武器開眼",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Weapon Focus",
+      "target": "上級武器熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Augment Summoning",
+      "target": "招来クリーチャー強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Self-Sufficient",
+      "target": "自力生存",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lightning Reflexes",
+      "target": "神速の反応",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Lightning Reflexes",
+      "target": "神速の反応強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Unarmed Strike",
+      "target": "素手打撃強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Precise Shot",
+      "target": "精密射撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Precise Shot",
+      "target": "精密射撃強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Persuasive",
+      "target": "説得力",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Combat Casting",
+      "target": "戦闘発動",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rapid Shot",
+      "target": "速射",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield Master",
+      "target": "盾攻撃の達人",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield Proficiency",
+      "target": "盾習熟",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield Focus",
+      "target": "盾熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Manyshot",
+      "target": "束ね射ち",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Tower Shield Proficiency",
+      "target": "タワー・シールド習熟",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Simple Weapon Proficiency",
+      "target": "単純武器習熟",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deadly Aim",
+      "target": "致命的な狙い",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Toughness",
+      "target": "追加HP",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Leadership",
+      "target": "統率力",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Exotic Weapon Proficiency",
+      "target": "特殊武器習熟",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cleave",
+      "target": "薙ぎ払い",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Great Cleave",
+      "target": "薙ぎ払い強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Double Slice",
+      "target": "二重斬り",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Two-Weapon Fighting",
+      "target": "二刀流",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Two-Weapon Fighting",
+      "target": "二刀流強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Iron Will",
+      "target": "鋼の意志",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Iron Will",
+      "target": "鋼の意志強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Disruptive",
+      "target": "発動妨害",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Strike Back",
+      "target": "反撃の構え",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Throw Anything",
+      "target": "万能投擲術",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Armor Training",
+      "target": "秘術使いの鎧訓練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Armor Mastery",
+      "target": "秘術使いの鎧体得",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcane Strike",
+      "target": "秘術の打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tiring Critical",
+      "target": "疲労化クリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weapon Specialization",
+      "target": "武器開眼",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weapon Focus",
+      "target": "武器熟練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weapon Finesse",
+      "target": "武器の妙技",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Diehard",
+      "target": "不屈の闘志",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Sickening Critical",
+      "target": "不調化クリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lunge",
+      "target": "踏み込み",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Shatter Defenses",
+      "target": "防御崩し",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Defensive Combat Training",
+      "target": "防御的戦闘訓練",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Combat Reflexes",
+      "target": "迎え討ち",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blind Fight",
+      "target": "無視界戦闘",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spirited Charge",
+      "target": "猛突撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blinding Critical",
+      "target": "盲目化クリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stunning Critical",
+      "target": "朦朧化クリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stunning Fist",
+      "target": "朦朧化打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deflect Arrows",
+      "target": "矢止め",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Staggering Critical",
+      "target": "よろめき化クリティカル",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Intimidating Prowess",
+      "target": "腕力による威圧",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mythic Companion",
+      "target": "神話の相棒",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death from Above",
+      "target": "降下突撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Warrior Priest",
+      "target": "神官戦士",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Raging Brutality",
+      "target": "怒りの蛮行",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Boar Style",
+      "target": "猪の型",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Boar Shred",
+      "target": "猪の細断",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Boar Ferocity",
+      "target": "猪の蛮行",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cleaving Finish",
+      "target": "追い打ち",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Cleaving Finish",
+      "target": "追い打ち強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dispel Synergy",
+      "target": "解呪の相乗効果",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crane Wing",
+      "target": "鶴翼",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hammer the Gap",
+      "target": "間隙への連撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Seize the Moment",
+      "target": "好機を掴む",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Engineer",
+      "target": "攻城技師",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Shaitan Style",
+      "target": "シャイタンの型",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shaitan Earthblast",
+      "target": "シャイタンの酸撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shaitan Skin",
+      "target": "シャイタンの肌",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Snap Shot",
+      "target": "射撃機会攻撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Improved Snap Shot",
+      "target": "射撃機会攻撃強化",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Clustered Shots",
+      "target": "収束射撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tandem Trip",
+      "target": "縦列足払い",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Bane",
+      "target": "呪文滅ぼし",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Greater Snap Shot",
+      "target": "上級射撃機会攻撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Back to Back",
+      "target": "背中合わせ",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crane Style",
+      "target": "鶴の型",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crane Riposte",
+      "target": "鶴の突き返し",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Two-Weapon Feint",
+      "target": "二刀のフェイント",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Destructive Dispel",
+      "target": "破壊的な解呪",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wave Strike",
+      "target": "不意の打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stalwart",
+      "target": "不屈の構え",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Discordant Voice",
+      "target": "不調和の声",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shake It Off",
+      "target": "振り払い",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Crushing Blow",
+      "target": "粉砕打撃",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dragon Style",
+      "target": "竜の型",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dragon Ferocity",
+      "target": "竜の蛮行",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dragon Roar",
+      "target": "竜の咆哮",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Quarterstaff Master",
+      "target": "クオータースタッフ体得",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Deny Death",
+      "target": "死の否定",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Specialization",
+      "target": "呪文開眼",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Superior Summoning",
+      "target": "招来クリーチャー数増加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Arcane Pool",
+      "target": "秘術集積追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Extra Arcana",
+      "target": "メイガスの秘奥追加",
+      "category": "Feat",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Vampiric Shadow Shield",
+      "target": "ヴァンピリック・シャドウ・シールド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Chameleon Stride, Greater",
+      "target": "グレーター・カメレオン・ストライド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sickening Entanglement",
+      "target": "シックニング・エンタングルメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Silver Darts",
+      "target": "シルヴァー・ダーツ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stunning Barrier",
+      "target": "スタニング・バリアー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Slowing Mud",
+      "target": "スローイング・マッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Banshee Blast",
+      "target": "バンシー・ブラスト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Molten Orb",
+      "target": "モウルテン・オーブ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Longstrider, Greater",
+      "target": "グレーター・ロングストライダー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Pit",
+      "target": "アシッド・ピット",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aspect of the Wolf",
+      "target": "アスペクト・オヴ・ザ・ウルフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aspect of the Stag",
+      "target": "アスペクト・オヴ・ザ・スタッグ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aspect of the Falcon",
+      "target": "アスペクト・オヴ・ザ・ファルコン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aspect of the Bear",
+      "target": "アスペクト・オヴ・ザ・ベア",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ill Omen",
+      "target": "イル・オーメン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Instant Enemy",
+      "target": "インスタント・エネミー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Vanish",
+      "target": "ヴァニッシュ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Winds of Vengeance",
+      "target": "ウィンズ・オヴ・ヴェンジャンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Veil of Positive Energy",
+      "target": "ヴェイル・オヴ・ポジティヴ・エナジー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Oath of Peace",
+      "target": "オース・オヴ・ピース",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Aura of Greater Courage",
+      "target": "オーラ・オヴ・グレーター・カレッジ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Oracle's Burden",
+      "target": "オラクルズ・バーデン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cacophonous Call",
+      "target": "カコフォナス・コール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cacophonous Call, Mass",
+      "target": "マス・カコフォナス・コール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Chameleon Stride",
+      "target": "カメレオン・ストライド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Keen Senses",
+      "target": "キーン・センシズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Castigate",
+      "target": "キャスティゲイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Castigate, Mass",
+      "target": "マス・キャスティゲイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Clashing Rocks",
+      "target": "クラッシング・ロックス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Create Pit",
+      "target": "クリエイト・ピット",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grace",
+      "target": "グレイス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Cleanse",
+      "target": "クレンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Cloak of Dreams",
+      "target": "クローク・オヴ・ドリームズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Corruption Resistance",
+      "target": "コラプション・レジスタンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Thundering Drums",
+      "target": "サンダリング・ドラムズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Seamantle",
+      "target": "シーマントル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Sirocco",
+      "target": "シロッコ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Stormbolts",
+      "target": "ストームボルツ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Stone Call",
+      "target": "ストーン・コール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stone Fist",
+      "target": "ストーン・フィスト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spiked Pit",
+      "target": "スパイクト・ピット",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Thorn Body",
+      "target": "ソーン・ボディ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Touch of Gracelessness",
+      "target": "タッチ・オヴ・グレイスレスネス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Challenge Evil",
+      "target": "チャレンジ・イーヴル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tsunami",
+      "target": "ツナミ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Deflection",
+      "target": "デフレクション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "True Form",
+      "target": "トゥルー・フォーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dragon's Breath",
+      "target": "ドラゴンズ・ブレス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Natural Rhythm",
+      "target": "ナチュラル・リズム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Nature's Exile",
+      "target": "ネイチャーズ・エグザイル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Purging Finale",
+      "target": "パージング・フィナーリ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hungry Pit",
+      "target": "ハングリー・ピット",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bestow Grace",
+      "target": "ビストウ・グレイス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Pillar of Life",
+      "target": "ピラー・オヴ・ライフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Snake",
+      "target": "ファイアー・スネーク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Firebrand",
+      "target": "ファイアーブランド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Fire Breath",
+      "target": "ファイアー・ブレス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fiery Body",
+      "target": "ファイアリー・ボディ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Phantasmal Web",
+      "target": "ファンタズマル・ウェブ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Feather Step",
+      "target": "フェザー・ステップ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Feather Step, Mass",
+      "target": "マス・フェザー・ステップ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fester",
+      "target": "フェスター",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Fester, Mass",
+      "target": "マス・フェスター",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Forced Repentance",
+      "target": "フォースト・リペンテンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bloodhound",
+      "target": "ブラッドハウンド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Brilliant Inspiration",
+      "target": "ブリリアント・インスピレーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Flare Burst",
+      "target": "フレア・バースト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blaze of Glory",
+      "target": "ブレイズ・オヴ・グローリー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blessing of Courage and Life",
+      "target": "ブレッシング・オヴ・カレッジ・アンド・ライフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blessing of the Salamander",
+      "target": "ブレッシング・オヴ・ザ・サラマンダー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Whisper",
+      "target": "ホーリィ・ウィスパー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bomber's Eye",
+      "target": "ボマーズ・アイ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Euphoric Tranquility",
+      "target": "ユーフォリック・トランクィリティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Life Bubble",
+      "target": "ライフ・バブル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lead Blades",
+      "target": "リード・ブレーズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Reviving Finale",
+      "target": "リヴァイヴィング・フィナーリ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resounding Blow",
+      "target": "リサウンディング・ブロウ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Retribution",
+      "target": "リトリビューション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Iron Body",
+      "target": "アイアン・ボディ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ice Storm",
+      "target": "アイス・ストーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Eyebite",
+      "target": "アイバイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Owl's Wisdom",
+      "target": "アウルズ・ウィズダム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Owl's Wisdom, Mass",
+      "target": "マス・アウルズ・ウィズダム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Arrow",
+      "target": "アシッド・アロー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Splash",
+      "target": "アシッド・スプラッシュ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acid Fog",
+      "target": "アシッド・フォッグ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Atonement",
+      "target": "アトーンメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Animal Growth",
+      "target": "アニマル・グロウス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Animal Shapes",
+      "target": "アニマル・シェイプス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Animate Dead",
+      "target": "アニメイト・デッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Align Weapon",
+      "target": "アライン・ウェポン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Undetectable Alignment",
+      "target": "アンディテクタブル・アラインメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Antimagic Field",
+      "target": "アンティマジック・フィールド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Undeath to Death",
+      "target": "アンデス・トゥ・デス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unholy Aura",
+      "target": "アンホーリィ・オーラ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Unholy Blight",
+      "target": "アンホーリィ・ブライト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Eagle's Splendor",
+      "target": "イーグルズ・スプレンダー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Eagle's Splendor, Mass",
+      "target": "マス・イーグルズ・スプレンダー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Invisibility",
+      "target": "インヴィジビリティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Invisibility, Greater",
+      "target": "グレーター・インヴィジビリティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Invisibility, Mass",
+      "target": "マス・インヴィジビリティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Insanity",
+      "target": "インサニティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Insect Plague",
+      "target": "インセクト・プレイグ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Critical Wounds",
+      "target": "インフリクト・クリティカル・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Critical Wounds, Mass",
+      "target": "マス・インフリクト・クリティカル・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Serious Wounds",
+      "target": "インフリクト・シリアス・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Serious Wounds, Mass",
+      "target": "マス・インフリクト・シリアス・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Moderate Wounds",
+      "target": "インフリクト・モデレット・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Moderate Wounds, Mass",
+      "target": "マス・インフリクト・モデレット・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Light Wounds",
+      "target": "インフリクト・ライト・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Inflict Light Wounds, Mass",
+      "target": "マス・インフリクト・ライト・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Implosion",
+      "target": "インプロージョン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Virtue",
+      "target": "ヴァーチュー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Vampiric Touch",
+      "target": "ヴァンピリック・タッチ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Weird",
+      "target": "ウィアード",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Vision",
+      "target": "ヴィジョン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Waves of Exhaustion",
+      "target": "ウェイヴズ・オヴ・イグゾースチョン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Waves of Fatigue",
+      "target": "ウェイヴズ・オヴ・ファティーグ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Wail of the Banshee",
+      "target": "ウェイル・オヴ・ザ・バンシー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Web",
+      "target": "ウェブ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Aid",
+      "target": "エイド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Explosive Runes",
+      "target": "エクスプローシヴ・ルーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Expeditious Retreat",
+      "target": "エクスペディシャス・リトリート",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enervation",
+      "target": "エナヴェイション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Energy Drain",
+      "target": "エナジー・ドレイン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Elemental Swarm",
+      "target": "エレメンタル・スウォーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enthrall",
+      "target": "エンスロール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Entangle",
+      "target": "エンタングル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Entropic Shield",
+      "target": "エントロピック・シールド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enlarge Person",
+      "target": "エンラージ・パースン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Enlarge Person, Mass",
+      "target": "マス・エンラージ・パースン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Order's Wrath",
+      "target": "オーダーズ・ラス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Obscuring Mist",
+      "target": "オブスキュアリング・ミスト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Guidance",
+      "target": "ガイダンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Color Spray",
+      "target": "カラー・スプレー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Keen Edge",
+      "target": "キーン・エッジ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cat's Grace",
+      "target": "キャッツ・グレイス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cat's Grace, Mass",
+      "target": "マス・キャッツ・グレイス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Critical Wounds",
+      "target": "キュア・クリティカル・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Critical Wounds, Mass",
+      "target": "マス・キュア・クリティカル・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Serious Wounds",
+      "target": "キュア・シリアス・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Serious Wounds, Mass",
+      "target": "マス・キュア・シリアス・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Moderate Wounds",
+      "target": "キュア・モデレット・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Moderate Wounds, Mass",
+      "target": "マス・キュア・モデレット・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Light Wounds",
+      "target": "キュア・ライト・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cure Light Wounds, Mass",
+      "target": "マス・キュア・ライト・ウーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ghoul Touch",
+      "target": "グール・タッチ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Good Hope",
+      "target": "グッド・ホープ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cloudkill",
+      "target": "クラウドキル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Crushing Despair",
+      "target": "クラッシング・ディスペア",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Grease",
+      "target": "グリース",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Creeping Doom",
+      "target": "クリーピング・ドゥーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Create Undead",
+      "target": "クリエイト・アンデッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Create Greater Undead",
+      "target": "クリエイト・グレーター・アンデッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Glitterdust",
+      "target": "グリッターダスト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Cloak of Chaos",
+      "target": "クローク・オヴ・ケイオス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Chaos Hammer",
+      "target": "ケイオス・ハンマー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cause Fear",
+      "target": "コーズ・フィアー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Call Lightning",
+      "target": "コール・ライトニング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Call Lightning Storm",
+      "target": "コール・ライトニング・ストーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cone of Cold",
+      "target": "コーン・オヴ・コールド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Command",
+      "target": "コマンド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Command, Greater",
+      "target": "グレーター・コマンド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Contagion",
+      "target": "コンテイジョン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Confusion",
+      "target": "コンフュージョン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Circle of Death",
+      "target": "サークル・オヴ・デス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sound Burst",
+      "target": "サウンド・バースト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Suggestion",
+      "target": "サジェスチョン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Summon Swarm",
+      "target": "サモン・スウォーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sanctuary",
+      "target": "サンクチュアリ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Sunburst",
+      "target": "サンバースト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Sunbeam",
+      "target": "サンビーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Searing Light",
+      "target": "シアリング・ライト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "See invisibility",
+      "target": "シー・インヴィジビリティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield",
+      "target": "シールド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Shield of Faith",
+      "target": "シールド・オヴ・フェイス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shield of Law",
+      "target": "シールド・オヴ・ロー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shades",
+      "target": "シェイズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Shapechange",
+      "target": "シェイプチェンジ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Shout",
+      "target": "シャウト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Shout, Greater",
+      "target": "グレーター・シャウト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shadow Evocation",
+      "target": "シャドウ・エヴォケーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shadow Evocation, Greater",
+      "target": "グレーター・シャドウ・エヴォケーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shadow Conjuration",
+      "target": "シャドウ・カンジュレーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shadow Conjuration, Greater",
+      "target": "グレーター・シャドウ・カンジュレーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Shocking Grasp",
+      "target": "ショッキング・グラスプ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Scintillating Pattern",
+      "target": "シンティレイティング・パターン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Symbol of Weakness",
+      "target": "シンボル・オヴ・ウィークネス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Scare",
+      "target": "スケアー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Scorching Ray",
+      "target": "スコーチング・レイ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stabilize",
+      "target": "ステイビライズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Stinking Cloud",
+      "target": "スティンキング・クラウド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stoneskin",
+      "target": "ストーンスキン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Stone to Flesh",
+      "target": "ストーン・トゥ・フレッシュ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spike Growth",
+      "target": "スパイク・グロウス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spike Stones",
+      "target": "スパイク・ストーンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Speak with dead",
+      "target": "スピーク・ウィズ・デッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "spell immunity",
+      "target": "スペル・イミュニティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spell Turning",
+      "target": "スペル・ターニング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Sleep",
+      "target": "スリープ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Slay Living",
+      "target": "スレイ・リヴィング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Slow",
+      "target": "スロー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Song of Discord",
+      "target": "ソング・オヴ・ディスコード",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Darkness",
+      "target": "ダークネス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Touch of Fatigue",
+      "target": "タッチ・オヴ・ファティーグ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Chain Lightning",
+      "target": "チェイン・ライトニング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Changestaff",
+      "target": "チェンジスタッフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Deep Slumber",
+      "target": "ディープ・スランバー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Divine Power",
+      "target": "ディヴァイン・パワー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Divine Favor",
+      "target": "ディヴァイン・フェイヴァー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dictum",
+      "target": "ディクタム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Discern Lies",
+      "target": "ディサーン・ライズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Daze",
+      "target": "デイズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Disintegrate",
+      "target": "ディスインテグレイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Destruction",
+      "target": "ディストラクション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Displacement",
+      "target": "ディスプレイスメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Dispel Magic",
+      "target": "ディスペル・マジック",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dispel Magic, Greater",
+      "target": "グレーター・ディスペル・マジック",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dismissal",
+      "target": "ディスミサル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Disrupting Weapon",
+      "target": "ディスラプティング・ウェポン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Disrupt Undead",
+      "target": "ディスラプト・アンデッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Detect Magic",
+      "target": "ディテクト・マジック",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dimensional Anchor",
+      "target": "ディメンジョナル・アンカー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dimension Door",
+      "target": "ディメンジョン・ドア",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Daylight",
+      "target": "デイライト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Delay Poison",
+      "target": "ディレイ・ポイズン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death Ward",
+      "target": "デス・ウォード",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Death Knell",
+      "target": "デス・ネル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Teleportation Circle",
+      "target": "テレポーテーション・サークル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Teleport",
+      "target": "テレポート",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Greater Teleport",
+      "target": "グレーター・テレポート",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Doom",
+      "target": "ドゥーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "True Seeing",
+      "target": "トゥルー・シーイング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "True Strike",
+      "target": "トゥルー・ストライク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dominate Animal",
+      "target": "ドミネイト・アニマル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dominate Person",
+      "target": "ドミネイト・パースン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Dominate Monster",
+      "target": "ドミネイト・モンスター",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Transformation",
+      "target": "トランスフォーメーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Nightmare",
+      "target": "ナイトメア",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Neutralize Poison",
+      "target": "ニュートラライズ・ポイズン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Knock",
+      "target": "ノック",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Barkskin",
+      "target": "バークスキン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Burning Hands",
+      "target": "バーニング・ハンズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Harm",
+      "target": "ハーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Banishment",
+      "target": "バニッシュメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Power Word Kill",
+      "target": "パワー・ワード・キル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Power Word Stun",
+      "target": "パワー・ワード・スタン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Power Word Blind",
+      "target": "パワー・ワード・ブラインド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Heal",
+      "target": "ヒール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Heal, Mass",
+      "target": "マス・ヒール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bestow Curse",
+      "target": "ビストウ・カース",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hideous Laughter",
+      "target": "ヒディアス・ラフター",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hypnotism",
+      "target": "ヒプノティズム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Heroism",
+      "target": "ヒロイズム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Heroism, Greater",
+      "target": "グレーター・ヒロイズム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fire Storm",
+      "target": "ファイアー・ストーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fireball",
+      "target": "ファイアーボール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Find Traps",
+      "target": "ファインド・トラップス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Phantasmal Killer",
+      "target": "ファンタズマル・キラー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fear",
+      "target": "フィアー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Feeblemind",
+      "target": "フィーブルマインド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Finger of Death",
+      "target": "フィンガー・オヴ・デス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Faerie Fire",
+      "target": "フェアリー・ファイアー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Feather Fall",
+      "target": "フェザー・フォール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Foresight",
+      "target": "フォアサイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Forbiddance",
+      "target": "フォービダンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "False Life",
+      "target": "フォールス・ライフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fox's Cunning",
+      "target": "フォクセス・カニング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fox's Cunning, Mass",
+      "target": "マス・フォクセス・カニング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fog Cloud",
+      "target": "フォッグ・クラウド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blur",
+      "target": "ブラー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Blasphemy",
+      "target": "ブラスフェミイ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Freedom of Movement",
+      "target": "フリーダム・オヴ・ムーヴメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Prismatic Spray",
+      "target": "プリズマティック・スプレー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Blink",
+      "target": "ブリンク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Bull's Strength",
+      "target": "ブルズ・ストレンクス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bull's Strength, Mass",
+      "target": "マス・ブルズ・ストレンクス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Flare",
+      "target": "フレア",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Break Enchantment",
+      "target": "ブレイク・エンチャントメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Flame Strike",
+      "target": "フレイム・ストライク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Prayer",
+      "target": "プレイヤー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Blade Barrier",
+      "target": "ブレード・バリアー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bless",
+      "target": "ブレス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Bless Weapon",
+      "target": "ブレス・ウェポン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Breath of Life",
+      "target": "ブレス・オヴ・ライフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Arrows",
+      "target": "プロテクション・フロム・アローズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Evil",
+      "target": "プロテクション・フロム・イーヴル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Energy",
+      "target": "プロテクション・フロム・エナジー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Good",
+      "target": "プロテクション・フロム・グッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Chaos",
+      "target": "プロテクション・フロム・ケイオス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Spells",
+      "target": "プロテクション・フロム・スペルズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Law",
+      "target": "プロテクション・フロム・ロー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bear's Endurance",
+      "target": "ベアズ・エンデュアランス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bear's Endurance, Mass",
+      "target": "マス・ベアズ・エンデュアランス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Haste",
+      "target": "ヘイスト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Baleful Polymorph",
+      "target": "ベイルフル・ポリモーフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Bane",
+      "target": "ベイン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Helping Hand",
+      "target": "ヘルピング・ハンド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Poison",
+      "target": "ポイズン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Polar Ray",
+      "target": "ポーラー・レイ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Aura",
+      "target": "ホーリィ・オーラ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Smite",
+      "target": "ホーリィ・スマイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Sword",
+      "target": "ホーリィ・ソード",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Holy Word",
+      "target": "ホーリィ・ワード",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hold Animal",
+      "target": "ホールド・アニマル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hold Person",
+      "target": "ホールド・パースン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hold Person, Mass",
+      "target": "マス・ホールド・パースン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hold Monster",
+      "target": "ホールド・モンスター",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Hold Monster, Mass",
+      "target": "マス・ホールド・モンスター",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Horrid Wilting",
+      "target": "ホリッド・ウィルティング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Polymorph",
+      "target": "ポリモーフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Polymorph, Greater",
+      "target": "グレーター・ポリモーフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mark of Justice",
+      "target": "マーク・オヴ・ジャスティス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mind Fog",
+      "target": "マインド・フォッグ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mind Blank",
+      "target": "マインド・ブランク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mount",
+      "target": "マウント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Magic weapon",
+      "target": "マジック・ウェポン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magic Weapon, Greater",
+      "target": "グレーター・マジック・ウェポン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magic Circle Against Evil",
+      "target": "マジック・サークル・アゲンスト・イーヴル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magic Fang",
+      "target": "マジック・ファング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magic Fang, Greater",
+      "target": "グレーター・マジック・ファング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Magic Missile",
+      "target": "マジック・ミサイル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mirror Image",
+      "target": "ミラー・イメージ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mage Armor",
+      "target": "メイジ・アーマー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Meteor Swarm",
+      "target": "メテオ・スウォーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Righteous Might",
+      "target": "ライチャス・マイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Light",
+      "target": "ライト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Lightning Bolt",
+      "target": "ライトニング・ボルト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Lullaby",
+      "target": "ララバイ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Resurrection",
+      "target": "リザレクション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Reduce Person",
+      "target": "リデュース・パースン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Reduce Person, Mass",
+      "target": "マス・リデュース・パースン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Repulsion",
+      "target": "リパルション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Remove Curse",
+      "target": "リムーヴ・カース",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Remove Disease",
+      "target": "リムーヴ・ディジーズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Remove Paralysis",
+      "target": "リムーヴ・パラリシス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Remove Fear",
+      "target": "リムーヴ・フィアー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ray of Exhaustion",
+      "target": "レイ・オヴ・イグゾースチョン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ray of Enfeeblement",
+      "target": "レイ・オヴ・エンフィーブルメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ray of Frost",
+      "target": "レイ・オヴ・フロスト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rage",
+      "target": "激怒",
+      "category": "Class Feature",
+      "note": "バーバリアン等の激怒。呪文名の Rage は「レイジ」。"
+    },
+    {
+      "source": "Raise Dead",
+      "target": "レイズ・デッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Rainbow Pattern",
+      "target": "レインボー・パターン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resistance",
+      "target": "レジスタンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Resist Energy",
+      "target": "レジスト・エナジー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Restoration",
+      "target": "レストレーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Restoration, Greater",
+      "target": "グレーター・レストレーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Restoration, Lesser",
+      "target": "レッサー・レストレーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Longstrider",
+      "target": "ロングストライダー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Word of Chaos",
+      "target": "ワード・オヴ・ケイオス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Whirlwind",
+      "target": "ワールウィンド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Animal Aspect",
+      "target": "アニマル・アスペクト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Animal Aspect, Greater",
+      "target": "グレーター・アニマル・アスペクト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Walk through Space",
+      "target": "ウォーク・スルー・スペース",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Effortless Armor",
+      "target": "エフォートレス・アーマー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Obsidian Flow",
+      "target": "オブシディアン・フロー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Jolting Portent",
+      "target": "ジョルティング・ポーテント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Stoneskin, Communal",
+      "target": "コミュナル・ストーンスキン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Targeted Bomb Admixture",
+      "target": "ターゲッテッド・ボム・アドミクスチャー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Tar Pool",
+      "target": "タール・プール",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Delay Poison, Communal",
+      "target": "コミュナル・ディレイ・ポイズン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Heroic Invocation",
+      "target": "ヒロイック・インヴォケーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Frightful Aspect",
+      "target": "フライトフル・アスペクト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Arrows, Communal",
+      "target": "コミュナル・プロテクション・フロム・アローズ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Evil, Communal",
+      "target": "コミュナル・プロテクション・フロム・イーヴル",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Energy, Communal",
+      "target": "コミュナル・プロテクション・フロム・エナジー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Good, Communal",
+      "target": "コミュナル・プロテクション・フロム・グッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Chaos, Communal",
+      "target": "コミュナル・プロテクション・フロム・ケイオス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Protection from Law, Communal",
+      "target": "コミュナル・プロテクション・フロム・ロー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Mind Blank, Communal",
+      "target": "コミュナル・マインド・ブランク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Litany of Eloquence",
+      "target": "リタニィ・オヴ・エロクエンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Litany of Entanglement",
+      "target": "リタニィ・オヴ・エンタングルメント",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Litany of Madness",
+      "target": "リタニィ・オヴ・マッドネス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resist Energy, Communal",
+      "target": "コミュナル・レジスト・エナジー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Locate Weakness",
+      "target": "ロケート・ウィークネス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arcana Theft",
+      "target": "アーケイナ・セフト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Icy Prison",
+      "target": "アイシー・プリズン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Icy Prison, Mass",
+      "target": "マス・アイシー・プリズン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ice Body",
+      "target": "アイス・ボディ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Acidic Spray",
+      "target": "アシディック・スプレー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Animate Dead, Lesser",
+      "target": "レッサー・アニメイト・デッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Archon's Aura",
+      "target": "アルコンズ・オーラ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Arrow of Law",
+      "target": "アロー・オヴ・ロー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ear-Piercing Scream",
+      "target": "イアピアッシング・スクリーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Waves of Ecstasy",
+      "target": "ウェイヴズ・オヴ・エクスタシー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Volcanic Storm",
+      "target": "ヴォルカニック・ストーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Excruciating Deformation",
+      "target": "エクスクルシエーティング・ディフォーメーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Echolocation",
+      "target": "エコーロケーション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Overwhelming Grief",
+      "target": "オーヴァーウェルミング・グリーフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Overwhelming Presence",
+      "target": "オーヴァーウェルミング・プレゼンス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Curse of Magic Negation",
+      "target": "カース・オヴ・マジック・ニゲイション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Caustic Eruption",
+      "target": "カースティック・イラプション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ki Shout",
+      "target": "キ・シャウト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cape of Wasps",
+      "target": "ケープ・オヴ・ワスプス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Cold Ice Strike",
+      "target": "コールド・アイス・ストライク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Corrosive Touch",
+      "target": "コローシヴ・タッチ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Circle of Clarity",
+      "target": "サークル・オヴ・クラリティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Summon Elder Worm",
+      "target": "サモン・エルダー・ワーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Joyful Rapture",
+      "target": "ジョイフル・ラプチャー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Symbol of Vulnerability",
+      "target": "シンボル・オヴ・ヴァルネラビリティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Symbol of Revelation",
+      "target": "シンボル・オヴ・レヴェレイション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Spit Venom",
+      "target": "スピット・ヴェノム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Serenity",
+      "target": "セレニティ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Touch of Slime",
+      "target": "タッチ・オヴ・スライム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Pernicious Poison",
+      "target": "パーニシャス・ポイズン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Burrow",
+      "target": "バロウ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Bestow Grace of the Champion",
+      "target": "ビストウ・グレイス・オヴ・ザ・チャンピオン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Fungal Infestation",
+      "target": "ファングル・インフェステイション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Force Punch",
+      "target": "フォース・パンチ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "False Life, Greater",
+      "target": "グレーター・フォールス・ライフ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Frigid Touch",
+      "target": "フリジッド・タッチ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Plague Storm",
+      "target": "プレイグ・ストーム",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Prediction of Failure",
+      "target": "プレディクション・オヴ・フェイラー",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Frostbite",
+      "target": "フロストバイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Boiling Blood",
+      "target": "ボイリング・ブラッド",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Polar Midnight",
+      "target": "ポーラー・ミッドナイト",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Haunting Mists",
+      "target": "ホーンティング・ミスツ",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Malfunction",
+      "target": "マルファンクション",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Lightning Arc",
+      "target": "ライトニング・アーク",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Remove Sickness",
+      "target": "リムーヴ・シックネス",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Ray of Sickening",
+      "target": "レイ・オヴ・シックニング",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Raise Animal Companion",
+      "target": "レイズ・アニマル・コンパニオン",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    },
+    {
+      "source": "Resonating Word",
+      "target": "レゾネイティング・ワード",
+      "category": "Spell",
+      "note": "PRD日本語版の訳語。"
+    }
   ]
 }
