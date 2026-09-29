@@ -6404,6 +6404,48 @@
       "target": "ヤナロン",
       "category": "Location",
       "note": "ラマシュトゥの領域にある都市。イジャーニャの心臓が隠されている（round181）。"
+    },
+    {
+      "source": "Dorgelinda Stranglehold",
+      "target": "ドルゲリンダ・ストラングルホールド",
+      "category": "Character",
+      "note": "ネロシャンから派遣された要塞運営の専門家（round182）。"
+    },
+    {
+      "source": "Ravukh",
+      "target": "ラヴク",
+      "category": "Term",
+      "note": "「名なし」を意味する古語。魔術師が儀式で名を隠すのに使った（round182）。"
+    },
+    {
+      "source": "Mask of Nothing",
+      "target": "無の仮面",
+      "category": "Item",
+      "note": "ストーリーテラーが調べる仮面（round182）。"
+    },
+    {
+      "source": "Mask of the Most Worthy",
+      "target": "最も相応しき者の仮面",
+      "category": "Item",
+      "note": "ストーリーテラーが調べる仮面（round182）。"
+    },
+    {
+      "source": "Wealthy Father",
+      "target": "富める父",
+      "category": "Deity",
+      "note": "アバダルの異名（round182）。"
+    },
+    {
+      "source": "Iobaria",
+      "target": "イオバリア",
+      "category": "Location",
+      "note": "海の向こうの地域（round182）。"
+    },
+    {
+      "source": "Taldan",
+      "target": "タルドール",
+      "category": "Term",
+      "note": "Taldorの形容。訳は「タルドール（の）」（round182）。"
     }
   ]
 }
