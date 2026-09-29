@@ -6210,6 +6210,32 @@
       "source": "Kitrane",
       "target": "キトレーン",
       "note": "Galfrey女王が潜伏中に名乗る偽名（Galfrey_Incognito_Warcamp_dialog、round176）。"
+    },
+    {
+      "source": "Warden Staunton",
+      "target": "ウォーデン・ストーントン",
+      "note": "ドレゼンを長年守っていた獄長（Horgus_Dialogue、Irabeth_Dialogue、round177）。"
+    },
+    {
+      "source": "Temple of the Sunrise Chrysanthemums",
+      "target": "旭菊の寺院",
+      "category": "Organization",
+      "note": "Tian Xiaにあるシェリン信仰の寺院（GemGolem_dialogue、KTC_GolemArriving_dialogue、round177）。"
+    },
+    {
+      "source": "Osagurei",
+      "target": "オサグレイ",
+      "note": "旭菊の寺院の高僧（KTC_GolemArriving_dialogue、round177）。"
+    },
+    {
+      "source": "Tymon",
+      "target": "タイモン",
+      "note": "Irabethが盗賊団を追っていた土地の地名（Irabeth_Dialogue、round177）。"
+    },
+    {
+      "source": "Gwerms",
+      "target": "グワーム家",
+      "note": "Horgusの縁戚関係にある貴族の家名（Horgus_Dialogue、round177）。"
     }
   ]
 }
