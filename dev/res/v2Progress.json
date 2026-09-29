@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 52350,
-  "updatedAt": "2026-09-29T09:18:09.633Z",
+  "nextStart": 52650,
+  "updatedAt": "2026-09-29T09:34:20.717Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3315,6 +3315,19 @@
         "Irabeth_Dialogue"
       ],
       "note": "v2リライト第177弾（runRoundLoop.mjs による自動実行）。 192件すべて翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 192件（全entry対象、未訳なし）\n- **登場した会話**: Galfrey_Incognito_Warcamp_dialog（ガルフリー女王とのお忍び会話）、MessengerKnight_Pseudo_dialog、GemGolem_dialogue（美術ゴーレム / 108件すべて翻訳し、chunk_0001.translations.jsonに書き込みました。会話は「Irabeth_Dialogue」（イラベスと指揮官の会話）1本のみです。気づいた点：この会話ではイラベスに`speaker`情報が明示されていなかったため、誠実で自責的な口調のパラディンという文脈から丁寧語（です・ます）で統一し、Player発言は常体・「あなた」呼びで訳しました。"
+    },
+    {
+      "start": 52350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round178/",
+      "coveredDialogs": [
+        "Irabeth_Dialogue",
+        "DrowLeader_dialogue",
+        "Forn_Ambush_dialogue",
+        "Forn_main_dialogue"
+      ],
+      "note": "v2リライト第178弾（runRoundLoop.mjs による自動実行）。 156件すべて翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 156件全て翻訳（未訳スキップなし）\n- **登場した会話**: `Irabeth_Dialogue`（イラベス関連の身の上話・ケナブレス陥落後の会話・ドレゼン敗走後の自責エピソード・伯爵デランへの陰口など）、`DrowLeader_dialogue`（斥候3人組を装ったド / 144件全て翻訳し、chunk_0001.translations.jsonに出力しました。登場した会話は「Forn_Ambush_dialogue」（フォーンの罠と正体露見、ケイレッサとの三つ巴）と「Forn_main_dialogue」（フォーンとの通常会話・仲間加入ルート）。気づいた点として、フォーンとケイレッサの発言が原文で複数の会話ノードにほぼ同一文で重複登場していたため、同一文には統一"
     }
   ]
 }

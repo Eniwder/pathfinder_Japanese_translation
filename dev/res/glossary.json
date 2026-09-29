@@ -6236,6 +6236,48 @@
       "source": "Gwerms",
       "target": "グワーム家",
       "note": "Horgusの縁戚関係にある貴族の家名（Horgus_Dialogue、round177）。"
+    },
+    {
+      "source": "Kaylessa",
+      "target": "ケイレッサ",
+      "category": "Person",
+      "note": "Fornが追っている邪教の指導者（Forn_Ambush_dialogue、round178）。"
+    },
+    {
+      "source": "Forn",
+      "target": "フォーン",
+      "category": "Person",
+      "note": "キョニンのダークハンター。フルネームはForn Autumn Haze（Forn_main_dialogue/Forn_Ambush_dialogue、round178）。"
+    },
+    {
+      "source": "Sir Lant",
+      "target": "サー・ラント",
+      "category": "Person",
+      "note": "十字軍最初期の英雄、故人。Irabethが語る逸話に登場（Irabeth_Dialogue、round178）。"
+    },
+    {
+      "source": "Velhm",
+      "target": "ヴェルム",
+      "category": "Person",
+      "note": "焚き火を囲む一団のリーダーを名乗るハーフリング（正体はドロウの偽装）（DrowLeader_dialogue、round178）。"
+    },
+    {
+      "source": "Tran",
+      "target": "トラン",
+      "category": "Person",
+      "note": "Velhmの一味を名乗るドワーフ（正体はドロウの偽装）（DrowLeader_dialogue、round178）。"
+    },
+    {
+      "source": "Asty",
+      "target": "アスティ",
+      "category": "Person",
+      "note": "Velhmの一味を名乗る女性クレリック（正体はドロウの偽装）（DrowLeader_dialogue、round178）。"
+    },
+    {
+      "source": "Desnans",
+      "target": "デズナの信奉者",
+      "category": "Organization",
+      "note": "デズナ（Desna）の信奉者を指す語。Irabethの台詞に登場（Irabeth_Dialogue、round178）。"
     }
   ]
 }
