@@ -16244,6 +16244,36 @@
       "target": "影の位界",
       "category": "Place",
       "note": "Shadow Planeの別表記。訳語を統一。"
+    },
+    {
+      "source": "Thassilonian Specialist",
+      "target": "サシリオン専門家",
+      "category": "Class",
+      "note": "ウィザードのアーキタイプ。系統名はGluttony=暴食/Sloth=怠惰/Pride=傲慢/Greed=強欲/Envy=嫉妬/Lust=色欲/Wrath=憤怒。"
+    },
+    {
+      "source": "Mythic Inspiration",
+      "target": "神話の鼓舞",
+      "category": "Mythic",
+      "note": "呪芸を強化する神話能力。"
+    },
+    {
+      "source": "Extend Spell",
+      "target": "呪文持続時間延長",
+      "category": "Feat",
+      "note": "呪文修正特技。"
+    },
+    {
+      "source": "Still Spell",
+      "target": "呪文動作省略",
+      "category": "Feat",
+      "note": "呪文修正特技。"
+    },
+    {
+      "source": "Silent Spell",
+      "target": "呪文音声省略",
+      "category": "Feat",
+      "note": "呪文修正特技。"
     }
   ]
 }

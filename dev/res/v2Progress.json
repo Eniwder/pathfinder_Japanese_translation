@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 55350,
-  "updatedAt": "2026-09-29T18:14:12.928Z",
+  "nextStart": 55650,
+  "updatedAt": "2026-09-29T18:23:04.391Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3425,6 +3425,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round187/",
       "coveredDialogs": [],
       "note": "v2リライト第187弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。書き込み後の読み返しやJSON構文のチェックはしていません。`dialog` はすべて null で、会話ではなくシステム文（島の潮流・恩寵・アルケミストのアーキタイプ等）です。\n\nglossary にない用語に、次の訳語を当てました。追記の提案候補です。\n- Chirurgeon → 外科医\n / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、すべて `dialog: null` のクラス能力・発見の説明文と名称(錬金術師の爆弾・進化薬系)でした。\n\n`<ctrl_N/>` が英文と日本語で語順が食い違う箇所は、順序を保つために文を組み替えています。書き込み後にJSONの構文と"
+    },
+    {
+      "start": 55350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round188/",
+      "coveredDialogs": [],
+      "note": "v2リライト第188弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に 200 件中 200 件を書き込みました。JSON の構文と `<ctrl_N/>` の順序は目視で確認しましたが、`import --dry-run` は実行していません。登場した会話（dialog）はなく、全て `dialog: null` のアルケミスト、アルカニスト、アーケイン・トリックスター関連の能力説明でした。\n\nglo / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。JSON は目視で確認しましたが、`<ctrl_N/>` の照合スクリプトや `import --dry-run` は権限上実行していません。会話ではなく `dialog: null` のアルカニスト関連の能力・秘技の説明文と名称のみで、登場した会話（dialog）はありません。\n\nglossary"
     }
   ]
 }
