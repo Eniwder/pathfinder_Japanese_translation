@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 54150,
-  "updatedAt": "2026-09-29T12:19:13.179Z",
+  "nextStart": 54450,
+  "updatedAt": "2026-09-29T12:21:35.123Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3393,6 +3393,14 @@
         "SilkShadow_MainDialogue"
       ],
       "note": "v2リライト第183弾（runRoundLoop.mjs による自動実行）。 107件中およそ105件を訳し、`chunk_0000.translations.json` に書き込みました。対象は Dialogue_Vendor_Tiefling と Christoff_MainDialogue です。実際の件数は数えておらず、JSON の構文も目視確認のみです。\n\n- **話者の割り当て**: 38d4f61d の speaker が `AlushinyrraHerald / chunk_0001 の全 entry を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。件数は数えていないので、chunk の 193 件と一致するかは未確認です。JSON の構文も目視だけで、パースによる検証はしていません。\n\n登場した会話は `Hilor_MainDialogue`、`Junkie_SearchingSil"
+    },
+    {
+      "start": 54150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round184/",
+      "coveredDialogs": [],
+      "note": "v2リライト第184弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認しています。\n\n- 会話(dialog)は全件 null で、実績・ステータス説明文のみでした。話者や `<ctrl_N/>` はありません。\n- 「Swarm」は glossary に無かったため「群れの道」としました。 / `chunk_0001.translations.json` に100件すべてを訳して書き込みました。JSON構文は目視で確認済みです。\n\ndialog名はすべて null です。会話ではなく、実績（アチーブメント）の名前と説明文でした。説明文は常体の「〜した」で、名前は体言止めなどで訳しています。"
     }
   ]
 }

@@ -6458,6 +6458,24 @@
       "target": "心の迷宮",
       "category": "Organization",
       "note": "バフォメット信者の集団。Spinner of Nightmaresが所属していた（round183）。"
+    },
+    {
+      "source": "Chorussina",
+      "target": "コーラシーナ",
+      "category": "Person",
+      "note": "ドレゼンでデーモンを召喚するアチーブメント対象（round184）。"
+    },
+    {
+      "source": "Melazmera",
+      "target": "メラズメラ",
+      "category": "Person",
+      "note": "コリファーの影竜(umbral dragon)。アチーブメント対象（round184）。"
+    },
+    {
+      "source": "Midnight City",
+      "target": "真夜中の都",
+      "category": "Location",
+      "note": "アルシニラの別称。デモダンドの陰謀の舞台（round184）。"
     }
   ]
 }
