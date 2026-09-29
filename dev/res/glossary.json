@@ -6446,6 +6446,18 @@
       "target": "タルドール",
       "category": "Term",
       "note": "Taldorの形容。訳は「タルドール（の）」（round182）。"
+    },
+    {
+      "source": "Gristoff Rollano",
+      "target": "グリストフ・ロラーノ",
+      "category": "Person",
+      "note": "チェリアックス出身の伯爵でパスファインダー協会の隊長。Count Rollano=ロラーノ伯爵（round183）。"
+    },
+    {
+      "source": "Labyrinth of the Mind",
+      "target": "心の迷宮",
+      "category": "Organization",
+      "note": "バフォメット信者の集団。Spinner of Nightmaresが所属していた（round183）。"
     }
   ]
 }

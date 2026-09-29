@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 53850,
-  "updatedAt": "2026-09-29T12:12:01.599Z",
+  "nextStart": 54150,
+  "updatedAt": "2026-09-29T12:19:13.179Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3379,6 +3379,20 @@
         "Dialogue_Vendor_Tiefling"
       ],
       "note": "v2リライト第182弾（runRoundLoop.mjs による自動実行）。 197件中195件前後を訳して `dev/lang/chunks/chunk_0000.translations.json` に書き込みました。件数は数えておらず、書き込んだJSONの構文チェックとキーの数え直しもしていません。`chunk_0000.json` には触れていません。\n\n- **会話（dialog）:** `StoryTeller_MainDialogue`（大部分）、`Vendo / chunk_0001 の103件すべてを訳して `chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認済みで、スクリプトによる検証や `import --dry-run` はしていません。\n\n- **登場した会話:** `Vendor_Quartermaster_Dialogue`（ウィルサー・ガームズ）と `Dialogue_Vendor_T"
+    },
+    {
+      "start": 53850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round183/",
+      "coveredDialogs": [
+        "Dialogue_Vendor_Tiefling",
+        "Christoff_MainDialogue",
+        "Hilor_MainDialogue",
+        "Junkie_SearchingSilkShadow",
+        "SilkShadow_MainDialogue"
+      ],
+      "note": "v2リライト第183弾（runRoundLoop.mjs による自動実行）。 107件中およそ105件を訳し、`chunk_0000.translations.json` に書き込みました。対象は Dialogue_Vendor_Tiefling と Christoff_MainDialogue です。実際の件数は数えておらず、JSON の構文も目視確認のみです。\n\n- **話者の割り当て**: 38d4f61d の speaker が `AlushinyrraHerald / chunk_0001 の全 entry を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。件数は数えていないので、chunk の 193 件と一致するかは未確認です。JSON の構文も目視だけで、パースによる検証はしていません。\n\n登場した会話は `Hilor_MainDialogue`、`Junkie_SearchingSil"
     }
   ]
 }
