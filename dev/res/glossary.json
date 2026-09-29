@@ -6374,6 +6374,36 @@
       "target": "角ある恐怖",
       "category": "Person",
       "note": "デーモンの自称名（round180）。"
+    },
+    {
+      "source": "Heart of the Tower",
+      "target": "塔の心臓",
+      "category": "Item",
+      "note": "語り部の塔にある紫のクリスタル。アルシニーラ由来（round181）。"
+    },
+    {
+      "source": "Age of Darkness",
+      "target": "暗黒時代",
+      "category": "Lore",
+      "note": "アースフォール後の灰と塵に覆われた時代（round181）。"
+    },
+    {
+      "source": "Stern Hand",
+      "target": "厳しき手",
+      "category": "Item",
+      "note": "サーコリアの魔女狩りが名付けた籠手の遺物（round181）。"
+    },
+    {
+      "source": "Riftcarver",
+      "target": "リフトカーバー",
+      "category": "Item",
+      "note": "デスカリの大鎌（round181）。"
+    },
+    {
+      "source": "Yanaron",
+      "target": "ヤナロン",
+      "category": "Location",
+      "note": "ラマシュトゥの領域にある都市。イジャーニャの心臓が隠されている（round181）。"
     }
   ]
 }

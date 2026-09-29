@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 53250,
-  "updatedAt": "2026-09-29T11:55:51.532Z",
+  "nextStart": 53550,
+  "updatedAt": "2026-09-29T12:05:47.071Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3356,6 +3356,16 @@
         "StoryTeller_MainDialogue"
       ],
       "note": "v2リライト第180弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全57件を訳して書き込みました。対象の会話は `Nurah-Prison_Dialogue`、`ScrollVendor_New_Dialogue`、`ScrollVendor_Old_Dialogue` です。書き込んだ JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\n`Comm / chunk_0001 の 243 件をすべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認しましたが、スクリプトによる検証や `import --dry-run` はしていません。対象の会話は `StoryTeller_MainDialogue` の1つです。\n\n気づいた点が3つあります。\n- 生の `{"
+    },
+    {
+      "start": 53250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round181/",
+      "coveredDialogs": [
+        "StoryTeller_MainDialogue"
+      ],
+      "note": "v2リライト第181弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に300件すべての訳文を書き込みました。会話は `StoryTeller_MainDialogue` の1本だけです。`chunk_0000.json` は編集していません。\n\nキーは写し間違いが1件ありました（`d89d4892…`）。修正済みで、キーの数はチャンクと同じ300件です。他のキーはチャンクとの機械的な突き合わせをしていま"
     }
   ]
 }
