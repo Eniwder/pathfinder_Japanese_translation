@@ -1664,6 +1664,24 @@
       "category": "Conditions"
     },
     {
+      "source": "Dazzled",
+      "target": "目が眩んだ状態",
+      "category": "Conditions",
+      "note": "PF/D&D日本語版の定訳。「幻惑」はDazed（朦朧・茫然系）の定訳と衝突するので使わない。"
+    },
+    {
+      "source": "Cowering",
+      "target": "縮こまり状態",
+      "category": "Conditions",
+      "note": "恐怖で身動きが取れない状態。「萎縮」「おびえ」にしない（Shaken/Frightened系と紛れるため）。"
+    },
+    {
+      "source": "Fascinated",
+      "target": "恍惚状態",
+      "category": "Conditions",
+      "note": "PF/D&D日本語版の定訳。「魅惑」「魅了」はCharm系と紛れるので使わない。"
+    },
+    {
       "source": "Lawful Good",
       "target": "秩序にして善",
       "category": "Alignment"
