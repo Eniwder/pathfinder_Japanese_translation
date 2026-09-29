@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 52650,
-  "updatedAt": "2026-09-29T09:34:20.717Z",
+  "nextStart": 52950,
+  "updatedAt": "2026-09-29T09:50:26.318Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3328,6 +3328,21 @@
         "Forn_main_dialogue"
       ],
       "note": "v2リライト第178弾（runRoundLoop.mjs による自動実行）。 156件すべて翻訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数**: 156件全て翻訳（未訳スキップなし）\n- **登場した会話**: `Irabeth_Dialogue`（イラベス関連の身の上話・ケナブレス陥落後の会話・ドレゼン敗走後の自責エピソード・伯爵デランへの陰口など）、`DrowLeader_dialogue`（斥候3人組を装ったド / 144件全て翻訳し、chunk_0001.translations.jsonに出力しました。登場した会話は「Forn_Ambush_dialogue」（フォーンの罠と正体露見、ケイレッサとの三つ巴）と「Forn_main_dialogue」（フォーンとの通常会話・仲間加入ルート）。気づいた点として、フォーンとケイレッサの発言が原文で複数の会話ノードにほぼ同一文で重複登場していたため、同一文には統一"
+    },
+    {
+      "start": 52650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-29_round179/",
+      "coveredDialogs": [
+        "Forn_main_dialogue",
+        "Kaylessa_main_dialogue",
+        "Kaylessa_Reveal_dialogue",
+        "LexiconAssemble_BE",
+        "Nurah_Warcamp_Dialogue",
+        "Nurah-Prison_Dialogue"
+      ],
+      "note": "v2リライト第179弾（runRoundLoop.mjs による自動実行）。 163件すべて翻訳し、chunk_0000.translations.json に書き込みました。\n\n- 件数: 163/163（全entry訳出済み）\n- 登場会話: Forn_main_dialogue（フォーン初対面）、Kaylessa_main_dialogue（変装したケイレッサとの遭遇・正体露見）、Kaylessa_Reveal_dialogue（フォーンの死とケイレッサの過去・最期の / 137件すべて翻訳し、`chunk_0001.translations.json` に出力しました（chunk_0001.json 自体は未変更）。\n\n- 件数: 137件（全entry翻訳済み、nullのまま残したものなし）\n- 登場した会話: `Nurah_Warcamp_Dialogue`（ヌーラの雑談・裏切り発覚シーン）、`Nurah-Prison_Dialogue`（投獄後の尋問シーン）"
     }
   ]
 }

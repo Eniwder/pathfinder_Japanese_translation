@@ -6278,6 +6278,48 @@
       "target": "デズナの信奉者",
       "category": "Organization",
       "note": "デズナ（Desna）の信奉者を指す語。Irabethの台詞に登場（Irabeth_Dialogue、round178）。"
+    },
+    {
+      "source": "Isger",
+      "target": "イスガー",
+      "category": "Place",
+      "note": "ハーフリングNurahの故国。住民・軍を指す形容は「イスゲリ」（Nurah_Warcamp_Dialogue、round179）。"
+    },
+    {
+      "source": "Lord Axilar Trezbot",
+      "target": "アクシラー・トレズボット卿",
+      "category": "Person",
+      "note": "イスガーの貴族。Nurahをさらい教育を施した元主人（Nurah_Warcamp_Dialogue、round179）。"
+    },
+    {
+      "source": "Dark Fate",
+      "target": "暗黒の運命",
+      "category": "Term",
+      "note": "Kaylessaの一族を蝕む呪い。対比語「Light Fate」と併せて訳語を統一する（Kaylessa_Reveal_dialogue、round179）。"
+    },
+    {
+      "source": "Light Fate",
+      "target": "光の運命",
+      "category": "Term",
+      "note": "「Dark Fate」に対応する架空の救いの意で登場（実在しないとKaylessaが否定）（Kaylessa_Reveal_dialogue、round179）。"
+    },
+    {
+      "source": "Sunset Wasps",
+      "target": "サンセット・ワスプス",
+      "category": "Organization",
+      "note": "カリストリアに仕える秘密の自警団。Kaylessaがかつて所属していた（Kaylessa_Reveal_dialogue、round179）。"
+    },
+    {
+      "source": "Avennara",
+      "target": "アヴェナーラ",
+      "category": "Person",
+      "note": "Kyoninの境界防衛隊を率いる人物。Kaylessaの手紙の宛先（Kaylessa_Reveal_dialogue、round179）。"
+    },
+    {
+      "source": "Iadara",
+      "target": "イアダラ",
+      "category": "Place",
+      "note": "Fornの出身地（Forn_main_dialogue、round179）。"
     }
   ]
 }
