@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 55050,
-  "updatedAt": "2026-09-29T18:05:24.631Z",
+  "nextStart": 55350,
+  "updatedAt": "2026-09-29T18:14:12.928Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3417,6 +3417,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round186/",
       "coveredDialogs": [],
       "note": "v2リライト第186弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に全200件を書き込みました。JSON の構文とキー数の検証は、ファイルを読み返しても実行してもいません。dialog は全ブロックが `null` で、会話ではなくバフ・状態異常・追い風などのシステム文言です。\n\nglossary に無い訳語を当てたので、追記を提案します。\n- 状態: `Invigor / chunk_0001 の 100 件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話ではなくシステム文言（遠征の恩恵・追い風・潮流などの効果説明と名称）で、`dialog` は全件 null です。\n\n- **`<ctrl_N/>` の順序:** 一部の entry では訳文の語順に合わせて `<ctrl_N/>` の順序を入れ替えてしまいました（"
+    },
+    {
+      "start": 55050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round187/",
+      "coveredDialogs": [],
+      "note": "v2リライト第187弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。書き込み後の読み返しやJSON構文のチェックはしていません。`dialog` はすべて null で、会話ではなくシステム文（島の潮流・恩寵・アルケミストのアーキタイプ等）です。\n\nglossary にない用語に、次の訳語を当てました。追記の提案候補です。\n- Chirurgeon → 外科医\n / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、すべて `dialog: null` のクラス能力・発見の説明文と名称(錬金術師の爆弾・進化薬系)でした。\n\n`<ctrl_N/>` が英文と日本語で語順が食い違う箇所は、順序を保つために文を組み替えています。書き込み後にJSONの構文と"
     }
   ]
 }

@@ -16233,6 +16233,17 @@
       "target": "偉大鼓舞",
       "category": "Ability",
       "note": "バードの呪芸。Inspire Courage/Heroicsと同系の訳語。"
+    },
+    {
+      "source": "Anomaly Distortion",
+      "target": "アノマリーの歪み",
+      "note": "アノマリー由来の歪み効果。単独のDistortionは「歪み」。"
+    },
+    {
+      "source": "Plane of Shadow",
+      "target": "影の位界",
+      "category": "Place",
+      "note": "Shadow Planeの別表記。訳語を統一。"
     }
   ]
 }
