@@ -1464,8 +1464,9 @@
     },
     {
       "source": "Trickery",
-      "target": "解錠",
-      "category": "Skills"
+      "target": "巧技",
+      "category": "Skills",
+      "note": "技能名（解錠・罠解除・手先の早業などをまとめたWrath独自の技能）。PRD日本語版の訳語に合わせる。"
     },
     {
       "source": "Use Magic Device",
@@ -15164,7 +15165,7 @@
       "source": "Summon",
       "target": "招来",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+      "note": "ルール文・能力名・効果説明では「招来」（PF日本語版。召喚術＝Conjuration の副系統「招来」）。台詞・地の文で悪魔などを呼び出す意味の summon は「召喚」でよい。"
     },
     {
       "source": "Reach",
