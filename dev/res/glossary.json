@@ -1406,8 +1406,9 @@
     },
     {
       "source": "Energy Resistance",
-      "target": "エネルギー抵抗",
-      "category": "Combat Stats"
+      "target": "エネルギーに対する抵抗",
+      "category": "Combat Stats",
+      "note": "PF日本語版の定訳（例: 「［火］に対する抵抗10」）。"
     },
     {
       "source": "Spell Penetration",
@@ -1419,7 +1420,7 @@
       "source": "Mobility",
       "target": "軽業",
       "category": "Skills",
-      "note": "技能名。特技名の Mobility は《強行突破》。"
+      "note": "技能名。特技名の Mobility は《強行突破》。 モンスター能力の Mobility も特技と同じく《強行突破》。"
     },
     {
       "source": "Athletics",
@@ -1696,7 +1697,7 @@
       "source": "Incorporeal",
       "target": "非実体状態",
       "category": "Conditions",
-      "note": "「無形」「非物質」「インコーポリアル」にしない。「非実体のクリーチャー」等。"
+      "note": "「無形」「非物質」「インコーポリアル」にしない。「非実体のクリーチャー」等。 能力名・形容（incorporeal creature）では「非実体」（非実体のクリーチャー）。"
     },
     {
       "source": "Unconscious",
@@ -1725,7 +1726,7 @@
       "source": "Bleed",
       "target": "出血状態",
       "category": "Conditions",
-      "note": "ルール文での状態名のときのみ。 呪文名の Bleed は「ブリード」。"
+      "note": "ルール文での状態名のときのみ。 呪文名の Bleed は「ブリード」。 モンスター能力の Bleed は「出血攻撃」。"
     },
     {
       "source": "Energy Drained",
@@ -7309,7 +7310,7 @@
       "source": "Trample",
       "target": "騎乗蹂躙",
       "category": "Feat",
-      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。 モンスター能力の Trample は「蹂躙」。"
     },
     {
       "source": "Mounted Combat",
@@ -7999,7 +8000,7 @@
       "source": "Stalwart",
       "target": "不屈の構え",
       "category": "Feat",
-      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。 モンスター能力の Stalwart は「強固」。"
     },
     {
       "source": "Discordant Voice",
@@ -8819,9 +8820,9 @@
     },
     {
       "source": "Energy Drain",
-      "target": "エナジー・ドレイン",
-      "category": "Spell",
-      "note": "PRD日本語版の訳語。"
+      "target": "生命力吸収",
+      "category": "Ability",
+      "note": "負のレベルを与える能力・効果の総称。呪文名の Energy Drain は「エナジー・ドレイン」。"
     },
     {
       "source": "Elemental Swarm",
@@ -9863,9 +9864,9 @@
     },
     {
       "source": "Poison",
-      "target": "ポイズン",
-      "category": "Spell",
-      "note": "PRD日本語版の訳語。呪文名・特技名として使われている場合のみ。一般語や他の用法（状態異常・クラス能力・アイテム名等）では文脈に合わせて訳す。"
+      "target": "毒",
+      "category": "Ability",
+      "note": "一般語・モンスター能力の毒。呪文名の Poison は「ポイズン」。"
     },
     {
       "source": "Polar Ray",
@@ -9973,7 +9974,7 @@
       "source": "Magic weapon",
       "target": "マジック・ウェポン",
       "category": "Spell",
-      "note": "PRD日本語版の訳語。"
+      "note": "PRD日本語版の訳語。 一般語の magic weapon（魔法の武器）とは区別する。"
     },
     {
       "source": "Magic Weapon, Greater",
@@ -10664,6 +10665,408 @@
       "target": "超巨大",
       "category": "Size",
       "note": "サイズ分類（PRD日本語版）。クリーチャーやアイテムのサイズを表す文脈（Size: Fine、a Large creature、Tiny or smaller 等）でのみこの訳を使う。一般語（fine＝良い、small room、huge mistake 等）では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Stench",
+      "target": "悪臭",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Frightful Presence",
+      "target": "畏怖すべき存在",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Blood Drain",
+      "target": "吸血",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Fear Aura",
+      "target": "［恐怖］のオーラ",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Fast Healing",
+      "target": "高速治癒",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Regeneration",
+      "target": "再生",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Rake",
+      "target": "引っかき",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Disease",
+      "target": "病気",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Corrupting Touch",
+      "target": "腐敗の接触",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Breath Weapon",
+      "target": "ブレス攻撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Paralysis",
+      "target": "麻痺",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Paralyzing Touch",
+      "target": "麻痺の接触",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Rend",
+      "target": "かきむしり",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Powerful Charge",
+      "target": "強力突撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Burn",
+      "target": "着火",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Awesome Blow",
+      "target": "ふっとばし攻撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Immunity",
+      "target": "完全耐性",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Uncanny Dodge",
+      "target": "直感回避",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Evasion",
+      "target": "身かわし",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Sneak Attack",
+      "target": "急所攻撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Challenge",
+      "target": "挑戦",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Favored Enemy",
+      "target": "得意な敵",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Ability Damage",
+      "target": "能力値ダメージ",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Bombs",
+      "target": "爆弾",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Children of the Night",
+      "target": "夜の子供たち",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Smite",
+      "target": "一撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Evil Eye",
+      "target": "邪眼",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Spell Combat",
+      "target": "呪文戦闘",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Spellstrike",
+      "target": "呪文撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Channel Destruction",
+      "target": "破壊の放出",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Misfortune",
+      "target": "不運",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Fortune",
+      "target": "幸運",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Protective Ward",
+      "target": "防衛陣",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Dimensional Steps",
+      "target": "次元またぎ",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Mutagen",
+      "target": "突然変異",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Spontaneous Casting",
+      "target": "任意発動",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Incorporeal Form",
+      "target": "非実体形態",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Inspire Heroics",
+      "target": "英雄鼓舞",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Fascinate",
+      "target": "恍惚",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Inspire Competence",
+      "target": "自信鼓舞",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Inspire Courage",
+      "target": "勇気鼓舞",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Slippery Mind",
+      "target": "心術破り",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Channel Resistance",
+      "target": "エネルギー放出に対する抵抗",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Gaseous Form",
+      "target": "ガス化形態",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Engulf",
+      "target": "包み込み",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Fling",
+      "target": "投げ飛ばし",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Snatch",
+      "target": "ひっつかみ",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Malevolence",
+      "target": "憑霊",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Rejuvenation",
+      "target": "黄泉がえり",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Curse of Lycanthropy",
+      "target": "ライカンスロピーの呪い",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Distraction",
+      "target": "わずらわす",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Quivering Palm",
+      "target": "激震掌",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Constrict",
+      "target": "締めつけ",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Swap Places",
+      "target": "位置入れ替え",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Mounted Master",
+      "target": "騎乗の達人",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Accuracy",
+      "target": "正確性",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Extra Attack",
+      "target": "追加攻撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Turn Undead",
+      "target": "アンデッド退散",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Magic Attack",
+      "target": "魔法攻撃",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Healing Touch",
+      "target": "癒しの接触",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Metamagic Spell",
+      "target": "呪文修正",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。"
+    },
+    {
+      "source": "Dread",
+      "target": "恐れ",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Linguist",
+      "target": "言語学者",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Telepathy",
+      "target": "テレパシー",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Knowledgeable",
+      "target": "物知り",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Athletic",
+      "target": "運動能力",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
+    },
+    {
+      "source": "Potions",
+      "target": "ポーション",
+      "category": "Ability",
+      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。"
     }
   ]
 }
