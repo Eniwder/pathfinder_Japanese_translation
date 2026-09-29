@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 54450,
-  "updatedAt": "2026-09-29T12:21:35.123Z",
+  "nextStart": 54750,
+  "updatedAt": "2026-09-29T16:32:18.241Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3401,6 +3401,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-29_round184/",
       "coveredDialogs": [],
       "note": "v2リライト第184弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認しています。\n\n- 会話(dialog)は全件 null で、実績・ステータス説明文のみでした。話者や `<ctrl_N/>` はありません。\n- 「Swarm」は glossary に無かったため「群れの道」としました。 / `chunk_0001.translations.json` に100件すべてを訳して書き込みました。JSON構文は目視で確認済みです。\n\ndialog名はすべて null です。会話ではなく、実績（アチーブメント）の名前と説明文でした。説明文は常体の「〜した」で、名前は体言止めなどで訳しています。"
+    },
+    {
+      "start": 54450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round185/",
+      "coveredDialogs": [],
+      "note": "v2リライト第185弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の訳文ファイルは書き込み済みです。今は、手で写したキーが原文と食い違っていないかの確認中です。1件（鍛冶屋のキー）は食い違っていたので直しました。\n\n残りは Grep で個別に照合できます。ただし今回は指示どおり Bash やスクリプトを使っていません。\n\n**報告**\n- `chunk_0000.translations.json` に 200 件を訳して書き込みました。` / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はすべて `null` で、呪文・状態異常・天候・病気などのシステム文言のみです。\n\n- **JSON確認**: 実行権限がないため、構文は目視確認のみです。\n- **`<ctrl_N/>`**: 各entryのトークンは個数・内容とも保持し、日本語の語順に合わせて位置だけ入れ替えた"
     }
   ]
 }

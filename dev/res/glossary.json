@@ -6476,6 +6476,30 @@
       "target": "真夜中の都",
       "category": "Location",
       "note": "アルシニラの別称。デモダンドの陰謀の舞台（round184）。"
+    },
+    {
+      "source": "Verduran Forest",
+      "target": "ヴェルデュランの森",
+      "category": "Location",
+      "note": "ハーフリングが狼に騎乗して戦う森（round185）。"
+    },
+    {
+      "source": "Aslynn",
+      "target": "アスリン",
+      "category": "Person",
+      "note": "怒りの残響闘技場の対戦相手（round185）。"
+    },
+    {
+      "source": "Mindfire",
+      "target": "マインドファイア",
+      "category": "Disease",
+      "note": "知力ダメージの病気（round185）。"
+    },
+    {
+      "source": "Shakes",
+      "target": "震え病",
+      "category": "Disease",
+      "note": "敏捷力ダメージの病気（round185）。"
     }
   ]
 }
