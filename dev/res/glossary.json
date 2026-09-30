@@ -16274,6 +16274,57 @@
       "target": "呪文音声省略",
       "category": "Feat",
       "note": "呪文修正特技。"
+    },
+    {
+      "source": "Rahadoum",
+      "target": "ラハドゥーム",
+      "category": "Location",
+      "note": "ガルンドの無神論国家。"
+    },
+    {
+      "source": "Touvette",
+      "target": "トゥヴェット",
+      "category": "Location",
+      "note": "リバー・キングダムの無神論国家。"
+    },
+    {
+      "source": "Bachuan",
+      "target": "バチュアン",
+      "category": "Location",
+      "note": "ティアンシアの無神論国家。"
+    },
+    {
+      "source": "Dragon Empires",
+      "target": "ドラゴン帝国",
+      "category": "Location",
+      "note": "ティアンシアを含む東方の諸国。"
+    },
+    {
+      "source": "Astral Plane",
+      "target": "アストラル界",
+      "category": "Location",
+      "note": "次元界の一つ。"
+    },
+    {
+      "source": "Graveyard of Souls",
+      "target": "魂の墓場",
+      "category": "Location",
+      "note": "死後の魂の行き先の一つ。"
+    },
+    {
+      "source": "Prophecies of Kalistrade",
+      "target": "カルストラードの預言",
+      "note": "無神論的な哲学・教義。"
+    },
+    {
+      "source": "Age of Creation",
+      "target": "創造の時代",
+      "note": "ゴラリオンの歴史区分。"
+    },
+    {
+      "source": "Ascended",
+      "target": "昇神者",
+      "note": "スターストーンの試練を越えて神となった元定命の者たち。"
     }
   ]
 }

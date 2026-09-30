@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 55950,
-  "updatedAt": "2026-09-29T21:31:11.008Z",
+  "nextStart": 56250,
+  "updatedAt": "2026-09-30T00:34:37.806Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3441,6 +3441,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round189/",
       "coveredDialogs": [],
       "note": "v2リライト第189弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件すべてを書き込みました。JSON の構文は目視で確認しましたが、スクリプトでの検証は権限上できていません。\n\n- **対象:** 全件が `dialog` なしのクラス能力・特技の説明文と名称です（アルカニスト亜種、アサシン、バーバリアン、肉喰らいなど）。会話やセリフはありません。\n- **`<ctrl_N/>` の順序:** / `chunk_0001` は全100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`<ctrl_N/>` の並びを検証するスクリプトは Bash が拒否されたため実行できておらず、個数と順序は自分の目視確認だけです。\n\n- **対象:** 会話（dialog）は全件 `null` で、すべて Barbarian の激怒パワ"
+    },
+    {
+      "start": 55950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round190/",
+      "coveredDialogs": [],
+      "note": "v2リライト第190弾（runRoundLoop.mjs による自動実行）。"
     }
   ]
 }
