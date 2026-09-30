@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 60750,
-  "updatedAt": "2026-09-30T07:44:08.627Z",
+  "nextStart": 61050,
+  "updatedAt": "2026-09-30T07:56:25.029Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3569,6 +3569,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round205/",
       "coveredDialogs": [],
       "note": "v2リライト第205弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を書き込みました。JSON構文と `<ctrl_N/>` の順序・個数は目視で確認しただけで、スクリプトでの検証はしていません。会話ではなく、シャーマンとシフターのクラス説明・呪術名・霊の説明文です（dialog は全件 null）。\n\nglossary に無い語を訳しているので、追記を提案します。\n- Reach Spel / `chunk_0001.translations.json` に100件すべて訳して書き込んだ。ただし `<ctrl_N/>` の並び順に問題が残っている。\n\n- **問題**：日本語の語順に合わせて `<ctrl_N/>` の順序を入れ替えた entry が10件以上ある（例：`ctrl_10/11` が `ctrl_8/9` より前に来ている）。数と内容はすべて保持しているが、「順序を変えない"
+    },
+    {
+      "start": 60750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round206/",
+      "coveredDialogs": [],
+      "note": "v2リライト第206弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認済みで、スクリプトによる検証はしていません（実行権限がないため）。\n\n- **dialog:** すべて `dialog: null` のシステムテキストです。シフターのアーキタイプ（フィーンドフレッシュ、グリフォンハート、レイジシェイパー、ウェアタッチド、ワイルド・エフィ / `chunk_0001.translations.json` を書き込みました。100件すべてを訳しています。行数の目視では JSON の形は合っていますが、パースや `import --dry-run` は実行していません。\n\n- **会話**: すべて `dialog: null` のクラス・能力説明文で、話者はいません。スカルドと、そのアーキタイプ（ハント・コーラー、インサイター等）およびス"
     }
   ]
 }
