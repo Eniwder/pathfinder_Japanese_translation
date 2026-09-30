@@ -17586,6 +17586,24 @@
     { "source": "Dead Inside", "target": "内なる死", "category": "Ability" },
     { "source": "Stevanius the Rotten", "target": "腐れ者ステヴァニウス", "category": "Character", "note": "Lich whose phylactery is set in a ring." },
     { "source": "Phylactery", "target": "フィラクタリー", "category": "Item" },
-    { "source": "Ring of Circumstances", "target": "状況の指輪", "category": "Item" }
+    { "source": "Ring of Circumstances", "target": "状況の指輪", "category": "Item" },
+    { "source": "Heavy Shield of Elemental Protection", "target": "元素防護のヘヴィ・シールド", "category": "Item" },
+    { "source": "Spiked Shield", "target": "スパイク付きシールド", "category": "Item" },
+    { "source": "Bag of Holding", "target": "バッグ・オヴ・ホールディング", "category": "Item" },
+    { "source": "Pearl of Power", "target": "パール・オヴ・パワー", "category": "Item" },
+    { "source": "Blinding savagery", "target": "目を眩ます獰猛さ", "category": "Ability" },
+    { "source": "Shadow bite", "target": "シャドウ・バイト", "category": "Ability" },
+    { "source": "Protector of Unjust", "target": "不義の守護者", "category": "Ability" },
+    { "source": "Flameguard", "target": "フレイムガード", "category": "Item" },
+    { "source": "Wyrmwall", "target": "ワームウォール", "category": "Item" },
+    { "source": "Ray Blocker", "target": "レイ・ブロッカー", "category": "Item" },
+    { "source": "Nabasu", "target": "ナバス", "category": "Creature", "note": "Demon." },
+    { "source": "Lillend Azata", "target": "リリーエンド・アザータ", "category": "Creature" },
+    { "source": "Advanced Bralani Azata", "target": "アドヴァンスド・ブララニ・アザータ", "category": "Creature" },
+    { "source": "Cayden Caliean", "target": "ケイデン・カイリーン", "category": "Deity" },
+    { "source": "shabti", "target": "シャブティ", "category": "Creature" },
+    { "source": "Keleshite", "target": "ケレシュ人", "category": "Race" },
+    { "source": "Clement", "target": "クレメント", "category": "Character", "note": "Shabti priest of Osirion's old gods; former owner of a cloak." },
+    { "source": "Glaive", "target": "グレイヴ", "category": "Weapon" }
   ]
 }

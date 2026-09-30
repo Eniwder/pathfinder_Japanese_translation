@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 67050,
-  "updatedAt": "2026-09-30T23:08:57.006Z",
+  "nextStart": 67350,
+  "updatedAt": "2026-09-30T23:15:07.189Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3737,6 +3737,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round226/",
       "coveredDialogs": [],
       "note": "v2リライト第226弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しましたが、`import --dry-run` は走らせていません。キー数は原文と同じ200件で、手書きでミスしていた1件は直してあります。残りのキーの綴りは数えただけで、1件ずつの照合はしていません。\n\n会話（dialog）はすべて `null` で、内容は指輪・装身具の / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON の検証コマンドは実行していません。目視では構文と `<ctrl_N/>` の個数・順序に問題はありません。対象はすべて `dialog` が null のアイテム説明と名称です（指輪・盾の効果文、強化値表記など）。\n\n- 語順が英語と日本語で入れ替わる箇所は、`<ctrl_N/>` の順"
+    },
+    {
+      "start": 67050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round227/",
+      "coveredDialogs": [],
+      "note": "v2リライト第227弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON の構文と `<ctrl_N/>` の順序は目視で確認しましたが、スクリプトによる検証はしていません。対象はすべて `dialog: null` のアイテム名・説明文（盾・バッグ・指輪・真珠などの装備品）です。\n\n`<ctrl_N/>` の順序を保つため、「+Nのボーナス / 100件を訳し、`chunk_0001.translations.json` に書き込みました。dialog 名はすべて null（アイテム・巻物・本の説明文）です。\n\n気づいた点が2つあります。\n- 原文の `lost fragment`（Torn Page 系）などは、同名の別 key が複数あります。\n- `Scroll of Stomp` と `Scroll of Stomping` は、"
     }
   ]
 }
