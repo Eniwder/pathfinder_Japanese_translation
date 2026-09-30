@@ -578,6 +578,9 @@ function runRound(start, roundNo) {
   console.log(`chunk数: ${chunkFiles.length} (${chunkFiles.join(', ')})`);
 
   const summaries = [];
+  // 訳者の報告にある `用語: X → Y` を反省ステップのglossary登録に渡すため、全文を保持する
+  // （summariesはコミットメッセージ用に200字で切っている）。
+  const chunkReports = [];
   for (const f of chunkFiles) {
     // 前回このroundが利用上限等で落ちた際、chunk本体は書き換えず訳文だけ書いた
     // *.translations.json が残っている可能性がある。呼び出し前に必ずマージを試みる。
@@ -606,6 +609,7 @@ function runRound(start, roundNo) {
     }
     console.log(`--- ${f} 翻訳完了: ${formatJST()} ---`);
     summaries.push(result.trim().slice(0, 200));
+    chunkReports.push({ file: f, text: result });
   }
 
   let { out, untranslated, invalid } = validateChunks();
@@ -649,7 +653,7 @@ function runRound(start, roundNo) {
     const glossaryEntries = JSON.parse(glossaryBackup).glossary ?? [];
     ensureSessionBudget(`round${roundNo}_notes`);
     callClaude(
-      buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries),
+      buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries, chunkReports),
       `round${roundNo}_notes`,
       notesModel
     );

@@ -16952,6 +16952,81 @@
       "category": "Kineticist",
       "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
       "caseSensitive": true
+    },
+    {
+      "source": "Ghaele Azata",
+      "target": "ガエル・アザータ",
+      "category": "Creature",
+      "note": "PRD日本語版 Bestiary の訳語（Azata, Ghaele → アザータ：ガエル）。「ゲイリー」は誤り。"
+    },
+    {
+      "source": "Ghaele",
+      "target": "ガエル",
+      "category": "Creature",
+      "note": "アザータの一種。PRD日本語版 Bestiary の訳語。"
+    },
+    {
+      "source": "Light Fortification",
+      "target": "急所防御（ライト）",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力。PRD日本語版 Ultimate Equipment の訳語。クリティカル・ヒット／急所攻撃を25%で無効化。"
+    },
+    {
+      "source": "Moderate Fortification",
+      "target": "急所防御（モデレット）",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力。PRD日本語版の訳語（50%）。"
+    },
+    {
+      "source": "Heavy Fortification",
+      "target": "急所防御（ヘヴィ）",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力。PRD日本語版の訳語（75%）。"
+    },
+    {
+      "source": "Fortification",
+      "target": "急所防御",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力名として使われている場合のみ（PRD日本語版の訳語）。城塞・防備の意味の一般語では文脈に合わせて訳す（例: 防備）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Reach Spell",
+      "target": "呪文射程伸長",
+      "category": "Feat",
+      "note": "呪文修正特技。PRD日本語版 APG の訳語。"
+    },
+    {
+      "source": "Serpentine Bloodline Arcana",
+      "target": "蛇の血脈の秘法",
+      "category": "Caster Terms",
+      "note": "Bloodline Arcana（血脈の秘法）に合わせる。"
+    },
+    {
+      "source": "Serpentine Bloodline",
+      "target": "蛇の血脈",
+      "category": "Caster Terms",
+      "note": "ソーサラーの血脈。PRD日本語版に定訳なし。地獄の血脈・フェイの血脈に合わせ和訳。"
+    },
+    {
+      "source": "Stalwart Defender",
+      "target": "ストールワート・ディフェンダー",
+      "category": "Class",
+      "note": "上級クラス。PRD日本語版 APG の訳語。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Student of War",
+      "target": "戦の学徒",
+      "category": "Class",
+      "note": "上級クラス。PRD日本語版に定訳なし。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Pentamic Faith",
+      "target": "五神信仰",
+      "category": "Class Feature",
+      "note": "ヘルナイト（ゴッドクロウ騎士団）のクラス能力。騎士団が崇める五柱の神に由来。"
     }
   ]
 }

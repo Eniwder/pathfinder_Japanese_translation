@@ -80,7 +80,11 @@ export function buildChunkPrompt(chunksDirRel, fileName) {
   書いた内容がJSONとして正しいか目視確認すること。
 
 作業が終わったら、1〜2行で「何件訳したか」「登場した会話(dialog名)」「気づいた点があれば一言」
-を報告して終了してください。長い説明は不要です。`;
+を報告して終了してください。長い説明は不要です。
+加えて、chunk内のglossaryに無い固有名詞やゲームシステム用語（特技・呪文・クラス能力・上級クラス・
+アーキタイプ・血脈・防具／武器の特殊能力・クリーチャー名など）に訳語を当てた場合は、報告の末尾に
+1語1行で \`用語: <英語> → <訳語>\` の形式で列挙すること。この行は後段のステップでglossaryへ
+そのまま登録されるので、確認依頼・追記の提案・自信の有無などの文言は付けない。`;
 }
 
 // buildChunkPromptがWriteした dev/lang/chunks/<chunk>.translations.json
@@ -176,6 +180,26 @@ function matchesGlossaryTerm(lowerText, source) {
   return new RegExp(`(?<![a-z])${escaped}(?![a-z])`, 'i').test(lowerText);
 }
 
+// chunk翻訳の報告（buildChunkPromptで `用語: <英語> → <訳語>` 形式を指示）から、訳者が
+// glossaryに無い語に当てた訳語を拾う。GLOSSARY_PHRASE_REは大文字始まりの語しか拾えず
+// （`light fortification` 等が漏れる）、訳語も見えないため、それを補う。
+// 旧形式の報告（`- X → Y`）も拾えるよう「用語:」は省略可。既存glossaryと完全一致する
+// sourceは除く。
+function extractReportedTerms(chunkReports, glossaryEntries) {
+  const known = new Set(glossaryEntries.map((e) => String(e.source).toLowerCase()));
+  const terms = new Map();
+  for (const { file, text } of chunkReports) {
+    for (const line of String(text ?? '').split('\n')) {
+      const m = line.match(/^\s*(?:[-*・]\s*)?(?:用語[:：]\s*)?\*{0,2}([A-Za-z][A-Za-z0-9 ,'’()\-]*?)\*{0,2}\s*(?:→|->|⇒)\s*(.+?)\s*$/);
+      if (!m) continue;
+      const source = m[1].trim();
+      if (known.has(source.toLowerCase()) || terms.has(source.toLowerCase())) continue;
+      terms.set(source.toLowerCase(), { source, target: m[2].trim(), file });
+    }
+  }
+  return [...terms.values()];
+}
+
 // 文頭（＝地の文の大文字化にすぎない可能性が高い位置）に出現しただけの語は候補から除く。
 function isSentenceInitial(text, matchIndex) {
   let i = matchIndex - 1;
@@ -204,7 +228,7 @@ function extractGlossaryCandidates(reviewDirAbs, chunkFiles, glossaryEntries, mi
           if (!counts.has(phrase)) counts.set(phrase, { count: 0, samples: [] });
           const rec = counts.get(phrase);
           rec.count++;
-          if (rec.samples.length < 2) rec.samples.push({ dialog: b.dialog ?? null, file: f, key: e.key, text: e.text });
+          if (rec.samples.length < 2) rec.samples.push({ dialog: b.dialog ?? null, file: f, key: e.key, text: e.text, translation: e.translation });
         }
       }
     }
@@ -276,7 +300,14 @@ function countFileLines(relPath) {
   }
 }
 
-export function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries) {
+// chunkReports: [{ file, text }]（各chunk翻訳呼び出しの報告テキスト）。cloud.mjs等、報告を
+// 持たない呼び出し元では省略してよい。
+export function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries, chunkReports = []) {
+  const reportedTerms = extractReportedTerms(chunkReports, glossaryEntries);
+  const reportedTermsBlock = reportedTerms.length
+    ? reportedTerms.map((t) => `- ${t.source} → ${t.target}（${t.file}）`).join('\n')
+    : '（訳者からの報告はありません）';
+
   const missing = collectMissingSpeakerSamples(reviewDirAbs, chunkFiles);
   const missingBlock = missing.size
     ? [...missing.entries()]
@@ -296,7 +327,7 @@ export function buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, g
       .map(
         (c) =>
           `- "${c.phrase}"（${c.count}回）\n` +
-          c.samples.map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) ${s.text}`).join('\n')
+          c.samples.map((s) => `  - [${s.file}#${s.key}] (${s.dialog ?? '?'}) ${s.text}\n    訳文: ${s.translation ?? '(未訳)'}`).join('\n')
       )
       .join('\n')
     : '（既存glossaryに無い固有名詞は検出されませんでした）';
@@ -352,18 +383,27 @@ ${inconsistencyBlock}
    （translationGuide.md本体には経緯を書かない。読み込みコストを増やさないため）。
    - 上記の表記ゆれ候補は「ルール化する価値があるか」の判断材料であって、機械的に
      全部直す・全部ルール化する必要はない（無ければ何もしない）。
-3. 下記は今回の原文に登場した語のうち、既存の dev/res/glossary.json にまだ無いものの候補です
-   （機械的な抽出なので固有名詞ではないノイズも混ざっています。実在の固有名詞だと判断できる
-   ものだけを対象にしてください）:
+3. glossary.json への登録。下記(a)は今回の訳者が glossary に無い語に当てた訳語の報告、
+   (b)は今回の原文に登場した大文字始まりの語のうち glossary にまだ無いものの機械抽出です
+   （(b)は固有名詞ではないノイズも混ざっています）。
+   (a) 訳者の報告:
+${reportedTermsBlock}
+   (b) 機械抽出の候補:
 ${glossaryBlock}
    既存entryのフォーマット例:
   ${glossaryFormatExamples}
-   このうち「今後の一貫性のために記録しておく価値がある固有名詞（人名・地名・組織名など）」
-   だけを選び、同じ形式（{"source": 英語, "target": 訳語, "note": 短い説明}、必要なら
-   "category"も）で glossary.json の配列に追記する。
-   - 一般語・言い回し・候補に挙がっていない語は対象外（無理に探しにいかない）。
-   - 既存entryの誤記/表記ゆれ修正が必要だと確信できる場合のみ、glossary.jsonを実際に開いて
-     該当entryのtargetを直接書き換える。迷ったら何もしない。
+   このうち、今後の訳語の一貫性のために記録すべきものを同じ形式（{"source": 英語,
+   "target": 訳語, "note": 短い説明, "category": 分類}）で glossary.json の配列に追記する。
+   - 対象は固有名詞（人名・地名・組織名など）と、ゲームシステム用語（特技・呪文・
+     クラス能力・上級クラス・アーキタイプ・血脈・防具／武器の特殊能力・クリーチャー名など）。
+     システム用語は表記ゆれが許されないので、固有名詞と同じく必ず登録する。
+   - 訳語は、PRD日本語版の定訳を知っていればそれを、無ければ今回の訳語をそのまま使う。
+     定訳の有無に自信が持てないことは登録を見送る理由にしない（登録しないとroundごとに
+     訳が割れる）。(a)の訳語が明らかな誤訳（音写の誤り・意味の取り違え）なら直した訳語で登録し、
+     noteに一言残す。
+   - 一般語・言い回しは対象外（無理に探しにいかない）。
+   - 既存entryの誤記/表記ゆれ修正は、確信できる場合のみglossary.jsonを実際に開いて
+     該当entryのtargetを直接書き換える。
    - JSON構文を絶対に壊さないこと（配列の閉じ忘れ・カンマ漏れに注意）。
 
 編集してよいのは上記4ファイル（v2CharacterNotes.md / translationGuide.md /

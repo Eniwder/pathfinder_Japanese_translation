@@ -301,3 +301,9 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
 - 2026-09-30（round205）: マンティコアの子の棘説明で`bypass DR`が「ダメージ減少〜を貫通」/「DR〜を無視」、
   `primary natural attack`が「主要」/「第一」と割れたため定型をtranslationGuide.mdに追記。
   Bolster Spell/Master Shapeshifterをglossaryに追記。
+- 2026-09-30（手動）: glossaryに無いシステム用語が「追記を提案」のままログに埋もれ、Reach Spell（4通り）・
+  Serpentine Bloodline・Stalwart Defender等がroundごとに割れていた。訳者報告の`用語: X → Y`行を
+  notesステップへ渡し、notesの登録対象にシステム用語を追加（roundPrompts.mjs / runRoundLoop.mjs）。
+  Ghaele（ガエル、旧「ゲイリー」は誤り）・Fortification（急所防御）・Reach Spell（呪文射程伸長）・
+  Stalwart Defender・Serpentine Bloodline・Student of War・Pentamic Faith（五神信仰）をglossaryに追記し、
+  chunks_reviewの既存訳47件を置換。
