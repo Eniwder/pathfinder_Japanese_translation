@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 64650,
-  "updatedAt": "2026-09-30T17:53:58.796Z",
+  "nextStart": 64950,
+  "updatedAt": "2026-09-30T18:01:47.008Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3673,6 +3673,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round218/",
       "coveredDialogs": [],
       "note": "v2リライト第218弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。\n\n- **対象の会話:** dialog名はすべて null で、Encyclopedia・チュートリアル・ボーナス用語集・クリーチャー名の項目です。\n- **順序の修正:** 書いた後で、`<ctrl_N/>` の順序が原文と入れ替わっていたり / chunk_0001 の100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`<ctrl_N/>` の個数・順序は目視で確認しました。Bash が拒否されたため、スクリプトによる検証は実行していません。\n\n- **dialog:** すべて `null` のシステム文言とアイテム説明でした（百科事典項目、アミュレット・ペン"
+    },
+    {
+      "start": 64650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round219/",
+      "coveredDialogs": [],
+      "note": "v2リライト第219弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json に書き込みました。chunk の `keys: 200` に合わせた 200 件を訳したつもりですが、書き込み後に件数は数えていません。\n\n- **会話:** すべて `dialog: null` のアイテム説明文と名称（アミュレット、鎧、素材、抵抗系特殊能力）です。話者はいません。\n- **キーの確認:** 200 件のキーは手で写しまし / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。`dialog` は全件 null で、会話ではなく防具のアイテム説明と名称です。JSON は目視で構文を確認しました。\n\n気づいた点は、一部の文で `<ctrl_N/>` の順序を保つために語順を調整したことです。\n\n用語: Angelic Aspect → エンジェリック・アスペクト\n用語: "
     }
   ]
 }
