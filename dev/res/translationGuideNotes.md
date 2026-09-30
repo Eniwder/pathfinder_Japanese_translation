@@ -312,3 +312,5 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
   （「急所防御」は錬金術師の発見 Protect Vitals の訳とも衝突）。防具特殊能力をPRD表記のカタカナに揃え
   （バランスト・アロー・デフレクション・スペル・ストアリング等）、Student of Stone を「石の学徒」に統一。
   cloud.mjs の notes-prompt もサブエージェント報告（chunk_000N.report.txt）の用語行を受け取るようにした。
+- 2026-09-30（round212）: Maximize Spell が「呪文最大化」/「呪文威力最大化」と割れたため、Empower Spell（呪文威力強化）に
+  揃えて「呪文威力最大化」でglossary登録。他の報告語（メタマジック熟達・不定形・硬度等）も追記。

@@ -17066,6 +17066,129 @@
       "category": "Armor Ability",
       "note": "防具の特殊能力名として使われている場合のみ（PRD日本語版の訳語。バランスドではない）。一般語の balanced は文脈に合わせて訳す。",
       "caseSensitive": true
+    },
+    {
+      "source": "Metamagic Mastery",
+      "target": "メタマジック熟達",
+      "category": "Class Ability",
+      "note": "ウィザード（万能術師）の能力。"
+    },
+    {
+      "source": "Maximize Spell",
+      "target": "呪文威力最大化",
+      "category": "Feat",
+      "note": "Empower Spell（呪文威力強化）と揃える。「呪文最大化」は不可。"
+    },
+    {
+      "source": "Amorphous",
+      "target": "不定形",
+      "category": "Creature Ability"
+    },
+    {
+      "source": "Ravener",
+      "target": "レイヴナー",
+      "category": "Creature"
+    },
+    {
+      "source": "Cowering Fear",
+      "target": "戦慄の恐怖",
+      "category": "Ability"
+    },
+    {
+      "source": "Daemonic Blessing",
+      "target": "デーモンの祝福",
+      "category": "Ability"
+    },
+    {
+      "source": "Hardness",
+      "target": "硬度",
+      "category": "Creature Ability"
+    },
+    {
+      "source": "Lamashtu's Boon",
+      "target": "ラマシュトゥの恩恵",
+      "category": "Ability"
+    },
+    {
+      "source": "Lamashtu's Curse",
+      "target": "ラマシュトゥの呪い",
+      "category": "Ability"
+    },
+    {
+      "source": "Lizard Rush",
+      "target": "リザード・ラッシュ",
+      "category": "Ability"
+    },
+    {
+      "source": "Will-o'-wisp",
+      "target": "ウィル・オ・ウィスプ",
+      "category": "Creature"
+    },
+    {
+      "source": "Natural Invisibility",
+      "target": "生来の不可視化",
+      "category": "Creature Ability"
+    },
+    {
+      "source": "Redcap",
+      "target": "レッドキャップ",
+      "category": "Creature"
+    },
+    {
+      "source": "Rider Protection",
+      "target": "騎乗者の保護",
+      "category": "Ability"
+    },
+    {
+      "source": "Unearthly Grace",
+      "target": "人ならぬ優雅さ",
+      "category": "Creature Ability"
+    },
+    {
+      "source": "Unholy Grace",
+      "target": "不浄の優雅さ",
+      "category": "Creature Ability"
+    },
+    {
+      "source": "Unlootable",
+      "target": "略奪不可",
+      "category": "Ability"
+    },
+    {
+      "source": "Bloody Bones Beast",
+      "target": "ブラディ・ボーンズ・ビースト",
+      "category": "Creature"
+    },
+    {
+      "source": "Treant Creature",
+      "target": "トレント・クリーチャー",
+      "category": "Creature"
+    },
+    {
+      "source": "Stunning Blow",
+      "target": "朦朧化の一撃",
+      "category": "Ability"
+    },
+    {
+      "source": "cold iron",
+      "target": "冷たい鉄",
+      "category": "Material",
+      "note": "PRD日本語版の定訳。"
+    },
+    {
+      "source": "adamantine",
+      "target": "アダマンティン",
+      "category": "Material"
+    },
+    {
+      "source": "Deflection bonus",
+      "target": "反発ボーナス",
+      "category": "Rule"
+    },
+    {
+      "source": "Profane bonus",
+      "target": "冒涜ボーナス",
+      "category": "Rule"
     }
   ]
 }
