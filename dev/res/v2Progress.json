@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 58350,
-  "updatedAt": "2026-09-30T03:05:21.203Z",
+  "nextStart": 58650,
+  "updatedAt": "2026-09-30T03:11:53.777Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3505,6 +3505,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round197/",
       "coveredDialogs": [],
       "note": "v2リライト第197弾（runRoundLoop.mjs による自動実行）。"
+    },
+    {
+      "start": 58350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round198/",
+      "coveredDialogs": [],
+      "note": "v2リライト第198弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。会話（dialog）はなく、すべてキネティシストのクラス能力・インフュージョン・特技などのルール文と名称です。\n\n書き込み後の JSON 構文チェックと `<ctrl_N/>` の検証（`import --dry-run`）は、指示どおり実行していません。書き込んだ内容は目視で確認しただけです。 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、メイガスとロアマスターのクラス能力・秘奥の説明文です。\n\n- **glossary未登録の語:** Anarchic=アナーキック、Axiomatic=アクシオマティック、Holy=ホーリー、Brilliant Energy=ブリリアント・エナジー、Ghost Touc"
     }
   ]
 }
