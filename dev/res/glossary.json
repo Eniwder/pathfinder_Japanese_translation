@@ -16967,27 +16967,27 @@
     },
     {
       "source": "Light Fortification",
-      "target": "急所防御（ライト）",
+      "target": "ライト・フォーティフィケイション",
       "category": "Armor Ability",
-      "note": "防具の特殊能力。PRD日本語版 Ultimate Equipment の訳語。クリティカル・ヒット／急所攻撃を25%で無効化。"
+      "note": "防具の特殊能力（PRD日本語版の訳語。括弧内の「急所防御」は意味の説明で訳語ではない）。クリティカル・ヒット／急所攻撃を25%で無効化。"
     },
     {
       "source": "Moderate Fortification",
-      "target": "急所防御（モデレット）",
+      "target": "モデレット・フォーティフィケイション",
       "category": "Armor Ability",
-      "note": "防具の特殊能力。PRD日本語版の訳語（50%）。"
+      "note": "防具の特殊能力（PRD日本語版の訳語、50%）。モデレートではなくモデレット。"
     },
     {
       "source": "Heavy Fortification",
-      "target": "急所防御（ヘヴィ）",
+      "target": "ヘヴィ・フォーティフィケイション",
       "category": "Armor Ability",
-      "note": "防具の特殊能力。PRD日本語版の訳語（75%）。"
+      "note": "防具の特殊能力（PRD日本語版の訳語、75%）。"
     },
     {
       "source": "Fortification",
-      "target": "急所防御",
+      "target": "フォーティフィケイション",
       "category": "Armor Ability",
-      "note": "防具の特殊能力名として使われている場合のみ（PRD日本語版の訳語）。城塞・防備の意味の一般語では文脈に合わせて訳す（例: 防備）。",
+      "note": "防具の特殊能力名として使われている場合のみ（PRD日本語版の訳語）。城塞・防備の意味の一般語では文脈に合わせて訳す（例: 防備）。「急所防御」は錬金術師の発見 Protect Vitals の訳なので使わない。",
       "caseSensitive": true
     },
     {
@@ -17027,6 +17027,45 @@
       "target": "五神信仰",
       "category": "Class Feature",
       "note": "ヘルナイト（ゴッドクロウ騎士団）のクラス能力。騎士団が崇める五柱の神に由来。"
+    },
+    {
+      "source": "Student of Stone",
+      "target": "石の学徒",
+      "category": "Archetype",
+      "note": "モンクのアーキタイプ。Student of War（戦の学徒）と揃える。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Arrow Deflection",
+      "target": "アロー・デフレクション",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Glamered",
+      "target": "グラマード",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Invulnerability",
+      "target": "インヴァルナラビリティ",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力名として使われている場合のみ（PRD日本語版の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Spell Storing",
+      "target": "スペル・ストアリング",
+      "category": "Armor Ability",
+      "note": "防具・武器の特殊能力（PRD日本語版の訳語）。"
+    },
+    {
+      "source": "Balanced",
+      "target": "バランスト",
+      "category": "Armor Ability",
+      "note": "防具の特殊能力名として使われている場合のみ（PRD日本語版の訳語。バランスドではない）。一般語の balanced は文脈に合わせて訳す。",
+      "caseSensitive": true
     }
   ]
 }

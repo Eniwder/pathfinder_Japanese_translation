@@ -307,3 +307,8 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
   Ghaele（ガエル、旧「ゲイリー」は誤り）・Fortification（急所防御）・Reach Spell（呪文射程伸長）・
   Stalwart Defender・Serpentine Bloodline・Student of War・Pentamic Faith（五神信仰）をglossaryに追記し、
   chunks_reviewの既存訳47件を置換。
+- 2026-09-30（手動・訂正）: 直前の記録で Fortification を「急所防御」としたのは誤り。PRDの
+  「フォーティフィケイション（Fortification／急所防御）」は武器と同じくカタカナが名称で括弧内は意味の説明
+  （「急所防御」は錬金術師の発見 Protect Vitals の訳とも衝突）。防具特殊能力をPRD表記のカタカナに揃え
+  （バランスト・アロー・デフレクション・スペル・ストアリング等）、Student of Stone を「石の学徒」に統一。
+  cloud.mjs の notes-prompt もサブエージェント報告（chunk_000N.report.txt）の用語行を受け取るようにした。

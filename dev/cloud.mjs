@@ -147,9 +147,21 @@ function merge(round) {
 function notesPrompt(round) {
   const dir = roundDir(round);
   const glossaryEntries = JSON.parse(fs.readFileSync('./res/glossary.json', 'utf8')).glossary ?? [];
+  // 翻訳サブエージェントの報告（メインが chunk_000N.report.txt に保存したもの）。`用語: X → Y` 行を
+  // notesステップのglossary登録に渡す。
+  const chunkReports = chunkFilesOf(dir)
+    .map((f) => ({ file: f, reportPath: path.join(dir, f.replace(/\.json$/, '.report.txt')) }))
+    .filter((r) => fs.existsSync(r.reportPath))
+    .map((r) => ({ file: r.file, text: fs.readFileSync(r.reportPath, 'utf8') }));
   process.stdout.write(
-    buildNotesPrompt(`dev/${ROUNDS_DIR_REL}/${round}/`, path.resolve(dir), chunkFilesOf(dir), Number(round.slice(5)), glossaryEntries) +
-      '\n'
+    buildNotesPrompt(
+      `dev/${ROUNDS_DIR_REL}/${round}/`,
+      path.resolve(dir),
+      chunkFilesOf(dir),
+      Number(round.slice(5)),
+      glossaryEntries,
+      chunkReports
+    ) + '\n'
   );
 }
 
