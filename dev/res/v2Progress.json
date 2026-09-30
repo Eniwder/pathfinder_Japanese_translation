@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 63750,
-  "updatedAt": "2026-09-30T17:32:51.995Z",
+  "nextStart": 64050,
+  "updatedAt": "2026-09-30T17:35:07.209Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3649,6 +3649,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round215/",
       "coveredDialogs": [],
       "note": "v2リライト第215弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。書き込み後の読み返しやJSONの構文検証はしていません。会話ではなく、`dialog` が全て null のクレジット・役職名の羅列です。訳語は職種の定訳（ディレクター、エンジニア等）に揃えています。\n\n用語: Graveknight → グレイヴナイト\n用語: Bodak → ボダック\n用語: Cam / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。dialog 名はすべて null で、ボイスキャスト、スタッフ、プレイヤーボイス種別のクレジット類です。\n\n用語: Anevia → アネヴィア\n用語: Irabeth → イラベス\n用語: Suture → サチャー\n用語: Staunton → スタントン"
+    },
+    {
+      "start": 63750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round216/",
+      "coveredDialogs": [],
+      "note": "v2リライト第216弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。書き込んだ JSON を読み返しての構文確認はしていません。\n\n- **dialog:** すべて dialog なし（null）です。中身はクレジットの役職名・スタッフ名・キャラ名、プレイヤー性格ラベル、詠唱ラベルでした。\n- **固有名 / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。ファイルは見返していないので、JSON構文の目視確認はしていません。dialog名はすべて null で、クレジット、DLC説明、ミッドナイト諸島のモードの文言です。\n\n会社名やスタジオ名は原文のまま残しました。\n\n用語: Sound → 音波\n用語: Childre"
     }
   ]
 }
