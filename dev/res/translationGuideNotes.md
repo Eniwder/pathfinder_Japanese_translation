@@ -289,3 +289,7 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
 - 2026-09-29（round175）: Dialogue_AneviaMainでAneviaの出身にまつわるNidal/Nisroch/
   Kuthites/Silent Shroud/Shelynitesが未登録だったためglossaryに追記。あわせて神格名+`-ite(s)`
   （信奉者を指す語）は「〜の信奉者」で統一する旨をtranslationGuide.mdに追記。
+- 2026-09-30（round191）: ドラコニック血脈のブレス説明で`60-foot line of acid`等が
+  「60フィート直線の〜」/「60フィートの直線状の〜」、抵抗表記が「抵抗：電撃20」/「電撃抵抗20」と
+  チャンク間で割れたため、効果範囲・抵抗の定型をtranslationGuide.mdに追記。
+  あわせてブラッドレイジャーのアーキタイプHag-Riven/Reformed Fiendをglossaryに追記。

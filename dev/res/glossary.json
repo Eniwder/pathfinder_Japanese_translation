@@ -16325,6 +16325,18 @@
       "source": "Ascended",
       "target": "昇神者",
       "note": "スターストーンの試練を越えて神となった元定命の者たち。"
+    },
+    {
+      "source": "Hag-Riven",
+      "target": "ハグリヴン",
+      "category": "Archetype",
+      "note": "ブラッドレイジャーのアーキタイプ。ハグ化の儀式を生き延びた者。"
+    },
+    {
+      "source": "Reformed Fiend",
+      "target": "改心したフィーンド",
+      "category": "Archetype",
+      "note": "ブラッドレイジャーのアーキタイプ。"
     }
   ]
 }
