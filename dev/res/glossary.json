@@ -16337,6 +16337,16 @@
       "target": "改心したフィーンド",
       "category": "Archetype",
       "note": "ブラッドレイジャーのアーキタイプ。"
+    },
+    {
+      "source": "Knights of the Wall",
+      "target": "壁の騎士",
+      "note": "魔術師王の打倒に貢献した将軍を崇めるキャヴァリアーの一派（アーキタイプ名「Knight of the Wall」）。"
+    },
+    {
+      "source": "Order of the Paw",
+      "target": "パウの騎士団",
+      "note": "ハーフリングを守るキャヴァリアーの騎士団（アーキタイプ名「Cavalier of the Paw」＝パウのキャヴァリアー）。"
     }
   ]
 }
