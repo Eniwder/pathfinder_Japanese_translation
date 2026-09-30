@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 61050,
-  "updatedAt": "2026-09-30T07:56:25.029Z",
+  "nextStart": 61350,
+  "updatedAt": "2026-09-30T08:02:29.139Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3577,6 +3577,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round206/",
       "coveredDialogs": [],
       "note": "v2リライト第206弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認済みで、スクリプトによる検証はしていません（実行権限がないため）。\n\n- **dialog:** すべて `dialog: null` のシステムテキストです。シフターのアーキタイプ（フィーンドフレッシュ、グリフォンハート、レイジシェイパー、ウェアタッチド、ワイルド・エフィ / `chunk_0001.translations.json` を書き込みました。100件すべてを訳しています。行数の目視では JSON の形は合っていますが、パースや `import --dry-run` は実行していません。\n\n- **会話**: すべて `dialog: null` のクラス・能力説明文で、話者はいません。スカルドと、そのアーキタイプ（ハント・コーラー、インサイター等）およびス"
+    },
+    {
+      "start": 61050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round207/",
+      "coveredDialogs": [],
+      "note": "v2リライト第207弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に、全 entry を訳して書き込みました。`chunk_0000.json` 自体は編集していません。JSON として正しいかは、コマンドを実行できないため目視確認のみです。\n\n- **件数**: 200 件です。dialog はすべて `null` で、会話ではなくクラス・血脈の能力説明とその名称です（ブラッドシーカー、デリヴァラー / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました（dialog は全件 null で、会話ではなくソーサラー血脈・ジオマンサー・九尾の継承者などのクラス／特徴の説明文です）。JSON の検証やスクリプト実行はしていません。\n\n- **`<ctrl_N/>` の順序**: 全 entry で番号順を保つよう調整しました。原文と語順が違う箇所は文を"
     }
   ]
 }

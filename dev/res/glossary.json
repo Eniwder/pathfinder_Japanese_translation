@@ -16445,6 +16445,12 @@
       "target": "変身の達人",
       "category": "Mythic",
       "note": "神話能力。シフターの変身系能力の持続時間を永続化する。"
+    },
+    {
+      "source": "Nine-Tailed Heir",
+      "target": "九尾の継承者",
+      "category": "Archetype",
+      "note": "キツネ用ソーサラーのアーキタイプ。血脈名としても使われる。"
     }
   ]
 }
