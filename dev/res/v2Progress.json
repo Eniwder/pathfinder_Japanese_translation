@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 59550,
-  "updatedAt": "2026-09-30T03:30:52.559Z",
+  "nextStart": 59850,
+  "updatedAt": "2026-09-30T03:40:00.712Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3537,6 +3537,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round201/",
       "coveredDialogs": [],
       "note": "v2リライト第201弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json に、全 entry を訳して書き込みました。\n\n- **件数:** 約190件を訳しました。chunk 内の `keys` は 200 と書かれていますが、キー数の照合はしていません。\n- **dialog 名:** すべて `dialog: null` で、オラクルのクラス・神秘・啓示・呪いの説明文とその名称です。会話は含まれません。\n- / 100件を全て訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話（dialog）は全て `null` で、神託者・パラディンの啓示やクラス特徴の名称と説明文です。JSON 構文は目視で確認しましたが、スクリプトによる検証はしていません。\n\n- **制御タグ:** `<ctrl_N/>` の順序を保つため、一部の文は語順を変えて"
+    },
+    {
+      "start": 59550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round202/",
+      "coveredDialogs": [],
+      "note": "v2リライト第202弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。会話（dialog）はなく、全件 `dialog: null` のクラス能力・アーキタイプ・慈悲などの説明文と名称です。JSON構文は見て確認しました。パーサーでの検証やimportのdry-runは、この環境では実行していません。\n\n**glossary未登録で独 / `chunk_0001.translations.json` に100件すべてを訳して書き込みました。JSON構文と `<ctrl_N/>` の順序は、書き込み後に目視で確認しました。スクリプトによる検証や `import --dry-run` は権限がないため実行していません。\n\n登場した会話（dialog）はありません（dialog は全件 null）。内容はパラディンの「悪を討つ一撃」と信仰"
     }
   ]
 }
