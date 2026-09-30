@@ -400,3 +400,77 @@ export function collectDialogs(chunksDir, chunkFiles) {
   }
   return dialogs;
 }
+
+// import --dry-run が invalid（<ctrl_N/>の欠落・過剰など）を出したとき、1回だけ自動修復を
+// 依頼するためのファイル名。chunk_NNNN.json のパターンに一致しない名前にしておく
+// （runExtract の再開判定などで chunk と誤認されないように）。
+export const REPAIR_FILE_NAME = '_repair.json';
+
+// toBatchData.js import --dry-run の標準出力から invalid entry の一覧を拾い、chunk本体から
+// 原文・現訳文・タグ値を添えて返す。"unknown key"（UUID書き写し誤り）はタグ修正では
+// 直せないので対象外。import は先頭20件しか列挙しないため、21件目以降は拾えない
+// （修復後の再検証で残っていれば従来通り止まる）。
+export function collectInvalidEntries(chunksDir, importOutput) {
+  const items = [];
+  const re = /^\s+([0-9a-f-]{36}) \((chunk_\d+\.json)\): (.+)$/gm;
+  for (const m of importOutput.matchAll(re)) {
+    const [, key, file, problems] = m;
+    if (problems.includes('unknown key')) continue;
+    const e = chunkEntriesAt(path.join(chunksDir, file)).find((x) => x.key === key);
+    if (!e || e.translation == null) continue;
+    items.push({ key, file, problems, text: e.text, translation: e.translation, tags: e.tags ?? e.controlTags ?? [] });
+  }
+  return items;
+}
+
+// 対象entryの原文・現訳文をプロンプトに直接埋め込むので、Claudeは数百KBのchunkを
+// Readする必要がない（Writeを1回するだけで済む）。
+export function buildRepairPrompt(chunksDirRel, items) {
+  const list = items
+    .map((it) => JSON.stringify({ key: it.key, problems: it.problems, text: it.text, tags: it.tags, translation: it.translation }, null, 1))
+    .join('\n');
+  return `翻訳済みchunkのうち、制御タグ（<ctrl_N/>）の整合チェックに失敗したentryの修正だけをお願いします。
+
+【対象entry】（text=英語原文、tags=各<ctrl_N/>の中身。<ctrl_0/>がtags[0]に対応。translation=現在の訳文、problems=検出された問題）
+${list}
+
+【やること】
+1. 各entryについて、text に含まれる <ctrl_N/> がすべて translation にちょうど1回ずつ現れるよう
+   translation を直す。多くの場合、原文でタグに囲まれた語（tagsの {g|Encyclopedia:...} が示す用語）の
+   訳語を、対応する <ctrl_N/>〜<ctrl_N+1/> で囲めばよい（例: "<ctrl_2/>DC<ctrl_3/>"）。
+   - 訳文の言い回しは変えず、タグの挿入・削除・位置修正だけの最小限の変更にとどめること。
+   - 原文にないタグ（text に存在しない <ctrl_N/>）が translation にあれば取り除く。
+   - <ctrl_N/> トークン自体は一字一句変えない。
+2. 結果を新規ファイル ${chunksDirRel}/${REPAIR_FILE_NAME} に
+   { "<key>": "<修正後の訳文>", ... } というフラットなJSONとして、Writeツールで1回だけ書き込む。
+   上記の全entryを含めること。
+3. それ以外のファイル（chunk本体を含む）は一切読まない・編集しないこと。質問・確認もしないこと
+   （非対話の自動実行環境なので誰も返答できない）。Bash等の実行は不可能なので試みないこと。
+
+終わったら「何件直したか」を1行で報告して終了してください。`;
+}
+
+// buildRepairPromptがWriteした修正訳を、対象entryにだけ上書きで反映する（mergeTranslationsと
+// 違い、既に埋まっているtranslationを置き換えるのが目的）。反映後、中間ファイルは削除する。
+export function applyRepairs(chunksDir, items) {
+  const repairPath = path.join(chunksDir, REPAIR_FILE_NAME);
+  if (!fs.existsSync(repairPath)) return { applied: 0, hasFile: false };
+  const repairs = JSON.parse(fs.readFileSync(repairPath, 'utf8'));
+  let applied = 0;
+  for (const file of [...new Set(items.map((it) => it.file))]) {
+    const keys = new Set(items.filter((it) => it.file === file).map((it) => it.key));
+    const chunkPath = path.join(chunksDir, file);
+    const chunkObj = JSON.parse(fs.readFileSync(chunkPath, 'utf8'));
+    const entries = Array.isArray(chunkObj.entries) ? chunkObj.entries : (chunkObj.blocks ?? []).flatMap((b) => b.entries ?? []);
+    for (const e of entries) {
+      const t = repairs[e.key];
+      if (keys.has(e.key) && typeof t === 'string' && t.trim() !== '') {
+        e.translation = t;
+        applied++;
+      }
+    }
+    fs.writeFileSync(chunkPath, JSON.stringify(chunkObj, null, 2) + '\n');
+  }
+  fs.rmSync(repairPath);
+  return { applied, hasFile: true };
+}

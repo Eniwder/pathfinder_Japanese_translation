@@ -56,6 +56,9 @@
 //   - dev/res/v2Progress.json が存在し、nextStart が正しいこと
 //
 // 再開について:
+//   - 全chunk翻訳後の import --dry-run で invalid（<ctrl_N/>の欠落等）が出た場合、該当entryの
+//     原文・訳文だけを渡してタグ修正を1回だけClaudeに依頼し（round<N>_repair）、再検証する。
+//     それでも残れば従来通り停止する。
 //   - claude -p の呼び出しが利用上限などで失敗した場合、エラーメッセージから
 //     再開時刻（"resets H:MMam/pm" 等）を検出できればそこまで、できなければ
 //     --retry-wait-minutes（デフォルト20分）待ってから自動的に再試行する
@@ -75,6 +78,9 @@ import {
   mergeTranslations as mergeTranslationsIn,
   buildNotesPrompt,
   collectDialogs as collectDialogsIn,
+  collectInvalidEntries,
+  buildRepairPrompt,
+  applyRepairs,
 } from './helper/roundPrompts.mjs';
 
 const args = Object.fromEntries(
@@ -602,12 +608,27 @@ function runRound(start, roundNo) {
     summaries.push(result.trim().slice(0, 200));
   }
 
-  const { out, untranslated, invalid } = validateChunks();
+  let { out, untranslated, invalid } = validateChunks();
   console.log(out);
+  if (invalid > 0) {
+    // タグ欠落は大半が「用語を<ctrl_N/>で囲み忘れた」だけの機械的なミスなので、止める前に
+    // 1回だけ該当entryの修正をClaudeに依頼する。直らなければ従来通り止める。
+    const items = collectInvalidEntries(chunksDir, out);
+    if (items.length) {
+      console.log(`
+--- invalid ${items.length}件のタグ修正を1回だけ自動依頼 ---`);
+      ensureSessionBudget(`round${roundNo}_repair`);
+      callClaude(buildRepairPrompt('dev/lang/chunks', items), `round${roundNo}_repair`, chunkModel);
+      const { applied, hasFile } = applyRepairs(chunksDir, items);
+      console.log(hasFile ? `${applied}件の修正訳を反映しました。` : '⚠ 修正ファイルが生成されませんでした。');
+      ({ out, untranslated, invalid } = validateChunks());
+      console.log(out);
+    }
+  }
   if (invalid > 0) {
     throw new Error(
       `import --dry-run で invalid が${invalid}件あります。dev/lang/chunks/ を確認してから` +
-      ' 手動で直すか、このroundをやり直してください（自動化は続行しません）。'
+      ' 手動で直すか、このroundをやり直してください（自動修復1回後も解消せず。自動化は続行しません）。'
     );
   }
   if (untranslated > 0) {
