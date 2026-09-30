@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 61950,
-  "updatedAt": "2026-09-30T08:19:34.442Z",
+  "nextStart": 62250,
+  "updatedAt": "2026-09-30T12:31:10.419Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3601,6 +3601,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round209/",
       "coveredDialogs": [],
       "note": "v2リライト第209弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON 構文と `<ctrl_N/>` の並びは、ツールが使えなかったので機械検証はしておらず、書きながら目視で確認しただけです。\n\n登場した dialog はなく、すべて `dialog: null` のスキル・血脈・クラス能力・呪文の説明文 / 100件すべてを訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、ウォープリーストのクラス・アーキタイプ説明とクラス能力名・説明文のみです。書き込み内容は目視でJSONとして確認していません。ファイルの読み直しも、`import --dry-run` による `<ctrl_N/>` の検証もしていませ"
+    },
+    {
+      "start": 61950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round210/",
+      "coveredDialogs": [],
+      "note": "v2リライト第210弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog）はなく、ウォープリーストの祝福・領域と盾の特殊能力の説明文と名称だけのチャンクです。書き込み後の読み返しやJSON検証、`<ctrl_N/>` の突き合わせはしていません。\n\nglossary未登録の語は次の訳語にしました。追記をご検討ください。\n- Shieldbearer: / chunk_0001 の100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\nすべて `dialog: null` のウォープリーストの祝福・能力説明で、会話はありません。\n\n- **glossary未登録の語:** アンデッド・ベイン、フレイミング、フロスト"
     }
   ]
 }
