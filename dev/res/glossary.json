@@ -16451,6 +16451,18 @@
       "target": "九尾の継承者",
       "category": "Archetype",
       "note": "キツネ用ソーサラーのアーキタイプ。血脈名としても使われる。"
+    },
+    {
+      "source": "Fey Bloodline",
+      "target": "フェイの血脈",
+      "category": "Caster Terms",
+      "note": "ソーサラーの血脈。Feyは既存訳（フェイの魔術等）に合わせフェイで統一。"
+    },
+    {
+      "source": "Infernal Bloodline",
+      "target": "地獄の血脈",
+      "category": "Caster Terms",
+      "note": "ソーサラーの血脈。Infernalは既存訳（地獄の抵抗等）に合わせ「地獄の」で統一。"
     }
   ]
 }

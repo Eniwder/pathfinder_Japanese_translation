@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 61350,
-  "updatedAt": "2026-09-30T08:02:29.139Z",
+  "nextStart": 61650,
+  "updatedAt": "2026-09-30T08:10:40.206Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3585,6 +3585,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round207/",
       "coveredDialogs": [],
       "note": "v2リライト第207弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に、全 entry を訳して書き込みました。`chunk_0000.json` 自体は編集していません。JSON として正しいかは、コマンドを実行できないため目視確認のみです。\n\n- **件数**: 200 件です。dialog はすべて `null` で、会話ではなくクラス・血脈の能力説明とその名称です（ブラッドシーカー、デリヴァラー / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました（dialog は全件 null で、会話ではなくソーサラー血脈・ジオマンサー・九尾の継承者などのクラス／特徴の説明文です）。JSON の検証やスクリプト実行はしていません。\n\n- **`<ctrl_N/>` の順序**: 全 entry で番号順を保つよう調整しました。原文と語順が違う箇所は文を"
+    },
+    {
+      "start": 61350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round208/",
+      "coveredDialogs": [],
+      "note": "v2リライト第208弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json を書き込み済みです。全200件を訳しました。dialog はすべて null で、会話ではなくソーサラー血脈（竜・元素・天上）の能力・呪文説明です。\n\n- **未確認:** JSON 構文は目視確認できていません。Bash が使えず、パース検証も `<ctrl_N/>` の個数・順序の照合もしていません。`import --dry-run` / `chunk_0001.translations.json` に100件を書き込みました（省略なし）。書き込み後に確認できたのは、誤記を見つけて直した4か所（`</ctrl_9/>` の typo、エンタングルの `<ctrl_N/>` 順序、魅惑副系統の余分な語、`swift action` の未訳）だけです。全体のJSON検証や `import --dry-run` は権限上できていないため、"
     }
   ]
 }
