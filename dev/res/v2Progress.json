@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 66150,
-  "updatedAt": "2026-09-30T22:45:06.714Z",
+  "nextStart": 66450,
+  "updatedAt": "2026-09-30T22:52:46.050Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3713,6 +3713,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round223/",
       "coveredDialogs": [],
       "note": "v2リライト第223弾（runRoundLoop.mjs による自動実行）。 200件を訳して、`chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。書き込んだ JSON の構文は目視で確認しました。\n\n登場した会話（dialog）はなく、全件が会話に属さないアイテム名・説明文です（ブレイサー・クローク・ケープ類）。\n\n- **残した箇所:** 原文の綴りが崩れている部分は、そのまま意味を通し / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、会話ではなくアイテム名・説明文・呪文説明・日記などです。JSON の構文は目視で確認しましたが、`import --dry-run` は走らせていません。\n\n気づいた点が2つあります。\n- `<ctrl_N/>` は一つも削らず、順序も変えていません。そ"
+    },
+    {
+      "start": 66150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round224/",
+      "coveredDialogs": [],
+      "note": "v2リライト第224弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件を訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog）はなく、全件が `dialog: null` のアイテム名と説明文（グローブ・膝当て・ロッド・ローブ・ヘルムなど）です。`<ctrl_N/>` は順序を保つため語順を調整した箇所があります。\n\nJSON構文は目視確認していません。未訳のまま残したキーはありませ / 100件すべてを訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込んだ。dialog はすべて null で、ヘッドバンド・ヘルメット・帽子などの装備アイテム名と説明文だった。\n\n書き込み後に気づいて、コーン・オヴ・コールドの帽子の説明文で `<ctrl_1/>` の欠落を1箇所直した。ほかのタグの個数と順序は目視でしか確認しておらず、コ"
     }
   ]
 }
