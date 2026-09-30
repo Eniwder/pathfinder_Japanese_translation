@@ -16428,6 +16428,11 @@
       "source": "Endrin Military Academy",
       "target": "エンドリン軍事学院",
       "note": "コルヴォサの軍学校。セーブル・カンパニーの訓練所。"
+    },
+    {
+      "source": "Horseman of Pestilence",
+      "target": "疫病の騎士",
+      "note": "アバドンの四騎士の一柱。シャーマンのアーキタイプ「疫病の預言者（Prophet of Pestilence）」の契約相手。"
     }
   ]
 }
