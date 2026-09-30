@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 58650,
-  "updatedAt": "2026-09-30T03:11:53.777Z",
+  "nextStart": 58950,
+  "updatedAt": "2026-09-30T03:18:21.813Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3513,6 +3513,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round198/",
       "coveredDialogs": [],
       "note": "v2リライト第198弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。会話（dialog）はなく、すべてキネティシストのクラス能力・インフュージョン・特技などのルール文と名称です。\n\n書き込み後の JSON 構文チェックと `<ctrl_N/>` の検証（`import --dry-run`）は、指示どおり実行していません。書き込んだ内容は目視で確認しただけです。 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、メイガスとロアマスターのクラス能力・秘奥の説明文です。\n\n- **glossary未登録の語:** Anarchic=アナーキック、Axiomatic=アクシオマティック、Holy=ホーリー、Brilliant Energy=ブリリアント・エナジー、Ghost Touc"
+    },
+    {
+      "start": 58650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round199/",
+      "coveredDialogs": [],
+      "note": "v2リライト第199弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件の訳文を書き込み済みです。書き込み後に、`<ctrl_N/>` の順序が原文と入れ替わっていた約30件を直しました。ただし、書き込んだ内容の確認は目視だけで、JSON構文の検証や `import --dry-run` は実行していません。\n\n- **登場した会話:** dialog名はすべて null です。メイガスのクラス / `chunk_0001.translations.json` に 100 件すべてを訳して書き込みました。JSON 構文と `<ctrl_N/>` の内容は目視で確認済みで、ツールでの検証はしていません。\n\n- 対象は会話なし（`dialog: null`）のクラス能力・特技の説明文とその名称だけです（メイガス、モンク、酔拳士、クオータースタッフ体得者、スケイルド・フィスト）。\n- 一部の ent"
     }
   ]
 }

@@ -16353,6 +16353,12 @@
       "target": "エーテル界",
       "category": "Location",
       "note": "物質界と重なり合う次元界。キネティシストの力の源。"
+    },
+    {
+      "source": "Arcane Weapon",
+      "target": "秘術武器",
+      "category": "Class Feature",
+      "note": "メイガスの秘術集積による武器強化能力。「Arcane Weapon (+2)」→「秘術武器（+2）」、「Arcane Weapon Enhancement」→「秘術武器強化」。"
     }
   ]
 }
