@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 58950,
-  "updatedAt": "2026-09-30T03:18:21.813Z",
+  "nextStart": 59250,
+  "updatedAt": "2026-09-30T03:23:39.476Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3521,6 +3521,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round199/",
       "coveredDialogs": [],
       "note": "v2リライト第199弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件の訳文を書き込み済みです。書き込み後に、`<ctrl_N/>` の順序が原文と入れ替わっていた約30件を直しました。ただし、書き込んだ内容の確認は目視だけで、JSON構文の検証や `import --dry-run` は実行していません。\n\n- **登場した会話:** dialog名はすべて null です。メイガスのクラス / `chunk_0001.translations.json` に 100 件すべてを訳して書き込みました。JSON 構文と `<ctrl_N/>` の内容は目視で確認済みで、ツールでの検証はしていません。\n\n- 対象は会話なし（`dialog: null`）のクラス能力・特技の説明文とその名称だけです（メイガス、モンク、酔拳士、クオータースタッフ体得者、スケイルド・フィスト）。\n- 一部の ent"
+    },
+    {
+      "start": 58950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round200/",
+      "coveredDialogs": [],
+      "note": "v2リライト第200弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件すべてを書き込みました。`chunk_0000.json` は編集していません。\n\n- **会話:** すべて `dialog: null` で、会話ではありません。モンクのアーキタイプ、気の力、ドラゴンの説明といったクラス能力・システム文です。文体は translationGuide のルール文の書き方に合わせ、である調で統 / chunk_0001 の100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON の構文と `<ctrl_N/>` の対応は目視で確認しただけで、`import --dry-run` は権限がなく実行していません。\n\n- **会話**: どのブロックも dialog は null で、モンクの気の力・型打撃、クリ"
     }
   ]
 }

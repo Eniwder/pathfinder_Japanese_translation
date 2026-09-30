@@ -293,3 +293,6 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
   「60フィート直線の〜」/「60フィートの直線状の〜」、抵抗表記が「抵抗：電撃20」/「電撃抵抗20」と
   チャンク間で割れたため、効果範囲・抵抗の定型をtranslationGuide.mdに追記。
   あわせてブラッドレイジャーのアーキタイプHag-Riven/Reformed Fiendをglossaryに追記。
+- 2026-09-30（round200）: "Ki Power: Wholeness of Body"が「完全なる肉体」/「全身の完全性」と
+  チャンク間で割れたため、モンクの気の力（Wholeness of Body/Diamond Body/Diamond Soul/Perfect Self）と
+  Defensive Instinct/Cunning Elusionをglossaryに追記（ルール追記はなし）。

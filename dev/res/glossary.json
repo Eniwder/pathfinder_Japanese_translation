@@ -16359,6 +16359,42 @@
       "target": "秘術武器",
       "category": "Class Feature",
       "note": "メイガスの秘術集積による武器強化能力。「Arcane Weapon (+2)」→「秘術武器（+2）」、「Arcane Weapon Enhancement」→「秘術武器強化」。"
+    },
+    {
+      "source": "Wholeness of Body",
+      "target": "完全なる肉体",
+      "category": "Class Feature",
+      "note": "モンクの気の力。「Mass Wholeness of Body」→「マス・完全なる肉体」。"
+    },
+    {
+      "source": "Diamond Body",
+      "target": "ダイヤモンドの肉体",
+      "category": "Class Feature",
+      "note": "モンクの気の力。Mass版は「マス・ダイヤモンドの肉体」。"
+    },
+    {
+      "source": "Diamond Soul",
+      "target": "ダイヤモンドの魂",
+      "category": "Class Feature",
+      "note": "モンクの気の力。Mass版は「マス・ダイヤモンドの魂」。"
+    },
+    {
+      "source": "Perfect Self",
+      "target": "完全なる自己",
+      "category": "Class Feature",
+      "note": "モンクの気の力。"
+    },
+    {
+      "source": "Defensive Instinct",
+      "target": "防御本能",
+      "category": "Class Feature",
+      "note": "シフターのクラス能力（判断力ボーナスをACに加える）。"
+    },
+    {
+      "source": "Cunning Elusion",
+      "target": "巧みな回避",
+      "category": "Class Feature",
+      "note": "バーバリアンのクラス能力。"
     }
   ]
 }
