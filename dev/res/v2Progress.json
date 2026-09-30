@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 57150,
-  "updatedAt": "2026-09-30T01:00:04.693Z",
+  "nextStart": 57450,
+  "updatedAt": "2026-09-30T01:09:00.026Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3473,6 +3473,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round193/",
       "coveredDialogs": [],
       "note": "v2リライト第193弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に、200件すべての訳文を書き込みました。JSON構文はまだ検証していません（スクリプト実行は指示で禁止されているため）。`<ctrl_N/>` の並びは原文順に手で直しましたが、`import --dry-run` は未実行です。`chunk_0000.json` は編集していません。\n\n対象はすべて  / chunk_0001 の100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文の確認は目視のみです。対象はすべて `dialog: null` のシステム文で、領域（Domain）の説明文と能力名でした。\n\n新しく訳したシステム用語がglossaryに無いため、追記を提案します。\n- 領域名は「〜の領域」で"
+    },
+    {
+      "start": 57150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round194/",
+      "coveredDialogs": [],
+      "note": "v2リライト第194弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。書き込み後の JSON 構文と `<ctrl_N/>` の対応は、実行権限がないため機械検証していません。\n\n- **dialog**: 全 entry が `dialog: null` です（会話ではなく領域・クラス能力の説明文）。\n- **気づいた点**: 一部の説明文は `<ctrl_N/>` の / 100件を訳して `chunk_0001.translations.json` に書き込みました。JSON構文の確認と、`<ctrl_N/>` の個数・順序の突き合わせは実行しておらず、書いた内容を見返しただけです。\n\n- **会話**: 全entryの `dialog` が null でした。ドルイドのアーキタイプ（エレメンタル・ランペイジャー、フェイスピーカー、ウィンター・チャイルドなど）のク"
     }
   ]
 }
