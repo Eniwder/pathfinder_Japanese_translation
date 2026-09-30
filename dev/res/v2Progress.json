@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 64350,
-  "updatedAt": "2026-09-30T17:45:02.575Z",
+  "nextStart": 64650,
+  "updatedAt": "2026-09-30T17:53:58.796Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3665,6 +3665,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round217/",
       "coveredDialogs": [],
       "note": "v2リライト第217弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件すべてを訳して書き込んだ。JSON構文は目視で確認したが、`import --dry-run` による検証は実行していない。\n\n- **dialog:** すべて `null`。会話ではなくゲーム内の百科事典・ヘルプ・島の効果説明・クリーチャー名が中心。\n- **気づいた点:**\n  - `<ctrl_N/>` は順序を保つた / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`<ctrl_N/>` の個数と順序は機械検証していません。\n\n会話（dialog）は全件 null で、戦闘・ルールのエンサイクロペディア項目、クリーチャー名、UIヘルプです。スタイルはルールブック調（である調）で統一しました。\n\n- 原文の語順の都合で、一"
+    },
+    {
+      "start": 64350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round218/",
+      "coveredDialogs": [],
+      "note": "v2リライト第218弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。\n\n- **対象の会話:** dialog名はすべて null で、Encyclopedia・チュートリアル・ボーナス用語集・クリーチャー名の項目です。\n- **順序の修正:** 書いた後で、`<ctrl_N/>` の順序が原文と入れ替わっていたり / chunk_0001 の100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`<ctrl_N/>` の個数・順序は目視で確認しました。Bash が拒否されたため、スクリプトによる検証は実行していません。\n\n- **dialog:** すべて `null` のシステム文言とアイテム説明でした（百科事典項目、アミュレット・ペン"
     }
   ]
 }
