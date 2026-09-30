@@ -16470,6 +16470,19 @@
       "category": "Deity",
       "note": "Achaekek（アチャイケク）の異名。マンティス・ゼアロットの能力説明に登場（round209）。",
       "caseSensitive": true
+    },
+    {
+      "source": "Stigmatized Witch",
+      "target": "烙印を負ったウィッチ",
+      "category": "Archetype",
+      "note": "ウィッチのアーキタイプ。呪術説明文中でも頻出（round211）。"
+    },
+    {
+      "source": "Angry Hag",
+      "target": "怒れる老婆",
+      "category": "Deity",
+      "note": "Gyronna（ギローナ）の異名（round211）。",
+      "caseSensitive": true
     }
   ]
 }
