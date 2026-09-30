@@ -16347,6 +16347,12 @@
       "source": "Order of the Paw",
       "target": "パウの騎士団",
       "note": "ハーフリングを守るキャヴァリアーの騎士団（アーキタイプ名「Cavalier of the Paw」＝パウのキャヴァリアー）。"
+    },
+    {
+      "source": "Ethereal Plane",
+      "target": "エーテル界",
+      "category": "Location",
+      "note": "物質界と重なり合う次元界。キネティシストの力の源。"
     }
   ]
 }
