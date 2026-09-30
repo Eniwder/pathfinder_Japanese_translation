@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 65250,
-  "updatedAt": "2026-09-30T18:06:35.714Z",
+  "nextStart": 65550,
+  "updatedAt": "2026-09-30T22:31:17.178Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3689,6 +3689,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round220/",
       "coveredDialogs": [],
       "note": "v2リライト第220弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog）は無く、すべて防具名と防具の説明文です。\n\nJSON の構文は書き込み時に目視で確認しました。スクリプトでの検証は未実施です。\n\n気づいた点:\n- 原文で `<ctrl_N/>` の順序と日本語の語順が合わない文は、かっこ書きや文の入れ替えで順序を保ちました。\n- `Medium/L / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、全件がアーマー・ローブの名称と説明文です。`chunk_0001.json` は編集していません。JSONの目視確認だけで、`<ctrl_N/>` の順序・個数の機械検証は未実施です。\n\n気づいた点:\n- 効果説明文では、`<ctrl_N/>` の順序を保つため、語順を"
+    },
+    {
+      "start": 65250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round221/",
+      "coveredDialogs": [],
+      "note": "v2リライト第221弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。JSON の構文とキー数は自分では検証していません。dialog は全件 `null` で、会話ではなくアイテム名・説明文（防具・ローブ）でした。\n\n`{g|...}` の直後の制御タグ順を保つため、一部の文は語順を英語寄りにしています（例: 「+2の回避ボーナスをACに得る」）。\n\n用語: O / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、防具・ローブ・布の名前と効果説明のみでした。JSON構文は目視で確認しました。\n\n`<ctrl_N/>` は個数・順序とも原文どおりに保つため、日本語の語順を入れ替えた文があります。例えば「ACに+3の回避ボーナス」ではなく「回避ボーナス+3をACに」とし"
     }
   ]
 }

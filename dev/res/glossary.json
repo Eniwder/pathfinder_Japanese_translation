@@ -17453,6 +17453,17 @@
     { "source": "Giant's Nemesis", "target": "ジャイアントの天敵", "category": "Item", "note": "Weapon special ability." },
     { "source": "Owlbeast", "target": "アウルビースト", "category": "Creature" },
     { "source": "Natural weapon", "target": "肉体武器", "category": "Rules" },
-    { "source": "Gaze attack", "target": "凝視攻撃", "category": "Rules" }
+    { "source": "Gaze attack", "target": "凝視攻撃", "category": "Rules" },
+    { "source": "Skald", "target": "スカルド", "category": "Class", "note": "Archetype/class." },
+    { "source": "Warpriest", "target": "ウォープリースト", "category": "Class" },
+    { "source": "Dragonhide", "target": "ドラゴンハイド", "category": "Item", "note": "Armor material." },
+    { "source": "Loremaster", "target": "ロアマスター", "category": "Class", "note": "Prestige class." },
+    { "source": "Combat Maneuvers", "target": "戦技", "category": "Rules" },
+    { "source": "Angelic Aspect, Greater", "target": "グレーター・エンジェリック・アスペクト", "category": "Spell" },
+    { "source": "Mummy", "target": "ミイラ", "category": "Creature" },
+    { "source": "Spellscribed Mummy", "target": "呪文を刻まれたミイラ", "category": "Creature" },
+    { "source": "Bloodlusting Skeleton", "target": "血に飢えたスケルトン", "category": "Creature" },
+    { "source": "Nightshade Nightcrawler", "target": "ナイトシェイド・ナイトクローラー", "category": "Creature" },
+    { "source": "Retriever", "target": "レトリーヴァー", "category": "Creature" }
   ]
 }
