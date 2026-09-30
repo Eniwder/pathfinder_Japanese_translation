@@ -17242,6 +17242,22 @@
     { "source": "Duthtica", "target": "ドゥティカ", "category": "Character" },
     { "source": "Suramgamin", "target": "スラムガミン", "category": "Character" },
     { "source": "Korgath", "target": "コルガス", "category": "Character" },
-    { "source": "Owlcats", "target": "アウルキャッツ", "category": "Organization", "note": "Developer studio." }
+    { "source": "Owlcats", "target": "アウルキャッツ", "category": "Organization", "note": "Developer studio." },
+    { "source": "Graveknight", "target": "グレイヴナイト", "category": "Creature" },
+    { "source": "Bodak", "target": "ボダック", "category": "Creature" },
+    { "source": "Cambion", "target": "カンビオン", "category": "Creature" },
+    { "source": "Incubus", "target": "インキュバス", "category": "Creature" },
+    { "source": "Succubus", "target": "サキュバス", "category": "Creature" },
+    { "source": "Memitim", "target": "メミティム", "category": "Creature" },
+    { "source": "Wildhunt Ranger", "target": "ワイルドハント・レンジャー", "category": "Creature" },
+    { "source": "Tartuk", "target": "タルタク", "category": "Character" },
+    { "source": "Kanerah", "target": "カネラ", "category": "Character" },
+    { "source": "Kalikke", "target": "カリッケ", "category": "Character" },
+    { "source": "Hargulka", "target": "ハルグルカ", "category": "Character" },
+    { "source": "Cephal Lorentus", "target": "ケファル・ロレンタス", "category": "Character" },
+    { "source": "Anevia", "target": "アネヴィア", "category": "Character" },
+    { "source": "Irabeth", "target": "イラベス", "category": "Character" },
+    { "source": "Suture", "target": "スーチャー", "category": "Character", "note": "Pronounced soo-chur; 'サチャー' was a mis-transcription." },
+    { "source": "Staunton", "target": "スタントン", "category": "Character" }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 63450,
-  "updatedAt": "2026-09-30T13:16:36.464Z",
+  "nextStart": 63750,
+  "updatedAt": "2026-09-30T17:32:51.995Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3641,6 +3641,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round214/",
       "coveredDialogs": [],
       "note": "v2リライト第214弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog）はなく、全件 dialog: null です。内容はモンスター能力・テンプレートの説明文、装備・クエスト名、クレジット表記でした。JSONとしての正しさは目視確認のみで、`import --dry-run` は実行していません（権限外のため）。\n\n気づいた点 / `chunk_0001.translations.json` に 100 件中 99 件を書き込みました。`dialog` はすべて null で、ゲーム内クレジットの役職名・会社名・謝辞です。\n\n訳さなかった 1 件は、`d2a5f9c0` の近くで数え落としたものではなく、自分の一覧の照合が取れていない可能性があります。実際の件数は未確認です。書き込んだ JSON は目視で確認しましたが、キー"
+    },
+    {
+      "start": 63450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round215/",
+      "coveredDialogs": [],
+      "note": "v2リライト第215弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。書き込み後の読み返しやJSONの構文検証はしていません。会話ではなく、`dialog` が全て null のクレジット・役職名の羅列です。訳語は職種の定訳（ディレクター、エンジニア等）に揃えています。\n\n用語: Graveknight → グレイヴナイト\n用語: Bodak → ボダック\n用語: Cam / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。dialog 名はすべて null で、ボイスキャスト、スタッフ、プレイヤーボイス種別のクレジット類です。\n\n用語: Anevia → アネヴィア\n用語: Irabeth → イラベス\n用語: Suture → サチャー\n用語: Staunton → スタントン"
     }
   ]
 }
