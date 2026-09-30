@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 65850,
-  "updatedAt": "2026-09-30T22:38:40.807Z",
+  "nextStart": 66150,
+  "updatedAt": "2026-09-30T22:45:06.714Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3705,6 +3705,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round222/",
       "coveredDialogs": [],
       "note": "v2リライト第222弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。`chunk_0000.json` には触れていません。JSON構文は目視で確認しましたが、`<ctrl_N/>` の個数・順序をスクリプトで照合する `import --dry-run` は未実行です。\n\n会話（dialog）はなく、すべてアイテム名・説明文（鎧・ベルト・ブーツ）です。ベルトの説 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。dialog 名はなく、すべて `dialog: null` のアイテム名と説明文（ブーツ・ブレイサー類、Gears 関連の手紙）です。書き込み後の JSON 構文は目視で確認済みです。\n\n気づいた点は、`<ctrl_N/>` の順序を保つため、一部の効果文で語順が少し不自然になっていることです。"
+    },
+    {
+      "start": 65850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round223/",
+      "coveredDialogs": [],
+      "note": "v2リライト第223弾（runRoundLoop.mjs による自動実行）。 200件を訳して、`chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。書き込んだ JSON の構文は目視で確認しました。\n\n登場した会話（dialog）はなく、全件が会話に属さないアイテム名・説明文です（ブレイサー・クローク・ケープ類）。\n\n- **残した箇所:** 原文の綴りが崩れている部分は、そのまま意味を通し / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、会話ではなくアイテム名・説明文・呪文説明・日記などです。JSON の構文は目視で確認しましたが、`import --dry-run` は走らせていません。\n\n気づいた点が2つあります。\n- `<ctrl_N/>` は一つも削らず、順序も変えていません。そ"
     }
   ]
 }
