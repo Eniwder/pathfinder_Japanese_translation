@@ -17437,6 +17437,22 @@
     { "source": "Barding", "target": "バーディング", "category": "Item", "note": "Armor for mounts." },
     { "source": "Breastplate", "target": "ブレストプレート", "category": "Item", "note": "Armor." },
     { "source": "Competence bonus", "target": "技量ボーナス", "category": "Rules" },
-    { "source": "Natural armor bonus", "target": "外皮ボーナス", "category": "Rules" }
+    { "source": "Natural armor bonus", "target": "外皮ボーナス", "category": "Rules" },
+    { "source": "Studded armor", "target": "スタデッドレザー", "category": "Item", "note": "Armor. Same as Studded Leather (no middle dot)." },
+    { "source": "Full Plate", "target": "フルプレート", "category": "Item", "note": "Armor." },
+    { "source": "Half-Plate", "target": "ハーフプレート", "category": "Item", "note": "Armor." },
+    { "source": "Hide Armor", "target": "ハイドアーマー", "category": "Item", "note": "Armor." },
+    { "source": "Leather Armor", "target": "レザーアーマー", "category": "Item", "note": "Armor." },
+    { "source": "Banded Armor", "target": "バンデッドアーマー", "category": "Item", "note": "Armor." },
+    { "source": "Full Barding", "target": "フル・バーディング", "category": "Item", "note": "Armor for mounts." },
+    { "source": "Chainmail Barding", "target": "チェインメイル・バーディング", "category": "Item", "note": "Armor for mounts." },
+    { "source": "Lesser Resistance", "target": "下級〜抵抗", "category": "Item", "note": "Armor special ability tier." },
+    { "source": "Medium Resistance", "target": "中級〜抵抗", "category": "Item", "note": "Armor special ability tier." },
+    { "source": "Greater Resistance", "target": "上級〜抵抗", "category": "Item", "note": "Armor special ability tier." },
+    { "source": "Quenchless Life", "target": "尽きせぬ生命", "category": "Item", "note": "Item property." },
+    { "source": "Giant's Nemesis", "target": "ジャイアントの天敵", "category": "Item", "note": "Weapon special ability." },
+    { "source": "Owlbeast", "target": "アウルビースト", "category": "Creature" },
+    { "source": "Natural weapon", "target": "肉体武器", "category": "Rules" },
+    { "source": "Gaze attack", "target": "凝視攻撃", "category": "Rules" }
   ]
 }

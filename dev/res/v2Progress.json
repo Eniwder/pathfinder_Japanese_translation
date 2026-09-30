@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 64950,
-  "updatedAt": "2026-09-30T18:01:47.008Z",
+  "nextStart": 65250,
+  "updatedAt": "2026-09-30T18:06:35.714Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3681,6 +3681,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round219/",
       "coveredDialogs": [],
       "note": "v2リライト第219弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json に書き込みました。chunk の `keys: 200` に合わせた 200 件を訳したつもりですが、書き込み後に件数は数えていません。\n\n- **会話:** すべて `dialog: null` のアイテム説明文と名称（アミュレット、鎧、素材、抵抗系特殊能力）です。話者はいません。\n- **キーの確認:** 200 件のキーは手で写しまし / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。`dialog` は全件 null で、会話ではなく防具のアイテム説明と名称です。JSON は目視で構文を確認しました。\n\n気づいた点は、一部の文で `<ctrl_N/>` の順序を保つために語順を調整したことです。\n\n用語: Angelic Aspect → エンジェリック・アスペクト\n用語: "
+    },
+    {
+      "start": 64950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round220/",
+      "coveredDialogs": [],
+      "note": "v2リライト第220弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog）は無く、すべて防具名と防具の説明文です。\n\nJSON の構文は書き込み時に目視で確認しました。スクリプトでの検証は未実施です。\n\n気づいた点:\n- 原文で `<ctrl_N/>` の順序と日本語の語順が合わない文は、かっこ書きや文の入れ替えで順序を保ちました。\n- `Medium/L / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、全件がアーマー・ローブの名称と説明文です。`chunk_0001.json` は編集していません。JSONの目視確認だけで、`<ctrl_N/>` の順序・個数の機械検証は未実施です。\n\n気づいた点:\n- 効果説明文では、`<ctrl_N/>` の順序を保つため、語順を"
     }
   ]
 }
