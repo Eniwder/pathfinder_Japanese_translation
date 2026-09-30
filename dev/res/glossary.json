@@ -17553,6 +17553,27 @@
     { "source": "Stalwart Warrior's Luck", "target": "屈強な戦士の幸運", "category": "Item" },
     { "source": "Circlet of Faith", "target": "信仰のサークレット", "category": "Item" },
     { "source": "Frozen Shout", "target": "フローズン・シャウト", "category": "Ability" },
-    { "source": "Bokken", "target": "ボッケン", "category": "Character", "note": "Eccentric alchemist from the Stolen Lands; court master." }
+    { "source": "Bokken", "target": "ボッケン", "category": "Character", "note": "Eccentric alchemist from the Stolen Lands; court master." },
+    { "source": "Broken Trickster", "target": "壊れたトリックスター", "category": "Item" },
+    { "source": "Trickster's Promise", "target": "トリックスターの約束", "category": "Item" },
+    { "source": "Horns of Naraga", "target": "ナラガの角", "category": "Item" },
+    { "source": "Kinetic Diadem", "target": "キネティック・ダイアデム", "category": "Item" },
+    { "source": "Wax Inglebarr", "target": "ワックス・イングルバー", "category": "Character", "note": "Renowned Shield Warden from the far north; helmet owner." },
+    { "source": "Shield Warden", "target": "盾の守護者", "category": "Class", "note": "Title/role of Wax Inglebarr." },
+    { "source": "Goggles of Malocchio", "target": "マロッキオのゴーグル", "category": "Item" },
+    { "source": "Enforcing Gaze", "target": "執行の凝視", "category": "Ability" },
+    { "source": "Maddening Gaze", "target": "狂気の凝視", "category": "Ability" },
+    { "source": "Labyrinth Demodand Destroyer", "target": "迷宮デモダンド・デストロイヤー", "category": "Creature" },
+    { "source": "Perpetually Annoyed Wizard", "target": "常に苛立っているウィザード", "category": "Creature", "note": "Summoned creature tied to hat of mental perfection." },
+    { "source": "Duthica", "target": "デュシカ", "category": "Character", "note": "Legendary lowlander tribal warrior; title passed down." },
+    { "source": "Ring of Protection", "target": "防御の指輪", "category": "Item" },
+    { "source": "Ring of Improved Proficiency", "target": "習熟強化の指輪", "category": "Item" },
+    { "source": "Headband of Perfection", "target": "完全のヘッドバンド", "category": "Item" },
+    { "source": "giant bane", "target": "ジャイアント・ベイン", "category": "Weapon Enchantment" },
+    { "source": "orc bane", "target": "オーク・ベイン", "category": "Weapon Enchantment" },
+    { "source": "goblin bane", "target": "ゴブリン・ベイン", "category": "Weapon Enchantment" },
+    { "source": "fey bane", "target": "フェイ・ベイン", "category": "Weapon Enchantment" },
+    { "source": "Unsummon", "target": "送還", "category": "Ability" },
+    { "source": "Adaptation", "target": "適応", "category": "Ability" }
   ]
 }
