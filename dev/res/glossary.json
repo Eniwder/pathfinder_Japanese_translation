@@ -17224,6 +17224,24 @@
     { "source": "Reality Translocation", "target": "現実転位", "category": "Ability" },
     { "source": "Glitching Magic", "target": "魔法の暴発", "category": "Ability" },
     { "source": "Polymorph Resistance", "target": "ポリモーフ抵抗", "category": "Ability" },
-    { "source": "Demonic Vermin", "target": "デーモンの蟲", "category": "Creature" }
+    { "source": "Demonic Vermin", "target": "デーモンの蟲", "category": "Creature" },
+    { "source": "Petrify", "target": "ペトリファイ", "category": "Ability" },
+    { "source": "Zero State", "target": "ゼロ・ステート", "category": "Ability" },
+    { "source": "Freezing Nothingness", "target": "フリージング・ナッシングネス", "category": "Ability" },
+    { "source": "Adamantine Seal", "target": "アダマンティンの封印", "category": "Item" },
+    { "source": "Iron Seal", "target": "鉄の封印", "category": "Item" },
+    { "source": "Mithral Seal", "target": "ミスラルの封印", "category": "Item" },
+    { "source": "bhoga", "target": "ボーガ", "category": "Creature" },
+    { "source": "Flesh Mansion", "target": "肉の館", "category": "Creature" },
+    { "source": "Flesh Cabin", "target": "肉の小屋", "category": "Creature" },
+    { "source": "Flesh Fortress", "target": "肉の要塞", "category": "Creature" },
+    { "source": "Swarmform", "target": "スウォームフォーム", "category": "Ability" },
+    { "source": "Concealment", "target": "視認困難", "category": "Rule" },
+    { "source": "Shadow Caller", "target": "シャドウ・コーラー", "category": "Creature" },
+    { "source": "Jharsygax", "target": "ジャーシガックス", "category": "Character" },
+    { "source": "Duthtica", "target": "ドゥティカ", "category": "Character" },
+    { "source": "Suramgamin", "target": "スラムガミン", "category": "Character" },
+    { "source": "Korgath", "target": "コルガス", "category": "Character" },
+    { "source": "Owlcats", "target": "アウルキャッツ", "category": "Organization", "note": "Developer studio." }
   ]
 }
