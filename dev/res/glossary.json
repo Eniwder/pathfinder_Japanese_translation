@@ -2335,7 +2335,7 @@
     {
       "source": "Order of the Flaming Lance",
       "target": "燃える槍の騎士団",
-      "note": "ガルフリー女王配下の騎士団。旧リーダーのミアミールが行方不明。"
+      "note": "ガルフリー女王配下の騎士団。旧リーダーのミアミールが行方不明。「紅蓮の穂先」「フレイミング・ランス騎士団」等にしない。「the Flaming Lance」単独でも同じ訳。"
     },
     {
       "source": "Nystra Flamefinger",
@@ -11414,9 +11414,9 @@
     },
     {
       "source": "Burn",
-      "target": "着火",
-      "category": "Ability",
-      "note": "モンスター能力・クラス能力（PF日本語版の訳語）。能力名・ルール用語として使われている場合のみ。一般語では文脈に合わせて訳す。",
+      "target": "燃焼",
+      "category": "Class Feature",
+      "note": "キネティシストの燃焼（PRD日本語版 Occult Adventures の訳語）。「Burn: 3」→「燃焼：3」、「accept burn」→「燃焼を受け入れる」。モンスター能力（炎のクリーチャーが触れた相手を燃え上がらせる能力）の Burn は「着火」。一般語では文脈に合わせて訳す。",
       "caseSensitive": true
     },
     {
@@ -12312,9 +12312,10 @@
     },
     {
       "source": "Water Blast",
-      "target": "水の爆発",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "target": "ウォーター・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
     },
     {
       "source": "Stern Gaze",
@@ -12648,9 +12649,10 @@
     },
     {
       "source": "Cold Blast",
-      "target": "冷気の一撃",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "target": "コールド・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
     },
     {
       "source": "Void Form",
@@ -12841,9 +12843,10 @@
     },
     {
       "source": "Spark of Life",
-      "target": "命の煌き",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "target": "スパーク・オヴ・ライフ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
     },
     {
       "source": "Smite Good",
@@ -13863,9 +13866,10 @@
     },
     {
       "source": "Heat Wave",
-      "target": "熱波",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "target": "ヒート・ウェイヴ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
     },
     {
       "source": "Dragon Bite",
@@ -15387,9 +15391,10 @@
     },
     {
       "source": "Cold Snap",
-      "target": "寒波",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "target": "コールド・スナップ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
     },
     {
       "source": "Everburning Torch",
@@ -15771,9 +15776,10 @@
     },
     {
       "source": "Aerial Evasion",
-      "target": "空中身かわし",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "target": "エアリアル・イヴェイジョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
     },
     {
       "source": "Hex Arcana",
@@ -16482,6 +16488,469 @@
       "target": "怒れる老婆",
       "category": "Deity",
       "note": "Gyronna（ギローナ）の異名（round211）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Kineticist",
+      "target": "キネティシスト",
+      "category": "Class",
+      "note": "PRD日本語版 Occult Adventures の訳語。"
+    },
+    {
+      "source": "Kinetic Blast",
+      "target": "念動力爆発",
+      "category": "Kineticist",
+      "note": "キネティシストのクラス特徴（PRD日本語版）。"
+    },
+    {
+      "source": "Gather Power",
+      "target": "元力収集",
+      "category": "Kineticist",
+      "note": "キネティシストのクラス特徴（PRD日本語版）。"
+    },
+    {
+      "source": "Elemental Overflow",
+      "target": "元素飽和",
+      "category": "Kineticist",
+      "note": "キネティシストのクラス特徴（PRD日本語版）。"
+    },
+    {
+      "source": "Internal Buffer",
+      "target": "内部緩衝",
+      "category": "Kineticist",
+      "note": "キネティシストのクラス特徴（PRD日本語版）。"
+    },
+    {
+      "source": "Supercharge",
+      "target": "収集強化",
+      "category": "Kineticist",
+      "note": "キネティシストのクラス特徴（PRD日本語版）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Metakinesis",
+      "target": "念動力修正",
+      "category": "Kineticist",
+      "note": "キネティシストのクラス特徴（PRD日本語版）。"
+    },
+    {
+      "source": "Wild Talent",
+      "target": "元力",
+      "category": "Kineticist",
+      "note": "キネティシストのクラス特徴（PRD日本語版）。複数形 Wild Talents も同じ。個々の元力名はカタカナ音写（キネティック・ブレード等）。"
+    },
+    {
+      "source": "Infusion",
+      "target": "注入",
+      "category": "Kineticist",
+      "note": "キネティシストの注入元力の総称（PRD日本語版）。form infusion→形態注入、substance infusion→物質注入。個々の注入名はカタカナ音写（バーニング・インフュージョン等）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Flaming Lance",
+      "target": "燃える槍の騎士団",
+      "category": "Organization",
+      "note": "Order of the Flaming Lance の略称。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Flaming Burst",
+      "target": "フレイミング・バースト",
+      "category": "Weapon Ability",
+      "note": "武器の特殊能力（PRD日本語版の訳語）。一語の能力名（フレイミング・キーン等）は translationGuide.md の一覧を参照。"
+    },
+    {
+      "source": "Icy Burst",
+      "target": "アイシー・バースト",
+      "category": "Weapon Ability",
+      "note": "武器の特殊能力（PRD日本語版の訳語）。一語の能力名（フレイミング・キーン等）は translationGuide.md の一覧を参照。"
+    },
+    {
+      "source": "Shocking Burst",
+      "target": "ショッキング・バースト",
+      "category": "Weapon Ability",
+      "note": "武器の特殊能力（PRD日本語版の訳語）。一語の能力名（フレイミング・キーン等）は translationGuide.md の一覧を参照。"
+    },
+    {
+      "source": "Corrosive Burst",
+      "target": "コローシヴ・バースト",
+      "category": "Weapon Ability",
+      "note": "武器の特殊能力（PRD日本語版の訳語）。一語の能力名（フレイミング・キーン等）は translationGuide.md の一覧を参照。"
+    },
+    {
+      "source": "Brilliant Energy",
+      "target": "ブリリアント・エナジー",
+      "category": "Weapon Ability",
+      "note": "武器の特殊能力（PRD日本語版の訳語）。一語の能力名（フレイミング・キーン等）は translationGuide.md の一覧を参照。"
+    },
+    {
+      "source": "Ghost Touch",
+      "target": "ゴースト・タッチ",
+      "category": "Weapon Ability",
+      "note": "武器の特殊能力（PRD日本語版の訳語）。一語の能力名（フレイミング・キーン等）は translationGuide.md の一覧を参照。"
+    },
+    {
+      "source": "Earth Blast",
+      "target": "アース・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Air Blast",
+      "target": "エア・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Electric Blast",
+      "target": "エレクトリック・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Fire Blast",
+      "target": "ファイアー・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Ice Blast",
+      "target": "アイス・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Thunderstorm Blast",
+      "target": "サンダーストーム・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Sandstorm Blast",
+      "target": "サンドストーム・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Steam Blast",
+      "target": "スチーム・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Charged Water Blast",
+      "target": "チャージド・ウォーター・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Plasma Blast",
+      "target": "プラズマ・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Blizzard Blast",
+      "target": "ブリザード・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Blue Flame Blast",
+      "target": "ブルー・フレイム・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Magma Blast",
+      "target": "マグマ・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Mud Blast",
+      "target": "マッド・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Metal Blast",
+      "target": "メタル・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Enveloping Winds",
+      "target": "エンヴェローピング・ウィンズ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Searing Flesh",
+      "target": "シアリング・フレッシュ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Shroud of Water",
+      "target": "シュラウド・オヴ・ウォーター",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Flesh of Stone",
+      "target": "フレッシュ・オヴ・ストーン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Unraveling Infusion",
+      "target": "アンラヴェリング・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Extended Range",
+      "target": "エクステンデッド・レンジ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Entangling Infusion",
+      "target": "エンタングリング・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Kinetic Blade",
+      "target": "キネティック・ブレード",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Grappling Infusion",
+      "target": "グラップリング・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Chilling Infusion",
+      "target": "チリング・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Deadly Earth",
+      "target": "デッドリー・アース",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Burning Infusion",
+      "target": "バーニング・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Fan of Flames",
+      "target": "ファン・オヴ・フレイムズ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Pushing Infusion",
+      "target": "プッシング・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Flash Infusion",
+      "target": "フラッシュ・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Bowling Infusion",
+      "target": "ボウリング・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Magnetic Infusion",
+      "target": "マグネティック・インフュージョン",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Expanded Defense",
+      "target": "イクスパンディッド・ディフェンス",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Air's Reach",
+      "target": "エアズ・リーチ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Aerial Adaptation",
+      "target": "エアリアル・アダプテイション",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Enduring Earth",
+      "target": "エンデュアリング・アース",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Kinetic Healer",
+      "target": "キネティック・ヒーラー",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Cold Adaptation",
+      "target": "コールド・アダプテイション",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Searing Flame",
+      "target": "シアリング・フレイム",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Shimmering Mirage",
+      "target": "シメリング・ミラージュ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Jagged Flesh",
+      "target": "ジャグド・フレッシュ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Skilled Kineticist",
+      "target": "スキルド・キネティシスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Spell Deflection",
+      "target": "スペル・デフレクション",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Tidal Wave",
+      "target": "タイダル・ウェイヴ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Heat Adaptation",
+      "target": "ヒート・アダプテイション",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Fire's Fury",
+      "target": "ファイアーズ・フューリィ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Flame Shield",
+      "target": "フレイム・シールド",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "From the Ashes",
+      "target": "フロム・ジ・アッシュズ",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Basic Aerokinesis",
+      "target": "ベーシック・エアロキネシス",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Basic Geokinesis",
+      "target": "ベーシック・ジオキネシス",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Basic Hydrokinesis",
+      "target": "ベーシック・ハイドロキネシス",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Ride the Blast",
+      "target": "ライド・ザ・ブラスト",
+      "category": "Kineticist",
+      "note": "キネティシストの元力（PRD日本語版 Occult Adventures の訳語）。",
       "caseSensitive": true
     }
   ]
