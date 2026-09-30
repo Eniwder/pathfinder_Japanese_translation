@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 60450,
-  "updatedAt": "2026-09-30T07:34:54.616Z",
+  "nextStart": 60750,
+  "updatedAt": "2026-09-30T07:44:08.627Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3561,6 +3561,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round204/",
       "coveredDialogs": [],
       "note": "v2リライト第204弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に、全200件の訳文を書き込みました。JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません。`<ctrl_N/>` の欠落チェックは未実施です。\n\nこのチャンクに会話（dialog）はなく、`dialog` はすべて null です。中身はローグ、シャーマン、疫 / chunk_0001 の全100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`<ctrl_N/>` の順序は目視で確認しましたが、JSON としてのパース確認やコマンド実行はしていません。\n\n- **dialog:** すべて `dialog: null` で、会話ではなくクラス能力・疫病変異などのルール文と名称です。\n"
+    },
+    {
+      "start": 60450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round205/",
+      "coveredDialogs": [],
+      "note": "v2リライト第205弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を書き込みました。JSON構文と `<ctrl_N/>` の順序・個数は目視で確認しただけで、スクリプトでの検証はしていません。会話ではなく、シャーマンとシフターのクラス説明・呪術名・霊の説明文です（dialog は全件 null）。\n\nglossary に無い語を訳しているので、追記を提案します。\n- Reach Spel / `chunk_0001.translations.json` に100件すべて訳して書き込んだ。ただし `<ctrl_N/>` の並び順に問題が残っている。\n\n- **問題**：日本語の語順に合わせて `<ctrl_N/>` の順序を入れ替えた entry が10件以上ある（例：`ctrl_10/11` が `ctrl_8/9` より前に来ている）。数と内容はすべて保持しているが、「順序を変えない"
     }
   ]
 }

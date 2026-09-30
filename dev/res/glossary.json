@@ -16433,6 +16433,18 @@
       "source": "Horseman of Pestilence",
       "target": "疫病の騎士",
       "note": "アバドンの四騎士の一柱。シャーマンのアーキタイプ「疫病の預言者（Prophet of Pestilence）」の契約相手。"
+    },
+    {
+      "source": "Bolster Spell",
+      "target": "呪文増強",
+      "category": "Feat",
+      "note": "呪文修正特技。"
+    },
+    {
+      "source": "Master Shapeshifter",
+      "target": "変身の達人",
+      "category": "Mythic",
+      "note": "神話能力。シフターの変身系能力の持続時間を永続化する。"
     }
   ]
 }

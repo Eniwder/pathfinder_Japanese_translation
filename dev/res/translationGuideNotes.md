@@ -298,3 +298,6 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
   Defensive Instinct/Cunning Elusionをglossaryに追記（ルール追記はなし）。
 - 2026-09-30（round201）: クラス名"Oracle"が「オラクル」/「神託者」と割れたため、クラス名もカタカナ
   音写とする旨をtranslationGuide.mdに追記。Oracleと呪文修正特技Empower Spell/Quicken Spellをglossaryに追記。
+- 2026-09-30（round205）: マンティコアの子の棘説明で`bypass DR`が「ダメージ減少〜を貫通」/「DR〜を無視」、
+  `primary natural attack`が「主要」/「第一」と割れたため定型をtranslationGuide.mdに追記。
+  Bolster Spell/Master Shapeshifterをglossaryに追記。
