@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 57750,
-  "updatedAt": "2026-09-30T01:18:45.003Z",
+  "nextStart": 58050,
+  "updatedAt": "2026-09-30T02:32:41.317Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3489,6 +3489,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round195/",
       "coveredDialogs": [],
       "note": "v2リライト第195弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。\n\n- **会話(dialog)名:** ありません。全件 `dialog: null` のシステムテキストです。内容はエレメンタルへの自然の化身、デュエリスト、エルドリッチ・ナイト、ファイタ / chunk_0001 の全100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON の構文と `<ctrl_N/>` の並び順は自分の目で確認しただけで、スクリプトによる検証はしていません。会話（dialog）は全件 `null` で、スキル・特技・クラス能力の説明文と名称ばかりです。\n\n- **glossary への"
+    },
+    {
+      "start": 57750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round196/",
+      "coveredDialogs": [],
+      "note": "v2リライト第196弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 200 件を訳し、`chunk_0000.translations.json` に書き込みました。Write 後の読み返しと JSON の構文確認、import の dry-run は実施していません。\n\n- **会話**: 対象はすべて `dialog: null` のクラス・特技の説明文と名称です（ヘルナイト、ハンター、フォレスター、結託するならず者など）。会話はな / chunk_0001 の100件をすべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。コマンド実行はしていないので、JSON の構文は目視で確認しただけです。対象はすべて `dialog: null` の能力・クラス説明文で、タンデム・エグゼキューショナー、アーバン・ハンター、ワンダリング・マークスマン、インクイジター、フェイ"
     }
   ]
 }
