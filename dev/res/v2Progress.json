@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 59250,
-  "updatedAt": "2026-09-30T03:23:39.476Z",
+  "nextStart": 59550,
+  "updatedAt": "2026-09-30T03:30:52.559Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3529,6 +3529,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round200/",
       "coveredDialogs": [],
       "note": "v2リライト第200弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件すべてを書き込みました。`chunk_0000.json` は編集していません。\n\n- **会話:** すべて `dialog: null` で、会話ではありません。モンクのアーキタイプ、気の力、ドラゴンの説明といったクラス能力・システム文です。文体は translationGuide のルール文の書き方に合わせ、である調で統 / chunk_0001 の100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON の構文と `<ctrl_N/>` の対応は目視で確認しただけで、`import --dry-run` は権限がなく実行していません。\n\n- **会話**: どのブロックも dialog は null で、モンクの気の力・型打撃、クリ"
+    },
+    {
+      "start": 59250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round201/",
+      "coveredDialogs": [],
+      "note": "v2リライト第201弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json に、全 entry を訳して書き込みました。\n\n- **件数:** 約190件を訳しました。chunk 内の `keys` は 200 と書かれていますが、キー数の照合はしていません。\n- **dialog 名:** すべて `dialog: null` で、オラクルのクラス・神秘・啓示・呪いの説明文とその名称です。会話は含まれません。\n- / 100件を全て訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話（dialog）は全て `null` で、神託者・パラディンの啓示やクラス特徴の名称と説明文です。JSON 構文は目視で確認しましたが、スクリプトによる検証はしていません。\n\n- **制御タグ:** `<ctrl_N/>` の順序を保つため、一部の文は語順を変えて"
     }
   ]
 }

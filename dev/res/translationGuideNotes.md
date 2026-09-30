@@ -296,3 +296,5 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
 - 2026-09-30（round200）: "Ki Power: Wholeness of Body"が「完全なる肉体」/「全身の完全性」と
   チャンク間で割れたため、モンクの気の力（Wholeness of Body/Diamond Body/Diamond Soul/Perfect Self）と
   Defensive Instinct/Cunning Elusionをglossaryに追記（ルール追記はなし）。
+- 2026-09-30（round201）: クラス名"Oracle"が「オラクル」/「神託者」と割れたため、クラス名もカタカナ
+  音写とする旨をtranslationGuide.mdに追記。Oracleと呪文修正特技Empower Spell/Quicken Spellをglossaryに追記。

@@ -16395,6 +16395,24 @@
       "target": "巧みな回避",
       "category": "Class Feature",
       "note": "バーバリアンのクラス能力。"
+    },
+    {
+      "source": "Oracle",
+      "target": "オラクル",
+      "category": "Class",
+      "note": "神秘と呪いを持つ信仰系呪文使いクラス。「神託者」とは訳さない。"
+    },
+    {
+      "source": "Empower Spell",
+      "target": "呪文威力強化",
+      "category": "Feat",
+      "note": "呪文修正特技。"
+    },
+    {
+      "source": "Quicken Spell",
+      "target": "呪文即時化",
+      "category": "Feat",
+      "note": "呪文修正特技。"
     }
   ]
 }
