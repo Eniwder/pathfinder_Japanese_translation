@@ -17574,6 +17574,18 @@
     { "source": "goblin bane", "target": "ゴブリン・ベイン", "category": "Weapon Enchantment" },
     { "source": "fey bane", "target": "フェイ・ベイン", "category": "Weapon Enchantment" },
     { "source": "Unsummon", "target": "送還", "category": "Ability" },
-    { "source": "Adaptation", "target": "適応", "category": "Ability" }
+    { "source": "Adaptation", "target": "適応", "category": "Ability" },
+    { "source": "Firesnake", "target": "ファイアスネーク", "category": "Spell" },
+    { "source": "Summon Monster VIII", "target": "サモン・モンスターVIII", "category": "Spell" },
+    { "source": "Iceplant", "target": "アイスプラント", "category": "Hex", "note": "Witch hex." },
+    { "source": "Inherent bonus", "target": "天賦ボーナス", "category": "Rule" },
+    { "source": "Heavy Shield", "target": "ヘヴィ・シールド", "category": "Item" },
+    { "source": "Threat range", "target": "クリティカル可能域", "category": "Rule" },
+    { "source": "Chains of Light", "target": "チェインズ・オヴ・ライト", "category": "Ability" },
+    { "source": "Bashing Shield", "target": "バッシング・シールド", "category": "Weapon Enchantment" },
+    { "source": "Dead Inside", "target": "内なる死", "category": "Ability" },
+    { "source": "Stevanius the Rotten", "target": "腐れ者ステヴァニウス", "category": "Character", "note": "Lich whose phylactery is set in a ring." },
+    { "source": "Phylactery", "target": "フィラクタリー", "category": "Item" },
+    { "source": "Ring of Circumstances", "target": "状況の指輪", "category": "Item" }
   ]
 }

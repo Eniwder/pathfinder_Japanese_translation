@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 66750,
-  "updatedAt": "2026-09-30T23:00:59.388Z",
+  "nextStart": 67050,
+  "updatedAt": "2026-09-30T23:08:57.006Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3729,6 +3729,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round225/",
       "coveredDialogs": [],
       "note": "v2リライト第225弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。JSON は書き込み後に目視で確認しましたが、パーサでの検証はしていません。対象は全件 `dialog: null` のアイテム・能力の説明文と名称（兜・帽子・ヘッドバンド・壊れたトリックスターの仮面など）で、会話はありません。\n\n気づいた点:\n- 原文に `Thee times per day / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON は目視で確認済みです。`dialog` は全件 null で、会話ではなくアイテム名と説明文でした。\n\n- 用語: 原文の `Hex` が出てきた箇所は「ヘクス」としました。\n\n用語: Enforcing Gaze → 執行の凝視\n用語: Maddening Gaze → 狂気の凝視\n用"
+    },
+    {
+      "start": 66750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round226/",
+      "coveredDialogs": [],
+      "note": "v2リライト第226弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しましたが、`import --dry-run` は走らせていません。キー数は原文と同じ200件で、手書きでミスしていた1件は直してあります。残りのキーの綴りは数えただけで、1件ずつの照合はしていません。\n\n会話（dialog）はすべて `null` で、内容は指輪・装身具の / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON の検証コマンドは実行していません。目視では構文と `<ctrl_N/>` の個数・順序に問題はありません。対象はすべて `dialog` が null のアイテム説明と名称です（指輪・盾の効果文、強化値表記など）。\n\n- 語順が英語と日本語で入れ替わる箇所は、`<ctrl_N/>` の順"
     }
   ]
 }
