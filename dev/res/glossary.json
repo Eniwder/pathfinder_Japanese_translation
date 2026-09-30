@@ -16413,6 +16413,21 @@
       "target": "呪文即時化",
       "category": "Feat",
       "note": "呪文修正特技。"
+    },
+    {
+      "source": "Sable Company",
+      "target": "セーブル・カンパニー",
+      "note": "コルヴォサのヒッポグリフ騎兵部隊。アーキタイプ名 Sable Company Marine は「セーブル・カンパニーの海兵」。"
+    },
+    {
+      "source": "Korvosa",
+      "target": "コルヴォサ",
+      "note": "ヴァリシアの都市。"
+    },
+    {
+      "source": "Endrin Military Academy",
+      "target": "エンドリン軍事学院",
+      "note": "コルヴォサの軍学校。セーブル・カンパニーの訓練所。"
     }
   ]
 }

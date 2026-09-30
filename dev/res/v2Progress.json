@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 59850,
-  "updatedAt": "2026-09-30T03:40:00.712Z",
+  "nextStart": 60150,
+  "updatedAt": "2026-09-30T03:45:48.528Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3545,6 +3545,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-09-30_round202/",
       "coveredDialogs": [],
       "note": "v2リライト第202弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。会話（dialog）はなく、全件 `dialog: null` のクラス能力・アーキタイプ・慈悲などの説明文と名称です。JSON構文は見て確認しました。パーサーでの検証やimportのdry-runは、この環境では実行していません。\n\n**glossary未登録で独 / `chunk_0001.translations.json` に100件すべてを訳して書き込みました。JSON構文と `<ctrl_N/>` の順序は、書き込み後に目視で確認しました。スクリプトによる検証や `import --dry-run` は権限がないため実行していません。\n\n登場した会話（dialog）はありません（dialog は全件 null）。内容はパラディンの「悪を討つ一撃」と信仰"
+    },
+    {
+      "start": 59850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-09-30_round203/",
+      "coveredDialogs": [],
+      "note": "v2リライト第203弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を訳して書き込み済みです。JSON構文の目視確認は済んでいますが、`import --dry-run` は実行していません。\n\n- **会話(dialog名):** すべて `dialog: null` で、会話ではなくクラス能力・動物の相棒・レンジャーアーキタイプなどのシステム説明文です。話者(speaker)もありません / chunk_0001 の全100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。dialog はすべて null で、ローグ・レンジャー関連のクラス、能力、特技の説明文です。\n\n- **制御タグ**: `<ctrl_N/>` は個数・順序とも原文どおりにしました。初回は日本語の語順に合わせて並べ替えた項目がありましたが、順序"
     }
   ]
 }
