@@ -16463,6 +16463,13 @@
       "target": "地獄の血脈",
       "category": "Caster Terms",
       "note": "ソーサラーの血脈。Infernalは既存訳（地獄の抵抗等）に合わせ「地獄の」で統一。"
+    },
+    {
+      "source": "Mantis God",
+      "target": "蟷螂神",
+      "category": "Deity",
+      "note": "Achaekek（アチャイケク）の異名。マンティス・ゼアロットの能力説明に登場（round209）。",
+      "caseSensitive": true
     }
   ]
 }
