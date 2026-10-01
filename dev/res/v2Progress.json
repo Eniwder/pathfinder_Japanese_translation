@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 72150,
-  "updatedAt": "2026-10-01T11:56:33.360Z",
+  "nextStart": 72450,
+  "updatedAt": "2026-10-01T13:33:33.300Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3873,6 +3873,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round243/",
       "coveredDialogs": [],
       "note": "v2リライト第243弾（runRoundLoop.mjs による自動実行）。 200件を訳して `dev/lang/chunks/chunk_0000.translations.json` に書き込みました。書いた後に JSON として読み直しての構文チェックはしていません。\n\n登場した会話（dialog）はありません。全 entry が `dialog: null` のUI・ルール用語ラベルでした。\n\n気づいた点: 「Holy」は武器特殊能力ではなくダメージ種別の表記と判 / 100件を訳して `chunk_0001.translations.json` に書き込みました。`dialog` はすべて null です。内容は神格・組織・クリーチャーの百科事典テキストで、会話ではありません。glossary の「Outsider=来訪者」に合わせました。書き込んだ JSON が構文として正しいかは目視確認しておらず、パーサでも検証していません。\n\n用語: Gogunta →"
+    },
+    {
+      "start": 72150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round244/",
+      "coveredDialogs": [],
+      "note": "v2リライト第244弾（runRoundLoop.mjs による自動実行）。 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込み後のJSON構文の確認は、ツール上の制約でファイル全体を読み返せておらず、目視でも通しては見ていません。\n\n- **dialog:** すべて `dialog: null` のエピローグ（エンディング総括）文です。\n- **文体:** あなた向けの地の文として"
     }
   ]
 }

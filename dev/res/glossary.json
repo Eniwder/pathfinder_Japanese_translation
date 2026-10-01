@@ -18295,6 +18295,22 @@
     { "source": "Venture-captain", "target": "ベンチャー・キャプテン", "category": "Organization", "note": "パスファインダー・ソサエティの役職" },
     { "source": "Worldwound Strategist", "target": "ワールドウーンドの戦略家", "category": "Lore" },
     { "source": "Age of Glory", "target": "栄光の時代", "category": "Lore" },
-    { "source": "Exodus", "target": "大脱出", "category": "Lore", "note": "アスモデウス一派のヘヴンからの離脱" }
+    { "source": "Exodus", "target": "大脱出", "category": "Lore", "note": "アスモデウス一派のヘヴンからの離脱" },
+    { "source": "Shyka the Many", "target": "多なるシューカ", "category": "Character", "note": "Shykaの異名" },
+    { "source": "Hag Coven", "target": "ハグの集会", "category": "Creature", "note": "hags' coven も同訳" },
+    { "source": "King of Hell", "target": "ヘルの王", "category": "Lore", "note": "アスモデウスの異名" },
+    { "source": "Master of Witches", "target": "魔女の主", "category": "Lore", "note": "アスモデウスの異名" },
+    { "source": "Prince of Law", "target": "法の君主", "category": "Lore", "note": "アスモデウスの異名" },
+    { "source": "Horseman of Death", "target": "死の騎士", "category": "Lore", "note": "カロンの称号" },
+    { "source": "Lucky Drunk", "target": "幸運な酔っ払い", "category": "Lore", "note": "カイデン・カイリーエンの異名" },
+    { "source": "Drunken Hero", "target": "酔いどれの英雄", "category": "Lore", "note": "カイデン・カイリーエンの異名" },
+    { "source": "Light of the Sword", "target": "剣の光", "category": "Lore", "note": "アイオーメディの異名" },
+    { "source": "Lady of Valor", "target": "勇気の貴婦人", "category": "Lore", "note": "アイオーメディの異名" },
+    { "source": "Lady Luck", "target": "幸運の貴婦人", "category": "Lore", "note": "デズナの異名" },
+    { "source": "Mother Moon", "target": "月の母", "category": "Lore", "note": "デズナの異名" },
+    { "source": "Arch-Duchy of Melcat", "target": "メルカット大公国", "category": "Location", "note": "ラズミランの旧名" },
+    { "source": "Houndheart Camp", "target": "ハウンドハーツ野営地", "category": "Location", "note": "Houndhearts(ハウンドハーツ)に合わせる" },
+    { "source": "Alushinyrran", "target": "アルシニラの", "category": "Location", "note": "Alushinyrraの形容詞形" },
+    { "source": "Rvveg", "target": "ルヴェグ", "category": "Character", "note": "ミノタウロス" }
   ]
 }
