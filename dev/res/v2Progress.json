@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 70950,
-  "updatedAt": "2026-10-01T08:58:32.377Z",
+  "nextStart": 71250,
+  "updatedAt": "2026-10-01T09:01:33.545Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3841,6 +3841,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round239/",
       "coveredDialogs": [],
       "note": "v2リライト第239弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を訳して書き込みました。dialog 名はすべて null で、会話ではなく特技・神話能力・技能アンロックの説明文と名称です。省略したキーはありません。\n\nJSON の構文を目視で確認し、`<ctrl_N/>` が原文と同じ順序と個数になるよう文を組み替えました。スクリプトによる検証と dry-run import は、Re / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話ではなく呪文・能力・種族の説明文で、dialog は全て null です。JSON として正しいかの確認と import の dry-run は、この環境では実行できていません。\n\n呪文名の「〜招来」は暫定の形で、ルール文の `Summon` に合わせています。\n\n用語: Bear's Grace "
+    },
+    {
+      "start": 70950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round240/",
+      "coveredDialogs": [],
+      "note": "v2リライト第240弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件をすべて訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、キーの照合や import の dry-run は実行していません。\n\n- **dialog:** 全件 `dialog: null` です。内容は種族・クラス紹介文、UIラベル、暦（曜日・月名）、名前 / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認しましたが、スクリプトによる検証はしていません。dialog 名はすべて null で、設定画面と難易度の説明、十字軍（軍団）管理画面のUI文字列でした。`<b>` と `<color>` の生タグ、`{0}` と `{leader_cost}`、改"
     }
   ]
 }
