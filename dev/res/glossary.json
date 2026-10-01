@@ -24788,6 +24788,25 @@
     {"source": "Raptor", "target": "猛禽", "note": "Animal Aspect variant.", "category": "Spell"},
     {"source": "Wasp's Venom", "target": "スズメバチの毒", "note": "Poison/ability name.", "category": "Ability"},
     {"source": "Primary Hand", "target": "主手", "note": "Weapon hand (spell variant suffix).", "category": "Game Term"},
-    {"source": "Secondary Hand", "target": "副手", "note": "Weapon hand (spell variant suffix).", "category": "Game Term"}
+    {"source": "Secondary Hand", "target": "副手", "note": "Weapon hand (spell variant suffix).", "category": "Game Term"},
+    {"source": "Geniekind", "target": "ジーニーカインド", "note": "Spell.", "category": "Spell"},
+    {"source": "Cave Fangs", "target": "ケイヴ・ファングズ", "note": "Spell. Stalactites=鍾乳石 / Stalagmites=石筍。", "category": "Spell"},
+    {"source": "Constricting Coils", "target": "コンストリクティング・コイルズ", "note": "Spell.", "category": "Spell"},
+    {"source": "Burst of Glory", "target": "バースト・オヴ・グローリー", "note": "Spell.", "category": "Spell"},
+    {"source": "Aspect of the Smilodon", "target": "アスペクト・オヴ・ザ・スミロドン", "note": "Spell.", "category": "Spell"},
+    {"source": "Profane Nimbus", "target": "プロファン・ニンバス", "note": "Spell.", "category": "Spell"},
+    {"source": "Wracking Ray", "target": "ラッキング・レイ", "note": "Spell.", "category": "Spell"},
+    {"source": "Arbitrament", "target": "アービトラメント", "note": "Spell.", "category": "Spell"},
+    {"source": "True Seeing, Communal", "target": "コミュナル・トゥルー・シーイング", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Sunrod", "target": "サンロッド", "note": "Alchemical item.", "category": "Item"},
+    {"source": "Dire Boar", "target": "ダイア・ボア", "note": "Creature (summon option).", "category": "Creature"},
+    {"source": "Dire Wolf", "target": "ダイア・ウルフ", "note": "Creature (summon option).", "category": "Creature"},
+    {"source": "Leopard", "target": "ヒョウ", "note": "Creature (summon/polymorph option).", "category": "Creature"},
+    {"source": "Elemental", "target": "エレメンタル", "note": "Creature type / summon.", "category": "Creature"},
+    {"source": "Air Elemental", "target": "エア・エレメンタル", "note": "Creature.", "category": "Creature"},
+    {"source": "Earth Elemental", "target": "アース・エレメンタル", "note": "Creature.", "category": "Creature"},
+    {"source": "Fire Elemental", "target": "ファイア・エレメンタル", "note": "Creature.", "category": "Creature"},
+    {"source": "Water Elemental", "target": "ウォーター・エレメンタル", "note": "Creature.", "category": "Creature"},
+    {"source": "Extraplanar", "target": "異界の", "note": "Creature subtype.", "category": "Game Term"}
   ]
 }
