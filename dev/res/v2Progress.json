@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 73350,
-  "updatedAt": "2026-10-01T13:47:34.116Z",
+  "nextStart": 73650,
+  "updatedAt": "2026-10-01T13:50:10.555Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3905,6 +3905,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round247/",
       "coveredDialogs": [],
       "note": "v2リライト第247弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しただけで、スクリプトでの検証はしていません。会話（dialog）は無く、全件がゲーム内百科事典・UIラベル・能力使用条件メッセージです。`<ctrl_N/>` の順序を崩した2件は書き込み後に直しました。\n\n用語: Intensified → / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）は無く、全件がステータス・状態異常・技能・系統などのシステム用語の単語です。\n\n用語: Restore Health → 体力回復\n用語: Temporary Health → 一時的体力\n用語: Vilderavn Bleed → ヴィルデラヴンの出血\n用語: Negative E"
+    },
+    {
+      "start": 73350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round248/",
+      "coveredDialogs": [],
+      "note": "v2リライト第248弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました（目視でJSON構文を確認済み）。dialog名はすべて null で、UIラベル・武器名・能力値名・属性・ツールチップ類です。`<ctrl_N/>` を含むentryはありませんでした。\n\n用語: Shortspear → ショートスピア\n用語: Earth Breaker → アース・ブレイカー / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。内容はすべて UI 文言で、会話（dialog）はありません。書き込み後の JSON の目視確認は、書いた内容を見直しただけです。\n\n気づいた点は次の4つです。\n- 次の語は文脈が分からず推測で訳しています：`Martial`（軍用）、`Martial Qualities`（軍用の特性）、`LN"
     }
   ]
 }
