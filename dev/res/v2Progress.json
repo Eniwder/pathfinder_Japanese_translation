@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 72450,
-  "updatedAt": "2026-10-01T13:33:33.300Z",
+  "nextStart": 72750,
+  "updatedAt": "2026-10-01T13:38:23.121Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3881,6 +3881,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round244/",
       "coveredDialogs": [],
       "note": "v2リライト第244弾（runRoundLoop.mjs による自動実行）。 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込み後のJSON構文の確認は、ツール上の制約でファイル全体を読み返せておらず、目視でも通しては見ていません。\n\n- **dialog:** すべて `dialog: null` のエピローグ（エンディング総括）文です。\n- **文体:** あなた向けの地の文として"
+    },
+    {
+      "start": 72450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round245/",
+      "coveredDialogs": [],
+      "note": "v2リライト第245弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。会話(dialog)は全件 null で、冒険の振り返りテキスト、月名・曜日、ゴラリオンの百科項目が中心でした。Write 後に読み返しての JSON 構文チェックはしていません。\n\n気づいた点として、`Golarion` の説明文が2キー（991103d0 / be3d6c3f）で同一でした。 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)は全件 null で、用語集・年表・キャラクター紹介の項目です。JSONの構文は目視で確認しましたが、スクリプトでの検証はしていません（実行権限がないため）。\n\n気づいた点が2つあります。\n- 原文の「Xanthir the Plagued On"
     }
   ]
 }
