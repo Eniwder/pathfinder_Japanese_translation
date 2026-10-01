@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 69750,
-  "updatedAt": "2026-10-01T05:16:04.744Z",
+  "nextStart": 70050,
+  "updatedAt": "2026-10-01T08:35:04.958Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3809,6 +3809,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round235/",
       "coveredDialogs": [],
       "note": "v2リライト第235弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件を書き込みました（全entry、未訳なし）。登場した会話(dialog名)はありません。全entryが `dialog: null` のシステム文言（神話の道アイオン／エンジェルの能力説明、場所名、呪文説明）です。\n\n`<ctrl_N/>` は番号順を保つように配置しました。ただし、書き込み後に目視確認と修正をしただけで、スク / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)は全件 null で、神話の道エンジェルの能力・呪文の説明文と名称です。JSON として読み込めるかの機械検証はしていません。制御タグの順序は、原文の `<ctrl_N/>` の並びを保つように文を組み直しました。\n\n「Summon Astral De"
+    },
+    {
+      "start": 69750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round236/",
+      "coveredDialogs": [],
+      "note": "v2リライト第236弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込み済みで、あとは完了報告だけです。\n\n200件を訳しました。dialog はすべて null で、会話ではなく神話ランク（アザータ・エンジェル・デーモン）の能力・呪文の説明文と名称です。`<ctrl_N/>` の順序は、語順の都合で逆になりやすい箇所を調整して維持しました。\n\n気づいた点は2つです。\n- ゲーム独自のアザータ呪文 / `chunk_0001.translations.json` に全100件を訳して書き込みました。JSON 構文は目視で確認済みで、`chunk_0001.json` は未編集です。\n\n- **dialog:** なし（`dialog: null`）。神話パス「デーモン」の能力・呪文の説明文と名称ばかりです。\n- **気づいた点:** 初稿で `<ctrl_N/>` の順序入れ替えと脱落が十数件あ"
     }
   ]
 }
