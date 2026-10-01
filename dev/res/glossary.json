@@ -17786,6 +17786,27 @@
     { "source": "Wild Magic", "target": "ワイルド魔法", "category": "Rules" },
     { "source": "Hundred-Face's Circlet", "target": "百面相のサークレット", "category": "Item" },
     { "source": "Befouled Key", "target": "汚れた鍵", "category": "Item" },
-    { "source": "Weapon Focus (Spike)", "target": "武器熟練（スパイク）", "category": "Feat" }
+    { "source": "Weapon Focus (Spike)", "target": "武器熟練（スパイク）", "category": "Feat" },
+    { "source": "Dazzling Dagger", "target": "眩惑のダガー", "category": "Item" },
+    { "source": "Druchite", "target": "ドルーカイト", "category": "Item", "note": "素材/鉱石名。" },
+    { "source": "Aszite", "target": "アズライト", "category": "Item", "note": "素材/鉱石名。" },
+    { "source": "Fetchling", "target": "フェッチリング", "category": "Race", "note": "影の位界の種族。" },
+    { "source": "Kyton", "target": "カイトン", "category": "Creature", "note": "鎖の悪魔的アウトサイダー。" },
+    { "source": "Pipefox", "target": "パイプフォックス", "category": "Creature" },
+    { "source": "Owlcat", "target": "オウルキャット", "category": "Creature" },
+    { "source": "Pseudodragon", "target": "プシュードドラゴン", "category": "Creature" },
+    { "source": "Sovereign Dragon", "target": "ソヴリン・ドラゴン", "category": "Creature" },
+    { "source": "Faerie Dragon", "target": "フェアリー・ドラゴン", "category": "Creature" },
+    { "source": "Vicious", "target": "ヴィシャス", "category": "Weapon", "note": "武器特殊能力。" },
+    { "source": "Cruel", "target": "クルーエル", "category": "Weapon", "note": "武器特殊能力。" },
+    { "source": "Barsag", "target": "バルサグ", "category": "Character", "note": "Barsag the Chief＝族長バルサグ。" },
+    { "source": "Shelburn Sparks", "target": "シェルバーン・スパークス", "category": "Character", "note": "リザードフォークのソーサラー。通称Shelburn＝シェルバーン。" },
+    { "source": "Lord Jessiahdor of Taldor", "target": "タルドールのジェシアドール卿", "category": "Character", "note": "人間のキャバリアー。" },
+    { "source": "Glorio Joania Sparks", "target": "グロリオ・ジョアニア・スパークス", "category": "Character", "note": "ソーサラー兼バード。シェルバーンの養母。" },
+    { "source": "Skerple", "target": "スカープル", "category": "Character", "note": "ゴブリンのローグ。" },
+    { "source": "Sir Kenneth Cowannan", "target": "ケネス・コワナン卿", "category": "Character", "note": "人間のウィザード。" },
+    { "source": "Ristof Brulston", "target": "リストフ・ブルストン", "category": "Character", "note": "ドワーフのバーバリアン。" },
+    { "source": "Wolfgang Hypeton", "target": "ウルフギャング・ハイペトン", "category": "Character", "note": "キツネ（kitsune）のスレイヤー。" },
+    { "source": "Kya", "target": "キア", "category": "Character", "note": "プシュードドラゴン三匹の一匹。Jasper＝ジャスパー、Chryso＝クリソ。" }
   ]
 }
