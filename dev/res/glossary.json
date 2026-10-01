@@ -24062,6 +24062,84 @@
       "target": "オープン・コンテンツ",
       "category": "Other",
       "note": "OGL content (legal/credits text)"
+    },
+    {
+      "source": "Standard Action",
+      "target": "標準アクション",
+      "category": "Rule",
+      "note": "Action type"
+    },
+    {
+      "source": "Surprise Round",
+      "target": "不意討ちラウンド",
+      "category": "Rule",
+      "note": "Combat round before normal initiative order"
+    },
+    {
+      "source": "Full Attack",
+      "target": "全力攻撃",
+      "category": "Rule",
+      "note": "Full-round attack action"
+    },
+    {
+      "source": "Light Load",
+      "target": "軽荷重",
+      "category": "Rule",
+      "note": "Encumbrance level. UIでは単に Light と表示される（軽装＝Light armorとは区別）"
+    },
+    {
+      "source": "Medium Load",
+      "target": "中荷重",
+      "category": "Rule",
+      "note": "Encumbrance level. UIでは単に Medium と表示される"
+    },
+    {
+      "source": "Heavy Load",
+      "target": "重荷重",
+      "category": "Rule",
+      "note": "Encumbrance level. UIでは単に Heavy と表示される"
+    },
+    {
+      "source": "Overloaded",
+      "target": "過荷重",
+      "category": "Rule",
+      "note": "Encumbrance level above heavy load"
+    },
+    {
+      "source": "Material Component",
+      "target": "物質要素",
+      "category": "Rule",
+      "note": "Spell component"
+    },
+    {
+      "source": "Spell Failure Chance",
+      "target": "呪文失敗確率",
+      "category": "Rule",
+      "note": "Armor-induced arcane spell failure"
+    },
+    {
+      "source": "Archetype",
+      "target": "アーキタイプ",
+      "category": "Rule",
+      "note": "Class variant"
+    },
+    {
+      "source": "Stash",
+      "target": "倉庫",
+      "category": "UI",
+      "note": "Shared item storage"
+    },
+    {
+      "source": "Accessories",
+      "target": "装身具",
+      "category": "UI",
+      "note": "Inventory equipment category (rings, amulets, etc.)"
+    },
+    {
+      "source": "Auto End Turn",
+      "target": "ターン自動終了",
+      "category": "UI",
+      "note": "Turn-based mode option"
     }
   ]
 }
