@@ -17779,6 +17779,13 @@
     { "source": "Major Form", "target": "メジャー・フォーム", "category": "Rules", "note": "Shifter ability." },
     { "source": "Shifter", "target": "シフター", "category": "Class" },
     { "source": "Volley Fire", "target": "ヴォレー・ファイア", "category": "Feat" },
-    { "source": "Difficulty Class", "target": "難易度", "category": "Rules", "note": "DCの正式名。略称DCは「DC」表記のまま。" }
+    { "source": "Difficulty Class", "target": "難易度", "category": "Rules", "note": "DCの正式名。略称DCは「DC」表記のまま。" },
+    { "source": "Large Bastard Sword", "target": "大型バスタード・ソード", "category": "Weapon" },
+    { "source": "Spellcaster", "target": "術者", "category": "Rules" },
+    { "source": "Runestone", "target": "ルーンストーン", "category": "Item" },
+    { "source": "Wild Magic", "target": "ワイルド魔法", "category": "Rules" },
+    { "source": "Hundred-Face's Circlet", "target": "百面相のサークレット", "category": "Item" },
+    { "source": "Befouled Key", "target": "汚れた鍵", "category": "Item" },
+    { "source": "Weapon Focus (Spike)", "target": "武器熟練（スパイク）", "category": "Feat" }
   ]
 }

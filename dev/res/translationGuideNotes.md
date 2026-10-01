@@ -319,4 +319,5 @@ mf issue も直すなら、上の `verify.js` 修正を先に当ててから抽�
 - 2026-10-01（round220）: `Adamantine Full Plate +4` で「+4」前の空白有無が割れたため強化値直結をtranslationGuide.mdに追記。防具名・抵抗段階・Owlbeast等をglossary登録。
 - 2026-10-01（round217）: チュートリアル系の報告語（キャントリップ・脅威範囲・武器クラス等）とクリーチャー名（ゴーレム各種・ハグ等）をglossary登録。キャラ/ルール追記なし。
 - 2026-10-01（round227）: アイテム名（パール・オヴ・パワー等）・アザータ/ナバス・クレメント等をglossary登録。キャラ/ルール追記なし。
+- 2026-10-01（round231）: `+2 bonus on all damage rolls you make using X` が「+2の…を得る。対象は…」/「Xによる…すべてに+2の…を得る」と割れたため後者に統一するルールをtranslationGuide.mdに追記。大型バスタード・ソード・ルーンストーン等をglossary登録。キャラ追記なし。
 - 2026-10-01（round230）: 武器名・メタマジック特技・シフター/ゼン・アーチャー等をglossary登録。Difficulty Classは本文の訳に合わせ「難易度」で登録（DC表記は別）。キャラ/ルール追記なし。

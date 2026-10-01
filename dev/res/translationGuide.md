@@ -92,6 +92,7 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
   - フレーバーテキスト（効果説明の前後にある物語的な一文）は地の文として自然に訳してよい。
   - ブレス等の効果範囲は `N-foot line/cone of X` →「Nフィートの直線状／円錐状の〜」、
     `Resistance: electricity 20` →「電撃抵抗20」の形に統一する。
+  - `+N bonus on all damage rolls you make using X` →「Xによる全てのダメージ・ロールに+Nのボーナスを得る」で統一。
   - `bypass DR N/X` →「ダメージ減少N/Xを無視する」（`DR`も略さない）、`primary/secondary natural attack`
     →「主要／二次的肉体攻撃」で統一する。
 - 宇宙論の `Plane`（`Upper/Lower Planes` `Plane of Earth` 等）は「位界」で統一する（「次元」にしない）。
