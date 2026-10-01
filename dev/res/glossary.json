@@ -24215,6 +24215,84 @@
       "target": "見張り順",
       "category": "UI",
       "note": "Camp guard rotation order"
+    },
+    {
+      "source": "Casting defensively",
+      "target": "防御的発動",
+      "category": "Rule",
+      "note": "Casting a spell without provoking attacks of opportunity"
+    },
+    {
+      "source": "Memorize",
+      "target": "準備",
+      "category": "UI",
+      "note": "Preparing a spell in a spell slot"
+    },
+    {
+      "source": "Shadow Effect",
+      "target": "影の効果",
+      "category": "Rule",
+      "note": "Partial reality of shadow conjuration/evocation spells"
+    },
+    {
+      "source": "Encumbered",
+      "target": "中荷重",
+      "category": "Rule",
+      "note": "Encumbrance state (medium load)"
+    },
+    {
+      "source": "Lightly encumbered",
+      "target": "軽荷重",
+      "category": "Rule",
+      "note": "Encumbrance state"
+    },
+    {
+      "source": "Heavily encumbered",
+      "target": "重荷重",
+      "category": "Rule",
+      "note": "Encumbrance state"
+    },
+    {
+      "source": "Immune",
+      "target": "完全耐性",
+      "category": "Rule",
+      "note": "Combat log damage/effect immunity"
+    },
+    {
+      "source": "Hit",
+      "target": "命中",
+      "category": "UI",
+      "note": "Combat log attack result"
+    },
+    {
+      "source": "Miss",
+      "target": "外れ",
+      "category": "UI",
+      "note": "Combat log attack result"
+    },
+    {
+      "source": "GP",
+      "target": "ゴールド",
+      "category": "UI",
+      "note": "Gold pieces; '{count} GP' -> '{count}ゴールド'"
+    },
+    {
+      "source": "Strike Team",
+      "target": "ストライクチーム",
+      "category": "UI",
+      "note": "Main adventuring party (vs. crusade army)"
+    },
+    {
+      "source": "Party Manager",
+      "target": "パーティー管理",
+      "category": "UI",
+      "note": "Party selection screen"
+    },
+    {
+      "source": "Boon",
+      "target": "恩恵",
+      "category": "Rule",
+      "note": "Granted benefit/blessing"
     }
   ]
 }

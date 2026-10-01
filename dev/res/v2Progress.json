@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 75150,
-  "updatedAt": "2026-10-01T18:38:10.335Z",
+  "nextStart": 75450,
+  "updatedAt": "2026-10-01T18:40:58.843Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3953,6 +3953,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round253/",
       "coveredDialogs": [],
       "note": "v2リライト第253弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON 構文の確認は目視のみで、スクリプトによる検証はしていません。\n\n会話（dialog）はなく、全件 UI・システムテキスト（ツールチップ、メタマジック特技説明、野営、セーブメッセージなど）です。\n\n1 件、書き込み直後に修正しました。選択的呪文の説明文で `<ctrl_0/>呪文<ctrl_1/ / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。会話(dialog)は無く、武器名・攻撃種別・属性などのシステム用語のみです。\n\n用語: Spiked Light Shield → スパイクト・ライト・シールド\n用語: Spiked Heavy Shield → スパイクト・ヘヴィ・シールド\n用語: Elven Curved Blade → "
+    },
+    {
+      "start": 75150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round254/",
+      "coveredDialogs": [],
+      "note": "v2リライト第254弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました（JSONとしての構文確認は目視のみ）。dialog はすべて null で、戦闘ログ・UIラベル・属性（アライメント）名のシステム文言でした。`<b>` や `{source}` などのプレースホルダーは原文のまま保持しています。\n\n用語: Memorize → 準備\n用語: Take off → 外す / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話（dialog）は無く、すべてUI・戦闘ログ系の文言です（dialog: null）。\n\n- **装飾タグ**: `Equipment` と `Encyclopedia` の頭文字装飾 `<font>` タグは、日本語では意味がないので外して素の語（装備、百科事典"
     }
   ]
 }
