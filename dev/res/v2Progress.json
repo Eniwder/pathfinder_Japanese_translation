@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 73650,
-  "updatedAt": "2026-10-01T13:50:10.555Z",
+  "nextStart": 73950,
+  "updatedAt": "2026-10-01T13:52:40.051Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3913,6 +3913,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round248/",
       "coveredDialogs": [],
       "note": "v2リライト第248弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました（目視でJSON構文を確認済み）。dialog名はすべて null で、UIラベル・武器名・能力値名・属性・ツールチップ類です。`<ctrl_N/>` を含むentryはありませんでした。\n\n用語: Shortspear → ショートスピア\n用語: Earth Breaker → アース・ブレイカー / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。内容はすべて UI 文言で、会話（dialog）はありません。書き込み後の JSON の目視確認は、書いた内容を見直しただけです。\n\n気づいた点は次の4つです。\n- 次の語は文脈が分からず推測で訳しています：`Martial`（軍用）、`Martial Qualities`（軍用の特性）、`LN"
+    },
+    {
+      "start": 73650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round249/",
+      "coveredDialogs": [],
+      "note": "v2リライト第249弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON構文の検証コマンドは実行しておらず、目視確認のみです。登場した会話はなく、`dialog` はすべて null のキャラクター作成・システムUI文言です。\n\n気づいた点：UI文言のうち、台詞でないシステムメッセージは「〜する」調、プレイヤー向けの確認ダイアログや通知は丁寧語を混在させていま / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSONの構文は目視で確認しました。dialog名はすべて null で、会話ではなくUI文言（軍・ミッドナイト諸島のローグライト・百科事典など）です。`{mf|im|er}` と `{mf|his|her}` の2箇所は、日本語では不要なので `{mf}` ごと省"
     }
   ]
 }

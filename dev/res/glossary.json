@@ -18453,6 +18453,22 @@
     { "source": "Bond", "target": "絆", "category": "Rules", "note": "UI label (cf. Arcane Bond)" },
     { "source": "Blast", "target": "爆発", "category": "Kineticist", "note": "cf. Kinetic Blast=念動力爆発" },
     { "source": "Source of magic", "target": "魔法の源", "category": "Rules", "note": "Spellbook UI label" },
-    { "source": "Caster ability", "target": "術者能力値", "category": "Rules", "note": "Spellbook UI label" }
+    { "source": "Caster ability", "target": "術者能力値", "category": "Rules", "note": "Spellbook UI label" },
+    { "source": "Heritage", "target": "血筋", "category": "Rules", "note": "Race variant chosen at character creation (e.g. Aasimar heritages)" },
+    { "source": "Premade build", "target": "既成ビルド", "category": "UI", "note": "Auto level-up preset build" },
+    { "source": "Pregenerated character", "target": "プリジェネレイテッド・キャラクター", "category": "UI", "note": "Ready-made character at creation screen" },
+    { "source": "Kingmaker", "target": "キングメーカー", "category": "Proper Noun", "note": "Pathfinder: Kingmaker (previous game)" },
+    { "source": "Warpaint", "target": "ウォーペイント", "category": "UI", "note": "Character appearance customization" },
+    { "source": "Parry", "target": "受け流し", "category": "Rules", "note": "Combat maneuver/ability" },
+    { "source": "School", "target": "系統", "category": "Rules", "note": "School of magic" },
+    { "source": "Retraining", "target": "再訓練", "category": "Crusade", "note": "Sending an army to Reserve / respec" },
+    { "source": "Skinning", "target": "剥ぎ取り", "category": "Rules", "note": "Harvesting materials from slain creatures" },
+    { "source": "Formation", "target": "陣形", "category": "UI", "note": "Party formation" },
+    { "source": "Turn-Based Combat", "target": "ターン制戦闘", "category": "UI", "note": "Combat mode setting" },
+    { "source": "Army", "target": "軍", "category": "Crusade", "note": "Crusade army unit" },
+    { "source": "Reserve", "target": "予備戦力", "category": "Crusade", "note": "Crusade troop reserve" },
+    { "source": "Tailwind", "target": "追い風", "category": "Crusade", "note": "Selectable bonus (\"Choose a Tailwind\")" },
+    { "source": "Peril Rating", "target": "危険度", "category": "UI", "note": "Encounter/area difficulty rating" },
+    { "source": "Encyclopedia", "target": "百科事典", "category": "UI", "note": "In-game encyclopedia" }
   ]
 }
