@@ -17807,6 +17807,26 @@
     { "source": "Sir Kenneth Cowannan", "target": "ケネス・コワナン卿", "category": "Character", "note": "人間のウィザード。" },
     { "source": "Ristof Brulston", "target": "リストフ・ブルストン", "category": "Character", "note": "ドワーフのバーバリアン。" },
     { "source": "Wolfgang Hypeton", "target": "ウルフギャング・ハイペトン", "category": "Character", "note": "キツネ（kitsune）のスレイヤー。" },
-    { "source": "Kya", "target": "キア", "category": "Character", "note": "プシュードドラゴン三匹の一匹。Jasper＝ジャスパー、Chryso＝クリソ。" }
+    { "source": "Kya", "target": "キア", "category": "Character", "note": "プシュードドラゴン三匹の一匹。Jasper＝ジャスパー、Chryso＝クリソ。" },
+    { "source": "Dweomerlion", "target": "ドゥウォーマーライオン", "category": "Creature", "note": "クリーチャー名。" },
+    { "source": "Megaloceros", "target": "メガロケロス", "category": "Creature", "note": "クリーチャー名。" },
+    { "source": "Winter Wolf", "target": "ウィンター・ウルフ", "category": "Creature", "note": "クリーチャー名。" },
+    { "source": "Midnight Morel", "target": "ミッドナイト・モレル", "category": "Item", "note": "素材（キノコ）。" },
+    { "source": "Shadowbloom", "target": "シャドウブルーム", "category": "Item", "note": "素材（植物）。" },
+    { "source": "Cinderbloom", "target": "シンダーブルーム", "category": "Item", "note": "素材（植物）。" },
+    { "source": "Skullberry", "target": "スカルベリー", "category": "Item", "note": "素材（植物）。" },
+    { "source": "Leechweed", "target": "リーチウィード", "category": "Item", "note": "素材（植物）。" },
+    { "source": "Flametongue", "target": "フレイムタング", "category": "Weapon", "note": "武器特殊能力／武器名。" },
+    { "source": "Corrosive", "target": "コローシヴ", "category": "Weapon", "note": "武器特殊能力。" },
+    { "source": "Epic Frost", "target": "エピック・フロスト", "category": "Weapon", "note": "武器特殊能力名。" },
+    { "source": "Oil of Unholiness", "target": "アンホーリィの油", "category": "Item", "note": "武器用の油。" },
+    { "source": "Oil of Bane Everything", "target": "ベイン・エヴリシングの油", "category": "Item", "note": "武器用の油。" },
+    { "source": "Oil of Extreme Frost", "target": "極寒の油", "category": "Item", "note": "武器用の油。" },
+    { "source": "Oil of Enhancement", "target": "強化の油", "category": "Item", "note": "武器用の油。" },
+    { "source": "Scroll Scriber's Kit", "target": "巻物書写キット", "category": "Item", "note": "等級はローマ数字（— II 等）。" },
+    { "source": "Lockpicker's Kit", "target": "ロックピック・キット", "category": "Item", "note": "解錠用キット。" },
+    { "source": "Vile Ichor", "target": "穢れた体液", "category": "Item", "note": "素材アイテム。" },
+    { "source": "Curse of Weakness", "target": "カース・オヴ・ウィークネス", "category": "Spell", "note": "呪文名。" },
+    { "source": "Monstrous Humanoid Bane", "target": "人型怪物ベイン", "category": "Weapon", "note": "武器特殊能力（ベイン系）。" }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 68850,
-  "updatedAt": "2026-10-01T04:54:47.503Z",
+  "nextStart": 69150,
+  "updatedAt": "2026-10-01T04:58:49.127Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3785,6 +3785,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round232/",
       "coveredDialogs": [],
       "note": "v2リライト第232弾（runRoundLoop.mjs による自動実行）。 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、会話はありません。アイテム名・説明、ペット、手記（色褪せた頁・氷に覆われた頁）が中身です。\n\n一部の entry では `<ctrl_N/>` を原文の並び順ではなく、日本語の語順に合わせて並べ替えています。個数はすべて保持し"
+    },
+    {
+      "start": 68850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round233/",
+      "coveredDialogs": [],
+      "note": "v2リライト第233弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認済みで、スクリプトによる検証は実行していません。`<ctrl_N/>` は順序を変えずにそのまま残しています。\n会話(dialog)は無く、すべて dialog なしのアイテム名・説明文です（キット、素材、宝石、毛皮、オイルなど）。\n気づいた点として、同じ原文が複数のキーに / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、すべてアイテム・バフ・矢筒などの名称と説明文です。JSON構文と`<ctrl_N/>`の順序は目視で確認しましたが、スクリプトでの検証はしていません。\n\n気づいた点: `<ctrl_N/>`の順序を保つため、一部の文は語順をやや不自然にしています。\n\n用語: Vile "
     }
   ]
 }
