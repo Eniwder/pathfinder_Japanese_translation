@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 69150,
-  "updatedAt": "2026-10-01T04:58:49.127Z",
+  "nextStart": 69450,
+  "updatedAt": "2026-10-01T05:05:43.567Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3793,6 +3793,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round233/",
       "coveredDialogs": [],
       "note": "v2リライト第233弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認済みで、スクリプトによる検証は実行していません。`<ctrl_N/>` は順序を変えずにそのまま残しています。\n会話(dialog)は無く、すべて dialog なしのアイテム名・説明文です（キット、素材、宝石、毛皮、オイルなど）。\n気づいた点として、同じ原文が複数のキーに / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、すべてアイテム・バフ・矢筒などの名称と説明文です。JSON構文と`<ctrl_N/>`の順序は目視で確認しましたが、スクリプトでの検証はしていません。\n\n気づいた点: `<ctrl_N/>`の順序を保つため、一部の文は語順をやや不自然にしています。\n\n用語: Vile "
+    },
+    {
+      "start": 69150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round234/",
+      "coveredDialogs": [],
+      "note": "v2リライト第234弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込みました。chunk の 200 件のうち 199 件を訳しています。キー数や JSON 構文は機械的には検証していません（目視のみ）。\n\n- **訳した件数:** 199件（出力したキー数を数えていないため、200件全件かは未確認）。\n- **dialog 名:** なし（`dialog: null` のアイテム・ロッド・巻物 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON は目視で確認しています。dialog 名はすべて null で、会話ではなく、アイテム説明・十字軍管理UI・クラフト武器名の文字列です。\n「Iron Prayer」は glossary の「Prayer=プレイヤー」が呪文名・特技名用のため、アイテム名として「鉄の祈り」と訳しました。\n\n"
     }
   ]
 }
