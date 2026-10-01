@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 76950,
-  "updatedAt": "2026-10-01T23:44:30.244Z",
+  "nextStart": 77250,
+  "updatedAt": "2026-10-01T23:55:02.412Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4001,6 +4001,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round259/",
       "coveredDialogs": [],
       "note": "v2リライト第259弾（runRoundLoop.mjs による自動実行）。 200件を訳して `dev/lang/chunks/chunk_0000.translations.json` に書き込みました。全 entry を埋めており、キー数は 200 件で chunk の `keys: 200` と一致しています。JSON 構文と `<ctrl_N/>` の並びは目視で確認し、機械検証（`import --dry-run`）は権限上かけていません。\n\n- **dialo / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文の確認と`<ctrl_N/>`の個数・順序の検証は目視のみで、スクリプトでは確認していません。会話（dialog）はなく、全件 dialog:null の呪文・能力の説明文と名称です（ポリモーフ、サモン系、コマンド、アシッド・フォッグ、ビースト・シェイプIV など）。\n\n気づいた点が2"
+    },
+    {
+      "start": 76950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round260/",
+      "coveredDialogs": [],
+      "note": "v2リライト第260弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON が正しいかの確認と import の dry-run は、権限がなく実行していません。会話（dialog）はなく、全て `dialog: null` の呪文・状態効果のシステム文と名称でした。\n\n注意点が2つあります。\n- 一部の entry は `<ctrl_N/>` の順序を保つため語順を / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSONの構文は目視で確認済みで、スクリプトでの検証はしていません。対象は呪文・ポリモーフ系の効果説明と名称で、dialogはすべて null（会話ではありません）です。\n\n気づいた点: 原文で `<ctrl_N/>` が囲んでいる語と日本語の語順が合わない箇所は、トーク"
     }
   ]
 }

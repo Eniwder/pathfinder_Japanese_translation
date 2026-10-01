@@ -24807,6 +24807,27 @@
     {"source": "Earth Elemental", "target": "アース・エレメンタル", "note": "Creature.", "category": "Creature"},
     {"source": "Fire Elemental", "target": "ファイア・エレメンタル", "note": "Creature.", "category": "Creature"},
     {"source": "Water Elemental", "target": "ウォーター・エレメンタル", "note": "Creature.", "category": "Creature"},
-    {"source": "Extraplanar", "target": "異界の", "note": "Creature subtype.", "category": "Game Term"}
+    {"source": "Extraplanar", "target": "異界の", "note": "Creature subtype.", "category": "Game Term"},
+    {"source": "Weakened", "target": "衰弱状態", "note": "Condition (e.g. from Blasphemy).", "category": "Condition"},
+    {"source": "Disintegrated", "target": "分解状態", "note": "Condition.", "category": "Condition"},
+    {"source": "Comatose", "target": "昏睡状態", "note": "Condition.", "category": "Condition"},
+    {"source": "HD", "target": "HD", "note": "Hit Dice abbreviation; keep as HD.", "category": "Game Term"},
+    {"source": "Fortitude partial", "target": "頑健・一部無効", "note": "Saving throw entry in spell stat block.", "category": "Game Term"},
+    {"source": "Inspiring Recovery", "target": "奮起する回復", "note": "Ability.", "category": "Ability"},
+    {"source": "Primal Regression", "target": "プライマル・リグレッション", "note": "Ability.", "category": "Ability"},
+    {"source": "Umbral Strike", "target": "アンブラル・ストライク", "note": "Spell.", "category": "Spell"},
+    {"source": "Dragonkind I", "target": "ドラゴンカインドI", "note": "Spell. Variants: (Bronze)等は色名をカタカナで括弧書き。", "category": "Spell"},
+    {"source": "Dragonkind II", "target": "ドラゴンカインドII", "note": "Spell.", "category": "Spell"},
+    {"source": "Copper", "target": "カッパー", "note": "Metallic dragon color (Dragonkind etc.). コッパーとしない。", "category": "Creature"},
+    {"source": "Bronze", "target": "ブロンズ", "note": "Metallic dragon color (Dragonkind etc.).", "category": "Creature"},
+    {"source": "Summon Huge Elemental", "target": "サモン・ヒュージ・エレメンタル", "note": "Spell. Air/Earth/Fire/Waterはエア/アース/ファイア/ウォーターを挿入。", "category": "Spell"},
+    {"source": "Forceful Hand", "target": "フォースフル・ハンド", "note": "Spell.", "category": "Spell"},
+    {"source": "Wall of Force", "target": "ウォール・オヴ・フォース", "note": "Spell.", "category": "Spell"},
+    {"source": "Globe of Invulnerability", "target": "グローブ・オヴ・インヴァルナラビリティ", "note": "Spell.", "category": "Spell"},
+    {"source": "Carrock's Wrath", "target": "キャロックの怒り", "note": "Item/ability name.", "category": "Item"},
+    {"source": "Perfect Form", "target": "パーフェクト・フォーム", "note": "Ability.", "category": "Ability"},
+    {"source": "Poison Breath", "target": "ポイズン・ブレス", "note": "Ability.", "category": "Ability"},
+    {"source": "Guardian Armor", "target": "ガーディアン・アーマー", "note": "Creature (Create Undead option).", "category": "Creature"},
+    {"source": "Tar", "target": "タール", "note": "Substance/effect name.", "category": "Game Term"}
   ]
 }
