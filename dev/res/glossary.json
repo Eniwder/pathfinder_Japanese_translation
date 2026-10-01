@@ -18239,6 +18239,22 @@
     { "source": "Weak", "target": "弱", "category": "Options", "note": "難易度/設定の選択肢ラベル。文中の形容では「弱い」可" },
     { "source": "Strengthened", "target": "強化された", "category": "Options", "note": "敵能力値設定の選択肢" },
     { "source": "Insane", "target": "狂気", "category": "Options", "note": "敵能力値設定の選択肢" },
-    { "source": "Sadistic Game Design", "target": "サディスティック・ゲームデザイン", "category": "Achievement", "note": "実績名" }
+    { "source": "Sadistic Game Design", "target": "サディスティック・ゲームデザイン", "category": "Achievement", "note": "実績名" },
+    { "source": "Extraordinary", "target": "変則", "category": "Rules", "note": "能力種別(Ex)のラベル。Extraordinary Ability=変則能力" },
+    { "source": "Supernatural", "target": "超常", "category": "Rules", "note": "能力種別(Su)のラベル。Supernatural Ability=超常能力" },
+    { "source": "Inherent", "target": "天賦", "category": "Rules", "note": "ボーナス種別ラベル。Inherent bonus=天賦ボーナスに合わせる（「固有」は不可）" },
+    { "source": "Sacred", "target": "神聖", "category": "Rules", "note": "ボーナス種別ラベル。Sacred bonus=神聖ボーナスに合わせる（「聖なる」は不可）" },
+    { "source": "Insight", "target": "洞察", "category": "Rules", "note": "ボーナス種別ラベル" },
+    { "source": "Luck", "target": "幸運", "category": "Rules", "note": "ボーナス種別ラベル" },
+    { "source": "Morale", "target": "士気", "category": "Rules", "note": "ボーナス種別ラベル" },
+    { "source": "Racial", "target": "種族", "category": "Rules", "note": "ボーナス種別ラベル" },
+    { "source": "Trait", "target": "特徴", "category": "Rules", "note": "ボーナス種別ラベル/キャラクター特徴" },
+    { "source": "Size", "target": "サイズ", "category": "Rules", "note": "ボーナス種別ラベル/サイズ分類" },
+    { "source": "Natural armor", "target": "外皮", "category": "Rules", "note": "ボーナス種別ラベル。Natural armor bonus=外皮ボーナス" },
+    { "source": "Natural armor enhancement", "target": "外皮強化", "category": "Rules", "note": "ボーナス種別ラベル" },
+    { "source": "Shield enhancement", "target": "盾強化", "category": "Rules", "note": "ボーナス種別ラベル" },
+    { "source": "Tritanopia", "target": "第三色覚異常", "category": "Options", "note": "色覚補正設定。Protanopia=第一色覚異常、Deuteranopia=第二色覚異常と揃える（「色盲」は不可）" },
+    { "source": "Protanopia", "target": "第一色覚異常", "category": "Options", "note": "色覚補正設定" },
+    { "source": "Deuteranopia", "target": "第二色覚異常", "category": "Options", "note": "色覚補正設定" }
   ]
 }

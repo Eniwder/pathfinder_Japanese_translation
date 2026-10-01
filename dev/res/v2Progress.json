@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 71550,
-  "updatedAt": "2026-10-01T09:03:44.518Z",
+  "nextStart": 71850,
+  "updatedAt": "2026-10-01T11:40:02.685Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3857,6 +3857,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round241/",
       "coveredDialogs": [],
       "note": "v2リライト第241弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件を全て訳し、`chunk_0000.translations.json` に書き込みました。JSON は書き込み後に目視で確認しましたが、`import --dry-run` は実行していません。\n\ndialog 名はすべて null で、会話ではなくゲーム設定・操作系の UI 文言です。このチャンクの `<ctrl_N/>` と `{mf}` はありません。\n\n\" / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ内容がJSONとして正しいかは目視で確認していません。dialog名はすべて null で、会話ではなく戦闘関連のゲーム設定UI（一時停止条件や戦闘テキストの表示設定）です。\n\n気づいた点として、`Party members` は「パーティーメンバー」、人を"
+    },
+    {
+      "start": 71550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round242/",
+      "coveredDialogs": [],
+      "note": "v2リライト第242弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json に全200件を書き込みました。件数はキー数から数えただけで、書き込み後の自動チェックはしていません。JSON構文は目視確認のみです。\n\n- **dialog:** なし（すべて dialog が null のゲーム設定画面のUI文言）\n- **気づいた点:**\n  - 英語以外の言語（露・独・仏・西・中・葡・伊）で書かれた言語切替の注意文は / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。対象は dialog が null の設定画面UI文言（映像・音声・ゲーム設定、ボーナス種別名など）で、会話はありません。書き込み後の内容は目視で確認しました。\n\nMediumは文脈上、サイズではなく画質の「中」と判断しました。\n\n用語: Tritanopia → 第三色盲\n用語: Extraor"
     }
   ]
 }
