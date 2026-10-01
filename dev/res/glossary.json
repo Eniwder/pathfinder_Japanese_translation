@@ -18230,6 +18230,15 @@
     { "source": "Finance Points", "target": "財政ポイント", "category": "Kingdom" },
     { "source": "Strategy", "target": "戦略", "category": "Crusade" },
     { "source": "Diplomacy", "target": "外交", "category": "Crusade" },
-    { "source": "Military", "target": "軍事", "category": "Crusade" }
+    { "source": "Military", "target": "軍事", "category": "Crusade" },
+    { "source": "Last Azlanti mode", "target": "ラスト・アズランティ・モード", "category": "Options", "note": "ゲームモード名" },
+    { "source": "Immersive mode", "target": "没入モード", "category": "Options", "note": "ゲームモード名" },
+    { "source": "Turn-based mode", "target": "ターン制モード", "category": "Options", "note": "ゲームモード名" },
+    { "source": "Attack of opportunity", "target": "機会攻撃", "category": "Rules", "note": "Attack of Opportunity" },
+    { "source": "Companions", "target": "仲間", "category": "Options", "note": "自動レベルアップ設定の選択肢" },
+    { "source": "Weak", "target": "弱", "category": "Options", "note": "難易度/設定の選択肢ラベル。文中の形容では「弱い」可" },
+    { "source": "Strengthened", "target": "強化された", "category": "Options", "note": "敵能力値設定の選択肢" },
+    { "source": "Insane", "target": "狂気", "category": "Options", "note": "敵能力値設定の選択肢" },
+    { "source": "Sadistic Game Design", "target": "サディスティック・ゲームデザイン", "category": "Achievement", "note": "実績名" }
   ]
 }

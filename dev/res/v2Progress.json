@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 71250,
-  "updatedAt": "2026-10-01T09:01:33.545Z",
+  "nextStart": 71550,
+  "updatedAt": "2026-10-01T09:03:44.518Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3849,6 +3849,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round240/",
       "coveredDialogs": [],
       "note": "v2リライト第240弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件をすべて訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、キーの照合や import の dry-run は実行していません。\n\n- **dialog:** 全件 `dialog: null` です。内容は種族・クラス紹介文、UIラベル、暦（曜日・月名）、名前 / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認しましたが、スクリプトによる検証はしていません。dialog 名はすべて null で、設定画面と難易度の説明、十字軍（軍団）管理画面のUI文字列でした。`<b>` と `<color>` の生タグ、`{0}` と `{leader_cost}`、改"
+    },
+    {
+      "start": 71250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round241/",
+      "coveredDialogs": [],
+      "note": "v2リライト第241弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件を全て訳し、`chunk_0000.translations.json` に書き込みました。JSON は書き込み後に目視で確認しましたが、`import --dry-run` は実行していません。\n\ndialog 名はすべて null で、会話ではなくゲーム設定・操作系の UI 文言です。このチャンクの `<ctrl_N/>` と `{mf}` はありません。\n\n\" / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ内容がJSONとして正しいかは目視で確認していません。dialog名はすべて null で、会話ではなく戦闘関連のゲーム設定UI（一時停止条件や戦闘テキストの表示設定）です。\n\n気づいた点として、`Party members` は「パーティーメンバー」、人を"
     }
   ]
 }
