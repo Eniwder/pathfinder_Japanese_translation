@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 75450,
-  "updatedAt": "2026-10-01T18:40:58.843Z",
+  "nextStart": 75750,
+  "updatedAt": "2026-10-01T18:45:17.546Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3961,6 +3961,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round254/",
       "coveredDialogs": [],
       "note": "v2リライト第254弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました（JSONとしての構文確認は目視のみ）。dialog はすべて null で、戦闘ログ・UIラベル・属性（アライメント）名のシステム文言でした。`<b>` や `{source}` などのプレースホルダーは原文のまま保持しています。\n\n用語: Memorize → 準備\n用語: Take off → 外す / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話（dialog）は無く、すべてUI・戦闘ログ系の文言です（dialog: null）。\n\n- **装飾タグ**: `Equipment` と `Encyclopedia` の頭文字装飾 `<font>` タグは、日本語では意味がないので外して素の語（装備、百科事典"
+    },
+    {
+      "start": 75450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round255/",
+      "coveredDialogs": [],
+      "note": "v2リライト第255弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON として読み込めるかの検証はしていません（Bash が使えないため目視確認のみ）。\n\ndialog 名はすべて null です。UI 文言、百科事典の説明、状態異常の説明が中心でした。\n\n気づいた点:\n- `Quests`、`Your Offer`、`Vendor's Offer` の頭文字装飾 / chunk_0001 の全100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`<ctrl_N/>` の順序は、ずれていた3件を直して揃えています。ファイルを JSON として読み込む検証は、ツールが使えないため行っていません。\n\n- 会話（dialog）はすべて `null` で、状態異常・性格ラベル・病気・呪文説明など"
     }
   ]
 }

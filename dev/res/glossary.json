@@ -24293,6 +24293,96 @@
       "target": "恩恵",
       "category": "Rule",
       "note": "Granted benefit/blessing"
+    },
+    {
+      "source": "Charge",
+      "target": "突撃",
+      "category": "Rule",
+      "note": "Combat maneuver: move and attack"
+    },
+    {
+      "source": "Coup de Grace",
+      "target": "とどめの一撃",
+      "category": "Rule",
+      "note": "Full-round attack against a helpless foe"
+    },
+    {
+      "source": "Ability Drain",
+      "target": "能力値吸収",
+      "category": "Rule",
+      "note": "Permanent ability score loss"
+    },
+    {
+      "source": "Advisors",
+      "target": "顧問",
+      "category": "Crusade",
+      "note": "Crusade council advisors"
+    },
+    {
+      "source": "Summon Death",
+      "target": "サモン・デス",
+      "category": "Spell",
+      "note": "Summoning effect"
+    },
+    {
+      "source": "Summon Monster II",
+      "target": "サモン・モンスターII",
+      "category": "Spell",
+      "note": "Summon Monster series; keep ローマ数字 suffix"
+    },
+    {
+      "source": "Fake Protection from Energy",
+      "target": "フェイク・プロテクション・フロム・エナジー",
+      "category": "Spell",
+      "note": "Fake variant of Protection from Energy"
+    },
+    {
+      "source": "Fake Protection from Evil",
+      "target": "フェイク・プロテクション・フロム・イーヴル",
+      "category": "Spell",
+      "note": "Fake variant of Protection from Evil"
+    },
+    {
+      "source": "Alchemist's Fire Trap",
+      "target": "錬金術師の火の罠",
+      "category": "Trap",
+      "note": "Trap based on Alchemist's Fire"
+    },
+    {
+      "source": "Fire Bomb",
+      "target": "火炎爆弾",
+      "category": "Ability",
+      "note": "Fire bomb ability/item"
+    },
+    {
+      "source": "Perfect Placement",
+      "target": "完璧な配置",
+      "category": "Ability",
+      "note": "Ability name"
+    },
+    {
+      "source": "Ancient Curse",
+      "target": "古代の呪い",
+      "category": "Ability",
+      "note": "Curse effect name"
+    },
+    {
+      "source": "Blood Storm",
+      "target": "血の嵐",
+      "category": "Ability",
+      "note": "Storm area effect"
+    },
+    {
+      "source": "Heat Storm",
+      "target": "熱の嵐",
+      "category": "Ability",
+      "note": "Storm area effect"
+    },
+    {
+      "source": "Snow Storm",
+      "target": "吹雪",
+      "category": "Ability",
+      "note": "Storm area effect"
     }
   ]
 }
