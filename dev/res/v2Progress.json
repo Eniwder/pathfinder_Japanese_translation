@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 70050,
-  "updatedAt": "2026-10-01T08:35:04.958Z",
+  "nextStart": 70350,
+  "updatedAt": "2026-10-01T08:41:24.022Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3817,6 +3817,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round236/",
       "coveredDialogs": [],
       "note": "v2リライト第236弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込み済みで、あとは完了報告だけです。\n\n200件を訳しました。dialog はすべて null で、会話ではなく神話ランク（アザータ・エンジェル・デーモン）の能力・呪文の説明文と名称です。`<ctrl_N/>` の順序は、語順の都合で逆になりやすい箇所を調整して維持しました。\n\n気づいた点は2つです。\n- ゲーム独自のアザータ呪文 / `chunk_0001.translations.json` に全100件を訳して書き込みました。JSON 構文は目視で確認済みで、`chunk_0001.json` は未編集です。\n\n- **dialog:** なし（`dialog: null`）。神話パス「デーモン」の能力・呪文の説明文と名称ばかりです。\n- **気づいた点:** 初稿で `<ctrl_N/>` の順序入れ替えと脱落が十数件あ"
+    },
+    {
+      "start": 70050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round237/",
+      "coveredDialogs": [],
+      "note": "v2リライト第237弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しました。`<ctrl_N/>` が原文と同じ順序になるよう、語順は組み替えています。会話（dialog）は全件 null で、神話パス／欠片の恩恵／悪魔変身／勅令などの能力説明文と名称が中心です。\n\n用語: Telekinetic Burst → テレキネティック・バースト / 100件を訳し、`chunk_0001.translations.json` に書き込みました。書き込み後の読み返しやJSON検証、`<ctrl_N/>` の個数・順序確認は行っていません。\n\ndialog 名はすべて null で、神話特技・神話能力の名称と説明文のみでした。\n\n用語: Destructive Shockwave → 破壊の衝撃波\n用語: Expanded Arsenal → 拡"
     }
   ]
 }
