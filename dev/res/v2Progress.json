@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 74250,
-  "updatedAt": "2026-10-01T13:54:56.725Z",
+  "nextStart": 74550,
+  "updatedAt": "2026-10-01T18:32:37.201Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3929,6 +3929,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round250/",
       "coveredDialogs": [],
       "note": "v2リライト第250弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。書いた後にJSONの構文を目視で確認しましたが、スクリプトでの検証はしていません。登場した会話(dialog)はなく、全件が dialog=null のUI文字列です。`<ctrl_N/>` トークンは含まれていませんでした。`{0}`、`{text}`、`{area_name}`、`{bind|Pau / 100件すべてを訳し、`chunk_0001.translations.json` に書き込んだ。JSON は目視で確認した。会話（dialog）はすべて null で、ゲームUI・十字軍・野営・錬金術まわりのシステム文言だった。\n\n用語: Protective Rituals → 守護の儀式\n用語: Night Watch → 夜警\n用語: Scroll Scribing → 巻物作成\n用語: "
+    },
+    {
+      "start": 74250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round251/",
+      "coveredDialogs": [],
+      "note": "v2リライト第251弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 200 件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON が正しいかは目視確認のみで、パーサーでの検証はしていません。`chunk_0000.json` は編集していません。\n\n登場した dialog はなく、全件が `dialog: null` の野営・休息・設定・セーブ系のUI文言です / `chunk_0001.translations.json` を書き込みました。93件を訳し、7件を未訳で残しています。JSON の構文は検証していません。書いた内容の目視確認とキー数のカウントも未実施で、93件はこちらで数えた数字です。\n\n- **登場した会話**: dialog は全て null で、UI・システム文言です。内容は呪文書、魔法融合、EULA、OGL表記などです。\n- **未訳の"
     }
   ]
 }

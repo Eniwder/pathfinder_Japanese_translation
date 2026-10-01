@@ -448,7 +448,7 @@ function getSessionUsage() {
 }
 
 const usageCheckEnabled = !args['skip-usage-check'];
-const minRemainingPercent = Number(args['min-remaining-percent'] ?? 10);
+const minRemainingPercent = Number(args['min-remaining-percent'] ?? 20);
 
 // chunk/notes呼び出し直前に呼ぶ。セッション残りが閾値未満なら、そのまま呼び出さずreset時刻まで
 // 待ってから返る（＝プロセスは終了しない。呼び出し側からは「少し待ってから普段通り進む」だけに
@@ -653,7 +653,7 @@ function runRound(start, roundNo) {
     const glossaryEntries = JSON.parse(glossaryBackup).glossary ?? [];
     ensureSessionBudget(`round${roundNo}_notes`);
     callClaude(
-      buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries, chunkReports),
+      buildNotesPrompt(reviewDir, reviewDirAbs, chunkFiles, roundNo, glossaryEntries),
       `round${roundNo}_notes`,
       notesModel
     );

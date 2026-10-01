@@ -94,7 +94,7 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
     `Resistance: electricity 20` →「電撃抵抗20」の形に統一する。
   - `+N bonus on all damage rolls you make using X` →「Xによる全てのダメージ・ロールに+Nのボーナスを得る」で統一。
   - `bypass DR N/X` →「ダメージ減少N/Xを無視する」（`DR`も略さない）、`primary/secondary natural attack`
-    →「主要／二次的肉体攻撃」で統一する。
+    →「主要／副次肉体攻撃」で統一する。
 - 宇宙論の `Plane`（`Upper/Lower Planes` `Plane of Earth` 等）は「位界」で統一する（「次元」にしない）。
 - 同一人物が話者IDや原文スペル違い（`Joran`/`Jorun Vane` 等）で登場することがある。
   glossaryに既存の別名エントリがないか確認し、あれば訳語を合わせる。
