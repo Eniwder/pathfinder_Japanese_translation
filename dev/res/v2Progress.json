@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 75750,
-  "updatedAt": "2026-10-01T18:45:17.546Z",
+  "nextStart": 76050,
+  "updatedAt": "2026-10-01T18:54:21.849Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3969,6 +3969,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round255/",
       "coveredDialogs": [],
       "note": "v2リライト第255弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON として読み込めるかの検証はしていません（Bash が使えないため目視確認のみ）。\n\ndialog 名はすべて null です。UI 文言、百科事典の説明、状態異常の説明が中心でした。\n\n気づいた点:\n- `Quests`、`Your Offer`、`Vendor's Offer` の頭文字装飾 / chunk_0001 の全100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`<ctrl_N/>` の順序は、ずれていた3件を直して揃えています。ファイルを JSON として読み込む検証は、ツールが使えないため行っていません。\n\n- 会話（dialog）はすべて `null` で、状態異常・性格ラベル・病気・呪文説明など"
+    },
+    {
+      "start": 75750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round256/",
+      "coveredDialogs": [],
+      "note": "v2リライト第256弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。会話ではなく呪文・バフ・アイテムの説明文と名称ばかりで、dialog 名はすべて null です。書き込んだ JSON の構文は目視確認していません。`<ctrl_N/>` の順序は、日本語の語順に合わせて文を組み替えて保持しました。\n\n「Eni / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、全件が `dialog: null` の呪文説明文と呪文名でした。\n\n日本語の語順に合わせて、いくつかの entry で `<ctrl_N/>` の並び順を入れ替えています。個数は変えていません。書き込み後の確認は、Reduce Person の entry にあった英語"
     }
   ]
 }
