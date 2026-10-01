@@ -18469,6 +18469,17 @@
     { "source": "Reserve", "target": "予備戦力", "category": "Crusade", "note": "Crusade troop reserve" },
     { "source": "Tailwind", "target": "追い風", "category": "Crusade", "note": "Selectable bonus (\"Choose a Tailwind\")" },
     { "source": "Peril Rating", "target": "危険度", "category": "UI", "note": "Encounter/area difficulty rating" },
-    { "source": "Encyclopedia", "target": "百科事典", "category": "UI", "note": "In-game encyclopedia" }
+    { "source": "Encyclopedia", "target": "百科事典", "category": "UI", "note": "In-game encyclopedia" },
+    { "source": "Protective Rituals", "target": "守護の儀式", "category": "Camp", "note": "Camp skill" },
+    { "source": "Night Watch", "target": "夜警", "category": "Camp", "note": "Camp skill" },
+    { "source": "Scroll Scribing", "target": "巻物作成", "category": "Camp", "note": "Camp skill" },
+    { "source": "Camouflage", "target": "カモフラージュ", "category": "Camp", "note": "Camp skill" },
+    { "source": "Alchemy", "target": "錬金術", "category": "Camp", "note": "Camp skill" },
+    { "source": "Shard Powers", "target": "欠片の力", "category": "UI", "note": "Shard-granted powers UI label" },
+    { "source": "Free Formation", "target": "自由陣形", "category": "UI", "note": "Formation setting" },
+    { "source": "Sink or Swim Mode", "target": "一発勝負モード", "category": "UI", "note": "Difficulty/game mode option" },
+    { "source": "Point of Interest", "target": "注目地点", "category": "UI", "note": "Map marker" },
+    { "source": "Owlcat Games", "target": "アウルキャット・ゲームズ", "category": "Organization", "note": "Developer studio." },
+    { "source": "Rogue Trader", "target": "ローグ・トレーダー", "category": "Other", "note": "Warhammer 40,000: Rogue Trader (Owlcat's other game)" }
   ]
 }
