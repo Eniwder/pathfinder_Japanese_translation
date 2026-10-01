@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 67650,
-  "updatedAt": "2026-10-01T03:32:37.065Z",
+  "nextStart": 67950,
+  "updatedAt": "2026-10-01T03:41:07.424Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3753,6 +3753,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round228/",
       "coveredDialogs": [],
       "note": "v2リライト第228弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。JSON構文の検証と `<ctrl_N/>` の照合は、実行権限がないため目視のみで、スクリプトでは確認していません。dialog名はなく（全件 `dialog: null`）、アイテム・特技・クラス能力の説明文と名称が中心です。\n\n気づいた点:\n- 「Precise Strike」は gloss / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`dev/` のコマンドは実行していないため、import の dry-run や JSON 構文の機械検証はしていません。目視では、書き込み直後に見つけた `<7/>` の誤記を1件直しています。会話（dialog）はなく、全件 dialog: null の特技・能"
+    },
+    {
+      "start": 67650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round229/",
+      "coveredDialogs": [],
+      "note": "v2リライト第229弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の翻訳 200件を `chunk_0000.translations.json` に書き込みました。ただし、キーの照合と JSON 構文の検証はできていません。\n\n- **照合:** キーは手で写したため、打ち間違いがあるかもしれません。「待ち伏せ呪文」の1件は誤りに気づいて直しました。それ以外の199件を原本と突き合わせる検証はしていません。\n- **構文:** 目視では確 / chunk_0001 の全100件を訳し、`chunk_0001.translations.json` に書き込みました。登場した dialog はなく（すべて `dialog: null`）、内容は特技・戦技の名称と説明文です。\n\n書き込み後、`<ctrl_N/>` の並び順がずれていた箇所は文を組み替えて直しました。ただし JSON としての構文チェックや `import --dry-run`"
     }
   ]
 }
