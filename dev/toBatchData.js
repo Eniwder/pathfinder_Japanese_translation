@@ -631,7 +631,10 @@ function matchesGlossaryTerm(text, source) {
   const escaped = source.toLocaleLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   // text は事前処理で .toLocaleLowerCase() 済みだが、RegExp に 'i' フラグがついている
   // また、[a-z] の単語境界判定では アンダースコアや数字、あるいは他の文字が含まれる単語に注意が必要
-  return new RegExp(`(?<![a-z])${escaped}(?![a-z])`, 'i').test(text);
+  // 複数形（Aeons / Azatas / Demons 等）も拾う。拾えないと用語集が渡らず訳ブレ（アザタ/イーオン）が出た。
+  // ただし "the Other" → "the others" のような別義を拾わないよう、the 始まりの用語は単数のみ。
+  const plural = /^the /.test(source.toLocaleLowerCase()) ? '' : '(?:s|es)?';
+  return new RegExp(`(?<![a-z])${escaped}${plural}(?![a-z])`, 'i').test(text);
 }
 
 // glossary の caseSensitive: true のエントリ用。一般語と綴りが同じ用語（Will セーヴ／助動詞 will 等）を

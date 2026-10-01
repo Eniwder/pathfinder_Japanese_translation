@@ -921,7 +921,7 @@
     {
       "source": "Aivu",
       "target": "アイヴ",
-      "note": "アザタパスの相棒。ハヴィック・ドラゴン。無邪気・甘党・天真爛漫。"
+      "note": "アザータパスの相棒。ハヴィック・ドラゴン。無邪気・甘党・天真爛漫。"
     },
     {
       "source": "Woljif",
@@ -2523,7 +2523,7 @@
       "source": "Early Sunset",
       "target": "アーリー・サンセット",
       "category": "Character",
-      "note": "真夜中の聖堂突入戦に参加する自由十字軍のアザタ。round34で登場。",
+      "note": "真夜中の聖堂突入戦に参加する自由十字軍のアザータ。round34で登場。",
       "caseSensitive": true
     },
     {
@@ -2660,21 +2660,21 @@
       "source": "Chaldiran",
       "target": "チャルディランの",
       "category": "Location",
-      "note": "アザタコートに協力するハーフリングの集団を指す形容詞形の地名/民族名。round39で言及。",
+      "note": "アザータコートに協力するハーフリングの集団を指す形容詞形の地名/民族名。round39で言及。",
       "caseSensitive": true
     },
     {
       "source": "Olla Devara",
       "target": "オラ・デヴァーラ",
       "category": "Character",
-      "note": "「メートレス（Maitresse）」と呼ばれるアザタコートの一員。round39で言及。",
+      "note": "「メートレス（Maitresse）」と呼ばれるアザータコートの一員。round39で言及。",
       "caseSensitive": true
     },
     {
       "source": "Court of the Flaming Storm",
       "target": "業火嵐の宮廷",
       "category": "Location",
-      "note": "アザタの宮廷（Court）の一つの例として言及される固有名。round39で言及。",
+      "note": "アザータの宮廷（Court）の一つの例として言及される固有名。round39で言及。",
       "caseSensitive": true
     },
     {
