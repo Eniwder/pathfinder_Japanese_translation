@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 70350,
-  "updatedAt": "2026-10-01T08:41:24.022Z",
+  "nextStart": 70650,
+  "updatedAt": "2026-10-01T08:50:28.679Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3825,6 +3825,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round237/",
       "coveredDialogs": [],
       "note": "v2リライト第237弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しました。`<ctrl_N/>` が原文と同じ順序になるよう、語順は組み替えています。会話（dialog）は全件 null で、神話パス／欠片の恩恵／悪魔変身／勅令などの能力説明文と名称が中心です。\n\n用語: Telekinetic Burst → テレキネティック・バースト / 100件を訳し、`chunk_0001.translations.json` に書き込みました。書き込み後の読み返しやJSON検証、`<ctrl_N/>` の個数・順序確認は行っていません。\n\ndialog 名はすべて null で、神話特技・神話能力の名称と説明文のみでした。\n\n用語: Destructive Shockwave → 破壊の衝撃波\n用語: Expanded Arsenal → 拡"
+    },
+    {
+      "start": 70350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round238/",
+      "coveredDialogs": [],
+      "note": "v2リライト第238弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に 200件すべて訳して書き込みました。会話(dialog)はなく、すべて神話の道・呪文・特技の説明文でした。`<ctrl_N/>` の個数と順序は目視で合わせ直しましたが、スクリプトによる検証や `import --dry-run` は実行していません。\n\n「Stat Focus」は「ステータス熟練」とし、Improved を重ねた特 / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、全件がミシック・パスの能力説明と名称（リッチの力、Abundant系、招来能力など）です。\n\n気づいた点:\n- glossaryの `Abundant Casting=目標数増加発動` は意味がずれているように見えますが、そのまま従い、`Improved/Greater` を"
     }
   ]
 }
