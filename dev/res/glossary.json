@@ -24140,6 +24140,81 @@
       "target": "ターン自動終了",
       "category": "UI",
       "note": "Turn-based mode option"
+    },
+    {
+      "source": "Inquisition",
+      "target": "異端審問",
+      "category": "ClassAbility",
+      "note": "Inquisitor's divine power source, alternative to domains."
+    },
+    {
+      "source": "Spiked Light Shield",
+      "target": "スパイク付きライト・シールド",
+      "category": "Weapon",
+      "note": "Spiked Shield=スパイク付きシールドに合わせる（訳者案スパイクト〜から修正）"
+    },
+    {
+      "source": "Spiked Heavy Shield",
+      "target": "スパイク付きヘヴィ・シールド",
+      "category": "Weapon",
+      "note": "Spiked Shield=スパイク付きシールドに合わせる（訳者案スパイクト〜から修正）"
+    },
+    {
+      "source": "Elven Curved Blade",
+      "target": "エルヴン・カーヴド・ブレイド",
+      "category": "Weapon"
+    },
+    {
+      "source": "Double Sword",
+      "target": "ダブル・ソード",
+      "category": "Weapon"
+    },
+    {
+      "source": "Double Axe",
+      "target": "ダブル・アックス",
+      "category": "Weapon"
+    },
+    {
+      "source": "Simple",
+      "target": "単純",
+      "category": "Weapon",
+      "note": "Weapon proficiency category. 単純武器習熟に合わせる（訳者案「簡易」から修正）"
+    },
+    {
+      "source": "Exotic",
+      "target": "特殊",
+      "category": "Weapon",
+      "note": "Weapon proficiency category (Simple/Martial/Exotic)"
+    },
+    {
+      "source": "Monk weapon",
+      "target": "モンク武器",
+      "category": "Weapon",
+      "note": "Weapon category usable with monk abilities"
+    },
+    {
+      "source": "Finesse Wielding",
+      "target": "軽妙な扱い",
+      "category": "Weapon",
+      "note": "Weapon property allowing Dexterity-based attacks"
+    },
+    {
+      "source": "Two-Handed",
+      "target": "両手持ち",
+      "category": "Weapon",
+      "note": "Weapon wield type"
+    },
+    {
+      "source": "Weapon sets",
+      "target": "武器セット",
+      "category": "UI",
+      "note": "Switchable weapon slots"
+    },
+    {
+      "source": "Guard Order",
+      "target": "見張り順",
+      "category": "UI",
+      "note": "Camp guard rotation order"
     }
   ]
 }
