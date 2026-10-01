@@ -18409,6 +18409,27 @@
     { "source": "Common Rule", "target": "共同統治", "category": "Lore", "note": "アンドランの統治原則" },
     { "source": "Flood Road", "target": "フラッド・ロード", "category": "Location", "note": "ベルクゼンの季節河川" },
     { "source": "Armies of Exploration", "target": "探検軍", "category": "Organization", "note": "古タルドールの軍" },
-    { "source": "City at the Center of the World", "target": "世界の中心の都市", "category": "Lore", "note": "アブサロムの異名" }
+    { "source": "City at the Center of the World", "target": "世界の中心の都市", "category": "Lore", "note": "アブサロムの異名" },
+    { "source": "Intensified", "target": "強度強化", "category": "Rules", "note": "Metamagic label; matches Intensified Spell=強度強化呪文" },
+    { "source": "Maximized", "target": "呪文威力最大化", "category": "Rules", "note": "Metamagic label" },
+    { "source": "Quickened", "target": "呪文即時化", "category": "Rules", "note": "Metamagic label; 呪文高速化ではなくQuicken Spellの訳に統一" },
+    { "source": "Extended", "target": "呪文持続時間延長", "category": "Rules", "note": "Metamagic label" },
+    { "source": "Caster", "target": "術者", "category": "Rules" },
+    { "source": "Hit Points", "target": "ヒット・ポイント", "category": "Rules" },
+    { "source": "Arcane", "target": "秘術", "category": "Rules", "note": "Spell type/descriptor" },
+    { "source": "Mind-Affecting", "target": "精神作用", "category": "Rules", "note": "Spell descriptor" },
+    { "source": "Negative Level", "target": "負のレベル", "category": "Rules" },
+    { "source": "Universalist", "target": "ユニヴァーサリスト", "category": "Class", "note": "Wizard school" },
+    { "source": "Buckler Proficiency", "target": "バックラー習熟", "category": "Feat" },
+    { "source": "Fear Immunity", "target": "恐怖完全耐性", "category": "Rules" },
+    { "source": "Vilderavn Bleed", "target": "ヴィルデラヴンの出血", "category": "Ability" },
+    { "source": "Channel Positive Energy Harm", "target": "正のエネルギー放出（ダメージ）", "category": "Ability" },
+    { "source": "Channel Negative Energy Harm", "target": "負のエネルギー放出（ダメージ）", "category": "Ability" },
+    { "source": "Movement Impairing", "target": "移動阻害", "category": "Rules", "note": "Spell descriptor" },
+    { "source": "Negative Emotion", "target": "負の感情", "category": "Rules", "note": "Spell descriptor" },
+    { "source": "Undead Control", "target": "アンデッド支配", "category": "Rules", "note": "Spell descriptor" },
+    { "source": "Siege", "target": "攻城", "category": "Rules", "note": "Crusade army ability type" },
+    { "source": "Stratagem", "target": "策略", "category": "Rules", "note": "Crusade army ability type" },
+    { "source": "XP", "target": "XP", "category": "Rules", "note": "Experience Points=経験点の略記" }
   ]
 }

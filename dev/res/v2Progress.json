@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 73050,
-  "updatedAt": "2026-10-01T13:44:23.398Z",
+  "nextStart": 73350,
+  "updatedAt": "2026-10-01T13:47:34.116Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3897,6 +3897,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-01_round246/",
       "coveredDialogs": [],
       "note": "v2リライト第246弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` を書き込みました。chunk内のentryは全て訳していて、key省略はありません。entryを数えず、JSON構文の検証コマンドも走らせていません。確認したのは、書き込み後に検索して、キー1件が原文chunkと完全一致したことだけです。\n\ndialog名はなく、全て `dialog: null` の百科 / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)は無く、すべてゲーム内百科事典・チュートリアルの説明文と見出しです。\n\nJSON は目視で確認しましたが、パースや import の検証は実行していません。書き込み直後に CMD の項目で誤字（「外피」）を見つけ、「反発」に直しています。\n\nglossary にある「来訪者」は、この"
+    },
+    {
+      "start": 73050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-01_round247/",
+      "coveredDialogs": [],
+      "note": "v2リライト第247弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しただけで、スクリプトでの検証はしていません。会話（dialog）は無く、全件がゲーム内百科事典・UIラベル・能力使用条件メッセージです。`<ctrl_N/>` の順序を崩した2件は書き込み後に直しました。\n\n用語: Intensified → / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）は無く、全件がステータス・状態異常・技能・系統などのシステム用語の単語です。\n\n用語: Restore Health → 体力回復\n用語: Temporary Health → 一時的体力\n用語: Vilderavn Bleed → ヴィルデラヴンの出血\n用語: Negative E"
     }
   ]
 }
