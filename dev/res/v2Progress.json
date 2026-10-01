@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 76350,
-  "updatedAt": "2026-10-01T19:01:10.066Z",
+  "nextStart": 76650,
+  "updatedAt": "2026-10-01T23:32:52.234Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -3985,6 +3985,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round257/",
       "coveredDialogs": [],
       "note": "v2リライト第257弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の訳文 200 件を `dev/lang/chunks/chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。書き込み後の JSON 検証はしておらず、閉じクォートなどは書いた内容の目視確認のみです。\n\n- **件数：** 200 件\n- **dialog：** すべて `dialog: null / 100件を訳して `chunk_0001.translations.json` に書き込みました。dialog はすべて null で、呪文・特技・病気などのシステム文言のチャンクです。JSON の構文は目視で確認しました。\n\n気づいた点が1つあります。`<ctrl_N/>` の順序を保つために、日本語の語順を崩した文が数か所あります（例：「-2の<ctrl_0/>ペナルティ<ctrl_1/>を受"
+    },
+    {
+      "start": 76350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round258/",
+      "coveredDialogs": [],
+      "note": "v2リライト第258弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話ではなく、すべて呪文・効果の説明文とその名称で、dialog 名はありません。件数と JSON 構文は目視確認で、コマンドによる検証はしていません。\n\n`<ctrl_N/>` は個数と順序を保つため、一部の文は語順を組み替えています。\n\n用語: Haze of Dreams → ヘイズ・オヴ・ドリー / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`dialog` は全件 null で、呪文名と呪文説明文のみ（会話なし）でした。JSON の構文は目視で確認しただけで、スクリプトでの検証はしていません。`<ctrl_N/>` は原文の順序を保つよう語順を調整しました。\n\n用語: Crusader's Edge → ク"
     }
   ]
 }

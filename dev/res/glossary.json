@@ -976,7 +976,7 @@
     {
       "source": "Areelu",
       "target": "アレール",
-      "note": "アレール・ヴォールシュ。ワールドウーンドを開いた裏切りの神話級魔術師（後のノクティキュラ）。"
+      "note": "アレール・ヴォーレス。ワールドウーンドを開いた裏切りの神話級魔術師（後のノクティキュラ）。"
     },
     {
       "source": "Hand of the Inheritor",
@@ -2190,7 +2190,7 @@
     {
       "source": "The Suture",
       "target": "ザ・スーチャー",
-      "note": "アリーラボに登場するドレッチ。アリーレウに救われ縫合された体を持つ。"
+      "note": "アレールラボに登場するドレッチ。アレールに救われ縫合された体を持つ。"
     },
     {
       "source": "Acemi",
@@ -4393,7 +4393,7 @@
       "source": "Imezlen",
       "target": "イメズレン",
       "category": "Character",
-      "note": "アリーリュ・ヴォーレッシュに捕らえられたインエビタブル（InevitableCompanion_dialogue、round79）。",
+      "note": "アレール・ヴォーレッシュに捕らえられたインエビタブル（InevitableCompanion_dialogue、round79）。",
       "caseSensitive": true
     },
     {
@@ -5675,13 +5675,13 @@
       "source": "Valmallos",
       "target": "ヴァルマロス",
       "category": "Character",
-      "note": "DLCに登場する存在。アリールーの知識と記憶から余剰体を生み出した。",
+      "note": "DLCに登場する存在。アレールの知識と記憶から余剰体を生み出した。",
       "caseSensitive": true
     },
     {
       "source": "Excess",
       "target": "余剰体",
-      "note": "DLCでアリールーの余剰の神話の力から生まれた存在への呼び名（呼びかけにも使う）。"
+      "note": "DLCでアレールの余剰の神話の力から生まれた存在への呼び名（呼びかけにも使う）。"
     },
     {
       "source": "Zorm",
@@ -11811,7 +11811,7 @@
     },
     {
       "source": "Elemental Body",
-      "target": "元素の体",
+      "target": "エレメンタル・ボディ",
       "category": "PRD Term",
       "note": "PRD日本語版の訳語。"
     },
@@ -24384,67 +24384,410 @@
       "category": "Ability",
       "note": "Storm area effect"
     },
-    {"source": "Enigma", "target": "エニグマ", "note": "Name used in spell/ability descriptions.", "category": "Proper Noun"},
-    {"source": "Forge", "target": "フォージ", "note": "Source of fire hazard effects (immunity granted against it).", "category": "Proper Noun"},
-    {"source": "Targeted Dispel Magic", "target": "対象指定のディスペル・マジック", "note": "Single-target variant of Dispel Magic.", "category": "Spell"},
-    {"source": "Incendiary Runes", "target": "インセンディアリー・ルーンズ", "note": "Spell.", "category": "Spell"},
-    {"source": "Slaying Arrow", "target": "スレイング・アロー", "note": "Spell.", "category": "Spell"},
-    {"source": "Divine Zap", "target": "ディヴァイン・ザップ", "note": "Spell.", "category": "Spell"},
-    {"source": "Ignition", "target": "イグニッション", "note": "Spell.", "category": "Spell"},
-    {"source": "Acid Maw", "target": "酸の顎", "note": "Spell.", "category": "Spell"},
-    {"source": "Living Plague", "target": "生ける疫病", "note": "Ability/effect.", "category": "Ability"},
-    {"source": "Beast Shape", "target": "ビースト・シェイプ", "note": "Polymorph spell series (I-IV).", "category": "Spell"},
-    {"source": "Song of Discord, Greater", "target": "グレーター・ソング・オヴ・ディスコード", "note": "Greater version of Song of Discord.", "category": "Spell"},
-    {"source": "Spellblight", "target": "スペルブライト", "note": "Magical affliction.", "category": "Ability"},
-    {"source": "Negated Spellblight", "target": "無効化のスペルブライト", "note": "Spellblight variant.", "category": "Ability"},
-    {"source": "Glacial Armor", "target": "氷河の鎧", "note": "Ability/effect.", "category": "Ability"},
-    {"source": "Mark of Sithhud", "target": "シスハッドの刻印", "note": "Effect tied to Sithhud.", "category": "Ability"},
-    {"source": "Parasite Infestation", "target": "寄生虫の蔓延", "note": "Ability/effect.", "category": "Ability"},
-    {"source": "Wild Magic Charge", "target": "ワイルド魔法の突撃", "note": "Wild Magic effect.", "category": "Ability"},
-    {"source": "Wild Magic Wave", "target": "ワイルド魔法の波", "note": "Wild Magic effect.", "category": "Ability"},
-    {"source": "Tidal Surge", "target": "潮の奔流", "note": "Ability.", "category": "Ability"},
-    {"source": "Winter's Grasp", "target": "冬の掌握", "note": "Ability/spell.", "category": "Ability"},
-    {"source": "Heaven's Wing Strike", "target": "ヘヴンの翼撃", "note": "Ability.", "category": "Ability"},
-    {"source": "Hurricane Bow", "target": "ハリケーン・ボウ", "note": "Spell.", "category": "Spell"},
-    {"source": "Face of the Devourer", "target": "ディヴァウアラーの顔", "note": "Spell.", "category": "Spell"},
-    {"source": "Firebelly", "target": "ファイアーベリー", "note": "Feat/ability name.", "category": "Feat"},
-    {"source": "Ironbeard", "target": "アイアンビアード", "note": "Feat/ability name.", "category": "Feat"},
-    {"source": "Protection from Alignment", "target": "プロテクション・フロム・アライメント", "note": "Spell.", "category": "Spell"},
-    {"source": "Snowball", "target": "スノーボール", "note": "Spell.", "category": "Spell"},
-    {"source": "Strand of the Tangled Knot", "target": "ストランド・オヴ・ザ・タングルド・ノット", "note": "Spell.", "category": "Spell"},
-    {"source": "Tangled Knot", "target": "タングルド・ノット", "note": "The Green Mother's legendary knot.", "category": "Proper Noun"},
-    {"source": "Summon Monster", "target": "サモン・モンスター", "note": "Spell series (0-IX), e.g. サモン・モンスターI.", "category": "Spell"},
-    {"source": "Summon Nature's Ally", "target": "サモン・ネイチャーズ・アライ", "note": "Spell series (I-IX).", "category": "Spell"},
-    {"source": "Murder pony", "target": "マーダー・ポニー", "note": "Creature.", "category": "Creature"},
-    {"source": "Obelisk of Despair", "target": "絶望のオベリスク", "note": "Source of debuff effect.", "category": "Proper Noun"},
-    {"source": "Furious Squirrels", "target": "怒れるリス", "note": "Summoned swarm creature.", "category": "Creature"},
-    {"source": "Magic Weapon, Primary", "target": "マジック・ウェポン（主要）", "note": "Spell variant.", "category": "Spell"},
-    {"source": "Magic Weapon, Secondary", "target": "マジック・ウェポン（副次）", "note": "Spell variant.", "category": "Spell"},
-    {"source": "Veil of Heaven", "target": "ヴェイル・オヴ・ヘヴン", "note": "Spell.", "category": "Spell"},
-    {"source": "Unbreakable Heart", "target": "アンブレイカブル・ハート", "note": "Spell.", "category": "Spell"},
-    {"source": "Blessing of Luck and Resolve", "target": "ブレッシング・オヴ・ラック・アンド・レゾルヴ", "note": "Spell.", "category": "Spell"},
-    {"source": "Bone Fists", "target": "ボーン・フィスツ", "note": "Spell.", "category": "Spell"},
-    {"source": "Mortal Terror", "target": "モータル・テラー", "note": "Spell.", "category": "Spell"},
-    {"source": "Pox Pustules", "target": "ポックス・パスチュルズ", "note": "Spell.", "category": "Spell"},
-    {"source": "Protection from Alignment, Communal", "target": "コミュナル・プロテクション・フロム・アライメント", "note": "Spell.", "category": "Spell"},
-    {"source": "Resist Acid", "target": "レジスト・アシッド", "note": "Resist Energy variant.", "category": "Spell"},
-    {"source": "Resist Cold", "target": "レジスト・コールド", "note": "Resist Energy variant.", "category": "Spell"},
-    {"source": "Resist Electricity", "target": "レジスト・エレクトリシティ", "note": "Resist Energy variant.", "category": "Spell"},
-    {"source": "Resist Fire", "target": "レジスト・ファイア", "note": "Resist Energy variant.", "category": "Spell"},
-    {"source": "Resist Sonic", "target": "レジスト・ソニック", "note": "Resist Energy variant.", "category": "Spell"},
-    {"source": "Sense Vitals", "target": "センス・ヴァイタルズ", "note": "Spell.", "category": "Spell"},
-    {"source": "Battering Blast", "target": "バッタリング・ブラスト", "note": "Spell.", "category": "Spell"},
-    {"source": "Curse of Deterioration", "target": "カース・オヴ・デテリオレイション", "note": "Bestow Curse variant.", "category": "Spell"},
-    {"source": "Curse of Feeble Body", "target": "カース・オヴ・フィーブル・ボディ", "note": "Bestow Curse variant.", "category": "Spell"},
-    {"source": "Curse of Idiocy", "target": "カース・オヴ・イディオシー", "note": "Bestow Curse variant.", "category": "Spell"},
-    {"source": "Summon Small Elemental", "target": "スモール・エレメンタル招来", "note": "Spell. Variants: スモール・エア/アース/ファイア/ウォーター・エレメンタル招来.", "category": "Spell"},
-    {"source": "Summon Small Air Elemental", "target": "スモール・エア・エレメンタル招来", "note": "Spell variant.", "category": "Spell"},
-    {"source": "Summon Small Earth Elemental", "target": "スモール・アース・エレメンタル招来", "note": "Spell variant.", "category": "Spell"},
-    {"source": "Summon Small Fire Elemental", "target": "スモール・ファイア・エレメンタル招来", "note": "Spell variant.", "category": "Spell"},
-    {"source": "Summon Small Water Elemental", "target": "スモール・ウォーター・エレメンタル招来", "note": "Spell variant.", "category": "Spell"},
-    {"source": "Chaotic-aligned", "target": "混沌属性", "note": "Alignment descriptor.", "category": "Game Term"},
-    {"source": "Evil-aligned", "target": "悪属性", "note": "Alignment descriptor.", "category": "Game Term"},
-    {"source": "Good-aligned", "target": "善属性", "note": "Alignment descriptor.", "category": "Game Term"},
-    {"source": "Lawful-aligned", "target": "秩序属性", "note": "Alignment descriptor.", "category": "Game Term"}
+    {
+      "source": "Enigma",
+      "target": "エニグマ",
+      "note": "Name used in spell/ability descriptions.",
+      "category": "Proper Noun"
+    },
+    {
+      "source": "Forge",
+      "target": "フォージ",
+      "note": "Source of fire hazard effects (immunity granted against it).",
+      "category": "Proper Noun"
+    },
+    {
+      "source": "Targeted Dispel Magic",
+      "target": "対象指定のディスペル・マジック",
+      "note": "Single-target variant of Dispel Magic.",
+      "category": "Spell"
+    },
+    {
+      "source": "Incendiary Runes",
+      "target": "インセンディアリー・ルーンズ",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Slaying Arrow",
+      "target": "スレイング・アロー",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Divine Zap",
+      "target": "ディヴァイン・ザップ",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Ignition",
+      "target": "イグニッション",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Acid Maw",
+      "target": "酸の顎",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Living Plague",
+      "target": "生ける疫病",
+      "note": "Ability/effect.",
+      "category": "Ability"
+    },
+    {
+      "source": "Beast Shape",
+      "target": "ビースト・シェイプ",
+      "note": "Polymorph spell series (I-IV).",
+      "category": "Spell"
+    },
+    {
+      "source": "Song of Discord, Greater",
+      "target": "グレーター・ソング・オヴ・ディスコード",
+      "note": "Greater version of Song of Discord.",
+      "category": "Spell"
+    },
+    {
+      "source": "Spellblight",
+      "target": "スペルブライト",
+      "note": "Magical affliction.",
+      "category": "Ability"
+    },
+    {
+      "source": "Negated Spellblight",
+      "target": "無効化のスペルブライト",
+      "note": "Spellblight variant.",
+      "category": "Ability"
+    },
+    {
+      "source": "Glacial Armor",
+      "target": "氷河の鎧",
+      "note": "Ability/effect.",
+      "category": "Ability"
+    },
+    {
+      "source": "Mark of Sithhud",
+      "target": "シスハッドの刻印",
+      "note": "Effect tied to Sithhud.",
+      "category": "Ability"
+    },
+    {
+      "source": "Parasite Infestation",
+      "target": "寄生虫の蔓延",
+      "note": "Ability/effect.",
+      "category": "Ability"
+    },
+    {
+      "source": "Wild Magic Charge",
+      "target": "ワイルド魔法の突撃",
+      "note": "Wild Magic effect.",
+      "category": "Ability"
+    },
+    {
+      "source": "Wild Magic Wave",
+      "target": "ワイルド魔法の波",
+      "note": "Wild Magic effect.",
+      "category": "Ability"
+    },
+    {
+      "source": "Tidal Surge",
+      "target": "潮の奔流",
+      "note": "Ability.",
+      "category": "Ability"
+    },
+    {
+      "source": "Winter's Grasp",
+      "target": "冬の掌握",
+      "note": "Ability/spell.",
+      "category": "Ability"
+    },
+    {
+      "source": "Heaven's Wing Strike",
+      "target": "ヘヴンの翼撃",
+      "note": "Ability.",
+      "category": "Ability"
+    },
+    {
+      "source": "Hurricane Bow",
+      "target": "ハリケーン・ボウ",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Face of the Devourer",
+      "target": "ディヴァウアラーの顔",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Firebelly",
+      "target": "ファイアーベリー",
+      "note": "Feat/ability name.",
+      "category": "Feat"
+    },
+    {
+      "source": "Ironbeard",
+      "target": "アイアンビアード",
+      "note": "Feat/ability name.",
+      "category": "Feat"
+    },
+    {
+      "source": "Protection from Alignment",
+      "target": "プロテクション・フロム・アライメント",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Snowball",
+      "target": "スノーボール",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Strand of the Tangled Knot",
+      "target": "ストランド・オヴ・ザ・タングルド・ノット",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Tangled Knot",
+      "target": "タングルド・ノット",
+      "note": "The Green Mother's legendary knot.",
+      "category": "Proper Noun"
+    },
+    {
+      "source": "Summon Monster",
+      "target": "サモン・モンスター",
+      "note": "Spell series (0-IX), e.g. サモン・モンスターI.",
+      "category": "Spell"
+    },
+    {
+      "source": "Summon Nature's Ally",
+      "target": "サモン・ネイチャーズ・アライ",
+      "note": "Spell series (I-IX).",
+      "category": "Spell"
+    },
+    {
+      "source": "Murder pony",
+      "target": "マーダー・ポニー",
+      "note": "Creature.",
+      "category": "Creature"
+    },
+    {
+      "source": "Obelisk of Despair",
+      "target": "絶望のオベリスク",
+      "note": "Source of debuff effect.",
+      "category": "Proper Noun"
+    },
+    {
+      "source": "Furious Squirrels",
+      "target": "怒れるリス",
+      "note": "Summoned swarm creature.",
+      "category": "Creature"
+    },
+    {
+      "source": "Magic Weapon, Primary",
+      "target": "マジック・ウェポン（主要）",
+      "note": "Spell variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Magic Weapon, Secondary",
+      "target": "マジック・ウェポン（副次）",
+      "note": "Spell variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Veil of Heaven",
+      "target": "ヴェイル・オヴ・ヘヴン",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Unbreakable Heart",
+      "target": "アンブレイカブル・ハート",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Blessing of Luck and Resolve",
+      "target": "ブレッシング・オヴ・ラック・アンド・レゾルヴ",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Bone Fists",
+      "target": "ボーン・フィスツ",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Mortal Terror",
+      "target": "モータル・テラー",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Pox Pustules",
+      "target": "ポックス・パスチュルズ",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Protection from Alignment, Communal",
+      "target": "コミュナル・プロテクション・フロム・アライメント",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Resist Acid",
+      "target": "レジスト・アシッド",
+      "note": "Resist Energy variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Resist Cold",
+      "target": "レジスト・コールド",
+      "note": "Resist Energy variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Resist Electricity",
+      "target": "レジスト・エレクトリシティ",
+      "note": "Resist Energy variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Resist Fire",
+      "target": "レジスト・ファイア",
+      "note": "Resist Energy variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Resist Sonic",
+      "target": "レジスト・ソニック",
+      "note": "Resist Energy variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Sense Vitals",
+      "target": "センス・ヴァイタルズ",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Battering Blast",
+      "target": "バッタリング・ブラスト",
+      "note": "Spell.",
+      "category": "Spell"
+    },
+    {
+      "source": "Curse of Deterioration",
+      "target": "カース・オヴ・デテリオレイション",
+      "note": "Bestow Curse variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Curse of Feeble Body",
+      "target": "カース・オヴ・フィーブル・ボディ",
+      "note": "Bestow Curse variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Curse of Idiocy",
+      "target": "カース・オヴ・イディオシー",
+      "note": "Bestow Curse variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Summon Small Elemental",
+      "target": "スモール・エレメンタル招来",
+      "note": "Spell. Variants: スモール・エア/アース/ファイア/ウォーター・エレメンタル招来.",
+      "category": "Spell"
+    },
+    {
+      "source": "Summon Small Air Elemental",
+      "target": "スモール・エア・エレメンタル招来",
+      "note": "Spell variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Summon Small Earth Elemental",
+      "target": "スモール・アース・エレメンタル招来",
+      "note": "Spell variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Summon Small Fire Elemental",
+      "target": "スモール・ファイア・エレメンタル招来",
+      "note": "Spell variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Summon Small Water Elemental",
+      "target": "スモール・ウォーター・エレメンタル招来",
+      "note": "Spell variant.",
+      "category": "Spell"
+    },
+    {
+      "source": "Chaotic-aligned",
+      "target": "混沌属性",
+      "note": "Alignment descriptor.",
+      "category": "Game Term"
+    },
+    {
+      "source": "Evil-aligned",
+      "target": "悪属性",
+      "note": "Alignment descriptor.",
+      "category": "Game Term"
+    },
+    {
+      "source": "Good-aligned",
+      "target": "善属性",
+      "note": "Alignment descriptor.",
+      "category": "Game Term"
+    },
+    {
+      "source": "Lawful-aligned",
+      "target": "秩序属性",
+      "note": "Alignment descriptor.",
+      "category": "Game Term"
+    },
+    {"source": "Haze of Dreams", "target": "ヘイズ・オヴ・ドリームズ", "note": "Spell.", "category": "Spell"},
+    {"source": "Life Blast", "target": "ライフ・ブラスト", "note": "Spell.", "category": "Spell"},
+    {"source": "Vengeful Comets", "target": "ヴェンジフル・コメッツ", "note": "Spell.", "category": "Spell"},
+    {"source": "Storm Call", "target": "ストーム・コール", "note": "Spell.", "category": "Spell"},
+    {"source": "Inside the Storm", "target": "嵐の内側", "note": "Ability/effect name.", "category": "Ability"},
+    {"source": "Magical Vestment", "target": "マジカル・ヴェストメント", "note": "Spell (Magic Vestment).", "category": "Spell"},
+    {"source": "Remove Blindness", "target": "リムーヴ・ブラインドネス", "note": "Spell (Remove Blindness/Deafness variant).", "category": "Spell"},
+    {"source": "Protection from Acid", "target": "プロテクション・フロム・アシッド", "note": "Protection from Energy variant.", "category": "Spell"},
+    {"source": "Protection from Cold", "target": "プロテクション・フロム・コールド", "note": "Protection from Energy variant.", "category": "Spell"},
+    {"source": "Protection from Electricity", "target": "プロテクション・フロム・エレクトリシティ", "note": "Protection from Energy variant.", "category": "Spell"},
+    {"source": "Protection from Fire", "target": "プロテクション・フロム・ファイア", "note": "Protection from Energy variant.", "category": "Spell"},
+    {"source": "Protection from Sonic", "target": "プロテクション・フロム・ソニック", "note": "Protection from Energy variant.", "category": "Spell"},
+    {"source": "Protection From Acid, Communal", "target": "コミュナル・プロテクション・フロム・アシッド", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Protection From Cold, Communal", "target": "コミュナル・プロテクション・フロム・コールド", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Protection From Electricity, Communal", "target": "コミュナル・プロテクション・フロム・エレクトリシティ", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Protection From Fire, Communal", "target": "コミュナル・プロテクション・フロム・ファイア", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Protection From Sonic, Communal", "target": "コミュナル・プロテクション・フロム・ソニック", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Resist Acid, Communal", "target": "コミュナル・レジスト・アシッド", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Resist Cold, Communal", "target": "コミュナル・レジスト・コールド", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Resist Electricity, Communal", "target": "コミュナル・レジスト・エレクトリシティ", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Resist Fire, Communal", "target": "コミュナル・レジスト・ファイア", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Resist Sonic, Communal", "target": "コミュナル・レジスト・ソニック", "note": "Spell variant.", "category": "Spell"},
+    {"source": "See Invisibility, Communal", "target": "コミュナル・シー・インヴィジビリティ", "note": "Spell.", "category": "Spell"},
+    {"source": "Blessing of Luck and Resolve, Mass", "target": "マス・ブレッシング・オヴ・ラック・アンド・レゾルヴ", "note": "Spell.", "category": "Spell"},
+    {"source": "Crusader's Edge", "target": "クルセイダーズ・エッジ", "note": "Spell.", "category": "Spell"},
+    {"source": "Dimension Door, Single", "target": "シングル・ディメンジョン・ドア", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Dimension Door, Mass", "target": "マス・ディメンジョン・ドア", "note": "Spell variant.", "category": "Spell"},
+    {"source": "Eaglesoul", "target": "イーグルソウル", "note": "Spell.", "category": "Spell"},
+    {"source": "Elemental Body I", "target": "エレメンタル・ボディI", "note": "Spell. Elemental Body IVの表記に合わせる（元素の体Iとしない）。", "category": "Spell"},
+    {"source": "Raptor", "target": "猛禽", "note": "Animal Aspect variant.", "category": "Spell"},
+    {"source": "Wasp's Venom", "target": "スズメバチの毒", "note": "Poison/ability name.", "category": "Ability"},
+    {"source": "Primary Hand", "target": "主手", "note": "Weapon hand (spell variant suffix).", "category": "Game Term"},
+    {"source": "Secondary Hand", "target": "副手", "note": "Weapon hand (spell variant suffix).", "category": "Game Term"}
   ]
 }
