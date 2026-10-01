@@ -4173,7 +4173,7 @@
     },
     {
       "source": "Thassilon",
-      "target": "サシリオン",
+      "target": "サッシロン",
       "category": "Location",
       "note": "一万年前に栄えたルーンロードたちの帝国（round75、Alderpashの回想）。",
       "caseSensitive": true
@@ -16253,7 +16253,7 @@
     },
     {
       "source": "Thassilonian Specialist",
-      "target": "サシリオン専門家",
+      "target": "サッシロン専門家",
       "category": "Class",
       "note": "ウィザードのアーキタイプ。系統名はGluttony=暴食/Sloth=怠惰/Pride=傲慢/Greed=強欲/Envy=嫉妬/Lust=色欲/Wrath=憤怒。"
     },
