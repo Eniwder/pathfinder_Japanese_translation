@@ -24977,6 +24977,10 @@
     {"source": "Mite Stone-Thrower", "target": "マイトの石投げ兵", "note": "Enemy unit name.", "category": "Creature"},
     {"source": "Ice-Covered Barbarian", "target": "氷に覆われた蛮族", "note": "Enemy unit name.", "category": "Creature"},
     {"source": "Death on Eight Legs", "target": "八本脚の死", "note": "Named enemy/unit name.", "category": "Creature"},
-    {"source": "Cultist Rabble-Rouser", "target": "カルト信者の扇動者", "note": "Enemy unit name.", "category": "Creature"}
+    {"source": "Cultist Rabble-Rouser", "target": "カルト信者の扇動者", "note": "Enemy unit name.", "category": "Creature"},
+    {"source": "Sunrise Sword Crusader", "target": "サンライズ・ソードの十字軍兵士", "note": "Unit name. Order of the Sunrise Sword＝サンライズ・ソード騎士団に合わせる。round273で「日昇の剣」と割れた。", "category": "Creature"},
+    {"source": "Conjurer of Blessings", "target": "祝福の召喚師", "note": "Epithet of Knubbo (Knubbo＝クナッボ。round273で「ヌッボ」と誤った).", "category": "NPC"},
+    {"source": "Valestry", "target": "ヴァレストリ", "note": "Named NPC. Epithet: Master of Steps＝階梯の主.", "category": "NPC"},
+    {"source": "Master of Steps", "target": "階梯の主", "note": "Epithet of Valestry.", "category": "NPC"}
   ]
 }

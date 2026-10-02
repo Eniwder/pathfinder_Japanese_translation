@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 80850,
-  "updatedAt": "2026-10-02T09:32:01.389Z",
+  "nextStart": 81150,
+  "updatedAt": "2026-10-02T09:34:34.994Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4105,6 +4105,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round272/",
       "coveredDialogs": [],
       "note": "v2リライト第272弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認済みです。会話（dialog）には属さず、NPC・敵・クリーチャーの名称が並ぶチャンクでした。\n\n用語: Gelatinous Cube → ゼラチナス・キューブ\n用語: Ghast → ガスト\n用語: Maledictor → 呪詛師\n用語: Cutthroat → 追いはぎ / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。JSON は目視で確認しています。対象は dialog なし（`dialog: null`）の名称・クリーチャー名・NPC名・説明文1件のみです。\n\n用語: Wight → ワイト\n用語: Venomhodag → ヴェノムホダグ\n用語: Venomanticore → ヴェノマンティコア\n用語:"
+    },
+    {
+      "start": 80850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round273/",
+      "coveredDialogs": [],
+      "note": "v2リライト第273弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認済みで、dry-run 検証は実行していません。会話（dialog）はすべて `null` で、名称・称号・クリーチャー名・特技説明文が中心でした。\n\n書き込み後に、Animated Mask のキーが誤っていた（UUID の書き間違いと仮の訳文）ので修正しました。\n\n用語: / 100件を訳し、`chunk_0001.translations.json` に書き込みました。dialog 名はなく、キャラクター名・敵名・施設名の名称リストのみでした。書き込んだ JSON は目視確認済みです。\n\n用語: Sunrise Sword → サンライズ・ソード\n用語: Everbright → エヴァーブライト\n用語: Cyborg-Crusader → サイボーグ十字軍兵士\n用語"
     }
   ]
 }
