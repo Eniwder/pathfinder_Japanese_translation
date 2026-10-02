@@ -24938,6 +24938,17 @@
     {"source": "Abyssal Anchor", "target": "アビスのアンカー", "note": "DLC island-exploration autosave point (statue).", "category": "Game Term"},
     {"source": "Undertow", "target": "潮流", "note": "DLC island modifier (magical undertow).", "category": "Game Term"},
     {"source": "Guardian", "target": "守護者", "note": "DLC treasure-hunt boss (3 Guardians). 他文脈では適宜訳す。", "category": "Game Term"},
-    {"source": "Chaplain", "target": "チャプレン", "note": "DLC ship NPC who provides supplies.", "category": "NPC"}
+    {"source": "Chaplain", "target": "チャプレン", "note": "DLC ship NPC who provides supplies.", "category": "NPC"},
+    {"source": "Storm of Burning Righteousness", "target": "燃える正義の嵐", "note": "Ember's unique 9th-level spell.", "category": "Spell"},
+    {"source": "Thanatotic Titan", "target": "タナトティック・タイタン", "note": "Titan type worshiped for Godslayer ability.", "category": "Creature"},
+    {"source": "Godslayer", "target": "ゴッドスレイヤー", "note": "Thanatotic Titan ability (silences divine casters).", "category": "Ability"},
+    {"source": "Muhazol", "target": "ムハゾル", "note": "Named creature with damage-negating ability.", "category": "NPC"},
+    {"source": "Sinfrenzy", "target": "罪の狂乱", "note": "Ability family, e.g. Sinfrenzy (Gluttony) = 罪の狂乱（暴食）.", "category": "Ability"},
+    {"source": "Optimal Formation", "target": "最適陣形", "note": "UI: automatic party formation.", "category": "UI"},
+    {"source": "Middle Age", "target": "中年", "note": "Age category (penalty -1).", "category": "Rule"},
+    {"source": "Old", "target": "老齢", "note": "Age category (penalty -3). 年齢段階の文脈のみ。", "category": "Rule"},
+    {"source": "Venerable", "target": "極老", "note": "Age category (penalty -6).", "category": "Rule"},
+    {"source": "Abyssal Torment", "target": "アビスの責め苦", "note": "Greater apocalypse locust sting poison effect.", "category": "Ability"},
+    {"source": "Greater Apocalypse Locust", "target": "グレーター・アポカリプス・ローカスト", "note": "Creature.", "category": "Creature"}
   ]
 }

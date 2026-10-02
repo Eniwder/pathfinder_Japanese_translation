@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 78150,
-  "updatedAt": "2026-10-02T00:23:38.220Z",
+  "nextStart": 78450,
+  "updatedAt": "2026-10-02T04:39:57.124Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4033,6 +4033,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round263/",
       "coveredDialogs": [],
       "note": "v2リライト第263弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に1回で書き込みました。JSON構文は目視で確認しましたが、スクリプトでの検証はしていません（実行権限がないため）。\n\n- **dialog:** すべて `null`（チュートリアル・ヒント・戦闘ログ系の文）。\n- **気づいた点:**\n  - ほぼ全件が「原文の `<ctrl_N/>` / 100件を訳し、`chunk_0001.translations.json` に書き込みました。`chunk_0001.json` は編集しておらず、書いた JSON の構文は目視で確認しました。dialog は全 entry で `null` です（チュートリアル・ヘルプ文・システムメッセージ）。\n\n気づいた点が1つあります。`SpellsRestorationLesser` が指す「Lesse"
+    },
+    {
+      "start": 78150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round264/",
+      "coveredDialogs": [],
+      "note": "v2リライト第264弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` の書き込みが終わり、最後の誤字修正まで済んでいます。JSON の構文は目視確認のみで、パーサーは通していません。\n\n- **件数:** 200件中200件を訳しました（省略したキーはありません）。\n- **dialog:** すべて `dialog: null` のチュートリアル・ヒント文、能力・状態の説明文です。\n- **`<ctrl / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文の確認は、書いた内容を目視で見ただけです。dialog名はすべて null で、会話ではなくモンスター能力・特殊能力の説明文と名称、それに悪魔兵の掛け声3件です。\n\nglossaryでは Outsider=来訪者 としているので、掛け声の「Outsiders」も「来訪者」にしました。\n"
     }
   ]
 }
