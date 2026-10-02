@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 77250,
-  "updatedAt": "2026-10-01T23:55:02.412Z",
+  "nextStart": 77550,
+  "updatedAt": "2026-10-02T00:06:46.442Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4009,6 +4009,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round260/",
       "coveredDialogs": [],
       "note": "v2リライト第260弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON が正しいかの確認と import の dry-run は、権限がなく実行していません。会話（dialog）はなく、全て `dialog: null` の呪文・状態効果のシステム文と名称でした。\n\n注意点が2つあります。\n- 一部の entry は `<ctrl_N/>` の順序を保つため語順を / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSONの構文は目視で確認済みで、スクリプトでの検証はしていません。対象は呪文・ポリモーフ系の効果説明と名称で、dialogはすべて null（会話ではありません）です。\n\n気づいた点: 原文で `<ctrl_N/>` が囲んでいる語と日本語の語順が合わない箇所は、トーク"
+    },
+    {
+      "start": 77250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round261/",
+      "coveredDialogs": [],
+      "note": "v2リライト第261弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件を書き込みました。`chunk_0000.json` は編集していません。ファイルの読み返しも JSON 検証もしていないので、構文は目視確認できていません。\n\n登場した会話（dialog名）はありません。全entryが `dialog: null` の呪文・能力の名称と説明文です（ポリモーフ系、サモン系、ドラゴンカインドII / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。件数は原文チャンクのキー数と同じです。1件はキーを書き間違えたので直しました。残りのキーは目視でしか照合しておらず、スクリプトによる照合はしていません。\n\n会話（dialog）はありません。呪文・秘奥・持続時間の説明文とその名称だけのチャンクです。`<ctrl_N/>` の順序を保つため、語順を"
     }
   ]
 }

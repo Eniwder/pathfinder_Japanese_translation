@@ -24828,6 +24828,17 @@
     {"source": "Perfect Form", "target": "パーフェクト・フォーム", "note": "Ability.", "category": "Ability"},
     {"source": "Poison Breath", "target": "ポイズン・ブレス", "note": "Ability.", "category": "Ability"},
     {"source": "Guardian Armor", "target": "ガーディアン・アーマー", "note": "Creature (Create Undead option).", "category": "Creature"},
-    {"source": "Tar", "target": "タール", "note": "Substance/effect name.", "category": "Game Term"}
+    {"source": "Tar", "target": "タール", "note": "Substance/effect name.", "category": "Game Term"},
+    {"source": "Summon Greater Elemental", "target": "サモン・グレーター・エレメンタル", "note": "Spell. Air/Earth/Fire/Waterはエア/アース/ファイア/ウォーターを挿入。", "category": "Spell"},
+    {"source": "Summon Elder Elemental", "target": "サモン・エルダー・エレメンタル", "note": "Spell. Air/Earth/Fire/Waterはエア/アース/ファイア/ウォーターを挿入。", "category": "Spell"},
+    {"source": "Rift of Ruin", "target": "リフト・オヴ・ルーイン", "note": "Spell.", "category": "Spell"},
+    {"source": "Vinetrap", "target": "ヴァイントラップ", "note": "Spell.", "category": "Spell"},
+    {"source": "Soulreaver", "target": "ソウルリーヴァー", "note": "Spell.", "category": "Spell"},
+    {"source": "Synchronization", "target": "シンクロナイゼーション", "note": "Spell. Total Synchronization→トータル・シンクロナイゼーション。", "category": "Spell"},
+    {"source": "Greater Curse of Deterioration", "target": "グレーター・カース・オヴ・デテリオレイション", "note": "Spell. 他のGreater Curse of ～も同形式（Feeble Body/Idiocy/Weakness）。", "category": "Spell"},
+    {"source": "Bestow Curse, Greater", "target": "グレーター・ビストウ・カース", "note": "Spell.", "category": "Spell"},
+    {"source": "Greater Shadow", "target": "グレーター・シャドウ", "note": "Creature (Create Undead option).", "category": "Creature"},
+    {"source": "Advanced creature template", "target": "上級クリーチャー・テンプレート", "note": "Simple template. Create Undead等の括弧内のAdvanced ～も「上級～」。", "category": "Game Term"},
+    {"source": "Secrets of Suramgamin", "target": "スラムガミンの秘奥", "note": "Ability group. 各Secret of ～は「～の秘奥」（Accomplishment→達成, Hooking and Summoning→引き寄せと招来, Increasing Benefits→恩恵増大, Quelling Disasters→災厄鎮圧, Subduing→制圧）。", "category": "Ability"}
   ]
 }
