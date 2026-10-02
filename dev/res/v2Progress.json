@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 79650,
-  "updatedAt": "2026-10-02T05:06:37.782Z",
+  "nextStart": 79950,
+  "updatedAt": "2026-10-02T05:08:59.677Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4073,6 +4073,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round268/",
       "coveredDialogs": [],
       "note": "v2リライト第268弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。会話(dialog)はすべて null で、クリーチャー名・称号・ボス名・1件の効果説明文だけです。書いた JSON は目視で構文を確認しました。\n\n用語: Mythic → ミシック\n用語: Distorted → 歪んだ\n用語: Quasit → クアジット\n用語: Vermlek → ヴァームレ / 100件を訳し、`chunk_0001.translations.json` に書き込みました。内容はクリーチャー・NPC名だけで、dialog は全件 null です。JSON の構文は目視で確認しました。\n\n用語: Wandering → さまよう\n用語: Treasure-Hunting → 宝探しの\n用語: Forsaken Kobold → 見捨てられたコボルド\n用語: Abysmal "
+    },
+    {
+      "start": 79650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round269/",
+      "coveredDialogs": [],
+      "note": "v2リライト第269弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しましたが、パースや import の dry-run は実行していません。\n\n登場した会話（dialog）はありません。全件が `dialog: null` のクリーチャー名、能力名、アイテム名、説明文でした。\n\n気づいた点として、`<ctrl_N/>` は個数・内容とも保持して / 100件を訳して `chunk_0001.translations.json` に書き込みました。会話(dialog)は無く、すべてクリーチャー名・NPC名の単独entryです。書き込んだJSONの構文は目視で確認しました。\n\n用語: Fiendish → フィーンド・\n用語: Half-Fiend → ハーフフィーンド\n用語: Elder → エルダー\n用語: Greater → グレーター\n用"
     }
   ]
 }

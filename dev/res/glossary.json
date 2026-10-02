@@ -24968,6 +24968,11 @@
     {"source": "Treasure-Hunting Dodger", "target": "宝探しの軽業師", "note": "Enemy unit name. round268で「逃げ上手」と割れた。", "category": "Creature"},
     {"source": "Treasure-Hunting Brewer", "target": "宝探しの醸造師", "note": "Enemy unit name.", "category": "Creature"},
     {"source": "Wandering Brewer", "target": "さまよう醸造師", "note": "Enemy unit name. round268で「放浪の醸造家」と割れた。", "category": "Creature"},
-    {"source": "Demon-May-Care Joestantin", "target": "デーモン無頓着のジョースタンティン", "note": "Named enemy (pun on devil-may-care).", "category": "NPC"}
+    {"source": "Demon-May-Care Joestantin", "target": "デーモン無頓着のジョースタンティン", "note": "Named enemy (pun on devil-may-care).", "category": "NPC"},
+    {"source": "Zherstril", "target": "ゼルストリル", "note": "Named enemy. Epithet: the Ender of Journeys＝旅路を終わらせる者.", "category": "NPC"},
+    {"source": "Ender of Journeys", "target": "旅路を終わらせる者", "note": "Epithet of Zherstril.", "category": "NPC"},
+    {"source": "Dire Carrion-Eater Lizard", "target": "ダイア・屍肉喰らいのトカゲ", "note": "Enemy unit name.", "category": "Creature"},
+    {"source": "The-Last-Sound-You-Hear", "target": "最期に聞く音", "note": "Named enemy (hyphenated name).", "category": "NPC"},
+    {"source": "Save DC", "target": "セーヴDC", "note": "Game term (saving throw difficulty class).", "category": "Game Term"}
   ]
 }
