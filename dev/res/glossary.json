@@ -24981,6 +24981,10 @@
     {"source": "Sunrise Sword Crusader", "target": "サンライズ・ソードの十字軍兵士", "note": "Unit name. Order of the Sunrise Sword＝サンライズ・ソード騎士団に合わせる。round273で「日昇の剣」と割れた。", "category": "Creature"},
     {"source": "Conjurer of Blessings", "target": "祝福の召喚師", "note": "Epithet of Knubbo (Knubbo＝クナッボ。round273で「ヌッボ」と誤った).", "category": "NPC"},
     {"source": "Valestry", "target": "ヴァレストリ", "note": "Named NPC. Epithet: Master of Steps＝階梯の主.", "category": "NPC"},
-    {"source": "Master of Steps", "target": "階梯の主", "note": "Epithet of Valestry.", "category": "NPC"}
+    {"source": "Master of Steps", "target": "階梯の主", "note": "Epithet of Valestry.", "category": "NPC"},
+    {"source": "Venture-Captain Gristoff", "target": "ベンチャー・キャプテン・グリストフ", "note": "Gristoff Rollano's title form. Venture-captain＝ベンチャー・キャプテン.", "category": "Person"},
+    {"source": "Combat Party", "target": "戦闘部隊", "note": "Unit naming: the \"Abyss\" Combat Party＝戦闘部隊「アビス」.", "category": "Organization"},
+    {"source": "Lady in Distress", "target": "困り果てた貴婦人", "note": "Unit/NPC name.", "category": "NPC"},
+    {"source": "Injury", "target": "致傷型", "note": "Disease/poison type in stat lines (e.g. Filth fever: Injury). round274では「傷口」と訳した。一般語のinjury（負傷）には適用しない。", "category": "Game Term"}
   ]
 }
