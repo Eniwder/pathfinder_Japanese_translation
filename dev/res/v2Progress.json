@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 78450,
-  "updatedAt": "2026-10-02T04:39:57.124Z",
+  "nextStart": 78750,
+  "updatedAt": "2026-10-02T04:50:24.871Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4041,6 +4041,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round264/",
       "coveredDialogs": [],
       "note": "v2リライト第264弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` の書き込みが終わり、最後の誤字修正まで済んでいます。JSON の構文は目視確認のみで、パーサーは通していません。\n\n- **件数:** 200件中200件を訳しました（省略したキーはありません）。\n- **dialog:** すべて `dialog: null` のチュートリアル・ヒント文、能力・状態の説明文です。\n- **`<ctrl / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文の確認は、書いた内容を目視で見ただけです。dialog名はすべて null で、会話ではなくモンスター能力・特殊能力の説明文と名称、それに悪魔兵の掛け声3件です。\n\nglossaryでは Outsider=来訪者 としているので、掛け声の「Outsiders」も「来訪者」にしました。\n"
+    },
+    {
+      "start": 78450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round265/",
+      "coveredDialogs": [],
+      "note": "v2リライト第265弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました（`chunk_0000.json` は未編集）。JSON構文は目視で確認しましたが、ツールでの検証や dry-run は実行していません。dialog 名は全 block で `null` で、会話ではなくデーモン／カンビオン等のモンスター能力・特殊能力の説明文と名称です。\n\n気づいた点：\n- `<ct / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、全件が dialog なしの能力・効果説明、状態異常・アイテム説明、名称です（シスハッド関連が中心）。JSON は目視で確認しましたが、`<ctrl_N/>` の順序が原文と一致するかのスクリプト検証はしていません。\n\n日本語で語順を入れ替えるとタグ順が崩れる箇所は、「"
     }
   ]
 }

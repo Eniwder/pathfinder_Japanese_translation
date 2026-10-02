@@ -24949,6 +24949,14 @@
     {"source": "Old", "target": "老齢", "note": "Age category (penalty -3). 年齢段階の文脈のみ。", "category": "Rule"},
     {"source": "Venerable", "target": "極老", "note": "Age category (penalty -6).", "category": "Rule"},
     {"source": "Abyssal Torment", "target": "アビスの責め苦", "note": "Greater apocalypse locust sting poison effect.", "category": "Ability"},
-    {"source": "Greater Apocalypse Locust", "target": "グレーター・アポカリプス・ローカスト", "note": "Creature.", "category": "Creature"}
+    {"source": "Greater Apocalypse Locust", "target": "グレーター・アポカリプス・ローカスト", "note": "Creature.", "category": "Creature"},
+    {"source": "Apocalyptic Plague", "target": "黙示録の疫病", "note": "Deskari's disease effect.", "category": "Ability"},
+    {"source": "Deskari's Venom", "target": "デスカリの毒", "note": "Deskari's poison effect.", "category": "Ability"},
+    {"source": "Brittle Ice", "target": "もろい氷", "note": "Sithhud's jaws debuff.", "category": "Ability"},
+    {"source": "Frost Cover", "target": "氷の覆い", "note": "Sithhud shard ability (concealment).", "category": "Ability"},
+    {"source": "Keen", "target": "キーン", "note": "Weapon special ability (doubles threat range).", "category": "Weapon Property"},
+    {"source": "Frequency", "target": "頻度", "note": "Poison/disease stat-block label.", "category": "Rule"},
+    {"source": "Onset", "target": "発症", "note": "Poison/disease stat-block label.", "category": "Rule"},
+    {"source": "Cure", "target": "治癒", "note": "Poison/disease stat-block label (e.g. 3回連続のセーヴ成功).", "category": "Rule"}
   ]
 }
