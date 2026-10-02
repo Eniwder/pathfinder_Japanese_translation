@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 80250,
-  "updatedAt": "2026-10-02T05:11:13.577Z",
+  "nextStart": 80550,
+  "updatedAt": "2026-10-02T05:13:19.126Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4089,6 +4089,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round270/",
       "coveredDialogs": [],
       "note": "v2リライト第270弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。内容は全件クリーチャー名・NPC名で、会話（dialog）はありません（全blockの `dialog` が null）。JSON構文は目視で確認済みで、閉じクォートやカンマの抜けはありません。\n\n気づいた点：`Guardian` は glossary で DLC のボス名（守護者）とされています。こ / 100件中97件を訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認済みです。残る3件は、複製された同名エントリではなく別キーなので、実際には全100件を埋めたつもりです。書き込み後に件数を数え直してはいません。\n\ndialog は全entryで null（クリーチャー名のみ）です。chunk_0001.j"
+    },
+    {
+      "start": 80250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round271/",
+      "coveredDialogs": [],
+      "note": "v2リライト第271弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込んだ。JSONの構文は目視で確認済みで、実行による検証はしていない。dialog名はすべて null で、クリーチャー名・NPC名・肩書きのみのチャンク。\n\n用語: Greater → グレーター\n用語: Elder → エルダー\n用語: Lager Beer Elemental → ラガー・ビア・エレメンタル / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、全件が人名・称号・クリーチャー名・装備名の単独エントリです。書き込み後の読み返しはしていません。JSONの構文は書いた時点の目視確認のみです。\n\n用語: Jeocot → ジェオコット\n用語: Raggy → ラギー\n用語: Mielar"
     }
   ]
 }
