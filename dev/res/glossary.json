@@ -24973,6 +24973,7 @@
     {"source": "Ender of Journeys", "target": "旅路を終わらせる者", "note": "Epithet of Zherstril.", "category": "NPC"},
     {"source": "Dire Carrion-Eater Lizard", "target": "ダイア・屍肉喰らいのトカゲ", "note": "Enemy unit name.", "category": "Creature"},
     {"source": "The-Last-Sound-You-Hear", "target": "最期に聞く音", "note": "Named enemy (hyphenated name).", "category": "NPC"},
-    {"source": "Save DC", "target": "セーヴDC", "note": "Game term (saving throw difficulty class).", "category": "Game Term"}
+    {"source": "Save DC", "target": "セーヴDC", "note": "Game term (saving throw difficulty class).", "category": "Game Term"},
+    {"source": "Mite Stone-Thrower", "target": "マイトの石投げ兵", "note": "Enemy unit name.", "category": "Creature"}
   ]
 }

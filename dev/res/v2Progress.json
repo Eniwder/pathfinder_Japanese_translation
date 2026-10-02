@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 79950,
-  "updatedAt": "2026-10-02T05:08:59.677Z",
+  "nextStart": 80250,
+  "updatedAt": "2026-10-02T05:11:13.577Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4081,6 +4081,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round269/",
       "coveredDialogs": [],
       "note": "v2リライト第269弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しましたが、パースや import の dry-run は実行していません。\n\n登場した会話（dialog）はありません。全件が `dialog: null` のクリーチャー名、能力名、アイテム名、説明文でした。\n\n気づいた点として、`<ctrl_N/>` は個数・内容とも保持して / 100件を訳して `chunk_0001.translations.json` に書き込みました。会話(dialog)は無く、すべてクリーチャー名・NPC名の単独entryです。書き込んだJSONの構文は目視で確認しました。\n\n用語: Fiendish → フィーンド・\n用語: Half-Fiend → ハーフフィーンド\n用語: Elder → エルダー\n用語: Greater → グレーター\n用"
+    },
+    {
+      "start": 79950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round270/",
+      "coveredDialogs": [],
+      "note": "v2リライト第270弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。内容は全件クリーチャー名・NPC名で、会話（dialog）はありません（全blockの `dialog` が null）。JSON構文は目視で確認済みで、閉じクォートやカンマの抜けはありません。\n\n気づいた点：`Guardian` は glossary で DLC のボス名（守護者）とされています。こ / 100件中97件を訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認済みです。残る3件は、複製された同名エントリではなく別キーなので、実際には全100件を埋めたつもりです。書き込み後に件数を数え直してはいません。\n\ndialog は全entryで null（クリーチャー名のみ）です。chunk_0001.j"
     }
   ]
 }
