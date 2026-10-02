@@ -25005,6 +25005,8 @@
     {"source": "Strocalle", "target": "ストロカーレ", "note": "Family name; a young Strocalle was murdered on King Irovetti's order.", "category": "Person"},
     {"source": "Irovetti", "target": "イロヴェッティ", "note": "King Irovetti of Pitax.", "category": "Person"},
     {"source": "Rakshasa", "target": "ラクシャーサ", "note": "Fiendish outsider; also a sorcerer bloodline (Rakshasa bloodline＝ラクシャーサの血脈).", "category": "Creature"},
-    {"source": "Vudran", "target": "ヴドラの", "note": "Adjective of Vudra (Vudran princess＝ヴドラの王女). 人を指す名詞はヴドラ人.", "category": "Location"}
+    {"source": "Vudran", "target": "ヴドラの", "note": "Adjective of Vudra (Vudran princess＝ヴドラの王女). 人を指す名詞はヴドラ人.", "category": "Location"},
+    {"source": "Iskafi", "target": "イスカフィ", "note": "Qadiran smith who forged the Blade of the Dawnflower (item lore).", "category": "Person"},
+    {"source": "Blade of the Dawnflower", "target": "暁の花の刃", "note": "Legendary greatsword of Sarenrae (item lore).", "category": "Item"}
   ]
 }
