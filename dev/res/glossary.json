@@ -25007,6 +25007,10 @@
     {"source": "Rakshasa", "target": "ラクシャーサ", "note": "Fiendish outsider; also a sorcerer bloodline (Rakshasa bloodline＝ラクシャーサの血脈).", "category": "Creature"},
     {"source": "Vudran", "target": "ヴドラの", "note": "Adjective of Vudra (Vudran princess＝ヴドラの王女). 人を指す名詞はヴドラ人.", "category": "Location"},
     {"source": "Iskafi", "target": "イスカフィ", "note": "Qadiran smith who forged the Blade of the Dawnflower (item lore).", "category": "Person"},
-    {"source": "Blade of the Dawnflower", "target": "暁の花の刃", "note": "Legendary greatsword of Sarenrae (item lore).", "category": "Item"}
+    {"source": "Blade of the Dawnflower", "target": "暁の花の刃", "note": "Legendary greatsword of Sarenrae (item lore).", "category": "Item"},
+    {"source": "Aklo", "target": "アクロ", "note": "Ancient language of eldritch abominations (アクロ語).", "category": "Language"},
+    {"source": "Black Marquis", "target": "ブラック・マーキス", "note": "Pirate lord whose blacksmiths forged weapons (item lore).", "category": "Person"},
+    {"source": "Voices of Hollow", "target": "うつろの声", "note": "Weapon on-crit effect (confusion-like / sonic damage).", "category": "Item"},
+    {"source": "Mirror Bow", "target": "ミラー・ボウ", "note": "+5 composite longbow that fires reflection arrows (反射の矢).", "category": "Item"}
   ]
 }

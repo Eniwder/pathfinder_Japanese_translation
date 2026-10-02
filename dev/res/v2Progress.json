@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 83550,
-  "updatedAt": "2026-10-02T14:31:17.502Z",
+  "nextStart": 83850,
+  "updatedAt": "2026-10-02T14:38:34.885Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4177,6 +4177,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round281/",
       "coveredDialogs": [],
       "note": "v2リライト第281弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。JSON が正しいか、`<ctrl_N/>` の個数と順序が原文どおりかは機械的に確認していません（Bash が使えないため）。登場した会話(dialog)はありません。全 entry が武器・アイテムの名称と説明で、dialog は null です。\n\n気づいた点は2つです。\n- `ce12e / 100件すべて訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、会話ではなく武器アイテムの名前・説明文です。\n\nJSON として正しいかは、書いた内容を目視で確認しただけです。パーサーでの検証はしていません。\n\n気づいた点は2つです。\n- `Outsider` はグロッサリーの注記に従い"
+    },
+    {
+      "start": 83550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round282/",
+      "coveredDialogs": [],
+      "note": "v2リライト第282弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。`dialog` は全件 null で、会話ではなく武器・アイテムの名前と説明文です。\n\n書き込み後に1か所直しました。ヘヴィ・クロスボウの説明文で `<ctrl_5/>` が抜けていたので追加しています。JSON としての構文確認は目視のみで、`import --dry / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。登場した会話（dialog）はなく、全件が dialog なしの武器・アイテム説明・名称、一部の休息で解除されるデバフ説明文です。\n\n`<ctrl_N/>` は個数・順序を保って並べました（誤っていた1件は修正済み）。日本語の語順に合わせるため、「ボーナスを〜に得る」「〜ペナルティを〜に受ける」"
     }
   ]
 }
