@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 82350,
-  "updatedAt": "2026-10-02T09:58:20.730Z",
+  "nextStart": 82650,
+  "updatedAt": "2026-10-02T10:00:17.075Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4145,6 +4145,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round277/",
       "coveredDialogs": [],
       "note": "v2リライト第277弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話(dialog)はなく、全件が武器・杖の名称と説明文です。書き込んだJSONの構文は目視で確認しました。\n\n気づいた点が2つあります。\n- `{mf|baron|baroness|king|queen}` は4択のため、`{mf|男爵|女男爵|王|女王}` と4択のまま残しました。\n- `Great / 100件を訳し、`chunk_0001.translations.json` に書き込みました。対象はすべて dialog なしの武器アイテム名（「冷たい鉄製（マスターワーク・）〜」）です。書き込んだJSONの構文は目視で確認しましたが、ツールでの検証はしていません。\n\n`Composite Longbow` と `Composite Shortbow` は glossary に無かったため、それ"
+    },
+    {
+      "start": 82350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round278/",
+      "coveredDialogs": [],
+      "note": "v2リライト第278弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。JSON 構文の確認は目視のみで、パースやインポートの dry-run は実行していません。対象は dialog なしのアイテム名・武器名と、説明文2件（`<ctrl_N/>` は原文の順のまま保持）です。\n\n気づいた点として、`Agile` はglossaryに従って「敏捷」とし、「敏捷・ダガ / 100件を訳し、`chunk_0001.translations.json` に書き込みました。dialog はすべて null で、武器アイテム名（Flaming／Frost／Keen + 武器名 +1）です。武器特殊能力はガイドどおりカタカナ音写にしました。\n\n用語: Composite Longbow → コンポジット・ロングボウ"
     }
   ]
 }
