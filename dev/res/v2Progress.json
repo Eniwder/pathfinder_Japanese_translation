@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 81450,
-  "updatedAt": "2026-10-02T09:42:04.537Z",
+  "nextStart": 81750,
+  "updatedAt": "2026-10-02T09:48:59.387Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4121,6 +4121,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round274/",
       "coveredDialogs": [],
       "note": "v2リライト第274弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 entry（約200件）を訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しましたが、パーサーでの検証はしていません。会話（dialog 名）は全 entry が null で、固有名詞・アイテム/能力名・効果説明文だけです。\n\n`<ctrl_N/>` の順序は保持しました。語順が入れ替わる効果文は、訳文を組み / `chunk_0001.translations.json` に100件すべてを書き込みました。JSON の構文とタグ順は、スクリプトが実行できなかったため目視で確認しています。\n\n- **件数:** 100件。\n- **dialog:** すべて `dialog: null` のシステム文言です。内容は状態異常・武器・アイテム説明・デーモンのトーテム/ボス能力・バフ名などです。\n- **タグ順:"
+    },
+    {
+      "start": 81450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round275/",
+      "coveredDialogs": [],
+      "note": "v2リライト第275弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。キー数は Grep で200件と確認しました。JSON 構文の検証スクリプトは実行できないため、構文は目視確認のみです。会話（dialog）はすべて null で、モンスター能力・アイテム・毒・バフなどのルール文と名称が中心でした。作業中に誤字（「バull・ラッシュ」→「ブル・ラッシュ」）を見つけ、 / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、`<ctrl_N/>` の順序と個数を検証するスクリプトは実行していません。登場した dialog はなく、全て `dialog: null` のシステム文・図鑑・アイテム説明です。\n\n訳語のうち、揚げリフト・ドレイクの技名など一部は直訳気味です。\n\n用語"
     }
   ]
 }

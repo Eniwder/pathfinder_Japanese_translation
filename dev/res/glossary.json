@@ -24985,6 +24985,11 @@
     {"source": "Venture-Captain Gristoff", "target": "ベンチャー・キャプテン・グリストフ", "note": "Gristoff Rollano's title form. Venture-captain＝ベンチャー・キャプテン.", "category": "Person"},
     {"source": "Combat Party", "target": "戦闘部隊", "note": "Unit naming: the \"Abyss\" Combat Party＝戦闘部隊「アビス」.", "category": "Organization"},
     {"source": "Lady in Distress", "target": "困り果てた貴婦人", "note": "Unit/NPC name.", "category": "NPC"},
-    {"source": "Injury", "target": "致傷型", "note": "Disease/poison type in stat lines (e.g. Filth fever: Injury). round274では「傷口」と訳した。一般語のinjury（負傷）には適用しない。", "category": "Game Term"}
+    {"source": "Injury", "target": "致傷型", "note": "Disease/poison type in stat lines (e.g. Filth fever: Injury). round274では「傷口」と訳した。一般語のinjury（負傷）には適用しない。", "category": "Game Term"},
+    {"source": "Ovinrbaane", "target": "オヴィンルバーネ", "note": "Sentient weapon with a soul inside. round275では「オヴィンバーネ」とrを落とした。", "category": "Item"},
+    {"source": "Kolyarut", "target": "コリャルト", "note": "Inevitable subtype (Inevitable, Kolyarut＝インエビタブル、コリャルト).", "category": "Creature"},
+    {"source": "Reaction Enhancer", "target": "反応強化", "note": "Storastan Jungle Flower variant (ストラスタのジャングルの花 — 反応強化).", "category": "Item"},
+    {"source": "Mental Amplifier", "target": "精神増幅", "note": "Storastan Jungle Flower variant.", "category": "Item"},
+    {"source": "Mental Inhibitor", "target": "精神阻害", "note": "Storastan Jungle Flower variant.", "category": "Item"}
   ]
 }
