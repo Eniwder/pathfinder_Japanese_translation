@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 83850,
-  "updatedAt": "2026-10-02T14:38:34.885Z",
+  "nextStart": 84150,
+  "updatedAt": "2026-10-02T14:48:23.021Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4185,6 +4185,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round282/",
       "coveredDialogs": [],
       "note": "v2リライト第282弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。`dialog` は全件 null で、会話ではなく武器・アイテムの名前と説明文です。\n\n書き込み後に1か所直しました。ヘヴィ・クロスボウの説明文で `<ctrl_5/>` が抜けていたので追加しています。JSON としての構文確認は目視のみで、`import --dry / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。登場した会話（dialog）はなく、全件が dialog なしの武器・アイテム説明・名称、一部の休息で解除されるデバフ説明文です。\n\n`<ctrl_N/>` は個数・順序を保って並べました（誤っていた1件は修正済み）。日本語の語順に合わせるため、「ボーナスを〜に得る」「〜ペナルティを〜に受ける」"
+    },
+    {
+      "start": 83850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round283/",
+      "coveredDialogs": [],
+      "note": "v2リライト第283弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話(dialog)は全件 `null` で、武器・アイテムの名称と説明文のみです。JSON構文と `<ctrl_N/>` の整合性は検証していません。\n\n`<ctrl_N/>` の順序は、日本語として不自然にならない範囲で原文の並びに合わせています。\n\n用語: Radiant → レイディアント\n用語 / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。対象は全て武器アイテムの説明文と名前で、dialog はすべて null です。\n\n気づいた点は2つです。\n- 英語と日本語で語順が違うため、`<ctrl_N/>` の順序を保つよう文を組み替えた箇所があります。\n- 武器名の「ソフト・カット」「ディープ・リップ」は、説"
     }
   ]
 }

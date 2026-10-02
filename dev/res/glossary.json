@@ -25011,6 +25011,10 @@
     {"source": "Aklo", "target": "アクロ", "note": "Ancient language of eldritch abominations (アクロ語).", "category": "Language"},
     {"source": "Black Marquis", "target": "ブラック・マーキス", "note": "Pirate lord whose blacksmiths forged weapons (item lore).", "category": "Person"},
     {"source": "Voices of Hollow", "target": "うつろの声", "note": "Weapon on-crit effect (confusion-like / sonic damage).", "category": "Item"},
-    {"source": "Mirror Bow", "target": "ミラー・ボウ", "note": "+5 composite longbow that fires reflection arrows (反射の矢).", "category": "Item"}
+    {"source": "Mirror Bow", "target": "ミラー・ボウ", "note": "+5 composite longbow that fires reflection arrows (反射の矢).", "category": "Item"},
+    {"source": "Soft Cut", "target": "ソフト・カット", "note": "+5 dagger paired with Deep Rip (dual-wield set).", "category": "Item"},
+    {"source": "Deep Rip", "target": "ディープ・リップ", "note": "+5 dagger paired with Soft Cut (dual-wield set).", "category": "Item"},
+    {"source": "Battle-Forged", "target": "戦場で鍛えられし", "note": "Title-only name entry (item/ability name).", "category": "Item"},
+    {"source": "Druid", "target": "ドルイド", "note": "Base class.", "category": "Class"}
   ]
 }
