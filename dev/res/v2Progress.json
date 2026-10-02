@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 82650,
-  "updatedAt": "2026-10-02T10:00:17.075Z",
+  "nextStart": 82950,
+  "updatedAt": "2026-10-02T10:02:27.228Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4153,6 +4153,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round278/",
       "coveredDialogs": [],
       "note": "v2リライト第278弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。JSON 構文の確認は目視のみで、パースやインポートの dry-run は実行していません。対象は dialog なしのアイテム名・武器名と、説明文2件（`<ctrl_N/>` は原文の順のまま保持）です。\n\n気づいた点として、`Agile` はglossaryに従って「敏捷」とし、「敏捷・ダガ / 100件を訳し、`chunk_0001.translations.json` に書き込みました。dialog はすべて null で、武器アイテム名（Flaming／Frost／Keen + 武器名 +1）です。武器特殊能力はガイドどおりカタカナ音写にしました。\n\n用語: Composite Longbow → コンポジット・ロングボウ"
+    },
+    {
+      "start": 82650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round279/",
+      "coveredDialogs": [],
+      "note": "v2リライト第279弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全件を書き込みました。ファイルは書き込み後に読み返していないので、JSON構文の確認はできていません。件数も数えておらず、原文は200キーです。\n\n- **対象:** 武器名（「キーン・ロングソード+1」のような特殊能力＋武器名＋強化値）と、説明文1件「この+2フレイルは銀の<ctrl_0/>ダメージ<ctrl_1/>を与える。」です / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)は全件 null で、フレイミング／フロスト武器名と、フロスト・ライト・クロスボウの説明文1件です。JSON の構文は書き込み前に目視で確認しました。説明文の `<ctrl_0/>`〜`<ctrl_15/>` は個数・順序とも原文のままです。語順"
     }
   ]
 }
