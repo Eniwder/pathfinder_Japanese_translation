@@ -24990,6 +24990,10 @@
     {"source": "Kolyarut", "target": "コリャルト", "note": "Inevitable subtype (Inevitable, Kolyarut＝インエビタブル、コリャルト).", "category": "Creature"},
     {"source": "Reaction Enhancer", "target": "反応強化", "note": "Storastan Jungle Flower variant (ストラスタのジャングルの花 — 反応強化).", "category": "Item"},
     {"source": "Mental Amplifier", "target": "精神増幅", "note": "Storastan Jungle Flower variant.", "category": "Item"},
-    {"source": "Mental Inhibitor", "target": "精神阻害", "note": "Storastan Jungle Flower variant.", "category": "Item"}
+    {"source": "Mental Inhibitor", "target": "精神阻害", "note": "Storastan Jungle Flower variant.", "category": "Item"},
+    {"source": "Khanda", "target": "カンダ", "note": "Exotic sword weapon type.", "category": "Weapon"},
+    {"source": "Orc", "target": "オーク", "note": "Race / creature subtype (Orcs→オーク).", "category": "Race"},
+    {"source": "Giant", "target": "巨人", "note": "Creature subtype (Giants→巨人). 個別種名はフロスト・ジャイアント等の音写.", "category": "Creature Type"},
+    {"source": "Longshanks", "target": "ロングシャンク", "note": "Goblin slang for tall humanoids (humans, elves etc.).", "category": "Term"}
   ]
 }
