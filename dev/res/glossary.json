@@ -24974,6 +24974,9 @@
     {"source": "Dire Carrion-Eater Lizard", "target": "ダイア・屍肉喰らいのトカゲ", "note": "Enemy unit name.", "category": "Creature"},
     {"source": "The-Last-Sound-You-Hear", "target": "最期に聞く音", "note": "Named enemy (hyphenated name).", "category": "NPC"},
     {"source": "Save DC", "target": "セーヴDC", "note": "Game term (saving throw difficulty class).", "category": "Game Term"},
-    {"source": "Mite Stone-Thrower", "target": "マイトの石投げ兵", "note": "Enemy unit name.", "category": "Creature"}
+    {"source": "Mite Stone-Thrower", "target": "マイトの石投げ兵", "note": "Enemy unit name.", "category": "Creature"},
+    {"source": "Ice-Covered Barbarian", "target": "氷に覆われた蛮族", "note": "Enemy unit name.", "category": "Creature"},
+    {"source": "Death on Eight Legs", "target": "八本脚の死", "note": "Named enemy/unit name.", "category": "Creature"},
+    {"source": "Cultist Rabble-Rouser", "target": "カルト信者の扇動者", "note": "Enemy unit name.", "category": "Creature"}
   ]
 }
