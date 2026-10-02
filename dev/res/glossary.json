@@ -24957,6 +24957,10 @@
     {"source": "Keen", "target": "キーン", "note": "Weapon special ability (doubles threat range).", "category": "Weapon Property"},
     {"source": "Frequency", "target": "頻度", "note": "Poison/disease stat-block label.", "category": "Rule"},
     {"source": "Onset", "target": "発症", "note": "Poison/disease stat-block label.", "category": "Rule"},
-    {"source": "Cure", "target": "治癒", "note": "Poison/disease stat-block label (e.g. 3回連続のセーヴ成功).", "category": "Rule"}
+    {"source": "Cure", "target": "治癒", "note": "Poison/disease stat-block label (e.g. 3回連続のセーヴ成功).", "category": "Rule"},
+    {"source": "Fafnheir", "target": "ファフンヘイル", "note": "Named creature (resurrecting curse ability).", "category": "NPC"},
+    {"source": "Frightful Moan", "target": "恐ろしい嘆き", "note": "Ghost special ability (fear effect).", "category": "Ability"},
+    {"source": "Steel-Shod Hooves", "target": "鋼鉄の蹄", "note": "Creature ability name.", "category": "Ability"},
+    {"source": "Warpwave", "target": "ワープウェーブ", "note": "Protean ability. Greater Warpwave（グレーター・ワープウェーブ）に揃える。round266で「歪曲波」と訳された例あり。", "category": "Ability"}
   ]
 }

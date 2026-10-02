@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 78750,
-  "updatedAt": "2026-10-02T04:50:24.871Z",
+  "nextStart": 79050,
+  "updatedAt": "2026-10-02T04:59:25.970Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4049,6 +4049,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round265/",
       "coveredDialogs": [],
       "note": "v2リライト第265弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました（`chunk_0000.json` は未編集）。JSON構文は目視で確認しましたが、ツールでの検証や dry-run は実行していません。dialog 名は全 block で `null` で、会話ではなくデーモン／カンビオン等のモンスター能力・特殊能力の説明文と名称です。\n\n気づいた点：\n- `<ct / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、全件が dialog なしの能力・効果説明、状態異常・アイテム説明、名称です（シスハッド関連が中心）。JSON は目視で確認しましたが、`<ctrl_N/>` の順序が原文と一致するかのスクリプト検証はしていません。\n\n日本語で語順を入れ替えるとタグ順が崩れる箇所は、「"
+    },
+    {
+      "start": 78750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round266/",
+      "coveredDialogs": [],
+      "note": "v2リライト第266弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog）はすべて `null` で、シスハッド戦・ランタン王戦の特殊能力、ゴーレム・メフィット・毒などのモンスター能力と状態説明文でした。書き込み後の読み返しとJSON検証は行っていません。\n\n- **`<ctrl_N/>` の順序:** 日本語の語順と衝突する箇所は、ctrlの順序を / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ内容は目視で確認しましたが、JSON としてのパースや `<ctrl_N/>` の照合は実行していません。登場した dialog は無く、全て `dialog: null` のモンスター能力・アイテム説明文です。\n\nミミックの接着剤の文など、`<ctrl_N/>"
     }
   ]
 }
