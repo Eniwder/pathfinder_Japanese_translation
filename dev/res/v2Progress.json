@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 77850,
-  "updatedAt": "2026-10-02T00:15:47.894Z",
+  "nextStart": 78150,
+  "updatedAt": "2026-10-02T00:23:38.220Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4025,6 +4025,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round262/",
       "coveredDialogs": [],
       "note": "v2リライト第262弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。内容は種族・血筋の特性説明、セーヴ表記、持続時間などで、会話（dialog）は無く、すべて `dialog: null` のシステムテキストです。書き込み後の確認はしていません。JSON構文の目視確認と `<ctrl_N/>` の順序チェックは、書き込み前に組み立てた内容に対して行っただけです。\n\n`< / 100 件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込んだ。JSON の構文と `<ctrl_N/>` の順序・個数は、書き込み後に目視で確認した（import の dry-run は未実施）。\n\n最初の書き込みで ctrl トークンの順序が崩れた entry が約20件あった。気づいて文を組み直してある。\n\n対象は dialog "
+    },
+    {
+      "start": 77850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round263/",
+      "coveredDialogs": [],
+      "note": "v2リライト第263弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に1回で書き込みました。JSON構文は目視で確認しましたが、スクリプトでの検証はしていません（実行権限がないため）。\n\n- **dialog:** すべて `null`（チュートリアル・ヒント・戦闘ログ系の文）。\n- **気づいた点:**\n  - ほぼ全件が「原文の `<ctrl_N/>` / 100件を訳し、`chunk_0001.translations.json` に書き込みました。`chunk_0001.json` は編集しておらず、書いた JSON の構文は目視で確認しました。dialog は全 entry で `null` です（チュートリアル・ヘルプ文・システムメッセージ）。\n\n気づいた点が1つあります。`SpellsRestorationLesser` が指す「Lesse"
     }
   ]
 }

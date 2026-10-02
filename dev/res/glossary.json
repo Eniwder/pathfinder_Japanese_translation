@@ -24924,6 +24924,20 @@
     {"source": "Maximum Dexterity Bonus", "target": "敏捷力ボーナス上限", "note": "Armor stat.", "category": "Game Term"},
     {"source": "Mythic Hero", "target": "神話の英雄", "note": "Tutorial/mythic term.", "category": "Mythic"},
     {"source": "Active Slot", "target": "アクティブスロット", "note": "UI term (cantrip auto-use slot).", "category": "UI"},
-    {"source": "Use Automatically", "target": "自動使用", "note": "UI context menu item.", "category": "UI"}
+    {"source": "Use Automatically", "target": "自動使用", "note": "UI context menu item.", "category": "UI"},
+    {"source": "Selective Channeling", "target": "選択的エネルギー放出", "note": "Feat (Channel Energy).", "category": "Feat"},
+    {"source": "Cure Wounds", "target": "キュア・ウーンズ", "note": "Cure ～ Wounds 系呪文の総称。個別名はキュア・ライト・ウーンズ等。", "category": "Spell"},
+    {"source": "Lesser Restoration", "target": "レッサー・レストレーション", "note": "Spell.", "category": "Spell"},
+    {"source": "Dodge Bonus", "target": "回避ボーナス", "note": "Bonus type (stacks).", "category": "Rule"},
+    {"source": "Full-Attack Action", "target": "全力攻撃アクション", "note": "Full Attack（全力攻撃）を行うアクション。", "category": "Rule"},
+    {"source": "Magic Fusion", "target": "魔法融合", "note": "Spell-fusion mechanic (custom spells written to spellbook).", "category": "Game Term"},
+    {"source": "Fused Spell", "target": "融合呪文", "note": "Spell created via Magic Fusion.", "category": "Game Term"},
+    {"source": "Core Rules", "target": "コアルール", "note": "Difficulty level.", "category": "UI"},
+    {"source": "Usable Items", "target": "使用可能アイテム", "note": "UI context menu item (spell bar).", "category": "UI"},
+    {"source": "Copy Recipe", "target": "レシピを書き写す", "note": "UI context menu item (recipes).", "category": "UI"},
+    {"source": "Abyssal Anchor", "target": "アビスのアンカー", "note": "DLC island-exploration autosave point (statue).", "category": "Game Term"},
+    {"source": "Undertow", "target": "潮流", "note": "DLC island modifier (magical undertow).", "category": "Game Term"},
+    {"source": "Guardian", "target": "守護者", "note": "DLC treasure-hunt boss (3 Guardians). 他文脈では適宜訳す。", "category": "Game Term"},
+    {"source": "Chaplain", "target": "チャプレン", "note": "DLC ship NPC who provides supplies.", "category": "NPC"}
   ]
 }
