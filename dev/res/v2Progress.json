@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 82950,
-  "updatedAt": "2026-10-02T10:02:27.228Z",
+  "nextStart": 83250,
+  "updatedAt": "2026-10-02T10:06:16.715Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4161,6 +4161,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round279/",
       "coveredDialogs": [],
       "note": "v2リライト第279弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全件を書き込みました。ファイルは書き込み後に読み返していないので、JSON構文の確認はできていません。件数も数えておらず、原文は200キーです。\n\n- **対象:** 武器名（「キーン・ロングソード+1」のような特殊能力＋武器名＋強化値）と、説明文1件「この+2フレイルは銀の<ctrl_0/>ダメージ<ctrl_1/>を与える。」です / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)は全件 null で、フレイミング／フロスト武器名と、フロスト・ライト・クロスボウの説明文1件です。JSON の構文は書き込み前に目視で確認しました。説明文の `<ctrl_0/>`〜`<ctrl_15/>` は個数・順序とも原文のままです。語順"
+    },
+    {
+      "start": 82950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round280/",
+      "coveredDialogs": [],
+      "note": "v2リライト第280弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。dialog 名はすべて null で、会話ではなく武器・防具のアイテム名と説明文です。書き込み後の JSON 構文チェックはしていません。\n\n用語: Frost → フロスト\n用語: Shock → ショック\n用語: Holy → ホーリィ\n用語: Necrotic → ネクロティック\n用語: El / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、武器の名称と説明文だけのチャンクです。JSONの構文は目視で確認しました。\n\n気づいた点が2つあります。\n- 「Daze」は、ガイドの記述が「朦朧」と「幻惑」で食い違っていました。ここでは「幻惑状態」を使っています。\n- 「Unholy」は、glossaryの「不浄」で"
     }
   ]
 }

@@ -24997,6 +24997,14 @@
     {"source": "Longshanks", "target": "ロングシャンク", "note": "Goblin slang for tall humanoids (humans, elves etc.).", "category": "Term"},
     {"source": "Kimiel Tavon", "target": "キミエル・タヴォン", "note": "Court master craftsman (woodwork/ornament) of the player's barony.", "category": "Person"},
     {"source": "Dragn", "target": "ドラグン", "note": "Dwarf blacksmith appointed court master of the player's barony.", "category": "Person"},
-    {"source": "Will-o'-Wisp", "target": "ウィル・オ・ウィスプ", "note": "Creature name (Will-o'-Wisps→ウィル・オ・ウィスプ).", "category": "Creature"}
+    {"source": "Will-o'-Wisp", "target": "ウィル・オ・ウィスプ", "note": "Creature name (Will-o'-Wisps→ウィル・オ・ウィスプ).", "category": "Creature"},
+    {"source": "Taranis", "target": "タラニス", "note": "Obscure kobold bear god (the Bear God＝熊神).", "category": "Deity"},
+    {"source": "Bear God", "target": "熊神", "note": "Epithet of the kobold deity Taranis.", "category": "Deity"},
+    {"source": "Radan", "target": "ラダン", "note": "Heroic bear-riding kobold cavalier (item lore).", "category": "Person"},
+    {"source": "Whiterose Abbey", "target": "ホワイトローズ修道院", "note": "Location in the Stolen Lands (item lore).", "category": "Location"},
+    {"source": "Strocalle", "target": "ストロカーレ", "note": "Family name; a young Strocalle was murdered on King Irovetti's order.", "category": "Person"},
+    {"source": "Irovetti", "target": "イロヴェッティ", "note": "King Irovetti of Pitax.", "category": "Person"},
+    {"source": "Rakshasa", "target": "ラクシャーサ", "note": "Fiendish outsider; also a sorcerer bloodline (Rakshasa bloodline＝ラクシャーサの血脈).", "category": "Creature"},
+    {"source": "Vudran", "target": "ヴドラの", "note": "Adjective of Vudra (Vudran princess＝ヴドラの王女). 人を指す名詞はヴドラ人.", "category": "Location"}
   ]
 }
