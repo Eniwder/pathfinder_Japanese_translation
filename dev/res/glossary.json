@@ -24961,6 +24961,13 @@
     {"source": "Fafnheir", "target": "ファフンヘイル", "note": "Named creature (resurrecting curse ability).", "category": "NPC"},
     {"source": "Frightful Moan", "target": "恐ろしい嘆き", "note": "Ghost special ability (fear effect).", "category": "Ability"},
     {"source": "Steel-Shod Hooves", "target": "鋼鉄の蹄", "note": "Creature ability name.", "category": "Ability"},
-    {"source": "Warpwave", "target": "ワープウェーブ", "note": "Protean ability. Greater Warpwave（グレーター・ワープウェーブ）に揃える。round266で「歪曲波」と訳された例あり。", "category": "Ability"}
+    {"source": "Warpwave", "target": "ワープウェーブ", "note": "Protean ability. Greater Warpwave（グレーター・ワープウェーブ）に揃える。round266で「歪曲波」と訳された例あり。", "category": "Ability"},
+    {"source": "Hexblade", "target": "ヘクスブレード", "note": "Magus archetype. round268で「ヘクスブレイド」と割れた。", "category": "Archetype"},
+    {"source": "Treasure-Hunting", "target": "宝探しの", "note": "Enemy unit name prefix (Treasure-Hunting Necromancer＝宝探しのネクロマンサー 等).", "category": "Creature"},
+    {"source": "Treasure-Hunting Cutthroat", "target": "宝探しの追い剥ぎ", "note": "Enemy unit name. round268で「無頼漢」と割れた。", "category": "Creature"},
+    {"source": "Treasure-Hunting Dodger", "target": "宝探しの軽業師", "note": "Enemy unit name. round268で「逃げ上手」と割れた。", "category": "Creature"},
+    {"source": "Treasure-Hunting Brewer", "target": "宝探しの醸造師", "note": "Enemy unit name.", "category": "Creature"},
+    {"source": "Wandering Brewer", "target": "さまよう醸造師", "note": "Enemy unit name. round268で「放浪の醸造家」と割れた。", "category": "Creature"},
+    {"source": "Demon-May-Care Joestantin", "target": "デーモン無頓着のジョースタンティン", "note": "Named enemy (pun on devil-may-care).", "category": "NPC"}
   ]
 }

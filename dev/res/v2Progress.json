@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 79350,
-  "updatedAt": "2026-10-02T05:04:08.568Z",
+  "nextStart": 79650,
+  "updatedAt": "2026-10-02T05:06:37.782Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4065,6 +4065,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round267/",
       "coveredDialogs": [],
       "note": "v2リライト第267弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。書き込み後の JSON 構文チェックは実行していません。会話（dialog）はすべて null で、モンスター能力・毒・クリーチャー名などのシステム文言のみです。ctrl タグは順序を保つため文構成を調整しました。\n\n用語: Vescavor → ヴェスカヴォア\n用語: Wig / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、全件がクリーチャー名・敵名の単独entryです。JSONは目視で確認しました。\n\n用語: Carnivorous Crystal → カーニヴォラス・クリスタル\n用語: Deathsnatcher → デススナッチャー\n用語: Fiendish → フィーンディッシュ\n用語:"
+    },
+    {
+      "start": 79350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round268/",
+      "coveredDialogs": [],
+      "note": "v2リライト第268弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。会話(dialog)はすべて null で、クリーチャー名・称号・ボス名・1件の効果説明文だけです。書いた JSON は目視で構文を確認しました。\n\n用語: Mythic → ミシック\n用語: Distorted → 歪んだ\n用語: Quasit → クアジット\n用語: Vermlek → ヴァームレ / 100件を訳し、`chunk_0001.translations.json` に書き込みました。内容はクリーチャー・NPC名だけで、dialog は全件 null です。JSON の構文は目視で確認しました。\n\n用語: Wandering → さまよう\n用語: Treasure-Hunting → 宝探しの\n用語: Forsaken Kobold → 見捨てられたコボルド\n用語: Abysmal "
     }
   ]
 }
