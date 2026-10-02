@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 82050,
-  "updatedAt": "2026-10-02T09:53:28.254Z",
+  "nextStart": 82350,
+  "updatedAt": "2026-10-02T09:58:20.730Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4137,6 +4137,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round276/",
       "coveredDialogs": [],
       "note": "v2リライト第276弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` を書き込みました。JSON の構文は目視で確認済みです。dialog 名はなく、すべて武器特殊能力・素材・ベインなどのアイテム説明文です。\n\n出血武器の説明文は、`<ctrl_N/>` の順序を保つため「毎ラウンド1d6HPの出血」の語順にしています。\n\n用語: Animal Bane → 動物ベイン\n用語: Con / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、全件が武器の特殊能力の名称と説明文でした。JSONとして正しいかは目視でのみ確認しています。\n\n用語: Holy → ホーリィ\n用語: Freezing → フリージング\n用語: Beguiling → ビガイリング\n用語: Impervi"
+    },
+    {
+      "start": 82050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-02_round277/",
+      "coveredDialogs": [],
+      "note": "v2リライト第277弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話(dialog)はなく、全件が武器・杖の名称と説明文です。書き込んだJSONの構文は目視で確認しました。\n\n気づいた点が2つあります。\n- `{mf|baron|baroness|king|queen}` は4択のため、`{mf|男爵|女男爵|王|女王}` と4択のまま残しました。\n- `Great / 100件を訳し、`chunk_0001.translations.json` に書き込みました。対象はすべて dialog なしの武器アイテム名（「冷たい鉄製（マスターワーク・）〜」）です。書き込んだJSONの構文は目視で確認しましたが、ツールでの検証はしていません。\n\n`Composite Longbow` と `Composite Shortbow` は glossary に無かったため、それ"
     }
   ]
 }

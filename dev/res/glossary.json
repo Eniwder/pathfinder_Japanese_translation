@@ -24994,6 +24994,9 @@
     {"source": "Khanda", "target": "カンダ", "note": "Exotic sword weapon type.", "category": "Weapon"},
     {"source": "Orc", "target": "オーク", "note": "Race / creature subtype (Orcs→オーク).", "category": "Race"},
     {"source": "Giant", "target": "巨人", "note": "Creature subtype (Giants→巨人). 個別種名はフロスト・ジャイアント等の音写.", "category": "Creature Type"},
-    {"source": "Longshanks", "target": "ロングシャンク", "note": "Goblin slang for tall humanoids (humans, elves etc.).", "category": "Term"}
+    {"source": "Longshanks", "target": "ロングシャンク", "note": "Goblin slang for tall humanoids (humans, elves etc.).", "category": "Term"},
+    {"source": "Kimiel Tavon", "target": "キミエル・タヴォン", "note": "Court master craftsman (woodwork/ornament) of the player's barony.", "category": "Person"},
+    {"source": "Dragn", "target": "ドラグン", "note": "Dwarf blacksmith appointed court master of the player's barony.", "category": "Person"},
+    {"source": "Will-o'-Wisp", "target": "ウィル・オ・ウィスプ", "note": "Creature name (Will-o'-Wisps→ウィル・オ・ウィスプ).", "category": "Creature"}
   ]
 }
