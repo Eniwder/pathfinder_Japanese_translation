@@ -111,9 +111,18 @@ export function mergeTranslations(chunksDir, fileName) {
       merged++;
     }
   }
+  // 訳者がキーを書き写し間違えると、その訳は黙って捨てられentryはnullのまま残る。
+  // 中間ファイルは下で削除するので、取りこぼした訳文はログにだけ残して後から拾えるようにする。
+  const chunkKeys = new Set(entries.map((e) => e.key));
+  const unmatched = Object.keys(translations).filter((k) => !chunkKeys.has(k));
+  if (unmatched.length) {
+    console.warn(`⚠ ${fileName}: translations.json の ${unmatched.length}件のキーがchunkに存在しません（書き写しミスの可能性）。`);
+    for (const k of unmatched) console.warn(`  ${k}: ${JSON.stringify(translations[k])}`);
+  }
+
   fs.writeFileSync(chunkPath, JSON.stringify(chunkObj, null, 2) + '\n');
   fs.rmSync(transPath);
-  return { merged, hasFile: true };
+  return { merged, hasFile: true, unmatched };
 }
 
 // buildNotesPromptが「chunkファイルを自分で開いて探す」turnを消費しないよう、
