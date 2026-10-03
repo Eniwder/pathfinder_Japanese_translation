@@ -96,6 +96,9 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
   - `bypass DR N/X` →「ダメージ減少N/Xを無視する」（`DR`も略さない）、`primary/secondary natural attack`
     →「主要／副次肉体攻撃」で統一する。
   - UI・戦闘ログの `Label: 値` 形式は全角コロン「：」で後ろに空白を入れない（`Source: X` → `発生源：X`）。
+  - 十字軍イベントの効果文：属性前置きは全角括弧・空白なし（`(Good) ` → `（善）`）、`units` は「ユニット」
+    （「部隊」にしない）、名称は種別を前に置く（`the [X] feat` → `特技[X]`、勅令/儀式/呪文も同形）。
+    `gain +1 level to the [X] feat` →「特技[X]のレベルが1上昇する」、`Adds N X Points` →「XポイントがN増加する」。
 - 宇宙論の `Plane`（`Upper/Lower Planes` `Plane of Earth` 等）は「位界」で統一する（「次元」にしない）。
 - 同一人物が話者IDや原文スペル違い（`Joran`/`Jorun Vane` 等）で登場することがある。
   glossaryに既存の別名エントリがないか確認し、あれば訳語を合わせる。
