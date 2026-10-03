@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 94650,
-  "updatedAt": "2026-10-03T21:38:47.085Z",
+  "nextStart": 94950,
+  "updatedAt": "2026-10-03T21:44:46.182Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4473,6 +4473,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round318/",
       "coveredDialogs": [],
       "note": "v2リライト第318弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に200件すべての訳文を書き込みました。実行権限がないため、JSON としてパースできるかや `<ctrl_N/>` が揃っているかは確認していません。\n\n- **dialog**: すべて `dialog: null` のエントリで、特定の会話名はありません。ログ、アイテム説明、バーク（短い掛け声）など / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON を再読み込みしての検証はしていません。書いた内容は目視で確認済みです。`dialog` は全て null（会話ではなく、博物館の案内書・手紙・アイテム説明・バーク・ジャーナル文など）です。\n\n- **話者:** 全 entry に `speaker` が無かったため、文脈から口調を推定しました"
+    },
+    {
+      "start": 94650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round319/",
+      "coveredDialogs": [],
+      "note": "v2リライト第319弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しました。ファイルを読み戻したり、スクリプトで構文検証したりはしていません。\n\n- **会話(dialog名)**: すべて `dialog: null` で、会話名はありません。ブラーブ(掛け声・吹き出し)、ジャーナル項目、調査テキスト、ケナブレスの審問官の長台詞などです。\n-  / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しています。\n\n会話(dialog名)はすべて `null` で、会話単位の分類はありません。また、chunkに `speakers` 辞書や各entryの `speaker` が無かったため、話者は本文と文脈から推定しました。\n\n用語: Ti"
     }
   ]
 }

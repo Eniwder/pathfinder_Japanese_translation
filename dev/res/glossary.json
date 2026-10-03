@@ -25563,6 +25563,7 @@
     {"source": "Gauntlet of Punching", "target": "殴りのガントレット", "note": "Epithet of Power Fist (パワー・フィスト).", "category": "Item"},
     {"source": "A World Long Gone", "target": "遠き過去の世界", "note": "Painting collection in Kenabres museum.", "category": "Lore"},
     {"source": "Among the Cloudy Colossi", "target": "雲の巨人たちのあいだで", "note": "Painting in Kenabres museum.", "category": "Lore"},
-    {"source": "The Great Treason", "target": "大いなる裏切り", "note": "Kenabres museum exhibition \"The Third Crusade: The Great Treason\".", "category": "Lore"}
+    {"source": "The Great Treason", "target": "大いなる裏切り", "note": "Kenabres museum exhibition \"The Third Crusade: The Great Treason\".", "category": "Lore"},
+    {"source": "Silver Twins", "target": "シルバー・ツインズ", "note": "Epithet of the angels Lariel and Targona (ラリエルとターゴナ).", "category": "Character"}
   ]
 }
