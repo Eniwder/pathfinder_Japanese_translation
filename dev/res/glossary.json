@@ -25474,6 +25474,19 @@
     {"source": "Last Barrier", "target": "最後の防壁", "note": "Crusade fort location.", "category": "Location"},
     {"source": "Treasonhome", "target": "裏切りの故郷", "note": "Crusade fort location.", "category": "Location"},
     {"source": "Stone Maze", "target": "石の迷路", "note": "Crusade fort location.", "category": "Location"},
-    {"source": "Camp on the Ferry", "target": "渡し場の野営地", "note": "Crusade fort location.", "category": "Location"}
+    {"source": "Camp on the Ferry", "target": "渡し場の野営地", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Yamah Azata", "target": "ヤマー・アザータ", "note": "Creature.", "category": "Creature"},
+    {"source": "Lager Beer Elemental", "target": "ラガー・ビア・エレメンタル", "note": "Crusade army unit (Thaberdine event).", "category": "Creature"},
+    {"source": "Scaled Eldritch Disciple Paladin", "target": "鱗のエルドリッチ・ディサイプル・パラディン", "note": "Crusade army unit.", "category": "Creature"},
+    {"source": "Haagenti", "target": "ハーゲンティ", "note": "Demon lord of alchemy and transformation.", "category": "Deity"},
+    {"source": "Cerebulim", "target": "セレブリム", "note": "Haagenti's realm in the Abyss.", "category": "Location"},
+    {"source": "Flauros", "target": "フラウロス", "note": "Demon lord of fire and salamanders.", "category": "Deity"},
+    {"source": "Dalenydra", "target": "ダレニドラ", "note": "Empyreal lord, the Blessed Servant.", "category": "Deity"},
+    {"source": "General of Vengeance", "target": "復讐の将軍", "note": "Title of Ragathiel.", "category": "Title"},
+    {"source": "Blessed Servant", "target": "祝福されし従者", "note": "Title of Dalenydra.", "category": "Title"},
+    {"source": "Gift from the Druids", "target": "ドルイドの贈り物", "note": "Crusade general feat.", "category": "Feat"},
+    {"source": "Druidic Upbringing", "target": "ドルイドの養育", "note": "Crusade army unit feat.", "category": "Feat"},
+    {"source": "Lake Folk", "target": "湖の民", "note": "Crusade event faction.", "category": "Organization"},
+    {"source": "Kenabres Reinforcements", "target": "ケナブレスの援軍", "note": "Crusade event title.", "category": "Event"}
   ]
 }
