@@ -25523,6 +25523,11 @@
     {"source": "Grand Tier", "target": "グランド・ティア", "note": "Crusade unit tier.", "category": "Crusade"},
     {"source": "Call to Arms", "target": "総員、武器を取れ", "note": "Crusade general ability.", "category": "Crusade"},
     {"source": "Not a Step Back", "target": "一歩も退くな", "note": "Crusade general ability.", "category": "Crusade"},
-    {"source": "Wolf", "target": "ウルフ", "note": "Crusade summoned unit.", "category": "Crusade"}
+    {"source": "Wolf", "target": "ウルフ", "note": "Crusade summoned unit.", "category": "Crusade"},
+    {"source": "Centipede", "target": "ムカデ", "note": "Crusade summoned pet (with Elk=ヘラジカ, Mastodon=マストドン).", "category": "Crusade"},
+    {"source": "All-Round Defense", "target": "全周防御", "note": "Crusade army unit ability.", "category": "Crusade"},
+    {"source": "Bane of Non-Warbarian Priests", "target": "非ウォーバリアン聖職者の天敵", "note": "Crusade army unit ability.", "category": "Crusade"},
+    {"source": "Penalty in Close Combat", "target": "近接戦闘のペナルティ", "note": "Crusade army unit ability.", "category": "Crusade"},
+    {"source": "Equipped According to the Charter", "target": "規定どおりの装備", "note": "Crusade army unit ability.", "category": "Crusade"}
   ]
 }
