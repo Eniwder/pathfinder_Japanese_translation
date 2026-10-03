@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 94350,
-  "updatedAt": "2026-10-03T21:33:41.624Z",
+  "nextStart": 94650,
+  "updatedAt": "2026-10-03T21:38:47.085Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4465,6 +4465,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round317/",
       "coveredDialogs": [],
       "note": "v2リライト第317弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件を訳して書き込みました。JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\n- **dialog 名:** 全 entry の dialog が null でした。Wenduag・Lann・Woljif の洞窟／迷宮、ケナブレスの同行者掛け合い、ドレゼンの祭りが混在しています。 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ内容はJSONとして目視確認済みです。\ndialogは全件 null（話者情報なし）で、ケナブレスの祭り・デスカリ襲撃・テレンデレヴとの会話・図書館のカレブ関連が含まれます。\n- `{mf}` のうち `{mf|man|woman}` などは、日本語で作り"
+    },
+    {
+      "start": 94350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round318/",
+      "coveredDialogs": [],
+      "note": "v2リライト第318弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に200件すべての訳文を書き込みました。実行権限がないため、JSON としてパースできるかや `<ctrl_N/>` が揃っているかは確認していません。\n\n- **dialog**: すべて `dialog: null` のエントリで、特定の会話名はありません。ログ、アイテム説明、バーク（短い掛け声）など / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON を再読み込みしての検証はしていません。書いた内容は目視で確認済みです。`dialog` は全て null（会話ではなく、博物館の案内書・手紙・アイテム説明・バーク・ジャーナル文など）です。\n\n- **話者:** 全 entry に `speaker` が無かったため、文脈から口調を推定しました"
     }
   ]
 }

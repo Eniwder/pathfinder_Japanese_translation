@@ -25545,6 +25545,24 @@
     {"source": "Alboras", "target": "アルボラス", "note": "Celestial body in astronomical calculations by Pulura's stargazers.", "category": "Lore"},
     {"source": "Aizerghaul", "target": "アイゼルガウル", "note": "Baphomet's scarlet glaive.", "category": "Item"},
     {"source": "Foulsnout", "target": "フールスナウト", "note": "Demonic nickname given to Chaleb by a demon.", "category": "Character"},
-    {"source": "Prelate", "target": "司教", "note": "Hulrun's title; address form 「司教殿」.", "category": "Title"}
+    {"source": "Prelate", "target": "司教", "note": "Hulrun's title; address form 「司教殿」.", "category": "Title"},
+    {"source": "Raellas", "target": "ラエラス", "note": "Priest of Iomedae and crusader; Vessel of Raellas (ラエラスの聖器) in Kenabres museum.", "category": "Character"},
+    {"source": "Bathistas Scroccia", "target": "バティスタス・スクロッチャ", "note": "Paralictor of the Order of the Gate; Helmet of Scroccia (スクロッチャの兜).", "category": "Character"},
+    {"source": "Deniza Roche", "target": "デニザ・ロシュ", "note": "Kenabres garrison soldier who painted \"Yaniel by a Fountain\".", "category": "Character"},
+    {"source": "Tiimar Lykos", "target": "ティーマー・ライコス", "note": "Scout captain of the Third Crusade (ライコス隊長); funeral urn in Kenabres museum.", "category": "Character"},
+    {"source": "Tertius Wharl", "target": "テルティウス・ウォール", "note": "Traitor general who poisoned himself (ウォール将軍); Wharl family = ウォール家.", "category": "Character"},
+    {"source": "Vivilla", "target": "ヴィヴィラ", "note": "General Wharl's wife, a witch.", "category": "Character"},
+    {"source": "Sir Ravignon", "target": "ラヴィニョン卿", "note": "Fallen paladin who atoned; owner of the Dark Horn trophy.", "category": "Character"},
+    {"source": "Couvarro", "target": "クヴァーロ", "note": "Knight, Sir Ravignon's illegitimate son (クヴァーロ騎士).", "category": "Character"},
+    {"source": "Whist", "target": "ウィスト", "note": "Crusader, wielder of the blade The Grace of Peace (安息の慈悲).", "category": "Character"},
+    {"source": "Lady Callandra", "target": "カランドラ夫人", "note": "Famed inquisitor; Lady Callandra's Chainmail in Kenabres museum.", "category": "Character"},
+    {"source": "Sir Wolferrick", "target": "ウォルフェリック卿", "note": "Crusader scout leader reporting to Irabeth in Kenabres.", "category": "Character"},
+    {"source": "Swargell", "target": "スワーゲル", "note": "Sarkorian tavern-keeping family of the Devimai clan (スワーゲル家).", "category": "Character"},
+    {"source": "Delvan", "target": "デルヴァン", "note": "Name shouted in a Kenabres fight line.", "category": "Character"},
+    {"source": "The Grace of Peace", "target": "安息の慈悲", "note": "Whist's blade, Kenabres museum exhibit.", "category": "Item"},
+    {"source": "Gauntlet of Punching", "target": "殴りのガントレット", "note": "Epithet of Power Fist (パワー・フィスト).", "category": "Item"},
+    {"source": "A World Long Gone", "target": "遠き過去の世界", "note": "Painting collection in Kenabres museum.", "category": "Lore"},
+    {"source": "Among the Cloudy Colossi", "target": "雲の巨人たちのあいだで", "note": "Painting in Kenabres museum.", "category": "Lore"},
+    {"source": "The Great Treason", "target": "大いなる裏切り", "note": "Kenabres museum exhibition \"The Third Crusade: The Great Treason\".", "category": "Lore"}
   ]
 }
