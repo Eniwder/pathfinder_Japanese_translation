@@ -25109,6 +25109,9 @@
     {"source": "To Each Their Place", "target": "各々の居場所", "note": "General's feat (crusade).", "category": "Crusade"},
     {"source": "How Does It Work?", "target": "どうなっているんだ？", "note": "General's feat (crusade).", "category": "Crusade"},
     {"source": "Crowned Checker", "target": "王冠のチェッカー", "note": "General's feat (crusade).", "category": "Crusade"},
-    {"source": "Low Gravity", "target": "低重力", "note": "General's feat (crusade).", "category": "Crusade"}
+    {"source": "Low Gravity", "target": "低重力", "note": "General's feat (crusade).", "category": "Crusade"},
+    {"source": "Zagelforntz", "target": "ザゲルフォーンツ", "note": "Alchemist mentioned in crusade events.", "category": "Character"},
+    {"source": "Bastet", "target": "バステト", "note": "Osirian goddess of cats.", "category": "Deity"},
+    {"source": "Caydenites", "target": "カイデン信奉者", "note": "Followers of Cayden Cailean.", "category": "Religion"}
   ]
 }
