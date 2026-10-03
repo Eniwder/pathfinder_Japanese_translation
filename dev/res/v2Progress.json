@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 94050,
-  "updatedAt": "2026-10-03T21:29:07.887Z",
+  "nextStart": 94350,
+  "updatedAt": "2026-10-03T21:33:41.624Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4457,6 +4457,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round316/",
       "coveredDialogs": [],
       "note": "v2リライト第316弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に訳文を書き込みました。entry 200件のうち199件を訳しています。件数は目視で数えたもので、スクリプトでの検証はしていません。\n\n- **訳せなかった1件:** キーの転記ミスが1件あり、原本と照合して修正しました。残り198件のキーは原本と突き合わせていないので、`import --dry-run` で確認してください。\n-  / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、パーサーでは検証していません。dialog名はすべて null（コンパニオンの掛け合いバンター）です。\n\nこのchunkには `speaker` も `ctx` もありません。話者はセリフの内容と glossary から推測して口"
+    },
+    {
+      "start": 94050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round317/",
+      "coveredDialogs": [],
+      "note": "v2リライト第317弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件を訳して書き込みました。JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\n- **dialog 名:** 全 entry の dialog が null でした。Wenduag・Lann・Woljif の洞窟／迷宮、ケナブレスの同行者掛け合い、ドレゼンの祭りが混在しています。 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ内容はJSONとして目視確認済みです。\ndialogは全件 null（話者情報なし）で、ケナブレスの祭り・デスカリ襲撃・テレンデレヴとの会話・図書館のカレブ関連が含まれます。\n- `{mf}` のうち `{mf|man|woman}` などは、日本語で作り"
     }
   ]
 }

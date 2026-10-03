@@ -25542,6 +25542,9 @@
     {"source": "White Plague", "target": "白死病", "note": "Series of cultist-orchestrated murders/suicides in Cheliax, disguised as a disease.", "category": "Lore"},
     {"source": "Reggie", "target": "レジー", "note": "Regill (レギル)'s nickname used by Woljif.", "category": "Character"},
     {"source": "Silken Thread", "target": "シルケン・スレッド", "note": "Establishment in Kenabres (engraved cups).", "category": "Location"},
-    {"source": "Alboras", "target": "アルボラス", "note": "Celestial body in astronomical calculations by Pulura's stargazers.", "category": "Lore"}
+    {"source": "Alboras", "target": "アルボラス", "note": "Celestial body in astronomical calculations by Pulura's stargazers.", "category": "Lore"},
+    {"source": "Aizerghaul", "target": "アイゼルガウル", "note": "Baphomet's scarlet glaive.", "category": "Item"},
+    {"source": "Foulsnout", "target": "フールスナウト", "note": "Demonic nickname given to Chaleb by a demon.", "category": "Character"},
+    {"source": "Prelate", "target": "司教", "note": "Hulrun's title; address form 「司教殿」.", "category": "Title"}
   ]
 }
