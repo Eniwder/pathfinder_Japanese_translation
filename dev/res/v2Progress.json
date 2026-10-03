@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 89850,
-  "updatedAt": "2026-10-03T11:43:32.962Z",
+  "nextStart": 90150,
+  "updatedAt": "2026-10-03T16:04:00.604Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4345,6 +4345,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round302/",
       "coveredDialogs": [],
       "note": "v2リライト第302弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました（`dialog` は全件 null）。内容は十字軍マップの地域名と説明、レリックの伝承とアイテム名、軍ユニットの状態異常説明です。書き込み後の JSON 構文チェックはしておらず、実行ツールがないため目視確認のみです。\n\n気づいた点：Sulema の説明文に出る \"Wicked Dope\" は glos / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、すべて十字軍の将軍特技の説明文と名称です。JSONの構文は目視で確認済みです。\n\n気づいた点として、`Power` はパワー、`Energy` はエネルギーで統一しました。`Favored Enemy — Flying` の区切りは原文のダッシュに合わせて「——」にして"
+    },
+    {
+      "start": 89850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round303/",
+      "coveredDialogs": [],
+      "note": "v2リライト第303弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。登場した会話（dialog名）はありません。全entryが `dialog: null` の十字軍の将軍特技・能力のUI文言です。書き込み後の読み返しはしていません。\n\n欠けているentryはありません。ただし「Power→威力」は、glossaryに無い語に当てた独自訳です。「Energy」「Stra / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。dialog 名はなく、すべて十字軍の特殊能力・罠・呪文の名称と説明文です。「Power」は「パワー」と訳しました。\n\n用語: Extraplanar Bomb → 異界の爆弾\n用語: Frenzy Trap → 狂乱の罠\n用語: Frost Blast Trap → 冷気爆発の罠\n用語: Hol"
     }
   ]
 }
