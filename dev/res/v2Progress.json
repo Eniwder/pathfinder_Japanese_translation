@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 93150,
-  "updatedAt": "2026-10-03T21:09:58.146Z",
+  "nextStart": 93450,
+  "updatedAt": "2026-10-03T21:16:08.754Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4433,6 +4433,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round313/",
       "coveredDialogs": [],
       "note": "v2リライト第313弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の 200 件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。キー照合や import の dry-run はしていません。\n\n- **キー照合:** 書き込み後に、キーを 1 件打ち間違えていたのを直しました（`770a83c0-…`）。残り 199 件は原文との突き合わせをしていないので、ほかに / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`import --dry-run` などは実行していません。dialog名はすべて null です（誕生日バークや同行者の掛け合いなどの単発セリフ）。\n\n話者情報が chunk に無かったため、口調は文脈から推測しました。誤りが"
+    },
+    {
+      "start": 93150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round314/",
+      "coveredDialogs": [],
+      "note": "v2リライト第314弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件を書き込みました。`dev/lang/chunks/` に置いてあります。出力できたのは完全な空欄が0件で、キー形式が正しい行が200行という確認までです。キーが `chunk_0000.json` の各entryと一字一句合っているかは、スクリプトを使えないので全件は照合できていません。入れ違いや綴り違いが1件でもあれば、そ / 100件を訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しています。dialog名はすべて null です（コンパニオン同士の掛け合いバーク）。\n\n気づいた点は2つです。\n- chunk に `speaker` と `ctx` が無かったため、話者は内容と glossary から推測しました。そのため"
     }
   ]
 }
