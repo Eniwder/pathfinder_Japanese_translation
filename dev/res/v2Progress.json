@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 92850,
-  "updatedAt": "2026-10-03T16:59:31.928Z",
+  "nextStart": 93150,
+  "updatedAt": "2026-10-03T21:09:58.146Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4425,6 +4425,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round312/",
       "coveredDialogs": [],
       "note": "v2リライト第312弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。会話(dialog)名は全件 null で、コンパニオン同士の掛け合いです。\n\nJSON の構文は目視で確認しましたが、スクリプトでの検証はしていません。\n\n気づいた点: speaker と ctx が無く、話者は前後のやり取りから推測しました。ソシエルとトレヴァーの回想場面など、一部は話者の推 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話名（dialog）はすべて null で、コンパニオン同士のバンター（掛け合い）が並んでいます。話者情報が無いため、文脈から口調を推測しました。\n\n1件、書き込み時に文字化け（`い��ない`）が出たので直しています。JSON の構文は検証していません。\n\n用語:"
+    },
+    {
+      "start": 92850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round313/",
+      "coveredDialogs": [],
+      "note": "v2リライト第313弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の 200 件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。キー照合や import の dry-run はしていません。\n\n- **キー照合:** 書き込み後に、キーを 1 件打ち間違えていたのを直しました（`770a83c0-…`）。残り 199 件は原文との突き合わせをしていないので、ほかに / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`import --dry-run` などは実行していません。dialog名はすべて null です（誕生日バークや同行者の掛け合いなどの単発セリフ）。\n\n話者情報が chunk に無かったため、口調は文脈から推測しました。誤りが"
     }
   ]
 }
