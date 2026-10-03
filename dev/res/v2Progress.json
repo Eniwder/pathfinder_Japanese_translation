@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 94950,
-  "updatedAt": "2026-10-03T21:44:46.182Z",
+  "nextStart": 95250,
+  "updatedAt": "2026-10-03T21:48:48.677Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4481,6 +4481,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round319/",
       "coveredDialogs": [],
       "note": "v2リライト第319弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しました。ファイルを読み戻したり、スクリプトで構文検証したりはしていません。\n\n- **会話(dialog名)**: すべて `dialog: null` で、会話名はありません。ブラーブ(掛け声・吹き出し)、ジャーナル項目、調査テキスト、ケナブレスの審問官の長台詞などです。\n-  / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しています。\n\n会話(dialog名)はすべて `null` で、会話単位の分類はありません。また、chunkに `speakers` 辞書や各entryの `speaker` が無かったため、話者は本文と文脈から推定しました。\n\n用語: Ti"
+    },
+    {
+      "start": 94950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round320/",
+      "coveredDialogs": [],
+      "note": "v2リライト第320弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を訳して書き込んだ。JSON は目視で確認し、`<ctrl_N/>` はそのままコピーした。書き込み後の構文チェックや import の dry-run はしていない。\n\n- **会話(dialog名)**: 全entryが `dialog: null` で、`speaker` も付いていなかった。ラミエン、デラン、ネニオ、 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視確認済みです。\n\n- **dialog:** 全entryが `dialog: null` で、話者指定もありません。環境描写と十字軍兵士やヘルナイトの戦闘バークが中心です。\n- **口調:** 話者が分からないため、guideどおり基本は丁寧語に"
     }
   ]
 }
