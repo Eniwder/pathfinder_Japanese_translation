@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 86250,
-  "updatedAt": "2026-10-03T06:31:38.801Z",
+  "nextStart": 86550,
+  "updatedAt": "2026-10-03T06:36:09.432Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4249,6 +4249,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round290/",
       "coveredDialogs": [],
       "note": "v2リライト第290弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は書き込み時に目視で確認しました。ツールでの検証はしていません。\n\n登場した会話は dialog 名なし（`null`）のみで、十字軍イベントの説明文・選択肢・タイトル群です。\n\n気づいた点が3つあります。\n- 最後の entry（`f22b1449…`）は「this ban」の指す内容が  / 100件を訳して `chunk_0001.translations.json` に書き込みました。JSON は目視で確認済みで、実行による検証はしていません。登場した dialog 名はなく、全件 `dialog: null` の十字軍イベント文（Event_28〜37 の選択肢と結果文）です。\n\n`{mf|his|her}` と `{mf|himself|herself}` は、ガイドの方針に従"
+    },
+    {
+      "start": 86250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round291/",
+      "coveredDialogs": [],
+      "note": "v2リライト第291弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の 200 件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。書き込み後に JSON の構文は目視で確認済みです。\n\n登場した dialog はありません（全 entry が `dialog: null`）。内容は十字軍イベント（Event_38〜57）の説明文と選択肢で、すべてナレーション扱いで訳 / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文の確認は目視のみです。dialog名はすべて null で、クルセイドのイベント説明文と選択肢です（イベント57〜66）。原文の `{mf|his|her}` は日本語では不要なので、3か所とも `{mf}` ごと省きました。\n\n用語: Rift drake → リフト・ドレイク\n用語: H"
     }
   ]
 }

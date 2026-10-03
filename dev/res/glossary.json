@@ -25112,6 +25112,9 @@
     {"source": "Low Gravity", "target": "低重力", "note": "General's feat (crusade).", "category": "Crusade"},
     {"source": "Zagelforntz", "target": "ザゲルフォーンツ", "note": "Alchemist mentioned in crusade events.", "category": "Character"},
     {"source": "Bastet", "target": "バステト", "note": "Osirian goddess of cats.", "category": "Deity"},
-    {"source": "Caydenites", "target": "カイデン信奉者", "note": "Followers of Cayden Cailean.", "category": "Religion"}
+    {"source": "Caydenites", "target": "カイデン信奉者", "note": "Followers of Cayden Cailean.", "category": "Religion"},
+    {"source": "Milanite", "target": "メラウニの信徒", "note": "Follower of Milani (crusade event).", "category": "Religion"},
+    {"source": "Helper", "target": "ヘルパー", "note": "Spirit that calls itself the Helper (crusade event). 「」付きで用いる場合あり。", "category": "Character"},
+    {"source": "Nidalese", "target": "ニダールの", "note": "Adjective of Nidal (ニダール人 for people).", "category": "Location"}
   ]
 }
