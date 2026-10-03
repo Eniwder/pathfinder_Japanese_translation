@@ -25445,6 +25445,15 @@
     {"source": "Tarsival", "target": "タルシヴァル", "note": "Young knight in crusade events.", "category": "Character"},
     {"source": "Soco", "target": "ソコ", "note": "Signature on a note (Socothbenoth).", "category": "Character"},
     {"source": "Minotaur Vanguard", "target": "ミノタウロス・ヴァンガード", "note": "Crusade unit.", "category": "Crusade"},
-    {"source": "Minotaur Axe Throwers", "target": "ミノタウロス・アックス・スロワー", "note": "Crusade unit.", "category": "Crusade"}
+    {"source": "Minotaur Axe Throwers", "target": "ミノタウロス・アックス・スロワー", "note": "Crusade unit.", "category": "Crusade"},
+    {"source": "Monks", "target": "モンク", "note": "Crusade unit (class Monk).", "category": "Crusade"},
+    {"source": "Alchemists", "target": "錬金術師", "note": "Crusade unit (class Alchemist).", "category": "Crusade"},
+    {"source": "Kineticists", "target": "キネティシスト", "note": "Crusade unit (class Kineticist).", "category": "Crusade"},
+    {"source": "Rift Drakes", "target": "リフト・ドレイク", "note": "Crusade unit.", "category": "Crusade"},
+    {"source": "Protective Talismans", "target": "守りの護符", "note": "Crusade army feat.", "category": "Crusade"},
+    {"source": "Enchanted Mounts", "target": "魔化された騎獣", "note": "Crusade army feat.", "category": "Crusade"},
+    {"source": "Serrated Arrows", "target": "鋸歯の矢", "note": "Crusade army feat.", "category": "Crusade"},
+    {"source": "Swift Mounts", "target": "俊足の騎獣", "note": "Crusade army feat.", "category": "Crusade"},
+    {"source": "Pet Drake", "target": "ペット・ドレイク", "note": "Crusade general ability.", "category": "Crusade"}
   ]
 }
