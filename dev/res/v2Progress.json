@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 88650,
-  "updatedAt": "2026-10-03T11:23:43.958Z",
+  "nextStart": 88950,
+  "updatedAt": "2026-10-03T11:27:28.865Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4313,6 +4313,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round298/",
       "coveredDialogs": [],
       "note": "v2リライト第298弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認しています。dialog名はすべて null で、十字軍イベント（勅令）の説明文・効果文・タイトルが対象です。\n\n気づいた点は2つです。\n- 効果文は「ユニット、指揮官の司令部で募兵される」「経験値が〜増加する」の定型に揃えました。\n- 原文の ` / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。`dialog` はすべて null で、十字軍イベント（勅令）の説明文とその名称が対象でした。\n\nアイオン文中の `{mf|his|her}` は日本語で作り分け不要なので、タグごと省きました。\n\n用語: Rift Drakes → リフト・ドレイク\n用語: F"
+    },
+    {
+      "start": 88650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round299/",
+      "coveredDialogs": [],
+      "note": "v2リライト第299弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。対象は十字軍の勅令・イベント文で、`dialog` はすべて null、会話はありません。\n\n書き込んだ JSON が構文として正しいかは、目視確認のみで、パーサーでは検証していません。次の点が未確認です。\n- 件数がちょうど200件か。\n- `<ctrl_N/>` の個数と順序が崩れていないか。\n\n原 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話（dialog）は全件 `null` で、十字軍の勅令・イベントの説明文と名称だけです。書いた JSON の構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\n気づいた点が2つあります。\n- 原文の `{mf|his|her"
     }
   ]
 }

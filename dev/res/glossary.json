@@ -25454,6 +25454,26 @@
     {"source": "Enchanted Mounts", "target": "魔化された騎獣", "note": "Crusade army feat.", "category": "Crusade"},
     {"source": "Serrated Arrows", "target": "鋸歯の矢", "note": "Crusade army feat.", "category": "Crusade"},
     {"source": "Swift Mounts", "target": "俊足の騎獣", "note": "Crusade army feat.", "category": "Crusade"},
-    {"source": "Pet Drake", "target": "ペット・ドレイク", "note": "Crusade general ability.", "category": "Crusade"}
+    {"source": "Pet Drake", "target": "ペット・ドレイク", "note": "Crusade general ability.", "category": "Crusade"},
+    {"source": "Masters of Survival", "target": "生存の達人", "note": "Crusade army feat.", "category": "Crusade"},
+    {"source": "Poisoned Strike", "target": "毒の一撃", "note": "Crusade army feat.", "category": "Crusade"},
+    {"source": "Hardened Mind", "target": "鍛えられた精神", "note": "Crusade army feat.", "category": "Crusade"},
+    {"source": "Mighty Servant", "target": "強大な従者", "note": "Crusade general feat (IX levels).", "category": "Crusade"},
+    {"source": "Heavenly Ward", "target": "天の守護", "note": "Crusade general feat (IX levels).", "category": "Crusade"},
+    {"source": "Bloodragers", "target": "ブラッドレイジャー", "note": "Crusade unit (class Bloodrager).", "category": "Crusade"},
+    {"source": "Retrievers", "target": "レトリーヴァー", "note": "Crusade unit.", "category": "Crusade"},
+    {"source": "Warpriests", "target": "ウォープリースト", "note": "Crusade unit (class Warpriest).", "category": "Crusade"},
+    {"source": "Assassins", "target": "暗殺者", "note": "Crusade unit.", "category": "Crusade"},
+    {"source": "Captain Harmattan", "target": "ハーマタン隊長", "note": "Nerosyan officer killed by aristocrats on the Commander's orders.", "category": "Character"},
+    {"source": "Wary", "target": "ウェアリー", "note": "Group whose riot is referenced in a crusade event (the Wary).", "category": "Organization"},
+    {"source": "Sinister Mansion", "target": "不吉な館", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Mountain Warden", "target": "山の番人", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Hamlet of Sork", "target": "ソークの集落", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Gloomy Gorge", "target": "陰鬱の峡谷", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Death Bridge", "target": "死の橋", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Last Barrier", "target": "最後の防壁", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Treasonhome", "target": "裏切りの故郷", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Stone Maze", "target": "石の迷路", "note": "Crusade fort location.", "category": "Location"},
+    {"source": "Camp on the Ferry", "target": "渡し場の野営地", "note": "Crusade fort location.", "category": "Location"}
   ]
 }
