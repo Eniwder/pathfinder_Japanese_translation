@@ -25537,6 +25537,8 @@
     {"source": "Trainable unit", "target": "訓練可能ユニット", "note": "Crusade unit type recruited via own buildings.", "category": "Crusade"},
     {"source": "Hamatulatsu", "target": "ハマトゥラツ", "note": "Asmodean monk fighting style modeled on barbed devils (hamatulas).", "category": "Lore"},
     {"source": "Barbed Devil", "target": "バーブド・デビル", "note": "Devil (hamatula), guardian of Hell.", "category": "Creature"},
-    {"source": "Cami", "target": "カミ", "note": "Camellia (カメリア)'s childhood nickname.", "category": "Character"}
+    {"source": "Cami", "target": "カミ", "note": "Camellia (カメリア)'s childhood nickname.", "category": "Character"},
+    {"source": "Order of the Scar", "target": "傷痕の騎士団", "note": "Hellknight order that hunts down killers (cf. 釘の騎士団/鞭の騎士団). 「スカーの騎士団」にしない。", "category": "Organization"},
+    {"source": "White Plague", "target": "白死病", "note": "Series of cultist-orchestrated murders/suicides in Cheliax, disguised as a disease.", "category": "Lore"}
   ]
 }

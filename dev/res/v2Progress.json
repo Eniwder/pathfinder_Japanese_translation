@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 92250,
-  "updatedAt": "2026-10-03T16:48:05.343Z",
+  "nextStart": 92550,
+  "updatedAt": "2026-10-03T16:52:58.535Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4409,6 +4409,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round310/",
       "coveredDialogs": [],
       "note": "v2リライト第310弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。キー数が200件であることは確認済みです。JSON として正しいかのパース確認まではしていません。\n\ndialog 名はすべて null で、コンパニオン同士の掛け合い（バンター）の単発台詞です。entry に speaker も ctx も無かったため、話者は台詞 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\n- 会話（dialog名）は全entryが `null` のため、特定できませんでした。内容はコンパニオン同士の掛け合い（ラン、ネニオ、レギル、ソシエル、ウェンデュアグほか）です。\n- chunkに "
+    },
+    {
+      "start": 92250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round311/",
+      "coveredDialogs": [],
+      "note": "v2リライト第311弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話名（dialog）はすべて null で、ネニオとコンパニオンたちの掛け合い（バンター）です。\n\n話者情報（`speakers`）がチャンクに入っていませんでした。口調は文脈から推測して付けています。\n\nキーは手で書き写しました。書き込み後に確認できたのは件数（200）と、おかしいと気づいた2件の照 / chunk_0001 の100件を全部訳し、`chunk_0001.translations.json` に書き込みました。書き込み後にJSONの目視確認をして、閉じ忘れていた1件（`cc590b9a…`）を直しています。スクリプトによる構文検証は、この環境では実行できていません。\n\ndialog 名は全 entry が null で、コンパニオン同士の掛け合い（シーラ、レジル、エンバー、アルエシ"
     }
   ]
 }
