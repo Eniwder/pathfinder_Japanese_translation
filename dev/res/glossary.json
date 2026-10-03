@@ -25541,6 +25541,7 @@
     {"source": "Order of the Scar", "target": "傷痕の騎士団", "note": "Hellknight order that hunts down killers (cf. 釘の騎士団/鞭の騎士団). 「スカーの騎士団」にしない。", "category": "Organization"},
     {"source": "White Plague", "target": "白死病", "note": "Series of cultist-orchestrated murders/suicides in Cheliax, disguised as a disease.", "category": "Lore"},
     {"source": "Reggie", "target": "レジー", "note": "Regill (レギル)'s nickname used by Woljif.", "category": "Character"},
-    {"source": "Silken Thread", "target": "シルケン・スレッド", "note": "Establishment in Kenabres (engraved cups).", "category": "Location"}
+    {"source": "Silken Thread", "target": "シルケン・スレッド", "note": "Establishment in Kenabres (engraved cups).", "category": "Location"},
+    {"source": "Alboras", "target": "アルボラス", "note": "Celestial body in astronomical calculations by Pulura's stargazers.", "category": "Lore"}
   ]
 }
