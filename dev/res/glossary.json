@@ -25487,6 +25487,14 @@
     {"source": "Gift from the Druids", "target": "ドルイドの贈り物", "note": "Crusade general feat.", "category": "Feat"},
     {"source": "Druidic Upbringing", "target": "ドルイドの養育", "note": "Crusade army unit feat.", "category": "Feat"},
     {"source": "Lake Folk", "target": "湖の民", "note": "Crusade event faction.", "category": "Organization"},
-    {"source": "Kenabres Reinforcements", "target": "ケナブレスの援軍", "note": "Crusade event title.", "category": "Event"}
+    {"source": "Kenabres Reinforcements", "target": "ケナブレスの援軍", "note": "Crusade event title.", "category": "Event"},
+    {"source": "Warriors of the Device", "target": "装置の戦士", "note": "Crusade army unit (Numerian Device route).", "category": "Crusade"},
+    {"source": "Pharasmites", "target": "ファラズマの信奉者", "note": "Followers of Pharasma.", "category": "Organization"},
+    {"source": "Similar One", "target": "似たる者", "note": "Deskari's creature/minion.", "category": "Creature"},
+    {"source": "Greenskin Stalkers", "target": "グリーンスキン・ストーカー", "note": "Isgeri ranger company (crusade event).", "category": "Organization"},
+    {"source": "Secret Routes", "target": "秘密の経路", "note": "Crusade general feat.", "category": "Feat"},
+    {"source": "Black Lions", "target": "ブラック・ライオンズ", "note": "Mercenary company (crusade event).", "category": "Organization"},
+    {"source": "Sir Thommis", "target": "サー・トミス", "note": "Knight in crusade events.", "category": "Character"},
+    {"source": "Helter-Skelter Logistics", "target": "ヘルター・スケルター兵站", "note": "Crusade feat/option.", "category": "Crusade"}
   ]
 }
