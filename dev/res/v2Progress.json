@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 85050,
-  "updatedAt": "2026-10-03T06:16:21.043Z",
+  "nextStart": 85350,
+  "updatedAt": "2026-10-03T06:20:17.347Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4217,6 +4217,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round286/",
       "coveredDialogs": [],
       "note": "v2リライト第286弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。`chunk_0000.json` は編集していません。JSON構文は目視で確認しましたが、実行による検証はしていません。\n\n- 会話(dialog)は、すべて `null` のブロックでした。エリア名、選択肢、調査文、Lucy一族の戦闘バーク（掛け声）が中心です。\n- 本文中の「あなた」の扱いは、調査 / 100件を訳し、`chunk_0001.translations.json` に書き込みました。書き込み後の JSON 構文は目視で確認しています。会話（dialog）はすべて `null` で、ロケーション名、移動・調査の選択肢、環境描写の文が中心でした。\n\n用語: Fulsome Queen → フルサム・クイーン\n用語: Razormaze Glaciers → レイザーメイズ氷河\n用語: "
+    },
+    {
+      "start": 85050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round287/",
+      "coveredDialogs": [],
+      "note": "v2リライト第287弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に 200 件すべてを訳して書き込みました。JSON の構文は目視で確認済みです。\n\n- 会話（dialog）: すべて `dialog: null`。会話ではなく、マップ遷移ラベル、場所の名前と説明文、探索ポイント説明、アイテム説明などです。\n- 気づいた点:\n  - 書き込み時に key を 2 件打ち間違えたので、`chunk_0 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。登場した dialog 名はなく、全件が dialog=null の場所名・場所説明文です（ナレーション扱いで常体の地の文）。\n\n書き込んだ JSON は目視で確認しました。パーサでの検証はしていません。\n\n気づいた点：\n- 「Core of the Riddle」"
     }
   ]
 }

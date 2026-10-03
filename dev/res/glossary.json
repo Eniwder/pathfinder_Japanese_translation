@@ -25028,6 +25028,14 @@
     {"source": "Demodand", "target": "デモダンド", "note": "Fiends of Tartarus created by the Titans (Demodands).", "category": "Creature"},
     {"source": "Titan", "target": "タイタン", "note": "First creations of the gods; creators of the demodands.", "category": "Creature"},
     {"source": "Lance Temal", "target": "ランス・テマル", "note": "Name on a gravestone.", "category": "Person"},
-    {"source": "Bergsons", "target": "バーグソン家", "note": "Rival family mentioned by scavengers (Bergson＝バーグソン).", "category": "Organization"}
+    {"source": "Bergsons", "target": "バーグソン家", "note": "Rival family mentioned by scavengers (Bergson＝バーグソン).", "category": "Organization"},
+    {"source": "Frigid River", "target": "フリジッド川", "note": "River at a ruined settlement on the crusade map.", "category": "Location"},
+    {"source": "Legacy of the Ancients", "target": "古代人の遺産", "note": "Sarkorian name for Earthfall-era ruins (crusade map). 本文中は「」で括る.", "category": "Location"},
+    {"source": "Core of the Riddle", "target": "謎の核心", "note": "Sarkorian name for Earthfall-era ruins (crusade map). 本文中は「」で括る.", "category": "Location"},
+    {"source": "Conundrum Unsolved", "target": "解かれざる難問", "note": "Sarkorian name for Earthfall-era ruins (crusade map). 本文中は「」で括る.", "category": "Location"},
+    {"source": "Forgotten Secrets", "target": "忘れられた秘密", "note": "Sarkorian name for Earthfall-era ruins (crusade map). 本文中は「」で括る.", "category": "Location"},
+    {"source": "Final Veil", "target": "最後の帳", "note": "Sarkorian name for Earthfall-era ruins (crusade map). 本文中は「」で括る.", "category": "Location"},
+    {"source": "Executioners", "target": "処刑人", "note": "Self-styled name of a demon gang on the crusade map.", "category": "Organization"},
+    {"source": "First Crusade", "target": "第一次十字軍", "note": "First of the Mendevian Crusades (Second Crusade＝第二次十字軍).", "category": "Event"}
   ]
 }
