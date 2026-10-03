@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 85350,
-  "updatedAt": "2026-10-03T06:20:17.347Z",
+  "nextStart": 85650,
+  "updatedAt": "2026-10-03T06:24:00.249Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4225,6 +4225,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round287/",
       "coveredDialogs": [],
       "note": "v2リライト第287弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に 200 件すべてを訳して書き込みました。JSON の構文は目視で確認済みです。\n\n- 会話（dialog）: すべて `dialog: null`。会話ではなく、マップ遷移ラベル、場所の名前と説明文、探索ポイント説明、アイテム説明などです。\n- 気づいた点:\n  - 書き込み時に key を 2 件打ち間違えたので、`chunk_0 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。登場した dialog 名はなく、全件が dialog=null の場所名・場所説明文です（ナレーション扱いで常体の地の文）。\n\n書き込んだ JSON は目視で確認しました。パーサでの検証はしていません。\n\n気づいた点：\n- 「Core of the Riddle」"
+    },
+    {
+      "start": 85350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round288/",
+      "coveredDialogs": [],
+      "note": "v2リライト第288弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。対象は会話ではなく、`dialog` が null のブロックだけです（地名・待機テキスト・十字軍の砦の建物名と効果説明）。\n\n- **JSON の確認:** コマンドが使えないため、構文は目視でしか確認できていません。\n- **`{mf}` タグ:** 原文に2か所あり / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しています。対象は dialog なしの十字軍・軍管理UIテキスト（ステータス説明、将軍の徴募、撤退、旗の説明など）です。\n\n`{mf|his|her}` は日本語で作り分けが不要なので、`{mf}` ごと省きました（統率力の説明文）。\n\n用語: Watchtower → "
     }
   ]
 }
