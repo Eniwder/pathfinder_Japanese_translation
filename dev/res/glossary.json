@@ -25495,6 +25495,25 @@
     {"source": "Secret Routes", "target": "秘密の経路", "note": "Crusade general feat.", "category": "Feat"},
     {"source": "Black Lions", "target": "ブラック・ライオンズ", "note": "Mercenary company (crusade event).", "category": "Organization"},
     {"source": "Sir Thommis", "target": "サー・トミス", "note": "Knight in crusade events.", "category": "Character"},
-    {"source": "Helter-Skelter Logistics", "target": "ヘルター・スケルター兵站", "note": "Crusade feat/option.", "category": "Crusade"}
+    {"source": "Helter-Skelter Logistics", "target": "ヘルター・スケルター兵站", "note": "Crusade feat/option.", "category": "Crusade"},
+    {"source": "Laffar", "target": "ラファー", "note": "Thief who stole from Norgorber (relic lore).", "category": "Character"},
+    {"source": "Lirk Ha'an", "target": "リルク・ハアン", "note": "Storastan philosopher, the Face-Stealer (relic lore).", "category": "Character"},
+    {"source": "Face-Stealer", "target": "顔盗み", "note": "Epithet of Lirk Ha'an.", "category": "Title"},
+    {"source": "Xaria", "target": "ザリア", "note": "Sarkorian artificer (relic lore).", "category": "Character"},
+    {"source": "Djail Kann", "target": "ジェイル・カン", "note": "Riddle-loving demon investigator of Alushinyrra (relic lore).", "category": "Character"},
+    {"source": "Nemarius", "target": "ネマリウス", "note": "Demigod son of Sekhmet (relic lore).", "category": "Character"},
+    {"source": "Sekhmet", "target": "セクメト", "note": "Goddess (Osirion pantheon).", "category": "Deity"},
+    {"source": "Francest", "target": "フランセスト", "note": "The Cursed Bard (relic lore).", "category": "Character"},
+    {"source": "Song of All Wicked", "target": "万邪の歌", "note": "Francest's final song (relic lore).", "category": "Lore"},
+    {"source": "Zymus", "target": "ザイマス", "note": "Mage who took enemies' limbs (relic lore).", "category": "Character"},
+    {"source": "Book of Redemption", "target": "贖罪の書", "note": "Cursed book in Calistria's temple (relic lore).", "category": "Item"},
+    {"source": "Lord of Monsters", "target": "怪物の王", "note": "Epithet of Baphomet (cf. Lord of Beasts=獣の王).", "category": "Title"},
+    {"source": "Bloodwood", "target": "ブラッドウッド族", "note": "Sarkorian tribe (Last Ash lore).", "category": "Organization"},
+    {"source": "Hecatrix", "target": "ヘカトリクス", "note": "Azlanti queen of courtesans (relic lore).", "category": "Character"},
+    {"source": "City of Golden Gates", "target": "黄金の門の都", "note": "Azlanti city (relic lore).", "category": "Location"},
+    {"source": "Voracious Jumble", "target": "貪欲なる寄せ集め", "note": "Weapon made of reanimated parts (relic).", "category": "Item"},
+    {"source": "Humpback Zurga", "target": "せむしのズルガ", "note": "Priest of Rovagug (relic lore).", "category": "Character"},
+    {"source": "Rabid Bitch", "target": "ラビッド・ビッチ号", "note": "Captain Kerz's airship.", "category": "Item"},
+    {"source": "Total Defense", "target": "防御専念", "note": "PRD定訳。round302では「完全防御」と訳されていた。", "category": "Crusade"}
   ]
 }

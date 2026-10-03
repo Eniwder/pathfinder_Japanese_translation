@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 89550,
-  "updatedAt": "2026-10-03T11:38:38.163Z",
+  "nextStart": 89850,
+  "updatedAt": "2026-10-03T11:43:32.962Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4337,6 +4337,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round301/",
       "coveredDialogs": [],
       "note": "v2リライト第301弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件中198件を書き込みました。会話(dialog名)はすべて null で、十字軍イベント文と評議会の会話が中心です。\n\n残り2件の扱い:\n- 同一原文の2件(`6b06b93c…` と `2f62998a…`)は、同じ訳を2つのkeyに入れています。\n- `Executed Harmattan's officers.` 系の6 / 100件すべてを訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文の確認は書いた内容を目視で見ただけで、ツールでのパース検証はしていません。`<ctrl_N/>` の数と順序は原文のまま保ちました。\n\n登場した会話：dialog名はすべてnullでした。内容は十字軍の助言役の選択（アランカ、アーリー・サンセット、ヨズ"
+    },
+    {
+      "start": 89550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round302/",
+      "coveredDialogs": [],
+      "note": "v2リライト第302弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました（`dialog` は全件 null）。内容は十字軍マップの地域名と説明、レリックの伝承とアイテム名、軍ユニットの状態異常説明です。書き込み後の JSON 構文チェックはしておらず、実行ツールがないため目視確認のみです。\n\n気づいた点：Sulema の説明文に出る \"Wicked Dope\" は glos / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話（dialog）はなく、すべて十字軍の将軍特技の説明文と名称です。JSONの構文は目視で確認済みです。\n\n気づいた点として、`Power` はパワー、`Energy` はエネルギーで統一しました。`Favored Enemy — Flying` の区切りは原文のダッシュに合わせて「——」にして"
     }
   ]
 }
