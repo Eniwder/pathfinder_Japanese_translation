@@ -25022,6 +25022,12 @@
     {"source": "Starbow", "target": "スターボウ", "note": "+3 radiant composite longbow firing a cone of radiance.", "category": "Item"},
     {"source": "Obedience", "target": "服従", "note": "Mark applied by a +5 axiomatic weapon (「服従」の印).", "category": "Item"},
     {"source": "Bartolo Mezinas", "target": "バルトロ・メジナス", "note": "Count; author of a treatise on war (book lore).", "category": "Person"},
-    {"source": "Westcrown", "target": "ウェストクラウン", "note": "City in Cheliax (Westcrown Royal Publishing＝ウェストクラウン王立出版).", "category": "Location"}
+    {"source": "Westcrown", "target": "ウェストクラウン", "note": "City in Cheliax (Westcrown Royal Publishing＝ウェストクラウン王立出版).", "category": "Location"},
+    {"source": "Razormaze Glaciers", "target": "レイザーメイズ氷河", "note": "Far-flung icy region of the Abyss.", "category": "Location"},
+    {"source": "Vault of Graves", "target": "墓所の書庫", "note": "Nocticula's library holding biographies of her victims. 本文中は「」で括る.", "category": "Location"},
+    {"source": "Demodand", "target": "デモダンド", "note": "Fiends of Tartarus created by the Titans (Demodands).", "category": "Creature"},
+    {"source": "Titan", "target": "タイタン", "note": "First creations of the gods; creators of the demodands.", "category": "Creature"},
+    {"source": "Lance Temal", "target": "ランス・テマル", "note": "Name on a gravestone.", "category": "Person"},
+    {"source": "Bergsons", "target": "バーグソン家", "note": "Rival family mentioned by scavengers (Bergson＝バーグソン).", "category": "Organization"}
   ]
 }
