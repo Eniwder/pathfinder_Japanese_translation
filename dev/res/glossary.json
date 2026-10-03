@@ -25565,6 +25565,11 @@
     {"source": "Among the Cloudy Colossi", "target": "雲の巨人たちのあいだで", "note": "Painting in Kenabres museum.", "category": "Lore"},
     {"source": "The Great Treason", "target": "大いなる裏切り", "note": "Kenabres museum exhibition \"The Third Crusade: The Great Treason\".", "category": "Lore"},
     {"source": "Silver Twins", "target": "シルバー・ツインズ", "note": "Epithet of the angels Lariel and Targona (ラリエルとターゴナ).", "category": "Character"},
-    {"source": "Gordhil Vhane", "target": "ゴルディル・ヴェイン", "note": "Vhane family patriarch; tombstone 'builder of citadels, father of two heroes'.", "category": "Character"}
+    {"source": "Gordhil Vhane", "target": "ゴルディル・ヴェイン", "note": "Vhane family patriarch; tombstone 'builder of citadels, father of two heroes'.", "category": "Character"},
+    {"source": "Nasty Waifs", "target": "ナスティ・ウェイフ団", "note": "Thieves' gang led by Harkel; raided the Tower of Estrod.", "category": "Organization"},
+    {"source": "Harkel", "target": "ハーケル", "note": "Chief of the Nasty Waifs gang; letter in Dry River Canyon.", "category": "Character"},
+    {"source": "Quickrick", "target": "クイックリック", "note": "Old drunk of the Nasty Waifs who rose as undead.", "category": "Character"},
+    {"source": "Dry River Canyon", "target": "ドライ・リバー渓谷", "note": "Canyon where the Nasty Waifs made their last stand.", "category": "Location"},
+    {"source": "Kelish", "target": "ケレッシュ語", "note": "Language of Kelesh (ケレッシュ). Round321 used ケリッシュ語; unified to match Kelesh.", "category": "Language"}
   ]
 }
