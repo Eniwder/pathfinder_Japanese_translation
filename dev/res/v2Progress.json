@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 84150,
-  "updatedAt": "2026-10-02T14:48:23.021Z",
+  "nextStart": 84450,
+  "updatedAt": "2026-10-03T06:11:33.134Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4193,6 +4193,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-02_round283/",
       "coveredDialogs": [],
       "note": "v2リライト第283弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。会話(dialog)は全件 `null` で、武器・アイテムの名称と説明文のみです。JSON構文と `<ctrl_N/>` の整合性は検証していません。\n\n`<ctrl_N/>` の順序は、日本語として不自然にならない範囲で原文の並びに合わせています。\n\n用語: Radiant → レイディアント\n用語 / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。対象は全て武器アイテムの説明文と名前で、dialog はすべて null です。\n\n気づいた点は2つです。\n- 英語と日本語で語順が違うため、`<ctrl_N/>` の順序を保つよう文を組み替えた箇所があります。\n- 武器名の「ソフト・カット」「ディープ・リップ」は、説"
+    },
+    {
+      "start": 84150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round284/",
+      "coveredDialogs": [],
+      "note": "v2リライト第284弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。JSON構文の確認は書き込み前の目視のみで、実行環境がないためパースの検証はしていません。\n\n登場した会話（dialog名）はありません。全件が `dialog: null` の武器・防具・アイテムの名称と説明文です。\n\n気づいた点:\n- 制御タグは `<ctrl_N/>` の順序が入れ替わらないよ / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文の確認は目視のみです。dialog名はすべて null で、会話ではなくアイテム名・説明文・日記メモです。\n\n`<ctrl_N/>` は個数と順序を保つため、一部の文を言い換えて語順を調整しています。\n\n用語: Incinerating → インシネレイティング\n用語: Freezin"
     }
   ]
 }

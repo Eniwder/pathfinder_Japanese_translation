@@ -25015,6 +25015,13 @@
     {"source": "Soft Cut", "target": "ソフト・カット", "note": "+5 dagger paired with Deep Rip (dual-wield set).", "category": "Item"},
     {"source": "Deep Rip", "target": "ディープ・リップ", "note": "+5 dagger paired with Soft Cut (dual-wield set).", "category": "Item"},
     {"source": "Battle-Forged", "target": "戦場で鍛えられし", "note": "Title-only name entry (item/ability name).", "category": "Item"},
-    {"source": "Druid", "target": "ドルイド", "note": "Base class.", "category": "Class"}
+    {"source": "Druid", "target": "ドルイド", "note": "Base class.", "category": "Class"},
+    {"source": "That Which Bathes in Blood", "target": "血に浴する者", "note": "+4 axiomatic sawtooth saber paired with Praying Killer. 本文中は「」で括る.", "category": "Item"},
+    {"source": "Praying Killer", "target": "祈る殺し屋", "note": "+5 necrotic sawtooth saber paired with That Which Bathes in Blood. 本文中は「」で括る.", "category": "Item"},
+    {"source": "Holy Avenger", "target": "ホーリィ・アヴェンジャー", "note": "Cold iron longsword that becomes holy in a paladin's hand.", "category": "Item"},
+    {"source": "Starbow", "target": "スターボウ", "note": "+3 radiant composite longbow firing a cone of radiance.", "category": "Item"},
+    {"source": "Obedience", "target": "服従", "note": "Mark applied by a +5 axiomatic weapon (「服従」の印).", "category": "Item"},
+    {"source": "Bartolo Mezinas", "target": "バルトロ・メジナス", "note": "Count; author of a treatise on war (book lore).", "category": "Person"},
+    {"source": "Westcrown", "target": "ウェストクラウン", "note": "City in Cheliax (Westcrown Royal Publishing＝ウェストクラウン王立出版).", "category": "Location"}
   ]
 }
