@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 85650,
-  "updatedAt": "2026-10-03T06:24:00.249Z",
+  "nextStart": 85950,
+  "updatedAt": "2026-10-03T06:27:11.259Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4233,6 +4233,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round288/",
       "coveredDialogs": [],
       "note": "v2リライト第288弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。対象は会話ではなく、`dialog` が null のブロックだけです（地名・待機テキスト・十字軍の砦の建物名と効果説明）。\n\n- **JSON の確認:** コマンドが使えないため、構文は目視でしか確認できていません。\n- **`{mf}` タグ:** 原文に2か所あり / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しています。対象は dialog なしの十字軍・軍管理UIテキスト（ステータス説明、将軍の徴募、撤退、旗の説明など）です。\n\n`{mf|his|her}` は日本語で作り分けが不要なので、`{mf}` ごと省きました（統率力の説明文）。\n\n用語: Watchtower → "
+    },
+    {
+      "start": 85650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round289/",
+      "coveredDialogs": [],
+      "note": "v2リライト第289弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。会話(dialog)はなく、十字軍の旗・将軍特技・ランダムイベントなどのUI/効果テキストです。JSON構文は目視で確認済みです。\n\n気づいた点：「Recruitment growth」は「募兵増加数」、「mercenary units」は「傭兵ユニット」、「traina / 100件を訳して `chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、スクリプトでは検証していません。\n\n登場した会話(dialog名)はありません。全ブロックの `dialog` が null で、十字軍イベントの説明文と選択肢でした。`[Choice effects]` は `[選択の効果]` に統一しました。`{mf|his|h"
     }
   ]
 }

@@ -25094,6 +25094,21 @@
     {"source": "Wintersun Lands", "target": "ウィンターサン領", "note": "Crusade map region.", "category": "Location"},
     {"source": "Wounded Lands", "target": "傷ついた地", "note": "Crusade map region.", "category": "Location"},
     {"source": "The Wastes", "target": "荒野", "note": "Crusade map region.", "category": "Location"},
-    {"source": "Petrified Library", "target": "石化した図書館", "note": "Crusade map region.", "category": "Location"}
+    {"source": "Petrified Library", "target": "石化した図書館", "note": "Crusade map region.", "category": "Location"},
+    {"source": "Garrison Archery Range", "target": "守備隊用射撃場", "note": "Crusade building (Main Archery Range＝主射撃場).", "category": "Crusade"},
+    {"source": "Sanctuaries", "target": "聖域", "note": "Crusade fort building (plural form; the spell Sanctuary＝サンクチュアリ).", "category": "Crusade"},
+    {"source": "Materials Point", "target": "物資ポイント", "note": "Singular of Materials Points (also 'Material Point'). 資材ポイントにしない.", "category": "Crusade"},
+    {"source": "Material Point", "target": "物資ポイント", "note": "Variant of Materials Points.", "category": "Crusade"},
+    {"source": "mercenary units", "target": "傭兵ユニット", "note": "Crusade army term. 「傭兵部隊」にしない.", "category": "Crusade"},
+    {"source": "recruitment growth", "target": "募兵増加数", "note": "Crusade weekly recruit growth stat.", "category": "Crusade"},
+    {"source": "Choice effects", "target": "選択の効果", "note": "Prefix label of crusade event choices.", "category": "UI"},
+    {"source": "Eccentric Astrologers", "target": "風変わりな占星術師", "note": "Crusade effect.", "category": "Crusade"},
+    {"source": "Random Guests", "target": "ランダムな客人", "note": "Crusade effect.", "category": "Crusade"},
+    {"source": "Voracious Swarm", "target": "貪欲な群れ", "note": "Crusade army ability.", "category": "Crusade"},
+    {"source": "Black Spot", "target": "黒点", "note": "General's feat (crusade).", "category": "Crusade"},
+    {"source": "To Each Their Place", "target": "各々の居場所", "note": "General's feat (crusade).", "category": "Crusade"},
+    {"source": "How Does It Work?", "target": "どうなっているんだ？", "note": "General's feat (crusade).", "category": "Crusade"},
+    {"source": "Crowned Checker", "target": "王冠のチェッカー", "note": "General's feat (crusade).", "category": "Crusade"},
+    {"source": "Low Gravity", "target": "低重力", "note": "General's feat (crusade).", "category": "Crusade"}
   ]
 }
