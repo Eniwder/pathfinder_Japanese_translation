@@ -25115,6 +25115,12 @@
     {"source": "Caydenites", "target": "カイデン信奉者", "note": "Followers of Cayden Cailean.", "category": "Religion"},
     {"source": "Milanite", "target": "メラウニの信徒", "note": "Follower of Milani (crusade event).", "category": "Religion"},
     {"source": "Helper", "target": "ヘルパー", "note": "Spirit that calls itself the Helper (crusade event). 「」付きで用いる場合あり。", "category": "Character"},
-    {"source": "Nidalese", "target": "ニダールの", "note": "Adjective of Nidal (ニダール人 for people).", "category": "Location"}
+    {"source": "Nidalese", "target": "ニダールの", "note": "Adjective of Nidal (ニダール人 for people).", "category": "Location"},
+    {"source": "Kaer Maga", "target": "ケア・マガ", "note": "City of mages (crusade event).", "category": "Location"},
+    {"source": "Master of Prudence", "target": "慎重の師", "note": "Instructor teaching caution to soldiers (crusade event).", "category": "Character"},
+    {"source": "Mallander Linds", "target": "マランダー・リンズ", "note": "Fallen knight (crusade event).", "category": "Character"},
+    {"source": "Chillroar", "target": "チルロアー", "note": "Ancient gowrow whose remains gain magical properties (crusade event).", "category": "Character"},
+    {"source": "Gowrow", "target": "ガウロウ", "note": "Reptilian monster.", "category": "Creature"},
+    {"source": "Asmodean", "target": "アスモデウスの", "note": "Adjective of Asmodeus (アスモデウス信者 for followers).", "category": "Religion"}
   ]
 }
