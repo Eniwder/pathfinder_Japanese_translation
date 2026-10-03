@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 86850,
-  "updatedAt": "2026-10-03T06:40:29.821Z",
+  "nextStart": 87150,
+  "updatedAt": "2026-10-03T06:44:50.401Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4265,6 +4265,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round292/",
       "coveredDialogs": [],
       "note": "v2リライト第292弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を訳して書き込みました。JSON構文の検証は走らせておらず、書き込み前に目視で確認しただけです。会話(dialog)はすべて `null` で、クルセイド・イベントの説明文、選択肢、タイトルです。\n\n- 話者なしの地の文は常体で訳しました。\n- 原文の `{mf|his|her}` などは、`{mf}` ごと省きました。\n- / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はすべて null で、クルセード・イベント、選択肢の不可説明、報酬アイテムの付呪説明文でした。JSON構文は目視で確認しました。実行や検証はしていません。\n\nUlbrig → ウルブリグ、Chillroar → チルロアー、Mallander Linds → マランダー・リン"
+    },
+    {
+      "start": 86850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round293/",
+      "coveredDialogs": [],
+      "note": "v2リライト第293弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 200 entry を訳し、`chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認済みで、コマンドでの検証はしていません。会話(dialog)はすべて null で、十字軍の聖遺物付呪イベントの文章です。\n\n`7f15a43c-...` の `{mf|is|er}` は、日本語では作り分けが不要なので省きました。\n\n / 100件を訳し、`chunk_0001.translations.json` に書き込みました。dialog は全 entry で null（十字軍イベントの説明文・選択肢ラベル）で、ナレーション調（である調）で訳しています。書き込み後の JSON 構文の確認と import の dry-run は、権限がなく実施していません。\n\n気づいた点が2つあります。\n- 原文の `Conthyr` は「コ"
     }
   ]
 }

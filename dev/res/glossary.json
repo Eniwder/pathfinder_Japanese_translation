@@ -25121,6 +25121,27 @@
     {"source": "Mallander Linds", "target": "マランダー・リンズ", "note": "Fallen knight (crusade event).", "category": "Character"},
     {"source": "Chillroar", "target": "チルロアー", "note": "Ancient gowrow whose remains gain magical properties (crusade event).", "category": "Character"},
     {"source": "Gowrow", "target": "ガウロウ", "note": "Reptilian monster.", "category": "Creature"},
-    {"source": "Asmodean", "target": "アスモデウスの", "note": "Adjective of Asmodeus (アスモデウス信者 for followers).", "category": "Religion"}
+    {"source": "Asmodean", "target": "アスモデウスの", "note": "Adjective of Asmodeus (アスモデウス信者 for followers).", "category": "Religion"},
+    {"source": "Jubilex", "target": "ジュビレックス", "note": "Demon lord of ooze.", "category": "Deity"},
+    {"source": "Prince of Ooze", "target": "粘液の王子", "note": "Epithet of Jubilex.", "category": "Deity"},
+    {"source": "Lady of Chrysanthemums", "target": "菊の貴婦人", "note": "Epithet of Shelyn.", "category": "Deity"},
+    {"source": "Colorless One", "target": "無色の者", "note": "Creature born from Colyphyr's blood (crusade relic).", "category": "Creature"},
+    {"source": "Attractive Impulse", "target": "魅惑の衝動", "note": "Crusade relic.", "category": "Item"},
+    {"source": "Unslumbering Predator", "target": "眠らぬ捕食者", "note": "Crusade relic.", "category": "Item"},
+    {"source": "Unending Distortion", "target": "終わりなき歪み", "note": "Crusade relic.", "category": "Item"},
+    {"source": "Craving Maw", "target": "渇望の顎", "note": "Crusade relic.", "category": "Item"},
+    {"source": "Last Ash", "target": "最後のトネリコ", "note": "Crusade relic (ash tree).", "category": "Item"},
+    {"source": "Wicked Dope", "target": "ウィキッド・ドープ", "note": "Staff relic (crusade event).", "category": "Item"},
+    {"source": "Soulshear", "target": "ソウルシアー", "note": "Staunton Vhane's glaive.", "category": "Item"},
+    {"source": "Stone of Ghostly Pathways", "target": "幽冥の道の石", "note": "Relic of Norgorber (crusade event).", "category": "Item"},
+    {"source": "Faultless Daybreak", "target": "無謬の夜明け", "note": "Sarenrae relic (crusade event).", "category": "Item"},
+    {"source": "Triumphant Noontide", "target": "凱旋の正午", "note": "Sarenrae relic variant (crusade event).", "category": "Item"},
+    {"source": "Sanguineous Sundown", "target": "血染めの夕暮れ", "note": "Sarenrae relic variant (crusade event).", "category": "Item"},
+    {"source": "Sulema", "target": "スレマ", "note": "Plague druid, male (crusade relic).", "category": "Character"},
+    {"source": "Zaoris", "target": "ザオリス", "note": "Cursed daughter of Conthyr (crusade relic).", "category": "Character"},
+    {"source": "Conthyr", "target": "コンサイア", "note": "Mage, father of Zaoris.", "category": "Character"},
+    {"source": "Kearius", "target": "ケアリウス", "note": "Priest burning in Baphomet's fire (crusade relic).", "category": "Character"},
+    {"source": "Iekhim Klor", "target": "イエヒム・クロール", "note": "Night patrol officer who vanished (crusade event).", "category": "Character"},
+    {"source": "Lepidstadt", "target": "レピッドシュタット", "note": "University city in Ustalav. round293のレプッドシュタットは音写誤り。", "category": "Location"}
   ]
 }
