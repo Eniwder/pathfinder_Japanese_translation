@@ -25514,6 +25514,7 @@
     {"source": "Voracious Jumble", "target": "貪欲なる寄せ集め", "note": "Weapon made of reanimated parts (relic).", "category": "Item"},
     {"source": "Humpback Zurga", "target": "せむしのズルガ", "note": "Priest of Rovagug (relic lore).", "category": "Character"},
     {"source": "Rabid Bitch", "target": "ラビッド・ビッチ号", "note": "Captain Kerz's airship.", "category": "Item"},
-    {"source": "Total Defense", "target": "防御専念", "note": "PRD定訳。round302では「完全防御」と訳されていた。", "category": "Crusade"}
+    {"source": "Total Defense", "target": "防御専念", "note": "PRD日本語版の訳語（標準アクションで+4回避ボーナス）。完全防御は不可。", "category": "Game Term"},
+    {"source": "Fighting Defensively", "target": "防御的戦闘", "note": "PRD日本語版の訳語（-4攻撃/+2回避）。Total Defense=防御専念と混同しない。", "category": "Game Term"}
   ]
 }
