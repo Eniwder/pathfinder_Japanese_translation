@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 84450,
-  "updatedAt": "2026-10-03T06:11:33.134Z",
+  "nextStart": 84750,
+  "updatedAt": "2026-10-03T06:13:49.730Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4201,6 +4201,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round284/",
       "coveredDialogs": [],
       "note": "v2リライト第284弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。JSON構文の確認は書き込み前の目視のみで、実行環境がないためパースの検証はしていません。\n\n登場した会話（dialog名）はありません。全件が `dialog: null` の武器・防具・アイテムの名称と説明文です。\n\n気づいた点:\n- 制御タグは `<ctrl_N/>` の順序が入れ替わらないよ / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文の確認は目視のみです。dialog名はすべて null で、会話ではなくアイテム名・説明文・日記メモです。\n\n`<ctrl_N/>` は個数と順序を保つため、一部の文を言い換えて語順を調整しています。\n\n用語: Incinerating → インシネレイティング\n用語: Freezin"
+    },
+    {
+      "start": 84450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round285/",
+      "coveredDialogs": [],
+      "note": "v2リライト第285弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。dialog はすべて null で、武器名・肉体攻撃名・射程タイプ・エリア名・調査テキスト・バークが中心です。書き込み後の確認では、`figures` を英語のまま入れていた1か所を「図像」に直しました。\n\n用語: Pincers → 鋏\n用語: Rock → 岩\n用語: Vile Arm → 邪悪 / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。Write後に読み返してのJSON確認はしていません。\n\ndialog名はすべて null です。内容は探索テキスト、パーティーの掛け声、場所移動ラベル、選択肢で、話者情報もありません。話者不明の台詞は丁寧語を基本にしましたが、一部のバークは話者を推測して口調を変えて"
     }
   ]
 }
