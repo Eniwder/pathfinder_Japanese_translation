@@ -25434,6 +25434,17 @@
     {"source": "Main Hall of Champions", "target": "主チャンピオンの間", "note": "Crusade building.", "category": "Crusade"},
     {"source": "Main Spellcasters' Lodge", "target": "主術者の集会所", "note": "Crusade building.", "category": "Crusade"},
     {"source": "Vilareth Ford", "target": "ヴィラレス・フォード", "note": "Place in the Worldwound region.", "category": "Location"},
-    {"source": "House Gwerm", "target": "グワーム家", "note": "Noble house; matches existing Gwerms entry. Not グウェーム家.", "category": "Organization"}
+    {"source": "House Gwerm", "target": "グワーム家", "note": "Noble house; matches existing Gwerms entry. Not グウェーム家.", "category": "Organization"},
+    {"source": "Plane of Water", "target": "水の位界", "note": "Elemental plane; matches 地の位界.", "category": "Location"},
+    {"source": "Plane of Air", "target": "風の位界", "note": "Elemental plane; matches 地の位界.", "category": "Location"},
+    {"source": "Mountain Flute", "target": "山の笛", "note": "Sarkorian name for a windy pass (crusade event).", "category": "Location"},
+    {"source": "Castle of Desires", "target": "欲望の城", "note": "Glabrezu-held fortress (crusade event).", "category": "Location"},
+    {"source": "Eagle Rock", "target": "イーグル・ロック", "note": "Former crusader outpost lost in the Fourth Crusade.", "category": "Location"},
+    {"source": "Onyx Alliance", "target": "オニキス同盟", "note": "Trading alliance from the Shadow Plane.", "category": "Organization"},
+    {"source": "Dolland Reggelore", "target": "ドーランド・レゲロア", "note": "Hero of the Second Crusade (grave in crusade event).", "category": "Character"},
+    {"source": "Tarsival", "target": "タルシヴァル", "note": "Young knight in crusade events.", "category": "Character"},
+    {"source": "Soco", "target": "ソコ", "note": "Signature on a note (Socothbenoth).", "category": "Character"},
+    {"source": "Minotaur Vanguard", "target": "ミノタウロス・ヴァンガード", "note": "Crusade unit.", "category": "Crusade"},
+    {"source": "Minotaur Axe Throwers", "target": "ミノタウロス・アックス・スロワー", "note": "Crusade unit.", "category": "Crusade"}
   ]
 }
