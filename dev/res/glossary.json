@@ -18971,7 +18971,7 @@
     },
     {
       "source": "Magus",
-      "target": "マギ",
+      "target": "メイガス",
       "category": "Class"
     },
     {
@@ -25430,7 +25430,7 @@
     {"source": "Salvage", "target": "回収", "note": "Commander feat (crusade).", "category": "Crusade"},
     {"source": "Bribes for the Officers", "target": "士官への賄賂", "note": "Crusade decree.", "category": "Crusade"},
     {"source": "Silver Dragons", "target": "シルバー・ドラゴン", "note": "Crusade unit.", "category": "Crusade"},
-    {"source": "Magi", "target": "マギ", "note": "Crusade unit; plural of Magus (existing entry マギ). Not メイジ.", "category": "Crusade"},
+    {"source": "Magi", "target": "メイガス", "note": "Crusade unit; plural of Magus (=メイガス). Not メイジ/マギ.", "category": "Crusade"},
     {"source": "Main Hall of Champions", "target": "主チャンピオンの間", "note": "Crusade building.", "category": "Crusade"},
     {"source": "Main Spellcasters' Lodge", "target": "主術者の集会所", "note": "Crusade building.", "category": "Crusade"},
     {"source": "Vilareth Ford", "target": "ヴィラレス・フォード", "note": "Place in the Worldwound region.", "category": "Location"},
