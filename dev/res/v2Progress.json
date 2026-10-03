@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 95550,
-  "updatedAt": "2026-10-03T21:52:27.655Z",
+  "nextStart": 95850,
+  "updatedAt": "2026-10-03T21:56:34.298Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4497,6 +4497,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round321/",
       "coveredDialogs": [],
       "note": "v2リライト第321弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に 200 件すべてを訳して書き込みました。\n\n- **dialog 名:** 全 blocks が `dialog: null` で、speaker も付いていませんでした。そのため話者不明/ナレーション扱いで訳しています。内容は Drezen 攻略前後の雑多な台詞、アイテム説明、クルセード選択ログです。\n- **`{mf}` タグ: / 100件を訳して `chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、スクリプトによる検証はしていません（実行権限がないため）。\n\n登場した会話：dialog 名はすべて null です（アイテム説明・実績・クルセイド選択肢・コンパニオンの掛け合いなど）。\n\n気づいた点：話者情報（speakers）が chunk に無かったので、"
+    },
+    {
+      "start": 95550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round322/",
+      "coveredDialogs": [],
+      "note": "v2リライト第322弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に約200件を書き込みました。`dialog` はすべて null です。書き込み後に4件の誤りを修正しましたが、JSON構文と全キーの照合は未実施です。\n\n- **修正した誤り**: キーを取り違えていた3件と、仮の訳語が入っていた1件（Lambkin the Cyclops）を直しました。\n- **話 / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON として読み込めるかの確認や import の dry-run は実行していません。対象はすべて `dialog: null` のentryで、話者情報はありませんでした。\n\n- 話者不明の台詞は丁寧語を基本にしました。軍需担当官ガームズ、兵士、司祭、研究日誌の語"
     }
   ]
 }

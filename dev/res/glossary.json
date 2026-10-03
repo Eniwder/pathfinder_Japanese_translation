@@ -25570,6 +25570,8 @@
     {"source": "Harkel", "target": "ハーケル", "note": "Chief of the Nasty Waifs gang; letter in Dry River Canyon.", "category": "Character"},
     {"source": "Quickrick", "target": "クイックリック", "note": "Old drunk of the Nasty Waifs who rose as undead.", "category": "Character"},
     {"source": "Dry River Canyon", "target": "ドライ・リバー渓谷", "note": "Canyon where the Nasty Waifs made their last stand.", "category": "Location"},
-    {"source": "Kelish", "target": "ケレッシュ語", "note": "Language of Kelesh (ケレッシュ). Round321 used ケリッシュ語; unified to match Kelesh.", "category": "Language"}
+    {"source": "Kelish", "target": "ケレッシュ語", "note": "Language of Kelesh (ケレッシュ). Round321 used ケリッシュ語; unified to match Kelesh.", "category": "Language"},
+    {"source": "Vissaliy", "target": "ヴィッサリー", "note": "Named NPC appearing alongside the lich/Irabeth scenes (round322).", "category": "Character"},
+    {"source": "Father of Creation", "target": "創造の父", "note": "Epithet of Torag (トローグ).", "category": "Deity"}
   ]
 }
