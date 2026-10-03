@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 87450,
-  "updatedAt": "2026-10-03T11:03:13.281Z",
+  "nextStart": 87750,
+  "updatedAt": "2026-10-03T11:09:07.078Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4281,6 +4281,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round294/",
       "coveredDialogs": [],
       "note": "v2リライト第294弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。会話(dialog名)はすべて null で、十字軍イベントの文章と選択肢、決定の結果テキストが中心です。JSON は目視で確認しましたが、スクリプトによる検証はしていません。\n\n気づいた点が2つあります。\n- `{mf|his|her}` / `{mf|him|her}` は日本語で不要になるた / 100件を訳し、`chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、十字軍イベントの結果説明文（勅令・儀式の解放、特技付与、士気・経験値の増減）です。\n\n気づいた点：\n- 「Dissociated」は「解離」、「Vulnerable」は「脆弱」と訳しました。\n- 「Wounded」は「負傷」、「Tormented」は「苦悶」と訳"
+    },
+    {
+      "start": 87450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round295/",
+      "coveredDialogs": [],
+      "note": "v2リライト第295弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。会話（dialog）はすべて null で、十字軍イベントの効果文・見出しだけです。書き込み後の JSON 構文チェックと `<ctrl_N/>` の個数確認は実行していません。\n\n気づいた点は2つです。\n- 「Armed to the Teet / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視確認済みで、`chunk_0001.json` には触れていません。\n\ndialog名はすべて null です。十字軍の勅令・イベントの効果文と名称で、会話はありません。\n\n用語: Slave Trail → 奴隷の道\n用語: Ash Giants → アッシュ・ジャイアント\n用語: "
     }
   ]
 }
