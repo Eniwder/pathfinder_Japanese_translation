@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 91950,
-  "updatedAt": "2026-10-03T16:40:34.376Z",
+  "nextStart": 92250,
+  "updatedAt": "2026-10-03T16:48:05.343Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4401,6 +4401,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round309/",
       "coveredDialogs": [],
       "note": "v2リライト第309弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。JSONの構文は目視で確認しました。会話は dialog 名なし（`dialog: null`）で、コンパニオン同士の野営バンター集です。\n\n気づいた点：\n- 話者・文脈情報がなかったため、話者はセリフの内容から推測しました。デラン、ウェンデュアグ、ラン、エンバーなど。\n- 数か所は話者が曖昧です（ / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認済みです。`dialog` は全て null です。\n\nこのチャンクには `speaker` が付いていないため、話者は内容から推定しました。ネニオ・エンバー・レギル・シーラ・ウォルジフ・アルエシャラエなど、複数のコンパニオン間の掛け合いです。ソシエ"
+    },
+    {
+      "start": 91950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round310/",
+      "coveredDialogs": [],
+      "note": "v2リライト第310弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。キー数が200件であることは確認済みです。JSON として正しいかのパース確認まではしていません。\n\ndialog 名はすべて null で、コンパニオン同士の掛け合い（バンター）の単発台詞です。entry に speaker も ctx も無かったため、話者は台詞 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`import --dry-run` は実行していません。\n\n- 会話（dialog名）は全entryが `null` のため、特定できませんでした。内容はコンパニオン同士の掛け合い（ラン、ネニオ、レギル、ソシエル、ウェンデュアグほか）です。\n- chunkに "
     }
   ]
 }
