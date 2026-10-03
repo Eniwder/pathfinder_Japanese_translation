@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 87750,
-  "updatedAt": "2026-10-03T11:09:07.078Z",
+  "nextStart": 88050,
+  "updatedAt": "2026-10-03T11:14:29.139Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4289,6 +4289,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-03_round295/",
       "coveredDialogs": [],
       "note": "v2リライト第295弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。会話（dialog）はすべて null で、十字軍イベントの効果文・見出しだけです。書き込み後の JSON 構文チェックと `<ctrl_N/>` の個数確認は実行していません。\n\n気づいた点は2つです。\n- 「Armed to the Teet / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視確認済みで、`chunk_0001.json` には触れていません。\n\ndialog名はすべて null です。十字軍の勅令・イベントの効果文と名称で、会話はありません。\n\n用語: Slave Trail → 奴隷の道\n用語: Ash Giants → アッシュ・ジャイアント\n用語: "
+    },
+    {
+      "start": 87750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-03_round296/",
+      "coveredDialogs": [],
+      "note": "v2リライト第296弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認済みです。会話（dialog）は無く、全 entry が dialog=null の十字軍の勅令・特技・募兵の効果文と名称でした。\n\n訳語を当てた箇所のうち、「奴らはどこにでもいる！」「えこひいき」「回収」など原文の意味を汲んだものは、必要なら見直してください。\n\n用語: Drag / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)はなく、全件が十字軍イベント／神話能力の説明文とタイトルです。JSON構文は目視で確認しています。\n\n気づいた点が2つあります。\n- `{mf|...}` は、日本語で作り分けが不要だったため全件を省略しました。\n- 「Lady O.」は、原文が引用符の閉じ方を誤っていたので「"
     }
   ]
 }
