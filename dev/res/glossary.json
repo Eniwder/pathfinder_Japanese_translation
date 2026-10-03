@@ -6861,7 +6861,7 @@
     },
     {
       "source": "Gwerms",
-      "target": "グワーム家",
+      "target": "グウェーム家",
       "note": "Horgusの縁戚関係にある貴族の家名（Horgus_Dialogue、round177）。"
     },
     {
@@ -23081,7 +23081,7 @@
     },
     {
       "source": "Horgus",
-      "target": "ホーガス",
+      "target": "ホルガス",
       "category": "Character",
       "note": "Horgus Gwerm"
     },
@@ -25434,7 +25434,7 @@
     {"source": "Main Hall of Champions", "target": "主チャンピオンの間", "note": "Crusade building.", "category": "Crusade"},
     {"source": "Main Spellcasters' Lodge", "target": "主術者の集会所", "note": "Crusade building.", "category": "Crusade"},
     {"source": "Vilareth Ford", "target": "ヴィラレス・フォード", "note": "Place in the Worldwound region.", "category": "Location"},
-    {"source": "House Gwerm", "target": "グワーム家", "note": "Noble house; matches existing Gwerms entry. Not グウェーム家.", "category": "Organization"},
+    {"source": "House Gwerm", "target": "グウェーム家", "note": "Noble house; matches Horgus Gwerm=ホルガス・グウェーム. Not グワーム家.", "category": "Organization"},
     {"source": "Plane of Water", "target": "水の位界", "note": "Elemental plane; matches 地の位界.", "category": "Location"},
     {"source": "Plane of Air", "target": "風の位界", "note": "Elemental plane; matches 地の位界.", "category": "Location"},
     {"source": "Mountain Flute", "target": "山の笛", "note": "Sarkorian name for a windy pass (crusade event).", "category": "Location"},
