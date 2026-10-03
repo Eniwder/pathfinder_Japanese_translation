@@ -25528,6 +25528,12 @@
     {"source": "All-Round Defense", "target": "全周防御", "note": "Crusade army unit ability.", "category": "Crusade"},
     {"source": "Bane of Non-Warbarian Priests", "target": "非ウォーバリアン聖職者の天敵", "note": "Crusade army unit ability.", "category": "Crusade"},
     {"source": "Penalty in Close Combat", "target": "近接戦闘のペナルティ", "note": "Crusade army unit ability.", "category": "Crusade"},
-    {"source": "Equipped According to the Charter", "target": "規定どおりの装備", "note": "Crusade army unit ability.", "category": "Crusade"}
+    {"source": "Equipped According to the Charter", "target": "規定どおりの装備", "note": "Crusade army unit ability.", "category": "Crusade"},
+    {"source": "Main Shooting Range", "target": "主射撃場", "note": "Crusade building for ranged units (cf. Main Barracks=主兵舎).", "category": "Crusade"},
+    {"source": "Morale Banner", "target": "士気の旗", "note": "Crusade morale mechanic (Banner of Victories etc.).", "category": "Crusade"},
+    {"source": "Relic", "target": "遺物", "note": "Crusade battle reward turned into items.", "category": "Crusade"},
+    {"source": "Recruit", "target": "募兵", "note": "Crusade UI button/action (recruitment=募兵).", "category": "Crusade"},
+    {"source": "Mercenary unit", "target": "傭兵ユニット", "note": "Crusade unit type, contrasted with trainable unit.", "category": "Crusade"},
+    {"source": "Trainable unit", "target": "訓練可能ユニット", "note": "Crusade unit type recruited via own buildings.", "category": "Crusade"}
   ]
 }

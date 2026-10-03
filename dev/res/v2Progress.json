@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 90750,
-  "updatedAt": "2026-10-03T16:19:52.886Z",
+  "nextStart": 91050,
+  "updatedAt": "2026-10-03T16:23:27.898Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4369,6 +4369,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round305/",
       "coveredDialogs": [],
       "note": "v2リライト第305弾（runRoundLoop.mjs による自動実行）。 chunk_0000.json の全 entry を訳し、`chunk_0000.translations.json` に書き込みました（chunk 自体は未編集）。件数は数えていません。dialog は全 entry で null（十字軍の軍隊能力・呪文の名称と効果文）です。\n\n気づいた点:\n- 原文の誤字 `Partonage`（Patronage）と `Warbarian` は、そのまま音写 / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。対象は dialog なしの十字軍ユニット能力の名称と説明文です。書き込んだJSONは目視で確認しました。\n\n- **気づいた点:** `Spoil`（戦利品）や `Board!`（乗り込め！）のように、文脈なしで訳した短い名称がいくつかあります。\n- **用語の補足:** `[sleep]` など"
+    },
+    {
+      "start": 90750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round306/",
+      "coveredDialogs": [],
+      "note": "v2リライト第306弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json への書き込みが済みました。ここで報告します。\n\n200件を訳しました。dialogはすべて null で、十字軍のユニット特性・チュートリアル文が中心です。\n\n書き込み後に、キーを1件書き間違えていたのを直しました（`3f2cc710-…`）。ほかのキーは原文との機械照合をしていません。`import --dry-run` で未一致のキーが / 100件を訳して `chunk_0001.translations.json` に書き込みました。会話(dialog)はすべて null で、十字軍ガイドのチュートリアル文、役職の説明、ユニット名と説明文です。`<b>{console_bind|...}</b>` はそのまま残しています。\n\n用語: Signifers → シグニファー\n用語: Cultist Fighters → カルト信者の戦"
     }
   ]
 }
