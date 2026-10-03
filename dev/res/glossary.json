@@ -25534,6 +25534,8 @@
     {"source": "Relic", "target": "遺物", "note": "Crusade battle reward turned into items.", "category": "Crusade"},
     {"source": "Recruit", "target": "募兵", "note": "Crusade UI button/action (recruitment=募兵).", "category": "Crusade"},
     {"source": "Mercenary unit", "target": "傭兵ユニット", "note": "Crusade unit type, contrasted with trainable unit.", "category": "Crusade"},
-    {"source": "Trainable unit", "target": "訓練可能ユニット", "note": "Crusade unit type recruited via own buildings.", "category": "Crusade"}
+    {"source": "Trainable unit", "target": "訓練可能ユニット", "note": "Crusade unit type recruited via own buildings.", "category": "Crusade"},
+    {"source": "Hamatulatsu", "target": "ハマトゥラツ", "note": "Asmodean monk fighting style modeled on barbed devils (hamatulas).", "category": "Lore"},
+    {"source": "Barbed Devil", "target": "バーブド・デビル", "note": "Devil (hamatula), guardian of Hell.", "category": "Creature"}
   ]
 }
