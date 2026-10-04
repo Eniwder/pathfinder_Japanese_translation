@@ -5973,7 +5973,7 @@
     },
     {
       "source": "Tirabades",
-      "target": "ティラベイド家",
+      "target": "ティラバード家",
       "note": "レカースが世話になった一家。"
     },
     {
@@ -30451,6 +30451,12 @@
       "target": "プロテアン",
       "note": "Proteanの複数形。混沌の来訪者。",
       "category": "Creature"
+    },
+    {
+      "source": "Grimnir Ironhead",
+      "target": "グリムニール・アイアンヘッド",
+      "note": "女王とメンデヴのために命を捧げた英雄（墓碑銘）。",
+      "category": "Character"
     }
   ]
 }
