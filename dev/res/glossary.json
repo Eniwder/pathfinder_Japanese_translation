@@ -30397,6 +30397,48 @@
       "target": "悲鳴を貪る者",
       "note": "ヴォティエルの異名（自称）。",
       "category": "Character"
+    },
+    {
+      "source": "Cheev",
+      "target": "チーヴ",
+      "note": "ケナブレスのギャング、ゴールデン・ハンズのボス。アネヴィアの別世界線で始末された。",
+      "category": "Character"
+    },
+    {
+      "source": "Prince of Fangs",
+      "target": "牙の王子",
+      "note": "グールの魔術師、タル=バフォンの元従者。",
+      "category": "Character"
+    },
+    {
+      "source": "Rhye Shellix",
+      "target": "ライ・シェリックス",
+      "note": "『旅人のエッセイ』の寄稿者。",
+      "category": "Character"
+    },
+    {
+      "source": "Modus of the Subconscious",
+      "target": "潜在意識のモドゥス",
+      "note": "アクシスにある、操作者の記憶を呼び起こす機構。",
+      "category": "Item"
+    },
+    {
+      "source": "Clock of Axis",
+      "target": "アクシスの時計",
+      "note": "ブライの城塞と時を同期させるアクシスの機械。",
+      "category": "Item"
+    },
+    {
+      "source": "Citadel of Resplendent Clockwork",
+      "target": "燦然たる時計仕掛けの城塞",
+      "note": "アクシスにある女神ブライの住まい。",
+      "category": "Location"
+    },
+    {
+      "source": "First Vault",
+      "target": "第一金庫",
+      "note": "アクトゥン中央にある、あらゆる創造物の写しを収めた封印庫。",
+      "category": "Location"
     }
   ]
 }

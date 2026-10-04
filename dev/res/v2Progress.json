@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 103350,
-  "updatedAt": "2026-10-04T14:41:06.973Z",
+  "nextStart": 103650,
+  "updatedAt": "2026-10-04T14:50:17.537Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4705,6 +4705,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round347/",
       "coveredDialogs": [],
       "note": "v2リライト第347弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。ただし書き込み後の JSON 構文チェックと、`<ctrl_N/>` が元どおり残っているかの機械検証はしていません。\n\n- dialog 名: 全 entry が `null`。ウォルジフ・クエスト、各コンパニオンのロマンス場面、アイテム説明、ジャーナル文が混在しています。\n- 話者情報（`spea / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。書き込み後の目視確認では、JSON構文に問題は見つかりませんでした。\n\n登場した会話は、dialog が null のものだけです。内容はイラベス／ウェンデュアグの判決場面、コンパニオンのジャーナル文、DLC のメッセージです。\n\n`{mf}` は、グレイボーの `he/she`、レギルの `hi"
+    },
+    {
+      "start": 103350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round348/",
+      "coveredDialogs": [],
+      "note": "v2リライト第348弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込みました。いま書いたキーと原文のキーが一致するかの確認だけ、まだ終わっていません。\n\n**報告:** 200件中、約200件を訳しました。dialogは全件 `null` で、会話ではなくアイテム説明・日誌・巡回台詞・書物が中心です。マーヘヴォクとイズの再建、ターゴナとラリエル、セプティムスとエリヤンカ、牙の王子とポータル、アク / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。`dialog` は全件 null で、会話名はありません。内容はヴァルマロスの牢獄、アネヴィア、アランカのポータルの選択肢やログ類です。\n\n`speaker` が無い entry が多いため、口調は文脈から推定しました。{mf} は日本語で作り分け不要なので省いています。\n\n用語: Valma"
     }
   ]
 }
