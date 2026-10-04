@@ -30220,6 +30220,48 @@
       "note": "クエストアイテム。",
       "category": "Item",
       "caseSensitive": true
+    },
+    {
+      "source": "Twelve-Nebula-Anomaly",
+      "target": "十二番星雲異常",
+      "note": "異星の個体の分類名（自称）。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Ten-Negative Space",
+      "target": "十番負空間",
+      "note": "異星の個体の分類名（自称）。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Vorlesh",
+      "target": "ヴォーレス",
+      "note": "人名。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Ekhri",
+      "target": "エクリ",
+      "note": "ワジェトの女司祭。巻物の作り手。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Apep",
+      "target": "アペプ",
+      "note": "ワジェトの双子である暗き蛇。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Qadiran",
+      "target": "カディラの",
+      "note": "Qadira（カディラ）の形容詞形。Qadiran tongue=カディラ語。「カディラン」とはしない。",
+      "category": "Location",
+      "caseSensitive": true
     }
   ]
 }

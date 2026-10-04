@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 100050,
-  "updatedAt": "2026-10-04T09:43:10.887Z",
+  "nextStart": 100350,
+  "updatedAt": "2026-10-04T09:47:22.770Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4617,6 +4617,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round336/",
       "coveredDialogs": [],
       "note": "v2リライト第336弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件を訳して書き込みました。Bash は権限がなく、キーと `<ctrl_N/>` の自動照合は走らせていません。目視でのキー照合で1件の誤記を直しました。残りの誤記は未確認なので、`import --dry-run` の `invalid` と未訳件数で確認してください。\n\n- **dialog名**: 全件 `dialog:  / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しました。\n\n- **dialog名:** 全blockが `dialog: null` で、会話名はありません。内容はアルダーパッシュ、灰の貴婦人、イネルクタブル・プリズン周辺の探索テキストとジャーナルです。\n- **気づいた点:**\n  - chunkに `speake"
+    },
+    {
+      "start": 100050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round337/",
+      "coveredDialogs": [],
+      "note": "v2リライト第337弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。実行やJSON検証はしていません。dialog名はすべて null です（会話に属さない単発テキスト：イネルクタブル・プリズンの調査文・アイテム・ジャーナル・イネヴィタブル台詞など）。\n\n気づいた点：\n- 生の `{mf|him|her}` などは、日本語で不要なため省きました。`<ctrl_N/>`  / 100件すべてを訳して、`chunk_0001.translations.json` に書き込みました。`dialog` はすべて null（会話に属さない単発の台詞・ナレーション・クエスト文）です。JSON構文は目視で確認しました。\n\n気づいた点は2つです。\n- `speakers` が埋め込まれておらず、各entryにも `speaker` が無かったので、話者は文脈（名前・内容）から推測して"
     }
   ]
 }
