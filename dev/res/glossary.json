@@ -30487,6 +30487,30 @@
       "target": "名前の盗人",
       "note": "かつての魔術師の通り名（頭蓋骨）。",
       "category": "Character"
+    },
+    {
+      "source": "Ysa",
+      "target": "イサ",
+      "note": "シグヴォルンと話すサーコリス出身の人物。",
+      "category": "Character"
+    },
+    {
+      "source": "Stira",
+      "target": "スティラ",
+      "note": "隔離中の町の住人。",
+      "category": "Character"
+    },
+    {
+      "source": "Tefan",
+      "target": "テファン",
+      "note": "ネクロマンサーだった町の住人。",
+      "category": "Character"
+    },
+    {
+      "source": "Vilo",
+      "target": "ヴィロ",
+      "note": "釣りに出て戻らなかった町の住人。",
+      "category": "Character"
     }
   ]
 }
