@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 96750,
-  "updatedAt": "2026-10-04T04:28:56.446Z",
+  "nextStart": 97050,
+  "updatedAt": "2026-10-04T04:33:38.834Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4529,6 +4529,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round325/",
       "coveredDialogs": [],
       "note": "v2リライト第325弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。ファイルは書いただけで、JSONとして正しいかの機械的な確認はしていません。dialog 名はすべて null で、会話単位のまとまりはありませんでした。ドレゼン地下の戦闘バーク、ミナゴー、ヤニエル、ジャンナ裁判、アイオーン鏡の描写などが混在しています。\n\n話者情報（`speaker` / `ctx`） / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。ただしJSON構文は目視確認のみです。\n\n- 対象は dialog 名のない（`dialog: null`）単発テキスト群です。歪みへの選択肢とナレーション、ドレゼンの兵士たちの噂話、デビルの勧誘、アイテム説明、軍法典、悪魔の契約書、実績文が含まれます。\n- どのentr"
+    },
+    {
+      "start": 96750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round326/",
+      "coveredDialogs": [],
+      "note": "v2リライト第326弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。会話(dialog)名はすべて null で、クルセイダーの雑談、天使ターゴナの語り、ヨズとの対話、丘のアイテムや看板の説明文などが混在していました。\n\n話者(speaker)情報が付いたentryはなく、文脈から口調を判断しました。`{mf}` を含む4件は、日本語で作り分け / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、スクリプトでの検証はしていません。\n\n会話(dialog名)はすべて `null` で、アルシニラ／アビスの探索テキスト、十字軍兵士の会話、ヘプザミラの牢獄の台詞などが混在しています。entryに `speaker` が無いため、話者不明は丁寧語、デーモンらしい台"
     }
   ]
 }
