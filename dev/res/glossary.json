@@ -30087,6 +30087,27 @@
       "note": "『残響』(Echo)の住処。",
       "category": "Location",
       "caseSensitive": true
+    },
+    {
+      "source": "Windrunner",
+      "target": "ウィンドランナー",
+      "note": "呼びかけに使われる称号（\"Sweet-voiced Windrunner\"＝歌声麗しきウィンドランナー）。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Clenna",
+      "target": "クレンナ",
+      "note": "司祭ナリタの教え子。真夜中の聖堂で戦死した若い志願兵。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Daberoche",
+      "target": "ダベロシュ",
+      "note": "司祭ナリタの教え子。真夜中の聖堂で戦死した若い志願兵。",
+      "category": "Character",
+      "caseSensitive": true
     }
   ]
 }
