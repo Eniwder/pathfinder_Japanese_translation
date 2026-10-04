@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 101250,
-  "updatedAt": "2026-10-04T09:59:59.527Z",
+  "nextStart": 101550,
+  "updatedAt": "2026-10-04T10:03:48.524Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4649,6 +4649,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round340/",
       "coveredDialogs": [],
       "note": "v2リライト第340弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog名）はすべて null で、アイテム説明・ログ・チリー・クリークのハグ戦・プルラの神殿・ドレゼンなどの断片的なテキストでした。生の `{mf}` は、すべて省略するか自然な日本語にしました。書き込んだJSONの構文は目視で確認済みで、スクリプトでの検証はし / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。`dialog` はすべて null で、会話ではない単発のテキストです。\n\n`{mf|...}` は4か所とも日本語で作り分けが不要なので、`{mf}` ごと省きました。`Sock of Valor` は原文のとおり「勇気の靴下」と"
+    },
+    {
+      "start": 101250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round341/",
+      "coveredDialogs": [],
+      "note": "v2リライト第341弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。ファイルは読み返しておらず、件数が200件あることと JSON として正しいことは未確認です。\n\n- **対象の会話:** dialog 名はすべて null で、十字軍の戦闘前セリフ、アレール／デスカリ戦、エンディング選択の実績文、アルエシャラ / 100件すべてを訳して、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、登場する会話名はありません。内容はカメリア・デラン・エンバー・フィニアン・グレイボーのコンパニオン好感度ログと台詞、それに選択肢です。\n\n`{mf|his|her}` は日本語で作り分けが不要なので、タグごと省きました。話"
     }
   ]
 }
