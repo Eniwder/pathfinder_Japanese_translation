@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 104850,
-  "updatedAt": "2026-10-04T15:08:24.899Z",
+  "nextStart": 105150,
+  "updatedAt": "2026-10-04T15:12:25.074Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4745,6 +4745,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-05_round352/",
       "coveredDialogs": [],
       "note": "v2リライト第352弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。キー数は200で一致しています。ただしスクリプトを実行できないため、JSON構文とキーがchunk側と完全一致するかは、目視と件数確認のみです。\n\n会話（dialog名）はすべて `null` で、ナレーション、バーク、調査テキスト、アイテム名が / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。JSON が正しいかの確認は書いた内容の目視だけで、スクリプトは実行していません。\n\n登場した会話（dialog）はすべて `null` でした。内容は、精霊の森とグンドルン祠のバーク、ウルブリグのエピローグ、ウルブリグとの戦闘バークなどが混在しています。\n\n気づいた点が2つあります。\n- ch"
+    },
+    {
+      "start": 104850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-05_round353/",
+      "coveredDialogs": [],
+      "note": "v2リライト第353弾（runRoundLoop.mjs による自動実行）。 訳文ファイルは書き込み済みです。キーを1件誤記していたので修正しました。他のキーが原文と一致しているかは、スクリプトを使えないため全件の照合までは行っていません。\n\n- **訳した件数:** 200件中200件\n- **会話(dialog名):** すべて `dialog: null` で、話者情報のない単発テキストでした。内容は DLC「Through the Ashes」のシスハッド欠片の探索 / 100件を訳して `chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しています。会話(dialog)は全件 null で、ゴブリン塔（Usurviel／Buuze）周辺の経験値メッセージ・調査文・ゴブリンのバーク・精霊の台詞・オブジェクト名が混在しています。\n\n気づいた点:\n- `speaker` が全件無かったため、ゴブリンのバークは粗野"
     }
   ]
 }
