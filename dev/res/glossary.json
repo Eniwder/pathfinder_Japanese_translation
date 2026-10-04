@@ -30439,6 +30439,18 @@
       "target": "第一金庫",
       "note": "アクトゥン中央にある、あらゆる創造物の写しを収めた封印庫。",
       "category": "Location"
+    },
+    {
+      "source": "Portal of Wissshesss",
+      "target": "願いのポータル",
+      "note": "The Portal of Wishesのアランカによる訛った言い方。定訳に合わせる。",
+      "category": "Location"
+    },
+    {
+      "source": "Proteans",
+      "target": "プロテアン",
+      "note": "Proteanの複数形。混沌の来訪者。",
+      "category": "Creature"
     }
   ]
 }

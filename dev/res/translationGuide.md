@@ -173,6 +173,7 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
   片言のまま訳す。
 - 歯擦音を伸ばす話し方（例: `wasss` `Erassstil`）は、無理に音写で崩さずなめらかな
   丁寧語で訳してよい（泥酔・片言とは別枠で、崩し表現が日本語にそぐわない場合の判断）。
+  訛った綴りの固有名詞（`Portal of Wissshesss` 等）も元の語の定訳（`願いのポータル`）で訳す。
 - 人語を話さない動物キャラの鳴き声（`Phrr` `Rrrf` 等）は意味のある台詞に翻訳せず、
   擬音のまま音写する。
 - 語呂合わせに基づく固有名詞の掛け合い（例: `Impossible Kingdoms`/`Possible Kingdoms`）は、

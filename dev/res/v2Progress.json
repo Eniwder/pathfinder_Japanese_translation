@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 103650,
-  "updatedAt": "2026-10-04T14:50:17.537Z",
+  "nextStart": 103950,
+  "updatedAt": "2026-10-04T14:54:36.697Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4713,6 +4713,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round348/",
       "coveredDialogs": [],
       "note": "v2リライト第348弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込みました。いま書いたキーと原文のキーが一致するかの確認だけ、まだ終わっていません。\n\n**報告:** 200件中、約200件を訳しました。dialogは全件 `null` で、会話ではなくアイテム説明・日誌・巡回台詞・書物が中心です。マーヘヴォクとイズの再建、ターゴナとラリエル、セプティムスとエリヤンカ、牙の王子とポータル、アク / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。`dialog` は全件 null で、会話名はありません。内容はヴァルマロスの牢獄、アネヴィア、アランカのポータルの選択肢やログ類です。\n\n`speaker` が無い entry が多いため、口調は文脈から推定しました。{mf} は日本語で作り分け不要なので省いています。\n\n用語: Valma"
+    },
+    {
+      "start": 103650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round349/",
+      "coveredDialogs": [],
+      "note": "v2リライト第349弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全件を訳して書き込みました。キーは原文チャンクと突き合わせ済みで、2件の転記ミスは修正しました。JSON の構文は目視で確認しましたが、パーサでの検証はしていません。\n\n- 件数は200件で、すべて `dialog: null` のバーク・選択肢・アイテム説明・ジャーナルです。\n- 登場キャラクターは Aranka（アランカ）、Yoz / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。`dialog` はすべて null で、会話ではなくアイテム説明・バーク・選択肢・調査文が中心です。\n\n気づいた点:\n- 話者（`speaker`）が付いたentryが無かったので、文脈から口調を推測しました。\n- 原文ママの `{flag|...}` は `<ctrl_N/>` 化されていない"
     }
   ]
 }
