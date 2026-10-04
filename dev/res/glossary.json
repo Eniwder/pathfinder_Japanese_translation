@@ -30129,6 +30129,62 @@
       "note": "ノクティキュラの宮殿に無断で押しかけ、地下墓地で暮らす者のあだ名。",
       "category": "Character",
       "caseSensitive": true
+    },
+    {
+      "source": "Mother Vulture",
+      "target": "マザー・ヴァルチャー",
+      "note": "助けを求められる人物の通り名。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Captain Ling",
+      "target": "リン隊長",
+      "note": "エニグマ探索隊を率いたアイオーメディのパラディン。単独では「リン」。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Binaban Rizzel",
+      "target": "ビナバン・リゼル",
+      "note": "エニグマ探索に同行したノームのパスファインダー兼言語学者。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Aldinach",
+      "target": "アルディナク",
+      "note": "サソリのデーモン・ロード。アレシュカガルの姉妹で宿敵。",
+      "category": "Deity",
+      "caseSensitive": true
+    },
+    {
+      "source": "Lord of the Minotaurs",
+      "target": "ミノタウロスの王",
+      "note": "バフォメットの異名。",
+      "category": "Deity",
+      "caseSensitive": true
+    },
+    {
+      "source": "First Hunter",
+      "target": "筆頭ハンター",
+      "note": "囚人オポンの嘆願書で宛先に挙がる役職。",
+      "category": "Title",
+      "caseSensitive": true
+    },
+    {
+      "source": "High Interrogator",
+      "target": "尋問長",
+      "note": "囚人オポンの嘆願書で宛先に挙がる役職。",
+      "category": "Title",
+      "caseSensitive": true
+    },
+    {
+      "source": "Mendevians",
+      "target": "メンデヴ人",
+      "note": "メンデヴの住民。",
+      "category": "Location",
+      "caseSensitive": true
     }
   ]
 }

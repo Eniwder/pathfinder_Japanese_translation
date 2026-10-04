@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 99450,
-  "updatedAt": "2026-10-04T09:31:08.969Z",
+  "nextStart": 99750,
+  "updatedAt": "2026-10-04T09:38:10.239Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4601,6 +4601,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round334/",
       "coveredDialogs": [],
       "note": "v2リライト第334弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.json` の全 entry（約200件）を訳し、`chunk_0000.translations.json` に書き込みました。\n\n- **件数:** 省略した entry はありません。JSON 構文と `<ctrl_N/>` は目視で確認しただけで、検証スクリプトは走らせていません。件数も数え直していません。\n- **会話:** `dialog` はすべて null  / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。登場した会話（dialog名）はありません。全entryで `dialog` が null で、`speaker` もありませんでした。内容はテン・サウザンド・ディライツ周辺のシヴァロ、ヘラックス、ヨズ、サキュバスたちの台詞です。JSON構文は目視で確認しました。ツ"
+    },
+    {
+      "start": 99450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round335/",
+      "coveredDialogs": [],
+      "note": "v2リライト第335弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。登場した dialog 名はありません。全 entry が `dialog: null` で、アイテム説明、日記、碑文、短い台詞が中心でした。\n\nJSON の構文と件数（キー200個）は確認しました。キーを1つ打ち間違えて修正しています。残りのキーが原文と一致するかは照合していません。このセッションで / `dev/lang/chunks/chunk_0001.translations.json` に100件すべて訳して書き込みました。ファイルをJSONとして実行・検証してはいません。`<ctrl_N/>` の順序が崩れた箇所は2件直しましたが、全件の再確認まではしていません。\n\n- **dialog:** 全entryが `dialog: null` で、会話名はありません。内容は次のとおりです。"
     }
   ]
 }
