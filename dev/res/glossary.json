@@ -30391,6 +30391,12 @@
       "target": "クアラエル",
       "note": "飢えた十字軍兵士たちに食われた十字軍士の名。",
       "category": "Character"
+    },
+    {
+      "source": "Gorger of Screams",
+      "target": "悲鳴を貪る者",
+      "note": "ヴォティエルの異名（自称）。",
+      "category": "Character"
     }
   ]
 }

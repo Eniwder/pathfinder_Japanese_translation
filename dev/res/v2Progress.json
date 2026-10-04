@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 103050,
-  "updatedAt": "2026-10-04T14:35:45.004Z",
+  "nextStart": 103350,
+  "updatedAt": "2026-10-04T14:41:06.973Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4697,6 +4697,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round346/",
       "coveredDialogs": [],
       "note": "v2リライト第346弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog）はすべて `null` で、会話に属さない断片（選択ログ・アイテム説明・ノート類）です。JSON 構文の目視確認は済んでいますが、ツールを使った構文チェックはできていません。\n\n気づいた点:\n- `{mf|master|mistress}` は「ご主人様」に / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)名はすべて null で、ウェンデュアグ関連の選択肢ログ、ウォルジフ／ファミリー周りの台詞、カルト信者の掛け声が混在しています。\n\nこのチャンクには `speakers` 辞書がなく話者が特定できなかったため、不明な台詞は丁寧語にするか、内容から口調を推測しました。\n\n用語: "
+    },
+    {
+      "start": 103050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round347/",
+      "coveredDialogs": [],
+      "note": "v2リライト第347弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。ただし書き込み後の JSON 構文チェックと、`<ctrl_N/>` が元どおり残っているかの機械検証はしていません。\n\n- dialog 名: 全 entry が `null`。ウォルジフ・クエスト、各コンパニオンのロマンス場面、アイテム説明、ジャーナル文が混在しています。\n- 話者情報（`spea / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。書き込み後の目視確認では、JSON構文に問題は見つかりませんでした。\n\n登場した会話は、dialog が null のものだけです。内容はイラベス／ウェンデュアグの判決場面、コンパニオンのジャーナル文、DLC のメッセージです。\n\n`{mf}` は、グレイボーの `he/she`、レギルの `hi"
     }
   ]
 }
