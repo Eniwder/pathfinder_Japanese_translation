@@ -30108,6 +30108,27 @@
       "note": "司祭ナリタの教え子。真夜中の聖堂で戦死した若い志願兵。",
       "category": "Character",
       "caseSensitive": true
+    },
+    {
+      "source": "Varsa the Nosecutter",
+      "target": "鼻削ぎヴァルサ",
+      "note": "ヘプザミラの呪文で取り違えられた人物の異名。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Bloody Freak",
+      "target": "血染めの怪物",
+      "note": "アルシニラの闘技場で紹介される闘士の通り名。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Scrap",
+      "target": "スクラップ",
+      "note": "ノクティキュラの宮殿に無断で押しかけ、地下墓地で暮らす者のあだ名。",
+      "category": "Character",
+      "caseSensitive": true
     }
   ]
 }
