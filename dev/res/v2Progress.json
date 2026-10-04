@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 100650,
-  "updatedAt": "2026-10-04T09:52:05.020Z",
+  "nextStart": 100950,
+  "updatedAt": "2026-10-04T09:55:57.059Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4633,6 +4633,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round338/",
       "coveredDialogs": [],
       "note": "v2リライト第338弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件中、全200件を訳して書き込みました。JSON構文は目視で確認しましたが、パーサーでの検証はしていません。\n\n- **dialog名:** すべて `dialog: null` のブロックで、会話名はありません（十字軍イベント、ドラゴンの仲間台詞、アイテム説明など）。\n- **speaker:** チャンクのentryに `s / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しています。\n- dialog名: 全entryが `dialog: null` でした。内容は SoldiersParty 系の兵士の雑談、カイデン・カイリーエンの酒宴、アレールのジャーナル、アイテム説明などです。\n- 気づいた点: このc"
+    },
+    {
+      "start": 100650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round339/",
+      "coveredDialogs": [],
+      "note": "v2リライト第339弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に全200件を書き込みました。ただし、キーの照合はしていません（スクリプトを実行できないため）。\n\n- **JSON構文:** 書き込み後に目視で確認しました。\n- **キー:** 書き込みの途中でキーを1つ誤記し、`8caac964-…`（ファラズマの女司祭の行）を修正しました。ほかのキーは原文と突き合 / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認済みで、スクリプトでの検証はしていません。\n\ndialog 名はすべて `null` で、主にオブジェクト調査文、アイテム名、ナレーション、無名の短い台詞です。話者の指定が無い台詞は、原文の雰囲気に合わせて丁寧語か中立な口調にしました。`{mf|master|mistre"
     }
   ]
 }

@@ -30318,6 +30318,13 @@
       "note": "地獄の盟約路線でアブロガイルらが主人公を呼ぶ称号。呼びかけでは「総督閣下」。",
       "category": "Title",
       "caseSensitive": true
+    },
+    {
+      "source": "Essence-Infused Soul Cauldron",
+      "target": "エッセンスを注がれた魂の大釜",
+      "note": "インタラクト可能なオブジェクト名。",
+      "category": "Item",
+      "caseSensitive": true
     }
   ]
 }
