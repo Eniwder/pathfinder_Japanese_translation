@@ -30262,6 +30262,62 @@
       "note": "Qadira（カディラ）の形容詞形。Qadiran tongue=カディラ語。「カディラン」とはしない。",
       "category": "Location",
       "caseSensitive": true
+    },
+    {
+      "source": "Arvang",
+      "target": "アルヴァング",
+      "note": "ネロシャン出身のゴールドドラゴンの一族の者。人間に化けて暮らしていた。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Raldo",
+      "target": "ラルド",
+      "note": "アルヴァングの旧友。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Orgomandias",
+      "target": "オルゴマンディアス",
+      "note": "ゴールドドラゴン。黄金竜の神話の主人公に忠誠を誓う。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Nidalynn",
+      "target": "ニダリン",
+      "note": "シルバードラゴン。黄金竜の神話の主人公に忠誠を誓う。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Silver Dragon",
+      "target": "シルバードラゴン",
+      "note": "金属竜の一種。Gold Dragon=ゴールドドラゴンに合わせ中黒なし。",
+      "category": "Creature",
+      "caseSensitive": false
+    },
+    {
+      "source": "Convocation of Dragons",
+      "target": "ドラゴンの集会",
+      "note": "ドラゴンたちの会合。ゴールドドラゴンが議長を務める。単独のConvocationも「集会」。",
+      "category": "Organization",
+      "caseSensitive": false
+    },
+    {
+      "source": "Denlean Blackmead",
+      "target": "デンリーン・ブラックミード",
+      "note": "ブレヴォイから来た増援の戦士。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Governor-General",
+      "target": "総督",
+      "note": "地獄の盟約路線でアブロガイルらが主人公を呼ぶ称号。呼びかけでは「総督閣下」。",
+      "category": "Title",
+      "caseSensitive": true
     }
   ]
 }
