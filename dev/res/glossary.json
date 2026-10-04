@@ -30367,6 +30367,18 @@
       "target": "ジェラード・オディーン",
       "note": "頭蓋骨標本820の札に記された人名。",
       "category": "Character"
+    },
+    {
+      "source": "Kerz Got-Stabbed",
+      "target": "刺された男カーズ",
+      "note": "賞金首広告に記された船乗りの頭目の異名。",
+      "category": "Character"
+    },
+    {
+      "source": "Coronation Avenue",
+      "target": "戴冠通り",
+      "note": "ネロシャンの通り名。フィリダズル商会の所在地。",
+      "category": "Location"
     }
   ]
 }

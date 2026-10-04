@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 102150,
-  "updatedAt": "2026-10-04T14:22:54.621Z",
+  "nextStart": 102450,
+  "updatedAt": "2026-10-04T14:27:49.483Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4673,6 +4673,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round343/",
       "coveredDialogs": [],
       "note": "v2リライト第343弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認しましたが、スクリプトでの検証はしていません。dialog名はすべて `null` で、会話に属さない単発の台詞・ジャーナル・アイテム名などです。話者情報がほぼ無かったため、口調は内容から推測しました。\n\n`{mf}` タグは、元の文が「He/She shall have hi / 100件を訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)名はすべて null で、武器選択時のパーティーメンバーの掛け声です。話者情報が無かったため、すべて丁寧語にしました。JSON の構文は目視で確認しましたが、スクリプトでのパース検証はしていません。\n\n用語: Composite Longbow → コンポジット・ロングボウ\n用語: "
+    },
+    {
+      "start": 102150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round344/",
+      "coveredDialogs": [],
+      "note": "v2リライト第344弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込みました。entry は 200 件で、全件を訳したつもりですが、キー数は数えていないので実数は未確認です。書き込んだ内容はJSONとして目視で確認し、キーの一部は `chunk_0000.json` と Grep で突き合わせました。\n\n会話(dialog名)はすべて `null` で、フィニアン関連のアイテム説明、グレイボー / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ JSON は目視で確認しましたが、パーサでの検証はしていません。会話(dialog)名は全 entry で null でした。内容はグレイボー・ホルザラー関連、ディラ・ラン・スルの母子会話、アイテム説明、十字軍の判断ログです。\n\n- `{mf|...}` は "
     }
   ]
 }
