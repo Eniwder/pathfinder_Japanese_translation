@@ -30349,6 +30349,12 @@
       "target": "北の光",
       "note": "百面相の装置に関わる研究計画の名称。",
       "category": "General"
+    },
+    {
+      "source": "Lord Gwerm",
+      "target": "グウェーム様",
+      "note": "Horgus Gwerm（ホルガス・グウェーム）への敬称。台詞内では「グウェーム様」。",
+      "category": "Character"
     }
   ]
 }
