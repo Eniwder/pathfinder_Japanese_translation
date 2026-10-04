@@ -30325,6 +30325,30 @@
       "note": "インタラクト可能なオブジェクト名。",
       "category": "Item",
       "caseSensitive": true
+    },
+    {
+      "source": "Lower Planes",
+      "target": "下方位界",
+      "note": "Upper Planes（上方位界）の対。悪の住まう下層の諸プレインの総称。round340では「下位の位界」と訳された。",
+      "category": "General"
+    },
+    {
+      "source": "Hundred-Face",
+      "target": "百面相",
+      "note": "装置（Device）を作ったヌメリアの技術魔道士。",
+      "category": "Character"
+    },
+    {
+      "source": "Heart of the Device",
+      "target": "装置の心臓",
+      "note": "百面相の装置の中核だった水晶。戦利品アイテム。",
+      "category": "Item"
+    },
+    {
+      "source": "The Northern Lights",
+      "target": "北の光",
+      "note": "百面相の装置に関わる研究計画の名称。",
+      "category": "General"
     }
   ]
 }

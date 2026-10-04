@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 100950,
-  "updatedAt": "2026-10-04T09:55:57.059Z",
+  "nextStart": 101250,
+  "updatedAt": "2026-10-04T09:59:59.527Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4641,6 +4641,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round339/",
       "coveredDialogs": [],
       "note": "v2リライト第339弾（runRoundLoop.mjs による自動実行）。 `dev/lang/chunks/chunk_0000.translations.json` に全200件を書き込みました。ただし、キーの照合はしていません（スクリプトを実行できないため）。\n\n- **JSON構文:** 書き込み後に目視で確認しました。\n- **キー:** 書き込みの途中でキーを1つ誤記し、`8caac964-…`（ファラズマの女司祭の行）を修正しました。ほかのキーは原文と突き合 / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認済みで、スクリプトでの検証はしていません。\n\ndialog 名はすべて `null` で、主にオブジェクト調査文、アイテム名、ナレーション、無名の短い台詞です。話者の指定が無い台詞は、原文の雰囲気に合わせて丁寧語か中立な口調にしました。`{mf|master|mistre"
+    },
+    {
+      "start": 100950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round340/",
+      "coveredDialogs": [],
+      "note": "v2リライト第340弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件すべてを訳し、`chunk_0000.translations.json` に書き込みました。会話（dialog名）はすべて null で、アイテム説明・ログ・チリー・クリークのハグ戦・プルラの神殿・ドレゼンなどの断片的なテキストでした。生の `{mf}` は、すべて省略するか自然な日本語にしました。書き込んだJSONの構文は目視で確認済みで、スクリプトでの検証はし / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。`dialog` はすべて null で、会話ではない単発のテキストです。\n\n`{mf|...}` は4か所とも日本語で作り分けが不要なので、`{mf}` ごと省きました。`Sock of Valor` は原文のとおり「勇気の靴下」と"
     }
   ]
 }
