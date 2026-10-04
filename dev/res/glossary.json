@@ -29687,6 +29687,42 @@
       "target": "パール湾",
       "note": "Destination bay named in a ship's command.",
       "category": "Location"
+    },
+    {
+      "source": "Camilary",
+      "target": "カミラリー",
+      "note": "Elyanka's Ustalavic noble family name.",
+      "category": "Character"
+    },
+    {
+      "source": "Mana Wastes",
+      "target": "マナの荒野",
+      "note": "Magic-blighted region left by the war between Geb and Nex.",
+      "category": "Location"
+    },
+    {
+      "source": "Caliphas",
+      "target": "カリファス",
+      "note": "Capital city of Ustalav.",
+      "category": "Location"
+    },
+    {
+      "source": "Andorans",
+      "target": "アンドラン人",
+      "note": "People of Andoran.",
+      "category": "Location"
+    },
+    {
+      "source": "Paper-muncher",
+      "target": "ペーパー・マンチャー",
+      "note": "Nickname of a camp creature that eats paper.",
+      "category": "Character"
+    },
+    {
+      "source": "Scenery Master",
+      "target": "舞台装置長",
+      "note": "Tinna's title in the theater troupe.",
+      "category": "Title"
     }
   ]
 }

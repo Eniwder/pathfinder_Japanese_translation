@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 96150,
-  "updatedAt": "2026-10-04T04:19:51.947Z",
+  "nextStart": 96450,
+  "updatedAt": "2026-10-04T04:24:22.645Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4513,6 +4513,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round323/",
       "coveredDialogs": [],
       "note": "v2リライト第323弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込みました。chunk の 200 件のうち、省略した key はなく全件訳しています。\n\n- **会話名**：dialog はすべて null で、会話ではなく、日誌・アイテム説明・バーク・クレジットの寄せ集めでした。\n- **書き込み後の確認**：JSON として正しいかは目視で見ただけで、スクリプトでは検証していません。\n- / chunk_0001 の100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。会話(dialog名)はすべて `null` で、名前付きの会話は含まれていません（クレジット、十字軍イベントのバーク、ジャーナル、Ciar、Galfrey、Iomedaeの使者など）。\n\n- **クレジット:** 人名は原文のまま残し、`'nic"
+    },
+    {
+      "start": 96150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round324/",
+      "coveredDialogs": [],
+      "note": "v2リライト第324弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。ファイルはJSONとして読み返して確認していません。\n\n登場した会話は dialog が null のブロックのみです。内容は、ジャーナル項目、ガルフリー女王の手紙、ブラックストーン・カンパニー、燃える槍の騎士団、ケナブレス勢（ハルラン・ラミエン・チュン）、ゲブとウスタラヴのアンデッド勢（セプティムス・ / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。書き込み後のJSONの目視確認はしていません。会話（dialog）はすべて null で、アイテム説明・日誌・バーク（戦闘中の掛け声）が中心です。話者情報（speaker）と文脈（ctx）がチャンクに無かったため、口調は文面から推測しました。\n\n用語: Paper-muncher → ペーパー・マ"
     }
   ]
 }
