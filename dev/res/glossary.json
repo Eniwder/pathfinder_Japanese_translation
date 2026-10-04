@@ -30185,6 +30185,41 @@
       "note": "メンデヴの住民。",
       "category": "Location",
       "caseSensitive": true
+    },
+    {
+      "source": "Ashen Lady",
+      "target": "灰の貴婦人",
+      "note": "伝承に語られる盲目の女殺人者の異名。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Groaning Gate",
+      "target": "嘆きの門",
+      "note": "地名（門）。",
+      "category": "Location",
+      "caseSensitive": true
+    },
+    {
+      "source": "Mathias Urd",
+      "target": "マティアス・アード",
+      "note": "『暗き夜の伝説』の著者。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Legends of the Dark Nights",
+      "target": "暗き夜の伝説",
+      "note": "マティアス・アード著の書物。",
+      "category": "Item",
+      "caseSensitive": true
+    },
+    {
+      "source": "Glass Key",
+      "target": "ガラスの鍵",
+      "note": "クエストアイテム。",
+      "category": "Item",
+      "caseSensitive": true
     }
   ]
 }
