@@ -30379,6 +30379,18 @@
       "target": "戴冠通り",
       "note": "ネロシャンの通り名。フィリダズル商会の所在地。",
       "category": "Location"
+    },
+    {
+      "source": "League of the Cart",
+      "target": "荷車同盟",
+      "note": "騎士が言及する一行（商隊）の名乗り。",
+      "category": "Organization"
+    },
+    {
+      "source": "Quarael",
+      "target": "クアラエル",
+      "note": "飢えた十字軍兵士たちに食われた十字軍士の名。",
+      "category": "Character"
     }
   ]
 }

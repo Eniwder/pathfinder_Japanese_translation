@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 102450,
-  "updatedAt": "2026-10-04T14:27:49.483Z",
+  "nextStart": 102750,
+  "updatedAt": "2026-10-04T14:31:54.110Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4681,6 +4681,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round344/",
       "coveredDialogs": [],
       "note": "v2リライト第344弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` を書き込みました。entry は 200 件で、全件を訳したつもりですが、キー数は数えていないので実数は未確認です。書き込んだ内容はJSONとして目視で確認し、キーの一部は `chunk_0000.json` と Grep で突き合わせました。\n\n会話(dialog名)はすべて `null` で、フィニアン関連のアイテム説明、グレイボー / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ JSON は目視で確認しましたが、パーサでの検証はしていません。会話(dialog)名は全 entry で null でした。内容はグレイボー・ホルザラー関連、ディラ・ラン・スルの母子会話、アイテム説明、十字軍の判断ログです。\n\n- `{mf|...}` は "
+    },
+    {
+      "start": 102450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round345/",
+      "coveredDialogs": [],
+      "note": "v2リライト第345弾（runRoundLoop.mjs による自動実行）。 200件を `chunk_0000.translations.json` に書き込んだ。dialog名はすべて null で、ラン／サヴァメレク／スル／ウェンデュアグ／レギルまわりのジャーナルと台詞だった。JSON構文は目視で確認したが、パーサは通していない。\n\n- chunk に speaker 情報が無かったので、Sull の sh 訛りは「しゅ」で崩した。サヴァメレクの台詞はデーモンらしい尊 / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、`import --dry-run` はまだ流していません。会話(dialog)名はなく、全 entry が `dialog: null` でした。内容はシーラ関連のジャーナル文、エランとキアナの結婚式、マジパンの骨などです。\n"
     }
   ]
 }
