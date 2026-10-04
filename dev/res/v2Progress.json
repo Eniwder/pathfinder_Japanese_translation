@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 104250,
-  "updatedAt": "2026-10-04T14:59:00.171Z",
+  "nextStart": 104550,
+  "updatedAt": "2026-10-04T15:03:33.564Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4729,6 +4729,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round350/",
       "coveredDialogs": [],
       "note": "v2リライト第350弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全entry（約200件）を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。登場した dialog 名はありません（全blockが `dialog: null` で、アイテム説明・バーク・選択肢・ログ文）。JSON構文と `<ctrl_N/>` の個数・順序は目視で確認しました。\n\n気づいた点が2つありま / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。書き込み後のJSON検証と `<ctrl_N/>` の照合はしておらず、構文と個数・順序は目視確認のみです。\n\n会話(dialog)は全件 `null` で、探索テキスト、場面移動の選択肢、ナレーション、バークだけでした。発言者の分かるentryが無かったため、口調は文脈から推測しています。\n\n`"
+    },
+    {
+      "start": 104250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-05_round351/",
+      "coveredDialogs": [],
+      "note": "v2リライト第351弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の200件を全部訳し、`dev/lang/chunks/chunk_0000.translations.json` に1回で書き込みました。JSON構文の検証コマンドは実行しておらず、書き込み後の目視確認もしていません。\n\ndialog 名は全 entry で `null` です（会話に属さないシステム文・探索文・経験値メッセージ・バーク類）。\n\n注意点：\n- 酔っ払い台詞（ / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON は目視で確認しただけで、スクリプトによる検証はしていません。\n\n会話(dialog)名はチャンク内ではすべて null でした。内容は、DLC3「操舵手（ナヒンドリ）」の導入会話、ジュエルゴーレム、アングラー、ナヒンドリの記憶アイテムの説明文、DLC説明文、"
     }
   ]
 }

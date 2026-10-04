@@ -30457,6 +30457,36 @@
       "target": "グリムニール・アイアンヘッド",
       "note": "女王とメンデヴのために命を捧げた英雄（墓碑銘）。",
       "category": "Character"
+    },
+    {
+      "source": "Garess",
+      "target": "ガレス",
+      "note": "ブレヴォイの大家門の一つ。",
+      "category": "Organization"
+    },
+    {
+      "source": "Great Houses",
+      "target": "大家門",
+      "note": "ブレヴォイの有力貴族家の総称。単数形 Great House も「大家門」。",
+      "category": "Organization"
+    },
+    {
+      "source": "Quilessy Garess",
+      "target": "クイレシー・ガレス",
+      "note": "ガレス家を捨て十字軍に加わった歩兵（手記の筆者）。",
+      "category": "Character"
+    },
+    {
+      "source": "Restov",
+      "target": "レストフ",
+      "note": "ロストランドの都市。",
+      "category": "Location"
+    },
+    {
+      "source": "Thief of Names",
+      "target": "名前の盗人",
+      "note": "かつての魔術師の通り名（頭蓋骨）。",
+      "category": "Character"
     }
   ]
 }
