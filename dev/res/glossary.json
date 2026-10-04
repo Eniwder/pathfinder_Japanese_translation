@@ -30010,6 +30010,27 @@
       "note": "Ruler of the Reapers; his memory is chained in the memorial.",
       "category": "Character",
       "caseSensitive": true
+    },
+    {
+      "source": "Burning First",
+      "target": "燃える拳",
+      "note": "原文の誤記（正しくはBurning Fist＝燃える拳の騎士団）。round331で「燃える第一」と誤訳されたので注意。",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Thrice-Killed",
+      "target": "三度殺されし",
+      "note": "Atselmの二つ名（Atselm Thrice-Killed＝三度殺されしアトセルム）。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Raggy",
+      "target": "ラギー",
+      "note": "奴隷商人への呼びかけに使われる愛称・あだ名。round331で登場。",
+      "category": "Character",
+      "caseSensitive": true
     }
   ]
 }

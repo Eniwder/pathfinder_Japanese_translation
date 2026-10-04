@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 98250,
-  "updatedAt": "2026-10-04T04:52:10.776Z",
+  "nextStart": 98550,
+  "updatedAt": "2026-10-04T04:57:02.418Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4569,6 +4569,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round330/",
       "coveredDialogs": [],
       "note": "v2リライト第330弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しただけで、スクリプトでの検証はしていません。会話名（dialog）はすべて null で、スピーカー情報も無いため、アルシニラの住人の独り言・闘技場の実況・アイテム名や説明文などを訳しています。\n\n- 話者不明のため、台詞は文脈から口調を推測して訳しました。\n- `{mf|. / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON は目視で確認しました。dialog はすべて null で、バトルブリスの闘技場の実況・観客・剣闘士のバーク（掛け声や短い台詞）です。このチャンクには話者情報がありませんでした。そのため、実況・観客・剣闘士は文脈から口調を推測して訳しています。\n\n`{mf|his|her}` などの代名詞は日"
+    },
+    {
+      "start": 98250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round331/",
+      "coveredDialogs": [],
+      "note": "v2リライト第331弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json を書き出しました。chunk の 200 件のうち、`keys` 件数どおり約 200 件を訳しています。JSON の構文は自分では確認していますが、実行権限がないためパースやキー照合はしていません。\n\n- 登場した会話: `dialog` はすべて null で、特定の会話名はありません。内容は、バトルブリスの闘技場（イルマンガレス、ゼク / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。JSON構文の確認は目視のみで、スクリプトでの検証はしていません。このチャンクは `dialog` が全て null で、`speakers` 辞書も無いため、話者は文脈から推定しました。内容はケストグライア関連、ノクティキュラ/エンバー関連のクエストログ、フレッシュマーケット（アルシニラ）のバー"
     }
   ]
 }
