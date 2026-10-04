@@ -29954,6 +29954,34 @@
       "note": "Prayer site in a Sarkorian sacred forest.",
       "category": "Location",
       "caseSensitive": true
+    },
+    {
+      "source": "Shadow Lord of the Sea",
+      "target": "海の闇の君主",
+      "note": "Epithet of Dagon, demon lord of the sea.",
+      "category": "Title",
+      "caseSensitive": true
+    },
+    {
+      "source": "Sun Festival",
+      "target": "太陽の祭り",
+      "note": "Festival once held in Soana's Sarkorian forest at the Meadow of the Spirits.",
+      "category": "Event",
+      "caseSensitive": true
+    },
+    {
+      "source": "Longern",
+      "target": "ロンガーン",
+      "note": "Brigade warden tortured by demons, guarding the treasury.",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Roan",
+      "target": "ローアン",
+      "note": "Daughter of Soana the Seer; wrote her a farewell letter.",
+      "category": "Character",
+      "caseSensitive": true
     }
   ]
 }
