@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 97050,
-  "updatedAt": "2026-10-04T04:33:38.834Z",
+  "nextStart": 97350,
+  "updatedAt": "2026-10-04T04:38:08.880Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4537,6 +4537,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round326/",
       "coveredDialogs": [],
       "note": "v2リライト第326弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。会話(dialog)名はすべて null で、クルセイダーの雑談、天使ターゴナの語り、ヨズとの対話、丘のアイテムや看板の説明文などが混在していました。\n\n話者(speaker)情報が付いたentryはなく、文脈から口調を判断しました。`{mf}` を含む4件は、日本語で作り分け / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、スクリプトでの検証はしていません。\n\n会話(dialog名)はすべて `null` で、アルシニラ／アビスの探索テキスト、十字軍兵士の会話、ヘプザミラの牢獄の台詞などが混在しています。entryに `speaker` が無いため、話者不明は丁寧語、デーモンらしい台"
+    },
+    {
+      "start": 97050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round327/",
+      "coveredDialogs": [],
+      "note": "v2リライト第327弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON の構文は目視確認済みで、スクリプトによる検証は実行していません。登場した会話（dialog）名は、すべて `dialog: null` だったため不明です。\n\n気づいた点が2つあります。\n- 逆さ文字の台詞（`4b006bc4…` と `e76d9c2d / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。dialogは全件 null（会話に属さないアイテム説明・星座名・環境テキスト・プルラの神殿のバーク）で、speaker 指定もないため、話者不明扱いの丁寧語で訳しました。\n\n気づいた点が2つあります。\n- `{mf|brother|sister}` は `{m"
     }
   ]
 }

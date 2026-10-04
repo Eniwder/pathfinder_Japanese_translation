@@ -29770,6 +29770,120 @@
       "note": "Hot spring created by Olla Devara; keep acronym, gloss full name in Japanese.",
       "category": "Place",
       "caseSensitive": true
+    },
+    {
+      "source": "Ajb the Sweet-Voiced",
+      "target": "美声のアジュブ",
+      "note": "Sarkorian chieftain named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Inbalta the Fire-Haired",
+      "target": "火髪のインバルタ",
+      "note": "Sarkorian chieftain named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Aremora the Skyreader",
+      "target": "空読みのアレモラ",
+      "note": "Sarkorian chieftain of the Blackearth clan, named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Fiahn the Ore Master",
+      "target": "鉱石の長フィアン",
+      "note": "Sarkorian chieftain named on a funerary dagger; Fiahn clan = フィアン氏族.",
+      "category": "Person"
+    },
+    {
+      "source": "Ruhad the Bookreader",
+      "target": "読書家のルハド",
+      "note": "Sarkorian chieftain named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Kigven Goldenmare",
+      "target": "金の牝馬のキグヴェン",
+      "note": "Sarkorian chieftain named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Hegwart the Snake",
+      "target": "蛇のヘグワルト",
+      "note": "Sarkorian chieftain named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Aregau the Saint",
+      "target": "聖者アレガウ",
+      "note": "Sarkorian chieftain named on a funerary dagger; devoted to Pulura.",
+      "category": "Person"
+    },
+    {
+      "source": "Lille the Quick",
+      "target": "疾風のリレ",
+      "note": "Sarkorian chieftain named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Orren the Bear",
+      "target": "熊のオレン",
+      "note": "Sarkorian chieftain named on a funerary dagger.",
+      "category": "Person"
+    },
+    {
+      "source": "Hidd the Twin",
+      "target": "双子のヒッド",
+      "note": "Sarkorian chieftain named on a funerary dagger; twin brother of Hedd.",
+      "category": "Person"
+    },
+    {
+      "source": "Hedd",
+      "target": "ヘッド",
+      "note": "Sarkorian chieftain, twin brother of Hidd the Twin.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Blackearth",
+      "target": "黒土",
+      "note": "Sarkorian clan (Blackearth clan = 黒土氏族).",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Balemoon",
+      "target": "災月",
+      "note": "Sarkorian clan (Balemoon clan = 災月氏族).",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Bloodstone",
+      "target": "血石",
+      "note": "Sarkorian clan (Bloodstone clan = 血石氏族).",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Cathedral Thelemic",
+      "target": "セレマ大聖堂",
+      "note": "Socothbenoth's cult/church; he is its prior (院長).",
+      "category": "Organization"
+    },
+    {
+      "source": "Arveng",
+      "target": "アーヴェング",
+      "note": "Grulhild's brother; author of a letter urging her to flee to Mendev.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Allfrey",
+      "target": "オールフリー",
+      "note": "Commander praised as 'Sir Knight Allfrey' by a drunken soldier.",
+      "category": "Person",
+      "caseSensitive": true
     }
   ]
 }
