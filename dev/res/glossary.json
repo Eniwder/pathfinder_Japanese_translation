@@ -29884,6 +29884,76 @@
       "note": "Commander praised as 'Sir Knight Allfrey' by a drunken soldier.",
       "category": "Person",
       "caseSensitive": true
+    },
+    {
+      "source": "Vigdelly the Wayfinder",
+      "target": "道を拓くヴィグデリー",
+      "note": "Sarkorian chieftain named on a funerary dagger epitaph.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Angna the Spinstress",
+      "target": "紡ぎ女のアングナ",
+      "note": "Sarkorian chieftain named on a funerary dagger epitaph.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Gonnla the Wild Boar",
+      "target": "猪のゴンラ",
+      "note": "Sarkorian chieftain named on a funerary dagger epitaph.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Dwidry Stormraven",
+      "target": "嵐鴉のドウィドリー",
+      "note": "Sarkorian chieftain named on a funerary dagger epitaph.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Gweirn the She-Wolf",
+      "target": "牝狼のグウェルン",
+      "note": "Sarkorian chieftain named on a funerary dagger epitaph.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Eohan the One-Eyed",
+      "target": "隻眼のエオハン",
+      "note": "Sarkorian chieftain named on a funerary dagger epitaph.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Ajfne Bloody Spear",
+      "target": "血染めの槍のアイフネ",
+      "note": "Sarkorian chieftain named on a funerary dagger epitaph.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Howlingblood",
+      "target": "ハウリングブラッド",
+      "note": "Sarkorian clan defeated by Gweirn the She-Wolf.",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Stagheart",
+      "target": "スタッグハート",
+      "note": "Sarkorian clan whose fortresses and lands were held by Ajfne Bloody Spear.",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Meadow of the Spirits",
+      "target": "精霊の草原",
+      "note": "Prayer site in a Sarkorian sacred forest.",
+      "category": "Location",
+      "caseSensitive": true
     }
   ]
 }
