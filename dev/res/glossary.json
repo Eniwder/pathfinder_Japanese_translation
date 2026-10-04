@@ -29982,6 +29982,34 @@
       "note": "Daughter of Soana the Seer; wrote her a farewell letter.",
       "category": "Character",
       "caseSensitive": true
+    },
+    {
+      "source": "Smugmug",
+      "target": "スマグマグ",
+      "note": "Boastful mephit fighter in the Ineluctable Arena.",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Ruksa",
+      "target": "ルクサ",
+      "note": "Female arena fighter of the Nahyndrian League, paired with Atselm.",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Memorial of the Reapers",
+      "target": "リーパーの記念碑",
+      "note": "Talking memorial holding the memory of the last Reaper King.",
+      "category": "Location",
+      "caseSensitive": true
+    },
+    {
+      "source": "Reaper King",
+      "target": "リーパーの王",
+      "note": "Ruler of the Reapers; his memory is chained in the memorial.",
+      "category": "Character",
+      "caseSensitive": true
     }
   ]
 }

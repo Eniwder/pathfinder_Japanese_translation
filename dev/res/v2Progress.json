@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 97950,
-  "updatedAt": "2026-10-04T04:47:38.385Z",
+  "nextStart": 98250,
+  "updatedAt": "2026-10-04T04:52:10.776Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4561,6 +4561,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round329/",
       "coveredDialogs": [],
       "note": "v2リライト第329弾（runRoundLoop.mjs による自動実行）。 200件を全て訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON構文は目視確認のみで、`import --dry-run` は実行していません。\n\n- **会話:** `dialog` 名は全て null です。ウィンターサン周辺のクエスト記録・アイテム説明・環境描写、老シャーマンのソアナ関連の会話、アンデッドの断片的な台 / 100件すべてを訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ内容がJSONとして正しいかは目視で確認しています。会話（dialog）名はすべて null で、登場した会話はありません。\n\n気づいた点は2つです。\n- `{mf}` は、日本語で作り分けが不要な箇所では省略しました。`{mf|Lord|Lady}` "
+    },
+    {
+      "start": 97950,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round330/",
+      "coveredDialogs": [],
+      "note": "v2リライト第330弾（runRoundLoop.mjs による自動実行）。 200件すべて訳し、`chunk_0000.translations.json` に書き込みました。JSON は目視で確認しただけで、スクリプトでの検証はしていません。会話名（dialog）はすべて null で、スピーカー情報も無いため、アルシニラの住人の独り言・闘技場の実況・アイテム名や説明文などを訳しています。\n\n- 話者不明のため、台詞は文脈から口調を推測して訳しました。\n- `{mf|. / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON は目視で確認しました。dialog はすべて null で、バトルブリスの闘技場の実況・観客・剣闘士のバーク（掛け声や短い台詞）です。このチャンクには話者情報がありませんでした。そのため、実況・観客・剣闘士は文脈から口調を推測して訳しています。\n\n`{mf|his|her}` などの代名詞は日"
     }
   ]
 }
