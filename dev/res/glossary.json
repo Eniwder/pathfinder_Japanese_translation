@@ -29723,6 +29723,33 @@
       "target": "舞台装置長",
       "note": "Tinna's title in the theater troupe.",
       "category": "Title"
+    },
+    {
+      "source": "Averis",
+      "target": "アヴェリス",
+      "note": "Drezen-related NPC called 'crazy Averis' by a refugee; sister referenced in Ramley's looting trial.",
+      "category": "Person",
+      "caseSensitive": true
+    },
+    {
+      "source": "Hurgill the Anvil",
+      "target": "鉄床のハーギル",
+      "note": "First blacksmith of the Woradash clan; forged armor for the Commander.",
+      "category": "Person"
+    },
+    {
+      "source": "Woradash",
+      "target": "ウォラダッシュ",
+      "note": "Dwarven clan; 'Woradash clan' = ウォラダッシュ氏族.",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Arthus",
+      "target": "アルサス",
+      "note": "Leatherworker from Wintersun who crafted leather armor.",
+      "category": "Person",
+      "caseSensitive": true
     }
   ]
 }
