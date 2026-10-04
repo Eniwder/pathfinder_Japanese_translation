@@ -30031,6 +30031,62 @@
       "note": "奴隷商人への呼びかけに使われる愛称・あだ名。round331で登場。",
       "category": "Character",
       "caseSensitive": true
+    },
+    {
+      "source": "Jeocot",
+      "target": "ジェオコット",
+      "note": "アビスのデート本を執筆中の陽気な若い吟遊詩人。ドラゴンのパペットで腹話術をする。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Grotverg",
+      "target": "グロトヴェルク",
+      "note": "前衛斥候隊の伍長（Corporal Grotverg）。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Vanguard Scouts",
+      "target": "前衛斥候隊",
+      "note": "グロトヴェルク伍長の所属部隊。",
+      "category": "Organization",
+      "caseSensitive": true
+    },
+    {
+      "source": "Flesh Markets",
+      "target": "フレッシュマーケット",
+      "note": "アビスの肉の市場（奴隷・魂の取引所）。",
+      "category": "Location",
+      "caseSensitive": true
+    },
+    {
+      "source": "Shy Lily",
+      "target": "シャイ・リリー",
+      "note": "兜の元の持ち主として語られる人物（Wallflowerとも呼ばれる）。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Wallflower",
+      "target": "ウォールフラワー",
+      "note": "シャイ・リリーの別名。アレール・ヴォーレスに兜と顔をむしり取られた。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Sarzaksys",
+      "target": "サルザクシス",
+      "note": "奴隷を抱えるデーモン。",
+      "category": "Character",
+      "caseSensitive": true
+    },
+    {
+      "source": "Echo's Lair",
+      "target": "残響の巣窟",
+      "note": "『残響』(Echo)の住処。",
+      "category": "Location",
+      "caseSensitive": true
     }
   ]
 }

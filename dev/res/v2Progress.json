@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 98550,
-  "updatedAt": "2026-10-04T04:57:02.418Z",
+  "nextStart": 98850,
+  "updatedAt": "2026-10-04T09:13:07.147Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4577,6 +4577,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-04_round331/",
       "coveredDialogs": [],
       "note": "v2リライト第331弾（runRoundLoop.mjs による自動実行）。 chunk_0000.translations.json を書き出しました。chunk の 200 件のうち、`keys` 件数どおり約 200 件を訳しています。JSON の構文は自分では確認していますが、実行権限がないためパースやキー照合はしていません。\n\n- 登場した会話: `dialog` はすべて null で、特定の会話名はありません。内容は、バトルブリスの闘技場（イルマンガレス、ゼク / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。JSON構文の確認は目視のみで、スクリプトでの検証はしていません。このチャンクは `dialog` が全て null で、`speakers` 辞書も無いため、話者は文脈から推定しました。内容はケストグライア関連、ノクティキュラ/エンバー関連のクエストログ、フレッシュマーケット（アルシニラ）のバー"
+    },
+    {
+      "start": 98550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-04_round332/",
+      "coveredDialogs": [],
+      "note": "v2リライト第332弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。会話(dialog)名はすべて null で、会話に属さない単発テキストです（フレッシュマーケット／アルシニラの奴隷・剣闘士・シャミラ関連）。書き込み後の JSON は目視で確認しましたが、`import --dry-run` は未実行です。\n\n / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。JSON構文の目視確認も済んでいます。このチャンクの `dialog` は全て null（会話単位ではなく単発テキストの集合）で、ジェオコットの吟遊詩人イベント、ミナゴーとウェンデュアグの会話、ノクティキュラの裁判、アビスのポータル、アイテム説明、ジャーナル文などが含まれます。各entryに `sp"
     }
   ]
 }
