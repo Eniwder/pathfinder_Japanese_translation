@@ -30589,6 +30589,18 @@
       "target": "舞い上がる雲",
       "note": "祭りの屋台で味わえる酒の銘柄（\"Taste ...\"選択肢）。",
       "category": "Item"
+    },
+    {
+      "source": "Brunderton",
+      "target": "ブランダートン",
+      "note": "ロストランド東部の小さな鉱山村。黒ビールの産地。",
+      "category": "Location"
+    },
+    {
+      "source": "Taldan Fire-Brandy",
+      "target": "タルドール・ファイア・ブランデー",
+      "note": "酒のアイテム名。",
+      "category": "Item"
     }
   ]
 }
