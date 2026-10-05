@@ -30511,6 +30511,12 @@
       "target": "ヴィロ",
       "note": "釣りに出て戻らなかった町の住人。",
       "category": "Character"
+    },
+    {
+      "source": "Impossible Lands",
+      "target": "インポッシブル・ランド",
+      "note": "ゴラリオンの遠方の地域（ジャルメレイ大陸）。Impossible Kingdomsと同じ地域の呼称。",
+      "category": "Location"
     }
   ]
 }

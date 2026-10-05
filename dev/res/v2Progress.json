@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 105150,
-  "updatedAt": "2026-10-04T15:12:25.074Z",
+  "nextStart": 105450,
+  "updatedAt": "2026-10-05T10:25:12.989Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4753,6 +4753,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-05_round353/",
       "coveredDialogs": [],
       "note": "v2リライト第353弾（runRoundLoop.mjs による自動実行）。 訳文ファイルは書き込み済みです。キーを1件誤記していたので修正しました。他のキーが原文と一致しているかは、スクリプトを使えないため全件の照合までは行っていません。\n\n- **訳した件数:** 200件中200件\n- **会話(dialog名):** すべて `dialog: null` で、話者情報のない単発テキストでした。内容は DLC「Through the Ashes」のシスハッド欠片の探索 / 100件を訳して `chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しています。会話(dialog)は全件 null で、ゴブリン塔（Usurviel／Buuze）周辺の経験値メッセージ・調査文・ゴブリンのバーク・精霊の台詞・オブジェクト名が混在しています。\n\n気づいた点:\n- `speaker` が全件無かったため、ゴブリンのバークは粗野"
+    },
+    {
+      "start": 105150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-05_round354/",
+      "coveredDialogs": [],
+      "note": "v2リライト第354弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON 構文は目視で確認済みです。\n\n登場した会話（dialog名）はありません。全blockが `dialog: null` で、探索時のインタラクト描写、バーク（仲間の独り言）、ダンジョン名ラベルなどが中心でした。\n\n気づいた点：\n- チャ / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しています。対象は dialog 名がすべて null の単発テキスト（Storasta/Carrock 周辺の村・フェイ・シスハッド戦の台詞、描写、UI）です。\n\n話者情報が chunk に無かったため、話者は文脈から推定して口調を付けました。\n\n用語: Alta t"
     }
   ]
 }
