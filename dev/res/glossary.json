@@ -30571,6 +30571,24 @@
       "target": "仮面の舞踏",
       "note": "書物・エントリ名。",
       "category": "Item"
+    },
+    {
+      "source": "Dancing Unicorns",
+      "target": "踊るユニコーン",
+      "note": "祭りの屋台で味わえる酒の銘柄（\"Taste ...\"選択肢）。",
+      "category": "Item"
+    },
+    {
+      "source": "Golden Rarity",
+      "target": "黄金の稀少品",
+      "note": "祭りの屋台で味わえる酒の銘柄（\"Taste ...\"選択肢）。",
+      "category": "Item"
+    },
+    {
+      "source": "Soaring Cloud",
+      "target": "舞い上がる雲",
+      "note": "祭りの屋台で味わえる酒の銘柄（\"Taste ...\"選択肢）。",
+      "category": "Item"
     }
   ]
 }
