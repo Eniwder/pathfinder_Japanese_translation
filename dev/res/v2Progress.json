@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 106050,
-  "updatedAt": "2026-10-05T10:33:31.737Z",
+  "nextStart": 106350,
+  "updatedAt": "2026-10-05T10:36:50.041Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4777,6 +4777,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-05_round356/",
       "coveredDialogs": [],
       "note": "v2リライト第356弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に 200 件すべてを訳して書き込みました。書き込み後に目視で確認し、誤字を 1 箇所直しましたが、JSON としての検証ツールは走らせていません。\n\n- **dialog 名**: すべて `null`（バーク・ログ・アイテム説明などの寄せ集め）で、`speaker` は全件なしでした。口調は内容から推測し、不明なものは丁寧語にしてい / 100件すべて訳し、`chunk_0001.translations.json` に書き込みました。JSONの構文は目視で確認しています。`chunk_0001.json` は編集していません。\n\n登場した会話（dialog名）はありません。全blockの dialog が null で、エンジンのバーク（街中のつぶやき）とクエスト文が中心でした。\n\n気づいた点は次の2つです。\n- chunkに "
+    },
+    {
+      "start": 106050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-05_round357/",
+      "coveredDialogs": [],
+      "note": "v2リライト第357弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を訳して書き込みました。JSON は目視で確認済みで、スクリプトによる検証はしていません。\n\n- 会話（dialog）: すべて `dialog: null` の単発バーク・UIラベルで、ケナブレス祭りの群衆・衛兵・商人のセリフが中心。\n- 気づいた点: speaker と ctx が無いため、口調は文面から推測しました。` / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しました。dialog 名はすべて null で、Kenabres の祭り、ウォルジフの鎖売り、ドリモの闘技場、調査テキストなどが混在しています。\n\n話者情報がなかったため、口調は内容から推測しました。\n\n用語: Drimo → ドリモ\n用語: Echo of Fury"
     }
   ]
 }
