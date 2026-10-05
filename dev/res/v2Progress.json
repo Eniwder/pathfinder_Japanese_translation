@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 105450,
-  "updatedAt": "2026-10-05T10:25:12.989Z",
+  "nextStart": 105750,
+  "updatedAt": "2026-10-05T10:29:51.087Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4761,6 +4761,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-05_round354/",
       "coveredDialogs": [],
       "note": "v2リライト第354弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON 構文は目視で確認済みです。\n\n登場した会話（dialog名）はありません。全blockが `dialog: null` で、探索時のインタラクト描写、バーク（仲間の独り言）、ダンジョン名ラベルなどが中心でした。\n\n気づいた点：\n- チャ / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON の構文は目視で確認しています。対象は dialog 名がすべて null の単発テキスト（Storasta/Carrock 周辺の村・フェイ・シスハッド戦の台詞、描写、UI）です。\n\n話者情報が chunk に無かったため、話者は文脈から推定して口調を付けました。\n\n用語: Alta t"
+    },
+    {
+      "start": 105450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-05_round355/",
+      "coveredDialogs": [],
+      "note": "v2リライト第355弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 entry（約200件）を訳し、`chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しましたが、キー数の機械的な照合はしていません。\n\n会話（dialog）はすべて `null` で、主にシスハッド DLC の欠片の場面、ラズミル宮殿、フェイの集落、十字軍兵士のバークです。chunk に `speakers` の埋 / 100件すべてを訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。\n\n- **dialog名**: 全blockで `dialog` が null でした。\n- **気づいた点**: `speaker` 付きのentryが無かったため、話者不明の扱いで丁寧語を基本にしました。\n- **`{mf}`"
     }
   ]
 }

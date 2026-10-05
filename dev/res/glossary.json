@@ -30517,6 +30517,60 @@
       "target": "インポッシブル・ランド",
       "note": "ゴラリオンの遠方の地域（ジャルメレイ大陸）。Impossible Kingdomsと同じ地域の呼称。",
       "category": "Location"
+    },
+    {
+      "source": "Jhuvumirak",
+      "target": "ジュヴミラク",
+      "note": "かつてシスハッドが支配し、現在はコシチェイが治めるアビスの氷の荒野。",
+      "category": "Location"
+    },
+    {
+      "source": "Bone Lord",
+      "target": "骨の王",
+      "note": "フロスト・ジャイアントが仕えた遠い山の主（シスハッドを指す異名）。",
+      "category": "Character"
+    },
+    {
+      "source": "Hrazk",
+      "target": "フラズク",
+      "note": "シスハッドの欠片を得た巨人の族長。",
+      "category": "Character"
+    },
+    {
+      "source": "Ingun",
+      "target": "インガン",
+      "note": "白羽氏族（White Feather Clan）の者。フラズクの言葉を書き取らされた奴隷。",
+      "category": "Character"
+    },
+    {
+      "source": "White Feather Clan",
+      "target": "白羽氏族",
+      "note": "インガンの属する氏族。",
+      "category": "Organization"
+    },
+    {
+      "source": "Zovra",
+      "target": "ゾヴラ",
+      "note": "アルヴォズと対で名乗る敵。",
+      "category": "Character"
+    },
+    {
+      "source": "Arvoz",
+      "target": "アルヴォズ",
+      "note": "ゾヴラと対で名乗る敵。",
+      "category": "Character"
+    },
+    {
+      "source": "Runelords",
+      "target": "ルーンロード",
+      "note": "古代サースロンの魔術師王たち。",
+      "category": "Organization"
+    },
+    {
+      "source": "Dance of Masks",
+      "target": "仮面の舞踏",
+      "note": "書物・エントリ名。",
+      "category": "Item"
     }
   ]
 }
