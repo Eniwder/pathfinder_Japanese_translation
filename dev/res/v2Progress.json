@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 106650,
-  "updatedAt": "2026-10-05T10:41:10.906Z",
+  "nextStart": 106950,
+  "updatedAt": "2026-10-05T10:46:52.844Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4793,6 +4793,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-05_round358/",
       "coveredDialogs": [],
       "note": "v2リライト第358弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。登場した dialog 名はありません。全ブロックが `dialog: null` のバーク・アイテム説明・エピローグ・ソシエルのロマンス場面などの寄せ集めでした。JSON は目視で確認しました。\n\n話者情報（speaker）が無いentryが大 / 100件すべて訳して `dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。dialog名はすべて null で、会話ではなくアイテム名・説明文（聖印・宝飾品・素材類）です。`Fine Feather` と `Fine Hide` の「Fine」はサイズ分類ではないので、glossary の「極小」ではなく"
+    },
+    {
+      "start": 106650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-05_round359/",
+      "coveredDialogs": [],
+      "note": "v2リライト第359弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を書き込みました。dialog 名は null のブロックばかりで、会話名は付いていません。登場は、クリヌクの語り、クレーム／ニストラ／ガルフリー女王、ホルガス、イラベス／アネヴィア、フォーン、ケイレッサの遺書、アイテム名・説明です。JSON の構文は目視で確認しましたが、import の dry-run は実行していません / 100件すべてを訳して `chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。登場した会話（dialog名）は、このチャンクではすべて null でした。\n\n内容は、ヌーラの尋問、ストーリーテラーの物語群、キャドとその師の会話、各種ジャーナル文です。このチャンクには `speakers` 辞書が無かったため、話者は文脈から推定して口調を決"
     }
   ]
 }

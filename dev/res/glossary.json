@@ -30601,6 +30601,18 @@
       "target": "タルドール・ファイア・ブランデー",
       "note": "酒のアイテム名。",
       "category": "Item"
+    },
+    {
+      "source": "Darian Wytt",
+      "target": "ダリアン・ウィット",
+      "note": "ホルガス・グウェームを名乗っていた男の本名。両親が本物のグウェーム家の使用人。",
+      "category": "Character"
+    },
+    {
+      "source": "Stonewilds",
+      "target": "ストーンワイルズ",
+      "note": "石化した図書館（Petrified Library）がある地域。",
+      "category": "Location"
     }
   ]
 }
