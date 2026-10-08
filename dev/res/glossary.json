@@ -31033,6 +31033,12 @@
       "target": "ギーノ・ポレン",
       "note": "書物『北アヴィスタン旅行記』の著者。",
       "category": "Character"
+    },
+    {
+      "source": "Solemn Hour",
+      "target": "ソレム・アワー",
+      "note": "イラベスの一族に伝わる剣の銘。",
+      "category": "Item"
     }
   ]
 }

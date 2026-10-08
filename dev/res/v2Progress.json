@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 107550,
-  "updatedAt": "2026-10-08T10:24:34.751Z",
+  "nextStart": 107850,
+  "updatedAt": "2026-10-08T10:28:32.835Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4817,6 +4817,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-08_round361/",
       "coveredDialogs": [],
       "note": "v2リライト第361弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に全200件を書き込みました。ただし、JSONとしてのパースやタグ検証は実行していません（Read/Write/Edit系のみの環境のため）。\n\n- **登場した会話**: dialog名なし。アイテム説明、神々の祝福と呪い、書物や手紙の本文だけのチャンクです。\n- **気づいた点**: 出力上限で途中から書き込みを6回に分けました。フ / `chunk_0001.translations.json` に全100件を書き込みました。会話(dialog)はなく、全件が書物・クエスト文・UIテキストです。書き込み後に目視で構文を確認し、閉じ括弧の誤りを1か所直しています。\n\n`{mf||ine}` は、日本語では作り分けが不要なため、タグごと省いて「英雄」と訳しました。\n\n用語: Beryg → ベリグ\n用語: Areed → アリード\n"
+    },
+    {
+      "start": 107550,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-08_round362/",
+      "coveredDialogs": [],
+      "note": "v2リライト第362弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 entry を訳し、`chunk_0000.translations.json` に書き込みました。entry 数は約200件です。書き込んだ JSON は検証していません。\n\ndialog 名はありません。全 entry が `dialog: null` のクエスト／ジャーナル文で、話者もいません。クエスト説明は常体（だ・である）の地の文、タイトルと目的は体言止めか「 / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。JSON は目視確認済みです。会話（dialog）はなく、すべてクエスト・ジャーナル文です。`{mf|…}` はすべて省略し、主語は「指揮官」に置き換えました。\n\n用語: Solemn Hour → ソレム・アワー\n用語: ziggurat → ジッグラト"
     }
   ]
 }
