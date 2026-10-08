@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 108450,
-  "updatedAt": "2026-10-08T10:38:21.586Z",
+  "nextStart": 108750,
+  "updatedAt": "2026-10-08T10:42:26.544Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4841,6 +4841,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-08_round364/",
       "coveredDialogs": [],
       "note": "v2リライト第364弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON構文の検証はしていません（実行権限がないため、書き込み時の記述を確認しただけです）。会話(dialog)はすべて `null` で、クエスト・日誌テキストのみです（ヴェレクシア、ハイラー/悪夢の紡ぎ手、継承者の手、アルダーパッシュ、セイルカインド、百面相など）。\n\n`<ctrl_0/>` は1件 / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。書き込んだ内容は目視で確認しましたが、JSONとしてのパースはしていません（コマンド実行の権限がないため）。\n\n登場した会話（dialog名）はありません。全entryの `dialog` が null で、クエスト／ジャーナル文と選択肢だけのチャンクでした。\n\n気づ"
+    },
+    {
+      "start": 108450,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-08_round365/",
+      "coveredDialogs": [],
+      "note": "v2リライト第365弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON が正しいかは目視で確認しただけで、パーサーでは検証していません（Bash 等は使っていません）。対象はすべて dialog なしのクエスト日誌・タイトル文です。\n\n気づいた点が2つあります。\n- `{mf|his|her}` などは、日本語では不要なので省略しました。 / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。実行による検証はしておらず、JSON構文は目視で確認しただけです。dialog名はすべて null で、中身はクエストログ（Lann、Nenio、Regill、Seelah の各クエスト）です。原文に `{mf|he|she}` が5箇所ありましたが、日本語では不要なので"
     }
   ]
 }

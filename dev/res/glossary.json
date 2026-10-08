@@ -31045,6 +31045,24 @@
       "target": "ヴェルグ",
       "note": "ブラックウォーター一族の集落跡を指揮官に教えたケリッド人。",
       "category": "Character"
+    },
+    {
+      "source": "Valley of Temples",
+      "target": "神殿の谷",
+      "note": "イズ近郊の遺跡。サヴァメレクがモングレルを隠した場所。",
+      "category": "Location"
+    },
+    {
+      "source": "Gravestone Rock",
+      "target": "グレイヴストーン・ロック",
+      "note": "シーラの個人クエストで訪れる場所。",
+      "category": "Location"
+    },
+    {
+      "source": "Baphomite",
+      "target": "バフォメット教徒",
+      "note": "形容詞用法（Baphomite hideout等）。複数形Baphomitesと統一。",
+      "category": "General"
     }
   ]
 }
