@@ -101,7 +101,11 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
     `gain +1 level to the [X] feat` →「特技[X]のレベルが1上昇する」、`Adds N X Points` →「XポイントがN増加する」。
     `Unlocks the [X] decree` →「勅令[X]が解放される」、`N [X] are recruited at the Commander's headquarters`
     →「[X]がNユニット、指揮官の司令部で募兵される」（「N人」にしない）。
-- 宇宙論の `Plane`（`Upper/Lower Planes` `Plane of Earth` 等）は「位界」で統一する（「次元」にしない）。
+- 宇宙論の `Plane`（`Upper/Lower Planes` `Plane of Earth` 等）は「位界」で統一する（「次元」「次元界」にしない）。
+  `Upper Planes`→上方位界、`Lower Planes`→下方位界、`Outer Planes`→外方位界、`Elemental Planes`→元素位界、
+  `planar rift`→位界の裂け目（「上位次元」「上位界」「下位位界」等の揺れを作らない）。
+  定着済みの固有名 `Material/Astral/Ethereal Plane`（物質界／アストラル界／エーテル界）と、
+  PRD訳語（`Planar Hunter`＝次元狩り、`Extraplanar`副種別、`Dimension*`系）、原文が `dimension` の箇所は「次元」のまま。
 - 同一人物が話者IDや原文スペル違い（`Joran`/`Jorun Vane` 等）で登場することがある。
   glossaryに既存の別名エントリがないか確認し、あれば訳語を合わせる。
 - `the Wound`（`Worldwound`の口語的な略称）は`Worldwound`と同じ「ワールドウーンド」で訳す

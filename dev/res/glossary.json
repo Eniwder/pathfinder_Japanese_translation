@@ -2279,8 +2279,8 @@
     },
     {
       "source": "Outer Planes",
-      "target": "外方次元",
-      "note": "天使・悪魔などの不死の存在が多くの時間を過ごす、物質界の外にある諸次元。"
+      "target": "外方位界",
+      "note": "天使・悪魔などの不死の存在が多くの時間を過ごす、物質界の外にある諸位界。「外方次元」にしない。"
     },
     {
       "source": "Khorramzadeh",
@@ -17204,9 +17204,9 @@
     },
     {
       "source": "Elemental Planes",
-      "target": "元素界",
+      "target": "元素位界",
       "category": "Place",
-      "note": "風の元素界/地の元素界/水の元素界など。"
+      "note": "風の元素位界/地の元素位界/水の元素位界など。個別名はPlane of Earth＝地の位界。"
     },
     {
       "source": "Charm",
@@ -30329,7 +30329,7 @@
     {
       "source": "Lower Planes",
       "target": "下方位界",
-      "note": "Upper Planes（上方位界）の対。悪の住まう下層の諸プレインの総称。round340では「下位の位界」と訳された。",
+      "note": "Upper Planes（上方位界）の対。悪の住まう下層の諸プレインの総称。「下位位界」「下位の位界」にしない。",
       "category": "General"
     },
     {
