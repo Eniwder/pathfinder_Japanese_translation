@@ -106,6 +106,10 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
   `planar rift`→位界の裂け目（「上位次元」「上位界」「下位位界」等の揺れを作らない）。
   定着済みの固有名 `Material/Astral/Ethereal Plane`（物質界／アストラル界／エーテル界）と、
   PRD訳語（`Planar Hunter`＝次元狩り、`Extraplanar`副種別、`Dimension*`系）、原文が `dimension` の箇所は「次元」のまま。
+- 人名・神名・地名の区切りは原文に従う：スペース区切り→中黒「・」（`Areelu Vorlesh`→アレール・ヴォーレス）、
+  ハイフンで一語になった名前→全角「＝」（`Zon-Kuthon`→ゾン＝クーソン、`Ar-Mikheth`→アー＝ミケス）。
+  半角「=」は使わない。`Half-Elf` `Will-o'-wisp` `Venture-Captain` のような一般語・複合語や
+  `Nok-Nok` のような畳語のハイフンは「＝」にせず、区切らないか「・」のまま。
 - 同一人物が話者IDや原文スペル違い（`Joran`/`Jorun Vane` 等）で登場することがある。
   glossaryに既存の別名エントリがないか確認し、あれば訳語を合わせる。
 - `the Wound`（`Worldwound`の口語的な略称）は`Worldwound`と同じ「ワールドウーンド」で訳す

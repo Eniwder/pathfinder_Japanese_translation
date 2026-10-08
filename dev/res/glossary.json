@@ -329,7 +329,7 @@
     },
     {
       "source": "Cyth-V'sug",
-      "target": "シス・ヴィサグ",
+      "target": "シス＝ヴィサグ",
       "note": "Demon Lord of fungi and parasites."
     },
     {
@@ -634,12 +634,12 @@
     },
     {
       "source": "Shub-Niggurath",
-      "target": "シュブ・ニグラス",
+      "target": "シュブ＝ニグラス",
       "note": "Outer Goddess of fertility, forests, and monsters."
     },
     {
       "source": "Xhamen-Dor",
-      "target": "クサメン・ドア",
+      "target": "クサメン＝ドア",
       "note": "Great Old One of decay, parasites, and transformation."
     },
     {
@@ -3526,7 +3526,7 @@
     },
     {
       "source": "Ar-Mikheth",
-      "target": "アー・ミケス",
+      "target": "アー＝ミケス",
       "category": "Character",
       "note": "ノクティキュラ派インヴィディアク（シャドウデーモン）の指導者、死亡済み。round54で言及。",
       "caseSensitive": true
@@ -6581,7 +6581,7 @@
     },
     {
       "source": "Yumillian Nikdel-Trazze",
-      "target": "ユミリアン・ニクデル=トラッゼ",
+      "target": "ユミリアン・ニクデル＝トラッゼ",
       "category": "NPC",
       "note": "独特な製法でワインを作るヴィントナー。Sosiel_Winemakers_dialogue/Degustation_dialogueに登場（round167）。",
       "caseSensitive": true
@@ -6608,7 +6608,7 @@
     },
     {
       "source": "Tap-Genn Cemetery",
-      "target": "タップ=ジェン墓地",
+      "target": "タップ＝ジェン墓地",
       "category": "Location",
       "note": "多くの英雄が葬られたとされる、所在不明の墓地。Ulbrig_Event_Interview_dialogueに登場（round168）。",
       "caseSensitive": true
