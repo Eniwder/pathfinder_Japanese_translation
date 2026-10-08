@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 108750,
-  "updatedAt": "2026-10-08T10:42:26.544Z",
+  "nextStart": 109050,
+  "updatedAt": "2026-10-08T14:53:49.623Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4849,6 +4849,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-08_round365/",
       "coveredDialogs": [],
       "note": "v2リライト第365弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON が正しいかは目視で確認しただけで、パーサーでは検証していません（Bash 等は使っていません）。対象はすべて dialog なしのクエスト日誌・タイトル文です。\n\n気づいた点が2つあります。\n- `{mf|his|her}` などは、日本語では不要なので省略しました。 / 100件を訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。実行による検証はしておらず、JSON構文は目視で確認しただけです。dialog名はすべて null で、中身はクエストログ（Lann、Nenio、Regill、Seelah の各クエスト）です。原文に `{mf|he|she}` が5箇所ありましたが、日本語では不要なので"
+    },
+    {
+      "start": 108750,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-08_round366/",
+      "coveredDialogs": [],
+      "note": "v2リライト第366弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件すべて訳しました（原文側も200件で、件数は一致）。JSONとして正しく読み込めるかの検証や `import` の dry-run は、実行権限がないため未実施です。\n\n- **会話:** `dialog` はすべて null で、クエスト／ジャーナル系の説明文とタイトルでした（ソシエル、ウェンデュアグ、ウォルジフ、十字軍の章 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。書き込んだ内容は目視で確認済みです。dialog 名はなく（全件 `dialog: null`）、内容はクエストジャーナルの文章と題名です。\n\n`{mf|he|she}` などの性別分岐タグは、日本語では主語を省いて自然に読めるため、すべて省きました。`<ctrl_N/>` は今回のチャンクには含"
     }
   ]
 }

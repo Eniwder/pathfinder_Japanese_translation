@@ -2275,7 +2275,7 @@
     {
       "source": "Starstone",
       "target": "スターストーン",
-      "note": "イオメダエが試練を受け神格を得たとされる遺物。「Test of the Starstone」＝「スターストーンの試練」。"
+      "note": "アイオーメディが試練を受け神格を得たとされる遺物。「Test of the Starstone」＝「スターストーンの試練」。"
     },
     {
       "source": "Outer Planes",
@@ -2295,7 +2295,7 @@
     {
       "source": "Cheliax",
       "target": "チェリアクス",
-      "note": "イオメダエの出身地とされる、悪名高い国家。"
+      "note": "アイオーメディの出身地とされる、悪名高い国家。"
     },
     {
       "source": "Houndhearts",
@@ -4511,7 +4511,7 @@
       "source": "Ignitiel",
       "target": "イグニティエル",
       "category": "Character",
-      "note": "イオメダエに仕える天使（DevilishTemptation_Angels_dialogue、round82）。",
+      "note": "アイオーメディに仕える天使（DevilishTemptation_Angels_dialogue、round82）。",
       "caseSensitive": true
     },
     {
@@ -31063,6 +31063,18 @@
       "target": "バフォメット教徒",
       "note": "形容詞用法（Baphomite hideout等）。複数形Baphomitesと統一。",
       "category": "General"
+    },
+    {
+      "source": "Storms Peak",
+      "target": "ストームズ・ピーク",
+      "note": "コラムザデフがドレゼン南に築いた城塞。",
+      "category": "Location"
+    },
+    {
+      "source": "Jefto",
+      "target": "ジェフト",
+      "note": "アビスの月の元の持ち主の一族（ジェフト家）。",
+      "category": "Character"
     }
   ]
 }
