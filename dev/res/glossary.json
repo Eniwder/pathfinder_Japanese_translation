@@ -31039,6 +31039,12 @@
       "target": "ソレム・アワー",
       "note": "イラベスの一族に伝わる剣の銘。",
       "category": "Item"
+    },
+    {
+      "source": "Velg",
+      "target": "ヴェルグ",
+      "note": "ブラックウォーター一族の集落跡を指揮官に教えたケリッド人。",
+      "category": "Character"
     }
   ]
 }
