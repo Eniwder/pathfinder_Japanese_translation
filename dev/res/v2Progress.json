@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
   "nextStart": 110550,
-  "updatedAt": "2026-10-08T15:29:56.297Z",
+  "updatedAt": "2026-10-08T15:49:33.498Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4897,6 +4897,22 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-09_round371/",
       "coveredDialogs": [],
       "note": "v2リライト第371弾（runRoundLoop.mjs による自動実行）。 145件を訳し、`chunk_0000.translations.json` に書き込みました。キー数の再確認とJSON構文の検証はしていません。\n\ndialog名はすべて null で、ロード画面のヒント、名言、チュートリアル、クエスト説明、用語説明などです。`{mf|...}` は、日本語で性別を作り分けなくても自然に読める箇所だけ、タグごと省きました。`{bind|...}` と `{con"
+    },
+    {
+      "start": 0,
+      "limit": 450,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-09_round1-3_redo/",
+      "coveredDialogs": [
+        "Diplomacy_2_Dialogue",
+        "Diplomacy_3_Dialogue",
+        "Diplomacy_4_Dialogue",
+        "Diplomacy_5_Dialogue",
+        "Diplomacy_6_Dialogue",
+        "Diplomacy_7_Dialogue",
+        "Diplomacy_8_Dialogue"
+      ],
+      "note": "round1〜3（zhCN.jsonへ直接マージ済みだった450件）を現行の抽出形式・翻訳ガイドでやり直し。他roundと同じくchunks_reviewに未マージで温存（zhCN.json内の旧round1〜3訳は未変更）。"
     }
   ]
 }
