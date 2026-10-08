@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 109350,
-  "updatedAt": "2026-10-08T14:57:43.020Z",
+  "nextStart": 109650,
+  "updatedAt": "2026-10-08T15:01:25.980Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4865,6 +4865,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-08_round367/",
       "coveredDialogs": [],
       "note": "v2リライト第367弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しただけで、パーサーでは検証していません。\n\n登場した dialog はありません。全 entry が dialog なし（クエスト名・クエスト説明・目標文）で、話者もありませんでした。\n\n気づいた点：\n- 地の文は常体で訳しました。\n- `{mf|him|her}` / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。dialog名はすべて null で、クエスト／ジャーナル文のみでした。`{mf}` を含む2件は、日本語で作り分けが不要なため `{mf}` ごと省いています。\n\n用語: Ulbrig → ウルブリグ\n用語: Akhshan → アクシャン\n用語: ice fane "
+    },
+    {
+      "start": 109350,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-09_round368/",
+      "coveredDialogs": [],
+      "note": "v2リライト第368弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`import --dry-run` は実行していません。登場した dialog 名はなく（全て dialog: null）、シスハッドを追う語り手視点のクエストジャーナルと、ケナブレスの祝宴クエストです。\n\n気づいた点は2つです。\n- 原文 / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、スクリプトでの検証は権限上できていません。\n\n登場した会話(dialog名)はありません。全entryが `dialog: null` で、クエストの説明文と題名です。\n\n気づいた点は2つです。\n- 原文中の `{mf|...}` "
     }
   ]
 }

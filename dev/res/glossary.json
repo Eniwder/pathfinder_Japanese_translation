@@ -31087,6 +31087,24 @@
       "target": "アクシャン",
       "note": "クエスト目標で殺害対象となる長老（elder Akhshan）。",
       "category": "Character"
+    },
+    {
+      "source": "Lucy",
+      "target": "ルーシー",
+      "note": "異世界から迷い込んだ少女。ジョン・愛犬ライカーと共に帰還するクエストの人物。",
+      "category": "Character"
+    },
+    {
+      "source": "Ryker",
+      "target": "ライカー",
+      "note": "ルーシーの愛犬。",
+      "category": "Character"
+    },
+    {
+      "source": "Lord of Frost and Bones",
+      "target": "氷と骨の王",
+      "note": "クエスト目標に登場する敵の称号。",
+      "category": "Title"
     }
   ]
 }
