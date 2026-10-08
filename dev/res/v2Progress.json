@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 107850,
-  "updatedAt": "2026-10-08T10:28:32.835Z",
+  "nextStart": 108150,
+  "updatedAt": "2026-10-08T10:33:22.964Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4825,6 +4825,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-08_round362/",
       "coveredDialogs": [],
       "note": "v2リライト第362弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全 entry を訳し、`chunk_0000.translations.json` に書き込みました。entry 数は約200件です。書き込んだ JSON は検証していません。\n\ndialog 名はありません。全 entry が `dialog: null` のクエスト／ジャーナル文で、話者もいません。クエスト説明は常体（だ・である）の地の文、タイトルと目的は体言止めか「 / 100件すべて訳して `chunk_0001.translations.json` に書き込みました。JSON は目視確認済みです。会話（dialog）はなく、すべてクエスト・ジャーナル文です。`{mf|…}` はすべて省略し、主語は「指揮官」に置き換えました。\n\n用語: Solemn Hour → ソレム・アワー\n用語: ziggurat → ジッグラト"
+    },
+    {
+      "start": 107850,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-08_round363/",
+      "coveredDialogs": [],
+      "note": "v2リライト第363弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`dev/lang/chunks/chunk_0000.translations.json` に書き込みました。JSON の構文は書いた内容を目視で確認しただけで、パーサーでは検証していません。会話（dialog）はすべて `null` で、クエスト／ジャーナルの説明文と目標文のみでした。\n\n`{mf|...}` は「彼／彼女」を訳さず `{mf}` ごと省略し、`{mf|mast / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しています。対象はクエスト日誌・目標文だけで、dialog はすべて null でした。\n\n気づいた点:\n- `{mf|his|her}` などは、日本語では不要なため `{mf}` ごと省きました。\n- ほぼ同文の重複entryは同じ訳に揃えました。\n\n用語: Fulso"
     }
   ]
 }
