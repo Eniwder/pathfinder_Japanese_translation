@@ -30613,6 +30613,102 @@
       "target": "ストーンワイルズ",
       "note": "石化した図書館（Petrified Library）がある地域。",
       "category": "Location"
+    },
+    {
+      "source": "Ronneck",
+      "target": "ロンネック",
+      "note": "スレッショルドの看守。ファウンドラスト氏族の少年兵で、イズへ急報を届けた。愛称Ronnieはロニー。",
+      "category": "Character"
+    },
+    {
+      "source": "Stern Brother",
+      "target": "厳しき兄弟",
+      "note": "セトレイ・デヴィマイの相棒の黒い狼。",
+      "category": "Character"
+    },
+    {
+      "source": "Ilthuliak",
+      "target": "イルスリアク",
+      "note": "リバー・キングダムを荒らした黒いドラゴン。",
+      "category": "Character"
+    },
+    {
+      "source": "Labyrinth of Mind",
+      "target": "精神の迷宮",
+      "note": "悪夢の紡ぎ手が率いるバフォメット信者の一団。",
+      "category": "Organization"
+    },
+    {
+      "source": "Eye of Truth",
+      "target": "真実の眼",
+      "note": "ハイラーの片眼鏡。幻を見通す。",
+      "category": "Item"
+    },
+    {
+      "source": "Baron Falron",
+      "target": "ファロン男爵",
+      "note": "ネロシャンで急死した十字軍兵士。",
+      "category": "Character"
+    },
+    {
+      "source": "Bee Grove",
+      "target": "蜜蜂の森",
+      "note": "サーコリスの地名（セトレイの遺物の幻視）。",
+      "category": "Location"
+    },
+    {
+      "source": "Castrovin Sea",
+      "target": "カストロヴィン海",
+      "note": "古代イオバリアの東端の海。",
+      "category": "Location"
+    },
+    {
+      "source": "Otib the Necromancer",
+      "target": "死霊術師オティブ",
+      "note": "イオバリアの疫病の元凶と噂される人物。",
+      "category": "Character"
+    },
+    {
+      "source": "Tearplague",
+      "target": "涙の疫病",
+      "note": "古代イオバリアを襲った疫病の一つ。",
+      "category": "Lore"
+    },
+    {
+      "source": "Chardeath",
+      "target": "焼け死に",
+      "note": "古代イオバリアを襲った疫病の一つ。",
+      "category": "Lore"
+    },
+    {
+      "source": "Choking Death",
+      "target": "窒息死",
+      "note": "古代イオバリアを襲った疫病の一つ。",
+      "category": "Lore"
+    },
+    {
+      "source": "Kexy",
+      "target": "ケクシー",
+      "note": "ヌワン・クアント（小説内の探偵ノーム）の助手。",
+      "category": "Character"
+    },
+    {
+      "source": "Tyrin Dean",
+      "target": "ティリン・ディーン",
+      "note": "書物『旅の司祭の手記』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Pax Groometra",
+      "target": "パックス・グルーメトラ",
+      "note": "書物『アブサロムの影』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Hastef Umme",
+      "target": "ハステフ・ウンメ",
+      "note": "書物『古代イオバリアの呪い』の著者。",
+      "category": "Character"
     }
   ]
 }
