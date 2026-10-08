@@ -30709,6 +30709,330 @@
       "target": "ハステフ・ウンメ",
       "note": "書物『古代イオバリアの呪い』の著者。",
       "category": "Character"
+    },
+    {
+      "source": "Cosmic Caravan",
+      "target": "宇宙の隊商",
+      "note": "アズラント由来の十三星座の体系。各星座は「〜座」（Thrush=ツグミ座、Lantern Bearer=灯持ち座等）。",
+      "category": "Lore"
+    },
+    {
+      "source": "Forae Logos",
+      "target": "フォラエ・ロゴス",
+      "note": "アブサロムの学術機関（通称『賢者の家』）。ジュビロストが所属。",
+      "category": "Organization"
+    },
+    {
+      "source": "Decemvirate",
+      "target": "十人委員会",
+      "note": "パスファインダー・ソサエティの覆面指導部。",
+      "category": "Organization"
+    },
+    {
+      "source": "Venture-Captain",
+      "target": "ベンチャー・キャプテン",
+      "note": "パスファインダー・ソサエティの役職。",
+      "category": "Organization"
+    },
+    {
+      "source": "Smiling Knights",
+      "target": "微笑みの騎士団",
+      "note": "ドレゼン陥落時に戦った騎士の分隊。",
+      "category": "Organization"
+    },
+    {
+      "source": "Runelord",
+      "target": "ルーンロード",
+      "note": "サッシロンの七大魔術師。",
+      "category": "Character"
+    },
+    {
+      "source": "Archmage Xin",
+      "target": "大魔術師ジン",
+      "note": "サッシロン帝国の建国者・君主。",
+      "category": "Character"
+    },
+    {
+      "source": "Harem",
+      "target": "ハレム",
+      "note": "アルシニラの政庁。",
+      "category": "Location"
+    },
+    {
+      "source": "Mother of Beasts",
+      "target": "獣の母",
+      "note": "ラマシュトゥの異名。",
+      "category": "Deity"
+    },
+    {
+      "source": "She of the Sevenfold Swarm",
+      "target": "七重の群れの女",
+      "note": "イジャグナの異名。",
+      "category": "Character"
+    },
+    {
+      "source": "Iaozrael",
+      "target": "イアオズラエル",
+      "note": "鶏を聖印とする地獄の公爵。",
+      "category": "Deity"
+    },
+    {
+      "source": "Vermlek",
+      "target": "ヴァームレク",
+      "note": "墓荒らしの魂から生まれる蠕虫型デーモン。",
+      "category": "Creature"
+    },
+    {
+      "source": "Annis",
+      "target": "アニス",
+      "note": "ハグの一種。",
+      "category": "Creature"
+    },
+    {
+      "source": "Needleglens",
+      "target": "ニードルグレン",
+      "note": "ワールドウーンド近くの森。",
+      "category": "Location"
+    },
+    {
+      "source": "Northmounds",
+      "target": "ノースマウンド",
+      "note": "サーコリス北部の地域。",
+      "category": "Location"
+    },
+    {
+      "source": "Nirmathas",
+      "target": "ニルマサス",
+      "note": "アヴィスタンの国。",
+      "category": "Location"
+    },
+    {
+      "source": "Estrovian Forest",
+      "target": "エストロビア森林",
+      "note": "メンデヴの森。",
+      "category": "Location"
+    },
+    {
+      "source": "Darkfords",
+      "target": "ダークフォーズ",
+      "note": "書物に登場する村。",
+      "category": "Location"
+    },
+    {
+      "source": "Viksola",
+      "target": "ヴィクソラ",
+      "note": "書物の手紙に登場する村。",
+      "category": "Location"
+    },
+    {
+      "source": "Temple of Roses",
+      "target": "薔薇の神殿",
+      "note": "書物に登場する神殿。",
+      "category": "Location"
+    },
+    {
+      "source": "Night of the Witch",
+      "target": "魔女の夜",
+      "note": "サーコリア難民の祭り（Vorlesh's Verdict=ヴォーレスの審判、Bonfire Night=かがり火の夜とも）。",
+      "category": "Lore"
+    },
+    {
+      "source": "Commander Verstol",
+      "target": "ヴェルストル司令官",
+      "note": "ドレゼン陥落時の司令官。",
+      "category": "Character"
+    },
+    {
+      "source": "Knight Jermon",
+      "target": "騎士ジェルモン",
+      "note": "ガルフリーへの呪詛の手紙の書き手。",
+      "category": "Character"
+    },
+    {
+      "source": "Hilor",
+      "target": "ハイラー",
+      "note": "書物『ベンチャー・キャプテン・ハイラー驚異の冒険』の主人公。",
+      "category": "Character"
+    },
+    {
+      "source": "Gregas Jeffs",
+      "target": "グレガス・ジェフス",
+      "note": "書物に登場するパスファインダー。",
+      "category": "Character"
+    },
+    {
+      "source": "Marmonux",
+      "target": "マルモヌクス",
+      "note": "書物『マルモヌクスの挑戦』のインキュバス。",
+      "category": "Character"
+    },
+    {
+      "source": "Orzuna",
+      "target": "オルズナ",
+      "note": "マルモヌクスの妹のサキュバス。",
+      "category": "Character"
+    },
+    {
+      "source": "Pekker",
+      "target": "ペッカー",
+      "note": "実験日誌のクアジット。",
+      "category": "Character"
+    },
+    {
+      "source": "Mirah",
+      "target": "ミラ",
+      "note": "ラマシュトゥに授かった娘（日記）。",
+      "category": "Character"
+    },
+    {
+      "source": "Nelika",
+      "target": "ネリカ",
+      "note": "書物『旅の司祭の手記』の花嫁。",
+      "category": "Character"
+    },
+    {
+      "source": "Genty",
+      "target": "ジェンティ",
+      "note": "書物『庶民の見た十字軍』の自称十字軍兵士。",
+      "category": "Character"
+    },
+    {
+      "source": "Tullius Marah",
+      "target": "トゥリウス・マラー",
+      "note": "書物『庶民の見た十字軍』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Private Brim",
+      "target": "ブリム二等兵",
+      "note": "書物『十字軍兵士ブリムの冒険』の主人公。",
+      "category": "Character"
+    },
+    {
+      "source": "Nels Kramihr",
+      "target": "ネルス・クラミール",
+      "note": "書物『十字軍兵士ブリムの冒険』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Briggie the Sausage Maker",
+      "target": "ソーセージ職人ブリギー",
+      "note": "書物の登場人物。",
+      "category": "Character"
+    },
+    {
+      "source": "Greglie the Artillerist",
+      "target": "砲兵のグレグリー",
+      "note": "書物の登場人物。",
+      "category": "Character"
+    },
+    {
+      "source": "Wuzlich the Spearman",
+      "target": "槍兵のウズリッヒ",
+      "note": "書物の登場人物。",
+      "category": "Character"
+    },
+    {
+      "source": "Floggy the Sculptor",
+      "target": "彫刻家フロギー",
+      "note": "鶏像の作者（メモ）。",
+      "category": "Character"
+    },
+    {
+      "source": "Regor",
+      "target": "レゴール",
+      "note": "書物の登場人物（モーグラの相棒）。",
+      "category": "Character"
+    },
+    {
+      "source": "Moghra",
+      "target": "モーグラ",
+      "note": "書物の登場人物（女術者）。",
+      "category": "Character"
+    },
+    {
+      "source": "Phargas",
+      "target": "ファルガス",
+      "note": "書物の登場人物（司祭）。",
+      "category": "Character"
+    },
+    {
+      "source": "Axilar Trezbot",
+      "target": "アクシラー・トレズボット",
+      "note": "書物の伝記の主人公。Lord Trezbot=トレズボット卿。",
+      "category": "Character"
+    },
+    {
+      "source": "Beryg",
+      "target": "ベリグ",
+      "note": "プルラ神殿の日誌の書き手。",
+      "category": "Character"
+    },
+    {
+      "source": "Willam",
+      "target": "ウィラム",
+      "note": "ヴィクソラ村の領主（Sir Willam=ウィラム卿）。",
+      "category": "Character"
+    },
+    {
+      "source": "Kreesh Cerka",
+      "target": "クリーシュ・チェルカ",
+      "note": "書物『マルモヌクスの挑戦』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Abron Kvard",
+      "target": "アブロン・クヴァルド",
+      "note": "書物『メンデヴ国最新史』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Maki Vanos",
+      "target": "マキ・ヴァノス",
+      "note": "書物『魔女の夜』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Beirzimbim Gimzepar",
+      "target": "ベイルジンビム・ギムゼパル",
+      "note": "パンフレット『アルシニラの見どころ』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Janni Beshuro",
+      "target": "ジャンニ・ベシューロ",
+      "note": "書物『サーコリアの魔術師に関する覚書』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Nillen Malkister",
+      "target": "ニレン・マルキスター",
+      "note": "カリストリア信徒の野戦礼拝堂の祈りを記した書物の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Elestin of Sinaria",
+      "target": "シナリアのエレスティン",
+      "note": "書物『薔薇の神殿』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Guisa Nordequanni",
+      "target": "ギーザ・ノルデクアンニ",
+      "note": "書物『退色との戦い』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Aren Roarvie",
+      "target": "アレン・ロアヴィー",
+      "note": "書物『パスファインダーの伝説』の著者。",
+      "category": "Character"
+    },
+    {
+      "source": "Guino Pollen",
+      "target": "ギーノ・ポレン",
+      "note": "書物『北アヴィスタン旅行記』の著者。",
+      "category": "Character"
     }
   ]
 }
