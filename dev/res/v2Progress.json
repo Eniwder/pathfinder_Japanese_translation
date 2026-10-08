@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 110250,
-  "updatedAt": "2026-10-08T15:11:41.451Z",
+  "nextStart": 110550,
+  "updatedAt": "2026-10-08T15:29:56.297Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4889,6 +4889,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-09_round370/",
       "coveredDialogs": [],
       "note": "v2リライト第370弾（runRoundLoop.mjs による自動実行）。 200件を訳して `chunk_0000.translations.json` に書き込みました。JSON構文の確認はしていません。全件が `dialog: null` のクエスト／ジャーナル文で、地の文は常体にしました。\n\n- `{mf|his|her}` などの性別分岐は、日本語で不要になるため `{mf}` ごと省きました。\n- `{mf|master|mistress}` は「ご主人様」に / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。dialog 名はすべて null で、クエスト／ジャーナル文のチャンクです。JSON 構文は目視で確認しました。\n\n気づいた点は2つです。`{mf}` はすべて日本語で不要になったため、訳文では省きました。`<ctrl_N/>` はこのチャンクには出てきません。\n\n用語: ziggurat → "
+    },
+    {
+      "start": 110250,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-09_round371/",
+      "coveredDialogs": [],
+      "note": "v2リライト第371弾（runRoundLoop.mjs による自動実行）。 145件を訳し、`chunk_0000.translations.json` に書き込みました。キー数の再確認とJSON構文の検証はしていません。\n\ndialog名はすべて null で、ロード画面のヒント、名言、チュートリアル、クエスト説明、用語説明などです。`{mf|...}` は、日本語で性別を作り分けなくても自然に読める箇所だけ、タグごと省きました。`{bind|...}` と `{con"
     }
   ]
 }

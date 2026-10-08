@@ -31129,6 +31129,18 @@
       "target": "ジッグラト",
       "note": "クエスト名等に登場する階段状神殿（「Revolt at the Ziggurat」など）。",
       "category": "Location"
+    },
+    {
+      "source": "Defensive Fighting",
+      "target": "防御的戦闘",
+      "note": "戦闘中に切り替える戦闘能力（Fighting Defensivelyと同じ訳）。",
+      "category": "Combat"
+    },
+    {
+      "source": "Area of Effect",
+      "target": "範囲効果",
+      "note": "呪文等の効果範囲。略称AoEは原文どおり残す。",
+      "category": "Combat"
     }
   ]
 }
