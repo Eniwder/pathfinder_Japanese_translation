@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 109050,
-  "updatedAt": "2026-10-08T14:53:49.623Z",
+  "nextStart": 109350,
+  "updatedAt": "2026-10-08T14:57:43.020Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4857,6 +4857,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-08_round366/",
       "coveredDialogs": [],
       "note": "v2リライト第366弾（runRoundLoop.mjs による自動実行）。 `chunk_0000.translations.json` に200件すべて訳しました（原文側も200件で、件数は一致）。JSONとして正しく読み込めるかの検証や `import` の dry-run は、実行権限がないため未実施です。\n\n- **会話:** `dialog` はすべて null で、クエスト／ジャーナル系の説明文とタイトルでした（ソシエル、ウェンデュアグ、ウォルジフ、十字軍の章 / 100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。書き込んだ内容は目視で確認済みです。dialog 名はなく（全件 `dialog: null`）、内容はクエストジャーナルの文章と題名です。\n\n`{mf|he|she}` などの性別分岐タグは、日本語では主語を省いて自然に読めるため、すべて省きました。`<ctrl_N/>` は今回のチャンクには含"
+    },
+    {
+      "start": 109050,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-08_round367/",
+      "coveredDialogs": [],
+      "note": "v2リライト第367弾（runRoundLoop.mjs による自動実行）。 200件すべてを訳して `chunk_0000.translations.json` に書き込みました。JSON の構文は目視で確認しただけで、パーサーでは検証していません。\n\n登場した dialog はありません。全 entry が dialog なし（クエスト名・クエスト説明・目標文）で、話者もありませんでした。\n\n気づいた点：\n- 地の文は常体で訳しました。\n- `{mf|him|her}` / 100件を訳し、`chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認済みです。dialog名はすべて null で、クエスト／ジャーナル文のみでした。`{mf}` を含む2件は、日本語で作り分けが不要なため `{mf}` ごと省いています。\n\n用語: Ulbrig → ウルブリグ\n用語: Akhshan → アクシャン\n用語: ice fane "
     }
   ]
 }

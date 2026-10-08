@@ -31075,6 +31075,18 @@
       "target": "ジェフト",
       "note": "アビスの月の元の持ち主の一族（ジェフト家）。",
       "category": "Character"
+    },
+    {
+      "source": "Spirit Catchers",
+      "target": "スピリット・キャッチャー",
+      "note": "行方不明になり救出対象となる集団（クエスト目標）。",
+      "category": "Organization"
+    },
+    {
+      "source": "Akhshan",
+      "target": "アクシャン",
+      "note": "クエスト目標で殺害対象となる長老（elder Akhshan）。",
+      "category": "Character"
     }
   ]
 }
