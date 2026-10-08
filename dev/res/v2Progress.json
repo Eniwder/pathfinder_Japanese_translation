@@ -1,7 +1,7 @@
 {
   "note": "extract --filter=all --start=<nextStart> の進捗トラッカー。enGB_ordered.json（会話順）でここまで訳し終えた位置。次回セッションはここから続ける。",
-  "nextStart": 109650,
-  "updatedAt": "2026-10-08T15:01:25.980Z",
+  "nextStart": 109950,
+  "updatedAt": "2026-10-08T15:05:59.720Z",
   "mergePolicy": "訳し終えたチャンクは明示的なユーザーの指示があるまでzhCN.jsonへマージしない(詳細はメモリ translation-v2-merge-policy)。merged:falseの回はdev/lang/chunks_review/配下に未マージのまま置いてある。",
   "history": [
     {
@@ -4873,6 +4873,14 @@
       "reviewDir": "dev/lang/chunks_review/2026-10-09_round368/",
       "coveredDialogs": [],
       "note": "v2リライト第368弾（runRoundLoop.mjs による自動実行）。 chunk_0000 の全200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認しましたが、`import --dry-run` は実行していません。登場した dialog 名はなく（全て dialog: null）、シスハッドを追う語り手視点のクエストジャーナルと、ケナブレスの祝宴クエストです。\n\n気づいた点は2つです。\n- 原文 / 100件すべて訳し、`dev/lang/chunks/chunk_0001.translations.json` に書き込みました。JSON構文は目視で確認しましたが、スクリプトでの検証は権限上できていません。\n\n登場した会話(dialog名)はありません。全entryが `dialog: null` で、クエストの説明文と題名です。\n\n気づいた点は2つです。\n- 原文中の `{mf|...}` "
+    },
+    {
+      "start": 109650,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-09_round369/",
+      "coveredDialogs": [],
+      "note": "v2リライト第369弾（runRoundLoop.mjs による自動実行）。 200件を訳し、`chunk_0000.translations.json` に書き込みました。JSON構文は目視で確認しましたが、スクリプトでのパース検証はしていません。`dialog` はすべて null で、アイオン（Aeon）パスなどのクエスト日誌・ジャーナル文が中心です。`<ctrl_0/>` を含む1件は、そのまま保持しています。\n\n`{mf}` は日本語で作り分けが不要なため、すべて / chunk_0001 の100件すべてを訳し、`chunk_0001.translations.json` に書き込みました。会話(dialog)は全て null で、クエストジャーナル／ログ文のみでした。書いた内容は目視でJSONとして問題ないことを確認しました。\n\n気づいた点が2つあります。\n- 地の文の `{mf|he|she}` などは日本語で不要になったため、`{mf}` ごと省きました"
     }
   ]
 }

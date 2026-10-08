@@ -31105,6 +31105,24 @@
       "target": "氷と骨の王",
       "note": "クエスト目標に登場する敵の称号。",
       "category": "Title"
+    },
+    {
+      "source": "Ramley",
+      "target": "ラムリー",
+      "note": "ドレゼンの商人。略奪品の隠し場所に関わる。",
+      "category": "Character"
+    },
+    {
+      "source": "Valeniya",
+      "target": "ヴァレニヤ",
+      "note": "酒場で歌う巫女。",
+      "category": "Character"
+    },
+    {
+      "source": "Maitresse",
+      "target": "メートレス",
+      "note": "宮廷の主の称号。",
+      "category": "Title"
     }
   ]
 }
