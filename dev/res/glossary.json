@@ -3623,7 +3623,7 @@
     },
     {
       "source": "Baphomites",
-      "target": "バフォメット教徒",
+      "target": "バフォメットの信奉者",
       "category": "General",
       "note": "デモン卿バフォメットの信奉者たち。round55で言及。"
     },
@@ -3649,7 +3649,7 @@
     },
     {
       "source": "Deskarite",
-      "target": "デスカリ信奉者",
+      "target": "デスカリの信奉者",
       "category": "General",
       "note": "デモン卿デスカリの信奉者。round56で言及（Deskaritesの単数/複数形）。"
     },
@@ -6105,7 +6105,7 @@
     },
     {
       "source": "Deskarites",
-      "target": "デスカリ教徒",
+      "target": "デスカリの信奉者",
       "category": "Term",
       "note": "デーモン卿Deskariの信奉者たち。"
     },
@@ -6672,7 +6672,7 @@
     },
     {
       "source": "Shelynite",
-      "target": "シェリン教徒",
+      "target": "シェリンの信奉者",
       "category": "Term",
       "note": "女神Shelynの信徒・聖職者を指す語（RooftopDate1_dialogue、round171）。"
     },
@@ -6789,7 +6789,7 @@
     },
     {
       "source": "Kuthites",
-      "target": "クスの信奉者",
+      "target": "ゾン＝クーソンの信奉者",
       "category": "Organization",
       "note": "Zon-Kuthonを崇める者たち。Nidal出身のAneviaを狙う集団（Dialogue_AneviaMain、round175）。",
       "caseSensitive": true
@@ -22877,7 +22877,7 @@
     },
     {
       "source": "Kuthite",
-      "target": "クーソン信奉者",
+      "target": "ゾン＝クーソンの信奉者",
       "category": "Lore"
     },
     {
@@ -26894,13 +26894,13 @@
     },
     {
       "source": "Caydenites",
-      "target": "カイデン信奉者",
+      "target": "カイデンの信奉者",
       "note": "Followers of Cayden Cailean.",
       "category": "Religion"
     },
     {
       "source": "Milanite",
-      "target": "メラウニの信徒",
+      "target": "メラウニの信奉者",
       "note": "Follower of Milani (crusade event).",
       "category": "Religion"
     },
@@ -28214,7 +28214,7 @@
     },
     {
       "source": "Caydenite Scouts",
-      "target": "カイデン信奉者の斥候",
+      "target": "カイデンの信奉者の斥候",
       "note": "Army feat (crusade).",
       "category": "Crusade"
     },
@@ -31060,8 +31060,8 @@
     },
     {
       "source": "Baphomite",
-      "target": "バフォメット教徒",
-      "note": "形容詞用法（Baphomite hideout等）。複数形Baphomitesと統一。",
+      "target": "バフォメットの信奉者",
+      "note": "形容詞用法（Baphomite hideout等）も「バフォメットの信奉者の〜」。神格名+-ite(s)は「〜の信奉者」で統一。",
       "category": "General"
     },
     {
@@ -31141,6 +31141,18 @@
       "target": "範囲効果",
       "note": "呪文等の効果範囲。略称AoEは原文どおり残す。",
       "category": "Combat"
+    },
+    {
+      "source": "Asmodeans",
+      "target": "アスモデウスの信奉者",
+      "category": "Religion",
+      "note": "神格名+-ite(s)/-an(s)は「〜の信奉者」で統一。"
+    },
+    {
+      "source": "Abadarans",
+      "target": "アバダルの信奉者",
+      "category": "Religion",
+      "note": "同上。"
     }
   ]
 }
