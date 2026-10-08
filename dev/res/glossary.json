@@ -31123,6 +31123,12 @@
       "target": "メートレス",
       "note": "宮廷の主の称号。",
       "category": "Title"
+    },
+    {
+      "source": "Ziggurat",
+      "target": "ジッグラト",
+      "note": "クエスト名等に登場する階段状神殿（「Revolt at the Ziggurat」など）。",
+      "category": "Location"
     }
   ]
 }
