@@ -875,7 +875,7 @@
     },
     {
       "source": "Midnight Bolt",
-      "target": "ミッドナイトボルト",
+      "target": "ミッドナイト・ボルト",
       "note": "Special crossbow bolt capable of wounding demon lords."
     },
     {
@@ -1979,7 +1979,7 @@
     },
     {
       "source": "Tar-Baphon",
-      "target": "タル=バフォン",
+      "target": "タル＝バフォン",
       "note": "かつてウスタラヴを支配した伝説のリッチ王。「囁く暴君」とも。"
     },
     {
@@ -2606,7 +2606,7 @@
     },
     {
       "source": "Gorvo",
-      "target": "ゴルボ",
+      "target": "ゴルヴォ",
       "category": "NPC",
       "note": "Private。上官Damarを殺害した兵士。round37で言及。",
       "caseSensitive": true
@@ -3407,7 +3407,7 @@
     },
     {
       "source": "Lady Vorlesh",
-      "target": "レディ・ヴォーレシュ",
+      "target": "レディ・ヴォーレス",
       "category": "Character",
       "note": "ノクティキュラに仕える存在。Nahyndrianクリスタルの力を強化したとされる。round53で言及。",
       "caseSensitive": true
@@ -4257,7 +4257,7 @@
     },
     {
       "source": "Inger-Maggor",
-      "target": "インガー=マゴール",
+      "target": "インガー＝マゴール",
       "category": "Character",
       "note": "象牙の狩人の称号を得たバフォメットの手下。門の鍵を持っていた（round76）。",
       "caseSensitive": true
@@ -6504,7 +6504,7 @@
     },
     {
       "source": "Impossible Kingdoms",
-      "target": "インポッシブル・キングダムズ",
+      "target": "不可能王国",
       "category": "Location",
       "note": "旅の見世物師が語る遠方の異国。Dialogue_Ghost_Theaterに登場（round162）。",
       "caseSensitive": true
@@ -6839,7 +6839,7 @@
     },
     {
       "source": "Warden Staunton",
-      "target": "ウォーデン・ストーントン",
+      "target": "ウォーデン・スタントン",
       "note": "ドレゼンを長年守っていた獄長（Horgus_Dialogue、Irabeth_Dialogue、round177）。"
     },
     {
@@ -17226,7 +17226,7 @@
     },
     {
       "source": "Ssila'meshnik",
-      "target": "スシラメシュニク",
+      "target": "シラメシュニク",
       "category": "Creature"
     },
     {
@@ -29006,7 +29006,7 @@
     },
     {
       "source": "Captain Harmattan",
-      "target": "ハーマタン隊長",
+      "target": "ハーマッタン大尉",
       "note": "Nerosyan officer killed by aristocrats on the Commander's orders.",
       "category": "Character"
     },
@@ -31153,6 +31153,12 @@
       "target": "アバダルの信奉者",
       "category": "Religion",
       "note": "同上。"
+    },
+    {
+      "source": "Harmattan",
+      "target": "ハーマッタン",
+      "category": "Character",
+      "note": "Captain Harmattan＝ハーマッタン大尉。"
     }
   ]
 }
