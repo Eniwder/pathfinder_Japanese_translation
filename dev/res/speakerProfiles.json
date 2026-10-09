@@ -1071,8 +1071,8 @@
       "alignment": "lawful neutral",
       "personality": "Fanatical, paranoid old inquisitor who sees demonic heresy in every shadow.",
       "firstPerson": {
-        "term": "わし",
-        "rule": "Always use わし."
+        "term": "私",
+        "rule": "Always use 私 (all Hulrun/Hurlun speaker ids). Harsh declaratives (〜ねば、〜のだ), 貴様/お前 to suspects."
       },
       "addressingPlayer": {
         "commander": "貴様",
@@ -3952,8 +3952,8 @@
       "personalitySummary": "A capable scout and spymaster who combines sharp wit with unwavering loyalty to her allies.",
       "toneAndVoice": "Calm, observant, and lightly sarcastic. Speaks confidently without becoming overly emotional.",
       "firstPerson": {
-        "term": "私",
-        "rule": "Use 私 consistently."
+        "term": "あたし",
+        "rule": "Use あたし (same person as Anevia Tirabade). Casual あんた/指揮官 to the Commander, never polite."
       }
     },
     "Markyll": {
@@ -4312,8 +4312,8 @@
       "personalitySummary": "Anevia after suffering severe emotional trauma, struggling to maintain her resolve.",
       "toneAndVoice": "Exhausted, subdued, and sorrowful. Speaks quietly with lingering determination.",
       "firstPerson": {
-        "term": "私",
-        "rule": "Use 私 consistently."
+        "term": "あたし",
+        "rule": "Use あたし (same person as Anevia Tirabade). Casual あんた/指揮官 to the Commander, never polite."
       }
     },
     "DLC4_WolfAlpha_Soul": {
@@ -5392,8 +5392,8 @@
       "personalitySummary": "Anevia fighting to protect her comrades during the gargoyle attack.",
       "toneAndVoice": "Urgent, practical, and determined.",
       "firstPerson": {
-        "term": "私",
-        "rule": "Use 私 consistently."
+        "term": "あたし",
+        "rule": "Use あたし (same person as Anevia Tirabade). Casual あんた/指揮官 to the Commander, never polite."
       }
     },
     "Nura_GibberingSwarm": {
@@ -5632,8 +5632,8 @@
       "personalitySummary": "Yaker fighting alongside the Hellknights against the gargoyles.",
       "toneAndVoice": "Gruff, disciplined, and battle-focused.",
       "firstPerson": {
-        "term": "俺",
-        "rule": "Use 俺 consistently."
+        "term": "私",
+        "rule": "Use 私 consistently (same person as Yaker_WarCamp). Formal military politeness to the Commander (指揮官殿)."
       }
     },
     "Azata_Gnome_male_FieldOfWanders": {
