@@ -10,6 +10,7 @@
 //   english            訳文に残った4文字以上の英単語
 //   verify             chunks_reviewから一時訳文を組んでverify.jsにかける（同一キーの重複も検出）
 //   names              glossaryに無い固有名の表記ゆれ候補（同じ英語名に近い綴りのカタカナが2通り）
+//   kana               長音・中黒・ヴ／バ・小書きだけが違うカタカナ表記ゆれ
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -286,12 +287,29 @@ function names() {
   save('names.json', results);
 }
 
+// ---- kana ----
+
+// カタカナ語を正規化（長音・中黒・促音を除去、ヴ系→バ行、小書き→大書き）し、
+// 同じ正規形に2通り以上の表記がある語を列挙する（例：パーティ／パーティー、ソーサラーレベル／ソーサラー・レベル）
+function kana() {
+  const normalize = word => word.replace(/[ー・ッ]/g, '').replace(/ヴァ/g, 'バ').replace(/ヴィ/g, 'ビ').replace(/ヴェ/g, 'ベ').replace(/ヴォ/g, 'ボ').replace(/ヴ/g, 'ブ')
+    .replace(/[ァィゥェォ]/g, c => ({ ァ: 'ア', ィ: 'イ', ゥ: 'ウ', ェ: 'エ', ォ: 'オ' })[c]);
+  const frequency = {};
+  for (const { entry } of chunkEntries()) for (const word of entry.translation?.match(KATAKANA) ?? []) if (word.length >= 3) frequency[word] = (frequency[word] ?? 0) + 1;
+  const groups = {};
+  for (const [word, count] of Object.entries(frequency)) (groups[normalize(word)] ??= []).push([word, count]);
+  const results = Object.values(groups).filter(list => list.length > 1).map(list => list.sort((a, b) => b[1] - a[1])).filter(list => list[1][1] >= 2).sort((a, b) => b[1][1] - a[1][1]);
+  console.log(`groups: ${results.length}（リッチ／リーチのような別語も混ざるので目視で確認）`);
+  for (const list of results) console.log(list.map(([word, count]) => `${word}(${count})`).join(' / '));
+  save('kana.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names };
+const commands = { terms, speakers, barks, english, verify, names, kana };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
