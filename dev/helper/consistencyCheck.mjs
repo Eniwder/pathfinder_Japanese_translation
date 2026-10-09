@@ -9,6 +9,7 @@
 //                      本編会話とバークの一人称・二人称・文体を比較（regex で話者を絞り込み）
 //   english            訳文に残った4文字以上の英単語
 //   verify             chunks_reviewから一時訳文を組んでverify.jsにかける（同一キーの重複も検出）
+//   names              glossaryに無い固有名の表記ゆれ候補（同じ英語名に近い綴りのカタカナが2通り）
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -249,12 +250,48 @@ function verify() {
   spawnSync(process.execPath, ['./verify.js', `--source=${OUT}/verify-source.json`, `--translation=${OUT}/verify-translation.json`, `--report=${OUT}/verify-report.json`], { stdio: 'inherit' });
 }
 
+// ---- names ----
+
+// glossaryに無い英語の固有名（大文字語）ごとに、その語を含む訳文で一緒に出るカタカナ語を数え、
+// 同じ名前に綴りの近い2通りのカタカナが対応しているもの（＝表記ゆれ候補）を列挙する
+const NAME_STOPWORDS = new Set('The A An I You He She It We They This That What Who How Why When Where Yes No Oh Well But And Or So If Then There Here My Your His Her Our Their Not Do Did Is Are Was Were Be Have Has Had Will Would Can Could Should Shall May Might Must Let Lady Lord Sir Commander Queen King Mother Father Brother Sister God Goddess Master Mistress Choice Attack Persuasion Intimidate Bluff Leave Say Ask Tell Give Take Go Come Look See Please Thank Thanks Good Great All Every Some Any One Two Three Now Just Even Still Maybe Perhaps Of In On At To For With From By As Hey Ah Hmm Very Too Also Only First Last Next New Old Fine Right Wait Stop Enough Indeed Really Sure Kill Show Use Agree Wow Hello Goodbye Farewell Mythic Demon Demons Abyss Golarion Crusade Crusaders'.split(' '));
+
+function names() {
+  const known = new Set(glossaryEntries().map(entry => String(entry.source).toLowerCase()));
+  const byWord = {};
+  for (const { entry } of chunkEntries()) {
+    if (!entry.translation) continue;
+    const words = new Set((entry.text.replace(/<ctrl_\d+\/>/g, ' ').match(/\b[A-Z][a-z]{3,}\b/g) ?? []).filter(word => !NAME_STOPWORDS.has(word) && !known.has(word.toLowerCase())));
+    if (!words.size) continue;
+    const katakana = new Set(entry.translation.match(KATAKANA) ?? []);
+    for (const word of words) {
+      const stat = (byWord[word] ??= { count: 0, katakana: {} });
+      stat.count++;
+      for (const k of katakana) stat.katakana[k] = (stat.katakana[k] ?? 0) + 1;
+    }
+  }
+  const results = [];
+  for (const [word, stat] of Object.entries(byWord)) {
+    if (stat.count < 4) continue;
+    const candidates = Object.entries(stat.katakana).filter(([, n]) => n >= 2 && n / stat.count >= 0.15).sort((a, b) => b[1] - a[1]);
+    for (let i = 0; i < candidates.length; i++) for (let j = i + 1; j < candidates.length; j++) {
+      const [a, na] = candidates[i], [b, nb] = candidates[j];
+      if (a.includes(b) || b.includes(a)) continue;
+      const distance = levenshtein(a, b);
+      if (distance > 0 && distance <= Math.max(1, Math.floor(Math.min(a.length, b.length) / 3)) && na + nb >= stat.count * 0.6) results.push({ word, count: stat.count, a, na, b, nb });
+    }
+  }
+  results.sort((x, y) => y.count - x.count);
+  for (const r of results) console.log(`${r.word}(${r.count})\t${r.a}(${r.na}) / ${r.b}(${r.nb})`);
+  save('names.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify };
+const commands = { terms, speakers, barks, english, verify, names };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
