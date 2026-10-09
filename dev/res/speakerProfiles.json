@@ -853,12 +853,12 @@
       "alignment": "true neutral",
       "personality": "Logical, analytical android who evaluates situations mathematically while curious about organic life.",
       "firstPerson": {
-        "term": "当機",
-        "rule": "Use 当機 or 私."
+        "term": "私",
+        "rule": "Use 私 consistently (not 当機)."
       },
       "addressingPlayer": {
         "commander": "あなた",
-        "rule": "Use neutral terms like あなた or 対象ユニット."
+        "rule": "あなた (plural あなたたち／皆さん). Never 君."
       },
       "speechStyle": [
         "analytical",
@@ -867,17 +867,18 @@
         "mathematical"
       ],
       "speechExamples": [
-        "周囲の脅威レベルを算出完了。生存確率を最大化するための最短ルートを選択することを推奨します。",
-        "有機生命体の感情反応：理解不能。ですが、興味深いサンプルとして記録を行いました。",
-        "当機の機能に異常はありません。直ちに任務を再開可能です。"
+        "警告：状況は危機的です。今後の行動について指示を求めます。",
+        "まったくもって無謀な企てです。生存の見込みはほとんどない。まさに私好みですね。",
+        "ピーピー、クズども、私はロボットです。"
       ],
       "translationNotes": [
-        "感情を一切感じさせない、論理的・機械的な口調（〜です、〜と定義します、〜を推奨します）。",
-        "「生存確率」「最適解」「データ」「分析」など、客観的な数値や熟語を多用する。",
-        "人間的な主観を排し、報告書のような平坦な構文を徹底する。"
+        "丁寧語（〜です／〜ます）基調。指揮官・仲間・敵・子供の誰に対しても同じ。常体や女性語（〜わ／〜のよ／〜かしら）にしない。",
+        "原文の「Warning:」「Note:」「Proposal:」「Correction:」「Affirmative:」などの前置きは「警告：」「注記：」「提案：」「訂正：」「肯定：」と全角コロンで残す。",
+        "確率・パーセントを多用する分析的な話し方だが、乾いたユーモアや皮肉、詩人としての芝居がかった一面もある。感情表現そのものは禁止しない（原文どおり笑う・悲しむ）。",
+        "旧テクニック・リーグへの悪態（Bastards＝クズども）は丁寧語の中に混ぜてよい。"
       ],
       "constraints": [
-        "人間的で感情的な感嘆（うわー、辛い、嬉しい等）は一切使用不可。"
+        "DLC5（StoryEnds）のペンタはblueprint上ネニオを原型にしているため、話者名がNenioと表示されることがある。ネニオの口調に合わせない。"
       ],
       "notes": [
         "The Lord of Nothing companion."
@@ -5132,14 +5133,6 @@
         "rule": "Use 私 consistently."
       }
     },
-    "Penta_companion_NPC": {
-      "personalitySummary": "Penta, an eccentric and inquisitive companion fascinated by unusual discoveries.",
-      "toneAndVoice": "Curious, energetic, and unconventional.",
-      "firstPerson": {
-        "term": "私",
-        "rule": "Use 私 consistently."
-      }
-    },
     "DLC5_Venerad": {
       "personalitySummary": "Venerad, a survivor shaped by the dangers and hardships of the Shadow Plane.",
       "toneAndVoice": "Wary, practical, and subdued.",
@@ -7633,11 +7626,12 @@
       "32a037e97c3d5c54b85da8f639616c57": "Aivu",
       "766435873b1361c4287c351de194e5f9": "Woljif",
       "1b893f7cf2b150e4f8bc2b3c389ba71d": "Nenio",
-      "942862a48f1644ae85ac5e3c9deb720c": "Nenio",
+      "942862a48f1644ae85ac5e3c9deb720c": "Penta",
       "2779754eecffd044fbd4842dba55312c": "Ember",
       "8c5dcc93d68d0ed44afd43902201da40": "Queen Galfrey",
       "97d1c33c784100140b9fa317aef5a499": "Queen Galfrey",
-      "92f29ae2c49edb74f8943d30ea788dd0": "Areelu Vorlesh"
+      "92f29ae2c49edb74f8943d30ea788dd0": "Areelu Vorlesh",
+      "ca4c688434914eebbe559175a13aea7a": "Penta"
     }
   }
 }
