@@ -916,7 +916,7 @@
     {
       "source": "Terendelev (legacy)",
       "target": "テレンデレヴ",
-      "note": "シルバー・ドラゴン。ケナブレスの守護者。"
+      "note": "シルバードラゴン。ケナブレスの守護者。"
     },
     {
       "source": "Aivu",
@@ -1001,7 +1001,7 @@
     {
       "source": "Terendelev",
       "target": "テレンデレヴ",
-      "note": "ケナブレスを守護していたシルバー・ドラゴン。"
+      "note": "ケナブレスを守護していたシルバードラゴン。"
     },
     {
       "source": "Yaniel",
@@ -1010,8 +1010,13 @@
     },
     {
       "source": "Ulbrig Olesk",
-      "target": "ウルブリッグ・オレスク",
+      "target": "ウルブリグ・オレスク",
       "note": "DLCコンパニオン。シフター。古代サーコリスの戦士。豪快・伝統主義。"
+    },
+    {
+      "source": "Ulbrig",
+      "target": "ウルブリグ",
+      "note": "Ulbrig Olesk の名のみ。単独で出ることが多い。"
     },
     {
       "source": "Rekarth",
@@ -3069,7 +3074,7 @@
       "source": "Goatford",
       "target": "ゴートフォード",
       "category": "Location",
-      "note": "ウルブリッグ・オレスクが言及する古戦場の地名。round46で言及。",
+      "note": "ウルブリグ・オレスクが言及する古戦場の地名。round46で言及。",
       "caseSensitive": true
     },
     {
@@ -3248,7 +3253,7 @@
     },
     {
       "source": "Nahyndrian League",
-      "target": "ナインドリアン・リーグ",
+      "target": "ナヒンドリアン・リーグ",
       "category": "Organization",
       "note": "闘技場バトルブリスの剣闘士集団。round50で登場。",
       "caseSensitive": true
@@ -7056,9 +7061,16 @@
     },
     {
       "source": "Dorgelinda Stranglehold",
-      "target": "ドルゲリンダ・ストラングルホールド",
+      "target": "ドーゲリンダ・ストラングルホールド",
       "category": "Character",
       "note": "ネロシャンから派遣された要塞運営の専門家（round182）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Dorgelinda",
+      "target": "ドーゲリンダ",
+      "category": "Character",
+      "note": "Dorgelinda Stranglehold の名のみ。",
       "caseSensitive": true
     },
     {
@@ -28796,7 +28808,7 @@
     },
     {
       "source": "Silver Dragons",
-      "target": "シルバー・ドラゴン",
+      "target": "シルバードラゴン",
       "note": "Crusade unit.",
       "category": "Crusade"
     },
