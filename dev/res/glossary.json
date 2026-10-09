@@ -31171,6 +31171,39 @@
       "target": "ハーマッタン",
       "category": "Character",
       "note": "Captain Harmattan＝ハーマッタン大尉。"
+    },
+    {
+      "source": "Drow",
+      "target": "ドラウ",
+      "category": "Race",
+      "note": "PRD日本語版の訳語。「ドロウ」にしない。複数形Drowsも同訳。"
+    },
+    {
+      "source": "Arcanist",
+      "target": "アーケイニスト",
+      "category": "Class",
+      "note": "PRD日本語版の訳語。「アルカニスト」にしない。"
+    },
+    {
+      "source": "Lathimas",
+      "target": "ラティマス",
+      "category": "NPC",
+      "note": "黒竜ヘヴェラティマス（Hevelathimas）の略称。「ラシマス」にしない。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Galfrey",
+      "target": "ガルフリー",
+      "category": "NPC",
+      "note": "ガルフリー女王。「ガルフレイ」にしない（デーモン公Galfreyzu=ガルフレイズとは別）。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Nahyndrian",
+      "target": "ナヒンドリアン",
+      "category": "Item",
+      "note": "Nahyndrian Crystal=ナヒンドリアンクリスタル。「ナイハンドリアン」にしない。",
+      "caseSensitive": true
     }
   ]
 }
