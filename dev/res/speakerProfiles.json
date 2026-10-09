@@ -37,7 +37,7 @@
     },
     "Nenio": {
       "personalitySummary": "An eccentric scholar obsessed with compiling an all-encompassing encyclopedia.",
-      "toneAndVoice": "Strictly academic and emotionally detached. She may casually forget names, personal history, or emotional context if she considers them irrelevant to her research.",
+      "toneAndVoice": "Strictly academic, emotionally detached, socially oblivious and brash. Use neutral plain Japanese (〜だ／〜だね／〜かな／〜じゃないか); never polite 〜です/〜ます and never feminine 〜わ/〜のよ/〜かしら. Address the Commander as あなた (not 君); vocatives 坊や／お嬢さん are fine. She may casually forget names, personal history, or emotional context if she considers them irrelevant to her research.",
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
@@ -74,6 +74,10 @@
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
+      },
+      "addressingPlayer": {
+        "commander": "お前",
+        "rule": "Address the Commander as お前 (not あなた/あんた). Gruff, terse declaratives (〜だ／〜だろう)."
       }
     },
     "Terendelev (legacy)": {
@@ -114,8 +118,8 @@
         "rule": "Always use 俺."
       },
       "addressingPlayer": {
-        "commander": "指揮官",
-        "rule": "Omit second-person pronouns in regular dialogue."
+        "commander": "あんた",
+        "rule": "Omit second-person pronouns when natural; when needed use あんた for the Commander. お前 is only for others (Wenduag, Woljif, enemies)."
       },
       "speechStyle": [
         "sarcastic",
@@ -160,13 +164,13 @@
         "slightly hesitant"
       ],
       "speechExamples": [
-        "神様なんて助けてくれないよ。だから、私たちが優しくしなきゃ。",
-        "あの人たちもかわいそう。怒ってるのは、傷ついているからなんだよ。",
-        "ねえ、戦うのをやめて、温かいものを食べよう？"
+        "神様なんて助けてくれません。だから、私たちが優しくしなきゃいけないんです。",
+        "あの人たちもかわいそうです。怒っているのは、傷ついているからなんですよ。",
+        "ねえ、戦うのをやめて、温かいものを食べませんか？"
       ],
       "translationNotes": [
-        "Use simple, gentle, and utterly earnest phrasing without anger or arrogance.",
-        "Maintain quiet sincerity rather than childlike energetic chatter."
+        "Use simple, gentle, earnest polite speech (〜です／〜なんです／〜ですよ). Speak to everyone — the Commander, demons, nobles, children — with the same politeness.",
+        "Keep the phrasing childlike and plain; never stiff honorifics (〜でございます)."
       ],
       "constraints": [
         "Never sound hyperactive or immature.",
@@ -223,8 +227,8 @@
         "rule": "Always use 私."
       },
       "addressingPlayer": {
-        "commander": "貴公",
-        "rule": "Use 貴公 when a direct military address is appropriate; otherwise omit the second-person pronoun."
+        "commander": "あなた",
+        "rule": "Use あなた (or omit). Default to terse declaratives (〜だ／〜である); polite 〜です/〜ます only in formal council scenes."
       },
       "speechStyle": [
         "concise",
