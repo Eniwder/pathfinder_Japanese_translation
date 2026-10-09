@@ -8,6 +8,7 @@
     "import-chunks": "node ./toBatchData.js import",
     "speaker-audit": "node ./toBatchData.js audit",
     "missing-profiles": "node ./helper/extractMissingProfiles.js ./res/speakerAudit.json ./res/missingSpeakerNames.json",
-    "verify": "node ./verify.js --report=test/verify-report.json"
+    "verify": "node ./verify.js --report=test/verify-report.json",
+    "consistency": "node --max-old-space-size=8192 ./helper/consistencyCheck.mjs"
   }
 }
