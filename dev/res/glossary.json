@@ -31240,6 +31240,34 @@
       "source": "Wandering Marksman",
       "target": "さまよう狙撃手",
       "category": "Archetype"
+    },
+    {
+      "source": "Dismar",
+      "target": "ディスマー",
+      "category": "NPC",
+      "note": "フィニアン・ディスマー。「ディズマー」にしない。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Dawei",
+      "target": "ダウェイ",
+      "category": "NPC",
+      "note": "チュン・ダウェイ。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Quasit",
+      "target": "クアジット",
+      "category": "Creature",
+      "note": "「クアシット」にしない。",
+      "caseSensitive": false
+    },
+    {
+      "source": "Yath",
+      "target": "ヤース",
+      "category": "Place",
+      "note": "ヤースの塔・ヤースの地。",
+      "caseSensitive": true
     }
   ]
 }
