@@ -4913,6 +4913,16 @@
         "Diplomacy_8_Dialogue"
       ],
       "note": "round1〜3（zhCN.jsonへ直接マージ済みだった450件）を現行の抽出形式・翻訳ガイドでやり直し。他roundと同じくchunks_reviewに未マージで温存（zhCN.json内の旧round1〜3訳は未変更）。"
+    },
+    {
+      "start": 5457,
+      "limit": 1,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-10_round372_missing/",
+      "coveredDialogs": [
+        "GreyborAfterBalor_dialogue"
+      ],
+      "note": "第21弾（start=5250）の抽出から漏れていた1件（fc6df46b-…、主人公の選択肢）を手動で追加・翻訳。整合性チェック第3弾 #32 で発見。"
     }
   ]
 }
