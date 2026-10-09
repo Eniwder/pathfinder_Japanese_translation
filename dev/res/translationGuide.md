@@ -99,6 +99,11 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
   - `bypass DR N/X` →「ダメージ減少N/Xを無視する」（`DR`も略さない）、`primary/secondary natural attack`
     →「主要／副次肉体攻撃」で統一する。
   - UI・戦闘ログの `Label: 値` 形式は全角コロン「：」で後ろに空白を入れない（`Source: X` → `発生源：X`）。
+    特技の見出しは `Prerequisites:`→「前提条件：」、`Benefit:`→「利益：」（「利点」「効果」にしない）、
+    `Normal:`→「通常：」、`Special:`→「特記：」。キネティシストの見出しは `Element:`→「元素：」
+    （「エレメント」にしない）、`Type:`→「種別：」、`Level:`→「レベル：」、`Burn:`→「燃焼：」、
+    `Associated Blasts:`→「関連ブラスト：」、`Blast Type:`→「ブラスト種別：」。
+  - `size bonus` は「サイズ・ボーナス」（中黒あり）。
   - 十字軍イベントの効果文：属性前置きは全角括弧・空白なし（`(Good) ` → `（善）`）、`units` は「ユニット」
     （「部隊」にしない）、名称は種別を前に置く（`the [X] feat` → `特技[X]`、勅令/儀式/呪文も同形）。
     `gain +1 level to the [X] feat` →「特技[X]のレベルが1上昇する」、`Adds N X Points` →「XポイントがN増加する」。
