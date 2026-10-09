@@ -294,7 +294,7 @@ function writeChunk(dir, index, payload) {
     chunkIndex: index,
     keys: keyCount,
     notes: [
-      '<ctrl_N/> は個数・内容・並び順を変えずそのままコピーする。',
+      '<ctrl_N/> はすべて同じ個数だけ残す。語句を挟む組は挟んだ訳語ごと一体で動かせば、日本語の語順に合わせて並べ替えてよい。',
       'entryに"speaker"が無い場合は話者不明/ナレーション扱い（res/translationGuide.mdの既定ルールに従う）。',
       '訳さない/わからない entry は "translation": null のままにしておく（import 時にスキップされる）。',
     ],
