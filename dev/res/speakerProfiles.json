@@ -2050,8 +2050,8 @@
         "rule": "Always use 私."
       },
       "addressingPlayer": {
-        "commander": "あなた",
-        "rule": "Use regal, caring second-person forms like あなた or 勇者よ."
+        "commander": "お前",
+        "rule": "威厳ある女神として指揮官を「お前」「勇者よ」と呼ぶ（既存訳の約100件がこの形。「あなた」に揺らさない）。"
       },
       "speechStyle": [
         "regal",
@@ -2772,7 +2772,7 @@
       },
       "addressingPlayer": {
         "commander": "君",
-        "rule": "Use friendly forms like 君 or partner."
+        "rule": "Always 君 (not あなた/あんた/お前) when talking to the Commander."
       },
       "speechStyle": [
         "earnest",
@@ -3407,8 +3407,8 @@
         "rule": "Use 私."
       },
       "addressingPlayer": {
-        "commander": "貴方",
-        "rule": "Addresses player as 貴方 or 観客."
+        "commander": "お前",
+        "rule": "ドリモは主の代理として指揮官を「お前」と呼ぶ（既存訳で統一済み）。"
       },
       "speechStyle": [
         "authoritative",
