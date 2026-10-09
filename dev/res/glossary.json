@@ -31210,6 +31210,36 @@
       "target": "戦長",
       "category": "Title",
       "note": "ウルブリグ等サーコリス人が指揮官を呼ぶ呼称。「族長」「頭領」「大将」「軍団長」「戦の長」にしない（chief単独はランの「族長」）。"
+    },
+    {
+      "source": "Draconic Bloodline",
+      "target": "竜の血脈",
+      "category": "Bloodline"
+    },
+    {
+      "source": "Celestial Bloodline",
+      "target": "天上の血脈",
+      "category": "Bloodline"
+    },
+    {
+      "source": "Undead Bloodline",
+      "target": "アンデッド血脈",
+      "category": "Bloodline"
+    },
+    {
+      "source": "Eldritch Scoundrel",
+      "target": "エルドリッチ・スカウンドレル",
+      "category": "Archetype"
+    },
+    {
+      "source": "Sage Sorcerer",
+      "target": "賢者ソーサラー",
+      "category": "Archetype"
+    },
+    {
+      "source": "Wandering Marksman",
+      "target": "さまよう狙撃手",
+      "category": "Archetype"
     }
   ]
 }
