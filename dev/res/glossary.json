@@ -15295,7 +15295,7 @@
     },
     {
       "source": "Devil Subtype",
-      "target": "（デヴィル）の副種別",
+      "target": "（デビル）の副種別",
       "category": "PRD Term",
       "note": "PRD日本語版の訳語。"
     },
@@ -31268,6 +31268,12 @@
       "category": "Place",
       "note": "ヤースの塔・ヤースの地。",
       "caseSensitive": true
+    },
+    {
+      "source": "Ballad",
+      "target": "バラード",
+      "category": "Term",
+      "note": "一般語のballadも「バラード」（Heroic Ballad＝ヒロイック・バラードに揃える。「バラッド」にしない）。"
     }
   ]
 }

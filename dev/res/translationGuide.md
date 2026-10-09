@@ -104,7 +104,9 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
     （「エレメント」にしない）、`Type:`→「種別：」、`Level:`→「レベル：」、`Burn:`→「燃焼：」、
     `Associated Blasts:`→「関連ブラスト：」、`Blast Type:`→「ブラスト種別：」。
   - `size bonus` は「サイズ・ボーナス」（中黒あり）。
-- 色の付いたドラゴンは中黒なしで連結する（`Black Dragon`→ブラックドラゴン、`Gold Dragon`→ゴールドドラゴン）。
+- 色の付いたドラゴンは中黒なしで連結する（`Black Dragon`→ブラックドラゴン、`Gold Dragon`→ゴールドドラゴン、`Metallic/Chromatic Dragon`も同様）。
+- クラス名＋レベルは中黒で区切る（`sorcerer level`→ソーサラー・レベル、`character level`→キャラクター・レベル）。`damage roll`→ダメージ・ロール、`damage bonus`→ダメージ・ボーナス、`energy damage`→エネルギー・ダメージ。`hit points`はヒットポイント（HP）。
+- 長音の付け方は glossary と多数派に合わせる（パーティー、キャヴァリアー、トロール、ヴァイオリン）。人名の末尾に長音を足さない（×ヘプザミラー、×アイオーメディー）。
   - 十字軍イベントの効果文：属性前置きは全角括弧・空白なし（`(Good) ` → `（善）`）、`units` は「ユニット」
     （「部隊」にしない）、名称は種別を前に置く（`the [X] feat` → `特技[X]`、勅令/儀式/呪文も同形）。
     `gain +1 level to the [X] feat` →「特技[X]のレベルが1上昇する」、`Adds N X Points` →「XポイントがN増加する」。
