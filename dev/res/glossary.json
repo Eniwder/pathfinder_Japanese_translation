@@ -6731,7 +6731,7 @@
     },
     {
       "source": "Lands of the Linnorm Kings",
-      "target": "リンノーム王国群",
+      "target": "リノーム王国群",
       "category": "Location",
       "note": "エピローグに登場する北方の地域名（Epilogues_epilogues、round174）。",
       "caseSensitive": true
@@ -10372,13 +10372,13 @@
     },
     {
       "source": "Bull's Strength",
-      "target": "ブルズ・ストレンクス",
+      "target": "ブルズ・ストレングス",
       "category": "Spell",
       "note": "PRD日本語版の訳語。"
     },
     {
       "source": "Bull's Strength, Mass",
-      "target": "マス・ブルズ・ストレンクス",
+      "target": "マス・ブルズ・ストレングス",
       "category": "Spell",
       "note": "PRD日本語版の訳語。"
     },
@@ -17893,7 +17893,7 @@
     },
     {
       "source": "Linnorm",
-      "target": "リンヌルム",
+      "target": "リノーム",
       "category": "Creature"
     },
     {
