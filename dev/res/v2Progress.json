@@ -4923,6 +4923,20 @@
         "GreyborAfterBalor_dialogue"
       ],
       "note": "第21弾（start=5250）の抽出から漏れていた1件（fc6df46b-…、主人公の選択肢）を手動で追加・翻訳。整合性チェック第3弾 #32 で発見。"
+    },
+    {
+      "start": 18150,
+      "limit": 300,
+      "merged": false,
+      "reviewDir": "dev/lang/chunks_review/2026-10-10_round64_redo/",
+      "coveredDialogs": [
+        "Velexia_First_Date_dialogue",
+        "Velexia_MainDialogue",
+        "Velexia_Second_Date_dialogue",
+        "Velexia_Third_Date_dialogue",
+        "EchoDeskari_SEbosses_c4_dialog"
+      ],
+      "note": "第64弾をchunks_reviewに戻すため再抽出して訳し直した（2026-10-10、整合性チェック第3弾 #32）。旧第64弾はzhCN.jsonへ直接マージ済みだったため整合修正の対象外になっていた。このround64_redoをimportすれば旧第64弾の訳を上書きする。"
     }
   ]
 }
