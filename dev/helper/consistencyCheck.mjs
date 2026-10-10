@@ -13,6 +13,7 @@
 //   kana               長音・中黒・ヴ／バ・小書きだけが違うカタカナ表記ゆれ
 //   quotes             台詞の「」と原文の引用符の対応（付け忘れ・付けすぎ・引用部分の訳抜け候補）
 //   gloss              glossaryの固有名が訳でまとまって別表記になっているもの、glossary内の訳語の食い違い
+//   tone               話者の多数派と逆の口調（丁寧語／常体）でほぼ統一されている会話（会話をまたいだ口調のずれ）
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -363,12 +364,54 @@ function gloss() {
   save('gloss.json', { conflicts, drift });
 }
 
+// ---- tone ----
+
+// 話者ごとに「」内の文末を丁寧語／常体に分類し、話者全体の多数派と逆の口調でほぼ統一されている会話を列挙する
+// （同じ会話内の揺れではなく、会話をまたいだ口調のずれ。相手や状況による正当な切り替えも混ざるので目視で確認）
+function tone() {
+  const graph = loadGraphSpeakers();
+  const plain = s => String(s ?? '').replace(/<ctrl_\d+\/>/g, '').replace(/\{mf\|([^|}]*)\|[^}]*\}/g, '$1');
+  const POLITE = /(です|ます|ません|でした|ましょう|ください|ございます|でしょう)[かねよ！？…—]*$/;
+  const CASUAL = /(だ|だろう|だな|だぞ|のだ|じゃない|ないか|るぞ|たぞ|だった|ろう|ぜ|だよ|だね|わ|のよ|かい|ねえ)[！？…—]*$/;
+  const bySpeaker = {};
+  for (const { dialog, entry } of chunkEntries()) {
+    if (entry.type !== 'Cue' && entry.nodeType !== 'Cue') continue;
+    const speaker = graph.get(entry.key)?.speaker ?? entry.speaker;
+    if (!speaker || !entry.translation) continue;
+    for (const [, quote] of plain(entry.translation).matchAll(/「([^「」]*)」/g)) {
+      for (const sentence of quote.split(/(?<=[。！？])/).map(s => s.replace(/。$/, '').trim()).filter(s => s.length >= 6)) {
+        const kind = POLITE.test(sentence) ? 'polite' : CASUAL.test(sentence) ? 'casual' : null;
+        if (!kind) continue;
+        const s = (bySpeaker[speaker] ??= { polite: 0, casual: 0, dialogs: {} });
+        s[kind]++;
+        const d = (s.dialogs[dialog ?? '?'] ??= { polite: 0, casual: 0, example: '' });
+        d[kind]++;
+        if (!d.example) d.example = sentence.slice(-30);
+      }
+    }
+  }
+  const results = [];
+  for (const [speaker, s] of Object.entries(bySpeaker)) {
+    const total = s.polite + s.casual, ratio = s.polite / total;
+    if (total < 60 || Math.min(ratio, 1 - ratio) > 0.35) continue;
+    const majority = ratio >= 0.5 ? 'polite' : 'casual';
+    for (const [dialog, d] of Object.entries(s.dialogs)) {
+      const n = d.polite + d.casual, r = d.polite / n;
+      if (n >= 4 && (majority === 'polite' ? r <= 0.25 : r >= 0.75)) results.push({ speaker, overall: `${Math.round(ratio * 100)}%丁寧(${total})`, dialog, polite: d.polite, casual: d.casual, example: d.example });
+    }
+  }
+  results.sort((a, b) => (b.polite + b.casual) - (a.polite + a.casual));
+  console.log(`dialogs whose tone is opposite to the speaker's majority: ${results.length}`);
+  for (const r of results) console.log(`  ${r.speaker} [${r.overall}] ${r.dialog} 丁寧${r.polite}/常体${r.casual}  …${r.example}`);
+  save('tone.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });

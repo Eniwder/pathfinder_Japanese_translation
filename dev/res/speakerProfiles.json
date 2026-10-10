@@ -3092,8 +3092,8 @@
         "rule": "Always use 私."
       },
       "addressingPlayer": {
-        "commander": "貴方",
-        "rule": "Use smooth, polite terms like 貴方, 偉大なる指揮官."
+        "commander": "あなた",
+        "rule": "常に慇懃な丁寧語で「あなた」と呼ぶ（既存訳の大半がこの形）。敵対する場面でも口調を崩さず、「お前」や常体にしない。"
       },
       "speechStyle": [
         "eloquent",
@@ -3575,7 +3575,15 @@
         "\"But this does not mean we will not assist you.\"",
         "\"Tell me what kind of help you need, and we will do the rest.\""
       ],
-      "constraints": "Use elevated but accessible language; maintain philosophical tone; emphasize respect for mortal choice and divine perspective; show genuine concern beneath immortal detachment"
+      "constraints": "Use elevated but accessible language; maintain philosophical tone; emphasize respect for mortal choice and divine perspective; show genuine concern beneath immortal detachment",
+      "firstPerson": {
+        "term": "私／私たち",
+        "rule": "原文が we で語る場面は「私たち」。"
+      },
+      "addressingPlayer": {
+        "commander": "あなた",
+        "rule": "AngelRankUpの案内役としては丁寧語。天使の道で同行する場面（MythAngel_c4/c5、NocticulaAfterBaph等）は「〜わ」「〜のね」の柔らかい口調。いずれも「お前」や男性的な常体（〜だ、〜こい）にしない。"
+      }
     },
     "DLC6_Spymaster": {
       "personality": "Sharp military intelligence operative; highly observant, cunning, ruthless when necessary. Values precise knowledge and strategic analysis. Confident in competence.",
@@ -3619,6 +3627,16 @@
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
+      },
+      "speechStyle": [
+        "noble",
+        "earnest",
+        "protective",
+        "devout"
+      ],
+      "addressingPlayer": {
+        "commander": "あなた／チャンピオン",
+        "rule": "指揮官には常に丁寧語（です・ます）で「あなた」「チャンピオン」と語りかける。「お前」「君」は使わない。敵・残響への怒号や兵への号令、同じ天使（ターゴナ等）への語りかけは常体でよい。"
       }
     },
     "Azata_Aranka_DesnaPriest": {
@@ -7204,6 +7222,16 @@
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
+      },
+      "speechStyle": [
+        "noble",
+        "earnest",
+        "protective",
+        "devout"
+      ],
+      "addressingPlayer": {
+        "commander": "あなた／チャンピオン",
+        "rule": "指揮官には常に丁寧語（です・ます）で「あなた」「チャンピオン」と語りかける。「お前」「君」は使わない。敵・残響への怒号や兵への号令、同じ天使（ターゴナ等）への語りかけは常体でよい。"
       }
     },
     "BaphometVision_IvoryLabyrinth": {
