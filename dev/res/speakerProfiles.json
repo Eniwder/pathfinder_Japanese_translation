@@ -3017,38 +3017,35 @@
       ]
     },
     "DLC4_Shaman": {
-      "gender": "male",
+      "gender": "female",
       "race": "human",
       "alignment": "true neutral",
-      "personality": "Solemn, enigmatic old shaman tied deeply to the ancient spirits of Sarkoris.",
+      "personality": "Ysenna, the young shaman of Gundrun. Warm, open and hopeful, deeply tied to the spirits of Sarkoris and the wolf goddess Cerenna.",
       "firstPerson": {
         "term": "私",
         "rule": "Use 私."
       },
       "addressingPlayer": {
-        "commander": "旅人",
-        "rule": "Address player calmly as 旅人 or あなた."
+        "commander": "あなた",
+        "rule": "Address the player warmly as あなた."
       },
       "speechStyle": [
-        "solemn",
-        "mystical",
-        "calm",
-        "archaic"
+        "warm",
+        "earnest",
+        "mystical"
       ],
       "speechExamples": [
-        "精霊たちの囁きが聞こえる……この地は忘却を拒んでいるのだよ。",
-        "過去の傷を塞ぐ術は、怒りではなく誓いの中にある……。",
-        "精霊の導きに従いなさい。さすれば道は開かれん。"
+        "良い時にお越しになったわね。ウルフズホームは客人を歓迎するわ！",
+        "あなたの到来が吉兆だと分かっていたわ！"
       ],
       "translationNotes": [
-        "老練で神秘的な呪術師の静かな語り口（〜じゃ、〜のだよ、〜ごらん）。",
-        "感情的にならず、常に霊的な洞察を込めて話す。"
+        "若い女性シャーマンの柔らかな口調（〜わ、〜のね）。原文のナレーションは she/her。"
       ],
       "constraints": [
-        "軽薄な若者言葉や世俗的な俗語は使わない。"
+        "老人口調（〜じゃ、〜のだよ）にしない。"
       ],
       "notes": [
-        "Traditional Sarkorian shaman in DLC4."
+        "グンドルンのシャーマン、イセナ（DLC4）。以前は男性の老シャーマンと誤記されていた。"
       ]
     },
     "PuluraFall_Eliandra": {
