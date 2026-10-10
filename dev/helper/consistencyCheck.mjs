@@ -18,6 +18,7 @@
 //   dup                同じ原文（40字以上）なのに訳が違うもの（地の文は統一候補、台詞は参考）
 //   nameref            名前entry（呪文・ユニット・人名など）の訳が本文で別表記になっているもの
 //   glink              用語集リンク{g|…}で挟まれた訳語が、同じ原語なのに割れているもの
+//   owner              話者欄が空の台詞の一人称が、会話名の人物（speakerProfiles）の一人称と食い違うもの
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -533,12 +534,45 @@ function glink() {
   save('glink.json', results);
 }
 
+// ---- owner ----
+
+// 話者欄が空の台詞（Cue）を、会話名に含まれる人物（speakerProfiles のキー先頭語）の一人称と突き合わせる。
+// 会話の持ち主の台詞が話者情報なしで訳され、別人の一人称になっているもの（#53・#55で最多だった型）の候補。
+// 同じ会話の別話者（ナレーションで紹介される相手など）も混ざるので目視で確認する。
+function owner() {
+  const characters = readJson('./res/speakerProfiles.json').characters;
+  const expected = {};
+  for (const [key, profile] of Object.entries(characters)) {
+    const term = profile?.firstPerson?.term;
+    if (!term) continue;
+    const base = key.replace(/^(DLC\d+_|KTC_|CR\d+_)/, '').split(/[_ ]/)[0];
+    if (base.length >= 4) (expected[base] ??= new Set()).add(term);
+  }
+  const bases = Object.keys(expected).sort((a, b) => b.length - a.length);
+  const FIRST = ['わたくし', 'あたし', 'おいら', 'オイラ', 'わし', '俺', 'オレ', '僕', '私', '余', 'わたし', 'アイヴ'];
+  const found = quote => FIRST.filter(f => new RegExp(`(^|[^一-龯ァ-ヶ${f === 'わし' || f === 'わたし' ? 'ぁ-ん' : ''}])${f}(?=[はがもをにのでとだってよみ、…！？」]|たち|自身|抜き|$)`).test(quote.replace(/下僕/g, '')));
+  const results = [];
+  for (const { round, file, dialog, entry } of chunkEntries()) {
+    if (entry.type !== 'Cue' || entry.speaker || !dialog || !entry.translation) continue;
+    const base = bases.find(b => dialog.toLowerCase().includes(b.toLowerCase()));
+    if (!base) continue;
+    const quotes = [...entry.translation.replace(/<ctrl_\d+\/>/g, '').matchAll(/「([^」]*)」/g)].map(m => m[1]).join(' ');
+    const want = expected[base];
+    const bad = found(quotes).filter(f => !want.has(f) && !(want.has('私') && f === 'わたし'));
+    if (bad.length) results.push({ owner: base, expected: [...want].join('/'), found: bad.join(','), dialog, key: entry.key, translation: entry.translation, location: `${round}/${file}` });
+  }
+  const byOwner = countBy(results, r => `${r.owner}=${r.expected}`);
+  console.log(`blank-speaker lines whose first person differs from the dialog owner's profile: ${results.length}`);
+  for (const [k, n] of Object.entries(byOwner).sort((a, b) => b[1] - a[1])) console.log(`  ${k}: ${n}`);
+  save('owner.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref, glink };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref, glink, owner };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref|glink>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref|glink|owner>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
