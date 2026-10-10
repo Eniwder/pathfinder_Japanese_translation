@@ -12,6 +12,7 @@
 //   names              glossaryに無い固有名の表記ゆれ候補（同じ英語名に近い綴りのカタカナが2通り）
 //   kana               長音・中黒・ヴ／バ・小書きだけが違うカタカナ表記ゆれ
 //   quotes             台詞の「」と原文の引用符の対応（付け忘れ・付けすぎ・引用部分の訳抜け候補）
+//   gloss              glossaryの固有名が訳でまとまって別表記になっているもの、glossary内の訳語の食い違い
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -331,12 +332,43 @@ function quotes() {
   save('quotes.json', results);
 }
 
+// ---- gloss ----
+
+// glossaryの固有名（人名・地名等のcategory、または大文字始まりの複数語）について、原文にその語があるのに
+// 訳に訳語が無い割合が高いものを列挙する（訳がまとまって別表記に流れている＝glossaryか訳のどちらかを直す候補）。
+// 同じsourceで訳語が食い違う重複項目も出す。
+function gloss() {
+  const plain = s => String(s ?? '').replace(/<ctrl_\d+\/>/g, '');
+  const squash = s => s.replace(/[・＝\s]/g, '');
+  const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const PROPER = /^(Location|Person|Character|Deity|Organization|Faction|Place|Creature|Demon|Companion)$/i;
+  const list = glossaryEntries();
+  const bySource = {};
+  for (const g of list) (bySource[g.source.toLowerCase()] ??= new Set()).add(g.target);
+  const conflicts = Object.entries(bySource).filter(([, targets]) => targets.size > 1).map(([source, targets]) => ({ source, targets: [...targets] }));
+  const terms = list.filter(g => g.source.length >= 4 && (PROPER.test(g.category ?? '') || /^[A-Z][a-z'’-]+(?: (?:of |the |and )?[A-Z][a-z'’-]+)+$/.test(g.source)))
+    .map(g => ({ ...g, re: new RegExp(`\\b${escape(g.source)}s?\\b`, g.caseSensitive ? '' : 'i'), targets: String(g.target).split(/[／/、（）]/).map(s => squash(s.trim())).filter(s => s.length >= 2) }));
+  const entries = [...chunkEntries()].map(({ entry }) => ({ en: plain(entry.text), ja: squash(plain(entry.translation)) })).filter(x => x.ja);
+  const drift = [];
+  for (const g of terms) {
+    const hits = entries.filter(x => g.re.test(x.en));
+    const miss = hits.filter(x => !g.targets.some(t => x.ja.includes(t)));
+    if (hits.length >= 5 && miss.length / hits.length >= 0.3) drift.push({ source: g.source, target: g.target, hits: hits.length, miss: miss.length });
+  }
+  drift.sort((a, b) => b.miss - a.miss);
+  console.log(`conflicting glossary entries: ${conflicts.length}`);
+  for (const c of conflicts) console.log(`  ${c.source}: ${c.targets.join(' / ')}`);
+  console.log(`terms whose translation drifts (miss >= 30%): ${drift.length}（言い換え・代名詞化も含むので目視で確認）`);
+  for (const d of drift) console.log(`  ${d.miss}/${d.hits}\t${d.source} → ${d.target}`);
+  save('gloss.json', { conflicts, drift });
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
