@@ -25,6 +25,10 @@
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "指揮官への二人称は「君」。「お前」は庶民・敵への見下しにだけ使う。酒場の余興など、わざと慇懃にふるまう場面の丁寧語＋「あなた」は可。"
       }
     },
     "Arueshalae": {
@@ -603,8 +607,8 @@
         "rule": "Always use 私."
       },
       "addressingPlayer": {
-        "commander": "あんた",
-        "rule": "Use business-like or veteran forms like あんた or 指揮官."
+        "commander": "あなた",
+        "rule": "軍人らしい丁寧語で「あなた」「指揮官」と呼ぶ（既存訳は丁寧語。「あんた」にしない）。"
       },
       "speechStyle": [
         "businesslike",
@@ -2123,8 +2127,8 @@
         "rule": "Always use 私."
       },
       "addressingPlayer": {
-        "commander": "あなた",
-        "rule": "Use contractual terms like あなた or 契約者."
+        "commander": "汝",
+        "rule": "古風で尊大な神格として「汝」と呼ぶ（「そなた」「あなた」にしない）。"
       },
       "speechStyle": [
         "courtly",
@@ -3477,8 +3481,8 @@
         "rule": "Always use 私."
       },
       "addressingPlayer": {
-        "commander": "貴方",
-        "rule": "Use polite and gentle forms like 貴方, 若き自由の騎士."
+        "commander": "あなた",
+        "rule": "穏やかな賢者として「あなた」と呼ぶ（既存訳はすべてこの形。「貴方」と漢字にしない）。"
       },
       "speechStyle": [
         "gentle",
@@ -6974,6 +6978,10 @@
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "指揮官への二人称は「君」。「お前」は庶民・敵への見下しにだけ使う。酒場の余興など、わざと慇懃にふるまう場面の丁寧語＋「あなた」は可。"
       }
     },
     "StauntonVane_GG_Duel": {
@@ -7489,6 +7497,10 @@
       "firstPerson": {
         "term": "私",
         "rule": "Use 私 consistently."
+      },
+      "addressingPlayer": {
+        "commander": "君",
+        "rule": "指揮官への二人称は「君」。「お前」は庶民・敵への見下しにだけ使う。酒場の余興など、わざと慇懃にふるまう場面の丁寧語＋「あなた」は可。"
       }
     },
     "DLC5_Sendri_companion": {

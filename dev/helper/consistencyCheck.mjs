@@ -14,6 +14,7 @@
 //   quotes             台詞の「」と原文の引用符の対応（付け忘れ・付けすぎ・引用部分の訳抜け候補）
 //   gloss              glossaryの固有名が訳でまとまって別表記になっているもの、glossary内の訳語の食い違い
 //   tone               話者の多数派と逆の口調（丁寧語／常体）でほぼ統一されている会話（会話をまたいだ口調のずれ）
+//   address            speakerProfilesの指揮官への二人称と、選択肢直後の返答で実際に使われている二人称の食い違い
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -406,12 +407,47 @@ function tone() {
   save('tone.json', results);
 }
 
+// ---- address ----
+
+// speakerProfiles の addressingPlayer.commander（指揮官への二人称）と、主人公の選択肢の直後の台詞（＝指揮官への返答）で
+// 実際に使われている二人称を突き合わせ、指定外の二人称を使っている台詞を列挙する（他の人物への呼びかけも混ざるので目視で確認）
+function address() {
+  const graph = loadGraphSpeakers();
+  const profiles = readJson('./res/speakerProfiles.json');
+  const characters = profiles.characters ?? profiles;
+  const PRONOUNS = ['あなた', '君', 'お前', 'あんた', '貴様', '貴方', 'そなた', '貴公', '貴殿', 'お主'];
+  const pronounRe = new RegExp(`(?<![ぁ-ん])(${PRONOUNS.join('|')})(?![主臨子たち])`, 'g');
+  const expected = {};
+  for (const [name, p] of Object.entries(characters)) {
+    const term = p?.addressingPlayer?.commander;
+    if (typeof term !== 'string') continue;
+    const allowed = PRONOUNS.filter(x => term.includes(x) || (p.addressingPlayer.rule ?? '').match(new RegExp(`(?:like|or|「)${x}`)));
+    if (allowed.length) expected[normalizeSpeaker(name)] = { name, allowed };
+  }
+  const results = [];
+  let previousType = null;
+  for (const { dialog, entry } of chunkEntries()) {
+    const afterAnswer = previousType === 'Answer';
+    previousType = entry.type ?? entry.nodeType;
+    if (!afterAnswer || previousType !== 'Cue' || !entry.translation) continue;
+    const speaker = graph.get(entry.key)?.speaker ?? entry.speaker;
+    const rule = speaker && expected[normalizeSpeaker(speaker)];
+    if (!rule) continue;
+    const quotes = (String(entry.translation).replace(/<ctrl_\d+\/>/g, '').match(/「[^」]*」/g) ?? []).join('');
+    const used = [...new Set([...quotes.matchAll(pronounRe)].map(m => m[1]))].filter(x => !rule.allowed.includes(x));
+    if (used.length) results.push({ speaker, profile: rule.name, allowed: rule.allowed.join('/'), used: used.join('/'), dialog, key: entry.key, ja: quotes.slice(0, 80) });
+  }
+  console.log(`replies to the Commander using a pronoun the profile does not allow: ${results.length}`);
+  for (const r of results) console.log(`  ${r.speaker} [${r.allowed}] 使用:${r.used} ${r.dialog} ${r.key}\n    ${r.ja}`);
+  save('address.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
