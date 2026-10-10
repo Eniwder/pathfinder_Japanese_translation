@@ -15,6 +15,7 @@
 //   gloss              glossaryの固有名が訳でまとまって別表記になっているもの、glossary内の訳語の食い違い
 //   tone               話者の多数派と逆の口調（丁寧語／常体）でほぼ統一されている会話（会話をまたいだ口調のずれ）
 //   address            speakerProfilesの指揮官への二人称と、選択肢直後の返答で実際に使われている二人称の食い違い
+//   dup                同じ原文（40字以上）なのに訳が違うもの（地の文は統一候補、台詞は参考）
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -442,12 +443,38 @@ function address() {
   save('address.json', results);
 }
 
+// ---- dup ----
+
+// 同じ原文（40字以上）が複数keyにあるのに訳が違うものを列挙する。地の文・説明文は統一候補、
+// 台詞（原文が " か [ で始まる）は相手による訳し分けもあるので、読点・空白以外の違いがあるものは参考扱い。
+function dup() {
+  const plain = s => String(s ?? '').replace(/<ctrl_\d+\/>/g, '');
+  const groups = {};
+  for (const { round, entry } of chunkEntries()) {
+    const en = String(entry.text ?? '').trim();
+    if (!entry.translation || plain(en).length < 40) continue;
+    (groups[en] ??= []).push({ round, key: entry.key, ja: entry.translation });
+  }
+  const results = [];
+  for (const [en, list] of Object.entries(groups)) {
+    const variants = [...new Set(list.map(x => x.ja))];
+    if (variants.length < 2) continue;
+    const dialog = /^["“\[]/.test(plain(en));
+    const punctuationOnly = new Set(variants.map(v => plain(v).replace(/[、，\s]/g, ''))).size === 1;
+    results.push({ kind: dialog && !punctuationOnly ? 'dialog' : 'text', en: plain(en).slice(0, 100), variants: variants.map(v => plain(v).slice(0, 100)), keys: list.map(x => x.key) });
+  }
+  const text = results.filter(r => r.kind === 'text'), dialog = results.filter(r => r.kind === 'dialog');
+  console.log(`same source, different translation: ${text.length} 件は統一候補（地の文・説明文・句読点だけの差）, ${dialog.length} 件は台詞（相手による訳し分けの可能性）`);
+  for (const r of text) console.log(`  ${r.keys.length}件 ${r.en}\n    ${r.variants.join('\n    ')}`);
+  save('dup.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
