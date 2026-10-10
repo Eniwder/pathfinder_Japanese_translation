@@ -316,9 +316,10 @@ function kana() {
 //   missing   原文が全体 "..." なのに訳に「」が無い（『』で代用しているものを含む）
 //   extra     原文に引用符が無いのに訳が行全体・[行動] を「」で囲んでいる
 //   fewer     原文の "..." の数より訳の「」『』が少ない（引用部分の訳抜け候補）
+//   labelInside  選択肢の [ラベル] がかぎ括弧の内側にある（正しくは [攻撃]「…」）
 function quotes() {
   const plain = s => String(s ?? '').replace(/<ctrl_\d+\/>/g, '').replace(/<[^>]+>/g, '').trim();
-  const results = { missing: [], extra: [], fewer: [] };
+  const results = { missing: [], extra: [], fewer: [], labelInside: [] };
   for (const { round, entry } of chunkEntries()) {
     const en = plain(entry.text), ja = plain(entry.translation);
     if (!en || !ja) continue;
@@ -326,6 +327,7 @@ function quotes() {
     const item = { round, key: entry.key, en: en.slice(0, 120), ja: ja.slice(0, 100) };
     if (/^(\[[^\]]*\]\s*)?["“][^"“”]*["”]$/.test(en) && bracketsJa === 0 && !/著|より抜粋/.test(ja)) results.missing.push(item);
     if (quotesEn === 0 && !/[『「]/.test(en) && (/「\[[^\]]*\]」/.test(ja) || /^(\[[^\]]*\])?「[^「」]*」$/.test(ja))) results.extra.push(item);
+    if (/^[[^]]+]/.test(en) && /^「[[^]]*]/.test(ja)) results.labelInside.push(item);
     const segmentsEn = Math.floor(quotesEn / 2), segmentsJa = (ja.match(/[「『]/g) ?? []).length;
     if (segmentsEn >= 2 && segmentsJa < segmentsEn) results.fewer.push(item);
   }
