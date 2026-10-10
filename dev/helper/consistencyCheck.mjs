@@ -11,6 +11,7 @@
 //   verify             chunks_reviewから一時訳文を組んでverify.jsにかける（同一キーの重複も検出）
 //   names              glossaryに無い固有名の表記ゆれ候補（同じ英語名に近い綴りのカタカナが2通り）
 //   kana               長音・中黒・ヴ／バ・小書きだけが違うカタカナ表記ゆれ
+//   quotes             台詞の「」と原文の引用符の対応（付け忘れ・付けすぎ・引用部分の訳抜け候補）
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -304,12 +305,38 @@ function kana() {
   save('kana.json', results);
 }
 
+// ---- quotes ----
+
+// 台詞の「」が原文の引用符と対応しているか（translationGuide：原文 "..." → 「」、原文に無ければ付けない）
+//   missing   原文が全体 "..." なのに訳に「」が無い（『』で代用しているものを含む）
+//   extra     原文に引用符が無いのに訳が行全体・[行動] を「」で囲んでいる
+//   fewer     原文の "..." の数より訳の「」『』が少ない（引用部分の訳抜け候補）
+function quotes() {
+  const plain = s => String(s ?? '').replace(/<ctrl_\d+\/>/g, '').replace(/<[^>]+>/g, '').trim();
+  const results = { missing: [], extra: [], fewer: [] };
+  for (const { round, entry } of chunkEntries()) {
+    const en = plain(entry.text), ja = plain(entry.translation);
+    if (!en || !ja) continue;
+    const quotesEn = (en.match(/["“”]/g) ?? []).length, bracketsJa = (ja.match(/[「」]/g) ?? []).length;
+    const item = { round, key: entry.key, en: en.slice(0, 120), ja: ja.slice(0, 100) };
+    if (/^(\[[^\]]*\]\s*)?["“][^"“”]*["”]$/.test(en) && bracketsJa === 0 && !/著|より抜粋/.test(ja)) results.missing.push(item);
+    if (quotesEn === 0 && !/[『「]/.test(en) && (/「\[[^\]]*\]」/.test(ja) || /^(\[[^\]]*\])?「[^「」]*」$/.test(ja))) results.extra.push(item);
+    const segmentsEn = Math.floor(quotesEn / 2), segmentsJa = (ja.match(/[「『]/g) ?? []).length;
+    if (segmentsEn >= 2 && segmentsJa < segmentsEn) results.fewer.push(item);
+  }
+  for (const [kind, list] of Object.entries(results)) {
+    console.log(`${kind}: ${list.length}`);
+    for (const r of list.slice(0, 10)) console.log(`  ${r.round} ${r.key}\n    EN: ${r.en}\n    JA: ${r.ja}`);
+  }
+  save('quotes.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
