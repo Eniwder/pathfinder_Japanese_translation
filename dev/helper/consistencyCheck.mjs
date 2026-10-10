@@ -17,6 +17,7 @@
 //   address            speakerProfilesの指揮官への二人称と、選択肢直後の返答で実際に使われている二人称の食い違い
 //   dup                同じ原文（40字以上）なのに訳が違うもの（地の文は統一候補、台詞は参考）
 //   nameref            名前entry（呪文・ユニット・人名など）の訳が本文で別表記になっているもの
+//   glink              用語集リンク{g|…}で挟まれた訳語が、同じ原語なのに割れているもの
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -500,12 +501,44 @@ function nameref() {
   save('nameref.json', results);
 }
 
+// ---- glink ----
+
+// 用語集リンク {g|X}…{/g} ごとに、原文で同じ語を挟んでいるのに訳の挟まれ語が割れているものを列挙する
+// （「頑健セーヴ／頑健セーヴィング・スロー」「怯え状態／怯え」のような正当な略記も混ざるので目視で確認）
+function glink() {
+  const map = {};
+  for (const { entry } of chunkEntries()) {
+    const tags = entry.controlTags ?? entry.tags;
+    if (!Array.isArray(tags) || !entry.translation) continue;
+    const value = Object.fromEntries(tags.map((t, i) => typeof t === 'string' ? [`<ctrl_${i}/>`, t] : [t.token, t.value]));
+    for (const m of String(entry.text ?? '').matchAll(/<ctrl_(\d+)\/>([^<]{1,40})<ctrl_(\d+)\/>/g)) {
+      const v = value[`<ctrl_${m[1]}/>`];
+      if (!v || !v.startsWith('{g|')) continue;
+      const ja = entry.translation.match(new RegExp(`<ctrl_${m[1]}/>([^<]{0,40})<ctrl_${m[3]}/>`))?.[1]?.trim();
+      if (ja === undefined) continue;
+      const link = v.slice(3, -1), en = m[2].toLowerCase().trim();
+      const bucket = ((map[link] ??= {})[en] ??= {});
+      bucket[ja] = (bucket[ja] ?? 0) + 1;
+    }
+  }
+  const results = [];
+  for (const [link, byEn] of Object.entries(map)) for (const [en, variants] of Object.entries(byEn)) {
+    const total = Object.values(variants).reduce((a, b) => a + b, 0);
+    const sorted = Object.entries(variants).sort((a, b) => b[1] - a[1]);
+    if (sorted.length > 1 && total >= 5 && sorted[0][1] / total < 0.95) results.push({ link, en, total, variants: sorted });
+  }
+  results.sort((a, b) => (b.total - b.variants[0][1]) - (a.total - a.variants[0][1]));
+  console.log(`glossary links whose inner translation varies: ${results.length}`);
+  for (const r of results) console.log(`  ${r.link} "${r.en}" (${r.total})  ${r.variants.slice(0, 5).map(([j, n]) => `${j}:${n}`).join('  ')}`);
+  save('glink.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref, glink };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref|glink>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });

@@ -18161,7 +18161,7 @@
     },
     {
       "source": "Temporary Hit Points",
-      "target": "HP",
+      "target": "一時的HP",
       "category": "Rules"
     },
     {
