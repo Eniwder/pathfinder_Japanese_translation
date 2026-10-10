@@ -31262,6 +31262,76 @@
       "target": "バラード",
       "category": "Term",
       "note": "一般語のballadも「バラード」（Heroic Ballad＝ヒロイック・バラードに揃える。「バラッド」にしない）。"
+    },
+    {
+      "source": "Steward of the Skein",
+      "target": "織り糸の管理人",
+      "category": "Character",
+      "note": "ファラズマの使者。本文で「スケインの執事」「糸の管理者」等5通りに割れていたのを統一。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Fulsome Queen",
+      "target": "フルサムの女王",
+      "category": "Character",
+      "note": "Midnight Isles の島の女王。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Zuset Ekhox Zego",
+      "target": "ズセト・エコックス・ゼゴ",
+      "category": "Character",
+      "note": "力の収集者を名乗る存在。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Skeleton Sharpshooters",
+      "target": "スケルトン狙撃兵",
+      "category": "Crusade",
+      "note": "Unit name.",
+      "caseSensitive": true
+    },
+    {
+      "source": "Skeletal Salesman",
+      "target": "骸骨の商人",
+      "category": "Character",
+      "note": "荒野を行く骸骨の行商人。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Locust Host",
+      "target": "蝗の軍勢",
+      "category": "Term",
+      "note": "デスカリ（蝗の軍勢の王）の眷属。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Champions of the Abyss",
+      "target": "アビスの勇者たち",
+      "category": "Organization",
+      "note": "コラムザデフが率いる軍勢。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Raucous Laughter",
+      "target": "ラウカス・ラフター",
+      "category": "Character",
+      "note": "アザータの名。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Solemn Star",
+      "target": "ソレムン・スター",
+      "category": "Character",
+      "note": "アザータの名。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Lost Memory",
+      "target": "ロスト・メモリー",
+      "category": "Character",
+      "note": "アザータの名。",
+      "caseSensitive": true
     }
   ]
 }

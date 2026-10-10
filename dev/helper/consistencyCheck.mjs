@@ -16,6 +16,7 @@
 //   tone               話者の多数派と逆の口調（丁寧語／常体）でほぼ統一されている会話（会話をまたいだ口調のずれ）
 //   address            speakerProfilesの指揮官への二人称と、選択肢直後の返答で実際に使われている二人称の食い違い
 //   dup                同じ原文（40字以上）なのに訳が違うもの（地の文は統一候補、台詞は参考）
+//   nameref            名前entry（呪文・ユニット・人名など）の訳が本文で別表記になっているもの
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -469,12 +470,40 @@ function dup() {
   save('dup.json', results);
 }
 
+// ---- nameref ----
+
+// 名前 entry（原文がタイトルケースの2〜4語：呪文・特技・ユニット・人名など）の訳が、
+// その名前を含む説明文・台詞でも同じ表記で使われているか。半数以上で別表記なら候補として列挙する。
+function nameref() {
+  const plain = s => String(s ?? '').replace(/<ctrl_\d+\/>/g, '').replace(/<[^>]+>/g, '').trim();
+  const squash = s => s.replace(/[・＝\s（）()]/g, '');
+  const all = [...chunkEntries()].map(({ entry }) => ({ en: plain(entry.text), ja: plain(entry.translation) })).filter(x => x.en && x.ja);
+  const names = {};
+  for (const x of all) {
+    if (!/^[A-Z][a-z'’-]+(?: (?:of|the|and|from|to|in|on|with|[A-Z][a-z'’-]+|[IVX]+)){1,3}$/.test(x.en) || x.ja.length > 20 || /[。、「」]/.test(x.ja)) continue;
+    (names[x.en] ??= {})[x.ja] = (names[x.en][x.ja] ?? 0) + 1;
+  }
+  const longs = all.filter(x => x.en.length >= 60);
+  const results = [];
+  for (const [en, variants] of Object.entries(names)) {
+    const ja = Object.entries(variants).sort((a, b) => b[1] - a[1])[0][0];
+    const re = new RegExp(`\\b${en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`);
+    const hits = longs.filter(x => re.test(x.en));
+    const misses = hits.filter(x => !squash(x.ja).includes(squash(ja)));
+    if (hits.length >= 3 && misses.length / hits.length >= 0.5) results.push({ en, ja, hits: hits.length, misses: misses.length, examples: misses.slice(0, 2).map(x => x.ja.slice(0, 80)) });
+  }
+  results.sort((a, b) => b.misses - a.misses);
+  console.log(`names whose title translation is not used in text (>=50% of mentions): ${results.length}（人名の省略・言い換え・小文字の一般語も混ざるので目視で確認）`);
+  for (const r of results) console.log(`  ${r.misses}/${r.hits}\t${r.en} = ${r.ja}\n    · ${r.examples.join('\n    · ')}`);
+  save('nameref.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
