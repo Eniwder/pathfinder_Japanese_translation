@@ -19,6 +19,7 @@
 //   nameref            名前entry（呪文・ユニット・人名など）の訳が本文で別表記になっているもの
 //   glink              用語集リンク{g|…}で挟まれた訳語が、同じ原語なのに割れているもの
 //   owner              話者欄が空の台詞の一人称が、会話名の人物（speakerProfiles）の一人称と食い違うもの
+//   ownertone          話者欄が空の台詞が、会話名の人物の話者付き台詞の多数派と逆の口調（丁寧語／常体）になっている会話
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -567,12 +568,65 @@ function owner() {
   save('owner.json', results);
 }
 
+// ---- ownertone ----
+
+// tone の話者欄が空の台詞版。会話名に含まれる人物（speakerProfiles のキー先頭語）について、話者付きの台詞から
+// 丁寧語／常体の多数派を求め、その人物の会話で話者欄が空の台詞だけが逆の口調に寄っているものを列挙する。
+function ownertone() {
+  const graph = loadGraphSpeakers();
+  const plain = s => String(s ?? '').replace(/<ctrl_\d+\/>/g, '').replace(/\{mf\|([^|}]*)\|[^}]*\}/g, '$1');
+  const POLITE = /(です|ます|ません|でした|ましょう|ください|ございます|でしょう)[かねよ！？…—]*$/;
+  const CASUAL = /(だ|だろう|だな|だぞ|のだ|じゃない|ないか|るぞ|たぞ|だった|ろう|ぜ|だよ|だね|わ|のよ|かい|ねえ)[！？…—]*$/;
+  const classify = text => {
+    const out = [];
+    for (const [, quote] of plain(text).matchAll(/「([^「」]*)」/g))
+      for (const sentence of quote.split(/(?<=[。！？])/).map(s => s.replace(/。$/, '').trim()).filter(s => s.length >= 6)) {
+        const kind = POLITE.test(sentence) ? 'polite' : CASUAL.test(sentence) ? 'casual' : null;
+        if (kind) out.push([kind, sentence]);
+      }
+    return out;
+  };
+  const bases = [...new Set(Object.keys(readJson('./res/speakerProfiles.json').characters)
+    .map(k => k.replace(/^(DLC\d+_|KTC_|CR\d+_)/, '').split(/[_ ]/)[0]).filter(b => b.length >= 4))].sort((a, b) => b.length - a.length);
+  const named = {}, blank = {};
+  for (const { dialog, entry } of chunkEntries()) {
+    if (entry.type !== 'Cue' || !entry.translation) continue;
+    const speaker = graph.get(entry.key)?.speaker ?? entry.speaker;
+    if (speaker) {
+      const base = bases.find(b => String(speaker).replace(/^(DLC\d+_|KTC_|CR\d+_)/, '').toLowerCase().startsWith(b.toLowerCase()));
+      if (!base) continue;
+      const s = (named[base] ??= { polite: 0, casual: 0 });
+      for (const [kind] of classify(entry.translation)) s[kind]++;
+    } else if (dialog) {
+      const base = bases.find(b => dialog.toLowerCase().includes(b.toLowerCase()));
+      if (!base) continue;
+      const d = ((blank[base] ??= {})[dialog] ??= { polite: 0, casual: 0, examples: [] });
+      for (const [kind, sentence] of classify(entry.translation)) { d[kind]++; if (d.examples.length < 3) d.examples.push(`${kind === 'polite' ? '丁' : '常'}:${sentence.slice(-25)}`); }
+    }
+  }
+  const results = [];
+  for (const [base, dialogs] of Object.entries(blank)) {
+    const s = named[base]; if (!s) continue;
+    const total = s.polite + s.casual; if (total < 20) continue;
+    const ratio = s.polite / total; if (Math.min(ratio, 1 - ratio) > 0.3) continue;
+    const majority = ratio >= 0.5 ? 'polite' : 'casual';
+    for (const [dialog, d] of Object.entries(dialogs)) {
+      const n = d.polite + d.casual, r = d.polite / n;
+      if (n >= 3 && (majority === 'polite' ? r <= 0.3 : r >= 0.7)) results.push({ owner: base, named: `${Math.round(ratio * 100)}%丁寧(${total})`, dialog, polite: d.polite, casual: d.casual, examples: d.examples });
+    }
+  }
+  results.sort((a, b) => (b.polite + b.casual) - (a.polite + a.casual));
+  console.log(`dialogs whose blank-speaker lines take the opposite tone to the owner's named lines: ${results.length}`);
+  for (const r of results) console.log(`  ${r.owner} [${r.named}] ${r.dialog} 丁寧${r.polite}/常体${r.casual}  ${r.examples.join(' | ')}`);
+  save('ownertone.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref, glink, owner };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref, glink, owner, ownertone };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref|glink|owner>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref|glink|owner|ownertone>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });
