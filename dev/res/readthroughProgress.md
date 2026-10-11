@@ -224,3 +224,29 @@ AneviaDrezenPartisans（59件）、AneviaStopYou（22件）、FreeGraveknightSta
 apply：ok 45 / bad 0、訳文以外の変更0。verify：Errors 26 / warnings 3、タグ不整合0。全369ラウンドimport invalid 0、失敗0。
 監査・バックアップは `dev/test/readthrough-work/c5-summit/`。次の未検証境界はoffset=1681、HilorDangerousPrison_dialogue。
 その先1813件目まで予備通読済み。Hilorの賭け金を既存の借金とする表現、Orengoftaの拷問の責任主体、カルト信者、アルエシャラエの口調を次回修正する。
+
+## 2026-10-11：c5の1682〜1942件目
+
+261件を追加通読し、37件修正。累計 **1,942 / 7,597件、247件修正**。
+HilorDangerousPrison（16件）、Orengofta（70件）、StorytellerDangerousDrezen（27件）、
+VendorDangerousTavern（40件）、Anemora（78件）、AreeluIntro_c5_Iz（30件）を完了。
+
+- ハイラーの賭け金を既存の借金とする表現、捕虜の拷問の責任主体、アルエシャラエの丁寧語を修正。
+- 指揮官へのヤーカーの「お前」や短い常体を修正。酒場の主人との言い合いは常体を保持。
+- アネモラの台詞の「狡知」、cult cellsの「細胞」、カルト信者の用語を修正。
+- アイヴの「私たち」が自分一人になっていた箇所、地の文の二人称「お前」を修正。
+- イズで話者欄が空のアレールは指揮官への既定の丁寧語。独り言の1868b8e7は保持。
+- apply試行・適用：liberation ok 12 / bad 0、iz-intro ok 25 / bad 0。訳文以外の変更0。
+- 両適用後のverify：Errors 26 / warnings 3。全369ラウンドimport：invalid 0、失敗0。
+- 監査・バックアップ：`dev/test/readthrough-work/c5-liberation/`、`c5-iz-intro/`。
+
+次の修正・検証境界：**offset=1942**、`Banner_Iz_Dizlogue`、キー `56e3cdf7-161a-44b0-ab21-e02e0eb29ace`。
+Banner56件は原文・訳文とも予備通読済み。未適用候補：901de57aのスタントン「俺たち」→「私たち」、
+00a1c9adのシーア末尾を丁寧語、Claim_Crusaderの「俺たち」（既存口調メモ確認）、ニストラの常体混入（同じく確認）。
+DeskariFightもoffset=1998から5件予備通読済み。再開時はBannerの判断・適用後、offset=2003から読む。
+女神との会話のカメリアには常体混入が残っているため補足確認する（既定は丁寧語）。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5会話順通読 | 進行中 | 1,942 / 7,597件、247件修正。次はBanner_Iz_Dizlogue |
+| c4残り・c6・仲間・共通NPC・エピローグ・DLC | 未完了 | 全て終わるまで継続するユーザー指示あり。各区切りの確認は不要 |
