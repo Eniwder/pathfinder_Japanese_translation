@@ -330,3 +330,27 @@ Herald_IvoryLabyrinth（53件）、Prison_Baph（123件）、Prison_HepzamirahGh
 | c5会話順通読 | 進行中 | 2,988 / 7,597件、385件修正。次はSvendack_PrisonBoss_dialogue |
 | 女神会話のカメリア口調補足 | 完了 | 8件を丁寧語へ |
 | 外部TODOドキュメント | 転記待ち | 本記録の追加通読・修正件数と口調メモを転記 |
+
+### 2026-10-11 c5：スヴェンダックからデビルの裁判まで
+
+386件を追加通読し65件修正。累計 **3,374 / 7,597件、450件修正**。
+Svendack_PrisonBoss（25件）、Svendack_Welcome（30件）、Foreman（94件）、LiLura_Bye（12件）、
+LiLura_Shrine（44件）、Seilkind_Cave（27件）、DrezenBribe（12件）、DrezenDouble（14件）、
+DrezenLiar／Looter／Oath／Thief（各12件）、DevilsJudgement（80件）を完了。
+
+- 雌馬／種馬、住民全体への呼びかけ、災いを嘆く文を呪いにした訳を修正。
+- スヴェンダックの看守長、フォアマンと聖堂名、モーテンの表記を用語集へ整合。
+- ウェンデュアグ、アルエシャラエ、ウルブリグの口調・一人称を整合。
+- インダラーの鎧で防げない武器、アビスの領国、モンクを僧とした訳を修正。
+- 裁判の後半だけ常体へ切り替わるメフィストフェレスを丁寧語へ。正式な陳述の主人公も丁寧語。
+- apply：svendack-mine 30件、devil-trial 35件、試行・書き込みともbad 0。
+- バックアップ比較：計画した訳文変更のみ、他フィールド変更0。
+- 各適用後verifyはErrors 26 / warnings 3。全369ラウンドimport試行はinvalid 0、失敗0。
+- 監査・バックアップ：dev/test/readthrough-work/c5-svendack-mine/、c5-devil-trial/。
+
+次は **offset=3374**、DevilSnatch_bookevent。DevilsOffer_dialogueまでの23件は予備通読済み。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5会話順通読 | 進行中 | 3,374 / 7,597件、450件修正。次はDevilSnatch_bookevent |
+| 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |

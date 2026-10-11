@@ -530,3 +530,15 @@
 - Prison_HepzamirahGhost_dialogue：ヘプザミラの亡霊は一人称「私」。カメリアの家庭への皮肉は丁寧語。
 - Prison_Vrock_dialogue：ネニオは二人称「あなた」。ヴォリメラークは自分を「ヴロック」と呼び、
   単純で自慢好きな常体を保つ。主人への挨拶で女性的な語尾を付けない。
+
+- Svendack_PrisonBoss_dialogue、Svendack_Welcome_dialogue：スヴェンダックは一人称「私」、
+  信徒として尊大な常体。子への語りかけは柔らかくてもよい。wardenは「看守長」。
+- Foreman_dialogue：鉱山の最年長者の称号兼あだ名は用語集どおり「フォアマン」、
+  一人称「私」、複数「我ら」。老人の誇りと苦々しさを持つ常体。
+- Seilkind_Cave_dialogue：セイルカインドが指揮官に報告・相談する台詞は丁寧語。
+  Foreman_dialogueで住民全体に話すyouは「あなたたち」とする。
+- LiLura_Bye_dialogue、LiLura_Shrine_dialogue：LiLuraは本文からインダラーと判断する。
+  一人称「私」、傲慢で学術的な常体。LiLura_Kenabresの「リリトゥ」プロファイルは本文と矛盾するため適用しない。
+- DevilsJudgement_dialogue：メリエス／メフィストフェレスは一人称「私」、二人称「あなた」、
+  慇懃な丁寧語を基本にする。拒絶への反応・分岐も同じ。主人公の法廷への正式な陳述は丁寧語。
+  判決を拒み戦う発言は常体でよい。
