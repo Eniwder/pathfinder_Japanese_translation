@@ -133,6 +133,22 @@ c4の未読範囲は引き続きoffset=262から。
 - `dev/test/readthrough-work/c5-next/` にfixes.json、audit.json、backup/を保存。前回の記録は保持。
 - 外部TODOは引き続き転記待ち。
 
+## 2026-10-11：c5の1184〜1362件目
+
+179件を追加通読し、35件を修正。c5累計は **1,362 / 7,597件、165件修正**。
+KTC_KingdomLost（10件）、Nocticulaの援軍（12件）、TheatreCalls（9件）、Miammir（18件）、Nystra（6件）、
+AneviaDrezenPartisans（59件）、AneviaStopYou（22件）、FreeGraveknightStaunton（43件）を完了。
+次は `Goddesses_Summit_dialogue`、offset=1362、キー `56e47041-536d-4f0d-b7f8-282808c1d7bc`。
+女神との会話は既に先へ読み進めているが、修正・検証完了の境界はここ。
+
+- アネヴィアの引用中のイラベスの一人称と、指揮官が解任されていないという発言を修正。
+- スタントンの復讐の主語・目的語を修正し、アンデッド化後の一人称を「私」に統一。
+- サキュバスの用語、葬儀と弔いの宴の区別、数年と十年の誤訳、仲間の短い口調の混入を修正。
+- apply試行・適用：ok 35 / bad 0。バックアップ比較：訳文35件、他のフィールド変更0。
+- consistency verify：Errors 26 / warnings 3、制御タグ不整合・欠落・空文字・異なる重複0。
+- 全369ラウンドのimport試行：invalid 0、失敗0。
+- 監査・バックアップ：`dev/test/readthrough-work/c5-partisans/`。外部TODOは転記待ち。
+
 | 作業 | 状態 | 記録 |
 |---|---|---|
 | c5の会話順通読 | 進行中 | 506 / 7,597件。累計62件修正。次はChun_Drezen_c5_Dialogue、offset=506 |
