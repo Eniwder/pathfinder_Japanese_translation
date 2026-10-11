@@ -20,6 +20,7 @@
 //   glink              用語集リンク{g|…}で挟まれた訳語が、同じ原語なのに割れているもの
 //   owner              話者欄が空の台詞の一人称が、会話名の人物（speakerProfiles）の一人称と食い違うもの
 //   ownertone          話者欄が空の台詞が、会話名の人物の話者付き台詞の多数派と逆の口調（丁寧語／常体）になっている会話
+//   owneraddress       選択肢直後の話者欄が空の台詞が、会話名の人物のプロファイル外の二人称で指揮官に返答しているもの
 //
 // 出力は test/consistency/ に保存する。dev/ をカレントにして実行すること。
 import fs from 'node:fs';
@@ -423,12 +424,12 @@ function address() {
   const profiles = readJson('./res/speakerProfiles.json');
   const characters = profiles.characters ?? profiles;
   const PRONOUNS = ['あなた', '君', 'お前', 'あんた', '貴様', '貴方', 'そなた', '貴公', '貴殿', 'お主'];
-  const pronounRe = new RegExp(`(?<![ぁ-ん])(${PRONOUNS.join('|')})(?![主臨子たち])`, 'g');
+  const pronounRe = new RegExp(`(?<![ぁ-ん姫暴諸主父若細貴])(${PRONOUNS.join("|")})(?![主臨子たち])`, "g");
   const expected = {};
   for (const [name, p] of Object.entries(characters)) {
     const term = p?.addressingPlayer?.commander;
     if (typeof term !== 'string') continue;
-    const allowed = PRONOUNS.filter(x => term.includes(x) || (p.addressingPlayer.rule ?? '').match(new RegExp(`(?:like|or|「)${x}`)));
+    const allowed = PRONOUNS.filter(x => term.includes(x) || (p.addressingPlayer.rule ?? '').match(new RegExp(`(?:like|or|「)\s*${x}`)));
     if (allowed.length) expected[normalizeSpeaker(name)] = { name, allowed };
   }
   const results = [];
@@ -621,12 +622,46 @@ function ownertone() {
   save('ownertone.json', results);
 }
 
+// ---- owneraddress ----
+
+// address の話者欄が空の台詞版。会話名に含まれる人物（speakerProfiles のキー先頭語）について、
+// 主人公の選択肢の直後で話者欄が空の台詞（＝その人物から指揮官への返答とみなす）が、プロファイル外の二人称を使っているものを列挙する。
+function owneraddress() {
+  const characters = readJson('./res/speakerProfiles.json').characters;
+  const PRONOUNS = ['あなた', '君', 'お前', 'あんた', '貴様', '貴方', 'そなた', '貴公', '貴殿', 'お主'];
+  const pronounRe = new RegExp(`(?<![ぁ-ん姫暴諸主父若細貴])(${PRONOUNS.join("|")})(?![主臨子たち])`, "g");
+  const expected = {};
+  for (const [name, p] of Object.entries(characters)) {
+    const term = p?.addressingPlayer?.commander;
+    if (typeof term !== 'string') continue;
+    const allowed = PRONOUNS.filter(x => term.includes(x) || (p.addressingPlayer.rule ?? '').match(new RegExp(`(?:like|or|「)\s*${x}`)));
+    const base = name.replace(/^(DLC\d+_|KTC_|CR\d+_)/, '').split(/[_ ]/)[0];
+    if (allowed.length && base.length >= 4) for (const x of allowed) (expected[base] ??= new Set()).add(x);
+  }
+  const bases = Object.keys(expected).sort((a, b) => b.length - a.length);
+  const results = [];
+  let previousType = null;
+  for (const { round, file, dialog, entry } of chunkEntries()) {
+    const afterAnswer = previousType === 'Answer';
+    previousType = entry.type ?? entry.nodeType;
+    if (!afterAnswer || previousType !== 'Cue' || entry.speaker || !dialog || !entry.translation) continue;
+    const base = bases.find(b => dialog.toLowerCase().includes(b.toLowerCase()));
+    if (!base) continue;
+    const quotes = (String(entry.translation).replace(/<ctrl_\d+\/>/g, '').match(/「[^」]*」/g) ?? []).join('');
+    const used = [...new Set([...quotes.matchAll(pronounRe)].map(m => m[1]))].filter(x => !expected[base].has(x));
+    if (used.length) results.push({ owner: base, allowed: [...expected[base]].join('/'), used: used.join('/'), dialog, key: entry.key, location: `${round}/${file}`, ja: quotes.slice(0, 100) });
+  }
+  console.log(`blank-speaker replies to the Commander using a pronoun the owner's profile does not allow: ${results.length}`);
+  for (const [k, n] of Object.entries(countBy(results, r => `${r.owner}[${r.allowed}] 使用:${r.used} ${r.dialog}`)).sort((a, b) => b[1] - a[1])) console.log(`  ${n}  ${k}`);
+  save('owneraddress.json', results);
+}
+
 // ---- main ----
 
 const [command, ...args] = process.argv.slice(2);
-const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref, glink, owner, ownertone };
+const commands = { terms, speakers, barks, english, verify, names, kana, quotes, gloss, tone, address, dup, nameref, glink, owner, ownertone, owneraddress };
 if (!commands[command]) {
-  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref|glink|owner|ownertone>');
+  console.log('Usage: node --max-old-space-size=8192 helper/consistencyCheck.mjs <terms|speakers|barks [regex]|english|verify|names|kana|quotes|gloss|tone|address|dup|nameref|glink|owner|ownertone|owneraddress>');
   process.exit(command ? 1 : 0);
 }
 fs.mkdirSync(OUT, { recursive: true });

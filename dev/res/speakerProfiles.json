@@ -569,8 +569,8 @@
         "rule": "Always use 私."
       },
       "addressingPlayer": {
-        "commander": "お前さん",
-        "rule": "Use gentle, elderly forms like お前さん or あなた."
+        "commander": "あなた",
+        "rule": "Polite あなた with です・ます (the translation uses あなた throughout; not お前)."
       },
       "speechStyle": [
         "calm",
@@ -2164,7 +2164,7 @@
       },
       "addressingPlayer": {
         "commander": "あなた",
-        "rule": "Use alluring second-person forms like あなた."
+        "rule": "Use alluring second-person forms like あなた. Exception: while she treats the mortal as her servant in Alushinyrra and Threshold (Nocticula_MainDialogue, Nocticula_C3, WeHaveBetrayal, YouAreMyBestServant, NocticulaThreshold) she uses the haughty お前. Never そなた."
       },
       "speechStyle": [
         "alluring",
