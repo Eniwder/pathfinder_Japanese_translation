@@ -306,3 +306,27 @@ DeadHeartOfHerald（9件）、GroaningGate（66件）を完了。
 |---|---|---|
 | c5会話順通読 | 進行中 | 2,747 / 7,597件、354件修正。次はHerald_IvoryLabyrinth_dialog |
 | 外部TODOドキュメント | 転記待ち | 本記録の追加通読・修正件数とキャラクターメモを転記 |
+
+### 2026-10-11 c5：継承者の手とバフォメットの会話
+
+241件を追加通読し23件修正。既読の女神会話でカメリア8件を補足修正。
+累計 **2,988 / 7,597件、385件修正**（今回計31件）。
+Herald_IvoryLabyrinth（53件）、Prison_Baph（123件）、Prison_HepzamirahGhost（21件）、Prison_Vrock（44件）を完了。
+
+- 継承者の手の「指揮官を苛烈に扱った私を赦す」の主客反転を修正。
+- シーラの「私たちに勝ち目がない」を、敵への「私たちには勝てない」という挑発へ修正。
+- 心臓の返却、奇跡を試みる発言の断定、亡命の罪悪感、最後の和音の訳を修正。
+- 通常のアルエシャラエの丁寧語、ウェンデュアグの敵への口調、ヘプザミラの一人称、ネニオの二人称を整合。
+- カメリアのGoddesses_Summit_dialogueの8件を確認・修正。以前からの補足確認事項は完了。
+- apply：herald-baph 23件、camellia-summit 8件、試行・書き込みともbad 0。
+- 各バックアップとの比較：計画した訳文変更のみ、他フィールド変更0。
+- 各適用後verifyはErrors 26 / warnings 3。全369ラウンドimport試行はinvalid 0、失敗0。
+- 監査・バックアップ：dev/test/readthrough-work/c5-herald-baph/、c5-camellia-summit/。
+
+次は **offset=2988**、Svendack_PrisonBoss_dialogue、キー 167f63c6-22f6-4308-bccf-2c8c7353efa7。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5会話順通読 | 進行中 | 2,988 / 7,597件、385件修正。次はSvendack_PrisonBoss_dialogue |
+| 女神会話のカメリア口調補足 | 完了 | 8件を丁寧語へ |
+| 外部TODOドキュメント | 転記待ち | 本記録の追加通読・修正件数と口調メモを転記 |
