@@ -178,6 +178,8 @@
 **アネヴィア(Anevia Tirabade)** — 一人称「あたし」。イーグル・ウォッチの諜報員。率直・実務的、
   やや伝法な口調だが仲間思い。第1章冒頭（MeetSeelahAnevia_Dialogue等）で初登場。
   個人会話（Dialogue_AneviaMain）・DLC1も話者IDが空だが「あたし」（「私」にしない。#55で約80行統一）。
+  KTC_AneviaStart_Dialogueの話者欄なしも同じ。ただし976c0cbeはイラベスを真似た軍人風の
+  報告と直後に明かすため、丁寧語のまま。アイオンへの警戒で硬くなる場面も前後の文脈を確認する。
 
 **カメリア(Camellia_Companion)** — 一人称「私」（「わたくし」にしない）。ハーフエルフの令嬢。
   上品で丁寧語基調のお嬢様口調（裏の顔あり）。MeetCameliaで初登場。
@@ -307,6 +309,7 @@
 **ハルラン(Hurlun)** — 一人称「私」（「俺」「わし」にしない。Hurlun_SilentCaster や話者IDの
   無いハルランの台詞も同じ）。ケナブレスの審問官ハルラン本人の主要な発話speaker id。
   高圧的・尊大で猜疑心が強く、「〜だ」「〜のだ」「〜ねば」の荒々しい断定調。容疑者には「貴様／お前」。
+  c5のHulrun_Drezen_c5_Dialogue（話者欄なし）も同じ常体。冒頭だけ丁寧語にしない。
   Round18で本格登場。
 
 **ウォルジフ(DLC1_Woljif_Companion)** — 既存の「ウォルジフ(Woljif_Companion)」と同一人物・
