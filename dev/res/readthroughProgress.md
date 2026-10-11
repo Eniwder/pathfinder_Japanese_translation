@@ -8,7 +8,7 @@ c0〜c3はClaude Codeで完了済み。c4は5,657件中、先頭262件を対訳�
 
 次は **offset=262（263件目）** の `Atselm_dialogue` から再開する。
 先頭キーは `ab41f166-6b95-4cd6-bd00-ef4dc61aecd1`。
-c4の続き → c5 → c6 → Companions の順で進める。
+当初の順序はc4の続き → c5 → c6 → Companions。下記の追加依頼でc5を先に開始した。
 
 ### 今回の変更
 
@@ -64,3 +64,39 @@ node helper/readthrough/chapdump.mjs test/readthrough-work c4 test/readthrough-w
 | 天使／エンジェルの統一 | 完了 | 209件、用語集・埋め込み用語集も更新。固有の派生語は保持 |
 | ウェンデュアグの不自然な女言葉 | 完了 | 候補153件確認、138件修正。親密な文脈・引用・言いよどみは保持 |
 | c4の会話順通読 | 進行中 | 262 / 5,657件。次はAtselm_dialogue、offset=262 |
+
+## 2026-10-11：追加依頼によりc5開始
+
+c5は7,597件中、先頭208件（次の4会話）を通読し、28件を修正した。
+c4の再開位置は上記のoffset=262のまま。
+
+- AreeluCell_AreeluLabAgain_c5_dialog：50件
+- Opon_AreeluLabAgain_c5_dialog：70件
+- Witchunter_AreeluLabAgain_c5_dialog：25件
+- AreshkaConfrontation_dialogue：63件
+
+次は **c5 offset=208（209件目）** の `CrossingTheRift1_dialogue`。
+先頭キーは `3fb4e020-a625-4889-ac08-caad4ce3749c`。
+先頭12件は予備確認したが、進捗は会話単位で208件までとする。
+
+### 修正・口調の判断
+
+- 話者欄が空のアレールの投影を既定の丁寧語に揃えた。
+- 「約束した」を「約束を果たした」、「幽霊が閉じ込められていた」を主人公の行為とする誤訳を修正。
+- 背中を刺すという裏切りの慣用表現、失われた目を指す代名詞、指輪の感触を失ってからの経過時間を修正。
+- brazierの「香炉」を該当会話で「火鉢」に、vigilの「夜伽」を「見張り」に修正。
+- ウェンデュアグの威嚇「末路ね／燃えなさい」を「末路だ／燃えろ」に修正。
+- cultistを「カルト信者」に揃えた。スフィンクスの代弁者になったネニオの丁寧語は既定の例外どおり保持。
+
+### 検証・作業データ
+
+- apply.mjsの試し実行：ok 28 / bad 0。その後、レビュー用チャンク2ファイルに適用。
+- consistency verify：Errors 26 / warnings 3。制御タグ不整合・欠落・空文字・訳の異なる重複は0。
+- バックアップとの比較：28件の訳文変更が計画と一致、訳文以外のフィールド変更0。
+- 全369ラウンドのimport `--dry-run`：全てinvalid 0、実行失敗0。git diff --checkも問題なし。
+- データは `dev/test/readthrough-work/c5-start/` のfixes.json、audit.json、backup/に保存。
+  前回のc4の監査・バックアップは保持。外部TODOは引き続き転記待ち。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5の会話順通読 | 進行中 | 208 / 7,597件。28件修正。次はCrossingTheRift1_dialogue、offset=208 |
