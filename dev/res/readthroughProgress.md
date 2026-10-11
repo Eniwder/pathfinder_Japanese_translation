@@ -214,7 +214,7 @@ AneviaDrezenPartisans（59件）、AneviaStopYou（22件）、FreeGraveknightSta
 
 | 作業 | 状態 | 記録 |
 |---|---|---|
-| c5の会話順通読 | 進行中 | 506 / 7,597件。累計62件修正。次はChun_Drezen_c5_Dialogue、offset=506 |
+| c5の会話順通読 | 進行中 | 1,681 / 7,597件。累計210件修正。次はHilorDangerousPrison_dialogue、offset=1681 |
 
 ## 2026-10-11：c5の1363〜1681件目
 
