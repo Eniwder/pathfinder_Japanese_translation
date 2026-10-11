@@ -100,3 +100,39 @@ c4の再開位置は上記のoffset=262のまま。
 | 作業 | 状態 | 記録 |
 |---|---|---|
 | c5の会話順通読 | 進行中 | 208 / 7,597件。28件修正。次はCrossingTheRift1_dialogue、offset=208 |
+
+## 2026-10-11：c5の209〜506件目
+
+298件を追加通読し、34件を修正。c5累計は **506 / 7,597件、62件修正**。
+CrossingTheRift1〜3、EnygmaEnter、FoxDontLeave、FoxMyself、ShadowOfAreshka、
+StatueChallenge、VowingToAreshka、VowToAreshka、DragonHatched、DragonsBeforeBattle、
+HokugolAfterBattle、KTC_LatimasCalls、LatimasAfterBattleの15会話を完了。
+
+次は **c5 offset=506（507件目）** の `Chun_Drezen_c5_Dialogue`。
+先頭キーは `e0b87edb-8cdd-4447-9a0c-ee6fca8b3478`。
+同会話の先頭2件は予備確認したが、読了位置は会話単位で506件までとする。
+c4の未読範囲は引き続きoffset=262から。
+
+### 今回の修正
+
+- 自分を取り戻した後のネニオを通常の常体へ戻した。百科事典への熱意が戻る分岐も同様。
+- ネニオの女性語、エンバーの丁寧語の抜け、ネニオの二人称「お前たち」を修正。
+- ネニオの呼びかけ「坊や／お嬢さん」の抜けを4件復元。性別分岐を保持。
+- 転送の力の主に「会うまで」を「手に入れるまで」とした誤訳、「私が答えだ」を条件文にした誤訳を修正。
+- エニグマの声の「汝」を「お前」に揃え、同じ問いかけの訳を統一。
+- 黒竜ラティマスは正体開示後「我」、守護竜ホクガウルは「私」に一人称を統一。学者の連絡時は「私」を保持。
+- 「好古家ラティマス」を全体検索し、用語集どおり「骨董家ラティマス」に修正（該当1件）。
+- 名／称号、血の塊／口に溜まった血、途切れた名乗りなどの不自然な表現を修正。
+
+### 検証・保存
+
+- apply.mjsの試し実行：ok 34 / bad 0。レビュー用チャンク2ファイルへ適用。
+- consistency verify：Errors 26 / warnings 3（増加なし）。制御タグ不整合・欠落・空文字・訳が異なる重複0。
+- バックアップとの比較：34件の訳文変更が計画と一致。訳文以外のフィールド変更0。
+- 全369ラウンドのimport `--dry-run`：全てinvalid 0、実行失敗0。git diff --checkも問題なし。
+- `dev/test/readthrough-work/c5-next/` にfixes.json、audit.json、backup/を保存。前回の記録は保持。
+- 外部TODOは引き続き転記待ち。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5の会話順通読 | 進行中 | 506 / 7,597件。累計62件修正。次はChun_Drezen_c5_Dialogue、offset=506 |
