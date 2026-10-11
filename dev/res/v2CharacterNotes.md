@@ -104,6 +104,7 @@
 **Katair(PuluraFall_Katair)** — 一人称「私」。プルラの神殿の生真面目な星詠み学者(男性)。
   硬めの敬語(です・ねばなりません)、指揮官には「指揮官殿」。カナ表記「カタイル」で
   glossaryに追記済み（round44、Regnard_dialogue等での言及から確認）。
+  PuluraCouncil・PuluraFallでは古風な常体（〜できん、〜ねばならん）になっているが一人称は「私」（「我」を修正、#59）。
 
 **アザータ・オレアド(Azata_Oread)** — 一人称「私」。アザータ思想に共鳴するオレアド。穏やかで
   友好的、少し浮世離れした口調。
@@ -122,6 +123,8 @@
   軽薄で人懐っこい口調。LegendRankUpで登場。
   評議会（Council_Socothbenoth_Dialogue）で正体を見せている場面も「僕」。変装中（KTC_SocothbenothDisguised）だけ「私」。
   口調は常体（〜だよ／〜さ／〜だね）、指揮官は「君」。個別会話だけ丁寧語になっていたのを統一済み（#59）。
+  話者ID空のKTC訪問（KTC_Socothbenoth_Dialogue・Socoth_Lexicon_Dialogue）はエルフ風の素の姿なので
+  同じく「僕／君」（「私／お前」＋「〜ねばならん」調だったのを修正、#59）。
 
 **メフィストフェレス(Mephisto)** — 一人称「私」。老練で人を操るのに長けた大公爵。常に泰然と
   した甘言で誘惑する。LegendRankUpの分岐でザカリウス(リッチ)と対になって登場（プレイヤーの
