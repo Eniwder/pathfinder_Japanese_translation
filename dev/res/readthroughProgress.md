@@ -354,3 +354,27 @@ DrezenLiar／Looter／Oath／Thief（各12件）、DevilsJudgement（80件）を
 |---|---|---|
 | c5会話順通読 | 進行中 | 3,374 / 7,597件、450件修正。次はDevilSnatch_bookevent |
 | 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |
+
+### 2026-10-11 c5：アイオンの仲間、テレンデレヴ、天使への昇格
+
+262件を追加通読し56件修正。累計 **3,636 / 7,597件、506件修正**。
+DevilSnatch、DevilsOffer、InevitableCompanion、Inevitable_KTC、KenabresFlashback／Marevo、
+MirrorAgain／Reveal、StauntonAtIz、TerendelevCompanion／Past／Present、
+Angel_FarewellToMythic、IomedaeSecondVisit_MythAngelを完了。
+
+- メリエスの勧誘をキャラクターメモ・裁判と同じ慇懃な丁寧語へ。ゴラリアンをゴラリオンへ。
+- テレンデレヴの仲間会話を穏やかで威厳ある丁寧語へ。久々の外出を長期間の不在とした誤訳を修正。
+- 一般名詞の大渦と位界名のマエルストロムを区別。アダマンティンの坩堝を用語集へ整合。
+- コヴェレスの呼びかけを指揮官、ベレンゲルの一人称・呼びかけを俺／お前へ整合。
+- アイオーメディの呼びかけをお前へ。救済の天使／報復の天使は混成表記を解消。
+- 適用：aeon-return 39件、angel-judgment 17件。試行・書き込みともbad 0。
+- バックアップ比較：計画した訳文変更のみ、他フィールド変更0。
+- 各適用後verifyはErrors 26 / warnings 3。全369ラウンドimport試行はinvalid 0、失敗0。
+- 監査・バックアップ：dev/test/readthrough-work/c5-aeon-return/、c5-angel-judgment/。
+
+次は **offset=3636**、LeapOfFaith_Mythangel_c5_GMBE。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5会話順通読 | 進行中 | 3,636 / 7,597件、506件修正。次はLeapOfFaith |
+| 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |

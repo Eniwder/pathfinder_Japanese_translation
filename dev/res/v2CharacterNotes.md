@@ -542,3 +542,11 @@
 - DevilsJudgement_dialogue：メリエス／メフィストフェレスは一人称「私」、二人称「あなた」、
   慇懃な丁寧語を基本にする。拒絶への反応・分岐も同じ。主人公の法廷への正式な陳述は丁寧語。
   判決を拒み戦う発言は常体でよい。
+
+- DevilsOffer_dialogue：メリエスは裁判と同じく私／あなた、慇懃な丁寧語。勧誘や称賛でも常体に切り替えない。
+- TerendelevCompanion_diaogue：テレンデレヴはPast／Presentと同じく私／あなた、穏やかで威厳のある丁寧語。
+  母性的な比喩・笑い・親しみも自然な丁寧語で表す。「お前」「〜だ」「〜ぞ」に揺らさない。
+- InevitableCompanion_dialogue：コヴェレスは機械的な常体で、指揮官を原則「指揮官」と呼ぶ。
+- Angel_FarewellToMythic_GMBE：話者欄が空でも、ベレンゲルは俺／お前、ぶっきらぼうな常体。
+- IomedaeSecondVisit_MythAngel_c5_dialog：アイオーメディは私／お前、威厳ある常体。
+  主人公が女神に来訪理由を尋ねる台詞は敬意を示す丁寧語。
