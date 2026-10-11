@@ -3,6 +3,9 @@
 c0〜c3 の通読（TODO #53・#58・#59）で使った補助スクリプト。いずれも `dev/` で実行する。
 `W` は作業ディレクトリ（セッションの scratchpad など、リポジトリ外）。
 
+現在の読了位置・判断・検証結果は [会話順通読の進捗](../../res/readthroughProgress.md) を参照。
+ローカル作業データは `.gitignore` を置いた `dev/test/readthrough-work/` にも保存できる。
+
 | スクリプト | 用途 |
 |---|---|
 | `survey.mjs <W>/all.json` | chunks_review 全ラウンドから各キーの最新 entry を集めて all.json を作る（`--max-old-space-size=8192`） |

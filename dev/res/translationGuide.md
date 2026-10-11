@@ -152,6 +152,9 @@ Pathfinder: Wrath of the Righteous 日本語化の訳文スタイルガイド。
   （例: `thirty-five thousand gold coins` → `3万5000ゴールド`）。
 - 天使など神話的存在が主人公を呼ぶ「Champion」と、人間の部下が呼ぶ「Commander」は
   訳し分ける（「チャンピオン」「指揮官」を混同しない）。
+- `Angel` は存在・副種別・神話の道のいずれも「天使」に統一する（2026-10-11ユーザー指定）。
+  `Angelkin`（エンジェルキン）、`angelbloom`（エンジェルブルーム）、登録済みの呪文名・
+  固有のクリーチャー名・アイテム名は、それぞれのglossaryの音写を保持する。
 - おどけた敬称「(your/his/her) Commandership」は`Commander`とは別語として訳し方を
   chunk内で統一する（「指揮官様」等、初出の訳語に揃える）。`{mf|his|her} Commandership`
   は性別を問わない敬称なので`{mf}`ごと省いてよい。

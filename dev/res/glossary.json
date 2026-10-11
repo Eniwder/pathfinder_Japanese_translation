@@ -8,7 +8,7 @@
     },
     {
       "source": "Angel",
-      "target": "エンジェル",
+      "target": "天使",
       "note": "Mythic Path of heavenly power and righteousness."
     },
     {
@@ -15270,7 +15270,7 @@
     },
     {
       "source": "Angel Subtype",
-      "target": "（エンジェル）の副種別",
+      "target": "（天使）の副種別",
       "category": "PRD Term",
       "note": "PRD日本語版の訳語。"
     },
@@ -20874,7 +20874,7 @@
       "source": "Angelic Halo",
       "target": "天使の光輪",
       "category": "Ability",
-      "note": "エンジェルの神話能力。強化版は「天使の光輪強化」。"
+      "note": "天使の神話能力。強化版は「天使の光輪強化」。"
     },
     {
       "source": "Improved Angelic Halo",
