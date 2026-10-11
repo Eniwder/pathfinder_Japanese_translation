@@ -161,6 +161,7 @@
 **フール王(FoolKing / Thaberdine Quintissimus Hierophantel)** — 一人称「余」。奇矯で芝居がかった、
   やや酔っ払い気味の王。ユーモア・支離滅裂・意外な洞察の間を行き来する。TricksterRankUpシリーズで
   登場。
+  Coronation_Dialogueの話者欄が空のd13f7ec8も同じ王。「我」ではなく「余」に揃える。
 
 **変装ソコスベノス(KTC_SocothbenothDisguised)** — 一人称「私」。人間に変装した状態のソコスベノス。
   滑らかで軽妙、からかうような口調。素のソコスベノス(Socothbenoth、一人称「僕」)より丁寧で
