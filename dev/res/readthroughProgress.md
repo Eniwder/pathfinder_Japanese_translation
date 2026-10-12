@@ -630,3 +630,18 @@ Companions 2,075 / 10,584件を通読。会話修正は累計148件。全体の�
 
 次の適用対象は **Companions offset=2,075、Wenduag_dialogue_main 250件**。先頭90件は通読済み、未適用。次の未読offset=2,165。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメント転記待ち。
+
+### 2026-10-12 Companions：通常会話とアルエシャラエの個別会話2,907件
+
+Companions 2,907 / 10,584件を通読。会話修正は累計321件。全体のデーモン領主514件の統一は別計上。
+
+- Wenduag_dialogue_main 250件完了、62件修正。粗野な常体へ整合し、主への敬語を維持。ロマンスの不安や弱さは残した。「心」を「心臓」とした訳、従者の役を願う意味、地の文の文法も修正。
+- DialogueWoljif_main 170件完了、8件修正。売り手の値段交渉を値切りとした訳、赤ん坊の毛布、親族の説明、主人公の口調を修正。
+- EvilArueshalaeCompanion 50、MeetEvilArusha 21、DreamVisit 43、VisitMyDream 10、ArushaAfterBattle 12、Dimalchio 83と戦闘後20、Q2 Dream Start/End各19、Q2 Letter22、Q3 BackToReality/FinalDream各41、AskAnevia20、AneviaResults11件を完了。
+- アルエシャラエ関連4バッチで24 / 33 / 39 / 7件修正。善の通常発話を丁寧語へ整合。悪の女性常体、悪へ戻る選択に続く発話、親密な呼びかけは文脈で維持。ディマルキオへの罪悪感や悪夢の厳しい批判は原文通り。
+- ウェンデュアグの範囲外1件はDimalchio内の発話。食卓についている姿をテーブルそのものに座るとした訳、目を上に向ける動作、権限の意味も修正。
+- 各bad 0、訳文以外の変更0、verify Errors 26 / warnings 3。全6バッチの全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査とバックアップはtest/readthrough-work/の上記6作業フォルダ。
+
+次は **Companions offset=2,907、CamelliaRedHanded_dialogue 67件**。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメント転記待ち。
