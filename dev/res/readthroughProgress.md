@@ -1,6 +1,14 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（2,044 / 2,315件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（24 / 3,989件）。
+
+### 2026-10-13：DLC5完了（2,044〜2,315）、DLC6開始
+
+- Companion_Sendri、Kerismei、SendriLies、Survivor_Bemir・Brodie・Frada・Inai・Langrat、TavernKeeper、Velhen、Veteranを対訳通読。DLC5は全2,315件完了。
+- dlc5-batch14＝4件、batch15＝12件、batch16＝16件を適用（DLC5累計239件）。レカースの保存候補に加え、センドリのsomeを全員に拡大した訳、Alabastrine Peaks・Realm of the Mammoth Lordsの表記、フリルを羽根飾りとする訳、欠片を二人が二つずつ持つ説明の欠落、It's not every dayの直訳等を修正。
+- フラダはDLC2で定着した私／丁寧語の公務員口調を継承。ヴェルヘンは既存の力強い常体を保持し、Cueだけの丁寧語を修正。特殊ポーションの調合中に調整が必要という説明、少数の職人しか作れない調合法を本人が滅多に作れないとした訳、贈り物を有効に使えるという意味、会話内のゴールド額なども修正。
+- 各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。DLC5の全16バッチが検証済み。稼働中の検証プロセスなし。
+- DLC6のCat_is_a_spy全16件とArenaAnnouncer_AfterWinの先頭8件を対訳通読。次はDLC6 offset=24、ArenaAnnouncer_AfterWinの続き。未適用候補4件をinit-dlc6-batch1.mjsに保存。猫の気に入るの助詞、欠落した男女分岐2件、We expected nothing lessとgive our wordの意味。all.jsonはDLC5 batch16適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC5の続き（1,843〜2,044）
 
