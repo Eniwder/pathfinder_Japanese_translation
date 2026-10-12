@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,146 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,351 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（2,146〜2,351）
+
+- Regill_Event_2・Event、RiftInspection・StageInspection、CartTrouble、HelpTippler、SaveThePetを対訳通読。
+- dlc6-batch18＝8件、batch19＝5件を適用（DLC6累計210件）。レギル自身が恥ずかしく思う主語と注意を促す側の逆転、統計からの予測を確定とした訳、露店にいるという場所の情報、賛意の強さ、無ためという誤った表現2件、警報を鳴らす部隊が曖昧な文を修正。救出場面では助ける人数の限定、持ち上げる動作の不自然さ、鼻歌・這い込む・記念品の意味を修正した。
+- 両バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=2351、Seelah_Event_2_dialogue。オポッサムの顔の描写の候補1件をinit-dlc6-batch20.mjsに保存。all.jsonはbatch19適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（1,995〜2,146）
 
