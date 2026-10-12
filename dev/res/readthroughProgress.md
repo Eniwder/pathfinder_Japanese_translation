@@ -940,3 +940,13 @@ NPC_Common 2,573 / 2,573件を通読完了。40件修正（4バッチ npc-batch1
 - 4バッチ bad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3（増加なし）。全369ラウンドimport試行でinvalid 0、失敗0。
 
 次はEpilogues（451件）から。Interchapters、World、DLC1〜6も未完了。外部TODOは転記待ち。
+
+### 2026-10-12 Epilogues・Interchapters・World：通読完了
+
+Epilogues 407件＋Epilogues_afterlogues 44件、Interchapters 7件、World 1,144件（DemonRankUp／DragonRankUp／LegendRankUp／LichRankUp／LocustRankUp／TricksterRankUp／Diplomacy）を通読完了。修正は2バッチで計93件（epilogues-batch1＝12件、world-batch1＝81件）。MechanicTexts／Classes／Testはinspectで0件（グループ未存在）。
+
+- 用語統一：デーモン君主→デーモン・ロード（13件）、墓標の貴婦人→墓所の貴婦人、髑髏／頭蓋の柱→骸の柱、ウィスパリング・ウェイ→囁きの道、ヌルガル／ネルガルの取り違え、アルシニラの総督→太守、バードルイド・ドラゴンライダー／ウォーバリアン・レイジプリーストの表記ゆれ、ヘドヴェンド六世。
+- 悪魔→デビル（メフィストフェレス側）、ドラゴン台詞の「人の身の者たち」を定命の者へ（13件）、ソコスベノスの俺→僕（TricksterRankUp_1）、シャミラの女性口調、誤字（召還→召喚、艷→艶、あぐ然→唖然、口移し→一から十まで教え込まれ、など）。
+- 2バッチとも bad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3（増加なし）。全369ラウンドimport試行でinvalid 0、失敗0（epilogues-batch1確認済み。world-batch1はvalidate実行）。
+
+次はDLC1〜6とDLCFree（計約1.3万件）。
