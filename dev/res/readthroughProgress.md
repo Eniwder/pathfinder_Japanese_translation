@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（283 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（612 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（283〜612）
+
+- Madam_InLove、MageMerchant、Protester、RobberDialogue、BE_SwarmGate、SwarmBarricade・Commander・Evac・HellBattle・Hideout・Inquis・Teleport・Terrorを対訳通読。
+- dlc6-batch4＝4件、batch5＝14件、batch6＝7件、batch7＝6件を適用（DLC6累計81件）。耳打ちする側の逆転、唇への接触の欠落、dozenの数量、賄賂、苦痛から救った時制、商人の丁寧語、途中で遮られた地名を家名にした訳、氏族で隔離して暮らしていた説明を一人暮らしにした訳、作物の病害、風が叫びと匂いを運ぶ描写、破滅を一般的な運命に弱めた訳、新鮮な肉の豊富さ等を修正。
+- 各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=612、Dialogue_DLC6_Flags。未適用候補2件をinit-dlc6-batch8.mjsに保存（傷つけた仲間を神殿の病院へ運ぶ潜入の口実を盾とした訳、信徒自身の崇拝対象を支配者どもと呼ぶ訳）。all.jsonはbatch7適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（24〜283）
 
