@@ -434,3 +434,27 @@ EvilAbrogail／KindAbrogail、MegidiahCompanionとKTC1〜5、DragonsKenabresを�
 |---|---|---|
 | c5会話順通読 | 進行中 | 4,912 / 7,597件、c5修正888件。次はNidalynnQuest1 |
 | 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |
+
+### 2026-10-12 c5：ドラゴンの教え、レジェンド、兵士の宴、リッチ化
+
+960件を追加通読。累計 **5,872 / 7,597件、c5修正1,119件**。今回の実変更231件はすべてc5。
+NidalynnQuest1からDeadTerendelev_lichまで完了。Galfrey_Zombie35件は先読み済み、修正は未適用。
+
+- ドラゴンの師ハラセリアックスを私／あなた／穏やかな丁寧語へ整合。哲学的なwisdomは能力値の判断力ではなく知恵。Reudgerは用語集に従いロイガー師。
+- テレンデレヴはアンデッド化後も私／あなた／丁寧語。原文の怒り・苦痛・憎しみは保持。
+- レジェンドの各地の試練でアレールの私／あなた／丁寧語を整合。魂による命の買い戻し、メスフラスコ、予見の意味を修正。
+- 主人公の影は性別の出ない常体。アイオーメディへの主人公の返答は丁寧語。カイデンは儀礼を断る場面に合わせ親しみある常体。
+- 兵士の宴のブリモラク、ヴェンコ准男爵、アレール・ヴォーレスを用語集へ整合。飲み比べの献杯と慣用句、腕相撲の縛る手、ドワーフ兵の片言を修正。
+- リッチの相談役の敵対時の常体は明示的な敵対演出として保持。味方としての報告は丁寧語へ整合。bloodyの罵り、dance to her tuneの慣用句を修正。
+- We will destroyの能動を我らは滅びるとした逆訳を修正。アンデッドのウェンデュアグは主人への丁寧語。
+- 適用：dragon-lessons 36、hal-companion 48、terendelev-undead 27、legend-freedom 20、legend-allies 17、legend-renunciation 18、soldier-party 11、party-games 11、party-revelation 13、lich-counselors 9、lich-victory 14、terendelev-lich 7件。
+- 試行・書き込みともbad 0。各バックアップ比較で訳文以外の変更0。
+- 各適用後verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査・バックアップ：dev/test/readthrough-work/の上記12作業フォルダ。
+
+次は **offset=5872**、Galfrey_Zombie_dialogue、先頭キー3965d5d6。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5会話順通読 | 進行中 | 5,872 / 7,597件、c5修正1,119件。次はGalfrey_Zombie |
+| 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |
