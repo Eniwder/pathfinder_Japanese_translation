@@ -1,6 +1,14 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（1,843 / 2,315件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（2,044 / 2,315件）。
+
+### 2026-10-13：DLC5の続き（1,843〜2,044）
+
+- b2_old_mo、b2_warlord、Companion_Android、Companion_Rekarthを対訳通読。
+- dlc5-batch11＝8件、batch12＝36件、batch13＝21件を適用（累計207件）。前回保存したニンフ等の候補を反映。ホヴール族長は初対面・決戦前の私／常体と一致させ、相談場面だけの儂／じゃの老人言葉を修正。オールド・モーとフェイの用語表記、全滅と破滅の違い、ペンタの丁寧語等も修正。
+- ペンタの二択へのYesは、曖昧さを残す冗談として「はい」に戻した。過去の遠征を今回と呼ぶ誤り、元の部隊が生き延びなかったこともThankfullyと述べる皮肉の欠落、Constructを構造物とする訳、partを三つとも半分とする訳などを修正。怒りの短い罵倒と引用内の荒い言葉、詩の断片は説明文の口調とは区別して維持。
+- 各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=2,044、DLC5_Companion_Sendri_dialogue。未適用候補4件をinit-dlc5-batch14.mjsに保存。レカースの英雄について話す意味、brain washing、不要な殺し合いの限定など。all.jsonはbatch13適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC5の続き（1,650〜1,843）
 
