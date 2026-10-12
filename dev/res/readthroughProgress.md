@@ -851,3 +851,15 @@ c4 2,886 / 5,657件を通読。前回2,375件から511件追加、166件修正�
 
 次の確定再開位置は **c4 offset=2,886、ConfrontMentor_azata_c4_dialog 53件**。この53件は先行通読済み、修正候補は未適用。次の未読offset=2,939。
 NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：指南役とシャミラの宮廷まで3,184件
+
+c4 3,184 / 5,657件を通読。前回2,886件から298件追加、79件修正（既読会話の追加修正を含む）。offset=262以降の修正は累計598件。初回386件の一括修正は別計上。
+
+- ConfrontMentor 53、Dracarys 15、DracoshaKidnapped 13、HologramTrade 28、MarketSearch 38、MentorInNexus 43、MentorSaysHi 9、SlaveEscapes 18、Ar-Mikhet 17、HeraldDoubt_ShadowDemon 24、HeraldDoubt_Yozz 14、ShamiraCourt 26件完了。
+- アーリー・サンセットは正体を明かす前の主人公への丁寧語と、商人相手にデーモンを演じる横柄な口調を区別。正体判明後の常体を保持。ラミサの女性口調、アイヴの一人称、継承者の手の丁寧語を整合。
+- 裏切られる恐れと相手が裏切ることを恐れる関係の逆転、思い知らせる意味、他者の側という指示、爪と牙の混同を修正。イズの断裂を定訳に合わせる。ヨズの宮廷での改まった敬語を整合。
+- 4バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の確定再開位置は **c4 offset=3,184、Tarshari_MainDialogue 30件**。この30件は先行通読済み。次の未読offset=3,214。
+NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
