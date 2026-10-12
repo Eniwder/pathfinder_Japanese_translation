@@ -725,3 +725,15 @@ Companions 7,237 / 10,584件を通読。会話修正は累計574件。全体の�
 
 次の適用対象は **Companions offset=7,237、KTC_Wenduag_ComeNeathholm 17件**。LannDuel 49件も通読済み、修正候補未適用。次の未読offset=7,303。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：ウェンデュアグのクエストとウォルジフQ1まで8,013件
+
+Companions 8,013 / 10,584件を通読。会話修正は累計644件。全体のデーモン領主514件の統一は別計上。
+
+- ウェンデュアグ・ラン・スル：ComeNeathholm 17、Lann_Duel 49、DuelLost 32、MongrelVendorDrezen 11、MongrelVendorWendu 19、SullLannIsNeutralized 31件完了、22件修正（companions-wendu-duel）。Sull_IWantMyMongrels 54、WenduAndSull 55、WenduTrainingIntervention 47件完了、20件修正（companions-wendu-chief）。
+- サヴァメレク：AfterBattle 40、ISmellHim 9、NearManshion 9、SavaAndWendu 22、Welcome 33、HeIsClose 12、FinalSava 32、LannDubious 19、SavaIsDeadNow 91、WenduTraitor_DrezensStreet 21件完了、14件修正（companions-wendu-final）。
+- ウォルジフQ1：AfterBattle 11、AfterTraitor 31、ShopGolem 36、ShopOwner 37、Traitor 58件完了、14件修正（companions-woljif-q1）。ケリスメイはQ1では荒っぽい盗賊団の頭目として「あたし」（後日談と統一）。DLC5・6の落ち着いた彼女はspeakerProfilesどおり「私」のまま。シーラの「その人」をウォルジフに、ウォルジフの比喩と言い回しを自然に修正。
+- 上記3バッチは前のエージェントが適用・検証済みで記録が漏れていた。woljif-q1は準備のみだったのを引き継いで適用。全4バッチbad 0、訳文以外の変更0。verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次は **Companions offset=8,013、Q2WoljifCultCrusader_dialogue 25件**。未適用修正なし。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
