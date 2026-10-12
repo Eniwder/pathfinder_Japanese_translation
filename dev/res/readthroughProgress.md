@@ -686,3 +686,16 @@ Companions 5,384 / 10,584件を通読。会話修正は累計498件。全体の�
 
 次の適用対象は **Companions offset=5,384、LannFeelsBad_dialogue 20件**。LannFeelsWorse 13、LannGoBeat_KTC 16を含む49件は通読済み、修正未適用。次の未読offset=5,433。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：ラン個別会話とネニオの正体まで5,760件
+
+Companions 5,760 / 10,584件を通読。会話修正は累計535件。全体のデーモン領主514件の統一は別計上。
+
+- LannFeelsBad 20、LannFeelsWorse 13、LannGoBeat 16、MongrelsDefeated 24、SavamelekhAbyss 37、LannDying 21、LannThankYou 39件完了、11件修正。ウェンデュアグの通常口調、触れている感覚、part demonを半分と断定した訳を修正。ランの生還・死亡、祈り、自己犠牲と落胆は原文どおり維持。
+- LannTrustMe 12、SavamelekhFinal 12、SullAftermath 16、SullExplains 40、SullWeak 25、WenduagHelloAgain 24、WenduDubious 19件完了、18件修正。スルの固有名の訛りと追放の意味、ウェンデュアグの通常口調を整合。正式に主へ服従した後の敬語は維持。
+- FoxReveal 58件完了、8件修正。ネニオの学術的な常体、ウェンデュアグの威嚇を整合。謎かけ・種族の忘却・探究への執着は原文通り。
+- 全3バッチbad 0、訳文以外の変更0。verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査とバックアップはtest/readthrough-work/の上記3作業フォルダ。
+
+次の適用対象は **Companions offset=5,760、FakeHellknights_RegillQ2_dialog 45件**。Vendor 20、PoorCultist 45、JoinOrLeave 9、RegillReveal 41、SuccubusTea 52を含む212件は通読済み、修正未適用。次の未読offset=5,972。保留修正はinit-companions-regill-test.mjs。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
