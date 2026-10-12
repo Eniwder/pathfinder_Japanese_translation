@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（956 / 2,315件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（1,343 / 2,315件）。
+
+### 2026-10-13：DLC5の続き（956〜1,343）
+
+- SithhudHimself、SithhudIsFinallyDead、Inter_End・Start、a1_FirstMeet・BrothersPlans・BrothersReunion・Traitor・WrathfulWoman、FirstGoblin_Main・GoblinBoss_Main・BodyOfTowerSpirit・CageForAnimalを対訳通読。
+- dlc5-batch4＝9件、batch5＝8件を適用（累計73件）。助けた側／助けられた側の逆転、ソシエルとペンタの丁寧語、disgrace、weを二人と限定していた訳、ノルテの言葉遊び、premature retirement、companionを伴侶と限定していた訳など。両バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3。
+- batch4・5はそれぞれ全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1,343、Dialogue_DLC5_GoblinsPartyInTheTower_FinalDialog。未適用候補2件をinit-dlc5-batch6.mjsに保存。all.jsonはbatch5適用後にsurveyで更新済みなのでbatch6を準備できる。
 
 ### 2026-10-13：DLC4の引き継ぎ確認・DLC5開始
 
