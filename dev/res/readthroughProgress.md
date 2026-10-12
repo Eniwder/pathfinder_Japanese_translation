@@ -699,3 +699,17 @@ Companions 5,760 / 10,584件を通読。会話修正は累計535件。全体の�
 
 次の適用対象は **Companions offset=5,760、FakeHellknights_RegillQ2_dialog 45件**。Vendor 20、PoorCultist 45、JoinOrLeave 9、RegillReveal 41、SuccubusTea 52を含む212件は通読済み、修正未適用。次の未読offset=5,972。保留修正はinit-companions-regill-test.mjs。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：レギル法廷とシーラの結婚式まで6,563件
+
+Companions 6,563 / 10,584件を通読。会話修正は累計560件。全体のデーモン領主514件の統一は別計上。
+
+- レギルの試験・報告・軍事法廷356件完了。範囲外のエピローグ1件を含む14件修正。マジック・サークル・アゲンスト・イーヴル、ゴッドクロウ騎士団、支部の呼称、カルトの下部組織、説明義務の主体、結論の文法とデビルとの関係を整合。
+- CartRescue 45、SeelahMeetsFriends 50、KnightCamp 54件完了、6件修正。カメリアの丁寧語、heart of gold、誤字と助詞、友人へのエランの常体、熟練のパラディンの経験と技量の係り受けを修正。
+- SeelahQ1Conclusion 13、ArsinoeAtWedding 10、DisasterNewsDrezen 31、ElanGreetsSeelah 20、ElanIsDesperate 41、ElanMonarch 13、GolemVendorDrezen 9、JewelerWarmWelcome 28、SeelahGoShopping 8、KyanaWelcome 16、ProbablyFakeShyka 15、SeelahSpeech 20件完了、5件修正。信頼できる剣、指輪と憑依の関係、エランの一人称、飾り物、目を上に向ける動作を整合。
+- TentFirstWorld 27、TentGeb 24、TheBeast 7、WeddingIntro 16件は修正なし。仮装の演技と普段の口調、宝飾品への伏線、結婚式の冗談を維持。
+- 全3バッチbad 0、訳文以外の変更0。verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査とバックアップはtest/readthrough-work/の上記3作業フォルダ。
+
+次は **Companions offset=6,563、WeddingUnexpected_SeelahQ2_dialog 22件**。未適用修正なし。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
