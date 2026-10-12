@@ -737,3 +737,16 @@ Companions 8,013 / 10,584件を通読。会話修正は累計644件。全体の�
 
 次は **Companions offset=8,013、Q2WoljifCultCrusader_dialogue 25件**。未適用修正なし。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：ウォルジフQ2・Q3、恋愛会話（アルエシャラエ・カメリア・デラン・ガルフリー・ラン）まで9,512件
+
+Companions 9,512 / 10,584件を通読。会話修正は累計683件（今回39件）。用語の一括差し戻し573件は別計上。
+
+- ウォルジフQ2・Q3（CultCrusader、CultDeval、CultHighPriest、CultSacrifice、CultVoetiel、Q3の各会話、WoljifNewVendor）完了。3件修正：「メルルーン兄弟」を、Q1で使っている「ブラザー・メルルーン」に統一。
+- アルエシャラエの恋愛会話（C3〜C4の物乞い・娼館・独房、KTC_Arueshalae_Romance_C4、C4_Nightmares、C4_Wakeup、C5_BackFromDream、BestEnding）完了。36件修正。C4のKTC会話からベストエンディングまでだけ、くだけた口調（〜の、〜わ、〜よ）になっていた。v2CharacterNotesの規定（善のアルエシャラエは夢やロマンスでも私／あなた／穏やかな丁寧語）に合わせて丁寧語に揃えた。
+- カメリア（BalconyAwaits、BalconySex、GiveMeAnIdea、ImNotNormal、NormalDate、NormalDateAftermath、TempleAwaits、TempleSex、TempleSexWhy、TempleStart、WhatsThisAbout）、デラン（AfterNotDate、Leaving、MillionRedRoses、NightVisit、NotADate、LetsHide、TeachMeHowToBreathe、HolyCarpet、SexyBathing、SweetReunion、InviteNotADate、OtherIsWatching）、ガルフリー（AfterSex、Drink、InDisarray）、Jealousy、ラン（LannSparring、LannWantsTraining、LannVasted、ArsinoeWedding、DateWithLann、LannAndDateKTC）は修正なし。
+- **用語の差し戻し**：「デーモン領主」573件をすべて「デーモン・ロード」に戻した（514件は前回の一括置換分、59件はそれ以前からの表記ゆれ）。前回の記録は「用語集のデーモン領主に統一」としていたが、用語集（glossary.json）の demon lord は「デーモン・ロード」で、「デーモン領主」という項目はない。前提の誤りだったので用語集どおりに戻した。名前が続く1件は「デーモン・ロードのデスカリ」。原文が demonic rulers / demon rulers / demonic lords の3件も「デーモン・ロード」。
+- 全612件 bad 0、訳文以外の変更0。verify Errors 26 / warnings 3。全369ラウンドの import 試行で invalid 0、失敗0。監査とバックアップは test/readthrough-work/comp-9512/。
+
+次は **Companions offset=9,512、LannMyLove_dialogue**（先頭キー e5c8928d）。未適用の修正なし。
+c4の残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
