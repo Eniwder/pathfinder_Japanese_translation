@@ -799,3 +799,15 @@ c4 1,279 / 5,657件を通読。前回842件から437件追加、72件修正。of
 
 次の確定再開位置は **c4 offset=1,279、PrisonerOfKestoglyr 22件**。先行通読はoffset=1,409まで済み、捕虜・監督・アアシマール・戦闘奴隷の修正候補は未適用。
 Companions、c5、c6は完了済み。NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：奴隷市場の元締めまで1,562件
+
+c4 1,562 / 5,657件を通読。前回1,279件から283件追加、57件修正（全体用語検索の範囲外を含む）。offset=262以降の修正は累計191件。初回386件の一括修正は別計上。
+
+- PrisonerOfKestoglyr 22、SlavemasterInterrogation 34、AasimarSlaves 13、BattleSlaver 61、HologramSlaver 20、Kerz 56、KingpinSlaver 77件完了。
+- 捕らえた人物の取り違え、クリスタルの光による死亡時期、すり替え詐欺、比較構文、口と顎の混同を修正。名もなき遺跡と疫病の者を用語集に合わせる。
+- 冷たい鉄8件は全体検索で統一。うち2件は既存の制御タグの順序も原文に合わせ、日本語を自然な語順に整えた。サルザクシスの敬称は32件を全体検索して統一。通訳と礼儀正しい話者はサルザクシス様、敵意のある主人公とアーリー・サンセットは敬称なし。
+- 2バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の確定再開位置は **c4 offset=1,562、MeatSlaver**。先行通読はoffset=1,712まで済み、ダンク・奴隷・クレブスと黒曜石の仮面の修正候補は未適用。
+NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
