@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,457 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,657 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（1,457〜1,657）
+
+- Camellia_Event_KillingTime・Unhappy、Daeran_Contest、Aristocratsを対訳通読。
+- dlc6-batch13＝10件を適用（DLC6累計148件）。前回保存候補に加え、市場裏の道の位置、頬紅の台詞の比較対象、模倣できないを模倣を許さないとした訳、紙製の衣装、デランの未完の比較文の欠落、主人公のそっくりさんコンテストであることの欠落、デランを演じる女性の一人称と口調を修正。
+- bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1657、GreyborCosplayer_1。エンバーの台詞の不要なもうを除く候補1件をinit-dlc6-batch14.mjsに保存。all.jsonはbatch13適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（1,296〜1,457）
 
