@@ -1,6 +1,14 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,706 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksは2,785 / 3,989件まで通読。ユーザーの5 hour window前の終了指示により停止。
+
+### 2026-10-13：DLC6の続き（2,706〜2,785）・引き継ぎ停止
+
+- Woljif_Event全39件、StandingInLine先頭40件を対訳通読。
+- dlc6-batch23＝9件を適用（DLC6累計248件）。保存候補5件に加え、もっと欲しがる客を満足しない客とした訳、ウォルジフが捕まえられる受け身、確かに聞いたという確信、売り台越しの視線を修正。
+- bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。all.jsonはbatch23適用後にsurveyで更新済み。
+- 再開はoffset=2785、StandingInLineの途中。少年が仮装をしていない描写の欠落、衣装の出来の比較に不要な逆接を付けた訳の候補2件をinit-dlc6-batch24.mjsに保存。次のバッチはdlc6-batch24。
+- ユーザーの終了指示を受けて、この検証済み地点で停止。再開指示までは作業を続けない。
 
 ### 2026-10-13：DLC6の続き（2,497〜2,706）
 

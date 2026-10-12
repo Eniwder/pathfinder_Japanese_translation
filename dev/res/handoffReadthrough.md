@@ -2,16 +2,16 @@
 
 ## 最新の再開地点（2026-10-13・以下の旧記録より優先）
 
-ユーザーの継続指示により作業中。停止指示まではDLC5、DLC6、DLCFreeの順で続ける。
+ユーザーの「5 hour window前に、きりのいいところで引き継ぎメモを残して終わって」という指示により停止。再開指示があればDLC6の以下の地点から続け、その後DLCFreeへ進む。
 DLC4は35件適用済みでcheck再検査も成功。DLC1〜4の既存全369ラウンド検証は失敗0。
 DLC5_StoryEndsは2,315 / 2,315件の通読完了。
 DLC5の修正はdlc5-batch1〜13（207件）、batch14（4件）、batch15（12件）、batch16（16件）の計239件を適用済み。
 すべてbad 0、訳文以外の変更0、consistency verify Errors 26 / warnings 3。
 batch1〜16はそれぞれ全369ラウンド検証失敗0。稼働中の検証プロセスなし。
-DLC6_ADanceOfMasksは2,706 / 3,989件を通読済み。次はoffset=2706、Woljif_Event_dialogue。
-DLC6 batch1〜20（215件）、batch21（12件）、batch22（12件）の計239件を適用・検証済み。各バッチ全369ラウンド失敗0、bad 0、訳文以外の変更0、Errors 26 / warnings 3。
-未適用候補5件をinit-dlc6-batch23.mjsに保存済み。次のバッチはdlc6-batch23。既存バッチのprepareを再実行しない。
-all.jsonはDLC6 batch22適用後にsurveyで更新済み。稼働中の検証プロセスなし。
+DLC6_ADanceOfMasksは2,785 / 3,989件を通読済み。次はoffset=2785、StandingInLine_dialogueの途中（全109件のうち先頭40件を通読済み）。必要ならoffset=2745から既読部分を参照する。
+DLC6 batch1〜22（239件）、batch23（9件）の計248件を適用・検証済み。各バッチ全369ラウンド失敗0、bad 0、訳文以外の変更0、Errors 26 / warnings 3。
+未適用候補2件をinit-dlc6-batch24.mjsに保存済み。次のバッチはdlc6-batch24。既存バッチのprepareを再実行しない。
+all.jsonはDLC6 batch23適用後にsurveyで更新済み。稼働中の検証プロセスなし。
 DLC6_ArenaAnnouncerのプロフィールは原文と不一致のため、影の王として我ら／そなたを使う。詳しくはv2CharacterNotes.md冒頭。
 細かい判断と記録はreadthroughProgress.mdの冒頭に追記済み。
 
