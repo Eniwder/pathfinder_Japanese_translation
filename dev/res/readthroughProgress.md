@@ -713,3 +713,15 @@ Companions 6,563 / 10,584件を通読。会話修正は累計560件。全体の�
 
 次は **Companions offset=6,563、WeddingUnexpected_SeelahQ2_dialog 22件**。未適用修正なし。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：シーラ完了とソシエル・トレヴァーまで7,237件
+
+Companions 7,237 / 10,584件を通読。会話修正は累計574件。全体のデーモン領主514件の統一は別計上。
+
+- シーラ：WeddingUnexpected 22、CurlAftermath 22、ElanKianaAftermath 12、ElanDying 12、HideoutIntro 16、JewelerFinal 51、KianaAloneAftermath 8、DeserterJoins 27、ElanCalls 30、InDoubt 34、SeelahThanks 15件完了、6件修正。対戦相手との勝負に賭ける意味、刑期を服す、二重敬語、自称のまぬけ、寛大な処分、剣に血を吸わせる比喩を整合。生還・死亡・離脱の分岐を保持。
+- ソシエル・トレヴァー：FuneralAfterFight 42、FuneralBeforeFight 16、BuriedADead 22、Treason 9、FindsOut 17、ImpostorPrison 77、ImpostorArrives 37、Fugitives 72、Monster 28、Q3KTC 4、MeetTrever 35、OutsideArena 47、TreverCompanion 19件完了、8件修正。誤字、してもらえた可能性の文法、仇を取る文法、エンバーとソシエルの通常丁寧語、葬送の祈り、神話的な力、副葬の装飾品を整合。
+- 全2バッチbad 0、訳文以外の変更0。verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査とバックアップはtest/readthrough-work/の上記2作業フォルダ。
+
+次の適用対象は **Companions offset=7,237、KTC_Wenduag_ComeNeathholm 17件**。LannDuel 49件も通読済み、修正候補未適用。次の未読offset=7,303。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
