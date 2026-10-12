@@ -8,9 +8,11 @@ DLC5_StoryEndsは2,315 / 2,315件の通読完了。
 DLC5の修正はdlc5-batch1〜13（207件）、batch14（4件）、batch15（12件）、batch16（16件）の計239件を適用済み。
 すべてbad 0、訳文以外の変更0、consistency verify Errors 26 / warnings 3。
 batch1〜16はそれぞれ全369ラウンド検証失敗0。稼働中の検証プロセスなし。
-DLC6_ADanceOfMasksは24 / 3,989件を通読済み。次はoffset=24、ArenaAnnouncer_AfterWinの続き。
-未適用候補4件をinit-dlc6-batch1.mjsに保存済み。次のバッチはdlc6-batch1。既存バッチのprepareを再実行しない。
-all.jsonはDLC5 batch16適用後にsurveyで更新済み。
+DLC6_ADanceOfMasksは283 / 3,989件を通読済み。次はoffset=283、Dialogue_DLC6_Madam_InLove。
+DLC6 batch1（4件）、batch2（29件）、batch3（17件）の計50件を適用・検証済み。各バッチ全369ラウンド失敗0、bad 0、訳文以外の変更0、Errors 26 / warnings 3。
+未適用候補4件をinit-dlc6-batch4.mjsに保存済み。次のバッチはdlc6-batch4。既存バッチのprepareを再実行しない。
+all.jsonはDLC6 batch3適用後にsurveyで更新済み。稼働中の検証プロセスなし。
+DLC6_ArenaAnnouncerのプロフィールは原文と不一致のため、影の王として我ら／そなたを使う。詳しくはv2CharacterNotes.md冒頭。
 細かい判断と記録はreadthroughProgress.mdの冒頭に追記済み。
 
 ユーザーが5 hour window前に区切りを希望したため、ここで作業を終了。再開指示があれば続ける。

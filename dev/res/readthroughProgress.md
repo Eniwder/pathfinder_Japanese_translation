@@ -1,6 +1,15 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（24 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（283 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（24〜283）
+
+- ArenaAnnouncer_AfterWin、MasterOfArena_Introduction・Kenabres、ArenaMasterArrival、InterrogationOfTheSpy、Kerismeyを対訳通読。
+- dlc6-batch1＝4件、batch2＝29件、batch3＝17件を適用（累計50件）。前回候補に加え、闘技場の主の口調、我らという呼び方を質問する台詞、内圏・外圏、称号の表記、諸世界と一世界内の区別、闘技会の表記を修正。
+- DLC6_ArenaAnnouncerのプロフィールは人間の陽気な実況者とされるが、原文ではニヒロイ／念話を使う影の王で、前半は我らの威厳ある常体。その原文を優先して後半のあっしら／お前を我ら／そなたへ統一。ドリモは別人物の私／お前を保持。判断をv2CharacterNotes.mdに追記。
+- アイヴのYour ideaを自分の考え方に逆転させた訳、デランの皮肉で主を楽しませる側の逆転、主が会話を名誉に感じる意味を主が栄誉を与えるとした訳、血に飢えた怪物の説明、未開催のillustrious tournamentを名高いとした訳等を修正。
+- 各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はDLC6 offset=283。未適用候補4件をinit-dlc6-batch4.mjsに保存（耳打ちする側とされる側の逆転、ケリスメイの評判・厄介事、肯定を願望に弱めた訳）。all.jsonはbatch3適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC5完了（2,044〜2,315）、DLC6開始
 
