@@ -1,5 +1,7 @@
 # 会話順通読の進捗
 
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)（2026-10-12、c4 offset=4,072）。
+
 ## 2026-10-11：c4開始・未決事項の反映
 
 c0〜c3はClaude Codeで完了済み。c4は5,657件中、先頭262件を対訳で通読した。
