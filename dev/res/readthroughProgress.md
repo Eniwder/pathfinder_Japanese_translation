@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,657 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,855 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（1,657〜1,855）
+
+- GreyborCosplayer_1・2、Greybor_Event、Lann_Event_FreeFoodを対訳通読。
+- dlc6-batch14＝8件を適用（DLC6累計156件）。前回保存候補に加え、非敵対的なパン屋への主人公の二人称、前金の用途を使い道とした訳、グレイボーの冒頭だけの敬語、芸術関係の人物を芸術家気取りとした訳、別の狩人を探す台詞を修正。
+- bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1855、Nenio_Event_CatchDemon。ランの会話の候補11件をinit-dlc6-batch15.mjsに保存（詰め物の入る先、ワラジムシ、赤色の濃淡、十分間、食材を少しずつ取る説明、頻度、毒の強さ、迷っている相手を残して行く台詞等）。all.jsonはbatch14適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（1,457〜1,657）
 
