@@ -904,3 +904,16 @@ c4 4,072 / 5,657件を通読。前回3,904件から168件追加、67件修正。
 
 次の確定再開位置は **c4 offset=4,072、Nocticula_MainDialogueの続き（全266件中109件まで完了）**。
 NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：ノクティキュラ宮廷〜コリファー出発前まで4,433件
+
+c4 4,433 / 5,657件を通読。前回4,072件から361件追加、75件修正。offset=262以降の修正は累計827件。初回386件の一括修正は別計上。
+
+- Nocticula_MainDialogue残り（先頭109件以降）、Nocticula_message_dialogue、NocticulaPalaceGuards、Audience_Areelu_c4、Portal_ToColyphyr（カメリア）、HeraldDoubt_Velexia、Jerribeth_Velexia先頭を確認。
+- ノクティキュラの男性的な常体（〜だ／〜ぬ／〜するがいい）を高慢な女性常体（〜わ／〜なさい／〜でしょう）に整合。地の文・アレールの「そなた」はあなたへ。ソコスベノスは弟（兄弟→弟）。
+- Lord Goatは山羊卿、Lord Locustはイナゴ卿（glossary）。「悪魔卿」「強大な卿」はデーモン・ロードに統一。
+- 7バッチ（c4-nocticula-fourth〜seventh、c4-areelu-demonlord）bad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3（増加なし）。全369ラウンドimport試行でinvalid 0、失敗0。
+- Audience_Areelu_c4の対話、Portal_ToColyphyrのカメリア、HeraldDoubt_Velexiaは大半が修正不要だった。
+
+次の確定再開位置は **c4 offset=4,433**（未適用の先行修正なし）。
+NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
