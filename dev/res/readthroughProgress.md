@@ -811,3 +811,15 @@ c4 1,562 / 5,657件を通読。前回1,279件から283件追加、57件修正（
 
 次の確定再開位置は **c4 offset=1,562、MeatSlaver**。先行通読はoffset=1,712まで済み、ダンク・奴隷・クレブスと黒曜石の仮面の修正候補は未適用。
 NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：奴隷市場完了と門番まで1,892件
+
+c4 1,892 / 5,657件を通読。前回1,562件から330件追加、44件修正（範囲外を含む）。offset=262以降の修正は累計235件。初回386件の一括修正は別計上。
+
+- MeatSlaver 70、MeatSlaves 15、MysticSlaver 49、MysticSlaves 12、ObsidianMask 30、RabbleSlaver 56、RabbleSlaves 6、SutureFleshMarket 11、GateGuard 81件完了。
+- ウェンデュアグの挑発、カメリアの丁寧語、奴隷とゴラリオン人の呼称を整合。死神への贈り物を才能とした訳、スーチャーの魔力を奪った側の逆転、魔女に渡すのは抜いた舌という意味、仮面が外れた描写の欠落を修正。
+- 熱情の夢のハーレム、アッパーシティ、ミドルシティを用語集に合わせる。下層都市は用語集の定訳なので維持。
+- 2バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の確定再開位置は **c4 offset=1,892、Latverk_Final 59件**。先行通読はoffset=2,066まで済み、ラトヴェルクとレッドマスクの修正候補は未適用。
+NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
