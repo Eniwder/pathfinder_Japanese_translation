@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,172 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,296 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（1,172〜1,296）
+
+- Aivu_Event_Ride、Aivu_Event_Start、Arueshalae_Eventを対訳通読。
+- dlc6-batch11＝8件を適用（DLC6累計120件）。前回保存候補の返答・数量に加え、tagをタグとした訳、荷車の遊び方、乗ってみたいという夢、祝いの日を休日とする訳、ケーキについて尋ねる台詞を修正。
+- bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1296、Arueshalae_Event_Cosplayers。主人公へのアルエシャラエの口調の候補3件をinit-dlc6-batch12.mjsに保存。子供への柔らかい常体は保持。all.jsonはbatch11適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（612〜1,172）
 
