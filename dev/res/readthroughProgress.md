@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,296 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,457 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（1,296〜1,457）
+
+- Arueshalae_Event_Cosplayers、Camellia_Event_Corpse・HappyNow・Killerを対訳通読。
+- dlc6-batch12＝18件を適用（DLC6累計138件）。前回保存候補に加え、アルエシャラエの主人公・仮装客への丁寧語、roll one's eyesの誤訳、複数人への呼びかけを二人に限定した訳を修正。pig's earとbellyachingは、慣用句を文字どおり受け取る後続の反応が成立するように前の台詞にも豚の耳／腹痛の言葉を残した。
+- bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1457、Camellia_Event_KillingTime。凶器の長さと祭りの主催者に関する候補2件をinit-dlc6-batch13.mjsに保存。all.jsonはbatch12適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（1,172〜1,296）
 
