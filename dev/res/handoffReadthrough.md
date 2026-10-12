@@ -9,9 +9,9 @@
 - c5：7,597件完了、1,489件修正。
 - c6：1,016件完了、296件修正。
 - Companions：10,584件完了、730件修正。
-- c4：**4,433 / 5,657件完了。次はoffset=4433（0始まり）**。修正は未適用なし。
+- c4：**5,657 / 5,657件完了（通読終了）**。修正は未適用なし。
 - NPC_Common（2,573件）、Epilogues（451件）、DLCは未完了。
-- c4のoffset=262以降の修正は累計827件。初回の全体修正386件は別計上。
+- c4のoffset=262以降の修正は累計889件。初回の全体修正386件は別計上。
 - pushしていない。外部TODOへの転記は接続先がなく未実施。
 
 直近の適用バッチ（c4-nocticula-fourth〜seventh、c4-areelu-demonlord）はすべて適用・検証済み。
@@ -21,9 +21,10 @@ npm run consistency -- verify は既存の **Errors 26 / warnings 3**。新規�
 
 ## 次の作業
 
-再開は **c4 offset=4433**（HeraldDoubt_Velexia / Jerribeth_Velexia の続き）。先行通読はなし。
-ノクティキュラは私、高慢な女性常体（〜わ／〜なさい／〜でしょう）、宮廷での主人公へのお前は維持。
-Lord Goat=山羊卿、Lord Locust=イナゴ卿（glossary）。ナレーションの「そなた」はあなた。
+c4は完了。次は **NPC_Common**（`node test/readthrough-work/inspect.mjs NPC_Common 0 40`）。その後Epilogues、Interchapters、World、DLC1〜6。
+先に`survey.mjs`でall.jsonを再生成する。
+ノクティキュラは私、高慢な女性常体（〜わ／〜なさい／〜でしょう）、宮廷での主人公へのお前は維持。ザーラも女性常体。
+デスカリの残響は貴様の尊大口調。Lord Goat=山羊卿、Lord Locust=イナゴ卿。ナレーションの「そなた」はあなた。ゴールド額は漢数字。
 
 ## ユーザーが確定した方針
 

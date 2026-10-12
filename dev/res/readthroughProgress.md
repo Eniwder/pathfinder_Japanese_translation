@@ -917,3 +917,15 @@ c4 4,433 / 5,657件を通読。前回4,072件から361件追加、75件修正。
 
 次の確定再開位置は **c4 offset=4,433**（未適用の先行修正なし）。
 NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：全5,657件の通読完了
+
+c4 5,657 / 5,657件を通読完了。前回4,433件から1,224件追加、62件修正。offset=262以降の修正は累計889件。初回386件の一括修正は別計上。
+
+- Jerribeth_Velexia、MagicGates、Velexia各デート、Innkeeper（ブルガズ）、Tumberd（ミエララ船長）、Shaxah（ザーラ・ゾルジェス）、Chivarro / Herraxa / MagicDoor / Morevet / Zeriex、Torlek、Theatre、EchoDeskari / Mutasafen、Velexia_MainDialogue・Second_Date・Third_Dateを確認。
+- ザーラはほぼ女性常体（〜わ／〜の／〜なさい）に整合し、ゾルジェスの母呼びは母上に統一。ミエララのモレヴェットとの混在名（ミエラー）はミエララへ。
+- ゴールド額のアラビア数字を漢数字（四万、六千、五千など）に統一。「近親と退廃の宮殿」「甘き恐怖の巣」を揃え、アシミラ→アアシマール、レディ・イン・シャドウ→影の貴婦人。
+- デスカリの残響は貴様と呼ぶ尊大な口調に統一。ジェリベスは丁寧語（です／ます、わは付けない）。ヴェレクシアのですわ調は維持。
+- 4バッチ（c4-velexia-innkeeper、c4-xarra-mielarah、c4-herrax-numbers、c4-final-echo）bad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3（増加なし）。全369ラウンドimport試行でinvalid 0、失敗0。
+
+次はNPC_Common（29会話）から。Epilogues、Interchapters、World、DLCも未完了。外部TODOは転記待ち。
