@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（612 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,172 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（612〜1,172）
+
+- Flags、TheaterFail、Ghost_Theater、RazmEvent2_InterruptingTheRitual、LocustStart・Start_KTC、酒場のEvening・Fun・Night各会話、interchapter_after、Aivu_Event_Cakeを対訳通読。
+- dlc6-batch8＝10件、batch9＝9件、batch10＝12件を適用（DLC6累計112件）。神殿に潜入する口実を盾とした訳、不可能王国／可能王国の言葉遊び、審問官、氏族同士の血の抗争の終結条件、威嚇の声を息を呑むとした訳、飲み物を捨てる選択肢、仲間の口調、サラマンダーとの韻、デーモン・ロードの表記と過去の経験の時制、蘇生されるかどうかを蘇生されるべきかとした訳等を修正。
+- 各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1172、Aivu_Event_Ride_dialogue。未適用候補2件をinit-dlc6-batch11.mjsに保存（気にしないという返答を食べないとした訳、couple dozenの数量）。all.jsonはbatch10適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（283〜612）
 
