@@ -409,3 +409,28 @@ Shamira_BetrayNocticula／IMadeMyDecision／YouAreNext、UltimateWinを完了。
 |---|---|---|
 | c5会話順通読 | 進行中 | 4,300 / 7,597件、c5修正685件。次はAbrogailVisit |
 | 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |
+
+### 2026-10-12 c5：チェリアクスとガルフリーの誘惑、ドラゴンとの再会
+
+612件を追加通読。累計 **4,912 / 7,597件、c5修正888件**。今回の実変更203件はすべてc5。
+AbrogailVisit、CheliaxComing、DevilCongratulations、DevilishTemptationの全10会話、
+EvilAbrogail／KindAbrogail、MegidiahCompanionとKTC1〜5、DragonsKenabresを完了。
+
+- 女帝の正式称号を女帝陛下へ。外交上のsisterを実の姉とした訳を修正。王者の複数形Weは私／我が国を文脈で訳し分け。
+- ガルフリーは指揮官への丁寧語・あなたを整合。信仰を捨てる怒りや軍への命令は原文に沿って維持。
+- メフィストフェレスの平常時は丁寧語、猟師への変装中は演技に沿った別口調。
+- ラヤの男性的一人称を修正。ゴルゴラドの誤った戦士プロファイルに由来する粗暴な口調を、契約交渉の原文へ整合。
+- 十字軍の指揮権の返還先逆転、「裏で手を引く」、存命者の魂を悼む訳、女伯爵、署名描写を修正。
+- 奈落の王とデズナの信奉者の用語ゆれを修正。アスモデウスへの神格の敬称は様。
+- ハラセリアックスの話者なし台詞を私／あなた／穏やかな丁寧語へ。他のドラゴンは各自の常体を維持。
+- 適用：cheliax-visit 24、temptation-aftermath 27、temptation-plan 29、temptation-souls 34、abrogail-negotiation 48、megidiah-policy 24、dragons-kenabres 17件。
+- 試行・書き込みともbad 0。各バックアップ比較で訳文以外の変更0。
+- 各適用後verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査・バックアップ：dev/test/readthrough-work/の上記7作業フォルダ。
+
+次は **offset=4912**、NidalynnQuest1_dialogue、先頭キー52ecb05b。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5会話順通読 | 進行中 | 4,912 / 7,597件、c5修正888件。次はNidalynnQuest1 |
+| 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |
