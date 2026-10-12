@@ -1,6 +1,17 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)（2026-10-12、c4 offset=4,072）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（956 / 2,315件）。
+
+### 2026-10-13：DLC4の引き継ぎ確認・DLC5開始
+
+- DLC1〜4の既存バッチに全369ラウンドの検証結果があり、すべて失敗0。DLC4は35件の修正が適用済みで、check.mjsによる再検査でも訳文以外の変更0。
+- 最新チャンクからall.jsonを再生成。consistency verifyはErrors 26 / warnings 3（既存値と同じ）。zhCN.jsonへのマージ・pushは行わない。
+- DLC5_StoryEndsの先頭556件を対訳通読。AbductedAgain、AfterAdventure各会話、AndroidJoin、Hermit・Hermit_Meet、NecromancerDead、ReadyToRitual・Sendri、Sacrifice、SendriVisitsTemple、AlternativeStart、2ndHaunt、DeleteStonesまで。
+- dlc5-batch1の17件を適用・検証済み。数量条件の誤訳（more than three）、呼吸の描写、首振りの描写、償いの訳、灼熱部隊／九層地獄／フェイの表記、友好的な天使への主人公の二人称などを修正。bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド失敗0。
+- dlc5-batch2の13件も適用・検証済み。ペンタの丁寧語崩れ、ゴラリオン全土のための犠牲の誤訳、足元／足の上、Shoot＝質問を促す返答など。bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド失敗0。
+- 956件まで通読。GiantBossDead、Pit_1stHaunt、SpiritOfTheTower_Main、BellTower、Basement、Brother、Chapel、Executor、FetchlingStart、Golems、WallOfPain、KTC_GoKillStihhudまで。
+- dlc5-batch3の26件を適用・検証済み。ウラブはイサムの弟と原文で明示（little brother）されるため、逆転していた弟呼びと曖昧な兄弟呼びを兄へ修正。roll one's eyes、not seen for a long time、神の化身の誤訳、友好的な相手への主人公の二人称など。bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド失敗0。
+- 次はoffset=956、DLC5_SithhudHimself_dialogue。未適用候補なし。次のバッチ名はdlc5-batch4にする。DLC5_CR13_ShadowGiantBossは女性と地の文に明示されるが、既存プロファイルが俺指定なので一人称を勝手に変更していない。
 
 ## 2026-10-11：c4開始・未決事項の反映
 

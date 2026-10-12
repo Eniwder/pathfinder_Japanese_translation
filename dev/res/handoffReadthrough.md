@@ -1,5 +1,17 @@
 # 会話順通読の引き継ぎ（2026-10-12）
 
+## 最新の再開地点（2026-10-13・以下の旧記録より優先）
+
+ユーザーの継続指示により作業中。停止指示まではDLC5、DLC6、DLCFreeの順で続ける。
+DLC4は35件適用済みでcheck再検査も成功。DLC1〜4の既存全369ラウンド検証は失敗0。
+DLC5_StoryEndsは956 / 2,315件を通読済み。次はoffset=956、DLC5_SithhudHimself_dialogue。
+DLC5の修正はdlc5-batch1（17件）、batch2（13件）、batch3（26件）の計56件を適用済み。
+すべてbad 0、訳文以外の変更0、consistency verify Errors 26 / warnings 3。
+batch1〜3はそれぞれ全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+未適用候補なし。次の新規バッチはdlc5-batch4。既存バッチのprepareを再実行しない。
+all.jsonはbatch3適用後にsurveyで更新済み。
+細かい判断と記録はreadthroughProgress.mdの冒頭に追記済み。
+
 ユーザーが5 hour window前に区切りを希望したため、ここで作業を終了。再開指示があれば続ける。
 プロジェクト概要はルートとdevのCLAUDE.md、作業記録の正本はreadthroughProgress.md。
 
