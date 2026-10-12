@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（1,343 / 2,315件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（1,650 / 2,315件）。
+
+### 2026-10-13：DLC5の続き（1,343〜1,650）
+
+- GoblinsPartyInTheTowerのFinalDialog・Ritual・SummonPlace、AngryKyton、KytonPrisoner、TorturedSealBearer、b2_first_meet、Storasta_CharmedGuy・CharmedGuys_2、CorruptedHusband、DeadDruidを対訳通読。
+- dlc5-batch6＝20件、batch7＝13件、batch8＝10件を適用（累計116件）。エシリアは既存Main会話の丁寧語に合わせて儀式・召喚場面の口調を統一。ペンタの丁寧語、自由に焦がれるの助詞、人工の体を遺体と呼ぶ訳、ポータル、デーモンの影響がここまで及ぶという意味、囚人の遊戯の説明、闇の公子の表記、友好的な相手への主人公の二人称、確定的な結果を可能性に弱めていた訳などを修正。
+- 各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1,650、DLC5_b2_dragon_dialogue。未適用候補10件をinit-dlc5-batch9.mjsに保存。ドルイドのCueだけ丁寧語になる揺れ、主人公の二人称、フェイを花が閉じ込めている意味など。all.jsonはbatch8適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC5の続き（956〜1,343）
 

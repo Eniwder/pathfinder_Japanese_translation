@@ -4,12 +4,12 @@
 
 ユーザーの継続指示により作業中。停止指示まではDLC5、DLC6、DLCFreeの順で続ける。
 DLC4は35件適用済みでcheck再検査も成功。DLC1〜4の既存全369ラウンド検証は失敗0。
-DLC5_StoryEndsは1,343 / 2,315件を通読済み。次はoffset=1,343、Dialogue_DLC5_GoblinsPartyInTheTower_FinalDialog。
-DLC5の修正はdlc5-batch1（17件）、batch2（13件）、batch3（26件）、batch4（9件）、batch5（8件）の計73件を適用済み。
+DLC5_StoryEndsは1,650 / 2,315件を通読済み。次はoffset=1,650、DLC5_b2_dragon_dialogue。
+DLC5の修正はdlc5-batch1（17件）、batch2（13件）、batch3（26件）、batch4（9件）、batch5（8件）、batch6（20件）、batch7（13件）、batch8（10件）の計116件を適用済み。
 すべてbad 0、訳文以外の変更0、consistency verify Errors 26 / warnings 3。
-batch1〜5はそれぞれ全369ラウンド検証失敗0。稼働中の検証プロセスなし。
-未適用候補2件をinit-dlc5-batch6.mjsに保存済み。次のバッチはdlc5-batch6。既存バッチのprepareを再実行しない。
-all.jsonはbatch5適用後にsurveyで更新済み。
+batch1〜8はそれぞれ全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+未適用候補10件をinit-dlc5-batch9.mjsに保存済み。次のバッチはdlc5-batch9。既存バッチのprepareを再実行しない。
+all.jsonはbatch8適用後にsurveyで更新済み。
 細かい判断と記録はreadthroughProgress.mdの冒頭に追記済み。
 
 ユーザーが5 hour window前に区切りを希望したため、ここで作業を終了。再開指示があれば続ける。
