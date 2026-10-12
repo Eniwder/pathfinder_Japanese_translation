@@ -763,3 +763,15 @@ Companions 9,954 / 10,584件を通読。会話修正は累計690件（今回7件
 次の未読は **Companions offset=9,954、Dialogue_Sosiel_Romance_Etyud 35件**。
 未適用候補：c2987321（絵の保存を「書き留める」→「描き留める」）、db5ff079（同意のDon't tell meを「言わないでください」とした訳）。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：全10,584件の通読完了
+
+Companions 10,584 / 10,584件を通読完了。修正は累計730件（前回9,954件から40件、範囲外の用語修正等も含む）。デーモン・ロードへの一括差し戻し573件は別計上。
+
+- ソシエル：Etyud、Monster、PortraitInvite、Breakup、TreverDead、Portraitの181件完了、4件修正。同意のDon't tell me、描き留める、目を覚まさせる、唇を触れさせる表現を整合。前回記載の未適用候補2件も適用済み。
+- ウェンデュアグ：AfterSexからYanielsDeathまで449件完了、36件修正。通常の粗野な口調と主人への謝罪の敬語、family jewelsの隠語、父とスルの会話の誤字、神話的な力、触れる側の意味を修正。親密な場面の自然な軽口や弱さの表現は保持。
+- 用語全体検索からイラベス2件、一つ目のデビル8件を統一（上記件数に含む）。
+- 全4バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。監査・バックアップはtest/readthrough-work/の各作業フォルダ。
+
+次は **c4 offset=262、Atselm_dialogue** から回収。先行してoffset=372まで110件通読済み、修正候補はまだ未適用。c4の全体件数5,657。
+NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
