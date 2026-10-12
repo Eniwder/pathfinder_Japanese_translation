@@ -550,3 +550,17 @@
 - Angel_FarewellToMythic_GMBE：話者欄が空でも、ベレンゲルは俺／お前、ぶっきらぼうな常体。
 - IomedaeSecondVisit_MythAngel_c5_dialog：アイオーメディは私／お前、威厳ある常体。
   主人公が女神に来訪理由を尋ねる台詞は敬意を示す丁寧語。
+
+- TargonaFinal／Intro_MutasafenLab_dialog：ターゴナは既存AngelTargonaの指定どおり、
+  天使の道で同行する場面では「〜わ」「〜のね」の柔らかい常体を許容。
+  LeapOfFaithの通信は会話内の多数派に合わせて丁寧語。原文にない苛立ちを加えない。
+- WardensBefore_MythAngel_c5_dialog：カタイル・ラリエル・ヤニエルは丁寧語。
+  カタイルの敵への憎悪・ラリエルの妹への心配も人物の口調を保つ。
+- AgainstMentor_azata_c5_dialog：アーリー・サンセットは正体を明かした後も私／あなた、
+  慇懃な丁寧語。通常のアルエシャラエは丁寧語、ウォルジフは指揮官をボスと呼ぶ。
+- Zeklex_Consp／HailNewLord：ゼクレックスは私／あなた、丁寧語。恐怖や苛立ちでも粗野にしない。
+- Irmangaleth_HailNewLord：イルマンガレスの一人称は私。演劇的で尊大な常体。
+- Nocticula_YouAreMyBestServant：服従・褒美の希望・感謝の主人公発言は目上への丁寧語。
+  貪欲や挑発を表す選択肢は原文の態度に合わせて常体を残す。
+- Shamira_BetrayNocticula／IMadeMyDecision／YouAreNext／WeHaveBetrayal：シャミラは私／あなた、
+  高慢で女性的な常体。男性的な号令にしない。原文が明示するpoliteの発言は丁寧語。

@@ -378,3 +378,34 @@ Angel_FarewellToMythic、IomedaeSecondVisit_MythAngelを完了。
 |---|---|---|
 | c5会話順通読 | 進行中 | 3,636 / 7,597件、506件修正。次はLeapOfFaith |
 | 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |
+
+### 2026-10-12 c5：ムタサフェン追跡からアルシニラの新支配者まで
+
+664件を追加通読。今回の修正は重複を除いて283件（c5 179件、章外104件）。
+累計 **4,300 / 7,597件、c5修正685件**。今回のc5修正には全体検索で見つけた読了範囲外18件を含む。
+LeapOfFaith、TargonaFinal／Intro、WardensBefore、AgainstMentor、ArankaExplains、
+ElysiumWelcome、FarewellToMythic、IslandTalk、VendorTwins、6人のConsp会話とHailNewLord会話、
+KTC_YozzSoDiappointed／ComeWithMe、Nocticula_WeHaveBetrayal／YouAreMyBestServant、
+Shamira_BetrayNocticula／IMadeMyDecision／YouAreNext、UltimateWinを完了。
+
+- カタイル、ラリエル、ヤニエル、ゼクレックスの口調をキャラクターメモと前後の会話へ整合。
+- アーリー・サンセット／メフィストフェレスは正体を明かした後も慇懃な丁寧語。
+- シャミラは高慢で女性的な常体。明示的に丁寧とされる台詞では丁寧語を保つ。
+- 原文にない「気取り」「最後の機会」、身体への脅しを家宝とした訳を修正。
+- シャミラの「勝利はあなたのおかげ」を「私の手柄」と逆転させた訳を修正。
+- イルマンガレスの私／俺混在、血の大釜週間、カンビオン／シャドウ・デーモン表記を整合。
+- 全体検索：「陰の貴婦人」19件を「影の貴婦人」へ。守護者の残る表記ゆれも修正。
+- 全体検索：原文[Say nothing]の[何も言わない]120件をガイドの[黙っている]へ。奴女の誤字を解消。
+- 適用：mutasafen 28件、azata-island 26件、conspirators 44件、new-lord 17件、shamira-finale 173件。
+  合計288回の修正、同じキーの再修正5件を除く実変更283件。試行・書き込みともbad 0。
+- 各バックアップ比較：計画した訳文変更のみ、他フィールド変更0。
+- 各適用後verifyはErrors 26 / warnings 3。全369ラウンドimport試行はinvalid 0、失敗0。
+- 最新all.jsonで再検索：陰の貴婦人、Wardensのウォーデン表記、対象[何も言わない]、奴女はいずれも0件。
+- 監査・バックアップ：dev/test/readthrough-work/の上記5作業フォルダ。
+
+次は **offset=4300**、AbrogailVisit_dialogue、先頭キー41d73057-dbee-468d-a7c3-74fb18be513f。
+
+| 作業 | 状態 | 記録 |
+|---|---|---|
+| c5会話順通読 | 進行中 | 4,300 / 7,597件、c5修正685件。次はAbrogailVisit |
+| 外部TODOドキュメント | 転記待ち | 本記録の通読・修正件数と口調メモを転記 |
