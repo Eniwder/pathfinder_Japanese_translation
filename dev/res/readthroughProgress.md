@@ -876,3 +876,16 @@ c4 3,570 / 5,657件を通読。前回3,184件から386件追加、56件修正（
 
 次の確定再開位置は **c4 offset=3,570、HeraldDoubt_MythAngel_dialog 27件**。この27件は先行通読済み、修正候補4件はinit-c4-herald-doubt-angel.mjsに保存、未適用。次の未読offset=3,597。
 NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：ネクサスの帰還後まで3,904件
+
+c4 3,904 / 5,657件を通読。前回3,570件から334件追加、31件修正。offset=262以降の修正は累計685件。初回386件の一括修正は別計上。
+
+- HeraldDoubt_MythAngel 27、HeraldIntro_Nexus 81、HeraldLetsGo_Nexus 19、Herald_camp 83、DyingSuccubus_Nexus 27、MinionInMine_Nexus 27、CampSurvived 70件完了。
+- 継承者の手の丁寧語の欠落、ネニオの女性口調、スーチャーの一人称、瀕死のサキュバスの女性口調、ソシエルの丁寧語、ウェンデュアグの女言葉を整合。主人公の敬意を示す丁寧語は維持し、明確な敵意の選択肢は常体に整合。
+- 勇気の剣が旗であることに合わせた動詞、アプスとの距離の文法、継承者の手が誰への注意を避けるかという対象、主人公を手助けできるかという主語の逆転を修正。クレブスがどの勢力にも属さない意味を無属性とした訳を修正。
+- 蝗の大群の王はデスカリの異名として用語集に整合。ネクサスの奴隷たちは、主人公への懇願と恐怖の怒号で口調が変わるため場面に応じて維持。
+- 5バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の確定再開位置は **c4 offset=3,904、Companions_NoCamp_dialogue 37件**。この37件は先行通読済み、修正候補6件はinit-c4-no-camp.mjsに保存、未適用。次の未読offset=3,941。
+NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
