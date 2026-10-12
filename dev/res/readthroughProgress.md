@@ -775,3 +775,15 @@ Companions 10,584 / 10,584件を通読完了。修正は累計730件（前回9,9
 
 次は **c4 offset=262、Atselm_dialogue** から回収。先行してoffset=372まで110件通読済み、修正候補はまだ未適用。c4の全体件数5,657。
 NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 c4：闘技場とゼクレックスまで842件
+
+c4 842 / 5,657件を通読。offset=262から580件を追加確認、62件修正（範囲外を含む）。初回の386件一括修正とは別計上。
+
+- Atselm 38、DireOne 12、FinalBattleBliss 34、Gelderfang 26、GolarionSlaves 22、Herald 14、HiredSuccubs 16、HiringSuccubs 32、Irmangaleth 91、Ruksa 17、SkilledGladiators 17、WinThirdFight 20、ZeklexAfterImprisonment 50、Zeklex 191件完了。
+- ゼクレックスの私／あなた／丁寧語、善のアルエシャラエの丁寧語を整合。協力する側や無防備になる人物の取り違え、ソシエルの兄を弟とした訳、過去の実現済みと仮定の混同、助詞と不自然な直訳を修正。
+- ヴェイニック、ワーロング、クアジット、呼びかけのゴラリアンを用語集に合わせる。クアジット3件は全体検索して範囲外も修正。
+- 2バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の確定再開位置は **c4 offset=842、Zermangaleth_dialogue 32件**。先行通読はoffset=945まで済み、ゼルマンガレス・バフォメット・フルサムの女王の修正候補は未適用。
+Companions全10,584件完了、累計730件修正。c5・c6も完了済み。NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
