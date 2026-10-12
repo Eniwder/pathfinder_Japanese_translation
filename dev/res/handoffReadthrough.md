@@ -10,7 +10,7 @@
 - c6：1,016件完了、296件修正。
 - Companions：10,584件完了、730件修正。
 - c4：**5,657 / 5,657件完了（通読終了）**。修正は未適用なし。
-- NPC_Common（2,573件）、Epilogues（451件）、DLCは未完了。
+- NPC_Common：2,573 / 2,573件完了（40件修正）。Epilogues（451件）、Interchapters、World、DLC1〜6は未完了。
 - c4のoffset=262以降の修正は累計889件。初回の全体修正386件は別計上。
 - pushしていない。外部TODOへの転記は接続先がなく未実施。
 
@@ -21,10 +21,10 @@ npm run consistency -- verify は既存の **Errors 26 / warnings 3**。新規�
 
 ## 次の作業
 
-c4は完了。次は **NPC_Common**（`node test/readthrough-work/inspect.mjs NPC_Common 0 40`）。その後Epilogues、Interchapters、World、DLC1〜6。
+c4・NPC_Commonは完了。次は **Epilogues**（`node test/readthrough-work/inspect.mjs Epilogues 0 40`、Epilogues_afterloguesも）。その後Interchapters、World、DLC1〜6。
 先に`survey.mjs`でall.jsonを再生成する。
-ノクティキュラは私、高慢な女性常体（〜わ／〜なさい／〜でしょう）、宮廷での主人公へのお前は維持。ザーラも女性常体。
-デスカリの残響は貴様の尊大口調。Lord Goat=山羊卿、Lord Locust=イナゴ卿。ナレーションの「そなた」はあなた。ゴールド額は漢数字。
+fixesの`r`は同一文字列をすべて置換し、制御タグは`<ctrl_N/>`で書く（`t`の場合だけ`‹N›`）。
+ノクティキュラは私、高慢な女性常体。デスカリの残響は貴様の尊大口調。ゴールド額は漢数字。デビル（Devil）と悪魔の混用に注意。
 
 ## ユーザーが確定した方針
 

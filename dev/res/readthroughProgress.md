@@ -929,3 +929,14 @@ c4 5,657 / 5,657件を通読完了。前回4,433件から1,224件追加、62件�
 - 4バッチ（c4-velexia-innkeeper、c4-xarra-mielarah、c4-herrax-numbers、c4-final-echo）bad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3（増加なし）。全369ラウンドimport試行でinvalid 0、失敗0。
 
 次はNPC_Common（29会話）から。Epilogues、Interchapters、World、DLCも未完了。外部TODOは転記待ち。
+
+### 2026-10-12 NPC_Common：全2,573件の通読完了
+
+NPC_Common 2,573 / 2,573件を通読完了。40件修正（4バッチ npc-batch1〜4）。
+
+- 対象：Anevia、Fye（酒場）、Crinukh、Flamelance、Galfrey（変装）、GemGolem、KTC（運び屋）、Horgus、Irabeth、DrowLeader、Forn、Kaylessa、LexiconAssemble_BE、Nurah、ScrollVendor、StoryTeller、Arsinoe、Vendor_Quartermaster（ウィルサー）、ティーフリング商人、Christoff（グリストフ）、Hilor、Silk Shadow（ローリー）。
+- 悪魔→デビル（クリヌクの語る部族の話。glossaryのDevil＝デビル、Hell＝ヘル）、司教＝Prelate、辞典＝Lexicon of Paradox（レキシコンを辞典へ）、プレスティジダイペインターの表記ゆれを統一。
+- {mf|man|woman}のように原文タグが日本語訳に残っていた2件を修正。ウェンデュアグの女々しい語尾、俺／私の混在、「近親〜」などの用語も整合。
+- 4バッチ bad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3（増加なし）。全369ラウンドimport試行でinvalid 0、失敗0。
+
+次はEpilogues（451件）から。Interchapters、World、DLC1〜6も未完了。外部TODOは転記待ち。
