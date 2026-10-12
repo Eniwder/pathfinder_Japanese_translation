@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,497 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,706 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（2,497〜2,706）
+
+- Ulbrig_Event_Interview・Scientists、Wenduag_Event、FirstGuards・SecondGuards・ThirdGuardsを対訳通読。
+- dlc6-batch21＝12件、batch22＝12件を適用（DLC6累計239件）。前回保存候補10件に加え、ウルブリグを見つける側と喉が渇く人物の対比を補い、ウェンデュアグの衛兵・取り巻きへの敬語を粗い常体に修正。主人公を主人として扱う敬語は維持し、同じ台詞でも相手によって口調を分けた。
+- 両バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=2706、Woljif_Event_dialogue。泥棒を罵倒語に変えた訳、棍棒の欠落、法をめぐる関係の不自然な直訳、質問を相手に返す返答、複数衛兵の給料の曖昧さの候補5件をinit-dlc6-batch23.mjsに保存。all.jsonはbatch22適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（2,351〜2,497）
 

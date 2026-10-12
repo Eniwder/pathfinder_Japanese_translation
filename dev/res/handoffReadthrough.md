@@ -8,10 +8,10 @@ DLC5_StoryEndsは2,315 / 2,315件の通読完了。
 DLC5の修正はdlc5-batch1〜13（207件）、batch14（4件）、batch15（12件）、batch16（16件）の計239件を適用済み。
 すべてbad 0、訳文以外の変更0、consistency verify Errors 26 / warnings 3。
 batch1〜16はそれぞれ全369ラウンド検証失敗0。稼働中の検証プロセスなし。
-DLC6_ADanceOfMasksは2,497 / 3,989件を通読済み。次はoffset=2497、Ulbrig_Event_Interview_dialogue。
-DLC6 batch1〜19（210件）、batch20（5件）の計215件を適用・検証済み。各バッチ全369ラウンド失敗0、bad 0、訳文以外の変更0、Errors 26 / warnings 3。
-未適用候補10件をinit-dlc6-batch21.mjsに保存済み。次のバッチはdlc6-batch21。既存バッチのprepareを再実行しない。
-all.jsonはDLC6 batch20適用後にsurveyで更新済み。稼働中の検証プロセスなし。
+DLC6_ADanceOfMasksは2,706 / 3,989件を通読済み。次はoffset=2706、Woljif_Event_dialogue。
+DLC6 batch1〜20（215件）、batch21（12件）、batch22（12件）の計239件を適用・検証済み。各バッチ全369ラウンド失敗0、bad 0、訳文以外の変更0、Errors 26 / warnings 3。
+未適用候補5件をinit-dlc6-batch23.mjsに保存済み。次のバッチはdlc6-batch23。既存バッチのprepareを再実行しない。
+all.jsonはDLC6 batch22適用後にsurveyで更新済み。稼働中の検証プロセスなし。
 DLC6_ArenaAnnouncerのプロフィールは原文と不一致のため、影の王として我ら／そなたを使う。詳しくはv2CharacterNotes.md冒頭。
 細かい判断と記録はreadthroughProgress.mdの冒頭に追記済み。
 
