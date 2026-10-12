@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,995 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,146 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（1,995〜2,146）
+
+- RazmEvent2_SpymasterLetsGo・TheyCultists・WhereEveryone、RazmEvent3_Cosplay・Threats、GateInspectionを対訳通読。
+- dlc6-batch16＝13件、batch17＝14件を適用（DLC6累計197件）。保存候補3件に加え、ロヴスの常体、アルエシャラエとエンバーの丁寧語、ウォルジフの同行相手への配慮、助手たちを指す主語の欠落を修正。祭りの仮装者は影武者からそっくりさんへ、生ける神の守護対象は秩序から法へ修正し、不自然な歓迎の文と誰が誰に騙されたか曖昧な文も整えた。
+- 両バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=2146、Regill_Event_2_dialogue。未適用候補なし。all.jsonはbatch17適用後にsurveyで更新済み。次のバッチはdlc6-batch18。
 
 ### 2026-10-13：DLC6の続き（1,855〜1,995）
 
