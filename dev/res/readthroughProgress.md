@@ -787,3 +787,15 @@ c4 842 / 5,657件を通読。offset=262から580件を追加確認、62件修正
 
 次の確定再開位置は **c4 offset=842、Zermangaleth_dialogue 32件**。先行通読はoffset=945まで済み、ゼルマンガレス・バフォメット・フルサムの女王の修正候補は未適用。
 Companions全10,584件完了、累計730件修正。c5・c6も完了済み。NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：コリファーとバフォメット戦後まで1,279件
+
+c4 1,279 / 5,657件を通読。前回842件から437件追加、72件修正。offset=262以降の修正は累計134件。初回の386件一括修正とは別計上。
+
+- Zermangaleth 32、Wardens 6、Baphomet 33、FulsomeQueen 104、Hepzamirah 45、Kestoglyr 53、Cage 22、Mutasafen 32、NocticulaAfterBaph 110件完了。
+- ヘプザミラの高慢な女性口調、ケストグライアの主人公への丁寧語、ノクティキュラの女性常体を整合。ホルザラーは妹、ヘプザミラは姉として逆転した訳を修正。一般の矢と固有名ミッドナイト・ボルトを区別。フルサムの女王の意図的な発音崩れは維持。
+- 3バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 原文要確認：6fb63a9fの「you are the only one to accomplish such a feat」は直後のノクティキュラの殺害実績と矛盾する。原文を推測で改変せず現訳を保持。
+
+次の確定再開位置は **c4 offset=1,279、PrisonerOfKestoglyr 22件**。先行通読はoffset=1,409まで済み、捕虜・監督・アアシマール・戦闘奴隷の修正候補は未適用。
+Companions、c5、c6は完了済み。NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
