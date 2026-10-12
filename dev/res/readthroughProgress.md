@@ -863,3 +863,16 @@ c4 3,184 / 5,657件を通読。前回2,886件から298件追加、79件修正（
 
 次の確定再開位置は **c4 offset=3,184、Tarshari_MainDialogue 30件**。この30件は先行通読済み。次の未読offset=3,214。
 NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：ザカリウスと評議会まで3,570件
+
+c4 3,570 / 5,657件を通読。前回3,184件から386件追加、56件修正（範囲外を含む）。offset=262以降の修正は累計654件。初回386件の一括修正は別計上。
+
+- Tarshari 30、YozzFirstTalk 33、Yozz_InTheGuild 53、Alinythia 31、AlinythiaAwakening 8、NalfeshneeMines 16、Zacharius_FirstProjection 45、KilledPassions 55、SecondProjection 17、Council_Lexicon2 45、KTC_Fail_Mythic_Trickster 11、SocotAlush 35、SocotProjection 7件完了。
+- グレイボーとレジルの常体、ホルザラーの女性口調を整合。シャドウ・デーモンが奪う生者の肉体を死体とした訳、millenniaを千年とした訳、加齢斑を年輪とした訳を修正。
+- アリニュシアの女性口調と眠りを妨げる描写、ナルフェシニーの守護する場所の文法、ザカリウスの説明における比較関係を整合。影の淑女4件は全体検索で影の貴婦人に統一。
+- ソコスベノスは僕／君の通常口調に整合。ノクティキュラを妹とした4件を姉に修正。主人公の同一会話内の口調を整合。長老の定訳と呼称も整合。
+- 5バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の確定再開位置は **c4 offset=3,570、HeraldDoubt_MythAngel_dialog 27件**。この27件は先行通読済み、修正候補4件はinit-c4-herald-doubt-angel.mjsに保存、未適用。次の未読offset=3,597。
+NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
