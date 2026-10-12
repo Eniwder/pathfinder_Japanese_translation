@@ -658,3 +658,17 @@ Companions 4,019 / 10,584件を通読。会話修正は累計394件（範囲外�
 
 次は **Companions offset=4,019、EmberQ3_Brotherhood_Dialogue 69件**。
 c4は262 / 5,657件から未完了。NPC_Common・Epilogues・DLCも残る。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：フィニアンとグレイボーの屋敷まで4,690件
+
+Companions 4,690 / 10,584件を通読。会話修正は累計415件。全体のデーモン領主514件の統一は別計上。
+
+- エンバー第3クエスト196件完了、8件修正。通常発話とアルエシャラエの丁寧語、ノクティキュラの慣用句と目を上に向ける動作を修正。壊れた分岐の切迫した常体は維持。
+- フィニアン個別会話100件完了、3件修正。君への呼びかけと、作り手が手を加える意味を整合。自己認識の前後、解放・隷属・受容の分岐を保持。
+- グレイボー竜狩り関連163件完了、7件修正。ゲームブックの文法と選択肢、肉食植物の表記、本人のお前の呼称を整合。
+- BattleWithTheAssasins 30件は修正なし。BE_Manor 120、GreyborNewsAboutVillodus 21、HorzalahFirst 16、Villodus 25件完了、合計3件修正。鏡が打撃を吸収する文法、死体の数の誇張、bloody larvaの罵倒の意味を整合。
+- 全4バッチbad 0、訳文以外の変更0。verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査とバックアップはtest/readthrough-work/の上記4作業フォルダ。
+
+次は **Companions offset=4,690、YozzAndGreybor_dialogue 68件**。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
