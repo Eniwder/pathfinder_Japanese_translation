@@ -750,3 +750,16 @@ Companions 9,512 / 10,584件を通読。会話修正は累計683件（今回39�
 
 次は **Companions offset=9,512、LannMyLove_dialogue**（先頭キー e5c8928d）。未適用の修正なし。
 c4の残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：ランの恋愛会話完了とソシエルの肖像画への誘いまで9,954件
+
+Companions 9,954 / 10,584件を通読。会話修正は累計690件（今回7件）。用語の一括差し戻し573件は別計上。
+
+- ラン：MyLove 15、AndFeelings 11、AndBook 20、AndKids 16、MamaLetter 34、Gift 12件完了、4件修正。相手への恋心、読み書きの不得手、子供たちの未来を信じる表現を整合。軽口と照れ、求婚・拒絶の分岐は維持。
+- ソシエル：カード関連131、Verse 37、Flower 18、Confession 37件完了、3件修正。賭けるの誤字、詩の通常丁寧語、議論に説得力を感じる文法を修正。賭け事への熱中と信仰の葛藤は保持。
+- Sosiel_and_Trever_Prival 34、Nabrosok 22、Eskiz 43、Eskiz_KTC 12件も通読済み。トレヴァーの独立を望む発言と告白の各分岐を確認。
+- 2バッチbad 0、訳文以外の変更0。verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の未読は **Companions offset=9,954、Dialogue_Sosiel_Romance_Etyud 35件**。
+未適用候補：c2987321（絵の保存を「書き留める」→「描き留める」）、db5ff079（同意のDon't tell meを「言わないでください」とした訳）。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
