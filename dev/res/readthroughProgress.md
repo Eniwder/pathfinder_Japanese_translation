@@ -672,3 +672,17 @@ Companions 4,690 / 10,584件を通読。会話修正は累計415件。全体の�
 
 次は **Companions offset=4,690、YozzAndGreybor_dialogue 68件**。
 c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：グレイボー完了とランの部族再訪まで5,384件
+
+Companions 5,384 / 10,584件を通読。会話修正は累計498件。全体のデーモン領主514件の統一は別計上。
+
+- YozzAndGreybor 68、YozzDying 54、AssassinHunter 28件完了、6件修正。通常のヨズの呼称と、血で刃に焼きを入れる意味を整合。命乞いのあなたは場面差として維持。
+- Horzalah_Ambush 75、Horzalah_Mercy 20、InterrogationAfterAssasination 46、KTC_GreyborAlarm 34件完了、28件修正。グレイボーの落ち着いた常体、ホルザラーの女性常体、リンクが囲む動作の対応を整合。裏切りと共闘の分岐は原文通り。
+- LannCantDo 51、LannComeNeathholm 18、Mama 46、MamaDrezen 9、MamaMeetsLann 25、SulDrezen 33、SullNeatholmNews 35、SulWaiting 36件完了、20件修正。導火線の冗談、思い出の品、閉じこもる文法、弟の描写、12年の数値、スルの軽い訛り・呼称、ウェンデュアグの通常口調を整合。
+- WenduagCave 42、WenduagDefeated 46、WenduagTraitorCompanion 28件完了、29件修正。通常会話を粗野な常体へ整合し、主への敬語と敗北時の弱さを維持。死体のそばという位置、比較の文法、12人の数値も修正。
+- 全4バッチbad 0、訳文以外の変更0。verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+- 監査とバックアップはtest/readthrough-work/の上記4作業フォルダ。
+
+次の適用対象は **Companions offset=5,384、LannFeelsBad_dialogue 20件**。LannFeelsWorse 13、LannGoBeat_KTC 16を含む49件は通読済み、修正未適用。次の未読offset=5,433。
+c4残り、NPC_Common、Epilogues、DLCは未完了。外部TODOドキュメントは転記待ち。
