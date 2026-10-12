@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,351 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（2,497 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（2,351〜2,497）
+
+- Seelah_Event_2・Event、Degustation、Sosiel_Winemakersを対訳通読。
+- dlc6-batch20＝5件を適用（DLC6累計215件）。保存候補のオポッサムの表情に加え、救出しなかった場合の仮定を過去の事実とした訳、ソシエルとワインの話をした人物の曖昧さ、リンゴの蜂蜜酒、衛兵が町の人々を守る意味を修正。
+- bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=2497、Ulbrig_Event_Interview_dialogue。試飲評価の漢数字5件、お墨付きの文法、待つ必要がないという返答、収穫日の正確さ、務めから気をそらす方向、アビスの蝗の候補計10件をinit-dlc6-batch21.mjsに保存。all.jsonはbatch20適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（2,146〜2,351）
 
