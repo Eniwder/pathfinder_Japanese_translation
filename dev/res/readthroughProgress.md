@@ -1,6 +1,14 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（1,650 / 2,315件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC4の適用・検証済み状態を確認。DLC5_StoryEndsを通読中（1,843 / 2,315件）。
+
+### 2026-10-13：DLC5の続き（1,650〜1,843）
+
+- b2_dragon、Storasta_DrakeMeet、b2_healer、b2_lastfight、NymphDialogを対訳通読。
+- dlc5-batch9＝10件、batch10＝16件を適用（累計142件）。前回保存したドルイドの口調揺れ等を反映。ドラゴンのlocal floraを獣としていた訳、村人を同行させないよう説得する指示、pensive、確定的な理解を曖昧にしていた訳、主人公の二人称などを修正。
+- 正体を現したドラゴンの最期は、話者IDがStorasta_Elderに変わっても同一人物なので、我に統一。老人としての初対面会話の設定を全体変更していない。
+- 両バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1,843、DLC5_b2_old_mo_dialogue。未適用候補8件をinit-dlc5-batch11.mjsに保存。ニンフのby and by、made it here、村人との相互扶助の対象逆転、フェイの表記、センドリの通常会話の口調等。all.jsonはbatch10適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC5の続き（1,343〜1,650）
 
