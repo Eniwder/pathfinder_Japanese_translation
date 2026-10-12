@@ -1,6 +1,13 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,855 / 3,989件）。
+最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksを通読中（1,995 / 3,989件）。
+
+### 2026-10-13：DLC6の続き（1,855〜1,995）
+
+- Nenio_Event_CatchDemon・NotADemon、RazmEvent1_FakeCommander・Spymasterを対訳通読。
+- dlc6-batch15＝14件を適用（DLC6累計170件）。ランの保存候補11件に加え、成功例もある襲撃の試みを襲撃未遂とした訳、誤りの可能性を誤差の可能性とした訳、可能性から確信への言い直しを修正。
+- bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。
+- 次はoffset=1995、RazmEvent2_SpymasterLetsGo。捜していた側が曖昧な主人公の台詞、手持ちのコインで買える物についての時制2件の候補計3件をinit-dlc6-batch16.mjsに保存。all.jsonはbatch15適用後にsurveyで更新済み。
 
 ### 2026-10-13：DLC6の続き（1,657〜1,855）
 
