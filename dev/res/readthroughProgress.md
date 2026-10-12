@@ -604,3 +604,15 @@ Dialogue_Arueshalae_Main 263件、Dialgoue_CameliaMain 231件、Daeran_Main_dial
 次の適用対象は **Companions offset=851、GrimborMainDialogue 236件**。先頭30件は通読済み、修正未適用。次の未読offset=881。
 c4は262 / 5,657件から未完了。Companionsの後に回収。NPC_Common・Epilogues・DLCも残る。
 外部TODOドキュメントは転記待ち。
+
+### 2026-10-12 Companions：ランまで1,297件
+
+Companions 1,297 / 10,584件を通読。通常の会話修正は累計107件。別途、全体の「デーモン・ロード」514件を用語集の「デーモン領主」に統一した。
+
+- GrimborMainDialogue 236件完了、14件修正。優しい心、鎧から騎士を引き出す描写、先制の一撃で決着をつける説明、報復の見通しを修正。クロックワーク・カテドラル、レッドマンティス等を用語集へ整合。
+- Lann_Main_dialog 210件完了、10件修正。母が主人公のところにも来たという意味、密輸に使う地下道、手玉に取る比喩、復讐の落とし前の意味を修正。第一次十字軍を統一。
+- global-demonlord 514件：原文との対応を確認。demonic lordsの1件も同じ概念。固有の別称・魔王など他の表現はこのバッチに含めない。
+- 各bad 0、訳文以外の変更0、verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の適用対象は **Companions offset=1,297、NenioCompanion_dialogue 387件**。1,297〜1,456の160件は通読済み、修正未適用。次の未読offset=1,457。
+c4残り、NPC_Common、Epilogues、DLCは引き続き未完了。外部TODOドキュメント転記待ち。
