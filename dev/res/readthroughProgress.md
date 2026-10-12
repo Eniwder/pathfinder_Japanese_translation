@@ -836,3 +836,18 @@ c4 2,375 / 5,657件を通読。前回1,892件から483件追加、118件修正�
 
 次の確定再開位置は **c4 offset=2,375、Ziforian_dialogue 62件**。先行通読はoffset=2,447まで済み、ジフォリアンとウェンデュアグ等の修正候補は未適用。
 NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
+
+### 2026-10-12 c4：ジフォリアンからヤニエルまで2,886件
+
+c4 2,886 / 5,657件を通読。前回2,375件から511件追加、166件修正（範囲外と既読会話の追加修正を含む）。offset=262以降の修正は累計519件。初回386件の一括修正は別計上。
+
+- Ziforian 62、JoCat 4、MinaghoAfterCombat 33、Nezirrius 56、アイオン過去・未来のザンシア76、裁判36、鏡20、裂け目5件完了。
+- AngelCouncil 30、Berenger_Nexus 15、Berenger_Abyss 13、Devastator_EchoLair 37、EchoGate 8、EchoLair_Final 17、EliandraSaved 8、KatairSaved 8、Larielsaved 23、TargonaSearch 19、Yaniel_Nexus 41件完了。
+- ジフォリアンの俺、ウェンデュアグの荒い常体、ミナゴの女性口調を整合。ノクティキュラに仕掛ける策と彼女のための仕掛けの混同、ネジリウスが女王を敬う発話の主語、冷たい鉄の低鉄誤訳、次の対決を生き延びられない時制を修正。
+- ザンシアの異名は疫病の者。残っていた疫病公41件を全体検索で整合（派生の侮蔑は原文の意味を保持）。イナゴとバッタの揺れはザンシアのlocustだけ7件整合、ウルブリグのgrasshopper表現は維持。十人委員会2件とアブリカンディル2件も整合。
+- 天使仲間の主人公への丁寧語、ベレンゲルの俺、ラリエルがターゴナの兄である関係を整合。戦場の命令・怒号、同じ天使や親しい仲間への常体は場面に応じて維持。デスカリの残響の報酬は新鮮な魂で支払うという意味。
+- ヤニエルの身の上話は丁寧語。原文にない誓いを破りかけた回数、namesakesを子供だけに限定した訳、陰湿な嘲りを軽い皮肉にした訳を修正。
+- 7バッチbad 0、訳文以外の変更0。consistency verify Errors 26 / warnings 3。各全369ラウンドimport試行でinvalid 0、失敗0。
+
+次の確定再開位置は **c4 offset=2,886、ConfrontMentor_azata_c4_dialog 53件**。この53件は先行通読済み、修正候補は未適用。次の未読offset=2,939。
+NPC_Common、Epilogues、DLCは未完了。外部TODOは転記待ち。
