@@ -2,6 +2,13 @@
 
 ## 最新の再開地点（2026-10-13・以下の旧記録より優先）
 
+**追加依頼：未分類56,286件の対訳通読を開始。会話分の完了とは別の継続作業。**
+
+- ユーザーの「未分類のやつもせっかくならやりたい」により全未分類分を対象に追加。最新の対象はall.jsonでdialogfolder.jsonに会話フォルダがないentry。すべてdialog=null／type=null。内容は能力・実績・背景・呪文説明・UIなどを含み、会話が一切ないとは断言しない。
+- `dev`で`node test/readthrough-work/inspect-unclassified.mjs <offset> <count>`を使う。all.jsonの既存順を保つ。最新版の進捗はreadthroughProgress.md冒頭を参照。zhCN.jsonを読まない／編集しない／マージしない、pushしない等の従来の制約は継続。
+- **未分類は1,060 / 56,286件読了。次はoffset=1060、key=38470882（アルケミストの爆弾説明）。** unclassified-order.jsonに対象順を固定保存し、unclassified-progress.jsonにも再開位置を保存済み。
+- unclassified-batch1〜6は適用・各全369ラウンド検証失敗0（11／9／16／54／31／5件）。実変更122キー。bad 0、訳文以外の変更0、Errors 26 / warnings 3。既存の正当なタグ順変更を持つentryは通常applyでTAGMISMATCHになるため、監査記録と元訳一致・タグ集合一致を確認する各バッチのapply-reviewed.mjsで適用した。prepareを再実行しない。稼働中の検証プロセスなし。all.jsonはbatch6適用後にsurveyで更新済み。未分類の全体通読は未完了。次のバッチはunclassified-batch7。
+
 **再開分を含む会話順通読は完了。以下のDLC6 offset=2785で停止した記録は過去のもの。**
 
 - DLC6_ADanceOfMasks：3,989 / 3,989件読了。batch24〜29の95件を追加適用し、累計343件修正。各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。
