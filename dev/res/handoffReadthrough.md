@@ -3,8 +3,8 @@
 ## 最新の継続地点（2026-10-13・停止指示まで継続）
 
 - 最新指示は「止めるまで続けて」。未分類56,286件の通読を継続中で、任意のバッチ終了で作業を止めない。
-- 未分類分4,635件読了、次はoffset=4635、key=dc942db0。unclassified-batch1〜44適用済み、イベント795件／実変更776キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次のバッチは45。2026-10-14に5 hour windowでの中断から継続指示を受けた。
-- 未適用候補はreadthroughProgress.md冒頭を参照。all.jsonはbatch43後なので次のprepare前にsurvey更新。稼働中の検証プロセスなし。進捗JSON・固定順序・監査・バックアップはdev/test/readthrough-workに保存。apply-reviewed.mjsの書き込み引数は「write」であり「--write」ではない。適用済みprepareは再実行しない。過去のoffset=1060の説明は誤記で、Throw Anything（万能投擲術）が正しい。
+- 未分類分5,060件読了、次はoffset=5060。unclassified-batch1〜49適用済み、イベント844件／実変更825キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次のバッチは50。2026-10-14に5 hour windowでの中断から継続指示を受けた。
+- 未適用候補はreadthroughProgress.md冒頭を参照。all.jsonはbatch48後なので次のprepare前にsurvey更新。稼働中の検証プロセスなし。進捗JSON・固定順序・監査・バックアップはdev/test/readthrough-workに保存。apply-reviewed.mjsの書き込み引数は「write」であり「--write」ではない。適用済みprepareは再実行しない。過去のoffset=1060の説明は誤記で、Throw Anything（万能投擲術）が正しい。
 - 従来の制約は継続。entry.translationのみ変更し、zhCN.jsonを読まない／編集しない／比較しない／マージしない。検証はnpm run consistency -- verify。配布・pushなし。
 
 ## 過去の再開地点（2026-10-13・上記の最新記録を優先）
