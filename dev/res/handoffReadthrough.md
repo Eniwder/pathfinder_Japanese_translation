@@ -2,6 +2,8 @@
 
 ## 最新の継続地点（2026-10-14・停止指示まで継続）
 
+- 最新：未分類6,820 / 56,286件読了、次はoffset=6820、key=c355642c。unclassified-batch1〜73適用済み、イベント1123件／実変更1096キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次のバッチは74。未適用候補はreadthroughProgress.md冒頭。all.jsonはbatch72後なのでprepare前にsurvey更新。稼働中の検証プロセスなし。以下は過去のチェックポイント。
+
 - 5 hour windowから再開し継続中。未分類5,900 / 56,286件読了、次はoffset=5900、key=ad7df776。unclassified-batch1〜61適用済み、イベント969件／実変更945キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次のバッチは62。
 - 未適用候補はreadthroughProgress.md冒頭。all.jsonはbatch60後なので次のprepare前にsurvey更新。稼働中の検証プロセスなし。下の5,340件時点の記録は過去のチェックポイント。
 
