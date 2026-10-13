@@ -1,6 +1,15 @@
 # 会話順通読の進捗
 
-最新の再開手順は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13に再開し、DLC1〜5の通読・検証を完了。DLC6_ADanceOfMasksは2,785 / 3,989件まで通読。ユーザーの5 hour window前の終了指示により停止。
+最新の状態は [handoffReadthrough.md](handoffReadthrough.md)。2026-10-13の再開でDLC6_ADanceOfMasksの3,989 / 3,989件、DLCFree_ChildrenOfMortaの212 / 212件まで通読完了。会話順通読の対象章はすべて読了。以下の過去の停止・未完了記録より、この最新記録を優先する。
+
+### 2026-10-13：DLC6終盤・DLCFreeの通読完了
+
+- DLC6のoffset=2785から3989まで1,204件を対訳通読。StandingInLineの残り、SwarmLine、WelcomeToCelebration、BookEvent_Razmir、Choir・Cultist、FakeRazmir、SpymasterBeforeRazmir、TrueRazmir各会話、仲間との夜の会話を完了。
+- dlc6-batch24〜29で95件を適用（9／13／15／12／10／36件）。DLC6の累計修正は343件。保存済み候補2件も適用済み。礼拝の一人称、the odd servant、囚われの身からの脱出、資金を使った人物、roll one's eyes、身体動作、ワインを注ぐ場面の依頼、ウェンデュアグの脅しの常体と主人への敬語などを修正。
+- DLCFree_ChildrenOfMorta全212件（John_Meet、KTC_Morta_Anevia・Arsinoe、Lucy_Main、MortaGoblins）を対訳通読。dlcfree-batch1で27件を適用。親子への非敵対的な主人公の二人称、穢れの表記、原文cubの子狼表記、visions、複数の親子への呼びかけ、守る対象と脅す相手の関係、盗みを認める台詞などを修正。原文自体がpuppy／dogと呼ぶ箇所はその意味を保持。
+- 全7バッチともdry apply bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。稼働中の検証プロセスなし。all.jsonは最終適用後にsurveyで更新済み。未適用候補なし。
+- c0〜c6、Companions、NPC_Common、Epilogues／afterlogues、Interchapters、World、DLC1〜6、DLCFreeが読了。MechanicTexts／Classes／Testは会話グループ0件。会話グループ外の56,286件を通読完了とは扱わない。
+- zhCN.jsonへのマージ、配布、pushは行っていない。外部TODOへの転記は接続先がなく未実施。修正とバックアップ・検証結果はgitignore対象のローカル作業ディレクトリに保持する。
 
 ### 2026-10-13：DLC6の続き（2,706〜2,785）・引き継ぎ停止
 

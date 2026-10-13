@@ -2,6 +2,16 @@
 
 ## 最新の再開地点（2026-10-13・以下の旧記録より優先）
 
+**再開分を含む会話順通読は完了。以下のDLC6 offset=2785で停止した記録は過去のもの。**
+
+- DLC6_ADanceOfMasks：3,989 / 3,989件読了。batch24〜29の95件を追加適用し、累計343件修正。各バッチbad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。
+- DLCFree_ChildrenOfMorta：212 / 212件読了。dlcfree-batch1の27件を適用。bad 0、訳文以外の変更0、Errors 26 / warnings 3、全369ラウンド検証失敗0。稼働中の検証プロセスなし。all.jsonは最終適用後にsurveyで更新済み。
+- c0〜c6、Companions、NPC_Common、Epilogues／afterlogues、Interchapters、World、DLC1〜6、DLCFreeの会話グループをすべて読了。MechanicTexts／Classes／Testは0件。グループ外の56,286件は今回の会話順通読の対象外。
+- 未適用の修正候補なし。既存バッチのprepareを再実行しない。マージ・配布・pushは未実施。外部TODOへの転記は接続先がなく未実施。
+- 今後は新しいユーザー指示に従う。詳細はreadthroughProgress.md冒頭。下記の旧再開地点へ戻らない。
+
+## 過去の停止地点（完了済み）
+
 ユーザーの「5 hour window前に、きりのいいところで引き継ぎメモを残して終わって」という指示により停止。再開指示があればDLC6の以下の地点から続け、その後DLCFreeへ進む。
 DLC4は35件適用済みでcheck再検査も成功。DLC1〜4の既存全369ラウンド検証は失敗0。
 DLC5_StoryEndsは2,315 / 2,315件の通読完了。
