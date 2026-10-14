@@ -18191,7 +18191,7 @@
     },
     {
       "source": "Death Door",
-      "target": "瀕死",
+      "target": "死の淵",
       "category": "Rules",
       "note": "Condition."
     },
@@ -22576,7 +22576,7 @@
     },
     {
       "source": "Death's Door",
-      "target": "瀕死",
+      "target": "死の淵",
       "category": "Rules",
       "note": "状態"
     },
