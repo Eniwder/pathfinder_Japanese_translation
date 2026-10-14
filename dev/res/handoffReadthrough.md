@@ -2,6 +2,8 @@
 
 ## 最新の継続地点（2026-10-14・停止指示まで継続）
 
+- 最新保存地点：未分類12,040 / 56,286件読了、次はoffset=12040、key=28a46329。unclassified-batch1〜125適用済み、イベント1636件／実変更1607キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次はbatch126。未適用候補はreadthroughProgress.md冒頭。all.jsonはbatch124後なのでprepare前にsurvey更新。稼働中の検証プロセスなし。最新指示「5hour windowで止まったけど、また止まるまで続けて」に従い継続中。以下は過去のチェックポイント。
+
 - 最新保存地点：未分類11,230 / 56,286件読了、次はoffset=11230、key=d1c17f06。unclassified-batch1〜115適用済み、イベント1513件／実変更1484キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次のバッチは116。未適用候補は11223（abe583bd）の害虫→蟲。all.jsonはbatch114後なのでprepare前にsurvey更新。稼働中の検証プロセスなし。停止指示まで継続中。以下は過去のチェックポイント。
 
 - 最新保存地点：未分類10,390 / 56,286件読了、次はoffset=10390、key=43f8dd7f。unclassified-batch1〜106適用済み、イベント1414件／実変更1385キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次のバッチは107。未適用候補8件はinit-unclassified-batch107.mjsに保存。all.jsonはbatch105後なのでprepare前にsurvey更新。稼働中の検証プロセスなし。ユーザーの継続指示に従い作業中。以下は過去のチェックポイント。
