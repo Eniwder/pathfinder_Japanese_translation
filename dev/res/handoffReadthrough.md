@@ -2,6 +2,8 @@
 
 ## 最新の継続地点（2026-10-14・停止指示まで継続）
 
+- 最新保存地点：未分類17,449 / 56,286件読了、次はoffset=17449、key=9a492c66。unclassified-batch1〜181適用済み、イベント1963件／実変更1933キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、batch177〜181は各全369ラウンド検証失敗0。次はbatch182。未適用候補：17400（3222afa2）は設定名がsneak attackで説明のみsurprise attackとなっており、不意討ち→急所攻撃に揃える候補。all.jsonはbatch180後なのでprepare前にsurvey更新。進捗JSON保存済み。稼働中の検証プロセスなし。停止指示まで継続中。 以下は過去のチェックポイント。
+
 - 最新保存地点：未分類16,760 / 56,286件読了、次はoffset=16760、key=784c553c。unclassified-batch1〜176適用済み、イベント1947件／実変更1917キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、batch168〜176は各全369ラウンド検証失敗0。次はbatch177。未適用候補1件はinit-unclassified-batch177.mjs（16710の立ちすくみは当該機会攻撃に対してのみ）。all.jsonはbatch175後なのでprepare前にsurvey更新。進捗JSON保存済み。稼働中の検証プロセスなし。停止指示まで継続中。 以下は過去のチェックポイント。
 
 - 最新保存地点：未分類15,935 / 56,286件読了、次はoffset=15935、key=8dfcadea。unclassified-batch1〜167適用済み、イベント1912件／実変更1882キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、batch159〜167は各全369ラウンド検証失敗0。次はbatch168。未適用候補は15885（86eaa609）・15896（7b209cfe）の召喚した→招来した。all.jsonはbatch166後なのでprepare前にsurvey更新。進捗JSON保存済み。稼働中の検証プロセスなし。停止指示まで継続中。 以下は過去のチェックポイント。
