@@ -2,6 +2,8 @@
 
 ## 最新の継続地点（2026-10-14・停止指示まで継続）
 
+- 最新保存地点：未分類13,210 / 56,286件読了、次はoffset=13210、key=4ebf09bb。unclassified-batch1〜142適用済み、イベント1790件／実変更1761キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3。batch136〜142は各全369ラウンド検証失敗0。次はbatch143、未適用候補なし。all.jsonはbatch141後なのでprepare前にsurvey更新。進捗JSON保存済み。最新の「5hour windowで止まったけど、また止まるまで続けて」に従い継続中。以下は過去のチェックポイント。
+
 - 最新保存地点：未分類12,690 / 56,286件読了、次はoffset=12690、key=479ead2b。unclassified-batch1〜135適用済み、イベント1729件／実変更1700キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次はbatch136。未適用候補はreadthroughProgress.md冒頭。all.jsonはbatch134後なのでprepare前にsurvey更新。稼働中の検証プロセスなし。停止指示まで継続中。以下は過去のチェックポイント。
 
 - 最新保存地点：未分類12,040 / 56,286件読了、次はoffset=12040、key=28a46329。unclassified-batch1〜125適用済み、イベント1636件／実変更1607キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、各全369ラウンド検証失敗0。次はbatch126。未適用候補はreadthroughProgress.md冒頭。all.jsonはbatch124後なのでprepare前にsurvey更新。稼働中の検証プロセスなし。最新指示「5hour windowで止まったけど、また止まるまで続けて」に従い継続中。以下は過去のチェックポイント。
