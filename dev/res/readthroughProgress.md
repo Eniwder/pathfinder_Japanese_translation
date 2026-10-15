@@ -1,5 +1,11 @@
 # 会話順通読の進捗
 
+### 2026-10-15：未分類分27,398件まで継続（最新保存地点）
+
+- 未分類27,398 / 56,286件読了、次はoffset=27398、key=784139ff。unclassified-batch1〜253適用済み、監査累計イベント2420件／監査上の実変更2354キー。batch251〜253は各全369ラウンド検証失敗0、Errors 26 / warnings 3。次はbatch254。all.jsonはbatch253後にsurvey更新済み。停止指示まで継続中。
+- batch251〜253の基準：Hundred-Face＝百面相（用語集）。Injury（毒・病気の欄）＝致傷型（用語集。傷／負傷／傷害／傷口／負傷型／傷口感染型の36件を統一、一般語の負傷は対象外）。Precision damage＝精密ダメージ（用語集）。クリティカルの確認→確定（過去判断）。Corrupted＝穢れた：Children of Morta側のゴブリン（KTC_Morta会話のゴブリン部族、用語集Corruptionの注記）とDLC5ストラスタのジャングルの生物（同DLCのCorruption of the Storastan Jungle＝ストラスタのジャングルの穢れ、Corrupted Jungle Poison＝穢れのジャングル毒）。ボーナスの語順（〜に+Nの○○ボーナス）を整備。
+- 未決事項の更新：④Corruptedは上記のMorta・ストラスタ分を解決。残りはモングレル（堕落した7件）、Corrupted Gold Dragon／Animal Meat（堕ちた）、Corrupted Totem（汚染された）。追加⑦Adult（竜の年齢段階）＝成熟した／アダルト／成体。Forge＝フォージ（用語集）と24028の鍛冶場は別物の可能性があり保持。
+
 ### 2026-10-15：未分類分26,040件まで継続（最新保存地点）
 
 - 未分類26,040 / 56,286件読了、次はoffset=26040、key=8e3d1455。unclassified-batch1〜250適用済み、監査累計イベント2360件／監査上の実変更2295キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、batch249〜250は各全369ラウンド検証失敗0。次はbatch251。all.jsonはbatch250後にsurvey更新済み。停止指示まで継続中。
