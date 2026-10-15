@@ -1,5 +1,12 @@
 # 会話順通読の進捗
 
+### 2026-10-15：未分類分26,040件まで継続（最新保存地点）
+
+- 未分類26,040 / 56,286件読了、次はoffset=26040、key=8e3d1455。unclassified-batch1〜250適用済み、監査累計イベント2360件／監査上の実変更2295キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、batch249〜250は各全369ラウンド検証失敗0。次はbatch251。all.jsonはbatch250後にsurvey更新済み。停止指示まで継続中。
+- **ユーザー指示：判断に迷ったら必ず何らかの基準（用語集・translationGuide・過去判断・PF日本語版の定訳）を確認する。基準がなければ変更せず未決事項として報告する。**
+- batch249〜250の基準：Marauder（同系統ユニット名の役職語は「〜の征服者」等の日本語、単独Marauder＝略奪者）→「の略奪者」。Vicious＝ヴィシャスは用語集で武器特殊能力専用のため、海賊等の形容詞は先例Vicious Stompers＝凶悪な踏みつけに合わせ「凶悪な」。Knubbo＝クナッボ（用語集）。同一原文の訳揺れ（Treasure-Hunting Dodger、Forsaken Koboldの見捨てられし、Corrupted Rat Swarm）を統一、Deadeye＝名手（他ユニット名）。Dweomer＝ドゥウォーマー（用語集Dweomercat）。Evoker／Evocator＝力術師（用語集Evocation＝力術、ミノタウロスの招来師は誤訳）。発酵ビア・エレメンタル（用語集ラガー・ビア・エレメンタルの形）。出目20（過去判断）。
+- **未決事項（基準なし・未変更、ユーザー判断待ち）：** ①Mythic○○のユニット名接頭辞がミシック／神話級／神話の に三分。②Lacedon＝レイセドン／レイシードン／レイスドン。③Fiendish＝フィーンドの／フィーンディッシュ・／フィーンド・。④Corrupted＝堕落した（約20件）／穢れた／堕ちた／汚染された（用語集はCorruption＝穢れ、Corrupted Dragons＝穢れたドラゴン）。⑤Primal＝原初の／プライマル。⑥十字軍のSummoned Unit＝召喚部隊。
+
 ### 2026-10-15：未分類分25,210件まで継続（最新保存地点）
 
 - 未分類25,210 / 56,286件読了、次はoffset=25210、key=dcd6fed5。unclassified-batch1〜248適用済み、監査累計イベント2325件／監査上の実変更2260キー。各bad 0、訳文以外の変更0、Errors 26 / warnings 3、batch245〜248は各全369ラウンド検証失敗0。次はbatch249。未適用候補なし。all.jsonはbatch248後にsurvey更新済み。進捗JSON保存済み。停止指示まで継続中。
