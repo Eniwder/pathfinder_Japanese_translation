@@ -52,6 +52,7 @@
 <script setup>
 import { ref, onMounted, nextTick } from 'vue';
 import { Buffer } from 'buffer';
+import { stripRichText } from './textFormatting.mjs';
 
 window.Buffer = window.Buffer || Buffer;
 const textJp = ref("");
@@ -92,6 +93,7 @@ onMounted(async () => {
   const engJson = JSON.parse(decoder.decode(xor2(engBuffers, Buffer.from(import.meta.env.VITE_DEC_KEY, 'hex'))));
 
   Object.entries(jpJson.strings).forEach(([k, v]) => {
+    v = stripRichText(v);
     const nv1 = v.replace(/\{mf\|(.+?)\|(.+?)\}/g, '$1').replace(/\{.+?\}/g, '').replace(/・/g, '');
     const nv2 = v.replace(/\{mf\|(.+?)\|(.+?)\}/g, '$2').replace(/\{.+?\}/g, '').replace(/・/g, '');
     jp.push([k, nv1]);
@@ -103,6 +105,7 @@ onMounted(async () => {
     jpOrg[k] = v.replace(/\{mf\|(.+?)\|(.+?)\}/g, '($1|$2)').replace(/\{[nN]ame}/g, 'NAME').replace(/\{.+?\}/g, '');
   });
   Object.entries(engJson.strings).forEach(([k, v]) => {
+    v = stripRichText(v);
     const nv = v.replace(/\{mf\|(.+?)\|(.+?)\}/g, '($1|$2)').replace(/\{[nN]ame}/g, 'NAME').replace(/\{.+?\}/g, '');
     eng[k] = nv;
   });
@@ -110,7 +113,7 @@ onMounted(async () => {
 });
 
 function search(word) {
-  word = word.trim().replace(/・/g, '');
+  word = stripRichText(word).trim().replace(/・/g, '');
   if (word === '') {
     textJp.value = '';
     textEng.value = '';
