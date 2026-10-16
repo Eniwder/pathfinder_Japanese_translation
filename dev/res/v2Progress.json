@@ -47,7 +47,7 @@
       "start": 450,
       "limit": 300,
       "merged": false,
-      "reviewDir": "dev/lang/chunks_review/2026-09-02_round4/",
+      "reviewDir": "dev/lang/chunks_superseded/2026-09-02_round4/",
       "coveredDialogs": [
         "Diplomacy_8_Dialogue(残り)/Diplomacy_Officer_dialogue",
         "KTC_AfterRankUp8_dialogue",
@@ -59,7 +59,7 @@
       "start": 750,
       "limit": 300,
       "merged": false,
-      "reviewDir": "dev/lang/chunks_review/2026-09-02_round5/",
+      "reviewDir": "dev/lang/chunks_superseded/2026-09-02_round5/",
       "coveredDialogs": [
         "Leadership_2〜8_dialogue(残り)",
         "Logistics_2〜5_dialogue",
@@ -72,7 +72,7 @@
       "start": 1050,
       "limit": 300,
       "merged": false,
-      "reviewDir": "dev/lang/chunks_review/2026-09-02_round6/",
+      "reviewDir": "dev/lang/chunks_superseded/2026-09-02_round6/",
       "coveredDialogs": [
         "Logistics_7_Dialogue(残り)",
         "Logistics_8-1_Dialogue",
@@ -89,7 +89,7 @@
       "start": 1350,
       "limit": 300,
       "merged": false,
-      "reviewDir": "dev/lang/chunks_review/2026-09-03_round8/",
+      "reviewDir": "dev/lang/chunks_superseded/2026-09-03_round8/",
       "coveredDialogs": [
         "Military_4_dialogue",
         "Military_5_dialogue",
@@ -107,7 +107,7 @@
       "start": 1650,
       "limit": 300,
       "merged": false,
-      "reviewDir": "dev/lang/chunks_review/2026-09-04_round9/",
+      "reviewDir": "dev/lang/chunks_superseded/2026-09-04_round9/",
       "coveredDialogs": [
         "AeonRankUp_3correct_dialogue",
         "AeonRankUp_4_dialogue",
@@ -4995,7 +4995,7 @@
         "DemonRankUp_1_dialogue",
         "DemonRankUp_2_dialogue"
       ],
-      "note": "round4・5・6・8・9（2026-09-02〜04、旧形式のチャンクでv2訳済みの1500件）を、現行の抽出形式・翻訳ガイド（2026-10-16の用語統一を含む）でやり直し。旧round4〜9のディレクトリは残してあるので、マージ時はこちらを後にimportして上書きすること。round1-3_redoと同じく未マージで温存。"
+      "note": "round4・5・6・8・9（2026-09-02〜04、旧形式のチャンクでv2訳済みの1500件）を、現行の抽出形式・翻訳ガイド（2026-10-16の用語統一を含む）でやり直し。旧round4〜9のディレクトリ（全1500キーがこの回に含まれることを確認済み）はdev/lang/chunks_superseded/へ退避し、chunks_reviewには残していない。round1-3_redoと同じく未マージで温存。"
     }
   ]
 }
