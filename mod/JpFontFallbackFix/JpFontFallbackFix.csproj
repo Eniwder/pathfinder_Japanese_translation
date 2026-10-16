@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>JpFontFallbackFix</AssemblyName>
+    <RootNamespace>JpFontFallbackFix</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- ゲームのインストール先。環境に合わせて変更するか、dotnet build -p:GameDir=... で上書きする -->
+    <GameDir Condition="'$(GameDir)' == ''">D:\Game\Steam\steamapps\common\Pathfinder Second Adventure</GameDir>
+    <Managed>$(GameDir)\Wrath_Data\Managed</Managed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(Managed)\UnityModManager\0Harmony.dll" Private="false" />
+    <Reference Include="UnityModManager" HintPath="$(Managed)\UnityModManager\UnityModManager.dll" Private="false" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(Managed)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(Managed)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(Managed)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(Managed)\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(Managed)\UnityEngine.TextRenderingModule.dll" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Info.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
