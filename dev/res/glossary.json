@@ -2240,7 +2240,7 @@
     {
       "source": "Sarkorian",
       "target": "サーコリア人",
-      "note": "Sarkoris（サーコリス）の民を指す形容詞形。"
+      "note": "人を指す名詞・民族名はサーコリア人。土地・文化・建造物等を修飾する形容詞はサーコリスの（例：サーコリスの文化）。人や職業の修飾はサーコリア人の（例：サーコリア人の魔術師）。サーコリアを地名として使わない。"
     },
     {
       "source": "Wintersun",
@@ -4695,9 +4695,9 @@
     },
     {
       "source": "Accidental God",
-      "target": "事故の神",
+      "target": "偶然の神",
       "category": "Character",
-      "note": "ケイデン・カイレアンの自称の二つ名（SoldierParty_Sorry_dialogue、round86）。",
+      "note": "カイデン・カイリーエンの二つ名。百科の説明では酩酊したままスターストーンの試練を越えて神となった由来。事故を司る神という意味にはしない。自己紹介の『成り行きで神になった者』等の自然な説明は許容（2026-10-16）。",
       "caseSensitive": true
     },
     {
@@ -5828,7 +5828,7 @@
       "source": "Inai",
       "target": "イナイ",
       "category": "Character",
-      "note": "ケナブレスの施療院の老ヒーラー。毒舌な老婆（DLC2）。",
+      "note": "ケナブレスの施療院の老治療師。毒舌な老婆（DLC2）。healer の職名は自己紹介に合わせ「治療師」。",
       "caseSensitive": true
     },
     {
@@ -17304,7 +17304,7 @@
       "source": "Anomaly",
       "target": "アノマリー",
       "category": "Creature",
-      "note": "アノマリー・クリーチャー、アノマリーの歪み等。"
+      "note": "クリーチャー・変質した個体の分類はアノマリー。ネニオの本質を指す呼称も同じ。異常な現象・時空や世界の不調は異常現象、一般の形容は異常な等。Anomaly Distortion など登録済みの能力名は保持。"
     },
     {
       "source": "Anomaly Shift",
@@ -28904,8 +28904,8 @@
     },
     {
       "source": "Alchemists",
-      "target": "錬金術師",
-      "note": "Crusade unit (class Alchemist).",
+      "target": "アルケミスト",
+      "note": "クラス名由来の十字軍ユニット名。一般の職業として述べる錬金術師とは区別する。",
       "category": "Crusade"
     },
     {
@@ -29000,8 +29000,8 @@
     },
     {
       "source": "Assassins",
-      "target": "暗殺者",
-      "note": "Crusade unit.",
+      "target": "アサシン",
+      "note": "クラス名由来の十字軍ユニット名。一般の暗殺者や暗殺者ギルドとは区別する。",
       "category": "Crusade"
     },
     {
@@ -31332,6 +31332,180 @@
       "category": "Character",
       "note": "アザータの名。",
       "caseSensitive": true
+    },
+    {
+      "source": "Summoned Unit",
+      "target": "招来部隊",
+      "category": "Crusade",
+      "note": "十字軍の部隊属性。Summon＝招来に合わせる。"
+    },
+    {
+      "source": "Leper's Smile",
+      "target": "レパーズ・スマイル",
+      "category": "Location",
+      "note": "地名は既存の音写を採用。「癩者の微笑み」は使用しない。"
+    },
+    {
+      "source": "Crimson Dust",
+      "target": "クリムゾン・ダスト",
+      "category": "Location",
+      "note": "地名。部分訳「紅のダスト」は使用しない。"
+    },
+    {
+      "source": "Wedding Meadow",
+      "target": "婚礼の草原",
+      "category": "Location",
+      "note": "同名地名の項目・クエスト目標を統一。"
+    },
+    {
+      "source": "Keeper's Canyon",
+      "target": "番人の峡谷",
+      "category": "Location",
+      "note": "最新の地名項目・砦建設・説明文が一致している表記を採用。"
+    },
+    {
+      "source": "combat morale",
+      "target": "戦闘士気",
+      "category": "Crusade",
+      "note": "十字軍の戦闘時の部隊士気。軍の士気とは区別する。"
+    },
+    {
+      "source": "area of control",
+      "target": "支配圏",
+      "category": "Crusade",
+      "note": "十字軍の砦の影響範囲。"
+    },
+    {
+      "source": "free crusaders",
+      "target": "自由十字軍",
+      "category": "Crusade",
+      "note": "アザータの仲間たちを指す集団名。"
+    },
+    {
+      "source": "Occult Enchantment",
+      "target": "神秘の心術",
+      "category": "Crusade",
+      "note": "アンデッド部隊の特技。名前項目に参照箇所を合わせる。"
+    },
+    {
+      "source": "Commander Tirabade",
+      "target": "ティラバード指揮官",
+      "category": "Character",
+      "note": "イラベスの肩書き。Commander＝指揮官に合わせる。"
+    },
+    {
+      "source": "governor of Kenabres",
+      "target": "ケナブレスの総督",
+      "category": "Title",
+      "note": "ハルランとその後継者の職名。Governor-General（総督）とは原語・職務が異なるが、日本語の職名が同じでも支障はない。"
+    },
+    {
+      "source": "herald of Iomedae",
+      "target": "アイオーメディの使者",
+      "category": "Title",
+      "note": "継承者の手。人物メモに合わせる。神格の特別な従者の分類 Herald も「使者」。一般の伝令は文脈に従う。"
+    },
+    {
+      "source": "Iomedae's herald",
+      "target": "アイオーメディの使者",
+      "category": "Title",
+      "note": "herald of Iomedae と同じ人物・役割。"
+    },
+    {
+      "source": "stargazer",
+      "target": "星読み",
+      "category": "Term",
+      "note": "プルラの滝で星を観測する者の職名。星座 The Stargazer＝星詠み座とは区別する。"
+    },
+    {
+      "source": "Echo of Fury",
+      "target": "憤怒の残響",
+      "category": "Location",
+      "note": "闘技場の固有名。名前項目 Echo of Fury Arena に合わせる。"
+    },
+    {
+      "source": "Lacedon",
+      "target": "レイセドン",
+      "category": "Creature",
+      "note": "本プロジェクトの採用音写。派生ユニットもレイセドンで統一。"
+    },
+    {
+      "source": "Fiendish",
+      "target": "フィーンディッシュ",
+      "category": "Template",
+      "note": "クリーチャーのテンプレート／敵名の接頭辞。名前では「フィーンディッシュ・〜」。一般の形容詞や固有の能力名は文脈・登録済みの名前に従う。"
+    },
+    {
+      "source": "Mythic Unit",
+      "target": "神話級ユニット",
+      "category": "Crusade",
+      "note": "十字軍のユニット分類。敵名の Mythic も神話級。ただし神話の道・神話能力等のシステム名は従来どおり。"
+    },
+    {
+      "source": "Corrupted Mongrel",
+      "target": "穢れたモングレル",
+      "category": "Creature",
+      "note": "魔力・デーモンの影響で変質した個体。派生ユニットも同形。道徳的堕落一般と区別する。"
+    },
+    {
+      "source": "Corrupted Gold Dragon",
+      "target": "穢れたゴールドドラゴン",
+      "category": "Creature",
+      "note": "魔力・デーモンの影響で変質した個体。"
+    },
+    {
+      "source": "Corrupted Animal Meat",
+      "target": "穢れた獣の肉",
+      "category": "Item",
+      "note": "変質した獣の肉。通常の腐敗肉と混同しない。"
+    },
+    {
+      "source": "Corrupted Totem",
+      "target": "穢れたトーテム",
+      "category": "Item",
+      "note": "魔的に穢されたトーテム。"
+    },
+    {
+      "source": "Primal Giant Flytrap",
+      "target": "原初のジャイアント・フライトラップ",
+      "category": "Creature",
+      "note": "Primal のクリーチャー修飾語は原初の。プライマル・ドルイド等のクラス名・能力名とは区別。"
+    },
+    {
+      "source": "Adult Black Dragon",
+      "target": "成体のブラックドラゴン",
+      "category": "Creature",
+      "note": "Adult は竜の年齢段階として成体。通常の人間の adult は成人・大人等、文脈に従う。"
+    },
+    {
+      "source": "Adult Silver Dragon",
+      "target": "成体のシルバードラゴン",
+      "category": "Creature",
+      "note": "Adult は竜の年齢段階として成体。"
+    },
+    {
+      "source": "Bards",
+      "target": "バード",
+      "category": "Crusade",
+      "note": "クラス名由来の十字軍ユニット名。一般の音楽家として述べる吟遊詩人とは区別する。"
+    },
+    {
+      "source": "Hunters",
+      "target": "ハンター",
+      "category": "Crusade",
+      "note": "クラス名由来の十字軍ユニット名。一般の狩人とは区別する。"
+    },
+    {
+      "source": "Eradicating the Anomaly",
+      "target": "異常現象の根絶",
+      "category": "Crusade",
+      "note": "アイオンが血の泉を排除する勅令。クリーチャーの Anomaly＝アノマリーとは区別。"
+    },
+    {
+      "source": "Abandoned Cave",
+      "target": "放棄された洞窟",
+      "category": "Location",
+      "note": "坑道であるとの断定を避け、原文の abandoned cave の意味で訳す。"
     }
   ]
 }

@@ -101,7 +101,7 @@
       "toneAndVoice": "Uses energetic, enthusiastic sentence structures with simple vocabulary, while maintaining grammatically natural Japanese. Never use baby talk or intentionally childish mispronunciation.",
       "firstPerson": {
         "term": "アイヴ",
-        "rule": "Prefer アイヴ. Use 私 only rarely when grammatically necessary."
+        "rule": "自分一人を指す一人称は「アイヴ」。私・あたし・わたしにしない。原文の複数の私たちや、別人の台詞の引用は区別する。"
       }
     },
     "Woljif": {
@@ -580,14 +580,15 @@
         "storytelling"
       ],
       "speechExamples": [
-        "ふむ……この破片に残された記憶の糸を紐解いてみるとしよう。ふむ、遥か昔の悲劇が聞こえてくるようだ……。",
-        "お前さん、急ぐことはないよ。運命の織機は、私たちが焦ろうとも同じ速度で糸を紡ぐのだからね。",
-        "記憶とは不思議なものだ。失われて初めて、その真の重みに気づくのだからな。"
+        "この破片に残された記憶の糸を紐解いてみましょう。遥か昔の悲劇が聞こえてくるようです。",
+        "あなた、急ぐ必要はありません。運命の織機は、私たちが焦ろうとも同じ速さで糸を紡ぐのですから。",
+        "記憶とは不思議なものです。失われて初めて、その真の重みに気づくのです。"
       ],
       "translationNotes": [
-        "穏やかで達観した老賢者の口調（〜かね、〜じゃよ、〜なのだよ、〜とおもうがね）。",
+        "主人公との通常の直接対話は、穏やかで達観した老賢者の丁寧語。一人称は私、二人称はあなた。",
         "過剰で滑稽な「老人語（〜じゃぞい）」ではなく、知性と静かな品格を感じさせる老齢表現。",
-        "物語を語り聞かせるようなゆったりとしたリズムと、回顧的な語彙を選択する。"
+        "物語を語り聞かせるようなゆったりとしたリズムと、回顧的な語彙を選択する。",
+        "記憶の再演・引用内の人物の発言、敵対する竜への応対(StoryTellerAndDragonGoodEnter)は通常の主人公向けの口調と区別する。"
       ],
       "constraints": [
         "トゲのある言い方や攻撃的な表現、性急なフレーズは避ける。",
@@ -3364,45 +3365,42 @@
       ]
     },
     "DLC6_ArenaAnnouncer": {
-      "gender": "male",
-      "race": "human",
-      "alignment": "chaotic neutral",
-      "personality": "High-energy, theatrical arena announcer who loves bloodsport and audience enthusiasm.",
+      "race": "shadow entity",
+      "personality": "Lord Zuset Ekhox Zego, the shadow lord presiding over the Echo of Fury. A restrained collector of power who communicates telepathically.",
       "firstPerson": {
-        "term": "あっし",
-        "rule": "Use あっし. Do not normally use 私 or 俺."
+        "term": "我",
+        "rule": "原文の I は「我」、we は「我ら」。人間の実況者として「あっし」「あっしら」にしない。"
       },
       "addressingPlayer": {
-        "commander": "挑戦者",
-        "rule": "Use theatrical terms like 挑戦者殿, 皆様."
+        "commander": "そなた",
+        "rule": "指揮官には「そなた」。主の代理であるドリモとは口調を区別する。"
       },
       "speechStyle": [
-        "boisterous",
-        "theatrical",
-        "fast-paced",
-        "excited"
+        "restrained",
+        "majestic",
+        "otherworldly",
+        "deliberate"
       ],
       "speechExamples": [
-        "さあさあ盛り上がってまいりました！ 今夜の挑戦者は現れるのかァ！？",
-        "血が飛ぶ！ 肉が踊る！ これぞ闘技場の醍醐味だアッ！",
-        "観客の皆さんの歓声に応えて見せろ！ 殺すか殺されるか、ショーの始まりだ！"
+        "我らの期待どおりだ。",
+        "そなたを元の世界へ送り届けよう——我らが約束しよう。"
       ],
       "translationNotes": [
-        "ハイテンションで大げさな興行師・実況アナウンス口調（〜だァ！、〜ですぞ！）。",
-        "勢いと過剰な演出表現を重視。"
+        "我／我ら、そなた、抑制された威厳ある常体。",
+        "原文で名乗る影の王として訳す。陽気な人間の興行師や実況者にしない。"
       ],
       "constraints": [
-        "ボソボソとした暗い話し方や真面目すぎる説明文にしてはならない。"
+        "ドリモ(DLC6_MasterOfArena)と混同しない。"
       ],
       "notes": [
-        "Arena Announcer in DLC6 A Dance of Masks."
+        "v2CharacterNotes.md冒頭の既決判断を同期。原文キー95e44d74、8a83446a、e80e919e、ee221406。"
       ]
     },
     "DLC6_MasterOfArena": {
       "gender": "male",
       "race": "outsider",
       "alignment": "lawful evil",
-      "personality": "Cold, dominant, and calculating owner of the arena who values profit and entertainment.",
+      "personality": "Drimo, the composed steward and emissary serving the shadow lord Zuset Ekhox Zego. Speaks on behalf of his master.",
       "firstPerson": {
         "term": "私",
         "rule": "Use 私."
@@ -3414,23 +3412,21 @@
       "speechStyle": [
         "authoritative",
         "cold",
-        "calculating",
-        "polite"
+        "composed"
       ],
       "speechExamples": [
-        "我が闘技場へようこそ。ここでは死すら最高の娯楽に過ぎません。",
-        "私のルールに従ってもらおう。逆らう者に待つのは、より惨めな死だけだ。",
-        "実力を見せてみなさい。客が満足するならば、相応の報酬を出そう。"
+        "私の名はドリモ。憤怒の残響の闘技場の従者だ。",
+        "我が主の招きを、お前に伝えに来た。"
       ],
       "translationNotes": [
-        "威厳があり冷酷だが、表面上はビジネスライクで落ち着いた口調（〜だ、〜たまえ）。",
-        "支配者としての絶対的な自信と冷徹さ。"
+        "主の代理として私／お前、落ち着いた常体。",
+        "闘技場の主自身とは別人。主の我／我ら、そなたという口調にそろえない。"
       ],
       "constraints": [
         "取り乱したり、プレイヤーに媚びを売ったりしてはならない。"
       ],
       "notes": [
-        "Master of the Arena in DLC6 A Dance of Masks."
+        "ドリモ。DLC6の闘技場の従者・使者。v2CharacterNotes.md冒頭の既決判断を同期。"
       ]
     },
     "Soana_Wintersun": {

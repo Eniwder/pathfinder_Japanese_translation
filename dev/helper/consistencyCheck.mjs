@@ -161,6 +161,18 @@ function speakers() {
   const aliases = profiles.speakerAliases ?? profiles.characters?.speakerAliases ?? {};
   const unitFiles = new Map();
   walk(path.join(BLUEPRINTS, 'Units'), file => { const id = fs.readFileSync(file, 'utf8').match(/"AssetId":\s*"([0-9a-f]+)"/)?.[1]; if (id) unitFiles.set(id, path.basename(file, '.jbp')); });
+  // 話者ユニットは Units/ 外にもある（アイヴは Mythic/Azata/）。
+  // グラフが参照する実ファイルで AssetId を確認し、参照漏れを不存在と誤判定しない。
+  const blueprintRoot = path.resolve(BLUEPRINTS);
+  const checkedSources = new Set();
+  for (const node of graph.values()) {
+    if (!node.speakerId || unitFiles.has(node.speakerId) || !node.source) continue;
+    const file = path.resolve(node.source), relative = path.relative(blueprintRoot, file);
+    if (relative.startsWith('..') || path.isAbsolute(relative) || !file.endsWith('.jbp') || checkedSources.has(file) || !fs.existsSync(file)) continue;
+    checkedSources.add(file);
+    const id = fs.readFileSync(file, 'utf8').match(/"AssetId":\s*"([0-9a-f]+)"/)?.[1];
+    if (id === node.speakerId) unitFiles.set(id, path.basename(file, '.jbp'));
+  }
   console.log('\nspeakerAliases（blueprint ID → profile）');
   for (const [id, profile] of Object.entries(aliases)) console.log(`${profile}\t<= ${unitFiles.get(id) ?? '(not found)'}\t${id}`);
   save('speakers.json', { mismatches: Object.fromEntries(sorted), aliases: Object.fromEntries(Object.entries(aliases).map(([id, profile]) => [id, { profile, unit: unitFiles.get(id) ?? null }])) });
