@@ -990,8 +990,8 @@
     },
     {
       "source": "Venture-Captain Hilor",
-      "target": "ハイラー隊長",
-      "note": "パスファインダー協会の隊長。ベテラン・事務的。"
+      "target": "ハイラー支部長",
+      "note": "パスファインダー・ソサエティの役職付き人名。役職は人名の後ろに「支部長」と付ける。ベテラン・事務的。"
     },
     {
       "source": "Horgus Gwerm",
@@ -26114,8 +26114,8 @@
     },
     {
       "source": "Venture-Captain Gristoff",
-      "target": "ベンチャー・キャプテン・グリストフ",
-      "note": "Gristoff Rollano's title form. Venture-captain＝ベンチャー・キャプテン.",
+      "target": "グリストフ支部長",
+      "note": "グリストフ・ロラーノの役職付き人名。役職は人名の後ろに「支部長」と付ける。",
       "category": "Person"
     },
     {
@@ -30730,8 +30730,8 @@
     },
     {
       "source": "Venture-Captain",
-      "target": "ベンチャー・キャプテン",
-      "note": "パスファインダー・ソサエティの役職。人名に付く場合は「ハイラー隊長」のように「隊長」とする。",
+      "target": "支部長",
+      "note": "パスファインダー・ソサエティの役職。人名付きは「ハイラー支部長」「グリストフ支部長」。会話・地の文では「支部長」とし、用語説明の初出のみ「ベンチャー・キャプテン（支部長）」と併記する。",
       "category": "Organization"
     },
     {
