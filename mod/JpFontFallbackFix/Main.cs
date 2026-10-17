@@ -13,40 +13,58 @@ namespace JpFontFallbackFix
     public static class Main
     {
         static UnityModManager.ModEntry s_mod;
+        static FieldInfo s_jpFontField;
         static TMP_FontAsset s_jpFont;
+        static bool s_failed;
         static readonly HashSet<int> s_fixedFonts = new HashSet<int>();
 
         public static bool Load(UnityModManager.ModEntry modEntry)
         {
             s_mod = modEntry;
+            // I18NFont4UnityGame が AssetBundle から読み込んだ TMP フォントを借りる。
+            // 型の検索は重いので起動時に1回だけ行う（テキスト表示のたびに探すとロードや一覧画面が固まる）
+            var type = AccessTools.TypeByName("I18NFont4UnityGame.I18NFont4UnityGame");
+            s_jpFontField = type != null ? AccessTools.Field(type, "s_tmpTranslateFont") : null;
+            if (s_jpFontField == null)
+            {
+                modEntry.Logger.Log("I18NFont4UnityGame が見つからないため無効化します。");
+                return false;
+            }
             new Harmony(modEntry.Info.Id).PatchAll(Assembly.GetExecutingAssembly());
             return true;
         }
 
-        // I18NFont4UnityGame が AssetBundle から読み込んだ TMP フォントを借りる
         static TMP_FontAsset JpFont
         {
             get
             {
-                if (s_jpFont != null) return s_jpFont;
-                var type = AccessTools.TypeByName("I18NFont4UnityGame.I18NFont4UnityGame");
-                if (type != null) s_jpFont = AccessTools.Field(type, "s_tmpTranslateFont")?.GetValue(null) as TMP_FontAsset;
+                if (s_jpFont == null) s_jpFont = s_jpFontField.GetValue(null) as TMP_FontAsset;
                 return s_jpFont;
             }
         }
 
         internal static void Fix(TMP_Text text)
         {
-            var jp = JpFont;
-            var font = text != null ? text.font : null;
-            if (jp == null || font == null || font == jp) return;
-            if (!s_fixedFonts.Add(font.GetInstanceID())) return;
+            if (s_failed) return;
+            try
+            {
+                var jp = JpFont;
+                var font = text != null ? text.font : null;
+                if (jp == null || font == null || font == jp) return;
+                if (!s_fixedFonts.Add(font.GetInstanceID())) return;
 
-            if (font.fallbackFontAssetTable == null) font.fallbackFontAssetTable = new List<TMP_FontAsset>();
-            var fallbacks = font.fallbackFontAssetTable;
-            s_mod.Logger.Log($"{font.name}: [{string.Join(", ", fallbacks.Select(f => f != null ? f.name : "null"))}]");
-            fallbacks.RemoveAll(f => f == jp);
-            fallbacks.Insert(0, jp);
+                if (font.fallbackFontAssetTable == null) font.fallbackFontAssetTable = new List<TMP_FontAsset>();
+                var fallbacks = font.fallbackFontAssetTable;
+                s_mod.Logger.Log($"{font.name}: [{string.Join(", ", fallbacks.Select(f => f != null ? f.name : "null"))}]");
+                fallbacks.RemoveAll(f => f == jp);
+                fallbacks.Insert(0, jp);
+            }
+            catch (System.Exception ex)
+            {
+                // ゲーム側の UI 構築を巻き込まないよう、例外は外に出さず以後は何もしない
+                s_failed = true;
+                s_mod.Logger.Log($"例外が発生したため無効化します: {ex}");
+            }
         }
     }
 

@@ -1,7 +1,7 @@
 {
   "Id": "JpFontFallbackFix",
   "DisplayName": "JP Font Fallback Fix",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "AssemblyName": "JpFontFallbackFix.dll",
   "EntryMethod": "JpFontFallbackFix.Main.Load",
   "Requirements": ["I18NFont4UnityGame"],
