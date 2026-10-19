@@ -25904,8 +25904,8 @@
     },
     {
       "source": "Venerable",
-      "target": "極老",
-      "note": "Age category (penalty -6).",
+      "target": "古希",
+      "note": "年齢区分。PRD日本語版ARGの年齢表では中年・老年・古希。2026-10-19対訳比較で確認（https://w.atwiki.jp/prdj/pages/1667.html）。一般形容詞のvenerableには適用しない。",
       "category": "Rule"
     },
     {
