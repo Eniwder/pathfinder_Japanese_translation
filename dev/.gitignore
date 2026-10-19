@@ -19,3 +19,14 @@ dist.zip
 patch.js
 
 res/roundLogs/
+
+# Local translation review ledgers, progress, and working notes
+/res/*Review*.md
+/res/*Review*.json
+/res/*Audit*.md
+/res/translationComparison*.md
+/res/*Progress.md
+/res/*Progress.json
+/res/handoff*.md
+/res/translationGuideNotes.md
+/res/v2CharacterNotes.md
