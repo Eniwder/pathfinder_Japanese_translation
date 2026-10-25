@@ -9871,9 +9871,9 @@
     },
     {
       "source": "spell immunity",
-      "target": "スペル・イミュニティ",
-      "category": "Spell",
-      "note": "PRD日本語版の訳語。"
+      "target": "呪文への完全耐性",
+      "category": "Rules",
+      "note": "呪文に対する完全耐性を表す一般のルール表現。ゲームのUIキー3591d841-146e-41d0-91f9-ad21d07b8880の原文は小文字のspell immunity。固有の呪文名Spell Immunityを指す文脈では別途照合し、その呪文名までこの一般訳に置換しない。"
     },
     {
       "source": "Spell Turning",
@@ -11792,9 +11792,9 @@
     },
     {
       "source": "Hit Dice",
-      "target": "ヒット・ダイス",
+      "target": "ヒットダイス",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "プロジェクトのユーザー指定表記。読みのテンポを悪くする中黒は追加しない。略記HDはHDのまま。"
     },
     {
       "source": "Arcane Pool",
@@ -11918,9 +11918,9 @@
     },
     {
       "source": "Weapon Training",
-      "target": "武器訓練",
+      "target": "武器修練",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。別訳: 武器修練／武器鍛錬。"
+      "note": "ファイターの基本クラス能力。PRD日本語版 https://w.atwiki.jp/prdj/pages/32.html の武器修練／Weapon Trainingを2026-10-19に照合。別能力Advanced Weapon Trainingなどの名称は個別に扱い、訓練を一括置換しない。"
     },
     {
       "source": "Acid Resistance",
@@ -11976,7 +11976,7 @@
       "source": "Ki Power",
       "target": "気の力",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "一般的な気の能力、および軽功拳士の文脈。アンチェインド・モンクの選択能力 Ki Powers は内功。"
     },
     {
       "source": "Sacred Armor",
@@ -12007,7 +12007,7 @@
       "source": "Dirty Trick",
       "target": "裏技追撃",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "スレイヤー等の固有能力名に限定。一般の戦技Dirty Trick＝裏技とは区別し、blueprintの表示名参照先で判定する。一括置換しない。PRD http://prd.qga.me/acg/class-options/slayer.html"
     },
     {
       "source": "The Mother",
@@ -12140,9 +12140,9 @@
     },
     {
       "source": "Divine Guardian",
-      "target": "神の守護者",
+      "target": "信仰の護り手",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "パラディンのアーキタイプ。PRD日本語版 https://w.atwiki.jp/prdj/pages/3420.html で照合。旧訳の神の守護者・相手版の聖なる守護者に優先。"
     },
     {
       "source": "Battle Rage",
@@ -12446,7 +12446,7 @@
       "source": "Abundant Casting",
       "target": "目標数増加発動",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "PRD日本語版の名称（https://w.atwiki.jp/prdj/pages/1966.html）。PRDでは呪文の対象数増加だが、WotRの同名能力は一日あたりの発動回数を増やす。効果をPRDから移植しないこと。ゲーム内名称は現状この表記だが、能力系列の命名再確認対象。"
     },
     {
       "source": "Always a Chance",
@@ -12468,9 +12468,9 @@
     },
     {
       "source": "Strength Surge",
-      "target": "筋力招来",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。別訳: 力の招来。"
+      "target": "力の招来",
+      "category": "Ability",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
     },
     {
       "source": "Ice Strike",
@@ -12716,8 +12716,8 @@
     {
       "source": "Purity of Body",
       "target": "無病身",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。別訳: 肉体の純粋性。"
+      "category": "Class Feature",
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。効果はゲーム英語原文に従う。"
     },
     {
       "source": "Fey Magic",
@@ -13096,8 +13096,8 @@
     {
       "source": "Mental Acuity",
       "target": "精神の鋭さ",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/1313.html および https://w.atwiki.jp/prdj/pages/801.html で照合。効果はゲーム英語に従う。"
     },
     {
       "source": "Spirit Totem",
@@ -13898,7 +13898,19 @@
       "source": "Hag Transformation",
       "target": "ハグの変換",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ブラッドレイジャーのハグ血脈の同名能力に限定する。https://w.atwiki.jp/prdj/pages/3569.html。ウィッチのハグに縛られし者の同名能力には流用しない。"
+    },
+    {
+      "source": "Covenguard",
+      "target": "魔女団の守り",
+      "category": "ClassAbility",
+      "note": "ハグの血脈の能力名。2026-10-19に https://w.atwiki.jp/prdj/pages/3569.html の対訳を確認。ゲーム内の効果はゲーム原文に従う。"
+    },
+    {
+      "source": "Spirited Mount",
+      "target": "密やかなる乗騎",
+      "category": "ClassAbility",
+      "note": "Ghost Riderの能力。2026-10-19に https://w.atwiki.jp/prdj/pages/2360.html の対訳を確認。ゲームでは移動困難地形の無視と視認困難。Spiritedを勇壮と訳さない。"
     },
     {
       "source": "Scorching Heat",
@@ -15078,9 +15090,9 @@
     },
     {
       "source": "Ki Weapon",
-      "target": "気の代用武器",
+      "target": "気の武器",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。別訳: 気武器。"
+      "note": "僧兵のゲーム内能力。PRDの徒手空拳士のKi Weapons＝気の代用武器とは別。ゲーム原文の対象は任意の武器と素手打撃。"
     },
     {
       "source": "Aura of Life",
@@ -15457,9 +15469,9 @@
     },
     {
       "source": "Feast of Blood",
-      "target": "饗宴の血",
-      "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "target": "血の饗宴",
+      "category": "Spell",
+      "note": "WotRのリッチ呪文。英文Feast of Bloodの修飾関係に合わせ、旧訳の饗宴の血を訂正。旧注記のPRD日本語版出典は今回確認できないため、PRDの定訳とは断定しない。"
     },
     {
       "source": "Celestial Totem, Greater",
@@ -15585,7 +15597,7 @@
       "source": "Mythic Resolve",
       "target": "神話級の回復",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "PRD日本語版の名称（https://w.atwiki.jp/prdj/pages/1967.html）。PRDではガーディアンのセーヴ再ロール能力だが、WotRの同名特技はセーヴへの+1ボーナスと神話ランクに等しい追加HP。効果はゲーム英文を優先し、PRDの効果を移植しない。"
     },
     {
       "source": "Lethal Accuracy",
@@ -15947,7 +15959,7 @@
       "source": "Masterwork",
       "target": "マスターワーク",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "本プロジェクトの採用訳。PRD日本語版では装備の品質を指すmasterworkは『高品質』と訳される（https://w.atwiki.jp/prdj/pages/1804.html、https://w.atwiki.jp/prdj/pages/1802.html）。ゲーム内の装備名・特性名との統一を優先して『マスターワーク』を維持する。呪文名Masterwork Transformationや一般的な形容表現とは文脈を分ける。"
     },
     {
       "source": "Grab",
@@ -16241,9 +16253,9 @@
     },
     {
       "source": "Inspire Greatness",
-      "target": "偉大鼓舞",
+      "target": "武勇鼓舞",
       "category": "Ability",
-      "note": "バードの呪芸。Inspire Courage/Heroicsと同系の訳語。"
+      "note": "PRD日本語版は武勇鼓舞の呪芸。ゲーム内の同系統能力名に合わせ呪芸を省略。2026-10-19に http://prd.qga.me/core/classes/bard.html で照合。対象数などの効果はゲーム英語原文に従う。"
     },
     {
       "source": "Anomaly Distortion",
@@ -16373,27 +16385,27 @@
     },
     {
       "source": "Wholeness of Body",
-      "target": "完全なる肉体",
+      "target": "肉体の完成",
       "category": "Class Feature",
-      "note": "モンクの気の力。「Mass Wholeness of Body」→「マス・完全なる肉体」。"
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。効果はゲーム英語原文に従う。"
     },
     {
       "source": "Diamond Body",
-      "target": "ダイヤモンドの肉体",
+      "target": "金剛身",
       "category": "Class Feature",
-      "note": "モンクの気の力。Mass版は「マス・ダイヤモンドの肉体」。"
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/147.html および https://w.atwiki.jp/prdj/pages/2381.html で照合。先生の助言のMass版は対象範囲を（全体）で示す。効果はゲーム英語原文に従う。"
     },
     {
       "source": "Diamond Soul",
-      "target": "ダイヤモンドの魂",
+      "target": "金剛心",
       "category": "Class Feature",
-      "note": "モンクの気の力。Mass版は「マス・ダイヤモンドの魂」。"
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/147.html および https://w.atwiki.jp/prdj/pages/2381.html で照合。先生の助言のMass版は対象範囲を（全体）で示す。効果はゲーム英語原文に従う。"
     },
     {
       "source": "Perfect Self",
-      "target": "完全なる自己",
+      "target": "即身成道",
       "category": "Class Feature",
-      "note": "モンクの気の力。"
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。効果はゲーム英語原文に従う。"
     },
     {
       "source": "Defensive Instinct",
@@ -16432,13 +16444,13 @@
     },
     {
       "source": "Korvosa",
-      "target": "コルヴォサ",
-      "note": "ヴァリシアの都市。"
+      "target": "コルヴォーサ",
+      "note": "ヴァリシアの都市。PRD日本語対訳表 https://w.atwiki.jp/prdj/pages/17.html およびPG深紅の玉座の呪いで確認。"
     },
     {
       "source": "Endrin Military Academy",
       "target": "エンドリン軍事学院",
-      "note": "コルヴォサの軍学校。セーブル・カンパニーの訓練所。"
+      "note": "コルヴォーサの軍学校。セーブル・カンパニーの訓練所。"
     },
     {
       "source": "Horseman of Pestilence",
@@ -16471,9 +16483,9 @@
     },
     {
       "source": "Infernal Bloodline",
-      "target": "地獄の血脈",
+      "target": "地獄の者の血脈",
       "category": "Caster Terms",
-      "note": "ソーサラーの血脈。Infernalは既存訳（地獄の抵抗等）に合わせ「地獄の」で統一。"
+      "note": "ソーサラーの血脈。PRD日本語版 https://w.atwiki.jp/prdj/pages/118.html の地獄の者／不死の者に準拠。一般形容詞や種別名とは区別。"
     },
     {
       "source": "Mantis God",
@@ -16548,7 +16560,7 @@
       "source": "Infusion",
       "target": "注入",
       "category": "Kineticist",
-      "note": "キネティシストの注入元力の総称（PRD日本語版）。form infusion→形態注入、substance infusion→物質注入。個々の注入名はカタカナ音写（バーニング・インフュージョン等）。",
+      "note": "キネティシストの注入元力の総称（PRD日本語版）。form infusion→形態注入、substance infusion→本質注入。個々の注入名はカタカナ音写（バーニング・インフュージョン等）。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html",
       "caseSensitive": true
     },
     {
@@ -17035,9 +17047,9 @@
     },
     {
       "source": "Student of Stone",
-      "target": "石の学徒",
+      "target": "石の徒弟",
       "category": "Archetype",
-      "note": "モンクのアーキタイプ。Student of War（戦の学徒）と揃える。",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/1653.html で照合。旧訳の石の学徒・相手版の石の門弟に優先。効果はゲーム英語原文に従う。",
       "caseSensitive": true
     },
     {
@@ -17266,14 +17278,15 @@
     },
     {
       "source": "Combat Mobility",
-      "target": "戦闘機動",
-      "category": "Ability"
+      "target": "強行突破",
+      "category": "Feat",
+      "note": "ゲームでは特技Mobilityの表示名がCombat Mobility。blueprints/Feats/Mobility.jbpの移動時の機会攻撃にAC+4回避という効果と、Celestial血脈の特技参照を照合。技能Mobility＝軽業とは区別。PRD日本語版 https://w.atwiki.jp/prdj/pages/436.html （2026-10-19確認）。"
     },
     {
       "source": "Selective Spell",
       "target": "選択的呪文",
       "category": "Feat",
-      "note": "PRDでは選択的呪文（Selective Spell）。"
+      "note": "本プロジェクト表記。PRD日本語版では《呪文目標選別化》（https://w.atwiki.jp/prdj/pages/856.html）。PRDと同名であるとの旧注記を訂正。名称の対応確認であり、ゲーム効果は英文に従う。"
     },
     {
       "source": "Elemental Assessor",
@@ -17755,8 +17768,9 @@
     },
     {
       "source": "Lay on Hands",
-      "target": "レイ・オン・ハンズ",
-      "category": "Class Ability"
+      "target": "癒しの手",
+      "category": "Class Ability",
+      "note": "パラディンの基本能力。2026-10-19に https://w.atwiki.jp/prdj/pages/149.html の癒しの手／Lay On Handsを照合。"
     },
     {
       "source": "Bracers of Armor",
@@ -17765,8 +17779,9 @@
     },
     {
       "source": "Athach",
-      "target": "アサック",
-      "category": "Creature"
+      "target": "アハッハ",
+      "category": "Creature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/1102.html のアハッハ Athach。三本腕の巨人の種族名に限定。装備名 Belt of Athach もこのクリーチャーを参照。"
     },
     {
       "source": "Bulette",
@@ -17780,8 +17795,9 @@
     },
     {
       "source": "Astradaemon",
-      "target": "アストラデーモン",
-      "category": "Creature"
+      "target": "アストラダイモン",
+      "category": "Creature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 クリーチャー名Astradaemonに限定。DaemonはDemonと別種族。PRD日本語B2 https://w.atwiki.jp/prdj/pages/1199.html と英語 https://www.aonprd.com/Rules.aspx?Category=Outsider+Categories&Name=Daemons を照合。"
     },
     {
       "source": "Bogeyman",
@@ -18061,8 +18077,9 @@
     },
     {
       "source": "Thanadaemon",
-      "target": "サナダイモン",
-      "category": "Creature"
+      "target": "ターナダイモン",
+      "category": "Creature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 クリーチャーThanadaemonに限定。PRD日本語B2ダイモン https://w.atwiki.jp/prdj/pages/1199.html および来訪者の拘束 https://w.atwiki.jp/prdj/pages/1316.html の個別名称と対応。"
     },
     {
       "source": "Thylacine",
@@ -18305,8 +18322,9 @@
     },
     {
       "source": "Hellfire Ray",
-      "target": "ヘルファイア・レイ",
-      "category": "Spell"
+      "target": "ヘルファイアー・レイ",
+      "category": "Spell",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/3871.html で照合。効果はゲーム英語原文に従う。"
     },
     {
       "source": "Blessings of Luck and Resolve",
@@ -19441,13 +19459,15 @@
     },
     {
       "source": "Empyreal Sorcerer",
-      "target": "エンピリアル・ソーサラー",
-      "category": "Archetype"
+      "target": "至高天のソーサラー",
+      "category": "Archetype",
+      "note": "ソーサラーの血脈文脈でPRD日本語版と照合。https://w.atwiki.jp/prdj/pages/978.html （至高天／森の精／関連血脈：天上の者）。"
     },
     {
       "source": "Hospitaler",
-      "target": "ホスピタラー",
-      "category": "Archetype"
+      "target": "救護騎士",
+      "category": "Archetype",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/858.html で照合。効果はゲーム英語原文に従う。"
     },
     {
       "source": "Instinctual Warrior",
@@ -20170,7 +20190,7 @@
       "source": "Persistent Spell",
       "target": "持続呪文",
       "category": "Feat",
-      "note": "Metamagic feat."
+      "note": "本プロジェクト表記。PRD日本語版では《呪文粘着化》（https://w.atwiki.jp/prdj/pages/857.html）。セーヴの再試行を要求する呪文修正であり、Extend Spellによる持続時間延長とは別。"
     },
     {
       "source": "Lesser Globe of Invulnerability",
@@ -20214,9 +20234,9 @@
     },
     {
       "source": "Zen Archer",
-      "target": "禅・アーチャー",
+      "target": "弓道家",
       "category": "Archetype",
-      "note": "Monk archetype."
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/819.html で照合。ゲーム内の効果・選択肢はゲーム英語原文に従う。"
     },
     {
       "source": "Quarterstaff Master",
@@ -21293,8 +21313,9 @@
     },
     {
       "source": "Nalfeshnee",
-      "target": "ナルフェシニー",
-      "category": "Creature"
+      "target": "ナルフェシュネー",
+      "category": "Creature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/314.html の見出しで照合。両版の旧音写に優先。"
     },
     {
       "source": "Derakni",
@@ -22038,7 +22059,7 @@
       "source": "Divine Hunter",
       "target": "神聖なるハンター",
       "category": "Mythic",
-      "note": "ハンター／パラディンのアーキタイプ。"
+      "note": "ハンターのアーキタイプの文脈。パラディンの同名アーキタイプは信仰の狩人と区別する。"
     },
     {
       "source": "Bolstered",
@@ -22108,7 +22129,8 @@
     {
       "source": "Insightful Contemplation",
       "target": "洞察の瞑想",
-      "category": "Mythic"
+      "category": "Class Feature",
+      "note": "コート・ポエットの歌。相手訳と既存用語を統一。PRD掲載箇所は未訳のためPRD既定訳とは扱わない。"
     },
     {
       "source": "Brutality Incarnate",
@@ -22152,8 +22174,9 @@
     },
     {
       "source": "Enlightened Philosopher",
-      "target": "悟りの哲学者",
-      "category": "Mythic"
+      "target": "悟りし哲学者",
+      "category": "Archetype",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/1313.html および https://w.atwiki.jp/prdj/pages/801.html で照合。効果はゲーム英語に従う。"
     },
     {
       "source": "Divine Herbalist",
@@ -22739,21 +22762,21 @@
     },
     {
       "source": "Tritanopia",
-      "target": "第三色覚異常",
+      "target": "3型2色覚",
       "category": "Options",
-      "note": "色覚補正設定。Protanopia=第一色覚異常、Deuteranopia=第二色覚異常と揃える（「色盲」は不可）"
+      "note": "色覚補正設定。日本医学会の色覚関連用語ではtritanopiaは3型2色覚。Protanopia=1型2色覚、Deuteranopia=2型2色覚と区別する。https://jams.med.or.jp/dic/colorvision.html"
     },
     {
       "source": "Protanopia",
-      "target": "第一色覚異常",
+      "target": "1型2色覚",
       "category": "Options",
-      "note": "色覚補正設定"
+      "note": "色覚補正設定。日本医学会の色覚関連用語でprotanopiaに対応する名称。protanomaly（1型3色覚）やprotan defect（1型色覚）と区別。https://jams.med.or.jp/dic/colorvision.html"
     },
     {
       "source": "Deuteranopia",
-      "target": "第二色覚異常",
+      "target": "2型2色覚",
       "category": "Options",
-      "note": "色覚補正設定"
+      "note": "色覚補正設定。日本医学会の色覚関連用語でdeuteranopiaに対応する名称。deuteranomaly（2型3色覚）やdeutan defect（2型色覚）と区別。https://jams.med.or.jp/dic/colorvision.html"
     },
     {
       "source": "Competence",
@@ -24011,9 +24034,9 @@
     },
     {
       "source": "Opposition school",
-      "target": "禁止系統",
+      "target": "対立系統",
       "category": "Term",
-      "note": "Wizard's opposed school of magic (spellbook UI)."
+      "note": "ウィザードの呪文書UI。Opposition Schoolと同じ対立系統を指す。PRD日本語版（https://w.atwiki.jp/prdj/pages/38.html）でも対立系統。ゲーム英語のRequires 2 spell slots to memorizeのとおりスロット2つで記憶でき、発動禁止を意味しない。効果の数値はゲーム英語を優先する。"
     },
     {
       "source": "Specialization school",
@@ -24161,8 +24184,9 @@
     },
     {
       "source": "Elven Curved Blade",
-      "target": "エルヴン・カーヴド・ブレイド",
-      "category": "Weapon"
+      "target": "エルヴン・カーヴ・ブレード",
+      "category": "Weapon",
+      "note": "Elven Curve Bladeと同じ武器分類の表記違い。blueprints/Weapons/Types/ExoticTwoHanded/ElvenCurvedBlade.jbpのCategoryはElvenCurvedBladeだが、分類名と標準名の英語はElven Curve Blade（ee932acd-6a49-41f9-b160-0f1824613db1、b07de28c-e0d6-407c-b5fa-899de14ac5ff）。同一武器のため既存のエルヴン・カーヴ・ブレードに統一する。"
     },
     {
       "source": "Double Sword",
@@ -24392,9 +24416,9 @@
     },
     {
       "source": "Forge",
-      "target": "フォージ",
-      "note": "Source of fire hazard effects (immunity granted against it).",
-      "category": "Proper Noun"
+      "target": "炉",
+      "note": "フィネアンの研究所の炉による火炎・環境効果を指す場合。FinneanPechkaSpellの表示名e09ce2d1-0a35-456a-96b6-6d189e31769cとFinneanPechkaUniqueBuffの説明8ca9d9e0-1e62-4988-86a7-cc757f725af9、ForgeCheckPassed_Actionsから当該バフへの参照を確認。人物名ではない。動詞forgeや他の施設の名称には文脈に合わせて訳す。",
+      "category": "Environment"
     },
     {
       "source": "Targeted Dispel Magic",
@@ -24590,14 +24614,14 @@
     },
     {
       "source": "Magic Weapon, Primary",
-      "target": "マジック・ウェポン（主要）",
-      "note": "Spell variant.",
+      "target": "マジック・ウェポン（主手）",
+      "note": "Spell variant. MagicWeaponPrimary.jbpの表示キー52c7214e-d1b8-43da-996f-993343fa3f56。Primaryは重要度ではなく武器の手を区別する名称。Primary Hand→主手と統一。",
       "category": "Spell"
     },
     {
       "source": "Magic Weapon, Secondary",
-      "target": "マジック・ウェポン（副次）",
-      "note": "Spell variant.",
+      "target": "マジック・ウェポン（副手）",
+      "note": "Spell variant. MagicWeaponSecondary.jbpの表示キーc10a0a0d-d65f-4a7a-ace3-1912a717739b。Secondaryは武器の手を区別する名称。Secondary Hand→副手と統一。",
       "category": "Spell"
     },
     {
@@ -24632,8 +24656,8 @@
     },
     {
       "source": "Pox Pustules",
-      "target": "ポックス・パスチュルズ",
-      "note": "Spell.",
+      "target": "パークス・パスチュールズ",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/875.html で照合。効果はゲーム英語原文に従う。",
       "category": "Spell"
     },
     {
@@ -25100,9 +25124,9 @@
     },
     {
       "source": "Inspiring Recovery",
-      "target": "奮起する回復",
-      "note": "Ability.",
-      "category": "Ability"
+      "target": "インスパイアリング・リカヴァリー",
+      "note": "PRDの呪文名。ゲームBlueprintもType Spellであり、Ability扱いの奮起する回復から修正。出典: https://w.atwiki.jp/prdj/pages/2666.html",
+      "category": "Spell"
     },
     {
       "source": "Primal Regression",
@@ -25376,8 +25400,8 @@
     },
     {
       "source": "Monstrous Humanoid",
-      "target": "怪物的人型生物",
-      "note": "Creature type.",
+      "target": "人型怪物",
+      "note": "クリーチャー種別。PRD日本語版 https://w.atwiki.jp/prdj/pages/451.html で照合。旧訳の怪物的人型生物に優先。",
       "category": "Creature Type"
     },
     {
@@ -25742,8 +25766,8 @@
     },
     {
       "source": "Eldritch Scion",
-      "target": "エルドリッチ・サイオン",
-      "note": "Magus archetype. 訳者案「スカイオン」は音写誤りのため修正。",
+      "target": "妖力の継承者",
+      "note": "Magus archetype. 訳者案「スカイオン」は音写誤りのため修正。 旧訳: エルドリッチ・サイオン。 PF1のPRDのクラス名・能力名の見出しに照合。 出典: https://w.atwiki.jp/prdj/pages/2231.html",
       "category": "Archetype"
     },
     {
@@ -26030,8 +26054,8 @@
     },
     {
       "source": "Demon-May-Care Joestantin",
-      "target": "デーモン無頓着のジョースタンティン",
-      "note": "Named enemy (pun on devil-may-care).",
+      "target": "デーモンもお構いなしのジョースタンティン",
+      "note": "固有の敵名。devil-may-care（向こう見ず、無頓着）のdevilをdemonに替えた言葉遊び。デーモンの語を残し、旧訳のデーモン無頓着を自然な日本語へ整理。表示名f99111cf-e966-4fa9-88a3-3417fa284801。",
       "category": "NPC"
     },
     {
@@ -26756,7 +26780,7 @@
     },
     {
       "source": "Lands of Yath",
-      "target": "ヤスの地",
+      "target": "ヤースの地",
       "note": "Crusade map region.",
       "category": "Location"
     },
@@ -26870,7 +26894,7 @@
     },
     {
       "source": "Crowned Checker",
-      "target": "王冠のチェッカー",
+      "target": "戴冠した駒",
       "note": "General's feat (crusade).",
       "category": "Crusade"
     },
@@ -29192,7 +29216,7 @@
     },
     {
       "source": "Helter-Skelter Logistics",
-      "target": "ヘルター・スケルター兵站",
+      "target": "行き当たりばったりの兵站",
       "note": "Crusade feat/option.",
       "category": "Crusade"
     },
@@ -31206,13 +31230,15 @@
     },
     {
       "source": "Celestial Bloodline",
-      "target": "天上の血脈",
-      "category": "Bloodline"
+      "target": "天上の者の血脈",
+      "category": "Bloodline",
+      "note": "ソーサラーの血脈文脈でPRD日本語版と照合。https://w.atwiki.jp/prdj/pages/978.html （至高天／森の精／関連血脈：天上の者）。"
     },
     {
       "source": "Undead Bloodline",
-      "target": "アンデッド血脈",
-      "category": "Bloodline"
+      "target": "不死の者の血脈",
+      "category": "Bloodline",
+      "note": "ソーサラーの血脈。PRD日本語版 https://w.atwiki.jp/prdj/pages/118.html の地獄の者／不死の者に準拠。一般形容詞や種別名とは区別。"
     },
     {
       "source": "Eldritch Scoundrel",
@@ -31506,6 +31532,829 @@
       "target": "放棄された洞窟",
       "category": "Location",
       "note": "坑道であるとの断定を避け、原文の abandoned cave の意味で訳す。"
+    },
+    {
+      "source": "Arcanist Exploits",
+      "target": "アーケイニストの秘技",
+      "category": "Class Ability",
+      "note": "アーケイニストのクラス能力。PRD日本語版を2026-10-19に照合（http://prd.qga.me/acg/classes/arcanist.html）。"
+    },
+    {
+      "source": "Greater Exploits",
+      "target": "上級の秘技",
+      "category": "Class Ability",
+      "note": "アーケイニストのクラス能力。PRD日本語版を2026-10-19に照合（http://prd.qga.me/acg/classes/arcanist.html）。"
+    },
+    {
+      "source": "Ecclesitheurge",
+      "target": "経典主義者",
+      "category": "Archetype",
+      "note": "PRD日本語版ACGクレリックの訳語を原ページで確認。エクレシセウルジから修正。出典: http://prd.qga.me/acg/class-options/cleric.html"
+    },
+    {
+      "source": "Air Domain",
+      "target": "風の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Earth Domain",
+      "target": "地の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Charm Domain",
+      "target": "魅了の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Strength Domain",
+      "target": "力の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Protection Domain",
+      "target": "守護の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Repose Domain",
+      "target": "安息の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Rune Domain",
+      "target": "ルーンの領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Nobility Domain",
+      "target": "高貴の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Sun Domain",
+      "target": "太陽の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Travel Domain",
+      "target": "旅の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Trickery Domain",
+      "target": "欺きの領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "War Domain",
+      "target": "戦の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Water Domain",
+      "target": "水の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Weather Domain",
+      "target": "天候の領域",
+      "category": "Domain",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Copycat",
+      "target": "写し身",
+      "category": "Ability",
+      "note": "PRDの原ページの見出しで照合済み。出典: http://prd.qga.me/core/classes/cleric.html"
+    },
+    {
+      "source": "Blight Druid",
+      "target": "荒地ドルイド",
+      "category": "Archetype",
+      "note": "PRD見出しを確認。出典: https://w.atwiki.jp/prdj/pages/820.html"
+    },
+    {
+      "source": "Plaguebearer",
+      "target": "疫病の痛打",
+      "category": "Ability",
+      "note": "PRD見出しを確認。出典: https://w.atwiki.jp/prdj/pages/820.html"
+    },
+    {
+      "source": "Celestial",
+      "target": "セレスチャル",
+      "category": "Template",
+      "note": "クリーチャーのテンプレート名としてのみ。一般形容詞・既存の固有能力名には適用しない。PRD https://w.atwiki.jp/prdj/pages/442.html"
+    },
+    {
+      "source": "Spell Trigger",
+      "target": "呪文解放型",
+      "category": "Rules",
+      "note": "魔法のアイテムの起動法。PRD https://w.atwiki.jp/prdj/pages/66.html"
+    },
+    {
+      "source": "Spell Completion",
+      "target": "呪文完成型",
+      "category": "Rules",
+      "note": "魔法のアイテムの起動法。PRD https://w.atwiki.jp/prdj/pages/66.html"
+    },
+    {
+      "source": "Substance Infusion",
+      "target": "本質注入",
+      "category": "Kineticist",
+      "note": "キネティシストの注入の分類。PRD https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Form Infusion",
+      "target": "形態注入",
+      "category": "Kineticist",
+      "note": "キネティシストの注入の分類。PRD https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Elemental Focus",
+      "target": "元素熟練",
+      "category": "Kineticist",
+      "note": "クラス能力名。同名特技のエレメンタル熟練とは区別。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Elemental Defense",
+      "target": "元素防御",
+      "category": "Kineticist",
+      "note": "クラス能力名。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Primary Element",
+      "target": "主要元素",
+      "category": "Kineticist",
+      "note": "キネティシストが最初に選ぶ元素。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Composite Specialization",
+      "target": "合成開眼",
+      "category": "Kineticist",
+      "note": "クラス能力名。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Infusion Specialization",
+      "target": "注入開眼",
+      "category": "Kineticist",
+      "note": "クラス能力名。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Impale",
+      "target": "インペール",
+      "category": "Kineticist",
+      "note": "個別の元力名。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Explosion",
+      "target": "イクスプロージョン",
+      "category": "Kineticist",
+      "note": "個別の元力名としてのみ。一般語の爆発には適用しない。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Pure-Flame Infusion",
+      "target": "ピュアフレイム・インフュージョン",
+      "category": "Kineticist",
+      "note": "個別の元力名。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Rare-Metal Infusion",
+      "target": "レアメタル・インフュージョン",
+      "category": "Kineticist",
+      "note": "個別の元力名。 PRD本文照合: https://w.atwiki.jp/prdj/pages/2365.html"
+    },
+    {
+      "source": "Blood Kineticist",
+      "target": "血液念動力術師",
+      "category": "Archetype",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/2357.html"
+    },
+    {
+      "source": "Overwhelming Soul",
+      "target": "凄烈なる魂",
+      "category": "Archetype",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/2357.html"
+    },
+    {
+      "source": "Dark Elementalist",
+      "target": "闇素使い",
+      "category": "Archetype",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/3170.html"
+    },
+    {
+      "source": "Mind Over Matter",
+      "target": "根性",
+      "category": "Kineticist",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/2357.html"
+    },
+    {
+      "source": "Mental Prowess",
+      "target": "卓抜した精神",
+      "category": "Kineticist",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/2357.html"
+    },
+    {
+      "source": "Overwhelming Power",
+      "target": "圧倒的な力",
+      "category": "Kineticist",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/2357.html"
+    },
+    {
+      "source": "Dark Studies",
+      "target": "闇の研究",
+      "category": "Kineticist",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/3170.html"
+    },
+    {
+      "source": "Soul Power",
+      "target": "魂力",
+      "category": "Kineticist",
+      "note": "PRD本文の見出しと照合。ゲーム内の効果は別途英語原文に従う。出典: https://w.atwiki.jp/prdj/pages/3170.html"
+    },
+    {
+      "source": "Kinetic Quiver",
+      "target": "念動力の矢筒",
+      "category": "Kineticist",
+      "note": "ゲーム独自の能力名。siratori版の自然な表現を参考に採用した訳。"
+    },
+    {
+      "source": "Charged Ammunition",
+      "target": "力を込めた矢弾",
+      "category": "Kineticist",
+      "note": "ゲーム独自の能力名。siratori版の自然な表現を参考に採用した訳。"
+    },
+    {
+      "source": "Eldritch Archer",
+      "target": "妖力の射手",
+      "category": "Archetype",
+      "note": "PF1のPRDのクラス名・能力名の見出しに照合。 出典: https://w.atwiki.jp/prdj/pages/3471.html"
+    },
+    {
+      "source": "Hexcrafter",
+      "target": "呪術巧者",
+      "category": "Archetype",
+      "note": "PF1のPRDのクラス名・能力名の見出しに照合。 出典: https://w.atwiki.jp/prdj/pages/1314.html"
+    },
+    {
+      "source": "Hex Magus",
+      "target": "呪術のメイガス",
+      "category": "PRD Term",
+      "note": "PF1のPRDのクラス名・能力名の見出しに照合。 出典: https://w.atwiki.jp/prdj/pages/1314.html"
+    },
+    {
+      "source": "Sword Saint",
+      "target": "剣聖",
+      "category": "Archetype",
+      "note": "ゲームのSword Saintの説明文がPRD Kensaiと一致することを確認。名称のみを対応させ、効果・条件はゲーム英語に従う。 出典: https://w.atwiki.jp/prdj/pages/1355.html"
+    },
+    {
+      "source": "Superior Reflexes",
+      "target": "優れた反応",
+      "category": "PRD Term",
+      "note": "PF1のPRDのクラス名・能力名の見出しに照合。 出典: https://w.atwiki.jp/prdj/pages/1355.html"
+    },
+    {
+      "source": "True Magus",
+      "target": "真なるメイガス",
+      "category": "PRD Term",
+      "note": "PF1のPRDのクラス名・能力名の見出しに照合。 出典: https://w.atwiki.jp/prdj/pages/1080.html"
+    },
+    {
+      "source": "Ki Power",
+      "target": "内功",
+      "category": "PRD Term",
+      "note": "アンチェインド・モンクの選択能力。ゲームUIの単数形もこの文脈では内功。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html"
+    },
+    {
+      "source": "Ki Powers",
+      "target": "内功",
+      "category": "PRD Term",
+      "note": "アンチェインド・モンクの選択能力。ゲームUIの単数形もこの文脈では内功。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html"
+    },
+    {
+      "source": "High Jump",
+      "target": "大跳躍",
+      "category": "Class Feature",
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/147.html および https://w.atwiki.jp/prdj/pages/2381.html で照合。先生の助言のMass版は対象範囲を（全体）で示す。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Slow Fall",
+      "target": "浮身",
+      "category": "Class Feature",
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/147.html および https://w.atwiki.jp/prdj/pages/2381.html で照合。先生の助言のMass版は対象範囲を（全体）で示す。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Ki Weapons",
+      "target": "気の代用武器",
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/819.html で照合。ゲーム内の効果・選択肢はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Ki Strike",
+      "target": "気打撃",
+      "category": "Class Feature",
+      "note": "モンクの能力名。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Defensive Spin",
+      "target": "裏拳",
+      "category": "Class Feature",
+      "note": "モンクの型打撃。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。一般の戦技名や同名の別能力へ一括置換しない。"
+    },
+    {
+      "source": "Hammerblow",
+      "target": "手刀打ち",
+      "category": "Class Feature",
+      "note": "モンクの型打撃。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。一般の戦技名や同名の別能力へ一括置換しない。"
+    },
+    {
+      "source": "Leg Sweep",
+      "target": "大外刈り",
+      "category": "Class Feature",
+      "note": "モンクの型打撃。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。一般の戦技名や同名の別能力へ一括置換しない。"
+    },
+    {
+      "source": "Shattering Punch",
+      "target": "破砕拳",
+      "category": "Class Feature",
+      "note": "モンクの型打撃。PRD日本語版 https://w.atwiki.jp/prdj/pages/2381.html で照合。一般の戦技名や同名の別能力へ一括置換しない。"
+    },
+    {
+      "source": "Mystic Theurge",
+      "target": "ミスティック・シーアージ",
+      "category": "Prestige Class",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/78.html および https://w.atwiki.jp/prdj/pages/67.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Combined Spells",
+      "target": "呪文融通",
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/78.html および https://w.atwiki.jp/prdj/pages/67.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Spell Synthesis",
+      "target": "合成呪文",
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/78.html および https://w.atwiki.jp/prdj/pages/67.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Dual-Cursed Oracle",
+      "target": "二重呪いのオラクル",
+      "category": "Archetype",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/1312.html で照合。ゲーム英語にある追加・置換の違いなどはゲーム原文に従う。"
+    },
+    {
+      "source": "Possessed Oracle",
+      "target": "憑かれしオラクル",
+      "category": "Archetype",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/1313.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Purifier",
+      "target": "浄化する者",
+      "category": "Archetype",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/1649.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Two Minds",
+      "target": "二つの精神",
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/1313.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Lame",
+      "target": "足萎え",
+      "category": "Oracle Curse",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/801.html で照合。効果はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Ancestor",
+      "target": "祖霊",
+      "category": "Oracle Mystery",
+      "note": "オラクルの神秘名に限定。PRD日本語版 https://w.atwiki.jp/prdj/pages/1312.html で照合。一般語の祖先・先祖は変更しない。"
+    },
+    {
+      "source": "Battle",
+      "target": "闘争",
+      "category": "Oracle Mystery",
+      "note": "オラクルの神秘名に限定。一般語や領域名は別。 PRD日本語版 https://w.atwiki.jp/prdj/pages/801.html で照合。効果はゲーム英語に従う。"
+    },
+    {
+      "source": "Enhanced Cures",
+      "target": "回復強化",
+      "category": "Class Feature",
+      "note": "オラクルの啓示名。 PRD日本語版 https://w.atwiki.jp/prdj/pages/801.html で照合。効果はゲーム英語に従う。"
+    },
+    {
+      "source": "Dirty Trick",
+      "target": "裏技",
+      "category": "Combat Maneuver",
+      "note": "一般の戦技。オラクルの巧技体得の選択肢もこれを指す。PRD https://w.atwiki.jp/prdj/pages/853.html。スレイヤー等の固有能力の裏技追撃とは区別。"
+    },
+    {
+      "source": "Skill at Arms",
+      "target": "武器への習熟",
+      "category": "Class Feature",
+      "note": "オラクルの啓示名。PRD日本語版 https://w.atwiki.jp/prdj/pages/801.html で照合。"
+    },
+    {
+      "source": "Divine Hunter",
+      "target": "信仰の狩人",
+      "category": "Paladin Archetype",
+      "note": "パラディンのアーキタイプ名。PRD日本語版 https://w.atwiki.jp/prdj/pages/1366.html で照合。同名のハンターのアーキタイプには一括適用しない。"
+    },
+    {
+      "source": "Stonelord",
+      "target": "石の王",
+      "category": "Archetype",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/130.html で照合。効果・条件はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Stonestrike",
+      "target": "石の打撃",
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/130.html で照合。効果・条件はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Stoneblood",
+      "target": "石の血潮",
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/130.html で照合。効果・条件はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Tortured Crusader",
+      "target": "受難の聖戦士",
+      "category": "Archetype",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/3176.html で照合。効果・条件はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Alone in the Dark",
+      "target": "闇の中に一人",
+      "category": "Class Feature",
+      "note": "PRD日本語版 https://w.atwiki.jp/prdj/pages/3176.html で照合。効果・条件はゲーム英語原文に従う。"
+    },
+    {
+      "source": "Torment",
+      "target": "受難",
+      "category": "Class Feature",
+      "note": "受難の聖戦士の能力名に限定。PRD日本語版 https://w.atwiki.jp/prdj/pages/3176.html で照合。一般語の苦悶・苦痛などは置換しない。"
+    },
+    {
+      "source": "Mark of Justice",
+      "target": "正義の印",
+      "category": "Paladin Ability",
+      "note": "パラディンの味方への悪を討つ一撃共有能力。blueprints/Classes/Paladin/SmiteEvil/AuraOfJusticeAbility.jbp の表示名・説明キーで確認。呪文Mark of Justice＝マーク・オヴ・ジャスティスとは区別。"
+    },
+    {
+      "source": "Teardown",
+      "target": "テアダウン",
+      "category": "Animal Companion Ability",
+      "note": "オオカミの伏せ対象への追加ダメージ能力。とどめの一撃や一般語の解体とは区別。動物の相棒の文脈のみ。"
+    },
+    {
+      "source": "Knife Master",
+      "target": "ナイフ使い",
+      "category": "Archetype",
+      "note": "ローグのアーキタイプ。PRD日本語版 https://w.atwiki.jp/prdj/pages/1369.html の見出しで照合。一般名詞・人物呼称は文脈に応じる。"
+    },
+    {
+      "source": "Thug",
+      "target": "暴漢",
+      "category": "Archetype",
+      "note": "ローグのアーキタイプ。PRD日本語版 https://w.atwiki.jp/prdj/pages/822.html の見出しで照合。一般名詞・人物呼称は文脈に応じる。"
+    },
+    {
+      "source": "Debilitating Injury",
+      "target": "妨げの傷",
+      "category": "Rogue Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2308.html"
+    },
+    {
+      "source": "Bewildering Injury",
+      "target": "当惑の傷",
+      "category": "Rogue Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2308.html"
+    },
+    {
+      "source": "Disorienting Injury",
+      "target": "狼狽の傷",
+      "category": "Rogue Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2308.html"
+    },
+    {
+      "source": "Frightening",
+      "target": "恫喝",
+      "category": "Thug Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/822.html"
+    },
+    {
+      "source": "Wind",
+      "target": "疾風",
+      "category": "Oracle Mystery",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/801.html"
+    },
+    {
+      "source": "Agile Movement",
+      "target": "機敏な移動",
+      "category": "Animal Companion Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ゲーム内の能力見出しとヴェロキラプトル説明の対応を統一。"
+    },
+    {
+      "source": "Hampering Injury",
+      "target": "阻害の傷",
+      "category": "Rogue Ability",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/2308.html"
+    },
+    {
+      "source": "Iron Guts",
+      "target": "鉄の胃",
+      "category": "Rogue Talent",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/1369.html"
+    },
+    {
+      "source": "Slow Reactions",
+      "target": "鈍らせ",
+      "category": "Rogue Talent",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/2308.html"
+    },
+    {
+      "source": "Underhanded Trick",
+      "target": "卑劣な手口",
+      "category": "Rogue Talent",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 ゲーム英語とUnderhandedTrick.jbpの表示名を照合。Dirty Trickの名称とは区別。"
+    },
+    {
+      "source": "Confounding Blades",
+      "target": "幻惑の刃",
+      "category": "Rogue Talent",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/1369.html"
+    },
+    {
+      "source": "Double Debilitation",
+      "target": "妨げの重ね傷",
+      "category": "Rogue Talent",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/2308.html"
+    },
+    {
+      "source": "Skill Mastery",
+      "target": "技能体得",
+      "category": "Rogue Talent",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/2308.html"
+    },
+    {
+      "source": "Possessed Shaman",
+      "target": "霊媒",
+      "category": "Archetype",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/2218.html"
+    },
+    {
+      "source": "Wandering Skills",
+      "target": "浮遊霊技能",
+      "category": "Shaman Ability",
+      "note": "該当クラス能力・技の文脈に限定。効果はゲーム原文に従う。 https://w.atwiki.jp/prdj/pages/2218.html"
+    },
+    {
+      "source": "Spirit Warden",
+      "target": "悪霊からの守り手",
+      "category": "Archetype",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2218.html"
+    },
+    {
+      "source": "Unsworn Shaman",
+      "target": "霊線細き者",
+      "category": "Archetype",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2218.html"
+    },
+    {
+      "source": "Witch Doctor",
+      "target": "呪術医",
+      "category": "Archetype",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2218.html"
+    },
+    {
+      "source": "Spirit Magic",
+      "target": "霊魔法",
+      "category": "Shaman Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2198.html"
+    },
+    {
+      "source": "Secret",
+      "target": "極意",
+      "category": "Shaman Hex",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2198.html"
+    },
+    {
+      "source": "Battle",
+      "target": "闘争",
+      "category": "Shaman Spirit",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/2198.html — シャーマンの霊の分類名。一般の戦いには適用しない。"
+    },
+    {
+      "source": "Chromatic Dragon",
+      "target": "クロマティックドラゴン",
+      "category": "Dragon Type",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 translationGuide.mdのドラゴン分類の音写・中黒なし規則に従う。"
+    },
+    {
+      "source": "Metallic Dragon",
+      "target": "メタリックドラゴン",
+      "category": "Dragon Type",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 translationGuide.mdのドラゴン分類の音写・中黒なし規則に従う。"
+    },
+    {
+      "source": "Well-Versed",
+      "target": "熟達者",
+      "category": "Class Feature",
+      "note": "スカルドの対音波能力。Lore Master（博識）とは別。PRD日本語版 https://w.atwiki.jp/prdj/pages/2199.html"
+    },
+    {
+      "source": "Herald of the Horn",
+      "target": "喇叭の先触れ",
+      "category": "Archetype",
+      "note": "スカルドのアーキタイプ。PRD日本語版 https://w.atwiki.jp/prdj/pages/2219.html"
+    },
+    {
+      "source": "Keen Senses",
+      "target": "鋭い感覚",
+      "category": "Class Feature",
+      "note": "ブラッドシーカーの鋭敏嗅覚・知覚ボーナス能力。同名呪文のキーン・センシズと区別。blueprints/Classes/Slayer/Archetypes/Bloodseeker/KeenSensesFeature.jbpで文脈確認。"
+    },
+    {
+      "source": "Studied Spawn",
+      "target": "落とし子の観察",
+      "category": "Class Feature",
+      "note": "スポーン・スレイヤーの観察を変更する能力。PRD https://w.atwiki.jp/prdj/pages/3494.html の項目は英語のままで既定日本語訳ではない。観察の落とし子という不自然な係り受けを修正。各サイズの能力名で統一。"
+    },
+    {
+      "source": "Abyssal Bloodline",
+      "target": "奈落の者の血脈",
+      "category": "Bloodline",
+      "note": "ソーサラーの血脈。PRD日本語版のAbyssal＝奈落の者 https://w.atwiki.jp/prdj/pages/118.html 。一般形容詞Abyssal＝アビスの、や個別の能力名と区別。"
+    },
+    {
+      "source": "Empyreal Bloodline",
+      "target": "至高天の血脈",
+      "category": "Bloodline",
+      "note": "ソーサラーの血脈文脈でPRD日本語版と照合。https://w.atwiki.jp/prdj/pages/978.html （至高天／森の精／関連血脈：天上の者）。"
+    },
+    {
+      "source": "Sylvan Bloodline",
+      "target": "森の精の血脈",
+      "category": "Bloodline",
+      "note": "ソーサラーの血脈文脈でPRD日本語版と照合。https://w.atwiki.jp/prdj/pages/978.html （至高天／森の精／関連血脈：天上の者）。"
+    },
+    {
+      "source": "Crossblooded",
+      "target": "混血の者",
+      "category": "Archetype",
+      "note": "ソーサラーのアーキタイプ。PRD日本語版 https://w.atwiki.jp/prdj/pages/978.html 。効果は卓上版から移さずゲームの英語説明に従う。"
+    },
+    {
+      "source": "Arcane Apotheosis",
+      "target": "秘術の極み",
+      "category": "Class Feature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ソーサラー秘術血脈のPRD訳。https://w.atwiki.jp/prdj/pages/118.html"
+    },
+    {
+      "source": "Demon Resistances",
+      "target": "魔鬼の抵抗力",
+      "category": "Class Feature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ソーサラー奈落の者血脈のPRD訳。https://w.atwiki.jp/prdj/pages/118.html"
+    },
+    {
+      "source": "Ascension",
+      "target": "即位",
+      "category": "Class Feature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 天上の者血脈のPRD訳。神話一般の昇華とは別。https://w.atwiki.jp/prdj/pages/118.html"
+    },
+    {
+      "source": "Blinding",
+      "target": "ブラインディング",
+      "category": "Armor Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 盾の特殊能力。https://w.atwiki.jp/prdj/pages/79.html と総合説明377-1。一般の盲目・閃光には適用しない。"
+    },
+    {
+      "source": "Reflecting",
+      "target": "リフレクティング",
+      "category": "Armor Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 盾の特殊能力。https://w.atwiki.jp/prdj/pages/79.html と377-1・対応アクションを照合。一般の反射には適用しない。"
+    },
+    {
+      "source": "Improved Counterspell",
+      "target": "呪文相殺強化",
+      "category": "Feat",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 https://w.atwiki.jp/prdj/pages/160.html の特技名を照合。"
+    },
+    {
+      "source": "Scalykind",
+      "target": "鱗持つもの",
+      "category": "Blessing",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 祝福名。https://w.atwiki.jp/prdj/pages/3529.html のウォープリースト欄と3393.htmlの領域見出しを照合。一般の鱗には適用しない。"
+    },
+    {
+      "source": "Strength Surge",
+      "target": "筋力招来",
+      "category": "ClassFeature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ウォープリーストの力の祝福の下級能力。https://w.atwiki.jp/prdj/pages/2197.html。クレリックの力の招来とは区別する。"
+    },
+    {
+      "source": "Trickery",
+      "target": "欺き",
+      "category": "Blessing",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ウォープリーストの祝福名。https://w.atwiki.jp/prdj/pages/2197.html の欺きの祝福を照合。技能のTrickeryは巧技のまま区別する。"
+    },
+    {
+      "source": "Hag Transformation",
+      "target": "ハグへの変容",
+      "category": "ClassFeature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ハグに縛られし者の20レベル能力。ゲーム英語とHagboundWitchHagTransformationFeatureの名称・説明キーを照合。https://w.atwiki.jp/prdj/pages/3578.html は該当能力未訳。"
+    },
+    {
+      "source": "Hag Crony",
+      "target": "ハグの仲間",
+      "category": "ClassFeature",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ギローナの老婆のナイト・ハグの相棒能力。HagCronyFeatureの名称キーc3c10530-7f84-4baf-afc2-943a4cae4a2fと説明キー9597b3a6-faf0-4e67-a751-bd7c03f7affeのゲーム英語special companionを照合。"
+    },
+    {
+      "source": "Opposition School",
+      "target": "対立系統",
+      "category": "Rule",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 ウィザードの秘術系統。https://w.atwiki.jp/prdj/pages/38.html。準備には同レベルのスロット2つが必要であり発動禁止ではない。"
+    },
+    {
+      "source": "Calling",
+      "target": "招請",
+      "category": "Spell Subschool",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 召喚術の副系統。https://w.atwiki.jp/prdj/pages/431.html。一般の呼び声や召喚術全体、およびSummoningの招来とは区別。"
+    },
+    {
+      "source": "Prohibited School",
+      "target": "禁止系統",
+      "category": "Rule",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 サッシロン専門家の禁止系統。ゲーム英語423-6はnever prepare、呪文リストに存在しない扱いと説明。通常のOpposition School（対立系統、準備にスロット2つ）と区別する。"
+    },
+    {
+      "source": "Death",
+      "target": "即死",
+      "category": "Spell Descriptor",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 呪文の特性名Deathに限定。一般の死・神名・死霊術系統をこの語へ置換しない。PRD日本語 https://w.atwiki.jp/prdj/pages/431.html および https://w.atwiki.jp/prdj/pages/1329.html の即死に対応。"
+    },
+    {
+      "source": "Double weapon",
+      "target": "双頭武器",
+      "category": "Rules",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 武器分類の文脈。https://w.atwiki.jp/prdj/pages/2842.html の双頭武器／Double Weapons。固有装備名のDoubleを一律置換しない。"
+    },
+    {
+      "source": "Precise Strike",
+      "target": "精密打撃",
+      "category": "Duelist Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 デュエリストのクラス能力に限定。同名のチームワーク特技（Feat: 精密なる協調攻撃）とは区別。PRD日本語版 https://w.atwiki.jp/prdj/pages/67.html の精密打撃／Precise Strikeと、ゲーム内表示名8fefba08-8aa0-451e-ba32-c0537aa23f4fを2026-10-22照合。効果はゲーム英語に従い、卓上版の数値を転用しない。"
+    },
+    {
+      "source": "Advanced Weapon Training",
+      "target": "上級武器訓練",
+      "category": "Fighter Ability",
+      "note": "該当クラス・能力の文脈に限定。効果はゲーム英語に従う。 個別名称を https://w.atwiki.jp/prdj/pages/3584.html の見出し『上級武器訓練 Advanced Weapon Training』と2026-10-22照合。同じファイターの基本能力Weapon Trainingは武器修練だが、上級武器修練へ一括変更しない。"
+    },
+    {
+      "source": "Instantaneous",
+      "target": "瞬間",
+      "category": "Duration",
+      "note": "呪文の持続時間区分。PRD日本語版の魔法・持続時間で瞬間／Instantaneous（https://w.atwiki.jp/prdj/pages/431.html）。発動時間やアクション種別のimmediateとは区別する。一般の形容表現は文脈に合わせて訳す。",
+      "caseSensitive": true
+    },
+    {
+      "source": "Keen Senses",
+      "target": "鋭き五感",
+      "category": "Racial Trait",
+      "note": "種族共通の知覚ボーナス特性。PRD日本語版の種族 https://w.atwiki.jp/prdj/pages/41.html で照合。blueprints/Traits/Races/Common/KeenSenses.jbp の表示名キー09fd40ea-51ed-4965-8151-42af439ca808。同名呪文キーン・センシズ、ブラッドシーカーの鋭い感覚と区別する。"
+    },
+    {
+      "source": "Racial Heritage",
+      "target": "種族の血筋",
+      "category": "Racial Selection",
+      "note": "亜種族選択の共通表示名7684ec1a-93c8-4bc5-b51a-94dbd72f10f5。blueprints/Traits/Races/Dwarf/DwarfHeritageSelection.jbpほか各種族のHeritageSelectionで確認。特技の異種族の祖先と区別する。ゲーム英語の亜種族説明に従う。"
+    },
+    {
+      "source": "Sithhud's Frostbite",
+      "target": "シスハッドの凍傷",
+      "category": "Condition",
+      "note": "シスハッド専用の累積状態。blueprints/Units/Monsters/DLC5_Sithhud/HeadOfSithhud/DLC5_FrostbiteBuff.jbpの表示名bccd980e-14bd-46d1-a1ee-023ab14b9e32、説明c50785ab-468b-4c40-9a7d-e0ddc4c9c235で文脈を確認。同名呪文Frostbite（フロストバイト）とは区別し、数値と効果はゲーム英語に従う。"
     }
   ]
 }

@@ -37,14 +37,17 @@ if(command==='init'){
  const keys=manifest.queue.filter(k=>!(k in decisions)).slice(offset,offset+count);
  const graph=read(path.join(root,'res/dialogueGraph.json'));const wanted=new Set(keys),contexts=new Map();
  for(const node of graph.nodes){if(!wanted.has(node.textKey))continue;const arr=contexts.get(node.textKey)??[];arr.push({source:node.source,speaker:node.speakerName,type:node.type,dialog:node.dialog});contexts.set(node.textKey,arr);}
- const entries=keys.map((key,i)=>({n:offset+i+1,key,en:en[key],a:base[key],b:other[key],context:contexts.get(key)??[]}));
+ const live=read(current).strings;
+ const entries=keys.map((key,i)=>({n:offset+i+1,key,en:en[key],a:live[key],...(live[key]!==base[key]?{initialA:base[key]}:{}),b:other[key],context:contexts.get(key)??[]}));
  const out=process.argv[5]??path.join(work,'next.json');write(out,entries);
  console.log(entries.map(r=>`${r.n} ${r.key}${r.context.length?' '+JSON.stringify(r.context):''}\nEN ${r.en}\nA ${r.a}\nB ${r.b}`).join('\n\n'));
 }else if(command==='record'){
  const manifest=read(path.join(work,'manifest.json')),decisions=read(path.join(work,'decisions.json')),base=read(path.join(work,'base.json')).strings;
  const allowed=new Set(['keep','adopt-part','rewrite','researched-keep','researched-rewrite','hold-mechanics']);
  const entries=read(process.argv[3]);
- for(const e of entries){assert(manifest.queue.includes(e.key),'比較対象外');assert(allowed.has(e.decision),'不正な判定');assert(e.reason?.length>3,'理由が必要');const old=decisions[e.key];assert(!old||old.decision==='prior-reviewed'||process.argv.includes('--revise'),'判定の重複');assert(!old?.applied,'反映済み判定の更新は新しいスナップショットで行う');if(e.decision==='adopt-part'||e.decision.includes('rewrite'))assert(typeof e.translation==='string'&&e.translation!==base[e.key],'変更訳が必要');decisions[e.key]={...e,baseSha256:digest(base[e.key]),...(old?{previousDecision:old}:{})};delete decisions[e.key].key;}
+ const live=read(current).strings;
+ for(const e of entries){if(live[e.key]!==base[e.key])assert.equal(e.reviewedText,live[e.key],`現行訳を明示して再比較する必要がある ${e.key}`);if(e.reviewedText!==undefined)assert.equal(e.reviewedText,live[e.key],`レビュー後の競合 ${e.key}`);}
+ for(const e of entries){assert(manifest.queue.includes(e.key),'比較対象外');assert(allowed.has(e.decision),'不正な判定');assert(e.reason?.length>3,'理由が必要');const old=decisions[e.key];assert(!old||old.decision==='prior-reviewed'||process.argv.includes('--revise'),'判定の重複');assert(!old?.applied,'反映済み判定の更新は新しいスナップショットで行う');if(e.decision==='adopt-part'||e.decision.includes('rewrite'))assert(typeof e.translation==='string'&&e.translation!==live[e.key],'変更訳が必要');decisions[e.key]={...e,baseSha256:digest(base[e.key]),...(old?{previousDecision:old}:{})};delete decisions[e.key].key;}
  write(path.join(work,'decisions.json'),decisions);console.log(JSON.stringify(status(),null,2));
 }else if(command==='apply'){
  const decisions=read(path.join(work,'decisions.json')),base=read(path.join(work,'base.json')).strings;
@@ -53,12 +56,13 @@ if(command==='init'){
  const nums=s=>(s.replace(/\{[^{}]*\}|<[^<>]*>/g,'').match(/[+−–-]?\d+(?:\.\d+)?(?:d\d+)?/g)??[]).sort();
  for(const [key,d]of Object.entries(decisions)){
   if(typeof d.translation!=='string'||d.applied)continue;
-  assert.equal(json.strings[key],base[key],`比較後に編集されたキー ${key}`);assert.equal(d.baseSha256,digest(base[key]));
-  assert.deepEqual(tags(base[key]),tags(d.translation),`タグ差 ${key}`);
-  if(!d.allowNumericChange)assert.deepEqual(nums(base[key]),nums(d.translation),`数値差 ${key}`);
-  const from=JSON.stringify(key)+': '+JSON.stringify(base[key]),to=JSON.stringify(key)+': '+JSON.stringify(d.translation);
+  const reviewed=d.reviewedText??base[key];
+  assert.equal(json.strings[key],reviewed,`比較後に編集されたキー ${key}`);assert.equal(d.baseSha256,digest(base[key]));
+  assert.deepEqual(tags(reviewed),tags(d.translation),`タグ差 ${key}`);
+  if(!d.allowNumericChange)assert.deepEqual(nums(reviewed),nums(d.translation),`数値差 ${key}`);
+  const from=JSON.stringify(key)+': '+JSON.stringify(reviewed),to=JSON.stringify(key)+': '+JSON.stringify(d.translation);
   assert.equal(after.split(from).length,2,'行の一意性');after=after.replace(from,to);
-  changes.push({key,before:base[key],after:d.translation,reason:d.reason});
+  changes.push({key,before:reviewed,after:d.translation,reason:d.reason});
  }
  const parsed=JSON.parse(after);assert.deepEqual(Object.keys(parsed.strings),Object.keys(json.strings));
  if(changes.length){
@@ -80,13 +84,17 @@ if(command==='init'){
  for(const key of manifest.queue){if(decisions[key])continue;const s=en[key];if(!(key in other))priority.missingOther++;else if(s.includes('{n}'))priority.narration++;else if(s.includes('"'))priority.dialogue++;else if(s.length<80)priority.shortLabel++;else priority.system++;}
  write(path.join(work,'pending-categories.json'),priority);
  let md=`# siratori版との翻訳比較\n\n全体は作業中。自動分類しただけの項目をレビュー済みに数えない。\n\n- 原文：${manifest.sourceKeys.toLocaleString()}件\n- 比較開始時の完全一致：${manifest.exactAtStart.toLocaleString()}件\n- 差分：${manifest.queue.length.toLocaleString()}件\n- 前回サンプリング：${entries.length-fresh.length}件（完全一致19件を含む）\n- 今回の新規目視レビュー：${fresh.length}件\n- 今回の反映：${applied.length}件\n- 差分の未レビュー：${progress.remaining.toLocaleString()}件\n\n## 方針\n\n英語原文と両訳を照合し、改善できる文節だけ採用。既存の人名・話者口調・定訳を維持する。曖昧な用語は用語集・blueprint・関連会話・PRDで調査し、それでも意味が確定しない場合は意味を狭めない自然な表現にする。数値・条件など挙動の不明点は推測で変更しない。\n\n今回の新規レビュー範囲は原文JSON順の実績・背景・基本呪文・状態説明が中心であり、全体の品質比率の推定サンプルではない。前回200件の評価記録と今回の厳密な調査記録は区別する。\n\n## 主な修正\n\n`;
- for(const d of applied){md+=`### ${en[d.key].slice(0,100).replaceAll('\n',' ')}\n\nキー：${d.key}\n\n理由：${d.reason}\n\n変更前：${base[d.key]}\n\n変更後：${d.translation}\n\n`;if(d.evidence)md+=`根拠：${d.evidence.join(' / ')}\n\n`;}
+ for(const d of applied){md+=`### ${en[d.key].slice(0,100).replaceAll('\n',' ')}\n\nキー：${d.key}\n\n理由：${d.reason}\n\n変更前：${d.reviewedText??base[d.key]}\n\n変更後：${d.translation}\n\n`;if(d.evidence)md+=`根拠：${d.evidence.join(' / ')}\n\n`;}
  md+=`## 保存先と再開方法\n\n- dev/lang/comparison-siratori-20261019/manifest.json：入力ファイルのSHA-256と比較順\n- decisions.json：個別判定・根拠・採用訳・反映履歴\n- review-ledger.csv：原文・両訳・最終訳の一覧\n- base.json：今回開始時の日本語JSON。前回取り込んだ19件を含む\n- before-*.json：各反映直前のバックアップ\n- pending-categories.json：未レビューの機械分類（評価ではない）\n\nリポジトリルートで実行：\n\n\`\`\`powershell\nnode --max-old-space-size=8192 dev/helper/compareTranslations.mjs status\nnode --max-old-space-size=8192 dev/helper/compareTranslations.mjs export 25 0 dev/lang/comparison-siratori-20261019/next.json\n# next.jsonを原文・文脈・用語集と照合して判断し、判定JSONを作成\nnode dev/helper/compareTranslations.mjs record <判定JSON>\nnode dev/helper/compareTranslations.mjs apply\nnode dev/helper/compareTranslations.mjs report\n\`\`\`\n\nrecord形式：key, decision, reason, translation（変更時）, evidence（調査時）。許容判定はkeep/adopt-part/rewrite/researched-keep/researched-rewrite/hold-mechanics。反映前に現行値とスナップショットの一致、タグ・数値の保持をチェックし、競合時は中止する。\n`;
  const bp=path.join(work,'verify-before.json'),ap=path.join(work,'verify-after.json');
  if(fs.existsSync(bp)&&fs.existsSync(ap)){
   const b=read(bp),a=read(ap);const equal=JSON.stringify(b)===JSON.stringify(a);
-  md+=`\n## 検証\n\n既存verify.jsの変更前後レポートは${equal?'完全一致':'相違あり（確認が必要）'}。変更後の既存エラー${a.errors.length}件、警告${a.warnings.length}件。制御タグ不整合${a.stats.controlTagIssues}件、キー欠落${a.stats.missing}件。今回の反映直後に照合済み。\n`;
+  const identities=r=>JSON.stringify({stats:r.stats,errors:r.errors.map(x=>[x.key,x.type]).sort(),warnings:r.warnings.map(x=>[x.key,x.type]).sort()});
+  const sameDiagnostics=identities(b)===identities(a);
+  md+=`\n## 検証\n\n既存verify.jsの変更前後レポートは${equal?'完全一致':sameDiagnostics?'統計・診断のキーと種類が一致（添付訳文のみ更新）':'相違あり（確認が必要）'}。変更後の既存エラー${a.errors.length}件、警告${a.warnings.length}件。制御タグ不整合${a.stats.controlTagIssues}件、キー欠落${a.stats.missing}件。今回の反映直後に照合済み。\n\n丸括弧の全件点検は別作業として[点検結果](parenthesesReview20261019.md)に記録。以降の比較は現行訳を入力にし、括弧点検前の訳文で上書きしない。\n`;
  }
- const output=path.join(root,'res','translationComparison20261019.md');fs.writeFileSync(output,md);console.log(JSON.stringify({report:output,ledger:path.join(work,'review-ledger.csv'),pendingCategories:priority,...progress},null,2));
+ const validationNotes=applied.filter(d=>d.validationNote);
+ if(validationNotes.length)md+=`\n### 原文との差による検証の個別注記\n\n${validationNotes.map(d=>`- ${d.validationNote}`).join('\n')}\n`;
+ const output=path.join(root,'res','translationComparison20261019.md');fs.writeFileSync(output,md.replace(/[ \t]+$/gm,''));console.log(JSON.stringify({report:output,ledger:path.join(work,'review-ledger.csv'),pendingCategories:priority,...progress},null,2));
 }else if(command==='status')console.log(JSON.stringify(status(),null,2));
 else throw Error('init OTHER [PREVIOUS] | export [COUNT] [OFFSET] [OUTPUT] | record DECISIONS [--revise] | apply | report | status');
