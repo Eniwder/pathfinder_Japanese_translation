@@ -14178,9 +14178,9 @@
     },
     {
       "source": "Divine Anathema",
-      "target": "神の罵倒",
+      "target": "神の断罪",
       "category": "PRD Term",
-      "note": "PRD日本語版の訳語。"
+      "note": "旧PRD由来訳「神の罵倒」を見直し。属性の離れた観察対象に神の力で追加ダメージを与える能力。発話による侮辱との混同を避け「神の断罪」とする（q797）。"
     },
     {
       "source": "Vanguard's Bond",
@@ -24956,8 +24956,8 @@
     },
     {
       "source": "Raptor",
-      "target": "猛禽",
-      "note": "Animal Aspect variant.",
+      "target": "ラプトル",
+      "note": "Animal Aspect variant. 本文のdeinonychusを指す恐竜の相。猛禽類の意味のraptorには適用しない。",
       "category": "Spell"
     },
     {
@@ -28754,8 +28754,8 @@
     },
     {
       "source": "Drone",
-      "target": "ドローン",
-      "note": "Army ability (crusade, Locust Swarm).",
+      "target": "羽音",
+      "note": "デラクニの飛行時の羽音で周囲を混乱させる能力。軍隊版の参照と通常版の英語説明を照合し、旧訳「ドローン」を訂正（q869）。通常版と軍隊版の効果数値・条件は区別する。",
       "category": "Crusade"
     },
     {
@@ -32355,6 +32355,12 @@
       "target": "シスハッドの凍傷",
       "category": "Condition",
       "note": "シスハッド専用の累積状態。blueprints/Units/Monsters/DLC5_Sithhud/HeadOfSithhud/DLC5_FrostbiteBuff.jbpの表示名bccd980e-14bd-46d1-a1ee-023ab14b9e32、説明c50785ab-468b-4c40-9a7d-e0ddc4c9c235で文脈を確認。同名呪文Frostbite（フロストバイト）とは区別し、数値と効果はゲーム英語に従う。"
+    },
+    {
+      "source": "Crusader",
+      "target": "クルセイダー",
+      "category": "Cleric Archetype",
+      "note": "クレリックのアーキタイプと、それに対応する上級クラスの呪文書成長項目。CrusaderArchetypeの表示名に合わせる。一般の十字軍兵士とは区別（q888）。"
     }
   ]
 }
