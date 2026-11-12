@@ -108,8 +108,8 @@
       "personalitySummary": "A street-smart tiefling thief who relies on quick wit and self-preservation.",
       "toneAndVoice": "Informal, fast-talking, streetwise tone. Adapt tone freely but do not inflate original sentences with unprompted facts or reactions.",
       "firstPerson": {
-        "term": "おいら",
-        "rule": "Use おいら by default."
+        "term": "オレ",
+        "rule": "Use オレ by default."
       }
     },
     "Lann": {
@@ -6328,8 +6328,8 @@
       "personalitySummary": "A street-smart tiefling thief who relies on quick wit and self-preservation.",
       "toneAndVoice": "Informal, fast-talking, streetwise tone. Adapt tone freely but do not inflate original sentences with unprompted facts or reactions.",
       "firstPerson": {
-        "term": "おいら",
-        "rule": "Use おいら by default."
+        "term": "オレ",
+        "rule": "Use オレ by default."
       }
     },
     "WildHunt_AtselmYoung": {
@@ -7435,8 +7435,8 @@
       "personalitySummary": "A street-smart tiefling thief who relies on quick wit and self-preservation.",
       "toneAndVoice": "Informal, fast-talking, streetwise tone. Adapt tone freely but do not inflate original sentences with unprompted facts or reactions.",
       "firstPerson": {
-        "term": "おいら",
-        "rule": "Use おいら by default."
+        "term": "オレ",
+        "rule": "Use オレ by default."
       }
     },
     "DLC1_Regill_Companion": {
