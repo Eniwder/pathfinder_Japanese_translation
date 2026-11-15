@@ -885,12 +885,12 @@
     },
     {
       "source": "Daeran",
-      "target": "デラン",
+      "target": "デイラン",
       "note": "コンパニオン。アアシマール（Aasimar）の貴族。冷笑的・退廃的。"
     },
     {
       "source": "Arueshalae",
-      "target": "アルエシャラエ",
+      "target": "アルーシャレイ",
       "note": "コンパニオン。贖罪を求めるサキュバス。謙虚・自己嫌悪・希望。"
     },
     {
@@ -2055,7 +2055,7 @@
     {
       "source": "Heaven's Edge",
       "target": "天涯の館",
-      "note": "デランの生家アレンデ家の屋敷。デーモンの襲撃で一族が全滅した現場。"
+      "note": "デイランの生家アレンデ家の屋敷。デーモンの襲撃で一族が全滅した現場。"
     },
     {
       "source": "Blackwing",
@@ -2445,7 +2445,7 @@
     {
       "source": "Greengates",
       "target": "グリーンゲイツ",
-      "note": "アルエシャラエに関わる地名。"
+      "note": "アルーシャレイに関わる地名。"
     },
     {
       "source": "Septimus",
@@ -5765,7 +5765,7 @@
       "source": "Lord of Vice",
       "target": "悪徳卿",
       "category": "Title",
-      "note": "別の過去で王となったデランの異名（DLC1 Storyteller）。",
+      "note": "別の過去で王となったデイランの異名（DLC1 Storyteller）。",
       "caseSensitive": true
     },
     {
@@ -6532,7 +6532,7 @@
       "source": "Valisa",
       "target": "ヴァリサ",
       "category": "NPC",
-      "note": "アルエシャラエの仮装をした祭りの参加者。Arueshalae_Event_dialogueに登場（round164）。",
+      "note": "アルーシャレイの仮装をした祭りの参加者。Arueshalae_Event_dialogueに登場（round164）。",
       "caseSensitive": true
     },
     {

@@ -2,6 +2,7 @@
 node_modules
 /dist
 blueprints
+/dev/test/
 
 
 # local env files
